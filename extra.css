@@ -1,0 +1,48 @@
+/* Create font size containers */
+.size100 { font-size: 100px; }
+.size90 { font-size: 90px; }
+.size80 { font-size: 80px; }
+.size70 { font-size: 70px; }
+.size60 { font-size: 60px; }
+.size50 { font-size: 50px; }
+.size40 { font-size: 40px; }
+.size35 { font-size: 35px; }
+.size30 { font-size: 30px; }
+.size25 { font-size: 25px; }
+.size22 { font-size: 22px; }
+.size20 { font-size: 20px; }
+.size10 { font-size: 10px; }
+
+/* Control font size in R code chunk */
+.code200 .remark-code { font-size: 200% !important; }
+.code190 .remark-code { font-size: 190% !important; }
+.code180 .remark-code { font-size: 180% !important; }
+.code170 .remark-code { font-size: 170% !important; }
+.code160 .remark-code { font-size: 160% !important; }
+.code150 .remark-code { font-size: 150% !important; }
+.code140 .remark-code { font-size: 140% !important; }
+.code135 .remark-code { font-size: 135% !important; }
+.code130 .remark-code { font-size: 130% !important; }
+.code125 .remark-code { font-size: 125% !important; }
+.code120 .remark-code { font-size: 120% !important; }
+.code115 .remark-code { font-size: 115% !important; }
+.code110 .remark-code { font-size: 110% !important; }
+.code105 .remark-code { font-size: 105% !important; }
+
+/* Color Text */
+.textgrey { color: grey; }
+.textred { color: red; }
+.textblue { color: blue; }
+.textwhite { color: white; }
+
+/* Omit page numbers */
+.remark-slide-number {
+  display: none;
+}
+
+/* Add background color to a slide */
+.slideblue { background-color: #aed6f1; }
+.slidegreen { background-color: #a9dfbf; }
+.slidered { background-color: #f5b7b1; }
+.slidepurple { background-color: #e8daef; }
+.slideorange { background-color: #fad7a0; }

@@ -1,0 +1,46 @@
+To see live preview, run xaringan::inf_mr()
+
+Output as pdf
+pagedown::chrome_print(input = "File.html")
+
+Consider hosting on github
+
+For offline work 
+https://bookdown.org/yihui/rmarkdown/some-tips.html#working-offline
+
+Images not appearing? 
+- Put images folder inside the libs folder as that is the main data directory
+
+All kinds of tweaks possible using css
+- Save in extra.css
+
+Text color
+.color[text here]
+e.g. .grey, .charcoal, .purple, .black, .red, .blue, .green, .yellow, .orange
+
+Background images (code at top of new slide)
+background-image: url('libs/Images/01_1-Height_technique.jpg')
+background-size: 50%
+background-position: right
+
+background-blues.jpg
+background-blues.png
+background-blues_and_greys.jpg
+background-blue_triangles.jpg
+background-clouds1.jpg
+background-crumpled_black_paper.jpg
+background-desert_rock.jpg
+background-forest.png
+background-granite.jpg
+background-green_blue_swirl_side.jpg
+background-particles.png
+background-skyline.jpg
+background-space1.jpg
+background-swirls.jpg
+background-virus.jpg
+background-watercolor.jpg
+background-wood_paneling.jpg
+
+
+TO DO
+- DT table when showing new data with filter = "top"
