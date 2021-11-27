@@ -5,6 +5,7 @@
 .size70 { font-size: 70px; }
 .size60 { font-size: 60px; }
 .size50 { font-size: 50px; }
+.size45 { font-size: 45px; }
 .size40 { font-size: 40px; }
 .size35 { font-size: 35px; }
 .size30 { font-size: 30px; }
@@ -14,11 +15,6 @@
 .size10 { font-size: 10px; }
 
 /* Control font size in R code chunk */
-.code200 .remark-code { font-size: 200% !important; }
-.code190 .remark-code { font-size: 190% !important; }
-.code180 .remark-code { font-size: 180% !important; }
-.code170 .remark-code { font-size: 170% !important; }
-.code160 .remark-code { font-size: 160% !important; }
 .code150 .remark-code { font-size: 150% !important; }
 .code140 .remark-code { font-size: 140% !important; }
 .code135 .remark-code { font-size: 135% !important; }
@@ -31,9 +27,11 @@
 
 /* Color Text */
 .textgrey { color: grey; }
+.textblack { color: black; }
 .textred { color: red; }
 .textblue { color: blue; }
 .textwhite { color: white; }
+.textorange { color: #FFBF00; }
 
 /* Omit page numbers */
 .remark-slide-number {
@@ -46,3 +44,59 @@
 .slidered { background-color: #f5b7b1; }
 .slidepurple { background-color: #e8daef; }
 .slideorange { background-color: #fad7a0; }
+.slidepink { background-color:  #fadbd8; }
+
+/* Cool ideas from ekstroem */
+
+/* Colored text boxes */
+.content-box { 
+    box-sizing: content-box;
+    	background-color: #e2e2e2;
+  /* Total width: 160px + (2 * 20px) + (2 * 8px) = 216px
+     Total height: 80px + (2 * 20px) + (2 * 8px) = 136px
+     Content box width: 160px
+     Content box height: 80px */
+}
+.content-box-blue,
+.content-box-gray,
+.content-box-grey,
+.content-box-army,
+.content-box-green,
+.content-box-purple,
+.content-box-red,
+.content-box-yellow {
+    border-radius: 15px;
+    margin: 0 0 25px;
+    overflow: hidden;
+    padding: 20px;
+    width: 100%;
+}
+.content-box-blue {
+    background-color: #F0F8FF;
+}
+.content-box-gray {
+    background-color: #e2e2e2;
+}
+.content-box-grey {
+	background-color: #F5F5F5;
+}
+.content-box-army {
+	background-color: #737a36;
+}
+.content-box-green {
+	background-color: #d9edc2;
+}
+.content-box-purple {
+	background-color: #e2e2f9;
+}
+.content-box-red {
+	background-color: #f9dbdb;
+}
+.content-box-yellow {
+	background-color: #fef5c4;
+}
+.full-width {
+    display: flex;
+    width: 100%;
+    flex: 1 1 auto;
+}
