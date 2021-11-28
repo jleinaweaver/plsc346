@@ -1,0 +1,346 @@
+---
+output:
+  xaringan::moon_reader:
+    css: ["default", "extra.css"]
+    lib_dir: libs
+    seal: false
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: '16:9'
+---
+
+```{r, echo = FALSE, warning = FALSE, message = FALSE}
+##xaringan::inf_mr()
+## For offline work: https://bookdown.org/yihui/rmarkdown/some-tips.html#working-offline
+## Images not appearing? Put images folder inside the libs folder as that is the main data directory
+
+library(tidyverse)
+library(readxl)
+library(stargazer)
+##library(kableExtra)
+##library(modelr)
+
+knitr::opts_chunk$set(echo = FALSE,
+                      eval = TRUE,
+                      error = FALSE,
+                      message = FALSE,
+                      warning = FALSE,
+                      comment = NA)
+```
+
+class: slideblue
+
+.size70[**Today's Agenda**]
+
+<br>
+
+.size50[
+
+Perform a comparative analysis of our political violence cases
+
++ Compare and contrast our work with Tilly (2003)
+
+]
+
+<br>
+
+.center[.size40[
+  Justin Leinaweaver (Fall 2021)
+]]
+
+???
+
+### Prep for Class
+1. ...
+
+<br>
+
+Tilly, Charles. 2003. “Varieties of Violence.” In The Politics of Collective Violence, Cambridge, UK: Cambridge University Press, 1–25. ONLY p1-20
+
+
+
+
+
+---
+
+background-image: url('libs/Images/background-green_blue_swirl_side.jpg')
+background-size: 100%
+background-position: center
+class: middle
+
+.size60[.center[**Define "Political Violence": Comparative Case Studies**]]
+
+.size50[
+1. What is the specific act you are labeling "political violence"?
+
+2. Why is this act "political"?
+
+3. Why is this an act of "violence"?
+]
+
+???
+
+On Monday we gathered a number of political violence case studies.
+
+- These cases represent different perspectives on the political violence concept.
+
+Today we take the next step in this case study analysis.
+
+- We need a definition!
+
+
+
+---
+
+background-image: url('libs/Images/background-crumpled_black_paper.jpg')
+background-size: 100%
+background-position: center
+class: middle
+
+.textwhite[
+.size60[.center[**Define "Political Violence": Comparative Case Studies**]]]
+
+.size50[.textwhite[
+1) Common characteristics?
+]]
+
+???
+
+Working in groups of three you have 5 mins to make a list of the characteristics common to all of the cases presented on Monday.
+
+ANY QUESTIONS? GET TO IT!
+
+<br>
+
+ON BOARD (column 1 of 3): "Common Characteristics"
+
+DISCUSS EACH AS CLASS: AGREE WITH INCLUSION ON THIS LIST?
+
+Be careful, not about your interpretations yet. Just clear characteristics.
+
+Avoid using the words "political" or "violence" because that's what we're trying to define.
+
+<br>
+
+*Notes from Fall 2019*
+
+- Victim: Person or object
+- Person(s) impeded physically or harmed
+- Oppositional use of force
+- Pre-meditated
+- The act itself is about power (projection, taking)
+- Acts to defend or alter the SQ
+- Pre-existing conflicts
+- Sends a message
+
+*Notes from Fall 2014*
+
+- Groups or individuals involved
+- Pre-planned
+- Targeted
+- Harm to people or property
+- Political motivation
+- Effort to achieve control
+- Making a "political" statement
+
+
+
+---
+
+background-image: url('libs/Images/background-crumpled_black_paper.jpg')
+background-size: 100%
+background-position: center
+class: middle
+
+.textwhite[
+.size60[.center[**Define "Political Violence": Comparative Case Studies**]]]
+
+.size50[.textwhite[
+1) Common characteristics?
+
+2) Identify cases by type / similarities
+]]
+
+???
+
+Groups, 5 mins to identify the cases by type / similarities
+
+- How many different ways can we organize them in most-similar groupings?
+
+Think filling your cart at grocery store.
+
+- Look in the cart, how can we organize these into different sets of goods?
+
+a. Produce vs meat vs dairy
+
+b. things that cost more or less than 10$
+
+<br>
+
+ON BOARD (column 2 of 3): "Types"
+
+<br>
+
+*Notes from Fall 2019*
+
+- Revolution vs "other"
+- Physical vs non-physical
+- Government vs Group vs Indiv
+- Beatings vs denying access to needs
+- SQ survives vs SQ changes
+- Goals met vs not
+- Preventing vs escalating
+- Developed world vs non-developed
+- pre-existing vs novel 
+
+*Notes from Fall 2014*
+
+- Leaders or opposition
+- People vs party
+- 1 dead vs more than one?
+- Lethal actions vs non-lethal
+- Old or new grievances
+- Government vs non-government violence
+- Targeting people or property
+- Terrorism or not
+- Individual perpetrator or group
+
+
+
+---
+
+background-image: url('libs/Images/background-crumpled_black_paper.jpg')
+background-size: 100%
+background-position: center
+class: middle
+
+.textwhite[
+.size60[.center[**Define "Political Violence": Comparative Case Studies**]]]
+
+.size50[.textwhite[
+1) Common characteristics?
+
+2) Identify cases by type / similarities
+
+3) Key questions?
+]]
+
+???
+
+Ok, now let's work as a class.
+
+HOW DO WE TRANSLATE THESE GROUPINGS INTO KEY QUESTIONS.
+
+- e.g. leaders vs opposition --> Who has to act?
+
+Think of these as a set of questions that you will use to decide if something is "political violence" or not.
+
+<br>
+
+ON BOARD (column 3 of 3): "Key Questions"
+
+<br>
+
+*Fall 2019*
+
+- What damage was done?
+- What methods of oppression?
+- How did levels of violence change?
+- What is there to gain for the actor?
+- Did the actor meet their goals?
+- What motivated the actor?
+- Did the SQ change?
+- Who acted?
+- Who were the victims?
+- Who were the aggressors?
+- Did the balance of power change?
+- Is the act sufficiently clear?
+
+*Fall 2014*
+
+- Who acted? Leaders or opposition
+- What was harmed? People or Property
+- How many died? 1 or more
+- Did people have to die? Lethal action or non-lethal
+- Does it seek to change policy? The status quo?
+- Must government be involved as a perpetrator or target?
+- Must actual harm to property or life be done?
+- How much harm is needed?
+- Does motivation matter? Pre-meditated actions?
+
+
+
+---
+
+background-image: url('libs/Images/02_2-protestors_fire.jpg')
+background-size: 100%
+background-position: top
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+.content-box-red[.size50[**Tilly (2003) on Political Violence**]]
+
+???
+
+The Tilly reading is not meant to replace your good judgement in this exercise.
+
+I wanted to expose you to some academic writing on violence and this seemed the best of the lot.
+
+HOW DOES OUR WORK THIS WEEK COMPARE TO TILLY'S DEFINITION OF COLLECTIVE VIOLENCE?
+
+<br>
+
+WHAT ARE THE KEY CHARACTERISTICS OF TILLY'S DEFINITION OF COLLECTIVE VIOLENCE?
+(Episodic, social interaction e.g. at least two people, immediate physical damage to persons and/or objects)
+
+<br>
+
+Back to your groups!
+
+5 mins, take everything we've worked on today and construct a definition of "political violence."
+
+<br>
+
+PRESENT and DISCUSS each
+
+- WHO HERE HAS A DEFINITION THAT COMES REALLY CLOSE TO TILLY'S?
+
+- WHO HAS CREATED A DEFINITION THAT LEADS TO DIFFERENT RESULTS?
+
+<br>
+
+Good work today.
+
+Friday we will move to operationalization and measurement so we can quantify the political violence in our cases. 
+
+
+
+
+
+
+
+

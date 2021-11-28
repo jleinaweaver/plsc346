@@ -1,0 +1,309 @@
+---
+output:
+  xaringan::moon_reader:
+    css: ["default", "extra.css"]
+    lib_dir: libs
+    seal: false
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: '16:9'
+---
+
+```{r, echo = FALSE, warning = FALSE, message = FALSE}
+##xaringan::inf_mr()
+## For offline work: https://bookdown.org/yihui/rmarkdown/some-tips.html#working-offline
+## Images not appearing? Put images folder inside the libs folder as that is the main data directory
+
+library(tidyverse)
+library(readxl)
+library(stargazer)
+##library(kableExtra)
+##library(modelr)
+
+knitr::opts_chunk$set(echo = FALSE,
+                      eval = TRUE,
+                      error = FALSE,
+                      message = FALSE,
+                      warning = FALSE,
+                      comment = NA)
+```
+
+class: slideblue
+
+.size70[**Today's Agenda**]
+
+<br>
+
+.size50[
+
+Using case studies to define "political violence"
+
+]
+
+<br>
+
+<br>
+
+.center[.size40[
+  Justin Leinaweaver (Fall 2021)
+]]
+
+???
+
+### Prep for Class
+1. Be ready to take notes for yourself on the cases they present
+
+<br>
+
+
+
+---
+
+background-image: url('libs/Images/02_1-protestor_gas.jpg')
+background-size: 100%
+background-position: center
+
+???
+
+Our job this semester is to develop our scientific knowledge and understanding of political violence.
+
+WHAT DOES IT MEAN TO SAY WE WILL USE "SCIENCE" TO DEVELOP THIS KNOWLEDGE?
+
+
+---
+
+background-image: url('libs/Images/02_1-protestor_gas2.png')
+background-size: 100%
+background-position: center
+class: center, middle
+
+.content-box-red[.size70[**1. Models / Theory**]]
+
+<br>
+
+<br>
+
+.content-box-red[.size70[**2. Empirical Data**]]
+
+???
+
+In short, the "scientific" path to knowledge involves developing and testing models using empirical data.
+
+<br>
+
+WHAT ARE MODELS?
+(Models are simplifications of reality designed to allow us to better understand the key mechanisms around us.)
+
+GIVE ME AN EXAMPLE OF A MODEL.
+(Neorealism: States are first and foremost motivated by a desire to survive.)
+(Different types of learner: Visual, oral, etc)
+(Median voter theorem: Politicians who seek election in majority rule systems should moderate their policy platforms, promise policies desired by the median voter.)
+(Liberal or conservative ideologies are beliefs about what policies make society "best.")
+
+<br>
+
+WHAT IS EMPIRICAL DATA?
+(Empirical data is information acquired through observation.)
+
+OUT OF CURIOSITY, ARE YOU PERSONALLY SCIENTIFIC IN YOUR DAY-TO-DAY LIFE?
+
+- HOW OFTEN DO YOU "TEST" YOUR THEORIES ABOUT THE WORLD USING DATA?
+
+
+
+---
+
+background-image: url('libs/Images/02_1-pols_and_strategy1.png')
+background-size: 100%
+background-position: center
+
+???
+
+Last week we worked to develop two working definitions: one for politics and one for strategy.
+
+WHY IS IT IMPORTANT WE START BY DEFINING OUR TERMS?
+
+(The definitions are the fundamental building blocks of our models.)
+- Can't test models if we don't agree on their parts.
+
+To define our terms we used in class simulations.
+
+Technically, each simulation was a formal model of politics.
+
+- Each identified a set of players,  a set of rules and assumed diverse preferences.
+
+
+---
+
+background-image: url('libs/Images/02_1-pols_and_strategy2.png')
+background-size: 100%
+background-position: center
+
+???
+
+On Wednesday I gave you index cards.
+
+TELL ME ABOUT OUR SIMULATION OF "POLITICS."
+
+- WAS IT A GOOD ONE? WHY OR WHY NOT?
+
+WAS THE SIMULATION INTERNALLY VALID?
+
+- ANYTHING KEY ASPECTS RELATED TO MAKING THESE DECISIONS MISSING?
+
+WAS THE SIMULATION EXTERNALLY VALID?
+
+- DID THE SIMULATION LOOK LIKE SOCIETAL DECISION-MAKING IN THE REAL WORLD?
+- DID IT LEAD YOU TO BEHAVE HOW YOU WOULD HAVE OUTSIDE THE CLASSROOM?
+
+<br>
+
+I gave you a set of rules, assumed diverse and conflicting preferences, provided you a limited resource to deal with and then set you loose.
+
+WHAT DID THAT MODEL TELL US ABOUT POLITICS?
+
+- WHAT DYNAMICS DID WE OBSERVE?
+
+(- Actors have different preferences)
+(- Enforcement is a problem)
+(- Uncertainty everywhere)
+(- Social pressures matter)
+(- ...)
+
+<br>
+
+BASED ON THE SIMULATION, WHAT CAN WE USE AS OUR WORKING DEFINITION OF "POLITICS"?
+
+(SLIDE)
+
+
+---
+
+background-image: url('libs/Images/02_1-pols_and_strategy3.png')
+background-size: 100%
+background-position: center
+
+???
+
+Decision-making that affects a community
+
+- Rule-making
+- Resource allocation (who pays? who benefits?)
+
+IS THIS A GOOD DEFINITION? 
+- WHAT ARE ITS STRENGTHS?
+- WHAT ARE ITS WEAKNESSES?
+
+
+
+---
+
+background-image: url('libs/Images/02_1-pols_and_strategy4.png')
+background-size: 100%
+background-position: center
+
+???
+
+We then did something similar on Friday regarding "strategy."
+
+I gave you a set of rules, assumed diverse and conflicting preferences, added a mechanism of uncertainty and then set you loose.
+
+TELL ME ABOUT THE MODELS WE SIMULATED IN CLASS.
+
+- HOW WERE THEY DIFFERENT FROM WEDNESDAYS MODEL?
+
+(This time, however, I added an uncertainty mechanism (rock, paper, scissors) to complicate your decision-making.)
+
+- WHAT DEFINITION OF STRATEGY WERE THEY BUILT ON?
+
+- WHAT DYNAMICS DID THEY ALLOW US TO OBSERVE?
+
+- HOW EXTERNALLY VALID WERE THESE MODELS?
+
+---
+
+class: middle, center, slidegreen
+
+.size70[**For Today**]
+
+<br>
+
+.size50[
+BRING a news article that describes a recent act of political violence (make sure you can briefly describe the background of the case).
+]
+
+???
+
+This week we are going to explore and define the central concept of our semester "political violence."
+
+We will do this by exploring both real-world case studies and the academic literature.
+
+For today everyone should have brought a news article that describes a recent act of political violence.
+
+- I also assume that everyone knows at least the basic background of their case.
+
+DOES EVERYONE HAVE THEIR ARTICLE?
+
+
+
+---
+
+background-image: url('libs/Images/background-green_blue_swirl_side.jpg')
+background-size: 100%
+background-position: center
+class: middle
+
+.size60[.center[**Define "Political Violence": Comparative Case Studies**]]
+
+.size50[
+1. What is the specific act you are labeling "political violence"?
+
+2. Why is this act "political"?
+
+3. Why is this an act of "violence"?
+]
+
+???
+
+We'll go around the room, you will have two minutes to bring us up to speed on your case.
+
+Focus on answering these three questions:
+
+1. What is the specific act you are labeling "political violence"?
+- plus, briefly give the background
+
+By "specific act" I mean that literally.
+- The conflict in Sudan or the Cold War are the titles of books.
+- Our focus is on an actor or group of actors making a specific decision, e.g. attacking a market on a specific date to achieve a specific aim. 
+
+<br>
+
+2. Why is this act "political"?
+- e.g. what is the actor trying to achieve? Think strategically.
+
+3. Why is this an act of "violence"?
+
+<br>
+
+Everybody take two minutes and get ready to brief us on your case.
+
+<br>
+
+Ok, IMPORTANT, listen to each other carefully.
+
+- These cases and arguments are the data you will use for the rest of the week.
+
+- Take notes and be an active listener.
+
+- ALSO IMPORTANT: As we go around the room, don't change your answers to numbers two and three! We need to hear diverse perspectives.
+
+<br>
+
+Excellent work, keep these in mind and will pick up the exercise on Wednesday.
+
+Read the Tilly chapter on violence and see if that alters your thinking about the concept.
+
+
+
