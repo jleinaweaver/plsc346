@@ -1,0 +1,274 @@
+---
+output:
+  xaringan::moon_reader:
+    css: ["default", "extra.css"]
+    lib_dir: libs
+    seal: false
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: '16:9'
+---
+
+```{r, echo = FALSE, warning = FALSE, message = FALSE}
+##xaringan::inf_mr()
+## For offline work: https://bookdown.org/yihui/rmarkdown/some-tips.html#working-offline
+## Images not appearing? Put images folder inside the libs folder as that is the main data directory
+
+library(tidyverse)
+library(readxl)
+library(stargazer)
+##library(kableExtra)
+##library(modelr)
+
+knitr::opts_chunk$set(echo = FALSE,
+                      eval = TRUE,
+                      error = FALSE,
+                      message = FALSE,
+                      warning = FALSE,
+                      comment = NA)
+```
+
+class: slideblue
+
+.size70[**Today's Agenda**]
+
+<br>
+
+.size60[
+.center[
+Evaluate the CIRIGHTS Data project
+]]
+
+<br>
+
+.center[.size40[
+  Justin Leinaweaver (Spring 2022)
+]]
+
+???
+
+### Prep for Class
+1. ...
+
+<br>
+
+Today we wrap up our week exploring the current projects that seek to measure political violence around the world and across time.
+
+WHAT WERE OUR BIG TAKEAWAYS FROM WEDNESDAY'S EXAMINATION OF THE POLITICAL TERROR SCALE?
+
+
+
+
+---
+
+class: middle, slideblue, center
+
+.size60[.center[**For Today**]]
+
+.size50[
+**Explore the data and codebook for the [CIRIGHTS Data project](https://www.dropbox.com/sh/t8utmzsvde8m63q/AAAs1_WIJTqXurAE5nvEKWE5a?dl=0).**
+
+Make sure you understand the observations and variables enough to play with them in class.
+]
+
+???
+
+EVERYBODY READY FOR TODAY'S WORK?
+
+- ASSIGNMENT COMPLETE?
+
+<br>
+
+Organize yourselves into NEW groups of 3-4, circle your chairs
+
+Take a few minutes to make sure everyone in your group is clear on the observations and variables in the data project (use the codebook as needed)
+
+
+
+---
+
+background-image: url('libs/Images/03_3-CIRIGHTS_Title.png')
+background-size: 50%
+background-position: top
+class: slidegreen, middle
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+.size45[
+Compare and contrast the methodology of CIRIGHTS to the PTS.
+
+What does the CIRIGHTS project add to our PTS work from Wednesday?
+]
+
+???
+
+Groups: Take a few minutes to do this together and then we'll report back.
+
+<br>
+
+OK, REPORT BACK.
+
+(More separate measures of human rights!)
+
+
+
+---
+
+background-image: url('libs/Images/03_3-CIRIGHTS_Title.png')
+background-size: 50%
+background-position: top
+class: slidegreen, middle
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+.size45[
+Discuss the strengths and weaknesses of the "Coding Protocol" in CIRIGHTS (p8).
+
++ Strengths and weaknesses of this coding procedure?
++ Issues of validity and reliability?
+]
+
+???
+
+Groups: Take a few minutes to do this together and then we'll report back.
+
+<br>
+
+OK, REPORT BACK.
+
+- WHAT ARE THE STRENGTHS AND WEAKNESSES?
+
+<br>
+
+Audit Time!
+
+Each of you focus on the scores for the three countries you analyzed on Monday. 
+
+Go back to the reports and see if you would have coded them the same way. 
+
+<br>
+
+FINDINGS? TAKEAWAYS?
+
++ WHAT DO WE LEARN ABOUT THESE VARIABLES? 
+
++ WHAT DO WE LEARN ABOUT THESE CODING RULES?
+
++ WHICH VARIABLES SEEM THE EASIEST TO CODE / WE HAVE THE MOST CONFIDENCE IN?
+
++ WHICH THE LEAST?
+
+
+
+---
+
+background-image: url('libs/Images/background-green_blue_swirl_side.jpg')
+background-size: 100%
+background-position: center
+class: middle
+
+.size70[.center[**Analysis Time!**]]
+
+<br>
+
+.size50[
+Focus on 1981 (the oldest year coded), what are the most and least common forms of political violence measured in the world?
+]
+
+```{r, eval=FALSE}
+library(tidyverse)
+d <- read_csv("../../Data/CIRIGHTS/CIRIGHTS_2021.01.21.csv")
+
+d1981 <- d |>
+  filter(year == 1981)
+```
+
+???
+
+*Questions after they work and report back*
+
+
+---
+
+background-image: url('libs/Images/background-green_blue_swirl_side.jpg')
+background-size: 100%
+background-position: center
+class: middle
+
+.size70[.center[**Analysis Time!**]]
+
+<br>
+
+.size50[
+Repeat your analysis focusing on 2017 (most recent year coded), what are the most and least common forms of political violence measured in the world? 
+
++ How have things changed over time?
+]
+
+```{r, eval=FALSE}
+library(tidyverse)
+d <- read_csv("../../Data/CIRIGHTS/CIRIGHTS_2021.01.21.csv")
+
+d2017 <- d |>
+  filter(year == 2017)
+```
+
+???
+
+*Questions after they work and report back*
+
+
+
+---
+
+background-image: url('libs/Images/background-green_blue_swirl_side.jpg')
+background-size: 100%
+background-position: center
+class: middle
+
+.size45[
+Compare and contrast the 2017 CIRIGHTS codings with the 2017 PTS_S scores from the PTS project.
+
++ Are they consistent? 
+
++ Any big differences? 
+
++ Can we find state examples where the scores differ significantly across the two projects?
+]
+
+???
+
+*Questions after they work and report back*
+
+<br>
+
+BOTTOM LINE, HOW USEFUL IS THE CIRIGHTS FOR HELPING US TEST THEORIES OF POLITICAL VIOLENCE? STRENGTHS AND WEAKNESSES?
+
+
+
+
+
+
+
+
+
+
+

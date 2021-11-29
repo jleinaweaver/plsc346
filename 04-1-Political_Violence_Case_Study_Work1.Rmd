@@ -1,0 +1,130 @@
+---
+output:
+  xaringan::moon_reader:
+    css: ["default", "extra.css"]
+    lib_dir: libs
+    seal: false
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: '16:9'
+---
+
+```{r, echo = FALSE, warning = FALSE, message = FALSE}
+##xaringan::inf_mr()
+## For offline work: https://bookdown.org/yihui/rmarkdown/some-tips.html#working-offline
+## Images not appearing? Put images folder inside the libs folder as that is the main data directory
+
+library(tidyverse)
+library(readxl)
+library(stargazer)
+##library(kableExtra)
+##library(modelr)
+
+knitr::opts_chunk$set(echo = FALSE,
+                      eval = TRUE,
+                      error = FALSE,
+                      message = FALSE,
+                      warning = FALSE,
+                      comment = NA)
+```
+
+class: slideblue
+
+.size70[**Today's Agenda**]
+
+<br>
+
+.size50[
+.center[
+The Political Violence Case Study
+
+(due Feb 20)
+]]
+
+<br>
+
+.center[.size40[
+  Justin Leinaweaver (Spring 2022)
+]]
+
+???
+
+### Prep for Class
+1. Country sign-up page on Google sheets
+
+2. Email the link to the class AFTER introducing the assignment
+
+<br>
+
+I am giving you our class meetings this week to work on your first assignment for the class.
+
+A political violence case study.
+
+
+
+---
+
+background-image: url('libs/Images/background-light_grey.jpg')
+background-size: 100%
+background-position: center
+class: middle
+
+.size50[**Political Violence Case Study**]
+
+.size35[(due Feb 20)
+
+Use all of the data sources from last week to write a report on **one country** that:
+
+- **Summarizes AND analyzes** its recent history of political violence (e.g. over the last ten years), and 
+
+- **Makes an argument** about what the current CIRIGHTS codings should be based on the 2020 Country Reports on Human Rights Practices from the State Department
+]
+
+???
+
+You will each prepare a report focused on the experience of political violence in a single country.
+
+You will draw on the reports from the State Department, Amnesty International and the measurements from PTS and CIRIGHTS.
+
+Your report should summarize and analyze the last ten years of history in that country, 
+
+AND
+
+Classify your country in 2020 using the CIRIGHTS variables.
+
+QUESTIONS ON THE ASSIGNMENT?
+
+<br>
+
+I'll send out a sheet where you can claim a country in just a moment.
+
+No overlap, first-come first-served.
+
+
+
+---
+
+background-image: url('libs/Images/background-light_grey.jpg')
+background-size: 100%
+background-position: center
+class: middle
+
+.size35[
+Use all of the data sources from last week to write a report on **one country** that:
+
+- **Summarizes AND analyzes** its recent history of political violence (e.g. over the last ten years), and 
+
+- **Makes an argument** about what the current CIRIGHTS codings should be based on the 2020 Country Reports on Human Rights Practices from the State Department
+
+**For Wednesday**: Come to class with 3-5 key conclusions about your country's experience of political violence based on your analyses
+]
+
+???
+
+Today I want each of you to select your country, collect your data and start analyzing it.
+
+Your goal should be to identify 3-5 key conclusions about your country's experience of political violence
+
+For Wednesday: Be ready to present your key conclusions for feedback

@@ -1,0 +1,148 @@
+---
+output:
+  xaringan::moon_reader:
+    css: ["default", "extra.css"]
+    lib_dir: libs
+    seal: false
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: '16:9'
+---
+
+```{r, echo = FALSE, warning = FALSE, message = FALSE}
+##xaringan::inf_mr()
+## For offline work: https://bookdown.org/yihui/rmarkdown/some-tips.html#working-offline
+## Images not appearing? Put images folder inside the libs folder as that is the main data directory
+
+library(tidyverse)
+library(readxl)
+library(stargazer)
+##library(kableExtra)
+##library(modelr)
+
+knitr::opts_chunk$set(echo = FALSE,
+                      eval = TRUE,
+                      error = FALSE,
+                      message = FALSE,
+                      warning = FALSE,
+                      comment = NA)
+```
+
+class: slideblue
+
+.size70[**Today's Agenda**]
+
+<br>
+
+.size50[
+.center[
+The Political Violence Case Study
+
+(due Feb 20)
+]]
+
+<br>
+
+.center[.size40[
+  Justin Leinaweaver (Spring 2022)
+]]
+
+???
+
+### Prep for Class
+1. ...
+
+<br>
+
+
+
+---
+
+background-image: url('libs/Images/background-light_grey.jpg')
+background-size: 100%
+background-position: center
+class: middle
+
+.size50[**Political Violence Case Study**]
+
+.size35[(due Feb 20)
+
+Use all of the data sources from last week to write a report on **one country** that:
+
+- **Summarizes AND analyzes** its recent history of political violence (e.g. over the last ten years), and 
+
+- **Makes an argument** about what the current CIRIGHTS codings should be based on the 2020 Country Reports on Human Rights Practices from the State Department
+]
+
+???
+
+ANY QUESTIONS ON THE ASSIGNMENT?
+
+
+
+---
+
+background-image: url('libs/Images/background-light_grey.jpg')
+background-size: 100%
+background-position: center
+class: middle
+
+.size35[
+Use all of the data sources from last week to write a report on **one country** that:
+
+- **Summarizes AND analyzes** its recent history of political violence (e.g. over the last ten years), and 
+
+- **Makes an argument** about what the current CIRIGHTS codings should be based on the 2020 Country Reports on Human Rights Practices from the State Department
+
+**For Today**: Come to class with 3-5 key conclusions about your country's experience of political violence based on your analyses
+]
+
+???
+
+DOES EVERYBODY HAVE THEIR 3-5 KEY CONCLUSIONS READY?
+
+These represent the premises in your argument!
+
+<br>
+
+Ok, break out into groups of three (new people!) and share your conclusions.
+
+Get feedback on your conclusions, reflect on the the feedback and revise!
+
+
+
+---
+
+background-image: url('libs/Images/background-swirls.jpg')
+background-size: 100%
+background-position: center
+class: middle, center
+
+.size70[**For Friday**]
+
+.size40[
+
+For each of the conclusions you have identified, find a news story you can use to illustrate it.
+
+This should supplement your evidence from our sources last week.
+
+Be ready to present each conclusion and its current events evidence.
+
+]
+
+???
+
+Each of the key conclusions in your report (including your argument about coding the 2020 CIRIGHTS variables) requires evidence.
+
+Your main evidence comes from our sources last week, but will be FAR stronger with supplementary examples.
+
+For each conclusion find a news story or other piece of external evidence to illustrate your argument.
+
+
+
+
+
+
+

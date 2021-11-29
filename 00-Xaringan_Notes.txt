@@ -18,11 +18,15 @@ Text color
 .color[text here]
 e.g. .grey, .charcoal, .purple, .black, .red, .blue, .green, .yellow, .orange
 
+```{r, echo = FALSE, fig.align = 'center', out.width = '100%'}
+knitr::include_graphics("libs/Images/01_1-learn_code.jpg")
+```
+
 Background images (code at top of new slide)
 
 background-image: url('libs/Images/01_1-Jan6th_Protest2.jpg')
-background-size: 70%
-background-position: left
+background-size: 100%
+background-position: center
 
 background-blues.jpg
 background-blues.png

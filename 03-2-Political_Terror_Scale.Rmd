@@ -1,0 +1,470 @@
+---
+output:
+  xaringan::moon_reader:
+    css: ["default", "extra.css"]
+    lib_dir: libs
+    seal: false
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: '16:9'
+---
+
+```{r, echo = FALSE, warning = FALSE, message = FALSE}
+##xaringan::inf_mr()
+## For offline work: https://bookdown.org/yihui/rmarkdown/some-tips.html#working-offline
+## Images not appearing? Put images folder inside the libs folder as that is the main data directory
+
+library(tidyverse)
+library(readxl)
+library(stargazer)
+##library(kableExtra)
+##library(modelr)
+
+knitr::opts_chunk$set(echo = FALSE,
+                      eval = TRUE,
+                      error = FALSE,
+                      message = FALSE,
+                      warning = FALSE,
+                      comment = NA)
+```
+
+class: slideblue
+
+.size70[**Today's Agenda**]
+
+<br>
+
+.size60[
+.center[
+Evaluate the Political Terror Scale (PTS) research project
+]]
+
+<br>
+
+.center[.size40[
+  Justin Leinaweaver (Spring 2022)
+]]
+
+???
+
+### Prep for Class
+1. ...
+
+<br>
+
+On Monday we evaluated reports by the US State Department and Amnesty International as sources for measuring political violence around the world.
+
+WHAT WERE OUR KEY TAKEAWAYS ON MONDAY?
+
+- ARE THESE SOURCES "BETTER" THAN USING MEDIA REPORTING? WHY OR WHY NOT?
+
+<br>
+
+Today and Friday we evaluate two research projects that both use these 
+
+
+
+---
+
+class: middle, slideblue
+
+.size60[.center[**For Today**]]
+
+.size40[
+**Explore the data and codebook for the [Political Terror Scale (PTS)](http://www.politicalterrorscale.org/Data/Download.html). Make sure you understand the observations and variables enough to play with them in class.**
+
+*Recommended Links (in syllabus):*
+
+1. [Sorting Rows in Excel](https://www.excel-easy.com/data-analysis/sort.html)
+2. [Filtering Rows in Excel](https://www.excel-easy.com/data-analysis/filter.html)
+3. [Pivot Tables in Excel](https://www.excel-easy.com/data-analysis/pivot-tables.html)
+]
+
+???
+
+EVERYBODY READY FOR TODAY'S WORK?
+
+- ASSIGNMENT COMPLETE?
+
+<br>
+
+Everybody organize yourselves into groups of 3-4, circle the chairs
+
+Take a few minutes to make sure everyone in your group can:
+
+1. Open the data in Excel,
+
+2. Understands how to do the basic data analyses in Excel (sort and filter), and 
+
+3. Is clear on the observations and variables in the data project (use the codebook as needed)
+
+
+
+---
+
+background-image: url('libs/Images/03-2-PTS_Logo.png')
+background-size: 70%
+background-position: top
+class: slidegreen, center, middle
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+.size60[Compare and contrast the definition of "political terror" to our definition from last week]
+
+???
+
+Groups: Take a few minutes to do this together and then we'll report back.
+
+<br>
+
+OK, WHAT SO, HOW DO THESE DEFINITIONS COMPARE?
+
+- WHAT ARE THE STRENGTHS AND WEAKNESSES OF THIS DEFINITION?
+
+
+
+---
+
+background-image: url('libs/Images/03-2-PTS_Logo.png')
+background-size: 70%
+background-position: top
+class: slidegreen, center, middle
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+.size60[Discuss the strengths and weaknesses of the data collection methodology (e.g. Sources, Units)]
+
+???
+
+Groups: Take a few minutes to do this together and then we'll report back.
+
+<br>
+
+OK, REPORT BACK.
+
+- WHAT ARE THE STRENGTHS AND WEAKNESSES?
+
+
+
+---
+
+background-image: url('libs/Images/03_2-PTS_Levels.png')
+background-size: 100%
+background-position: center
+
+???
+
+GROUPS: DISCUSS THE STRENGTHS AND WEAKNESSES OF THE CODING SCHEME FOR THE PTS VARIABLE
+
+<br>
+
+OK, REPORT BACK.
+
+- WHAT ARE THE STRENGTHS AND WEAKNESSES?
+
+<br>
+
+Audit Time!
+
+Each of you focus on the scores for the three countries you analyzed on Monday. 
+
+Go back to the reports and see if you would have coded them the same way. 
+
+FINDINGS? TAKEAWAYS?
+
+
+
+---
+
+background-image: url('libs/Images/background-green_blue_swirl_side.jpg')
+background-size: 100%
+background-position: center
+class: middle
+
+.size70[.center[**Analysis Time!**]]
+
+<br>
+
+.size40[
+1) Focus on 2020 (most recent year coded), how much conflict across: PTS_A, PTS_H and PTS_S? 
+   + Specific examples?
+]
+
+```{r, eval=FALSE}
+library(tidyverse)
+library(readxl)
+d <- read_excel("../../Data/PTS/PTS-2021.xlsx", na = "NA")
+
+d2019 <- d |>
+  filter(Year == 2020)
+
+d2019 |> count(PTS_A, PTS_H, PTS_S) |> print(n=100)
+
+## Matching on 42%
+d2019 |> 
+  count(PTS_A, PTS_H, PTS_S) |>
+  na.omit() |>
+  mutate(
+    matching = if_else(PTS_A == PTS_H & PTS_A == PTS_S, 1*n, 0)
+  ) |>
+  summarize(
+    sum(matching) / sum(n)
+  )
+```
+
+
+???
+
+*Questions after they work and report back*
+
+DO DIFFERENCES WITHIN A COUNTRY-YEAR TELL US MORE ABOUT THE USE OF VIOLENCE IN THAT STATE, BIAS IN THE SOURCES OF THE DATA OR PROBLEMS WITH THE PTS MEASURE THEY HAVE DESIGNED?
+
+<br>
+
+DOES THIS HELP US UNDERSTAND THE VALUE IN INCLUDING ALL THREE MEASURES?
+
+- Do all three bring greater confidence to our understanding?
+- Capture different things? 
+- Add robustness?
+
+
+
+
+---
+
+background-image: url('libs/Images/background-green_blue_swirl_side.jpg')
+background-size: 100%
+background-position: center
+class: middle
+
+.size70[.center[**Analysis Time!**]]
+
+<br>
+
+.size40[
+2) Repeat using 2014 (oldest year with data in all three vars), how much conflict across: PTS_A, PTS_H and PTS_S? 
+   + Specific examples?
+]
+
+```{r, eval=FALSE}
+library(tidyverse)
+library(readxl)
+d <- read_excel("../../Data/PTS/PTS-2021.xlsx", na = "NA")
+
+d |> count(Year, PTS_H) |> print(n=100)
+d |> count(Year, PTS_A) |> print(n=300)
+d |> count(Year, PTS_S) |> print(n=300)
+
+d2014 <- d |>
+  filter(Year == 2014)
+
+d2014 |> count(PTS_A, PTS_H, PTS_S) |> print(n=100)
+
+## Matching on 55% of observations
+d2014 |> 
+  count(PTS_A, PTS_H, PTS_S) |>
+  na.omit() |>
+  mutate(
+    matching = if_else(PTS_A == PTS_H & PTS_A == PTS_S, 1*n, 0)
+  ) |>
+  summarize(
+    sum(matching) / sum(n)
+  )
+```
+
+???
+
+*Questions after they work and report back*
+
+DOES THIS HELP US ANSWER THAT QUESTION ABOUT WHERE THE ERROR MAY LIE / HOW USEFUL IT IS TO KEEP ALL THREE MEASURES?
+
+- MORE DISAGREEMENT IN THE PAST?
+
+
+
+---
+
+background-image: url('libs/Images/background-green_blue_swirl_side.jpg')
+background-size: 100%
+background-position: center
+class: middle
+
+.size70[.center[**Analysis Time!**]]
+
+<br>
+
+.size40[
+3) Focus on 2020 and sort all countries by PTS_S.
+
+  + Any surprises? 
+
+  + Any countries with a score that challenges your intuitions?
+]
+
+```{r, eval=FALSE}
+library(tidyverse)
+library(readxl)
+d <- read_excel("../../Data/PTS/PTS-2021.xlsx", na = "NA")
+
+d2020 <- d |>
+  filter(Year == 2020)
+
+d2020 |>
+  arrange(PTS_S) |>
+  select(Country, Year, PTS_S) |>
+  View()
+
+```
+
+???
+
+*Questions after they work and report back*
+
+<br>
+
+---
+
+background-image: url('libs/Images/background-green_blue_swirl_side.jpg')
+background-size: 100%
+background-position: center
+class: middle
+
+.size70[.center[**Analysis Time!**]]
+
+<br>
+
+.size40[
+4) Focus on the years since 2001 and find us examples of countries that have:
+
+  + Improved the most across the years in the sample, and
+  
+  + Regressed the most across the years in the sample
+]
+
+```{r, eval=FALSE}
+library(tidyverse)
+library(readxl)
+d <- read_excel("../../Data/PTS/PTS-2021.xlsx", na = "NA")
+
+d |> count(Year, PTS_H) |> print(n=100)
+d |> count(Year, PTS_A) |> print(n=300)
+d |> count(Year, PTS_S) |> print(n=300)
+
+d |>
+  select(Country, Year, PTS_S) |>
+  filter(Year %in% c(2001, 2020)) |>
+  pivot_wider(names_from = Year, values_from = PTS_S) |>
+  mutate(
+    Change = `2020` - `2001`
+  ) |> View()
+
+```
+
+???
+
+*Questions after they work and report back*
+
+Report back and takeaways?
+
+
+
+---
+
+background-image: url('libs/Images/background-green_blue_swirl_side.jpg')
+background-size: 100%
+background-position: center
+class: middle
+
+.size70[.center[**Analysis Time!**]]
+
+<br>
+
+.size40[
+5) Go back to 2020 and focus on the OECD region identifier (not individual countries).
+
+Which regions are the most and least problematic? 
+
+Any Surprises?
+]
+
+```{r, eval=FALSE}
+library(tidyverse)
+library(readxl)
+d <- read_excel("../../Data/PTS/PTS-2021.xlsx", na = "NA")
+
+d2020 <- d |>
+  filter(Year == 2020)
+
+d2020 |>
+  group_by(Region) |>
+  summarize(
+    Mean_A = mean(PTS_A, na.rm=TRUE),
+    Mean_H = mean(PTS_H, na.rm=TRUE),
+    Mean_S = mean(PTS_S, na.rm=TRUE)
+  )
+
+d2020 |>
+  group_by(Region) |>
+  summarize(
+    Median_A = median(PTS_A, na.rm=TRUE),
+    Median_H = median(PTS_H, na.rm=TRUE),
+    Median_S = median(PTS_S, na.rm=TRUE)
+  )
+```
+
+???
+
+*Questions after they work and report back*
+
+<br>
+
+BOTTOM LINE, HOW USEFUL IS THE PTS FOR HELPING US TEST THEORIES OF POLITICAL VIOLENCE? STRENGTHS AND WEAKNESSES?
+
+
+
+---
+
+class: middle, slideblue, center
+
+.size60[.center[**For Friday**]]
+
+.size50[
+**Explore the data and codebook for the [CIRIGHTS Data project](https://www.dropbox.com/sh/t8utmzsvde8m63q/AAAs1_WIJTqXurAE5nvEKWE5a?dl=0).**
+
+Make sure you understand the observations and variables enough to play with them in class.
+]
+
+???
+
+For Friday we repeat today's work on the CIRIGHTS data project.
+
+Get ready to work!
+
+
+
+
+
+
+
+
+
+
+

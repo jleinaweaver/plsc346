@@ -1,0 +1,321 @@
+---
+output:
+  xaringan::moon_reader:
+    css: ["default", "extra.css"]
+    lib_dir: libs
+    seal: false
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: '16:9'
+---
+
+```{r, echo = FALSE, warning = FALSE, message = FALSE}
+##xaringan::inf_mr()
+## For offline work: https://bookdown.org/yihui/rmarkdown/some-tips.html#working-offline
+## Images not appearing? Put images folder inside the libs folder as that is the main data directory
+
+library(tidyverse)
+library(readxl)
+library(stargazer)
+##library(kableExtra)
+##library(modelr)
+
+knitr::opts_chunk$set(echo = FALSE,
+                      eval = TRUE,
+                      error = FALSE,
+                      message = FALSE,
+                      warning = FALSE,
+                      comment = NA)
+```
+
+class: slideblue
+
+.size70[**Today's Agenda**]
+
+<br>
+
+.size45[
+.center[
+Evaluate the reports from the US State Department and Amnesty International as sources of information on political violence around the world.
+]]
+
+<br>
+
+.center[.size40[
+  Justin Leinaweaver (Spring 2022)
+]]
+
+???
+
+### Prep for Class
+1. 
+
+<br>
+
+Last week we worked to build conceptual definitions and measurements of political violence using news reports.
+
+I think that's a great way to begin as it helps us learn the process and build out our set of real-world examples.
+
+This week we shift to evaluating the sources used by many academics working in this field.
+
+The PTS and CI RIGHTS projects both use the yearly reports from the US State Department and Amnesty International.
+
+Today we'll focus on the sources and then we'll shift to the projects themselves on Wednesday and Friday.
+
+<br>
+
+With that in mind, please bring a laptop to class Wed and Fri so we can explore the data in class using Excel.
+
+Let me know if you don't have a laptop you could bring to class.
+
+<br>
+
+In addition to all the important work we're doing to understand and measure political violence, it's also time to start working on your first assignment for this class.
+
+
+
+---
+
+background-image: url('libs/Images/background-light_grey.jpg')
+background-size: 100%
+background-position: center
+class: middle
+
+.size50[**Political Violence Case Study**]
+
+.size35[(due Feb 20)
+
+You will write a report that evaluates both the history and current experience of political violence in a single state. 
+
++ Week 3: Explore and evaluate the sources of the data and the measures that exist
+
++ Week 4: Work on the report in class
+
+]
+
+???
+
+Assignment 1
+
+Don't lock in too hard on the specifics here yet.
+
+- More details to come next week.
+
+We want to stay free to explore the material this week before we each zoom in on a single country.
+
+This week we'll explore and evaluate the sources of the data and the measures that exist.
+
+Next week you'll have all three of our class meetings to work and get feedback on your reports.
+
+<br> 
+
+You'll sign up for countries at the end of the week.
+
+- No overlap, first-come first-served
+
+HOWEVER we won't claim countries until the end of this week!
+
+I want us to see where the interesting variation is before you lock into the specifics of the assignment.
+
+
+
+---
+
+background-image: url('libs/Images/background-blue_triangles.jpg')
+background-size: 100%
+background-position: center
+class: middle
+
+.size60[**For Today**]
+
+.size45[
+
+1. Read the coverage of three different countries in the 2020 Country Reports on Human Rights Practices (State Department) and Amnesty International's Annual Reports.
+
+2. Nagel, R. & Nordas, R. (2021, May 7). Report Back Better. *Foreign Policy*.
+
+]
+
+???
+
+Today we review the source data with a focus on evaluating the sources themselves.
+
+Our aim isn't yet to focus in on the country experiences themselves.
+
+Keep your focus on the sources and the pros and cons of using the State Department and Amnesty International reports as opposed to media reporting of current events.
+
+We'll then end by discussing the implications of the Nagel and Nordas piece in Foreign Policy.
+
+EVERYBODY READY TO GO?
+
+
+
+---
+
+background-image: url('libs/Images/background-blue_triangles.jpg')
+background-size: 100%
+background-position: center
+class: middle
+
+.size60[**Reflections Warm-up**]
+
+.size40[
+1. How consistent are these two sources on each country?
+
+2. Do the sources focus on the same things? How redundant are they?
+
+3. How independent are the two sources?
+]
+
+???
+
+On your own, reflect on and summarize the findings of your three country review.
+
+How consistent are these two sources on each country? 
+
+- e.g. Do they each paint the same picture?
+
+Do the two sources appear to emphasize different kinds of political violence? 
+
+- Are they focused on the same things? 
+- How redundant are they? 
+
+What sense do you have that these are two independent sources rather than endogenous ones?
+
+- Do you get the feeling they read and are influenced by each others' reports?
+
+
+
+---
+
+background-image: url('libs/Images/background-blue_triangles.jpg')
+background-size: 100%
+background-position: center
+class: middle, center
+
+.size60[**Small Groups Discussion**]
+
+<br>
+
+.size50[
+What are the .textblue[**strengths**] and .textred[**weaknesses**] of relying on these sources as ways to measure and track political violence around the world?
+]
+
+???
+
+Form small groups of three.
+
+Share your analyses with each other and then make two lists we can put on the board in 10 minutes.
+
+<br>
+
+*ON BOARD*
+
+- ?
+
+
+
+---
+
+background-image: url('libs/Images/03_1-Nagel_Headline.png')
+background-size: 50%
+background-position: top left
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+```{r, echo = FALSE, fig.align = 'right', out.width = '75%'}
+knitr::include_graphics("libs/Images/03_1-Nagel_byline.png")
+```
+
+???
+
+OK, WHAT'S THE CENTRAL ARGUMENT IN THIS PIECE?
+
+*DISCUSS*
+
+("But under the Trump administration, the quality of these reports dropped. Not only did Trump shorten them and reduce their coverage, but when compared to reports produced by previous administrations, they also referred less to women, reproduction, racism, sexual violence and abuse, LGBTQ rights, and refugees.")
+
+("This reduction in quality has had a devastating impact on human rights protection worldwide.")
+
+<br>
+
+HOW DO THE OBSERVATIONS IN THIS ARTICLE IMPACT OUR CENTRAL JOB e.g. EVALUATING AND TRACKING POLITICAL VIOLENCE AROUND THE WORLD?
+
+*DISCUSS*
+
+
+
+---
+
+class: slideblue
+
+.size70[**Today's Agenda**]
+
+<br>
+
+.size45[
+.center[
+Evaluate the reports from the US State Department and Amnesty International as sources of information on political violence around the world.
+]]
+
+<br>
+
+.center[.size40[
+  Justin Leinaweaver (Fall 2021)
+]]
+
+???
+
+Bottom line q's
+
+WHAT ARE THE PROS AND CONS OF USING THESE SOURCES VS MEDIA REPORTING ON CURRENT EVENTS?
+
+<br>
+
+BEST ADVICE FOR HOW AND WHEN THESE MEASURES CAN/SHOULD BE USED AND WHEN THEY ARE LIKELY TOO PROBLEMATIC?
+
+
+
+
+---
+
+class: middle, slideblue
+
+.size60[.center[**For Wednesday**]]
+
+.size40[
+**Explore the data and codebook for the [Political Terror Scale (PTS)](http://www.politicalterrorscale.org/Data/Download.html). Make sure you understand the observations and variables enough to play with them in class.**
+
+*Recommended Links (in syllabus):*
+
+1. [Sorting Rows in Excel](https://www.excel-easy.com/data-analysis/sort.html)
+2. [Filtering Rows in Excel](https://www.excel-easy.com/data-analysis/filter.html)
+3. [Pivot Tables in Excel](https://www.excel-easy.com/data-analysis/pivot-tables.html)
+]
+
+
+
+
+
+
+
