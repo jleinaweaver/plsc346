@@ -1,0 +1,818 @@
+---
+output:
+  xaringan::moon_reader:
+    css: ["default", "extra.css"]
+    lib_dir: libs
+    seal: false
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: '16:9'
+---
+
+```{r, echo = FALSE, warning = FALSE, message = FALSE}
+##xaringan::inf_mr()
+## For offline work: https://bookdown.org/yihui/rmarkdown/some-tips.html#working-offline
+## Images not appearing? Put images folder inside the libs folder as that is the main data directory
+
+library(tidyverse)
+library(readxl)
+##library(stargazer)
+##library(kableExtra)
+##library(modelr)
+
+knitr::opts_chunk$set(echo = FALSE,
+                      eval = TRUE,
+                      error = FALSE,
+                      message = FALSE,
+                      warning = FALSE,
+                      comment = NA)
+```
+
+class: slideblue
+
+.size70[**Today's Agenda**]
+
+
+.size50[.center[
+
+The state IS violence 
+
+OR 
+
+The state USES violence
+]]
+
+
+<br>
+
+.center[.size40[
+  Justin Leinaweaver (Spring 2022)
+]]
+
+???
+
+### Prep for Class
+1. ...
+
+<br>
+
+Today we continue our discussion of the theoretical roots of violence and the state.
+
+
+
+---
+
+background-image: url('libs/Images/background-red.png')
+background-size: 100%
+background-position: center
+class: middle, center, inverse
+
+.size60[**What explains the variation in how and why states use violence against their citizens?**]
+
+???
+
+On Monday we started our work on this question:
+
+What explains the variation in how and why states use violence against their citizens?
+
+--
+
+<br>
+
+.size50[
+Weber (1946) "Politics as Vocation"
+]
+
+???
+
+ON MONDAY, HOW DID GERMAN SOCIOLOGIST MAX WEBER ANSWER THIS QUESTION?
+
+(SLIDE)
+
+
+
+---
+
+class: middle, slidered
+
+.size45[
+**Weber: The Modern State IS violence**
+
++ A .textred[**compulsory**] association
+
++ Organizes .textred[**domination**] within a territory
+
++ .textred[**Monopolizes**] the .textred[**legitimate use of force**]
+
++ Mass .textred[**obedience**] required
+]
+
+???
+
+According to Weber, the state IS violence
+
+Without violence there is no state
+
+This means thinking of violence as a tool somewhat misses the point.
+
+Fish gotta swim, man's gotta breathe and states exist only so long as they control and use violence.
+
+<br>
+
+IN WHAT SPECIFIC WAYS IS THIS A USEFUL MODEL OF POLITICAL VIOLENCE?
+
+AND IN WHAT SPECIFIC WAYS DOES THIS MODEL MAKE BAD PREDICTIONS?
+
+<br>
+
+The problem is that this model predicts violence in basically every circumstance.
+
+While the model may be simple, intuitive and somewhat elegant, it's quite limited for explaining actual variation in the world.
+
+
+---
+
+background-image: url('libs/Images/background-red.png')
+background-size: 100%
+background-position: center
+class: middle, center
+
+.size50[
+Olson, Mancur. (1993). Dictatorship, Democracy, and Development. *The American Political Science Review*. 87(3): 567–76.
+]
+
+<br>
+
+.size60[
+**The state USES violence**
+]
+
+???
+
+The reading I gave you for today gives us an alternative model for thinking about politics, the state and violence.
+
+Contra Weber, the state is not definitionally violence.
+
+Olson wants us to see the state as actors pursuing goals who can use violence to achieve their aims.
+
+I feel strongly that this is an important evolution in explaining and understanding political violence.
+
+
+
+
+---
+
+background-image: url('libs/Images/05_1-political_leaders.jpg')
+background-size: 100%
+background-position: center
+
+???
+
+Quick aside.
+
+I love this article.
+
+This was one of those readings I did as a grad student that helped me immeasurably in helping me learn to think like a social scientist.
+
+It was one of the first times I was really able to see the connection between theory and the world I live in.
+
+Second, it helped me understand how limited my view of countries as discrete "types" of regime was.
+
+- Democracy and dictatorship as categories mask more than they reveal.
+
+- Olson is challenging us to acknowledge that All governments are simply trying to organize a functional society, they just use different policies and institutions to do it.
+
+COOL, RIGHT?
+
+<br>
+
+OK, WHERE DOES OLSON START? 
+
+- WHAT IS THE KEY VARIATION IN THE WORLD HE IS TRYING TO EXPLAIN?
+
+(SLIDE)
+
+
+
+---
+
+```{r, fig.retina=3, fig.align='center', out.width='100%', fig.height=5, fig.width=8}
+## Scatterplot regime type and economic development
+## Super blunt force test
+
+## input data
+d1 <- read_excel("Data/p5v2018.xls", guess_max = 10000, na = ".") |>
+  filter(year == 2018) |>
+  select(country, ccode, year, democ, autoc, polity2)
+
+d2 <- read_excel("Data/WDI-GDP-2018_2021-11-30.xlsx", na = "NA")
+
+## Identify matching fields
+# library(countrycode)
+# countrycode::guess_field(d1$ccode) # p4n
+# countrycode::guess_field(d2$code) # wb
+
+## Match and merge
+d1$newcode <- countrycode::countrycode(d1$ccode, origin = "p4n", destination = "wb")
+
+d <- inner_join(d1, d2, by = c("newcode" = "code"))
+
+## Build a series of visualizations
+
+# Map of GDP pc in 2018
+# install libudunits2-dev and libgdal-dev in synaptic
+library(sf)
+library(rnaturalearth)
+library(rnaturalearthdata)
+
+## Use rnaturalearth to define world map data
+worldmap <- ne_countries(scale = 'medium', type = 'map_units',
+                         returnclass = 'sf')
+
+# ## Identify country identifiers
+# countrycode::guess_field(worldmap$wb_a3) #97%
+# countrycode::guess_field(worldmap$un_a3) #98.7% genc3n
+# countrycode::guess_field(worldmap$iso_n3) #98.3
+# 
+# countrycode::guess_field(d$ccode) #p4n
+d$newcode2 <- countrycode::countrycode(d$ccode, origin = "p4n", destination = "genc3n")
+
+## Merge WDI and polity data onto worldmap
+d10 <- left_join(worldmap, d, by = c("un_a3" = "newcode2"))
+
+d10 |>
+  mutate(
+    gdp_pc_cat = cut(gdp_pc, breaks = quantile(d10$gdp_pc, na.rm = T, probs = c(0, .33, .66, 1))[1:4], include.lowest = TRUE, labels = c("Poorest 33%", "Middle 33%", "Richest 33%"))
+  ) |>
+  filter(!is.na(gdp_pc_cat)) |>
+  ggplot() +
+  geom_sf(aes(fill = gdp_pc_cat)) +
+  labs(fill = "", title = "GDP per capita (2018 USD)") +
+  theme(legend.position = "bottom") +
+  scale_fill_viridis_d(direction = -1, begin = .5)
+
+```
+
+???
+
+Economic development
+
+In other words, why are some states richer than others?
+
+<br>
+
+Here we see a map of GDP per capita levels in 2018
+
+- Data taken from the WB's WDI database
+
+- GDP is a rough measure of the economic value of all the goods and services produced in a country.
+
+- Inestopedia: Gross domestic product (GDP) is the total monetary or market value of all the finished goods and services produced within a country’s borders in a specific time period.
+
+<br>
+
+WHAT DO WE LEARN FROM THIS MAP?
+
+<br>
+
+OK NOW, AND MOST RELEVANT FOR OUR WORK THIS WEEK, WHAT IS THE KEY PREDICTOR OLSON IS FOCUSING ON TO EXPLAIN THESE DIFFERENCES?
+
+(SLIDE)
+
+
+---
+
+```{r, fig.retina=3, fig.align='center', out.width='100%', fig.height=5, fig.width=8}
+# Map of polity2 in 2018
+d10 |>
+  mutate(
+    polity_cat = cut(polity2, breaks = c(-10, -7, 7, 10), include.lowest = TRUE, labels = c("Autocracy", "Anocracy", "Democracy"))
+  ) |>
+  filter(!is.na(polity_cat)) |>
+  ggplot() +
+  geom_sf(aes(fill = polity_cat)) +
+  labs(fill = "", title = "Polity Scores (2018)") +
+  theme(legend.position = "bottom") +
+  scale_fill_manual(values = c("red", "orange", "skyblue3"))
+
+# autocs <- d10 |>
+#   as_tibble() |>
+#   filter(polity2 <= -7) |>
+#   select(country.y)
+```
+
+???
+
+Regime type
+
+Here we see a rough estimate of countries in 2018 by regime type using the Polity Project's data.
+
+We'll explore this project, and these specific classifications, more next week.
+
+<br>
+
+WHAT DO WE LEARN FROM THIS MAP?
+
+<br>
+
+Let's combine these two pieces of data and see if that helps us understand the puzzle Olson (1993) is trying to explain.
+
+
+
+---
+
+```{r, fig.retina=3, out.width='95%', fig.asp=0.618}
+# Scatter plot of both
+p1 <- ggplot(data = d, aes(x = polity2, y = gdp_pc)) +
+  scale_y_log10(breaks = c(1e3, 1e4, 1e5), labels = c("$1k", "$10k", "$100k")) +
+  theme_bw() +
+  labs(x = "Polity V Project", y = "GDP per capita (2018 USD)")
+
+p1
+```
+
+???
+
+Let's set up a scatter plot so we can see if any relationship appears evidence between development and regime type.
+
+
+
+
+---
+
+```{r, fig.retina=3, out.width='95%', fig.asp=0.618}
+p1 + 
+  annotate("rect", xmin=-10.1, xmax=-6, ymin=0, ymax=1.5e5, fill = "pink", alpha = .5) +
+  annotate("rect", xmin=6, xmax=10.1, ymin=0, ymax=1.5e5, fill = "lightblue", alpha = .5) +
+  geom_point() +
+  annotate("text", x = -8, y = 250, label = "Autocracy", color = "red") +
+  annotate("text", x = 8, y = 250, label = "Democracy", color = "blue")
+```
+
+???
+
+WHAT DO YOU SEE IN THESE POINTS?
+
+- ANY EVIDENT RELATIONSHIP BETWEEN REGIME TYPE AND ECONOMIC DEVELOPMENT?
+
+(SLIDE)
+
+
+---
+
+```{r, fig.retina=3, out.width='95%', fig.asp=0.618}
+p1 + 
+  annotate("rect", xmin=-10.1, xmax=-6, ymin=0, ymax=1.5e5, fill = "pink", alpha = .5) +
+  annotate("rect", xmin=6, xmax=10.1, ymin=0, ymax=1.5e5, fill = "lightblue", alpha = .5) +
+  geom_point() +
+  annotate("text", x = -8, y = 250, label = "Autocracy", color = "red") +
+  annotate("text", x = 8, y = 250, label = "Democracy", color = "blue") +
+  geom_smooth(data = subset(d, polity2 < 0), method = "lm", color = "red") +
+  geom_smooth(data = subset(d, polity2 > 0), method = "lm", color = "blue")
+```
+
+???
+
+It appears from this that the richest states in the world are either very democratic or very autocratic.
+
+It's the middle ground where the poorest countries seem to congregate.
+
+And this is the observation that helps to drive home Olson's theoretical argument AND what connects his paper to our questions about violence.
+
+SOMEBODY TAKE A STAB, HOW DOES THIS PLOT CONNECT OLSON'S PAPER ON ECONOMIC DEVELOPMENT TO OUR WORK ON POLITICAL VIOLENCE?
+
+(SLIDE)
+
+
+
+---
+
+background-image: url('libs/Images/05_2-soldier_flower_afghan_girl.webp')
+background-size: 100%
+background-position: center
+class: middle
+
+???
+
+Per Olson, the state has a monopoly on violence because we need it to.
+
+The state is an attempt to organize violence in productive ways!
+
+Violence is a political tool to build growth!
+
+
+
+
+---
+
+background-image: url('libs/Images/background-red.png')
+background-size: 100%
+background-position: center
+class: middle
+
+.size50[.center[**Olson (1993) "Dictatorship, Democracy, and Development"**]]
+
+.size40[
+1. **The Intro**
+2. .textgrey[The First Blessing of the Invisible Hand]
+3. .textgrey[The Grasping Hand]
+4. .textgrey[The Reach of Dictatorships and Democracies Compared]
+5. .textgrey[Long Live the King]
+6. .textgrey[Democracy, Individual Rights and Economic Development]
+7. .textgrey[The Improbable Transition]
+]
+
+???
+
+Let's work to clarify Olson's model of state politics
+
+And if, by the end, we feel better about human nature and society, all the better.
+
+<br>
+
+Each section is making part of the argument, let's unpack each one in an effort to diagram the overarching model
+
+Focus first on the intro section.
+
+I think this is a direct response to Weber's view of human nature and the necessity of violence.
+
+WHAT IS OLSON'S RESPONSE TO WEBER?
+
+- WE DON'T NEED TO ASSUME HUMAN NATURE IS BAD, DO WE?
+
+<br>
+
+Violence is not because people are bad, it's because big groups are harder to manage!
+
+- Not about bad motives, lack of trustworthiness
+
+Small groups can provide peaceful order by voluntary agreement because 
+
+1. each obtains a gain large enough to make providing the whole good worth it, 
+
+2. threats of non-cooperation as punishment for bad actions effective.
+
+<br>
+
+Voluntary action insufficient in large groups because the individual's benefit from maintaining the peace is tiny (total / population) but they bear the whole cost of their efforts to achieve it.
+
+
+
+
+---
+
+background-image: url('libs/Images/background-red.png')
+background-size: 100%
+background-position: center
+class: middle
+
+.size50[.center[**Olson (1993) "Dictatorship, Democracy, and Development"**]]
+
+.size40[
+1. .textgrey[The Intro]
+2. **The First Blessing of the Invisible Hand**
+3. .textgrey[The Grasping Hand]
+4. .textgrey[The Reach of Dictatorships and Democracies Compared]
+5. .textgrey[Long Live the King]
+6. .textgrey[Democracy, Individual Rights and Economic Development]
+7. .textgrey[The Improbable Transition]
+]
+
+???
+
+OK, HOW DOES OLSON DEVELOP HIS ARGUMENT IN THE SECOND SECTION?
+
+- WHY SHOULD VILLAGERS PREFER BEING DOMINATED BY A LOCAL WARLORD WHO CONTINUOUSLY STEALS FROM THEM OVER ROVING BANDITS WHO ARRIVE, STEAL AND THEN LEAVE THEM ALONE?
+
+*Encourage Discussion*
+
+---
+
+background-image: url('libs/Images/05_2-Mongols.jpg')
+background-size: 100%
+background-position: center
+
+???
+
+The rational, self-interested leader of a band of roving bandits is led, as though by an invisible hand, to settle down, wear a crown, and replace anarchy with government.
+
+- It doesn't matter how bloodthirsty the bandit, profit is maximized by becoming my protector!
+
+- If you maintain monopoly on theft in your domain and apply regular taxes that only claim part of villager income, the villagers keep their incentive to keep producing! 
+
+- **A less than total claim on a growing economy makes you richer than taking so much it leaves no incentive for villagers to produce.**
+
+<br>
+
+So, Olson argues you, as the bandit, will protect me from harm just to make yourself better off.
+
+BUT WHY DOES THAT LOGIC EXTEND TO PROVIDING ME PUBLIC GOODS?
+
+- I GET THAT YOU WANT MORE PROFIT, BUT HOW DOES PROVIDING ME WITH BENEFITS DO THAT?
+
+(SLIDE: Illustration)
+
+
+---
+
+background-image: url('libs/Images/05_2-Autocrat_Public_Goods1.png')
+background-size: 100%
+background-position: center
+
+???
+
+Imagine you are the local dictator.
+
+The decision to install a wall around your village is an easy one even if the initial cost is high.
+
+In the wall-less scenario:
+- There are constant threats to your control by outside groups
+- The villagers have zero incentive to invest heavily in the future
+
+So, you spend the money on the wall because the return to your investment is massive.
+
+
+
+---
+
+background-image: url('libs/Images/05_2-Autocrat_Public_Goods3.png')
+background-size: 100%
+background-position: center
+
+???
+
+The decision to build extensive irrigation systems can also be seen through this lens as an easy choice, even for a totalitarian leader.
+
+Farm productivity explodes if irrigation not done by hand anymore.
+
+Again, you reap a huge benefit beyond the large cost of the intial investment.
+
+QUOTE (if needed): "The larger or more encompassing the stake an organization or individual has in a society, the greater the incentive the organization or individual has to take action to provide public goods for the society. If an autocrat received one-third of any increase in the income of his domain in increased tax collections, he would then get one-third of the benefits of the public goods he provided. He would then have an incentive to provide public goods up to the point where the national income rose by the reciprocal of one-third, or three, from his last unit of public good expenditure" (569).
+
+
+
+---
+
+background-image: url('libs/Images/background-red.png')
+background-size: 100%
+background-position: center
+class: middle
+
+.size50[.center[**Olson (1993) "Dictatorship, Democracy, and Development"**]]
+
+.size40[
+1. .textgrey[The Intro]
+2. .textgrey[The First Blessing of the Invisible Hand]
+3. **The Grasping Hand**
+4. .textgrey[The Reach of Dictatorships and Democracies Compared]
+5. .textgrey[Long Live the King]
+6. .textgrey[Democracy, Individual Rights and Economic Development]
+7. .textgrey[The Improbable Transition]
+]
+
+???
+
+Ok, now jump to the next section, "The grasping hand."
+
+HOW DOES THE ARGUMENT IN THIS SECTION SHOW THE LIMIT OF DICTATORSHIPS AND PUBLIC GOODS PROVISION?
+
+- IT'S NOT ALL GOOD SELECTING A STATIONARY BANDIT IF YOU'RE ONE OF THE FARMERS, RIGHT?
+
+(SLIDE)
+
+
+
+---
+
+background-image: url('libs/Images/05_2-cows_water.png')
+background-size: 100%
+background-position: center
+
+
+???
+
+The danger is that you will stop investing when the return doesn't far exceed the cost of the investment.
+
+Even if an investment would make the lives of your people better.
+
+If production remains the same after the investment, then the stationary bandit shouldn't invest.
+
+"Thus he is not like the wolf that preys on the elk, but more like the rancher who makes sure that his cattle are protected and given water" (569).
+
+This device makes it easy for the cows to get their own water, now they just have to learn to take turns.
+
+Why pay to install another pump just to speed the process if the badit king doesn't have to?
+
+<br>
+
+In the language of the article, Olson argues the dictator will set a revenue-maximizing tax rate.
+
+WHAT DOES THAT MEAN IN ENGLISH?
+
+(SLIDE)
+
+
+---
+
+background-image: url('libs/Images/05_2-Autocrat_Public_Goods4.png')
+background-size: 100%
+background-position: center
+
+???
+
+(He is going to take every spare coin you earn)
+
+- Anything that doesn't keep you productive goes in his pocket.
+
+"Though the subjects of the autocrat are better off than they would be under anarchy, they must endure taxes or other impositions so high that, if they were increased further, income would fall by so much that even the autocrat, who absorbs only a portion of the fall in income in the form of lower tax collections, would be worse off" (570).
+
+MAKE SENSE?
+
+Here we see Olson start to draw out the distinction between the regime types.
+
+
+
+---
+
+```{r, fig.retina=3, out.width='95%', fig.asp=0.618}
+p1 + 
+  annotate("rect", xmin=-10.1, xmax=-6, ymin=0, ymax=1.5e5, fill = "pink", alpha = .5) +
+  annotate("rect", xmin=6, xmax=10.1, ymin=0, ymax=1.5e5, fill = "lightblue", alpha = .5) +
+  geom_point() +
+  annotate("text", x = -8, y = 250, label = "Autocracy", color = "red") +
+  annotate("text", x = 8, y = 250, label = "Democracy", color = "blue") +
+  geom_smooth(data = subset(d, polity2 < 0), method = "lm", color = "red") +
+  geom_smooth(data = subset(d, polity2 > 0), method = "lm", color = "blue")
+```
+
+???
+
+Let's go back to our data.
+
+NOW USE THE OLSON MODEL SO FAR TO HELP US INTERPRET THE STORY BEHIND THESE DATA POINTS?
+
+<br>
+
+1) Wealth is highest at the ends because safety is being actively provided.
+
+- At both ends, the state uses violence to ensure production is protected and incentivized.
+
+And... SLIDE
+
+
+
+---
+
+```{r, fig.retina=3, out.width='95%', fig.asp=0.618}
+p1 + 
+  annotate("rect", xmin=-10.1, xmax=-6, ymin=0, ymax=1.5e5, fill = "pink", alpha = .5) +
+  annotate("rect", xmin=6, xmax=10.1, ymin=0, ymax=1.5e5, fill = "lightblue", alpha = .5) +
+  geom_point() +
+  annotate("text", x = -8, y = 250, label = "Autocracy", color = "red") +
+  annotate("text", x = 8, y = 250, label = "Democracy", color = "blue") +
+  geom_smooth(data = subset(d, polity2 < 0), color = "red") +
+  geom_smooth(data = subset(d, polity2 > 0), color = "blue")
+```
+
+???
+
+2) The absolute level of wealth appears higher for the democracies than for the autocracies!
+
+Autocratic wealth is highest where control is most absolute, but wealth on the right side of the plot increases more quickly with each step towards more democracy! 
+
+<br>
+
+HOW DOES OLSON EXPLAIN THIS DISCREPANCY?
+
+- WHY DO DEMOCRACIES GROW BETTER AND FASTER ACCORDING TO THE SECTION ON "The reach of dictatorships and democracies compared"?
+
+<br>
+
+Reducing tax rates at the very high end (where the stationary bandit places it) returns the benefits of economic growth to more people.
+
+1) Government represents a majority (hopefully), so policies with wider benefits are valued (more public goods).
+
+2) More benefit for working -> More working!
+
+<br>
+
+JUST OUT OF CURIOSITY, ACCORDING TO OLSON WHAT HAPPENS WHEN THE GOVERNMENT COMES TO REPRESENT A NARROWER AND NARROWER SET OF INTERESTS?
+
+- SAY THROUGH GERRYMANDERING, A DENIAL OF SCIENCE AND ASYMMETRIC POLARIZATION?
+
+(Sh*t goes bad again)
+
+- Only prefer targeted tax cuts (e.g. for the wealthy) and much less incentive to provide public goods.
+
+<br>
+
+HOW FREAKING COOL IS THIS MODEL?
+
+Hot damn!
+
+
+
+---
+
+background-image: url('libs/Images/background-red.png')
+background-size: 100%
+background-position: center
+class: middle
+
+.size50[.center[**Olson (1993) "Dictatorship, Democracy, and Development"**]]
+
+.size40[
+1. .textgrey[The Intro]
+2. .textgrey[The First Blessing of the Invisible Hand]
+3. .textgrey[The Grasping Hand]
+4. .textgrey[The Reach of Dictatorships and Democracies Compared]
+5. **Long Live the King**
+6. **Democracy, Individual Rights and Economic Development**
+7. .textgrey[The Improbable Transition]
+]
+
+???
+
+Sections five and six introduce the importance of time to this model.
+
+WHAT ARE THE KEY ELEMENTS DICTATORS MUST PROVIDE TO ENSURE SUSTAINED GROWTH?
+
+<br>
+
+Dictators must assure citizens he:
+
+1. Has a long time-horizon e.g. a promise citizens that they will be protected from theft now AND from him in the future (expropriation).
+
+2. Will enforce contracts 
+
+3. will ensure a stable currency
+
+<br>
+
+AND WHY IS THE LIST OF THINGS TO PROVIDE LONGER FOR DEMOCRACIES?
+
+- SHOULDN'T IT BE EASIER FOR DEMOCRACIES TO FOSTER GROWTH?
+
+(SLIDE)
+
+
+
+---
+
+background-image: url('libs/Images/05_2-too_many_people.jpg')
+background-size: 100%
+background-position: center
+
+???
+
+No!
+
+Democracies must do all three AND provide some guarantee against the state, the most powerful actor in the system.
+
+Remember the poor villager's quote:
+
+- "Monarchy is the best kind of government because the King is then owner of the country. Like the owner of a house, when the wiring is wrong, he fixes it" (26).
+
+In a democracy everybody owns the house together, so nobody owns it...
+
+The majority may prioritize fixing only their part of it.
+
+Or might decide to actively take away the stuff of the minority for their own gain.
+
+"An economy will be able to reap all potential gains from investment and from long-term transactions only if it has a government that is believed to be both strong enough to last and inhibited from violating individual rights to property and rights to contract enforcement (572).
+
+
+
+---
+
+background-image: url('libs/Images/background-red.png')
+background-size: 100%
+background-position: center
+class: middle, center, inverse
+
+.size60[**What explains the variation in how and why states use violence against their citizens?**]
+
+???
+
+ALRIGHT, TIE THIS ALL UP FOR ME.
+
+HOW DOES OLSON (1993) ANSWER THE QUESTION WE STARTED WITH?
+
+<br>
+
+The state uses violence to ensure a productive society.
+
+Different kinds of state will use that violence in different ways and for different aims.
+
+Bottom line, the existence of state violence doesn't mean the state or the people are bad.
+
+We have to examine how the violence is used and for what aims in order to understand it.
+
+<br>
+
+There's so much more to explore in this paper but there's no way we haven't run out of time!
+
+
+

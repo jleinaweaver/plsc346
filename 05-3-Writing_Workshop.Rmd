@@ -1,0 +1,87 @@
+---
+output:
+  xaringan::moon_reader:
+    css: ["default", "extra.css"]
+    lib_dir: libs
+    seal: false
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: '16:9'
+---
+
+```{r, echo = FALSE, warning = FALSE, message = FALSE}
+##xaringan::inf_mr()
+## For offline work: https://bookdown.org/yihui/rmarkdown/some-tips.html#working-offline
+## Images not appearing? Put images folder inside the libs folder as that is the main data directory
+
+library(tidyverse)
+library(readxl)
+##library(stargazer)
+##library(kableExtra)
+##library(modelr)
+
+knitr::opts_chunk$set(echo = FALSE,
+                      eval = TRUE,
+                      error = FALSE,
+                      message = FALSE,
+                      warning = FALSE,
+                      comment = NA)
+```
+
+class: slideblue
+
+.size70[**Today's Agenda**]
+
+<br>
+
+<br>
+
+.size60[.center[
+
+Writing Workshop
+]]
+
+<br>
+
+<br>
+
+<br>
+
+.center[.size40[
+  Justin Leinaweaver (Spring 2022)
+]]
+
+???
+
+### Prep for Class
+1. ...
+
+<br>
+
+
+
+---
+
+background-image: url('libs/Images/background-light_grey.jpg')
+background-size: 100%
+background-position: center
+class: middle
+
+.size50[**Political Violence Case Study**]
+
+.size35[(due Feb 20)
+
+Use all of the data sources from last week to write a report on **one country** that:
+
+- **Summarizes AND analyzes** its recent history of political violence (e.g. over the last ten years), and 
+
+- **Makes an argument** about what the current CIRIGHTS codings should be based on the 2020 Country Reports on Human Rights Practices from the State Department
+]
+
+???
+
+ANY QUESTIONS ON THE ASSIGNMENT?
+
+
