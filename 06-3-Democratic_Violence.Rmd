@@ -1,0 +1,154 @@
+---
+output:
+  xaringan::moon_reader:
+    css: ["default", "extra.css"]
+    lib_dir: libs
+    seal: false
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: '16:9'
+---
+
+```{r, echo = FALSE, warning = FALSE, message = FALSE}
+##xaringan::inf_mr()
+## For offline work: https://bookdown.org/yihui/rmarkdown/some-tips.html#working-offline
+## Images not appearing? Put images folder inside the libs folder as that is the main data directory
+
+library(tidyverse)
+library(readxl)
+library(stargazer)
+##library(kableExtra)
+##library(modelr)
+
+knitr::opts_chunk$set(echo = FALSE,
+                      eval = TRUE,
+                      error = FALSE,
+                      message = FALSE,
+                      warning = FALSE,
+                      comment = NA)
+```
+
+class: slideblue
+
+.size70[**Today's Agenda**]
+
+<br>
+
+.size40[.center[
+Bring to class a **real-world case** that provides an example of an **democracy** using **violence against its own citizens**.]
+
++ Submit your case to our shared doc in APA format (no overlap; first-come, first-served)
+]
+
+<br>
+
+.center[.size40[
+  Justin Leinaweaver (Spring 2022)
+]]
+
+???
+
+### Prep for Class
+1. ...
+
+<br>
+
+HAS EVERYBODY SUBMITTED AND CODED THEIR SECOND CASE?
+
+ALL CITATIONS IN APA FORMAT?
+
+*Do a quick check?*
+
+
+
+
+---
+
+background-image: url('libs/Images/06_3-liberty_cartoon.webp')
+background-size: 50%
+background-position: left
+class: slidered
+
+.pull-right[
+
+<br>
+
+<br>
+
+.size50[.center[
+What happened? 
+
+Why is this a democracy? 
+
+Why is this political violence?
+]]]
+
+???
+
+Ok, let's briefly hear the new cases.
+
+Everybody take a moment to get ready to present their case as an answer to these three questions.
+
++ What specific thing happened?
+
++ What aspect of this state makes it a democracy (per Polity)
+
++ And why does this event meet our definition of political violence?
+
+*Present Each and Discuss to clarify*
+
+<br>
+
+DO WE NEED NEW VARIABLES TO CODE THE IMPORTANT VARIATION IN THESE CASES?
+
+*If yes, add them and everybody code their cases*
+
+<br>
+
+Ok, Let's form small groups and start working on the QCA data.
+
+
+---
+
+background-image: url('libs/Images/background-light_grey.jpg')
+background-size: 100%
+background-position: center
+class: middle
+
+.size40[.center[**Brainstorm Hypotheses using the QCA**]]
+
+.size40[
+1. When or how are dictatorships more likely to use political violence against their own citizens?
+
+2. When or how are democracies more likely to use political violence against their own citizens?
+
+3. When or how governments of any type are more likely to use political violence against their own citizens?
+]
+
+???
+
+Small Groups
+
+Based on our QCA data construct two hypotheses for each of the following three categories (testable implications)
+
+- When or how dictatorships are more likely to use political violence against their own citizens?
+- When or how democracies are more likely to use political violence against their own citizens?
+- When or how governments of any type are more likely to use political violence against their own citizens?
+
+<br>
+
+*Share hypotheses and discuss*
+
+<br>
+
+Remember, inference would require NEW cases with variation on both the predictors AND the outcome! 
+
+WHICH WOULD BE THE MOST PROMISING PLACES TO START IF WE WERE LAUNCHING A RESEARCH PROJECT? WHY?
+
+
+
+
+
+
