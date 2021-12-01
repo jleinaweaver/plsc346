@@ -85,3 +85,17 @@ Use all of the data sources from last week to write a report on **one country** 
 ANY QUESTIONS ON THE ASSIGNMENT?
 
 
+
+---
+
+class: middle, slideblue
+
+.size70[**For Monday**]
+
+.size40[
+Explore the data and codebook for the Polity5 Project (*Political Regime Characteristics and Transitions, 1800-2018*). 
+
+- Make sure you understand the observations and variables enough to play with them in class, and
+
+- Bring a computer to class so we can work with the data.
+]

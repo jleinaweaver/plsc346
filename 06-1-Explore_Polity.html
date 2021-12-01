@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>06-1-Explore_Polity.knit</title>
+    <meta charset="utf-8" />
+    <script src="libs/header-attrs-2.11/header-attrs.js"></script>
+    <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <link rel="stylesheet" href="extra.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+
+
+
+
+class: slideblue
+
+.size70[**Today's Agenda**]
+
+&lt;br&gt;
+
+.size50[.center[
+Explore the Polity5 Project
+
+*Political Regime Characteristics and Transitions, 1800-2018*
+]]
+
+&lt;br&gt;
+
+.center[.size40[
+  Justin Leinaweaver (Spring 2022)
+]]
+
+???
+
+### Prep for Class
+1. ...
+
+&lt;br&gt;
+
+Get organized as you come in!
+
+Make sure you have the data and codebook open and are ready to work with them.
+
+
+
+---
+
+background-image: url('libs/Images/background-red.png')
+background-size: 100%
+background-position: center
+class: middle, center, inverse
+
+.size60[**What explains the variation in how and why states use violence against their citizens?**]
+
+&lt;br&gt;
+
+.size45[
+The state IS violence (Weber)
+
+vs
+
+We NEED the state to use violence (Olson)
+
+]
+
+???
+
+In this secton of the course we've begun building out the tools we need to answer this question.
+
+Last week we examined two theoretical frameworks that each aimed to help us understand the relationship between "the state" and "violence."
+
+WHAT STUCK WITH YOU FROM LAST WEEK?
+
+- ANYTHING USEFUL?
+
+&lt;br&gt;
+
+Clearly our investigation of violence by states will require us to spend some time digging into the institutions that make up states.
+
+
+
+---
+
+background-image: url('libs/Images/06_1-polity5.png')
+background-size: 40%
+background-position: center
+class: slideblue
+
+???
+
+Let's start big picture. 
+
+The polity variable is probably the most used measure of regime type in the academic literature.
+
++ By the end of today you'll have a better sense of what that means for our understanding of state behavior.
+
+&lt;br&gt;
+
+OK, PER PAGE 1 OF THE CODEBOOK, WHAT IS A 'POLITY' ACCORDING TO THIS PROJECT AND WHY DO THEY PREFER THAT CONCEPT TO 'THE STATE'?
+
+(SLIDE)
+
+
+
+
+---
+
+class: middle, slideblue
+
+# What is a polity?
+.size35[
++ All 'Polities' (or governments) are examples of 'authority patterns'.
+
++ 'Authority patterns' are "a set of asymmetric relations among hierarchically ordered members of a social unit that involves the  direction of the unit.'
+
++ 'Direction of the unit' involves defining its goals, regulating the conduct of its members and allocating / coordinating the roles within it.
+]
+
+???
+
+CAN ANYBODY TRANSLATE THIS INTO ENGLISH FOR US?
+
+(This sounds a lot like a super fancy way of explaining what a government does.)
+
+- Hierarchy: It is above the people
+- Asymmetric relations: It has powers over you that you don't have over it
+- Defines goals, makes rules and appoints officers
+
+&lt;br&gt;
+
+SO, WHY DON'T THEY JUST REFER TO THEIR PROJECT AS ANALYZING STATES?
+
+- ISN'T EACH ROW OF THEIR DATA NAMED FOR A COUNTRY ANYWAY?
+
+(1. It avoids the problem of having to settle disputes over recognized vs unrecognized states.)
+
+(2. It makes coding easier in cases with disputed authority/fragmentation. Focus on a specific pattern of authority)
+
+
+*Notes*
+
++ Areas within a state's "territorial space may be removed and secured from central state control by organized rebel and/or foreign forces or through the benign or malignant neglect of central authorities.
+
++ These separate areas may be  effectively  administered  by  traditional,  separatist,  or  revolutionary  authorities  and,  thus, constitute separate polities that operate outside the legally recognized polity of the state (non-state or  anti-state  actors).
+
+
+
+---
+
+class: slideblue
+
+.pull-left[
+&lt;img src="libs/Images/06_1-polity5.png" width="90%" style="display: block; margin: auto;" /&gt;
+]
+
+
+.pull-right[
+
+&lt;br&gt;
+
+&lt;br&gt;
+
+&lt;br&gt;
+
+.size40[
+**Key Concepts** (p14-16)
+
++ "Institutionalized Democracy"
+
++ "Institutionalized Autocracy"
+]]
+
+???
+
+Ok, hopefully this will all get clearer as we dig into the regime type classifications.
+
+The first paragraph under each subsection (democracy and autocracy) defines the two regime types.
+
+Everybody read these so we can discuss them.
+
+Don't worry about the component measures yet. 
+
+WHAT ARE THE PROS AND CONS OF DEFINING DEMOCRACY AND DICTATORSHIP THESE WAYS?
+
+- ANYTHING IMPORTANT YOU WOULD ARGUE IS MISSING? 
+
+&lt;br&gt;
+
+(e.g. civil liberties? Or does the guarantee of meaningful participation include these things automatically)
+
+
+
+
+---
+
+class: middle, slideblue
+
+.pull-left[
+.size70[.center[**Democ**]]
+
+&lt;br&gt;
+
+&lt;img src="libs/Images/06_1-Democ.png" width="100%" style="display: block; margin: auto;" /&gt;
+]
+
+.pull-right[
+.size70[.center[**Autoc**]]
+
+&lt;br&gt;
+
+&lt;img src="libs/Images/06_1-autoc.png" width="100%" style="display: block; margin: auto;" /&gt;
+]
+
+???
+
+Now let's talk about the component measures (p20-29).
+
+These two sets of coding rules represent the operationalizations for each concept.
+
+In Pairs: Everybody take a few minutes to evaluate these.
+
+HOW CONFIDENT ARE YOU THAT THESE INDICES WILL PRODUCE VALID AND RELIABLE MEASURES OF EACH REGIME TYPE?
+
+- WHICH COMPONENTS DO YOU BELIEVE WILL BE EASIEST TO CODE?
+
+- WHICH THE HARDEST? WHY?
+
+
+---
+
+background-image: url('libs/Images/06_1-polity_formula.png')
+background-size: 100%
+background-position: center
+
+???
+
+As I noted before, the polity score (polity2 specifically) is probably the most used measure of regime type in the academic literature.
+
+It is calculated by subtracting the Autoc score from the Democ score for each state in each year.
+
+&lt;br&gt;
+
+Before we dig into the data, one important note to discuss.
+
+EVERYBODY READ THE ENTRY ON P16-17 '2.4 POLITY' AND EXPLAIN TO ME THEIR HUGE AND FREQUENTLY OVERLOOKED NOTE OF CAUTION.
+
+(Autocracy and democracy are NOT the opposite ends of some linear dimension, they cover overlapping institutional designs especially in the middle of the polity2 scale) 
+
+"Note: The POLITY score was added to the Polity IV data series in **recognition of its common usage by users in quantitative research** and in the overriding interest of maintaining uniformity among users in this application. The simple combination of the original DEMOC and AUTOC index values in a unitary POLITY scale, in many ways, **runs contrary to the original theory** stated by Eckstein and Gurr in Patterns of Authority (1975) and, so, should be treated and interpreted with due caution Its primary utility is in investigative research which should be augmented by more detailed analysis. **The original theory posits that autocratic and democratic authority are distinct patterns of authority, elements of which may co-exist in any particular regime context**. The inclusion of this variable in the data series should not be seen as an acceptance of the counter-proposal that autocracy and democracy are alternatives or opposites in a unified authority spectrum, even though elements of this perspective may be implied in the original theory. The POLITY variable provides a convenient avenue for examining general regime effects in analyses but **researchers should note that the middle of the implied POLITY “spectrum” is somewhat muddled in terms of the original theory, masking various combinations of DEMOC and AUTOC scores with the same POLITY score**. Investigations involving hypotheses of varying effects of democracy and/or autocracy should employ the original Polity scheme and test DEMOC and AUTOC separately."
+
+&lt;br&gt;
+
+Alright, let's examine the US experience with these measures and see what we can learn.
+
+Everybody filter the data to focus on the US scores.
+
+
+
+---
+
+&lt;img src="06-1-Explore_Polity_files/figure-html/unnamed-chunk-5-1.png" width="97%" style="display: block; margin: auto;" /&gt;
+
+???
+
+Talk to me about our Polity score across time.
+
+I would note that many researchers treat polity scores of 7 or greater as democracies.
+
+SO, AT WHAT POINTS WERE WE NOT A DEMOCRACY?
+
++ (pre 1825)
++ (1860s)
++ (2020)
+
+&lt;br&gt;
+
+WHEN DID WOMEN GET THE VOTE? (1921)
+
+- WHY DOESN'T THAT APPEAR TO INFLUENCE THE US AS A DEMOCRACY ACCORDING TO POLITY?
+
+&lt;br&gt;
+
+WHEN DID THE RIGHT TO VOTE GET ENFORCED ACROSS THE COUNTRY FOR AFRICAN AMERICANS? (1964 civil rights act)
+
+- WHY DOESN'T THAT HURT OUR DEMOCRACY SCORE?
+
+
+
+---
+
+&lt;img src="06-1-Explore_Polity_files/figure-html/unnamed-chunk-6-1.png" width="100%" style="display: block; margin: auto;" /&gt;
+
+???
+
+Ok, let's go deeper one level.
+
+WHAT DO WE LEARN ABOUT THE US EXPERIENCE FROM THE DEMOC AND AUTOC INDICES SEPARATELY PLOTTED?
+
+&lt;br&gt;
+
+WHAT DO WE LEARN ABOUT THE USEFULNESS OF THE SEPARATE MEASURES AS OPPOSED TO THE COMBINED POLITY SCORE?
+
+
+
+
+---
+
+&lt;img src="06-1-Explore_Polity_files/figure-html/unnamed-chunk-7-1.png" width="100%" style="display: block; margin: auto;" /&gt;
+
+???
+
+SO, WHAT SPECIFIC THINGS HAVE CHANGED IN THE US EXPERIENCE OVER TIME?
+
+(It appears that parcomp and parreg hold the bulk of the changes, BUT xconst is killing us since Trump's election.)
+
+&lt;br&gt;
+
+Let's now help the Polity researchers out! 
+
+PAIRS: I want you to code the US for 2021 for all five component measures.
+
+&lt;br&gt;
+
+*Report back and discuss*
+
+
+
+---
+
+class: middle, slideblue
+
+.size60[.center[**Predict the Future!**]]
+
+&lt;br&gt;
+
+.size50[
+Project the US scores for ten years from now (2031)
+
++ xrcomp, xropen, xconst, parcomp and parreg
+
+]
+
+???
+
+Let's extend our analyses into the future!
+
+Small groups: I want you to code the US for ten years from now (2031) for all of the component measures
+
+WHERE DO YOU BELIEVE WE'LL BE AND WHY?
+
+*Report back and discuss*
+
+
+
+
+---
+
+class: middle, center, slideblue
+
+.size60[**For Wednesday**]
+
+.size50[
+Bring to class a real-world case that provides an example of an autocratic state (dictatorship) government using violence against its own citizens (cannot be one of the cases from last week).
+]
+
+???
+
+Let the polity scores guide you in choosing case studies this week. 
+
+For Wednesday use the autoc index and Friday the democ
+
+
+
+
+
+
+
+
+
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"ratio": "16:9"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
