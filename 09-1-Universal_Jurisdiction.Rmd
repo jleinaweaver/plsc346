@@ -1,0 +1,176 @@
+---
+output:
+  xaringan::moon_reader:
+    css: ["default", "extra.css"]
+    lib_dir: libs
+    seal: false
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: '16:9'
+---
+
+```{r, echo = FALSE, warning = FALSE, message = FALSE}
+##xaringan::inf_mr()
+## For offline work: https://bookdown.org/yihui/rmarkdown/some-tips.html#working-offline
+## Images not appearing? Put images folder inside the libs folder as that is the main data directory
+
+library(tidyverse)
+##library(readxl)
+##library(stargazer)
+##library(kableExtra)
+##library(modelr)
+
+knitr::opts_chunk$set(echo = FALSE,
+                      eval = TRUE,
+                      error = FALSE,
+                      message = FALSE,
+                      warning = FALSE,
+                      comment = NA)
+```
+
+class: slideblue
+
+.size70[**Today's Agenda**]
+
+<br>
+
+.size45[.center[
+Evaluate Universal Jurisdiction (UJ) as a strategy for reducing government violence against its citizens
+]]
+
+<br>
+
+.center[.size40[
+  Justin Leinaweaver (Spring 2022)
+]]
+
+???
+
+### Prep for Class
+1. ...
+
+<br>
+
+
+
+---
+
+background-image: url('libs/Images/background-green_blue_swirl_side.jpg')
+background-size: 100%
+background-position: center
+class: middle, center
+
+.size60[**Paper 2 Prompt**]
+
+<br>
+
+.size50[Propose a specific strategy for reducing political violence by state governments. This can be focused at any level of action (e.g. individual, group, states, etc.).]
+
+???
+
+This is an argument paper so every claim must be supported by evidence!
+
+You can start from any of the examples we've discussed in class over the last two weeks or one of the two ideas we'll be studying this week.
+
+ANY QUESTIONS ON THE ASSIGNMENT?
+
+
+
+---
+
+background-image: url('libs/Images/09_1-UJ.jpg')
+background-size: 90%
+background-position: center
+
+???
+
+Today we'll explore the global norm of universal jurisdiction (UJ) as a "strategy for reducing government violence against their citizens"
+
+
+
+---
+
+class: middle, slideblue
+
+.size60[.center[**Universal Jurisdiction**]]
+
+.size50[
++ Therefore, the US should oppose efforts to establish universal jurisdiction as an international norm.
+
++ Therefore, the US should work to advance the establishment of universal jurisdiction as an international norm.
+]
+
+???
+
+We need to split the class into two groups to cover the two sides of this argument.
+
+SO, WHO WANTS TO WORK ON WHICH SIDE OF THE DEBATE?
+
+* Split class into two groups *
+
+- Even them out if groups very uneven
+
+<br>
+
+Please keep in mind, the goal today is NOT TO WIN the argument.
+
+The goal is to make sure we fully understand the trade-offs in embracing or rejecting this policy option.
+
+In 10 minutes I want each group to put their strongest case leading to this conclusion on the board.
+
+- Don't stress about this being perfect in its first draft, we're going to get feedback and go back to revise.
+
+<br>
+
+*Present Each*
+
+Ok, groups take 5 minutes to prep feedback / counter-argument for the other group.
+
+Remember, the goal here is not to win, it is to make sure each argument fully engages with the trade-offs in embracing or rejecting UJ.
+
+<br>
+
+*Share Feedback*
+
+Groups, take the feedback on board and now work on revising your argument on the board.
+
+<br>
+
+*Present Each*
+
+<br>
+
+Ok class, where do we end up?
+
+UNDER WHAT SPECIFIC CONDITIONS, DO THE TRADE-OFFS TIP TOWARDS SUPPORTING THE NORM?
+
+UNDER WHAT SPECIFIC CONDITIONS, DO THE TRADE-OFFS TIP AWAY FROM  SUPPORTING THE NORM?
+
+
+
+---
+
+background-image: url('libs/Images/background-green_blue_swirl_side.jpg')
+background-size: 100%
+background-position: center
+class: middle, center
+
+.size60[**Paper 2 Prompt**]
+
+<br>
+
+.size50[Propose a specific strategy for reducing political violence by state governments. This can be focused at any level of action (e.g. individual, group, states, etc.).]
+
+???
+
+IS ANYBODY LEANING TOWARDS WRITING A PAPER ENDORSING UJ? WHY OR WHY NOT?
+
+
+
+
+
+
+
+

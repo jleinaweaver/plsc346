@@ -1,0 +1,98 @@
+---
+output:
+  xaringan::moon_reader:
+    css: ["default", "extra.css"]
+    lib_dir: libs
+    seal: false
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: '16:9'
+---
+
+```{r, echo = FALSE, warning = FALSE, message = FALSE}
+##xaringan::inf_mr()
+## For offline work: https://bookdown.org/yihui/rmarkdown/some-tips.html#working-offline
+## Images not appearing? Put images folder inside the libs folder as that is the main data directory
+
+library(tidyverse)
+##library(readxl)
+##library(stargazer)
+##library(kableExtra)
+##library(modelr)
+
+knitr::opts_chunk$set(echo = FALSE,
+                      eval = TRUE,
+                      error = FALSE,
+                      message = FALSE,
+                      warning = FALSE,
+                      comment = NA)
+```
+
+class: slideblue
+
+.size70[**Today's Agenda**]
+
+<br>
+
+.size45[.center[
+Writing Workshop
+]]
+
+<br>
+
+.center[.size40[
+  Justin Leinaweaver (Spring 2022)
+]]
+
+???
+
+### Prep for Class
+1. ...
+
+<br>
+
+
+
+---
+
+background-image: url('libs/Images/background-green_blue_swirl_side.jpg')
+background-size: 100%
+background-position: center
+class: middle, center
+
+.size60[**Paper 2 Prompt**]
+
+<br>
+
+.size50[Propose a specific strategy for reducing political violence by state governments. This can be focused at any level of action (e.g. individual, group, states, etc.).]
+
+???
+
+ANY QUESTIONS ON THE ASSIGNMENT?
+
+
+
+---
+
+class: middle, center, slidegreen
+
+.size60[**To be convincing an argument should be .textred[logical], .textred[clear], .textred[credible] and .textred[critical].**]
+
+
+---
+
+class: middle, slideblue
+
+.size50[**Convincing arguments...**]
+
+.size40[
++ .textred[**Logical**]: Do the premises support the conclusion?
+
++ .textred[**Clear**]: Is the paper easy to read and understand?
+
++ .textred[**Credible**]: Is there enough high quality evidence (cited using APA)?
+
++ .textred[**Critical**]: Does the paper deepen our understanding of a topic by acknowledging the limitations of our logic / evidence and by addressing counter-arguments?
+]

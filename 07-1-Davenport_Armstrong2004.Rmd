@@ -1,0 +1,559 @@
+---
+output:
+  xaringan::moon_reader:
+    css: ["default", "extra.css"]
+    lib_dir: libs
+    seal: false
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: '16:9'
+---
+
+```{r, echo = FALSE, warning = FALSE, message = FALSE}
+##xaringan::inf_mr()
+## For offline work: https://bookdown.org/yihui/rmarkdown/some-tips.html#working-offline
+## Images not appearing? Put images folder inside the libs folder as that is the main data directory
+
+library(tidyverse)
+##library(readxl)
+##library(stargazer)
+##library(kableExtra)
+##library(modelr)
+
+knitr::opts_chunk$set(echo = FALSE,
+                      eval = TRUE,
+                      error = FALSE,
+                      message = FALSE,
+                      warning = FALSE,
+                      comment = NA)
+```
+
+class: slideblue
+
+.size70[**Today's Agenda**]
+
+<br>
+
+.size45[.center[
+Davenport, C., & Armstrong, D. (2004). Democracy and the Violation of Human Rights: A Statistical Analysis from 1976 to 1996. *American Journal of Political Science*. 48(3), 538–554.
+]]
+
+<br>
+
+.center[.size40[
+  Justin Leinaweaver (Spring 2022)
+]]
+
+???
+
+### Prep for Class
+1. ...
+
+<br>
+
+*Pull chairs into circle, seminar style*
+
+*Your job today is to facilitate exploring the article. Let it flow.*
+
+For the next two weeks we'll explore research articles that aim to test many of the ideas we came up with using our cases last week.
+
+
+
+---
+
+background-image: url('libs/Images/background-red.png')
+background-size: 100%
+background-position: center
+class: middle, center, inverse
+
+.size60[**What explains the variation in how and why states use violence against their citizens?**]
+
+???
+
+Remember, our big goal for this section of the class is to answer this question.
+
+What explains the variation in how and why states use violence against their citizens?
+
+This week we'll examine two papers that focus on political violence used by democracies.
+
+Next week we'll shift our focus to research on dictatorships.
+
+--
+
+<br>
+
+<br>
+
+.size45[**Q1. How does the framing of this project help us answer our question?**]
+
+???
+
+<br>
+
+Let's start by talking about the framing of the article.
+
+HAS ANYBODY COME ACROSS THE FRAMING CONCEPT BEFORE IN OTHER CLASSES?
+
+(In political comms and psych framing often refers to a way of presenting an issue to elicit a desired response)
+
++ We don't drill for oil, we explore
+
++ We're not out to kill babies, we're pro-choice
+
++ We're not anti-women's rights, we're pro-life
+
+MAKE SENSE?
+
+
+
+
+---
+
+background-image: url('libs/Images/07_1-Castle_Neuschwanstein.jpg')
+background-size: 100%
+background-position: center
+class: middle, center, inverse
+
+???
+
+But there's another way to think about framing that is less about manipulation and more about recognizing the importance of perspective in research.
+
+Every research paper represents a set of conclusions about the world.
+
++ e.g. Here's what we know now that we didn't before.
+
++ In other words, here's my castle, isn't it stunning?
+
+This is what the title, the abstract, the introduction and the conclusion of a research paper are trying to sell you.
+
+
+
+
+---
+
+background-image: url('libs/Images/07_1-house_framing.jpg')
+background-size: 100%
+background-position: center
+class: middle, center, inverse
+
+???
+
+The rest of the paper should be a careful discussion of how you built your castle.
+
+Every choice you make along the way has a MASSIVE impact on the end product.
+
+What makes our work "science" is that we are completely transparent about all of these choices.
+
+STILL WITH ME?
+
+<br>
+
+WHAT ARE THE KINDS OF CHOICES IN ANY RESEARCH ARTICLE THAT RELATE TO THE MOST BASIC FRAMING OF THE PROJECT?
+
++ (What is the question and how is it worded?)
+
++ (By asking the question in this way, whose interests are you prioritizing? Who might you be leaving out?)
+
++ (How are you defining the big concepts? Are you well rooted in the literature with these or not?)
+
+<br>
+
+DOES THIS MAKE SENSE?
+
+The framing of the article represents HUGE choices made by the researchers before we get to any of what we might consider the analyses to be.
+
+
+
+---
+
+background-image: url('libs/Images/background-red.png')
+background-size: 100%
+background-position: center
+class: middle, center, inverse
+
+.size60[**What explains the variation in how and why states use violence against their citizens?**]
+
+<br>
+
+<br>
+
+.size45[**Q1. How does the framing of this project help us answer our question?**]
+
+???
+
+So, back to my first question for you.
+
+HOW DOES THE FRAMING OF THIS PROJECT HELP US ANSWER OUR QUESTION?
+
++ WHO GETS AN ACTIVE ROLE AND WHO DOESN'T?
+
++ WHAT ARE THE RELEVANT INSTITUTIONS IN THIS STORY?
+
++ WHAT ARE THE INTERACTIONS THAT MATTER AND WHAT ARE IGNORED?
+
+*Force this exploration*
+
+**Notes**
+
+- Research Q: "What is the influence, if any, of democracy on repression?" 539
+
+
+
+---
+
+background-image: url('libs/Images/background-red.png')
+background-size: 100%
+background-position: center
+class: middle, center, inverse
+
+.size60[**What explains the variation in how and why states use violence against their citizens?**]
+
+<br>
+
+<br>
+
+.size45[**Q2. How does the model of politics presented in this paper help us answer our big question?**]
+
+???
+
+The paper proposes three possible models of political violence in a democracy on p538-543.
+
+Let's start with the first one: All Steps Lead to Peace: A Linear Relationship (p540)
+
+EXPLAIN THIS MODEL TO ME.
+
+- WHAT ARE ITS KEY COMPONENTS?
+
+- WHY DO THEY THINK THIS MIGHT WORK?
+
+*Force this exploration*
+
+To help us evaluate the model let's visualize the predictions.
+
+(SLIDE)
+
+
+---
+
+class: slideblue
+
+```{r, fig.retina=3, fig.align='center', fig.asp=0.7, fig.width=4.5, out.width='85%'}
+## All Steps Lead to Peace: A Linear Relationship (p540)
+d1 <- tibble(
+  x = 1:21,
+  y = 21:1
+)
+
+p1 <- d1 |>
+  ggplot(aes(x = x, y = y)) +
+  theme_classic() +
+  labs(x = "Level of Democracy", y = "Willingness to Use Violence") +
+  ggtitle("All Steps Lead to Peace (p540)") +
+  scale_x_continuous(breaks = NULL)  +
+  scale_y_continuous(breaks = NULL)
+
+p1
+```
+
+???
+
+Remember we always put the outcome of interest on the y-axis.
+
+- willingness to use violence
+
+The x axis holds our key predictor
+
+- level of democratization
+
+<br>
+
+SO, HOW DO I DRAW THE LINE ON HERE?
+
+
+
+---
+
+class: slideblue
+
+```{r, fig.retina=3, fig.align='center', fig.asp=0.7, fig.width=4.5, out.width='85%'}
+p1 +
+  geom_line(size = 1.3)
+```
+
+???
+
+So these are the predictions of the model.
+
+HOW DOES THIS HELP US EVALUATE THIS MODEL OF POLITICAL VIOLENCE IN DEMOCRACIES?
+
+
+
+
+---
+
+class: slideblue
+
+```{r, fig.retina=3, fig.align='center', fig.asp=0.7, fig.width=4.5, out.width='85%'}
+## Some Steps are Better Than Others: An Inverted-U Relationship (541)
+d2 <- tibble(
+  x = -10:10,
+  y = -2*x^2 + 10
+)
+
+p2 <- d2 |>
+  ggplot(aes(x = x, y = y)) +
+  theme_classic() +
+  labs(x = "Level of Democracy", y = "Willingness to Use Violence") +
+  ggtitle("Some Steps are Better Than Others (p541)") +
+  scale_x_continuous(breaks = NULL)  +
+  scale_y_continuous(breaks = NULL)
+
+p2
+```
+
+???
+
+Second model!
+
+Some Steps are Better Than Others: An Inverted-U Relationship (541)
+
+EXPLAIN THIS MODEL TO ME AND HELP ME DRAW IT.
+
+(SLIDE) 
+
+
+
+---
+
+class: slideblue
+
+```{r, fig.retina=3, fig.align='center', fig.asp=0.7, fig.width=4.5, out.width='85%'}
+## Some Steps are Better Than Others: An Inverted-U Relationship (541)
+p2 +
+  geom_line(size = 1.3) +
+  ggtitle("More Murder in the Middle (MMM)")
+```
+
+???
+
+"The More Murder in the Middle (MMM)"
+
+- WHAT ARE ITS KEY COMPONENTS?
+
+- WHY DO THEY THINK THIS MIGHT WORK?
+
+- WHAT PREDICTIONS DOES IT MAKE ABOUT THE WORLD?
+
+*Force this exploration*
+
+
+
+---
+
+class: slideblue
+
+```{r, fig.retina=3, fig.align='center', fig.asp=0.7, fig.width=4.5, out.width='85%'}
+## Steps of Distinction: A Threshold of Democratic Pacification (542)
+d3 <- tibble(
+  x = 1:21,
+  y = c(rep(7,16), rep(0, 5))
+)
+
+p3 <- d3 |>
+  ggplot(aes(x = x, y = y)) +
+  theme_classic() +
+  labs(x = "Level of Democracy", y = "Willingness to Use Violence") +
+  ggtitle("Steps of Distinction (p542)") +
+  scale_x_continuous(breaks = NULL)  +
+  scale_y_continuous(breaks = NULL)
+
+p3
+```
+
+???
+
+Final model!
+
+Steps of Distinction: A Threshold of Democratic Pacification (542)
+
+EXPLAIN THIS MODEL TO ME AND HELP ME DRAW IT.
+
+(SLIDE) 
+
+
+
+---
+
+class: slideblue
+
+```{r, fig.retina=3, fig.align='center', fig.asp=0.7, fig.width=4.5, out.width='85%'}
+## Some Steps are Better Than Others: An Inverted-U Relationship (541)
+p3 +
+  geom_line(size = 1.3)
+```
+
+???
+
+- WHAT ARE ITS KEY COMPONENTS?
+
+- WHY DO THEY THINK THIS MIGHT WORK?
+
+- WHAT PREDICTIONS DOES IT MAKE ABOUT THE WORLD?
+
+*Force this exploration*
+
+
+
+---
+
+class: slideblue
+
+.pull-left[
+```{r, fig.retina=3, fig.align='center', fig.asp=0.618, out.width='95%', fig.width=4}
+## Some Steps are Better Than Others: An Inverted-U Relationship (541)
+p1 +
+  geom_line(size = 1.3)
+```
+]
+
+.pull-right[
+```{r, fig.retina=3, fig.align='center', fig.asp=0.618, out.width='95%', fig.width=4}
+## Some Steps are Better Than Others: An Inverted-U Relationship (541)
+p2 +
+  geom_line(size = 1.3)
+```
+]
+
+```{r, fig.retina=3, fig.align='center', fig.asp=0.618, out.width='48%', fig.width=4}
+## Some Steps are Better Than Others: An Inverted-U Relationship (541)
+p3 +
+  geom_line(size = 1.3)
+```
+
+???
+
+Consider all three models now.
+
+WHERE WOULD WEBER (1946) COME DOWN ON THESE?
+
+HOW ABOUT OLSON (1993)?
+
+<br>
+
+Let's now talk about the real-world implications of these competing models.
+
+*Super fun conversation last time*
+
+WHAT DOES EACH MODEL TELL US ABOUT THE ABILITY TO USE REGIME CHANGE AS A FOREIGN POLICY TOOL TO ESTABLISH DEMOCRACIES AND REDUCE POLITICAL VIOLENCE?
+
++ (Model 1 implies a roller-coaster effect possible. Push them down the slope and it may be self-reinforcing)
+
++ (Model 2 implies meaningful democratization takes pushing them past the inflection point in the middle of the inverted curve; hard to do but still possible?)
+
++ (Model 3 implies it may be impossible; depending on what is involved in the critical inflection point) 
+
+
+
+
+---
+
+background-image: url('libs/Images/background-red.png')
+background-size: 100%
+background-position: center
+class: middle, center, inverse
+
+.size60[**What explains the variation in how and why states use violence against their citizens?**]
+
+<br>
+
+<br>
+
+.size45[**Q3. How does the analysis help us select our most useful model of political violence by democracies?**]
+
+???
+
+Our third question focuses on the analyses in the paper.
+
+WHICH OF THE THREE MODELS IS BEST SUPPORTED BY THEIR ANALYSES?
+
+(SLIDE)
+
+
+---
+
+background-image: url('libs/Images/07_1-Davenport_Fig1.png')
+background-size: 53%
+background-position: center
+class: slideblue
+
+???
+
+Figure 1 is a nice visual representation of their findings.
+
+SO, WHICH MODEL IS THIS?
+
+(SLIDE)
+
+
+---
+
+class: middle, slideblue
+
+.pull-left[
+```{r, fig.retina=3, fig.align='center', out.width='100%'}
+knitr::include_graphics('libs/Images/07_1-Davenport_Fig1.png')
+```
+]
+
+.pull-right[
+
+<br>
+
+<br>
+
+```{r, fig.retina=3, fig.align='center', fig.asp=0.8, out.width='98%', fig.width=4}
+p3 +
+  geom_line(size = 1.3)
+```
+]
+
+???
+
+OK, SO, WHAT CHOICES IN THEIR METHODOLOGY DID THEY MAKE TO PRODUCE THIS EVIDENCE?
+
+- CASE SELECTIONS?
+
+- VARIABLES IDENTIFIED AND MEASURED?
+
+<br>
+
+GIVEN YOUR EXPERIENCES IN THE CLASS SO FAR, HOW CONFIDENT ARE YOU IN THIS MODEL CURVE AS THE "BEST" OF THREE?
+
+<br>
+
+IF THIS IS THE RIGHT MODEL, WHAT DOES THIS MEAN FOR OUR EARLIER DISCUSSION OF REAL WORLD IMPLICATIONS?
+
+- IS DEMOCRACY PROMOTION A GOOD STRATEGY FOR REDUCING POLITICAL VIOLENCE AROUND THE WORLD?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
