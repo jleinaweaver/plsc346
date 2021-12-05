@@ -1,0 +1,320 @@
+---
+output:
+  xaringan::moon_reader:
+    css: ["default", "extra.css"]
+    lib_dir: libs
+    seal: false
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: '16:9'
+---
+
+```{r, echo = FALSE, warning = FALSE, message = FALSE}
+##xaringan::inf_mr()
+## For offline work: https://bookdown.org/yihui/rmarkdown/some-tips.html#working-offline
+## Images not appearing? Put images folder inside the libs folder as that is the main data directory
+
+library(tidyverse)
+##library(readxl)
+##library(stargazer)
+##library(kableExtra)
+##library(modelr)
+
+knitr::opts_chunk$set(echo = FALSE,
+                      eval = TRUE,
+                      error = FALSE,
+                      message = FALSE,
+                      warning = FALSE,
+                      comment = NA)
+```
+
+class: slideblue
+
+.size70[**Today's Agenda**]
+
+<br>
+
+.size50[.center[
+Use case studies to define, operationalize and measure the concept of terrorism
+]]
+
+<br>
+
+<br>
+
+.center[.size40[
+  Justin Leinaweaver (Spring 2022)
+]]
+
+???
+
+### Prep for Class
+1. ...
+
+<br>
+
+Today we kick off the third section of our class.
+
+What explains the variation in how and why non-state actors use violence against states and people?
+
+Specifically, we'll focus on terrorism.
+
+
+
+---
+
+background-image: url('libs/Images/background-green_blue_swirl_side.jpg')
+background-size: 100%
+background-position: center
+class: middle, center
+
+.size60[**For Today**]
+
+<br>
+
+.size50[
+Bring to class one specific piece of evidence you argue represents an act of terrorism. 
+
+Make sure you are familiar with the actors and environment involved.
+]
+
+???
+
+EVERYBODY READY FOR OUR WORK TODAY?
+
+<br>
+
+Today I want us to use the case studies to build our intuitions about terrorism and to help us construct a definition and operationalization of the concept.
+
+REMIND ME, WHAT IS A CONCEPT?
+
+(The name we give an idea / thing)
+
+<br>
+
+AND WHAT DOES IT MEAN TO OPERATIONALIZE A CONCEPT?
+
+(Operationalization is "...selecting observable phenomena to represent abstract concepts" (89).)
+
+- Brians, Craig Leonard, Lars Willnat, Jarol B. Manheim, and Richard C. Rich. 2011. “From Abstract to Concrete: Operationalization and Measurement.” In Empirical Political Analysis, Boston, MA: Longman, (ONLY p88-110)
+
+<br>
+
+Let's introduce our cases.
+
+As you hear these I want you taking notes that will help us define the concept of terrorism.
+
+
+
+---
+
+background-image: url('libs/Images/background-green_blue_swirl_side.jpg')
+background-size: 100%
+background-position: center
+class: middle
+
+.size60[.center[**Terrorism Case Studies**]]
+
+<br>
+
+.size50[
+1. What is the specific act you are calling "terrorism"?
+
+2. As concisely as possible, why is it "terrorism"?
+]
+
+???
+
+1) What is the specific act you are calling "terrorism"?
+
+- As you describe your case, focus particularly on the actor and the immediate act.
+
+- Support and funding matters but let's start by agreeing and exploring this micro-level dynamic.
+
+2) As concisely as possible, why is it "terrorism"?
+
+<br>
+
+*Go around the room to share evidence*
+
+- Everybody take notes!
+
+
+
+---
+
+background-image: url('libs/Images/background-green_blue_swirl_side.jpg')
+background-size: 100%
+background-position: center
+class: middle, center
+
+.size60[.center[**Defining Terrorism**]]
+
+<br>
+
+.size60[
+Make a list of the common characteristics of our cases
+]
+
+???
+
+Take a few minutes on your own to make a list of the common characteristics of our cases.
+
+<br>
+
+*ON BOARD*
+
+- Make a consolidated list.
+
+
+
+---
+
+background-image: url('libs/Images/background-green_blue_swirl_side.jpg')
+background-size: 100%
+background-position: center
+class: middle, center
+
+.size60[.center[**Defining Terrorism**]]
+
+<br>
+
+.size60[
+Make a list of the sub-groups in our cases
+]
+
+???
+
+Take a few minutes on your own to brainstorm groupings in our cases.
+
+ANY OBVIOUS GROUPINGS POSSIBLE HERE?
+
+- MOST SIMILAR CASES THAT ARE DIFFERENT FROM THE REST? E.G. STATE VS NON-STATE
+
+- ANY CASES WE DISCUSSED THAT YOU WANT TO EXCLUDE? e.g. NOT TERRORISM?
+
+<br>
+
+*ON BOARD*
+
+- Make a consolidated list.
+
+
+
+---
+
+background-image: url('libs/Images/background-green_blue_swirl_side.jpg')
+background-size: 100%
+background-position: center
+class: middle, center
+
+.size60[.center[**Defining Terrorism**]]
+
+<br>
+
+.size60[
+Make a list of key questions
+]
+
+???
+
+Take a few minutes on your own to brainstorm key questions.
+
+WHAT QUESTIONS MUST ANY GOOD DEFINITION OF TERRORISM ADDRESS?
+
+- IN OTHER WORDS, IF TWO PEOPLE ARE ARGUING ABOUT TERRORISM WHAT WOULD YOU DEMAND THEY AGREE ON TO MAKE SURE THEIR ARGUMENT IS PRODUCTIVE?
+
+<br>
+
+*ON BOARD*
+
+- Make a consolidated list.
+
+<br>
+
+- Fear as the goal?
+- Action done by state, non-state or both?
+- Targets politically motivated or other aims included (e.g. profit?)
+- Proximity to the violent act (do the bombing vs send someone to do it vs funding groups who act in ways you like?)
+
+
+
+---
+
+background-image: url('libs/Images/background-green_blue_swirl_side.jpg')
+background-size: 100%
+background-position: center
+class: middle
+
+.size60[.center[**Defining Terrorism**]]
+
+<br>
+
+.size50[
+1. What does terrorism mean in the abstract?
+
+2. What "observable phenomena" should represent it?
+]
+
+???
+
+Ok, now let's process all of this work and use it to answer these two questions.
+
+<br>
+
+SO, WHAT DOES TERRORISM MEAN IN THE ABSTRACT?
+
+<br>
+
+AND WHAT "OBSERVABLE PHENOMENA" COULD WE USE TO IDENTIFY IT IN THE REAL WORLD?
+
+<br>
+
+*2019 class*
+
+Common Chars
+- one-sided violence
+- Important purpose more important than survival
+- Cause fear
+- Political
+- Non-state actor
+- Intend to maximize casualties
+- Strategic
+- Claimed by or affiliated with known terror group
+- Motivated to target a specific group (religion/race/ethnicity)
+
+Groups
+- Domestic vs international
+- Specific goal vs spur of the moment
+- Unaffiliated vs affiliated with group
+- Violence vs threat
+
+Definitional Work
+- (Maximize / Destabilize) use of (violence/harm/actions to cause fear) by non-state actor for (political/strategic/ideological/cause fear/change SQ) purposes targeting specific (people/group/idea).
+
+
+
+*2015 class*
+
+- Civilians or not?
+- attacking people not related to the policy you object to
+- Terror / fear important
+- Connections to other terror actions
+- Attacks on freedom of expression (e.g. specific policy)
+- Ideological objectives too
+- In response to the actions of a government actor
+- Attack on a building, no deaths, symbolic violence
+- Acts meant to intimidate, may or may not be related to a specific policy change
+- Revenge against government overreach
+- Direct opposition to a government
+- Providing support to a violent group as terrorism
+- Groups vs individuals
+- To make a statement
+- To deliver harm to a government
+- Done by a "terror group"
+- Targeting a government vs targeting military
+- nature of the group, non-state
+- Targeting government, act of protest
+- Kidnapping as form of violence, targeting civilians, spreading fear 

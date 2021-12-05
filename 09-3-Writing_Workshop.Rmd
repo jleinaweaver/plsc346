@@ -76,23 +76,25 @@ ANY QUESTIONS ON THE ASSIGNMENT?
 
 ---
 
-class: middle, center, slidegreen
+background-image: url('libs/Images/background-green_blue_swirl_side.jpg')
+background-size: 100%
+background-position: center
+class: middle, center
 
 .size60[**To be convincing an argument should be .textred[logical], .textred[clear], .textred[credible] and .textred[critical].**]
+
 
 
 ---
 
 class: middle, slideblue
 
-.size50[**Convincing arguments...**]
-
 .size40[
-+ .textred[**Logical**]: Do the premises support the conclusion?
+1. .textred[**Logical**] arguments support their conclusion with well specified premises.
 
-+ .textred[**Clear**]: Is the paper easy to read and understand?
+2. .textred[**Clear**] arguments are easy to read and understand.
 
-+ .textred[**Credible**]: Is there enough high quality evidence (cited using APA)?
+3. .textred[**Credible**] arguments use high quality evidence and include proper citations.
 
-+ .textred[**Critical**]: Does the paper deepen our understanding of a topic by acknowledging the limitations of our logic / evidence and by addressing counter-arguments?
+4. .textred[**Critical**] arguments deepen our understanding of a topic by acknowledging the limitations of our logic / evidence and by addressing counter-arguments.
 ]
