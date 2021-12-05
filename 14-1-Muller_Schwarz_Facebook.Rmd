@@ -1,0 +1,313 @@
+---
+output:
+  xaringan::moon_reader:
+    css: ["default", "extra.css"]
+    lib_dir: libs
+    seal: false
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: '16:9'
+---
+
+```{r, echo = FALSE, warning = FALSE, message = FALSE}
+##xaringan::inf_mr()
+## For offline work: https://bookdown.org/yihui/rmarkdown/some-tips.html#working-offline
+## Images not appearing? Put images folder inside the libs folder as that is the main data directory
+
+library(tidyverse)
+##library(readxl)
+##library(stargazer)
+##library(kableExtra)
+##library(modelr)
+
+knitr::opts_chunk$set(echo = FALSE,
+                      eval = TRUE,
+                      error = FALSE,
+                      message = FALSE,
+                      warning = FALSE,
+                      comment = NA)
+```
+
+class: slideblue
+
+.size70[**Today's Agenda**]
+
+<br>
+
+.size45[.center[
+Müller, K. & Schwarz, C. (2020, Jun 5). Fanning the Flames of Hate: Social Media and Hate Crime. *Social Science Research Network (SSRN)*.
+]]
+
+<br>
+
+<br>
+
+.center[.size40[
+  Justin Leinaweaver (Spring 2022)
+]]
+
+???
+
+### Prep for Class
+1. ...
+
+<br>
+
+This week I want us to explore some cutting-edge research that is, so far, unpublished but has caused a bit of a stir in the media.
+
+The question these articles explore is, how has social media impacted the decision by individuals and groups to use violence to further political ends.
+
+Today we begin with the Müller and Schwarz article titled "Fanning the Flames of Hate: Social Media and Hate Crime."
+
+<br>
+
+WHAT IS THE BIG CLAIM IN THIS PAPER?
+
+(SLIDE)
+
+
+
+---
+
+background-image: url('libs/Images/14_1-facebook_dr_evil.png')
+background-size: 100%
+background-position: center
+
+???
+
+Facebook usage leads to violence by non-state actors against refugees.
+
+- "We show that anti-refugee sentiment on Facebook predicts crimes against refugees in otherwise similar municipalities with higher social media usage."
+
+<br>
+
+Now, here's the deal.
+
+I would like us to evaluate this research but as evidence for a slightly different proposal.
+
+--
+
+.center[.size40[.content-box-red[**Proposal: Facebook Increases Terrorism**]]]
+
+
+???
+
+<br>
+
+<br>
+
+I want us to evaluate this paper as an argument that Facebook increases the incidence of terrorism.
+
+We've studied political violence all semester and terrorism now for a few weeks, so let's see if this paper supports this proposal.
+
+
+
+---
+
+background-image: url('libs/Images/background-blues_and_greys.jpg')
+background-size: 100%
+background-position: center
+class: middle, center, inverse
+
+.size60[**Proposal: Facebook Increases Terrorism**]
+
+<br>
+
+<br>
+
+.size45[**Q1. How does the framing of this project help us evaluate this proposal?**]
+
+???
+
+HOW DOES THE FRAMING OF THIS PAPER HELP US EVALUATE THIS PROPOSAL?
+
+Clearly the authors do not take this to terrorism, but I want us to.
+
+DOES THE BASIC STRUCTURE OF THE PAPER, e.g. THE CONCEPTS AND PERSPECTIVE, ALLOW US TO EVALUATE THIS PROPOSAL?
+
+*Let them share thoughts about the framing of the paper*
+
+- RESEARCH QUESTION?
+
+- KEY ACTORS?
+
+- KEY INSTITUTIONS?
+
+- KEY PUZZLES?
+
+
+
+---
+
+background-image: url('libs/Images/background-blues_and_greys.jpg')
+background-size: 100%
+background-position: center
+class: middle, center, inverse
+
+.size60[**Proposal: Facebook Increases Terrorism**]
+
+<br>
+
+<br>
+
+.size45[**Q2. How does the model of politics presented in this paper help us evaluate this proposal?**]
+
+???
+
+WHAT IS THE MODEL IN THIS PAPER?
+
+Take some time on your own...
+
+Compare to people next to you...
+
+*ON BOARD*
+
+<br>
+
+## class notes 2019-12-02
+
+1. Social media exposes people to different views
+2. Social media reinforces those ideas (echo chamber, confirmation bias)
+3. Over time, repeated exposures change identity
+
+<br>
+
+WHO ARE THE 'PEOPLE' IN THIS MODEL? ANYBODY VS THOSE PREDISPOSED TO VIOLENCE?
+
+
+
+---
+
+background-image: url('libs/Images/background-blues_and_greys.jpg')
+background-size: 100%
+background-position: center
+class: middle, center, inverse
+
+.size60[**Proposal: Facebook Increases Terrorism**]
+
+<br>
+
+<br>
+
+.size45[**Q3. How does the analysis in this project help us evaluate this proposal?**]
+
+???
+
+DO WE HAVE ANY CONCERNS OR NEED FOR CLARIFICATIONS IN TERMS OF THE EMPIRICAL PARTS OF THE PAPER?
+
+
+
+---
+
+background-image: url('libs/Images/14_1-Table1.png')
+background-size: 90%
+background-position: center
+
+???
+
+Let's talk concepts defined, operationalized and measured.
+
+EVALUATE THE DETAILS IN TABLE 1
+
+*Discuss*
+
+(Case: Germany and the right-wing party Alternative für Deutschland (AfD))
+
+<br>
+
+Let's talk about some key aspects of the analyses.
+
+
+---
+
+background-image: url('libs/Images/14_1-Figure2.png')
+background-size: 90%
+background-position: center
+
+???
+
+WHAT DOES FIGURE 2 HELP US TO SEE AND THINK ABOUT?
+
+- IS THIS CONVINCING? WHY OR WHY NOT?
+
+
+---
+
+background-image: url('libs/Images/14_1-Fig4.png')
+background-size: 70%
+background-position: center
+
+???
+
+
+WHAT DOES FIGURE 4 HELP US TO SEE AND THINK ABOUT?
+
+- IS THIS CONVINCING? WHY OR WHY NOT?
+
+
+---
+
+background-image: url('libs/Images/14_1-Fig5b.png')
+background-size: 70%
+background-position: center
+
+???
+
+I think Figure 5b is kind of key.
+
+This is HUGE.
+
+WHY IS THIS SUCH AN IMPORTANT PIECE OF THE ANALYSIS?
+
+(Causality? To establish causality, we exploit exogenous variation in major internet and Facebook outages, which fully undo the correlation between social media and hate crime.)
+
+QUESTIONS ON THIS?
+
+IS THIS A SLAM DUNK? WHY MAYBE NOT?
+
+
+
+---
+
+background-image: url('libs/Images/14_1-Table1_controls.png')
+background-size: 90%
+background-position: center
+
+???
+
+A big part of establishing causality vs correlation is to argue you have controlled for all of the relevant confounders in your model.
+
+EXPLAIN TO ME WHICH OF THESE YOU BELIEVE ARE CONFOUNDERS IN THE KEY RELATIONSHIP?
+
+- e.g. ALTERNATIVE EXPLANATIONS CONSIDERED?
+
+(Controls: We further find that the effect does not hold for sentiment unrelated to refugees; increases with user network interactions; and decreases with distracting news events.)
+
+
+
+---
+
+background-image: url('libs/Images/14_1-Facebook_Terrorists2.jpg')
+background-size: 100%
+background-position: center
+
+???
+
+BOTTOM LINE, DOES THIS PAPER DEMONSTRATE A CONVINCING LINK BETWEEN FACEBOOK USAGE AND TERRORIST INCIDENTS? WHY OR WHY NOT?
+
+<br>
+
+- NOT CONVINCED THESE ATTACKS ON REFUGEES ARE TERRORISM?
+
+- CORRELATION BUT NOT CAUSATION?
+
+- OTHER PROBLEMS IN THE PROPOSAL?
+
+<br>
+
+On Wednesday we examine the other current paper from these authors.
+
+That one focuses on Twitter and the incidences of political violence.
+

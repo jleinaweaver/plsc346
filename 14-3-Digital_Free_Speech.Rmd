@@ -1,0 +1,68 @@
+---
+output:
+  xaringan::moon_reader:
+    css: ["default", "extra.css"]
+    lib_dir: libs
+    seal: false
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: '16:9'
+---
+
+```{r, echo = FALSE, warning = FALSE, message = FALSE}
+##xaringan::inf_mr()
+## For offline work: https://bookdown.org/yihui/rmarkdown/some-tips.html#working-offline
+## Images not appearing? Put images folder inside the libs folder as that is the main data directory
+
+library(tidyverse)
+##library(readxl)
+##library(stargazer)
+##library(kableExtra)
+##library(modelr)
+
+knitr::opts_chunk$set(echo = FALSE,
+                      eval = TRUE,
+                      error = FALSE,
+                      message = FALSE,
+                      warning = FALSE,
+                      comment = NA)
+```
+
+class: slideblue
+
+.size70[**Today's Agenda**]
+
+<br>
+
+.size45[.center[
+**Come to class ready to make an argument that given the threat of terrorism and the spread of extremist ideologies online, free speech should or should not be guaranteed on the internet. In short, should companies be forced to remove extremist content from their platforms?**
+]]
+
+<br>
+
+<br>
+
+.center[.size40[
+  Justin Leinaweaver (Spring 2022)
+]]
+
+???
+
+
+---
+
+Final Paper Prompt
+
+
+
+---
+
+class: middle, slideblue
+
+.size70[**For Monday**]
+
+.size40[
+
+]
