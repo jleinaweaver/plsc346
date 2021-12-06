@@ -1,0 +1,137 @@
+---
+output:
+  xaringan::moon_reader:
+    css: ["default", "extra.css"]
+    lib_dir: libs
+    seal: false
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: '16:9'
+---
+
+```{r, echo = FALSE, warning = FALSE, message = FALSE}
+##xaringan::inf_mr()
+## For offline work: https://bookdown.org/yihui/rmarkdown/some-tips.html#working-offline
+## Images not appearing? Put images folder inside the libs folder as that is the main data directory
+
+library(tidyverse)
+##library(readxl)
+##library(stargazer)
+##library(kableExtra)
+##library(modelr)
+
+knitr::opts_chunk$set(echo = FALSE,
+                      eval = TRUE,
+                      error = FALSE,
+                      message = FALSE,
+                      warning = FALSE,
+                      comment = NA)
+```
+
+class: slideblue
+
+.size70[**Today's Agenda**]
+
+<br>
+
+.size45[.center[
+Gellman, Barton. (2021, Dec 6). Trump’s Next Coup Has Already Begun. *The Atlantic*.
+]]
+
+<br>
+
+<br>
+
+<br>
+
+.center[.size40[
+  Justin Leinaweaver (Spring 2022)
+]]
+
+???
+
+
+
+---
+
+background-image: url('libs/Images/14_2-Jan6th_Riot.png')
+background-size: 100%
+background-position: top
+class: center
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+.size35[.content-box-red[**Political Violence by Non-State Actors in the US**]]
+
+???
+
+This is a huge article in terms of importance and length. :) 
+
+WHERE DO YOU WANT TO START?
+
+<br>
+
+KEY ARGUMENTS?
+
+IS THE EVIDENCE HIGH QUALITY?
+
+ARE THE PREDICTIONS PERSUASIVE?
+
+
+
+---
+
+background-image: url('libs/Images/background-green_blue_swirl_side.jpg')
+background-size: 100%
+background-position: center
+class: middle, center
+
+.size60[**Final Paper Prompt**]
+
+<br>
+
+.size50[Propose a specific strategy for reducing political violence by non-state actors. 
+
+This can be focused at any level of action (e.g. individual, group, states, etc.).]
+
+???
+
+ANY QUESTIONS ON THE ASSIGNMENT?
+
+
+
+---
+
+class: middle, slideblue
+
+.size70[**For Monday**]
+
+.size50[
+Bring to class a recent example of an individual, group, state or group of states taking a specific action to stop or reduce the threat of terrorism. 
+
+Be ready to explain what happened, the strategy being employed and some idea of how effective it appears to have been.
+]

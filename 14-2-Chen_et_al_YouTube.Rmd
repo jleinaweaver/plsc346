@@ -1,0 +1,225 @@
+---
+output:
+  xaringan::moon_reader:
+    css: ["default", "extra.css"]
+    lib_dir: libs
+    seal: false
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: '16:9'
+---
+
+```{r, echo = FALSE, warning = FALSE, message = FALSE}
+##xaringan::inf_mr()
+## For offline work: https://bookdown.org/yihui/rmarkdown/some-tips.html#working-offline
+## Images not appearing? Put images folder inside the libs folder as that is the main data directory
+
+library(tidyverse)
+##library(readxl)
+##library(stargazer)
+##library(kableExtra)
+##library(modelr)
+
+knitr::opts_chunk$set(echo = FALSE,
+                      eval = TRUE,
+                      error = FALSE,
+                      message = FALSE,
+                      warning = FALSE,
+                      comment = NA)
+```
+
+class: slideblue
+
+.size70[**Today's Agenda**]
+
+<br>
+
+.size45[.center[
+Chen, A., Nyhan, B., Reifler, J., Robertson, R., & Wilson, C. (2021). Exposure to Alternative & Extremist Content on YouTube (The Belfer Fellowship). *Anti-Defamation League*.
+]]
+
+<br>
+
+.center[.size40[
+  Justin Leinaweaver (Spring 2022)
+]]
+
+???
+
+### Prep for Class
+1. ...
+
+<br>
+
+More cutting-edge research on the internet and extremism!
+
+Today we analyze recent research on the impact of YouTube on the spread of extremism.
+
+WHAT ARE THE BIG CONCLUSIONS OF THE REPORT?
+
+(SLIDE)
+
+
+
+---
+
+background-image: url('libs/Images/background-blue_triangles2.png')
+background-size: 100%
+background-position: center
+class: middle
+
+.size35[
+"Overall, our findings indicate that YouTube plays an important role in exposing people to potentially harmful content."
+
+"We do not find clear evidence that YouTube frequently exposes people with neutral or mixed views on issues such as race to alternative or extremist content."
+
+"Instead, the audience for videos from alternative or extremist channels is dominated by people who already have high levels of racial resentment (more than 90% of views for both types)."
+]
+
+???
+
+SO, WHAT DOES THIS MEAN IN ENGLISH?
+
+- DOES YOUTUBE EXPOSE PEOPLE TO EXTREMIST CONTENT?
+
+
+
+---
+
+background-image: url('libs/Images/background-blue_triangles2.png')
+background-size: 100%
+background-position: center
+class: middle
+
+.size60[.center[**Sample Selection**]]
+
+<br>
+
+.size60[
+1. Nationally representative survey
+
+2. YouTube viewing data
+]
+
+???
+
+Let's now talk methods.
+
+To get the data they need the researchers ran a nationally representative survey and collected YouTube viewing data.
+
+Let's evaluate these two sources.
+
+HOW DID THEY DO THIS AND HOW WELL DID THEY DO IT?
+
+<br>
+
+Now check the appendix results for details about the survey sample.
+
+HOW CONFIDENT ARE WE THAT THIS IS A REPRESENTATIVE SAMPLE?
+
+
+
+
+---
+
+background-image: url('libs/Images/background-blue_triangles2.png')
+background-size: 100%
+background-position: center
+class: middle, center
+
+.size60[**Variable Measurement**]
+
+<br>
+
+.size60[
+Identifying problematic or harmful content on YouTube
+]
+
+???
+
+Let's now evaluate how the researchers classified YouTube content to identify extremist content.
+
+PROS AND CONS OF THIS EFFORT?
+
+(Note the "Limitations" section in the report)
+
+
+
+---
+
+background-image: url('libs/Images/background-blue_triangles2.png')
+background-size: 100%
+background-position: center
+class: middle, center
+
+.size60[**Results**]
+
+<br>
+
+.size60[
+How strong are the effects they identify?
+]
+
+???
+
+
+
+---
+
+background-image: url('libs/Images/14_2-youtube_dark.jpg')
+background-size: 90%
+background-position: center
+
+.size55[.center[.textwhite[**Does YouTube Increase Political Violence by Non-State Actors?**]]]
+
+???
+
+BOTTOM LINE, DOES THIS PAPER DEMONSTRATE A LINK BETWEEN YOUTUBE USAGE AND POLITICAL VIOLENCE BY NON-STATE ACTORS? WHY OR WHY NOT?
+
+
+
+
+---
+
+background-image: url('libs/Images/14_2-Jan6th_Riot.png')
+background-size: 100%
+background-position: top
+class: center
+
+.size70[.textred[**For Friday**]]
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+.size35[.content-box-red[**Political Violence by Non-State Actors in the US**]]
+
+???
+
+Friday we discuss the elephant in the room.
+
+The 2024 election is almost certainly our next HUGE test for political violence by non-state actors in this country.
+
+So, let's talk about it!
+
+

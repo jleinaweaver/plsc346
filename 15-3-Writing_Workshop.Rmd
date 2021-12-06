@@ -37,8 +37,14 @@ class: slideblue
 <br>
 
 .size45[.center[
-**Come to class ready to make an argument that given the threat of terrorism and the spread of extremist ideologies online, free speech should or should not be guaranteed on the internet. In short, should companies be forced to remove extremist content from their platforms?**
+Propose a specific strategy for reducing political violence by non-state actors. 
+
+This can be focused at any level of action (e.g. individual, group, states, etc.).
+
+**Today: Writing Workshop**
 ]]
+
+<br>
 
 <br>
 
@@ -51,18 +57,49 @@ class: slideblue
 ???
 
 
----
-
-Final Paper Prompt
-
-
 
 ---
 
 class: middle, slideblue
 
-.size70[**For Monday**]
+.pull-left[
 
-.size40[
+<br>
 
-]
+<br>
+
+.center[
+.size90[
+**For Friday**
+]]]
+
+.pull-right[
+.size30[
+**Intro**
+
++ What is the question?
++ Why do we care?
++ Thesis statement
+
+**Premise 1**
+
++ Evidence
+
+**Premise 2**
+
++ Evidence
+
+**Premise 3**
+
++ Evidence
+]]
+
+???
+
+DOES EVERYONE HAVE THEIR OUTLINE COMPLETED?
+
+Ok, today is our writing workshop.
+
+Use this time to get your paper completed!
+
+Get feedback from classmates if you think it'll help.
