@@ -176,6 +176,21 @@ AFTER READING THROUGH THE WEBSITE MATERIAL DO YOU HAVE ANY CONCERNS ABOUT INSTIT
 
 IS THE "UNCLASSIFIED" NOTE HERE HINTING AT SOMETHING WE DON'T KNOW ABOUT THAT THEY DO KNOW ABOUT? 
 
+<br>
+
+OK, TALK TO ME ABOUT THE DATA COLLECTION METHODOLOGY.
+
+- HOW DO THEY COLLECT THEIR DATA?
+
+<br>
+
+(p10)
+
+- combines automated and manual data collection strategies
+- over one million media articles on any topic published daily worldwide - Lexis Nexis for English and BBC Monitoring for English-language translations of sources from around 150 countries in over 100 languages
+- First pass: customized keyword filters and natural language processing (NLP) to identify terrorism articles
+- Second pass: Researchers review subset of articles identified and code them.
+- Quality Control: The coding strategy relies on six coding teams that each specialize on a particular domain of the GTD Codebook.
 
 
 ---
@@ -381,6 +396,7 @@ Some differences, but nothing crazy.
 
 
 
+
 ---
 
 class: middle, slideblue
@@ -505,11 +521,9 @@ class: middle, slideblue
 .size35[
 1. Pros and cons of generalizing from this dataset?
 2. **Is the damage caused by terrorism getting worse?**
-3. Where are the terrorism hot spots in the world?
+3. **Where are the terrorism hot spots in the world?**
 4. **Are the characteristics of terrorism changing?**
 ]
-
-<br>
 
 ### Examine all cases across time broken out by:
 .size40[
@@ -798,7 +812,7 @@ WHAT CONCLUSIONS CAN WE DRAW USING THIS MAP OF THE DATA?
 
 <br>
 
-Let's check out the recent five years of the data.
+Let's check out the most recent year in the db, 2019.
 
 
 
@@ -806,20 +820,20 @@ Let's check out the recent five years of the data.
 
 ```{r, fig.retina=3, fig.align='center', out.width='100%', fig.height=5, fig.width=8}
 ###################################################
-## Map of terror attacks per country (2015-2019)
+## Map of terror attacks per country (2019)
 d |>
-  filter(iyear >= 2015) |>
+  filter(iyear >= 2019) |>
   group_by(ccode) |>
   summarize(
     Attacks = n()
   ) |> #summary()
   mutate(
-    Attacks_cat = cut(Attacks, breaks = c(0, 2, 20, 200, 11000), labels = c("< 2", "< 20", "< 200", "> 200"), include.lowest = TRUE)
+    Attacks_cat = cut(Attacks, breaks = c(0, 2, 10, 60, 2000), labels = c("< 2", "< 10", "< 60", "> 60"), include.lowest = TRUE)
   ) %>%
   left_join(worldmap, ., by = c("sovereignt" = "ccode")) |>
   ggplot() +
   geom_sf(aes(fill = Attacks_cat)) +
-  labs(fill = "", title = "Terror Attacks (2015 - 2019)",
+  labs(fill = "", title = "Terror Attacks (2019)",
        caption = "Source: GTD") +
   scale_fill_brewer(type = "seq", palette = "YlOrRd")
 ```
@@ -840,20 +854,20 @@ ARE WE CONFIDENT THAT THIS CAPTURES ALL OF THE TERRORIST EVENTS IN THIS PERIOD?
 
 ```{r, fig.retina=3, fig.align='center', out.width='100%', fig.height=5, fig.width=8}
 ###################################################
-## Map of terror fatalities per country (2015-2019)
+## Map of terror fatalities per country (2019)
 d |>
-  filter(iyear >= 2015) |>
+  filter(iyear >= 2019) |>
   group_by(ccode) |>
   summarize(
     Fatal = sum(nkill, na.rm=TRUE)
   ) |> #summary()
   mutate(
-    Fatal_cat = cut(Fatal, breaks = c(0, 5, 25, 250, 37000), labels = c("< 5", "< 25", "< 250", "> 250"), include.lowest = TRUE)
+    Fatal_cat = cut(Fatal, breaks = c(0, 1, 5, 80, 9000), labels = c("0", "< 5", "< 80", "> 80"), include.lowest = TRUE)
   ) %>%
   left_join(worldmap, ., by = c("sovereignt" = "ccode")) |>
   ggplot() +
   geom_sf(aes(fill = Fatal_cat)) +
-  labs(fill = "", title = "Terrorism Fatalities (2015 - 2019)",
+  labs(fill = "", title = "Terrorism Fatalities (2019)",
        caption = "Source: GTD") +
   scale_fill_brewer(type = "seq", palette = "YlOrRd")
 ```
@@ -881,6 +895,8 @@ Get ready to tell me what the cases look like.
 ---
 
 class: middle, center
+
+.size50[.center[**USA (2010 - 2019)**]]
 
 .size40[
 ```{r}
