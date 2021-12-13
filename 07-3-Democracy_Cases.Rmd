@@ -36,7 +36,7 @@ class: slideblue
 
 <br>
 
-.size40[.center[
+.size50[.center[
 Review our cases: How have we tried to stop democracies from committing violence against their own citizens?
 ]]
 
@@ -105,8 +105,6 @@ background-position: center
 class: middle
 
 .size60[**For Today**]
-
-<br>
 
 .size40[
 Bring to class a recent example of an individual, group, state or group of states taking a specific action to stop a democracy from engaging in political violence.

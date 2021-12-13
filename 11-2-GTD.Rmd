@@ -17,7 +17,6 @@ output:
 ## Images not appearing? Put images folder inside the libs folder as that is the main data directory
 
 library(tidyverse)
-##library(readxl)
 ##library(stargazer)
 ##library(kableExtra)
 ##library(modelr)
@@ -28,6 +27,27 @@ knitr::opts_chunk$set(echo = FALSE,
                       message = FALSE,
                       warning = FALSE,
                       comment = NA)
+
+## Input the data
+library(readxl)
+
+# d2019 <- read_excel("../../../../00-Data_for_Classes/GTD-Global_Terrorism_Database/GTD-2021-02-2019_Only.xlsx", guess_max = 10000)
+# 
+# d_usa <- read_excel("../../../../00-Data_for_Classes/GTD-Global_Terrorism_Database/GTD-2021-02-USA_Only.xlsx", guess_max = 10000)
+
+d <- read_excel("../../../../00-Data_for_Classes/GTD-Global_Terrorism_Database/globalterrorismdb_0221dist.xlsx", guess_max = 100000, na = c(-99, "NA"))
+
+#### Input RAND for comparison
+library(lubridate)
+
+rand <- read_csv("../../../../00-Data_for_Classes/RAND_Database_Worldwide_Terrorism/RAND_Database_of_Worldwide_Terrorism_Incidents.csv")
+
+rand2 <- rand |> 
+  mutate(
+    Date2 = dmy(Date),
+    Year = year(Date2),
+    Year2 = if_else(Year == 2068, 1968, Year)
+  )
 ```
 
 class: slideblue
@@ -38,9 +58,9 @@ class: slideblue
 
 .size55[.center[
 Explore the Global Terrorism Database (GTD)
-]]
 
-<br>
+https://www.start.umd.edu/gtd/
+]]
 
 <br>
 
@@ -55,14 +75,858 @@ Explore the Global Terrorism Database (GTD)
 
 <br>
 
+Today we move to our second big project that aims to identify and measure terrorism events around the world.
+
+The full GTD database is 100 MB with 135 variables measuring 201k observations.
+
+That's functionally impossible to manage easily in Excel (although trivial in R).
+
+However, the website offers some handy querying and visualization tools we'll explore today.
+
+**For the courageous I can also set you up to do this in R!**
+
+
+
+---
+
+class: middle, slideblue
+
+.size50[.center[.content-box-grey[**Global Terrorism Database (GTD)**]]]
+
+<br>
+
+## Research Questions
+.size35[
+1. Pros and cons of generalizing from this dataset?
+
+2. Is the damage caused by terrorism getting worse?
+
+3. Where are the terrorism hot spots in the world?
+
+4. Are the characteristics of terrorism changing?
+]
+
+???
+
+Just like on Monday I want us to evaluate this project using these four questions.
+
+<br>
+
+*Split Class into Small Groups*
+
+Go sit with your group!
+
+(SLIDE)
+
+
+
+---
+
+class: middle, slideblue
+
+.size50[.center[.content-box-grey[**Global Terrorism Database (GTD)**]]]
+
+<br>
+
+.size35[
+1) Pros and cons of generalizing from this dataset?
+
++ How are the concepts defined?
+
++ What is the sample selection process?
+
++ Are the variables valid and reliable?
+  + nperps, nkill, nwound, propvalue, weaptype1_txt, suicide, attacktype1_txt, targettype1_txt
+
+]
+
+???
+
+Ok, get ready to tell us the pros and cons of using this dataset as our tool for identifying and measuring terrorism.
+
+Focus on these variables.
+
+*DISCUSS*
+
+- (SLIDES: About the GTD, Defining terrorism, valid and reliable prompt?)
+
+
+
+---
+
+class: middle, slideblue
+
+.size45[.center[**The Global Terrorism Database (GTD)**]]
+
+.size35[
++ Maintained by the National Consortium for the Study of Terrorism and Responses to Terrorism (START) at the University of Maryland
+
++ Includes an advisory oversight board with academic experts in the field of terrorism studies
+
++ Contains information on over 200,000 terrorist attacks
+
++ Currently the most comprehensive **unclassified** database on terrorist attacks in the world
+]
+
+???
+
+AFTER READING THROUGH THE WEBSITE MATERIAL DO YOU HAVE ANY CONCERNS ABOUT INSTITUTIONAL BIASES?
+
+<br>
+
+IS THE "UNCLASSIFIED" NOTE HERE HINTING AT SOMETHING WE DON'T KNOW ABOUT THAT THEY DO KNOW ABOUT? 
+
+
+
+---
+
+class: middle, slideblue
+
+.size40[.center[**GTD Defines Terrorism**]]
+
+.size30[
++ The incident must be intentional...
++ The incident must entail some level of violence or immediate threat of violence...
++ The perpetrators of the incidents must be sub-national actors...
+
+Plus, at least two of the following criteria:
+
+1. The act must be aimed at attaining a political, economic, religious, or social goal. 
+2. There must be evidence of an intention to coerce, intimidate, or convey some other message to a larger audience (or audiences) than the immediate victims.
+3. The action must be outside the context of legitimate warfare activities.
+]
+
+???
+
+WHAT DO WE THINK OF THIS? A "GOOD" DEFINITION?
+
+- HOW DOES IT COMPARE TO OUR CLASS DEFINITION?
+
+- HOW DOES IT COMPARE TO TILLY'S (2004) DEFINITION?
+
+<br>
+
+Let's compare it to the RAND database from Monday.
+
+SLIDE
+
+
+
+---
+
+class: middle, slideblue
+
+.size55[.center[**RAND Defines Terrorism**]]
+
+.size40[
+
+Terrorism is defined by the nature of the act, not by the identity of the perpetrators or the nature of the cause; key elements include:
+
++ Violence or the threat of violence
++ Calculated to create fear and alarm
++ Intended to coerce certain actions
++ Motive must include a political objective
++ Generally directed against civilian targets
++ Can be a group or an individual
+]
+
+???
+
+COMPARE AND CONTRAST.
+
+- HAS THE GTD MADE ANY BIG OR PARTICULARLY USEFUL CHANGES? OR IS THIS BASICALLY THE SAME THING?
+
+<br>
+
+Before we move off the definition, let's talk about this strange 2 out of 3 idea in the extra criteria.
+
+(SLIDE)
+
 
 
 
 
 ---
 
-background-image: url('libs/Images/background-red.png')
-background-size: 100%
+class: middle
+
+.size35[
+```{r}
+d |> 
+  count(crit1, crit2, crit3) |>
+  mutate(
+    Proportion = n / sum(n)
+  ) |>
+  mutate(
+    crit1 = if_else(crit1 == 1, "Yes", ""),
+    crit2 = if_else(crit2 == 1, "Yes", ""),
+    crit3 = if_else(crit3 == 1, "Yes", "")
+  ) |>
+  rename("Criteria 1" = crit1, "Criteria 2" = crit2, "Criteria 3" = crit3, Count = n) |>
+  knitr::kable(digits = 2, align = "c")
+```
+]
+
+.size30[
+1. The act must be aimed at attaining a political, economic, religious, or social goal. 
+
+2. There must be evidence of an intention to coerce, intimidate, or convey some other message to a larger audience (or audiences) than the immediate victims.
+
+3. The action must be outside the context of legitimate warfare activities.
+]
+
+???
+
+Here we see the proportion of cases that meet each of the three additional criteria.
+
+Each row tells us what proportion of cases qualify as terrorism by including some of the criteria.
+
+Bottom row shows us 171k cases, or around 85% of the sample, meet all three criteria for inclusion.
+
+On the other end, approximately 2,300 cases, or around 1% of the sample, qualify by meeting only criteria 2 and 3 but not 1. 
+
+EVERYBODY CLEAR ON HOW TO READ THIS TABLE?
+
+WHAT CONCLUSIONS CAN WE DRAW FROM THIS? DOES THIS TELL US ANYTHING IMPORTANT ABOUT THEIR VIEWS OF TERRORISM?
+
+<br>
+
+98% of the cases in this dataset include the first two criteria (85+13).
+
+So, the researchers are telling us that, essentially, ALL terrorism meets criteria 1 and 2.
+
+THE QUESTION FOR US IS, WHAT DOES CRITERIA 3 ADD TO OUR UNDERSTANDING?
+
+- WHY DO WE NEED IT?
+
+<br>
+
+Since a case must meet 2 out of 3 criteria, I'd like to know if the 2% of cases that qualify by including criteria 3 with only one of the others looks like the rest.
+
+I'll spare you the insanity but I went down quite the rabbit hole with this and the cases looked fairly similar across the variables in this dataset.
+
+Some differences, but nothing crazy.
+
+```{r}
+# ##
+# d2019 <- d |>
+#   filter(iyear == 2019)
+# 
+# # d2019 |>
+# #   count(crit1, crit2, crit3)
+# 
+# ## Two groups
+# ## Group 1: all three criteria met
+# ## Group 2: meets crit 3 but only one of 1 or 2
+# 
+# d2 <- d2019 |>
+#   mutate(
+#     check_criteria = case_when(
+#       crit1 == 1 & crit2 == 1 & crit3 == 1 ~ "All Criteria",
+#       crit3 == 1 ~ "3 and one more",
+#       TRUE ~ NA_character_
+#     )
+#   )
+# 
+# # d2 |>
+# #   count(check_criteria)
+# 
+# # ## Top country targets
+# # d2 |> filter(check_criteria == "Group 1") |> count(country_txt) |> arrange(desc(n))
+# # 
+# # d2 |> filter(check_criteria == "Group 2") |> count(country_txt) |> arrange(desc(n))
+# # 
+# # ## Weapons used
+# # d2 |> filter(check_criteria == "Group 1") |> count(weaptype1_txt) |> arrange(desc(n))
+# # 
+# # d2 |> filter(check_criteria == "Group 2") |> count(weaptype1_txt) |> arrange(desc(n))
+# # 
+# # ## Weapons used
+# # d2 |> filter(check_criteria == "Group 1") |> count(propextent_txt) |> arrange(desc(n))
+# # 
+# # d2 |> filter(check_criteria == "Group 2") |> count(propextent_txt) |> arrange(desc(n))
+# 
+# ## 
+# #d2 |>
+# d |>
+#   mutate(
+#     check_criteria = case_when(
+#       crit1 == 1 & crit2 == 1 & crit3 == 1 ~ "All Criteria",
+#       crit3 == 1 ~ "3 and one more",
+#       TRUE ~ NA_character_)
+#   ) |>
+#   group_by(check_criteria) |>
+#   summarize(
+#     Perps = mean(nperps, na.rm=TRUE),
+#     Killed = mean(nkill, na.rm=TRUE),
+#     Wounded = mean(nwound, na.rm=TRUE),
+#     Property = mean(propvalue, na.rm=TRUE)
+#   ) |>
+#   filter(check_criteria != "NA") |>
+#   knitr::kable(digits = 2)
+# 
+# d |>
+#   mutate(
+#     check_criteria = case_when(
+#       crit1 == 1 & crit2 == 1 & crit3 == 1 ~ "All Criteria",
+#       crit3 == 1 ~ "3 and one more",
+#       TRUE ~ NA_character_)
+#   ) |>
+#   filter(!is.na(check_criteria)) |>
+#   pivot_longer(cols = c(nperps, nkill, nwound), names_to = "Predictors", values_to = "Values") |>
+#   ggplot(aes(x = Predictors, y = Values, fill = check_criteria)) +
+#   geom_boxplot() +
+#   coord_cartesian(ylim = c(0, 25))
+```
+
+
+
+---
+
+class: middle, slideblue
+
+.size50[.center[**The Global Terrorism Database (GTD)**]]
+
+<br>
+
+.size35[
+1) Pros and cons of generalizing from this dataset?
+
++ How are the concepts defined?
+
++ What is the sample selection process?
+
++ **Are the variables valid and reliable?**
+  + nperps, nkill, nwound, propvalue, weaptype1_txt, suicide, attacktype1_txt, targettype1_txt
+
+]
+
+???
+
+ANY VALIDITY OR RELIABILITY CONCERNS WITH THESE SPECIFIC VARIABLES IN THE CODEBOOK?
+
+*DISCUSS*
+
+
+
+
+---
+
+background-image: url('libs/Images/11_2-Access_GTD.png')
+background-size: 70%
+background-position: bottom
+class: slideblue
+
+.center[.size55[.content-box-blue[https://www.start.umd.edu/gtd/]]]
+
+???
+
+As I told you when we started today, the GTD database is 100 MB spread across 135 variables and over 200k terror events.
+
+Excel can't handle that well.
+
+So, I'll now point you to the web search and reporting tool on the GTD website.
+
+On the GTD website select "Access the GTD" at the top and then "Search and Browse"
+
+
+
+---
+
+background-image: url('libs/Images/11_2-GTD_DB1.png')
+background-size: 85%
 background-position: center
-class: middle, inverse
+class: slideblue
+
+???
+
+"Search and Browse" will take you here to what is actually the output of a search that includes all the possible results.
+
+Scroll down to see a visualization, the criteria selected (none yet) and the events identified.
+
+When you click into this the first time it includes all of the possible 200k events.
+
+
+
+---
+
+background-image: url('libs/Images/11_2-GTD_DB2.png')
+background-size: 85%
+background-position: center
+class: slideblue
+
+???
+
+By clicking the options next to the plot it'll show you the cases broken out by the possible criteria.
+
+
+
+
+---
+
+background-image: url('libs/Images/11_2-GTD_DB3.png')
+background-size: 85%
+background-position: center
+class: slideblue
+
+???
+
+You can also click the "Back to Advanced Search" to change the results on this page.
+
+
+
+
+---
+
+background-image: url('libs/Images/11_2-GTD_DB4.png')
+background-size: 85%
+background-position: center
+class: slideblue
+
+???
+
+Using the search features on the website you can narrow your results / visualizations by any of these features.
+
+<br>
+
+Let's play with this tool to explore terrorism according to the GTD.
+
+
+
+---
+
+class: middle, slideblue
+
+.size45[.center[**The Global Terrorism Database (GTD)**]]
+
+<br>
+
+## Research Questions
+.size35[
+1. Pros and cons of generalizing from this dataset?
+2. **Is the damage caused by terrorism getting worse?**
+3. Where are the terrorism hot spots in the world?
+4. **Are the characteristics of terrorism changing?**
+]
+
+<br>
+
+### Examine all cases across time broken out by:
+.size40[
++ casualites, fatalities, injuries, weapon types and regions 
+]
+
+???
+
+Ok, pairs, take some time to examine the data and try to answer these three questions.
+
+We don't need to filter the cases yet.
+
+Go back to the "all events" line plot and use the plot adjustments to examine the casualties, fatalities, injuries, weapon types and regions across time.
+
+I'd love to ask you to do country as well but the visualization tool can only do 25 countries at a time and I don't believe it can make maps.
+
+Get ready to report back what we learn from these.
+
+<br>
+
+Let's start with casualties, fatalities, and injuries.
+
+SLIDE
+
+
+
+---
+
+```{r, fig.retina=3, fig.align='center', fig.asp=0.618, out.width='100%', fig.width=5}
+d |>
+  group_by(iyear) |>
+  summarize(
+    Injuries = sum(nwound, na.rm = TRUE),
+    Fatalities = sum(nkill, na.rm = TRUE)
+  ) |>
+  pivot_longer(cols = Injuries:Fatalities, names_to = "Type", values_to = "Values") |>
+  ggplot(aes(x = iyear, y = Values, color = Type)) +
+  geom_line() +
+  labs(x = "", y = "Count") +
+  scale_color_manual(values = c("red", "blue")) +
+  theme_bw() +
+  annotate("label", x = 1975, y = 30000, label = "Fatalities", color = "red") +
+  annotate("label", x = 1975, y = 25000, label = "Injuries", color = "blue") +
+  guides(color = "none")
+```
+
+???
+
+WHAT DO YOU THINK THIS DATA TELLS US ABOUT THE GLOBAL EXPERIENCE OF TERRORISM?
+
+- WHAT IS HAPPENING SINCE 2000???
+
+<br>
+
+HOW DOES THIS COMPARE TO THE TOTALS PRODUCED BY THE RAND DATABASE?
+
+(SLIDE)
+
+
+
+
+---
+
+```{r, fig.retina=3, fig.align='center', fig.asp=0.618, out.width='100%', fig.width=5}
+x1 <- rand2 |>
+  group_by(Year2) |>
+  summarize(
+    RAND_Fatalities = sum(Fatalities)
+  )
+
+x2 <- d |>
+  group_by(iyear) |>
+  summarize(
+    GTD_Fatalities = sum(nkill, na.rm = TRUE)
+  )
+
+full_join(x1, x2, by = c("Year2" = "iyear")) |>
+  ggplot(aes(x = Year2)) +
+  geom_line(aes(y = RAND_Fatalities), color = "blue", size = 1.3) +
+  geom_line(aes(y = GTD_Fatalities), color = "red", size = 1.3) +
+  labs(x = "", y = "Fatalities") +
+  theme_bw() +
+  annotate("label", x = 1975, y = 29000, label = "RAND", color = "blue", size=6) +
+  annotate("label", x = 1975, y = 36000, label = "GTD", color = "red", size = 6)
+
+
+#coord_cartesian(xlim = c(1968, 2009), )
+```
+
+???
+
+Here we see a HUGE difference in estimates of fatalities.
+
+Let's zoom in on the common years only.
+
+
+
+
+---
+
+```{r, fig.retina=3, fig.align='center', fig.asp=0.618, out.width='100%', fig.width=5}
+full_join(x1, x2, by = c("Year2" = "iyear")) |>
+  filter(Year2 >= 1968, Year2 <= 2009) |>
+  ggplot(aes(x = Year2)) +
+  geom_line(aes(y = RAND_Fatalities), color = "blue", size = 1.3) +
+  geom_line(aes(y = GTD_Fatalities), color = "red", size = 1.3) +
+  labs(x = "", y = "Fatalities") +
+  theme_bw() +
+  annotate("label", x = 1972, y = 9500, label = "RAND", color = "blue", size = 6) +
+  annotate("label", x = 1972, y = 12000, label = "GTD", color = "red", size = 6)
+
+```
+
+???
+
+Ok, let's talk about the differences here.
+
+WHICH LINE IS THE BETTER ESTIMATE OF FATALITIES DUE TO TERROISM? WHY?
+
+<br>
+
+WHAT EXPLAINS THE DIFFERENCE: 
+
+- SAMPLE SELECTION, 
+
+- THE DEFINITION OF TERRORISM, AND/OR
+
+- THE DEFINITION OF FATALITIES?
+
+<br>
+
+Let's shift our focus to the weapons types.
+
+
+
+---
+
+```{r, fig.retina=3, fig.align='center', fig.asp=0.57, out.width='100%', fig.width=8}
+# d |>
+#   mutate(
+#     weaptype1_txt = if_else(weaptype1_txt == "Vehicle (not to include vehicle-borne explosives, i.e., car or truck bombs)", "Vehicle", weaptype1_txt)
+#   ) |>
+#   group_by(iyear) |>
+#   count(weaptype1_txt) |>
+#   ggplot(aes(x = iyear, y = n, color = weaptype1_txt)) +
+#   geom_line()
+
+d |>
+  mutate(
+    weaptype1_txt = if_else(weaptype1_txt == "Vehicle (not to include vehicle-borne explosives, i.e., car or truck bombs)", "Vehicle", weaptype1_txt)
+  ) |>
+  group_by(iyear) |>
+  count(weaptype1_txt) |>
+  ggplot(aes(x = iyear, y = n, fill = weaptype1_txt)) +
+  geom_col(position = "stack") +
+  theme_bw() +
+  labs(x = "", y = "", fill = "", title = "Weapons Used in Terrorist Acts")
+```
+
+???
+
+WHAT DO WE LEARN FROM THE WEAPONS TYPES USED OVER TIME?
+
+- ANY INTERESTING CHANGES?
+
+<br>
+
+(SLIDE: Proportional plot to make comparisons easier)
+
+
+
+---
+
+```{r, fig.retina=3, fig.align='center', fig.asp=0.57, out.width='100%', fig.width=8}
+d |>
+  mutate(
+    weaptype1_txt = if_else(weaptype1_txt == "Vehicle (not to include vehicle-borne explosives, i.e., car or truck bombs)", "Vehicle", weaptype1_txt)
+  ) |>
+  group_by(iyear) |>
+  count(weaptype1_txt) |>
+  ggplot(aes(x = iyear, y = n, fill = weaptype1_txt)) +
+  geom_col(position = "fill") +
+  theme_bw() +
+  labs(x = "", y = "", fill = "", title = "Weapons Used in Terrorist Acts") +
+  scale_y_continuous(labels = scales::percent_format())
+```
+
+???
+
+This version of the plot expands each bar to 100% so we can see the proportion of weapons used in each year.
+
+Be incredibly careful here though as it, and anytime you compare percentages, tricks the brain into thinking the number of attacks per year is constant.
+
+It definitely isn't!!
+
+<br>
+
+WHAT DO WE LEARN FROM THIS DATA?
+
+- WHAT ARE THE MOST COMMON TYPES OF TERRORIST WEAPON ACROSS TIME?
+
+<br>
+
+
+
+
+---
+
+class: middle, slideblue
+
+.size45[.center[**The Global Terrorism Database (GTD)**]]
+
+<br>
+
+## Research Questions: Focus on the USA
+.size35[
+1. Pros and cons of generalizing from this dataset?
+2. Is the damage caused by terrorism getting worse?
+3. **Where are the terrorism hot spots in the world?**
+4. Are the characteristics of terrorism changing?
+]
+
+???
+
+OK, WHAT DID YOU LEARN FROM EXAMINING THE TRENDS ACROSS THE REGIONS?
+
+- ANYTHING OF NOTE?
+
+<br>
+
+For the country level, let's look at some maps!
+
+
+
+---
+
+```{r, fig.retina=3, fig.align='center', out.width='100%', fig.height=5, fig.width=8}
+# following packages require installing libudunits2-dev and libgdal-dev in synaptic
+library(sf)
+library(rnaturalearth)
+library(rnaturalearthdata)
+library(countrycode)
+
+## Use rnaturalearth to define world map data
+worldmap <- ne_countries(scale = 'medium', type = 'map_units',
+                         returnclass = 'sf')
+#worldmap2 <- as_tibble(worldmap)
+#countrycode::guess_field(worldmap$un_a3) # 98.7% genc3n
+#countrycode::guess_field(worldmap2$sovereignt) # 92.5% cow.name
+#countrycode::guess_field(worldmap2$admin) # 84% cldr.variant.en
+
+#countrycode::guess_field(d$country_txt) # country.name.en 85%
+d$ccode <- countrycode::countrycode(sourcevar = d$country_txt, origin = "country.name.en", destination = "cow.name")
+
+###################################################
+## Map of terror attacks per country overall
+d |>
+  group_by(ccode) |>
+  summarize(
+    Attacks = n()
+  ) |> #summary()
+  mutate(
+    Attacks_cat = cut(Attacks, breaks = c(0, 20, 100, 750, 27000), labels = c("< 20", "< 100", "< 750", "> 750"), include.lowest = TRUE)
+  ) %>%
+  left_join(worldmap, ., by = c("sovereignt" = "ccode")) |>
+  ggplot() +
+  geom_sf(aes(fill = Attacks_cat)) +
+  labs(fill = "", title = "Terror Attacks (1970 - 2019)",
+       caption = "Source: GTD") +
+  scale_fill_brewer(type = "seq", palette = "YlOrRd")
+```
+
+???
+
+Map represents a count of terror attacks overall.
+
+- e.g. I counted the number of attacks per country. 
+
+WHAT CONCLUSIONS CAN WE DRAW USING THIS MAP OF THE DATA?
+
+- HOW CONFIDENT ARE WE THE RED COUNTRIES ARE THE TERROR HOTSPOTS?
+
+- HOW DOES THIS COMPARE TO THE DATA FROM RAND?
+
+(Fills in small counts in Africa.)
+
+<br>
+
+Let's check out the recent five years of the data.
+
+
+
+---
+
+```{r, fig.retina=3, fig.align='center', out.width='100%', fig.height=5, fig.width=8}
+###################################################
+## Map of terror attacks per country (2015-2019)
+d |>
+  filter(iyear >= 2015) |>
+  group_by(ccode) |>
+  summarize(
+    Attacks = n()
+  ) |> #summary()
+  mutate(
+    Attacks_cat = cut(Attacks, breaks = c(0, 2, 20, 200, 11000), labels = c("< 2", "< 20", "< 200", "> 200"), include.lowest = TRUE)
+  ) %>%
+  left_join(worldmap, ., by = c("sovereignt" = "ccode")) |>
+  ggplot() +
+  geom_sf(aes(fill = Attacks_cat)) +
+  labs(fill = "", title = "Terror Attacks (2015 - 2019)",
+       caption = "Source: GTD") +
+  scale_fill_brewer(type = "seq", palette = "YlOrRd")
+```
+
+???
+
+Here's the map updated for the period since 2015, e.g. the most recent five years in the database.
+
+WHAT CONCLUSIONS CAN WE DRAW FROM THIS?
+
+<br>
+
+ARE WE CONFIDENT THAT THIS CAPTURES ALL OF THE TERRORIST EVENTS IN THIS PERIOD?
+
+
+
+---
+
+```{r, fig.retina=3, fig.align='center', out.width='100%', fig.height=5, fig.width=8}
+###################################################
+## Map of terror fatalities per country (2015-2019)
+d |>
+  filter(iyear >= 2015) |>
+  group_by(ccode) |>
+  summarize(
+    Fatal = sum(nkill, na.rm=TRUE)
+  ) |> #summary()
+  mutate(
+    Fatal_cat = cut(Fatal, breaks = c(0, 5, 25, 250, 37000), labels = c("< 5", "< 25", "< 250", "> 250"), include.lowest = TRUE)
+  ) %>%
+  left_join(worldmap, ., by = c("sovereignt" = "ccode")) |>
+  ggplot() +
+  geom_sf(aes(fill = Fatal_cat)) +
+  labs(fill = "", title = "Terrorism Fatalities (2015 - 2019)",
+       caption = "Source: GTD") +
+  scale_fill_brewer(type = "seq", palette = "YlOrRd")
+```
+
+???
+
+Rather than a count of attacks, here we see a sum of the fatalities.
+
+WHAT CONCLUSIONS CAN WE DRAW FROM THIS?
+
+<br>
+
+ARE WE MORE CONFIDENT USING THE GTD DATABASE TO COUNT TERRORIST ATTACKS OR FATALITIES DUE TO ATTACKS? WHY?
+
+<br>
+
+Let's end by focusing on the US experience of terrorism over the last ten years.
+
+Filter the GTD report for the USA and 2010 to 2019.
+
+Get ready to tell me what the cases look like.
+
+
+
+---
+
+class: middle, center
+
+.size40[
+```{r}
+d |>
+  filter(iyear >= 2010, country_txt == "United States") |>
+  mutate(
+    propvalue_millions = propvalue/1e6
+  ) |>
+  pivot_longer(cols = c(nkill, nwound, propvalue_millions, suicide, crit1, crit2, crit3), names_to = "Variables", values_to = "Values") |>
+  mutate(
+    Variables = case_when(
+      Variables == "nkill" ~ "Killed",
+      Variables == "nwound" ~ "Wounded",
+      Variables == "propvalue_millions" ~ "Property (millions)",
+      Variables == "suicide" ~ "Suicide Attack",
+      Variables == "crit1" ~ "Criteria 1",
+      Variables == "crit2" ~ "Criteria 2",
+      Variables == "crit3" ~ "Criteria 3"
+    )
+  ) |>
+  group_by(Variables) |>
+  summarize(
+    N = n(),
+    Mean = mean(Values, na.rm=TRUE),
+    StdDev = sd(Values, na.rm=TRUE),
+    Min = min(Values, na.rm=TRUE),
+    Max = max(Values, na.rm=TRUE)
+  ) |>
+  knitr::kable(digits = 2)
+```
+]
+
+???
+
+Here we see summary statistics for the variables we've been exploring but focused on the US from 2010 to 2019.
+
+ANY QUESTIONS ON THE COLUMNS IN THIS TABLE?
+
+<br>
+
+WHAT DO WE LEARN FROM THIS?
+
+<br>
+
+AT THIS POINT, WOULD YOU RECOMMEND PEOPLE USE THE RAND DATABASE OR GTD? WHY?
+
+
+
 

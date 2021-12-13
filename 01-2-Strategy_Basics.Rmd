@@ -73,37 +73,37 @@ background-position: center
 .size60[.center[**Game: Survive or Die!**]]
 
 .size40[
-+ **Everybody stand up**
++ Everybody stand up
 ]
 
 --
 
 .size40[
-+ **Lives Remaining: 1 (a playing card)**
++ Lives Remaining: 1 (a playing card)
 ]
 
 --
 
 .size40[
-+ **Duel: Rock-paper-scissors, winner takes all**
++ Duel: Rock-paper-scissors, winner takes all
 ]
 
 --
 
 .size40[
-+ **If you are challenged you MUST duel**
++ If you are challenged you MUST duel
 ]
 
 --
 
 .size40[
-+ **Lose your card, sit down (you're dead)**
++ Lose your card, sit down (you're dead)
 ]
 
 --
 
 .size40[
-+ **No negotiations allowed**
++ No negotiations allowed
 ]
 
 ???
@@ -163,9 +163,6 @@ Everybody take 2 minutes on your own to reflect on the game.
 
 ---
 
-background-image: url('libs/Images/01_2-Freedman_Strategy.jpg')
-background-size: 37%
-background-position: right
 class: slideblue
 
 .pull-left[
@@ -176,8 +173,15 @@ class: slideblue
 
 .center[
 .size70[
-**Define "strategy" as a concept**
+Define "strategy" as a concept
 ]]]
+
+.pull-right[
+
+```{r, fig.retina=3, fig.align='right', out.width='80%'}
+knitr::include_graphics('libs/Images/01_2-Freedman_Strategy.jpg')
+```
+]
 
 ???
 
@@ -207,9 +211,6 @@ IN THESE TERMS, WERE YOU  "STRATEGIC" DURING OUR GAME OR NOT?
 
 ---
 
-background-image: url('libs/Images/01_2-Freedman_Strategy.jpg')
-background-size: 37%
-background-position: right
 class: slideblue
 
 .pull-left[
@@ -220,8 +221,15 @@ class: slideblue
 
 .center[
 .size60[
-**Identify the assumptions underpinning "strategic behavior"**
+Identify the assumptions underpinning "strategic behavior"
 ]]]
+
+.pull-right[
+
+```{r, fig.retina=3, fig.align='right', out.width='80%'}
+knitr::include_graphics('libs/Images/01_2-Freedman_Strategy.jpg')
+```
+]
 
 ???
 
@@ -268,15 +276,15 @@ background-position: center
 .size50[.center[**Game: Low Cost Survive or Die!**]]
 
 .size40[
-+ **Lives Remaining: 1**
++ Lives Remaining: 1
 
-+ **Rock-paper-scissors, winner takes ONE card**
++ Rock-paper-scissors, winner takes ONE card
 
-+ **If you are challenged you MUST duel**
++ If you are challenged you MUST duel
 
-+ **Lose ALL your cards and you're dead**
++ Lose ALL your cards and you're dead
 
-+ **No negotiations allowed**
++ No negotiations allowed
 ]
 
 ???
@@ -315,19 +323,22 @@ WHAT IS FREEDMAN'S ARGUMENT IN CHAPTER 1?
 
 ---
 
-
-background-image: url('libs/Images/01_2-Freedman_Strategy.jpg')
-background-size: 37%
-background-position: right
 class: slideblue
 
 .pull-left[
 .center[
 .size60[
-**Strategy is fundamental to the social world.** 
+Strategy is .textred[**fundamental**] to the social world.
 
-**Politics in everything.**
+Politics in .textred[**everything**].
 ]]]
+
+
+.pull-right[
+```{r, fig.retina=3, fig.align='right', out.width='80%'}
+knitr::include_graphics('libs/Images/01_2-Freedman_Strategy.jpg')
+```
+]
 
 ???
 
@@ -366,15 +377,15 @@ background-position: center
 .size50[.center[**Game: Ultimate Survive or Die!**]]
 
 .size40[
-+ **Lives Remaining: 1 or 3 (randomly assigned)**
++ Lives Remaining: 1 or 3 (randomly assigned)
 
-+ **Rock-paper-scissors, winner takes ONE card**
++ Rock-paper-scissors, winner takes ONE card
 
-+ **If you are challenged you MUST duel**
++ If you are challenged you MUST duel
 
-+ **Lose ALL your cards and you're dead**
++ Lose ALL your cards and you're dead
 
-+ **Alliances Permitted: Pool cards, one leader**
++ Alliances Permitted: Pool cards, one leader
 ]
 
 ???
@@ -423,15 +434,15 @@ background-position: center
 .size50[.center[**Game: Ultimate Survive or Die!**]]
 
 .size40[
-+ **Lives Remaining: 1 or 3 (randomly assigned)**
++ Lives Remaining: 1 or 3 (randomly assigned)
 
-+ **Rock-paper-scissors, winner takes ONE card**
++ Rock-paper-scissors, winner takes ONE card
 
-+ **If you are challenged you MUST duel**
++ If you are challenged you MUST duel
 
-+ **Lose ALL your cards and you're dead**
++ Lose ALL your cards and you're dead
 
-+ **Alliances Permitted: Pool cards, one leader**
++ Alliances Permitted: Pool cards, one leader
 ]
 
 ???
