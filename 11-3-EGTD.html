@@ -19,11 +19,12 @@ class: slideblue
 
 &lt;br&gt;
 
-.size55[.center[
-Explore the Extended Data on Terrorist Groups (EDTG)
-]]
+.size35[
+Hou, D., Gaibulloev, K., &amp; Sandler, T. (2020). Introducing Extended Data on Terrorist Groups (EDTG), 1970 to 2016. Journal of Conflict Resolution, 64(1), 199–225. 
 
-&lt;br&gt;
+1. Analyze the groups based in the US
+2. Analyze the groups worldwide in 2016
+]
 
 &lt;br&gt;
 
@@ -34,20 +35,218 @@ Explore the Extended Data on Terrorist Groups (EDTG)
 ???
 
 ### Prep for Class
-1. ...
+1. Open the data file in Excel so you can show them how to do things if they get stuck.
 
 &lt;br&gt;
 
+Today I want us to examine one last data set on terrorism.
+
+The Extended Data on Terrorist Groups (EDTG) database uses the work done by the GTD but focuses on measuring important aspects of the groups themselves rather than on the terrorist acts they commit.
+
+The data is on our LMS and at 10k rows, Excel should be able to handle it easily.
+
+&lt;br&gt;
+
+*Split class into small groups*
+
+Go sit with your group.
+
+Groups, make sure everybody has the data downloaded and opened in Excel (Web or Desktop version).
+
+&lt;br&gt;
+
+Before we dig in, let's discuss the critique of RAND in the article for today.
+
+The researchers raise three critiques of the RAND database on p202.
+
+WHAT ARE THEY AND HOW DO THEY HELP US THINK ABOUT OUR WORK EARLIER THIS WEEK?
+
++ 1) Project stopped receiving updates back in 2007 (now 2009?)
++ 2) Only tracked domestic attacks starting in 1998
++ 3) Focuses only on "significant" events.
+
+So, this likely explains the big difference between RAND and GTD we studied on Wednesday.
+
+Weird that these notes aren't clear on the RAND website. 
+
+- If true, these seem like important notes.
+
+
+
+---
+
+background-image: url('libs/Images/11_3-domestic_terror.jpg')
+background-size: 100%
+background-position: center
+
+&lt;br&gt;
+
+.size40[.content-box-red[**Domestic Terror Groups in the USA (2016)**]]
+
+???
+
+Let's start by focusing on the US.
+
+Turn on the filter for the data and focus only on the latest year available, 2016, and a base in the US.
+
+- This should give you five rows, one for each of five groups.
+
+*Demo if needed*
+
+&lt;br&gt;
+
+ARE WE TO ASSUME THIS MEANS THERE ARE ONLY FIVE TERROR GROUPS BASED IN THE US IN 2016?
+
+- WHAT DOES THE ARTICLE TELL US ABOUT HOW THE DATABASE WAS PUT TOGETHER?
+
+&lt;br&gt;
+
++ (p204: Initial 367 groups taken from Blomberg, Gaibulloev, and Sandler (2011))
++ (Expanded to 760 groups using the GTD events)
+
+So, groups have to have been coded as committing a terrorist act by the GTD to make it into this dataset.
 
 
 
 
 ---
 
-background-image: url('libs/Images/background-red.png')
+class: middle, slideblue
+
+.size35[
+
+|Terror Groups in US (2016)    |
+|:-----------------------------|
+|Animal Liberation Front       |
+|Earth Liberation Front        |
+|Jewish Defense League (JDL)_2 |
+|Ku Klux Klan                  |
+|Sovereign Citizen             |
+]
+
+&lt;br&gt;
+
+.size35[
+For each group, analyze the following variables: 
+
++ duration, total_atks, size, peak_size, total_casualties, drugtk, kidnap, public_service, the type (left, nat, rel, right) and the goals (ercsr, pch, sq, tch).
+]
+
+???
+
+Ok, groups, let's analyze these cases for the main variables in the dataset.
+
+- We'll use this to both learn about US terror groups AND to consider the validity and reliability of the measures.
+
+
+
+---
+
+
+|                 |                        |                       |                              |             |                  |
+|:----------------|:-----------------------|:----------------------|:-----------------------------|:------------|:-----------------|
+|gname            |Animal Liberation Front |Earth Liberation Front |Jewish Defense League (JDL)_2 |Ku Klux Klan |Sovereign Citizen |
+|duration         |41                      |25                     |4                             |47           |6                 |
+|total_atks       |1                       |0                      |0                             |0            |0                 |
+|size             |                        |                       |                              |             |                  |
+|peak_size        |10                      |10                     |10                            |1000         |                  |
+|total_casualties |0                       |0                      |0                             |0            |0                 |
+|drugtk           |                        |                       |                              |             |                  |
+|kidnap           |0                       |0                      |0                             |0            |0                 |
+|public_service   |                        |                       |1                             |1            |                  |
+|left             |1                       |1                      |0                             |0            |1                 |
+|nat              |0                       |0                      |0                             |0            |0                 |
+|rel              |0                       |0                      |1                             |0            |0                 |
+|right            |0                       |0                      |0                             |1            |0                 |
+|ercsr            |0                       |0                      |0                             |1            |1                 |
+|pch              |1                       |1                      |1                             |0            |0                 |
+|sq               |0                       |0                      |0                             |0            |0                 |
+|tch              |0                       |0                      |0                             |0            |0                 |
+
+???
+
+OK, TALK TO ME ABOUT THESE GROUPS.
+
+- WHAT DO WE LEARN FROM THIS?
+
+*Notes Below*
+
+&lt;br&gt;
+
+ANY CONCERNS WITH VALIDITY AND RELIABILITY OF THESE VARIABLES?
+
+*Discuss*
+
+&lt;br&gt;
+
+duration: The duration in years of a terrorist group’s existence since its formation.
+
+base: The base countries of a terrorist group.
+
+total_atks: This variable indicates the number of attacks that a terrorist group launched in a given year.
+
+Types of group
++ left (left wing)
++ nat (nationalist/separatist)
++ rel (religious)
++ right (right wing)
+
+size: The strength of a terrorist group.
+
+peak_size: The largest size that a terrorist group achieved.
+
+Types of goal
++ ercsr: seeks an empire, regime-change, or social-revolution goal.
++ pch: a policy-change goal
++ sq: seeks status quo (stop a change)
++ tch: seeks a territorial-change goal
+
+total_deaths: The total number of deaths caused by a terrorist group in a given year.
+
+total_injuries: The total number of injuries caused by a terrorist group in a given year.
+
+total_casualties: The total number of deaths and injuries caused by a terrorist group in a given year.
+
+endstr: categories for how the group ended
+
+drugtk: This dummy variable indicates whether a terrorist group traffics in drugs and/or grows or supplies drugs.
+
+kidnap: This dummy variable indicates whether a terrorist group engages in kidnappings in a given year.
+
+state_sponsor: This dummy variable indicates whether a terrorist group has been provided with any kind of support by states in a given year.
+
+public_service: This dummy variable indicates whether a terrorist group has ever provided social service.
+
+
+
+---
+
+background-image: url('libs/Images/11_3-GTD2019_worldmap.jpg')
 background-size: 100%
 background-position: center
-class: middle, inverse
+
+&lt;br&gt;
+
+.size35[.content-box-red[**Global Terror Groups (2016)**]]
+
+???
+
+Ok, groups, shift your focus to the groups currently active in 2016 around the world.
+
+Take some time focused on the same variables and get ready to tell us about the current state of terror groups around the world.
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
