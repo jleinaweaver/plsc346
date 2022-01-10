@@ -38,7 +38,7 @@ class: slideblue
 
 .size60[
 
-Introduction to political violence
+Welcome to political violence
 
 ]
 
@@ -61,7 +61,7 @@ Introduction to political violence
 
 Welcome to PLSC 346: Political Violence
 
-IS EVERYBODY IN THE RIGHT PLACE?
+### Is everybody in the right place?
 
 
 
@@ -103,17 +103,16 @@ background-position: center
 
 I'm Dr. Leinaweaver.
 
-- I'm a political scientist
+- Political scientist
 
 - Research interests: international politics, environmental politics and bargaining / negotiations.
 
 <br>
 
-YOUR TURN!
+### Your turn!
++ Name, year, major AND 
 
-Name, year, major AND 
-
-What is one act you could do after class that we would all agree is political violence?
++ What is one act you could do after class that we would all agree is political violence?
 
 
 
@@ -137,23 +136,25 @@ And we can't get much more fundamental than defining politics in a political sci
 
 To start this process, let's distribute some benefits.
 
-Here are three index cards, each one is worth five bonus points you can apply to any assignment grade this semester.
+Three index cards, each is worth three bonus points you can apply to a paper grade this semester.
+
+Three points bumps you 1/3 of a letter grade: B becomes a B+
 
 You have 10 minutes to distribute these cards before the offer expires.
 
-* YOU hang onto them and make sure they make a pitch to get one of the cards *
+*YOU hang onto them and make sure they make a public pitch to get one of the cards*
 
 <br>
 
 Ok, talk to me about the process.
 
-HOW DID YOU PERSONALLY APPROACH THE GAME?
+### How did you personally approach the game?
 
-HOW DID THE CLASS MAKE A COLLECTIVE DECISION?
+### How did the class make a collective decision?
 
-ARE YOU HAPPY WITH THE OUTCOME? WHY OR WHY NOT?
+### Are you happy with the outcome? why or why not?
 
-IF YOU COULD HAVE DECIDED ON YOUR OWN WITH NO INPUT FROM THE REST OF THE CLASS, WOULD YOU HAVE CHOSEN A DIFFERENT DISTRIBUTION?
+### If you could have decided on your own with no input from the rest of the class, would you have chosen a different distribution?
 
 
 
@@ -171,21 +172,21 @@ background-position: center
 
 Let's raise the stakes and try this again.
 
-Here are two index cards, each one is a "get out of jail" free card you can use this semester.
+Two index cards, each one is a "get out of jail" free card you can use this semester.
 
 - Miss a day and need an excused absence?
 - Miss a paper deadline and need an extension? Within reason!
-- etc.
+- Bump a paper by a full letter grade (10 pts)
 
-You have 10 minutes to distribute these cards before the offer expires.
+10 minutes to distribute these cards before the offer expires.
 
 <br>
 
 Ok, talk to me about the process.
 
-DID ANYTHING CHANGE IN HOW YOU APPROACHED THIS GAME?
+### Did anything change in how you approached this game?
 
-DID YOU NOTICE ANY DIFFERENCES IN HOW YOUR COLLEAGUES APPROACHED THIS DECISION?
+### Did you notice any differences in how your colleagues approached this decision?
 
 
 
@@ -205,11 +206,11 @@ What if we wanted to distribute something really crazy?
 
 Like, let's say, one index card worth an A in this class for your final grade?
 
-HOW WOULD YOU APPROACH TEN MINUTES TO DECIDE WHO GETS AN AUTOMATIC A?
+### How would you approach ten minutes to decide who gets an automatic "A"?
 
 <br>
 
-IF THIS EXERCISE IS A GOOD MODEL OF POLITICS, THEN WHAT DOES "POLITICS" REFER TO?
+### If this exercise is a good model of politics, then what does "politics" refer to?
 
 (SLIDE)
 
@@ -236,7 +237,9 @@ All of this is meant to help you think about "politics" like a political scienti
 
 <br>
 
-ANY QUESTIONS ON THIS?
+### Any questions on this?
+
+In these terms, politics is fundamental to the functioning of every society.
 
 
 
@@ -248,24 +251,24 @@ class: center
 
 ???
 
-Arguably, the only thing more fundamental and foundational to society than politics is violence.
+Funny thing is, arguably, the only thing more fundamental and foundational to society than politics is violence.
 
-Violence is an ancient human phenomenon and a powerful motivator in society.
++ Violence is an ancient human phenomenon and a powerful motivator in society.
 
-To some scholars, it is the only explanation you need for politics
++ To some scholars, it is the only explanation you need for politics
 
-It isn't hard to see its effect around us whether you use it or are afraid of it.
-
-ANYBODY RECOGNIZE THE PHOTO?
-(January 6th protest)
-
-IS THIS ACT CONSISTENT WITH OUR DEFINITION OF POLITICS TODAY?
++ It isn't hard to see its effect around us whether you use it or are afraid of it.
 
 <br>
 
-IMPORTANTLY, WAS THIS A VIOLENT ACT? WHY OR WHY NOT?
+### Anybody recognize the photo?
++ (The January 6th protest/invasion/attempted coup)
 
-(SLIDE)
+### Is the January 6th invasion of the Capitol Building an example of "politics" as we just defined it?
++ *Discuss*
+
+### Is the January 6th invasion of the Capitol Building an example of violence? Why or why not?
++ *Discuss*
 
 
 
@@ -277,17 +280,19 @@ background-position: center
 
 ???
 
-https://www.washingtonpost.com/local/public-safety/police-union-says-140-officers-injured-in-capitol-riot/2021/01/27/60743642-60e2-11eb-9430-e7c77b5b0297_story.html
+Jay-sus, of course it was. [Link](https://www.washingtonpost.com/local/public-safety/police-union-says-140-officers-injured-in-capitol-riot/2021/01/27/60743642-60e2-11eb-9430-e7c77b5b0297_story.html)
 
-"reports by police officials and federal prosecutors indicating that about 140 officers were injured"
++ "...about 140 officers were injured"
 
-"Capitol Police Officer Brian D. Sicknick died after trying to defend the Capitol from rioters."
++ "Capitol Police Officer Brian D. Sicknick died after trying to defend the Capitol from rioters."
 
-"...including several concussions from head blows from various objects, including metal poles ripped from inauguration-related scaffolding and even a pole with an American flag attached, D.C. police officials have said. Other injuries included swollen ankles and wrists, bruised arms and legs, and irritated lungs from bear and pepper spray."
++ "...several concussions from head blows from various objects..."
 
-"Reports say officers were pushed down stairs, trampled by rioters, punched and run over in a stampede."
++ "Other injuries included swollen ankles and wrists, bruised arms and legs, and irritated lungs from bear and pepper spray."
 
-“I’ve talked to officers who have done two tours in Iraq who said this was scarier to them than their time in combat,” acting D.C. police chief Robert J. Contee III said at a news conference earlier this month."
++ "Reports say officers were pushed down stairs, trampled by rioters, punched and run over in a stampede."
+
++ “I’ve talked to officers who have done two tours in Iraq who said this was scarier to them than their time in combat,” acting D.C. police chief Robert J. Contee III said at a news conference earlier this month."
 
 
 
@@ -298,34 +303,27 @@ class: middle, center
 background-image: url('libs/Images/01_1-Jan6th_Protest3.png')
 background-size: 100%
 background-position: center
+class: bottom, center
 
-.textred[.size80[**Violence as a Political Strategy**]]
-
-<br>
-
-<br>
-
-.content-box-red[.size40[**Rational, Goal-Seeking Actors**]]
+.textred[.size80[**Violence is a political strategy by rational, goal-seeking actors**]]
 
 ???
 
 Our organizing assumption this semester is that violence is a strategy chosen by rational, goal-seeking actors.
 
-CAN ANYBODY TELL ME WHAT THAT MEANS IN ENGLISH?
-
-HOW PROBLEMATIC IS THIS AS AN ASSUMPTION?
-
-- IS THIS ASSUMPTION LIKELY TO HELP US UNDERSTAND OR MISUNDERSTAND THE WORLD OF POLITICS?
+### Can anybody tell me what that means in english?
 
 <br>
 
-PUT DIFFERENTLY, WHAT PROPORTION OF POLITICAL VIOLENT ACTS ARE COMMITTED BY "CRAZY" PEOPLE?
+### How problematic is this as an assumption?
+
+#### - Is this assumption likely to help us understand or misunderstand the world of politics?
 
 <br>
 
-Here's the thing.
+### Put differently, what proportion of political violent acts are committed by "crazy" people?
 
-Assuming violent actors are "crazy" doesn't help us in any meaningful way.
+(Assuming violent actors are "crazy" doesn't help us in any meaningful way.)
 
 - The only way to stop "crazy" is with more violence.
 
@@ -385,33 +383,39 @@ class: middle
 
 ---
 
-background-image: url('libs/Images/background-blue_triangles.jpg')
-background-size: 100%
-background-position: center
-
-class: middle
+class: middle, center
 
 .size60[**Course Grade**]
 
-<br>
+```{css, echo=F}
+/* Change the background color to white for shaded rows (even rows) */
+.remark-slide thead, .remark-slide tr:nth-child(2n) {
+      background-color: white;
+}
+```
 
-.size45[
-||Proportion|
-|:-----|:----:|
-|Participation|40%|
-|Argument Paper 1|20%|
-|Argument Paper 2|20%|
-|Argument Paper 3|20%|
+```{r}
+tibble(
+  col1 = c("Participation", "Argument Paper 1", "Argument Paper 2", "Argument Paper 3", "Total"),
+  col2 = c("", "(Feb 18)", "(Apr 1)", "(Final Exam)", ""),
+  col3 = c(40, rep(20, 3), 100)
+) |>
+  kableExtra::kbl(align = c("l", "c", "c"), col.names = c("", "", "%")) |>
+  kableExtra::kable_styling(font_size = 50) |>
+  kableExtra::column_spec(1, width = "11em") |>
+  kableExtra::column_spec(2, width = "7em") |>
+  kableExtra::row_spec(c(0, 5), bold = TRUE, background = "#b3ccff")
 
-]
+```
 
 ???
 
 Course Grade
 
-Heavy on the participation.
+Heavy on the participation!
 
-You guys will steer us this semester. You pick the projects and I'll keep you moving forward.
+Definitely a seminar, not a lecture.
+
 
 
 
@@ -425,14 +429,12 @@ class: middle
 
 .size60[**Participation**]
 
-.size40[
-1. Get to class on time,
+.size45[
++ Get to class on time,
 
-2. Have the materials you need to be productive,
++ Have the materials you need to be productive,
 
-3. Do the work in class, and
-
-4. Save your work (annotated code and data).
++ Be engaged while in class (e.g., no sleeping, playing with your gadgets, leaving early, arriving late).
 ]
 
 
@@ -481,9 +483,15 @@ Read the syllabus.
 
 So much good stuff there on our class policies, your daily reading assignments and details on the assignments you'll be submitting during the semester.
 
-We have two short readings for Friday.
+<br>
 
-Be ready to define "strategy" for us.
+Everybody take a look at the syllabus requirements for Friday.
+
+### Any questions on what you need to do?
+
++ (Two short readings)
+
++ (Be ready to define "strategy" for us.)
 
 
 
