@@ -77,9 +77,9 @@ What explains the variation in how and why states use violence against their cit
 
 On Monday we dug into the Davenport and Armstrong (2004) article.
 
-WHAT DID WE LEARN FROM THAT ARTICLE THAT WOULD HELP US ANSWER OUR QUESTION?
+### What did we learn from that article that would help us answer our question?
 
-- DOES DEMOCRACY LIMIT REPRESSION? WHY OR WHY NOT?
+### - Does democracy limit repression? Why or why not?
 
 
 
@@ -98,7 +98,7 @@ Bueno de Mesquita, B., Cherif, F., Downs, G. and Smith, A. 2005. "Thinking Insid
 
 For today you read excerpts from this article.
 
-HOW DOES THIS ARTICLE CONNECT TO THE DAVENPORT AND ARMSTRONG ARTICLE FROM MONDAY?
+### How does this article connect to the davenport and armstrong article from monday?
 
 (Picks up where they left off and digs into the components of democracy)
 
@@ -106,7 +106,7 @@ HOW DOES THIS ARTICLE CONNECT TO THE DAVENPORT AND ARMSTRONG ARTICLE FROM MONDAY
 
 <br>
 
-WHY DO WE NEED THIS NEW ARTICLE? WHAT DOES IT HELP US TO ACHIEVE IN THE REAL-WORLD?
+### Why do we need this new article? what does it help us to achieve in the real-world?
 
 (Limiting violence against citizens is an important goal but "spreading democracy" is REALLY, REALLY hard to do.)
 
@@ -116,9 +116,9 @@ WHY DO WE NEED THIS NEW ARTICLE? WHAT DOES IT HELP US TO ACHIEVE IN THE REAL-WOR
 
 <br>
 
-AND WHAT IS THE OVER-ARCHING ARGUMENT MADE IN THIS PAPER?
+### And what is the over-arching argument made in this paper?
 
-- IN BROAD STROKES, DO THESE AUTHORS BELIEVE WE SHOULD FOCUS ON THE COMPONENTS OF DEMOCRACY OR DEMOCRACY AS AN INDEX?
+#### - In broad strokes, do these authors believe we should focus on the components of democracy or democracy as an index?
 
 (Not all dimensions of democracy contribute equally to reductions in human rights abuses BUT all appears somewhat relevant albeit at varying degrees.)
 
@@ -159,7 +159,7 @@ How does this specific mechanism influence the decision by democratic government
 
 FOCUS on the Polity codebook for diagramming your argument.
 
-ANY QUESTIONS?
+### Any questions?
 
 Get to it!
 
@@ -173,9 +173,9 @@ Get to it!
 
 Before we move to the findings for each measure, we need to answer an important question.
 
-ARE THESE FIVE FUNDAMENTALLY DIFFERENT ARGUMENTS OR DO THEY ALL BASICALLY USE DIFFERENT WORDS TO SAY THE SAME THING?
+### Are these five fundamentally different arguments or do they all basically use different words to say the same thing?
 
-- IN OTHER WORDS, HAVE YOU EACH BUILT AN ARGUMENT THAT "DEMOCRACY" DECREASES VIOLENCE OR THAT ONE SPECIFIC PART OF THE THING WE CALL DEMOCRACY DECREASES VIOLENCE?
+#### - In other words, have you each built an argument that "democracy" decreases violence or that one specific part of the thing we call democracy decreases violence?
 
 (SLIDE)
 
@@ -192,7 +192,7 @@ background-position: center
 
 Answering this question is why the authors give us Table 1.
 
-CAN ANYBODY HELP US MAKE SENSE OF WHAT THIS TABLE IS SHOWING?
+### Can anybody help us make sense of what this table is showing?
 
 <br>
 
@@ -222,7 +222,7 @@ Don't worry about the technical definition of what this is.
 
 The idea here is very similar to looking at correlations.
 
-CAN ANYBODY TELL US WHAT A CORRELATION IS?
+### Can anybody tell us what a correlation is?
 
 (SLIDE)
 
@@ -304,11 +304,11 @@ Values close to '0' mean you cannot explain the variable in the row using the ot
 
 - In other words, it captures something different in the world than the others.
 
-DOES THAT MAKE SENSE?
+### Does that make sense?
 
 <br>
 
-SO, WHAT DO THESE COMPONENT SCORES TELL US ABOUT THE SEPARATE MEASURES OF DEMOCRACY CREATED BY POLITY?
+### So, what do these component scores tell us about the separate measures of democracy created by Polity?
 
 (- Regulation of participation, participation competition and executive constraint capture very different things from the others.)
 
@@ -318,9 +318,9 @@ SO, WHAT DO THESE COMPONENT SCORES TELL US ABOUT THE SEPARATE MEASURES OF DEMOCR
 
 <br>
 
-DO THOSE RESULTS MAKE SENSE?
+### Do those results make sense?
 
-- FOR EXAMPLE, STATES WITH HIGH LEVELS OF EXECUTIVE COMPETITION ARE ALSO LIKELY TO SCORE BETTER ON THE OTHER MEASURES?
+#### - For example, states with high levels of executive competition are also likely to score better on the other measures?
 
 The authors indicate these results are sufficiently low enough to merit testing each indicator separately.
 
@@ -391,11 +391,11 @@ What specific recommendations could we make to policy-makers who are interested 
 
 ???
 
-POLICY RECOMMENDATIONS?
+### Policy recommendations?
 
 <br>
 
-ARE THERE ANY POLICIES THAT AIM TO PROMOTE DEMOCRATIZATION BUT THAT ACCORDING TO THIS RESEARCH MIGHT ACTUALLY INCREASE THE USE OF VIOLENCE BY GOVERNMENTS?
+### Are there any policies that aim to promote democratization but that according to this research might actually increase the use of violence by governments?
 
 
 
@@ -412,7 +412,7 @@ class: middle, center, inverse
 
 ???
 
-SO, BOTTOM LINE TAKEAWAYS THAT ANSWER OUR BIG QUESTION?
+### So, bottom line takeaways that answer our big question?
 
 
 
@@ -470,7 +470,7 @@ Be ready to explain what happened, the strategy being employed and some idea of 
 
 ???
 
-QUESTIONS ON THE ASSIGNMENT?
+### Questions on the assignment?
 
 *Send email link*
 

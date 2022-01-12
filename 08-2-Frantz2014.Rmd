@@ -76,15 +76,15 @@ class: middle, center, inverse
 
 ???
 
-HOW DOES THE FRAMING OF THIS PROJECT HELP US ANSWER OUR QUESTION?
+### How does the framing of this project help us answer our question?
 
 (Research Q: How do autocrats use repression and co-optation as strategies to prolong their hold on power?)
 
-+ WHO GETS AN ACTIVE ROLE AND WHO DOESN'T?
+#### + Who gets an active role and who doesn't?
 
-+ WHAT ARE THE RELEVANT INSTITUTIONS IN THIS STORY?
+#### + What are the relevant institutions in this story?
 
-+ WHAT ARE THE INTERACTIONS THAT MATTER AND WHAT ARE IGNORED?
+#### + What are the interactions that matter and what are ignored?
 
 *Force this exploration*
 
@@ -92,7 +92,7 @@ HOW DOES THE FRAMING OF THIS PROJECT HELP US ANSWER OUR QUESTION?
 
 Let's take a moment to compare and contrast the framing of this paper with the Escriba-Folch (2013) framing from Monday.
 
-TO WHAT DEGREE ARE THEY ATTACKING THE SAME PROBLEM IN THE SAME WAY?
+### To what degree are they attacking the same problem in the same way?
 
 (SLIDE)
 
@@ -112,9 +112,9 @@ On the slide I have the Escriba-Folch excerpt from Monday on p545.
 
 p334 has Frantz and Kendall-Taylor's (2014) discussion of the concept.
 
-HOW CONSISTENT ARE THE DEFINITIONS?
+### How consistent are the definitions?
 
-- ANY KEY DIFFERENCES?
+#### - Any key differences?
 
 <br>
 
@@ -126,7 +126,7 @@ F & KT: "It is a form of sociopolitical control used by authorities against thos
 
 **NOTES**
 
-TYPOLOGY OF REPRESSION?
+### Typology of repression?
 
 (p336, repression of empowerment rights and physical integrity rights)
 
@@ -148,19 +148,19 @@ background-position: center
 
 Before we dig into Frantz and Kendall-Taylor's model I want you to refresh my memory on the Escriba-Folch model from Monday.
 
-WHAT IS THE ASSUMED PRIMARY MOTIVATION FOR DICTATORS?
+### What is the assumed primary motivation for dictators?
 
 (Political survival)
 
 <br>
 
-AND HOW DOES ESCRIBA-FOLCH'S MODEL EXPLAIN THE USE OF POLITICAL VIOLENCE BY DICTATORS?
+### And how does Escriba-folch's model explain the use of political violence by dictators?
 
 (Two types of repression each best targeted at a particular type of threat to power)
 
 <br>
 
-SO, WHAT IS THE BIG ADDITION / MODIFICATION OF THIS MODEL BY FRANTZ AND KENDALL-TAYLOR (2014)?
+### So, what is the big addition / modification of this model by Frantz and Kendall-taylor (2014)?
 
 (SLIDE)
 
@@ -190,7 +190,7 @@ Co-optation entails 'encapsulating' sectors of the populace into the regime appa
 
 ???
 
-WHAT DOES THIS MEAN IN ENGLISH?
+### What does this mean in English?
 
 (Co-optation as important THIRD tool available to dictators, a tool that interacts with the others)
 
@@ -232,7 +232,7 @@ Compare notes with the people near you.
 
 <br>
 
-* ON BOARD *
+*ON BOARD*
 
 <br>
 
@@ -276,11 +276,11 @@ Co-optation
 
 <br>
 
-WHY NOT JUST BUY OFF YOUR OPPONENTS? WHY CREATE POLITICAL INSTITUTIONS FOR THEM?
+### Why not just buy off your opponents? Why create political institutions for them?
 
 (Money doesn't last; institutions represent an ongoing investment in the regime)
 
-WHAT HAS THE CURRENT LITERATURE TAUGHT US ABOUT THE INTERACTION BETWEEN THESE TWO TOOLS?
+### What has the current literature taught us about the interaction between these two tools?
 
 - Vreeland (2008) and Conrad (2014): They find that dictatorships with multiple political parties are more prone to torture than those without them. More chances for someone to cross the line and need to be punished.
 
@@ -306,14 +306,14 @@ class: middle, center, inverse
 
 ???
 
-WHAT DO THEY FIND WITH THEIR ANALYSIS?
+### What do they find with their analysis?
 (We find support for this argument: in dictatorships that use parties and legislatures physical integrity rights repression is higher, while empowerment rights repression is lower.)
 
 (- "Institutional co-optation is quite common in autocracies: of the 460 dictators in power from 1946 to 2004, only 11% (50) chose not to create a party or legislature at some point while in office" (333).)
 
 <br>
 
-HOW DID THEY OPERATIONALIZE THEIR KEY CONCEPTS?
+### How did they operationalize their key concepts?
 
 - empowerment rights repression (ER repression), we use Freedom House’s civil liberties score, measures `freedoms of expression and belief, associational and organizational rights, rule of law, and personal autonomy from the state'
 
@@ -321,30 +321,30 @@ HOW DID THEY OPERATIONALIZE THEIR KEY CONCEPTS?
 
 <br>
 
-- WHY DON'T THEY USE THE PTS WE'VE SEEN IN SO MANY OTHER STUDIES?
+#### - Why don't they use the pts we've seen in so many other studies?
 (p338: PTS after "level 4" mixes civil and political violent acts. Makes it impossible to study ER and PR separately.)
 
 <br>
 
-- HOW DO THEY DEFINE "AUTOCRACY"?
+#### - How do they define "autocracy"?
 (" whether access to leadership positions is determined by free and fair elections.)
 
-- EVALUATE THIS OPERATIONALIZATION OF DICTATORSHIP. STRENGTHS AND WEAKNESSES?
+#### - Evaluate this operationalization of dictatorship. strengths and weaknesses?
 
 <br>
 
-SAMPLE YEARS COVERED?
+### Sample years covered?
 (1981-2004)
 
 Tons of control variables included too... (p338)
 
 <br>
 
-HOW CONFIDENT ARE WE THAT THESE MEASURES ALLOW US TO SAY SOMETHING ABOUT "WHY" DICTATORS USE PIR VS ER REPRESSION?
+### How confident are we that these measures allow us to say something about "why" dictators use PIR vs ER repression?
 
 <br>
 
-- IS THIS MORE ABOUT CORRELATION THAN CAUSATION?
+#### - Is this more about correlation than causation?
 
 The delayed nature of each effect is an intriguing answer to this critique.
 - p341: It illustrates that cooptation’s negative effect on ER repression peaks four to five years after the implementation of these institutions, while its positive effect on PIR repression peaks two to three years later.
@@ -363,21 +363,21 @@ Frantz, E., and A. Kendall-Taylor. 2014. "A Dictator’s Toolkit: Understanding 
 
 IN SUM:
 
-1. IS THIS MODEL AN IMPROVEMENT OVER OUR MODEL FROM MONDAY? WHY OR WHY NOT?
+### 1. Is this model an improvement over our model from monday? Why or why not?
 
 <br>
 
-2. IS THIS AN ARGUMENT THAT PARTIAL DEMOCRATIZATION IS A BAD IDEA? WHY OR WHY NOT?
+### 2. Is this an argument that partial democratization is a bad idea? Why or why not?
 
-- IS THIS WHAT WE'VE SEEN IN IRAQ AND AFGHANISTAN SINCE THE INVASIONS?
-
-<br>
-
-3. BASED ON THE MODELS AND ANALYSES THIS WEEK, WHAT ADVICE WOULD YOU GIVE TO GOVERNMENTS THAT WANTED TO REDUCE THE USE OF POLITICAL VIOLENCE BY GOVERNMENTS AGAINST THEIR OWN CITIZENS?
+#### - Is this what we've seen in Iraq and Afghanistan since the invasions?
 
 <br>
 
-4. WHAT ADVICE WOULD YOU GIVE TO ANTI-REGIME PROTESTORS LIVING IN DICTATORSHIPS?
+### 3. Based on the models and analyses this week, what advice would you give to governments that wanted to reduce the use of political violence by governments against their own citizens?
+
+<br>
+
+### 4. What advice would you give to anti-regime protestors living in dictatorships?
 
 
 
@@ -405,7 +405,7 @@ Be ready to explain what happened, the strategy being employed and some idea of 
 
 ???
 
-QUESTIONS ON THE ASSIGNMENT?
+### Questions on the assignment?
 
 Use the same document we used last week for our democracy cases.
 

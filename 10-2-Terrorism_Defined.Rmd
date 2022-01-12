@@ -98,7 +98,7 @@ class: middle
 
 Groups you now have 20 minutes to use our case study work from Monday AND the Tilly (2004) argument to answer these two questions.
 
-IS EVERYBODY CLEAR ON WHAT I AM ASKING FOR?
+### Is everybody clear on what i am asking for?
 
 Get to work!
 
@@ -112,12 +112,12 @@ PRESENT and DISCUSS each
 
 Let's talk about Tilly's take on this exercise (on p9).
 
-HOW DOES HE FEEL ABOUT OUR EFFORT TO CREATE A SINGLE, CONCISE DEFINITION OF TERRORISM?
+### How does he feel about our effort to create a single, concise definition of terrorism?
 
 ("No useful generalization covers all the different sorts of political interaction for which observers, analysts, and participants sometimes use the term terror, much less for terrorists and terrorism" (9).)
 
-IS HE RIGHT?
-- WHY OR WHY NOT?
+### Is he right?
+#### - Why or why not?
 
 
 
@@ -145,13 +145,13 @@ class: middle
 
 ???
 
-WHAT DO YOU THINK OF TILLY'S FOUR PART ATTEMPT TO DEFINE TERRORISM?
+### What do you think of Tilly's four part attempt to define terrorism?
 
-- HOW DID THIS INFLUENCE YOUR THINKING?
+#### - How did this influence your thinking?
 
 <br>
 
-AND ACCORDING TO TILLY, WHO ARE THE THREE AUDIENCES OF THE TERROR SIGNAL?
+### And according to Tilly, who are the three audiences of the terror signal?
 
 (The targets themselves, potential allies of the perpetrators, and third parties that might cooperate with one or the other.)
 
@@ -186,7 +186,7 @@ class: middle, slideblue
 
 I know this case is getting old but I think it is an excellent way to try and use our definitions / operationalizations on what appears to be a particularly difficult case to define.
 
-BASED ON EVERYTHING WE'VE READ AND DISCUSSED, IS DYLANN ROOF A TERORRIST? WHY OR WHY NOT?
+### Based on everything we've read and discussed, is Dylann Roof a terorrist? Why or why not?
 
 *Force this debate: make sure each side gets made and explored*
 
@@ -211,13 +211,13 @@ Here we see polling data on the Dylann Roof question.
 
 <br>
 
-WHAT DOES THIS POLL INDICATE ABOUT WIDER PUBLIC OPINION?
+### What does this poll indicate about wider public opinion?
 
 <br>
 
-SHOULD PUBLIC OPINION POLLING MATTER FOR HOW WE THINK ABOUT THIS CASE?
+### Should public opinion polling matter for how we think about this case?
 
-- WHY OR WHY NOT?
+#### - Why or why not?
 
 
 

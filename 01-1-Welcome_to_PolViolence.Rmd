@@ -451,7 +451,7 @@ Excused absence coming up?
 
 It is your responsibility to complete a make-up assignment.
 
-ANY QUESTIONS ON THE PARTICIPATION POLICY?
+### Any questions on the participation policy?
 
 
 
@@ -468,7 +468,7 @@ The Attendance Cliff
 
 Anyone with more than five unexcused absences in the semester cannot earn higher than a C+ in the course (regardless of grades earned on other assignments).
 
-ANY QUESTIONS ON THE ATTENDANCE POLICY?
+### Any questions on the attendance policy?
 
 
 ---

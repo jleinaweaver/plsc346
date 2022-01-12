@@ -88,9 +88,9 @@ In this secton of the course we've begun building out the tools we need to answe
 
 Last week we examined two theoretical frameworks that each aimed to help us understand the relationship between "the state" and "violence."
 
-WHAT STUCK WITH YOU FROM LAST WEEK?
+### What stuck with you from last week?
 
-- ANYTHING USEFUL?
+#### - Anything useful?
 
 <br>
 
@@ -115,7 +115,7 @@ The polity variable is probably the most used measure of regime type in the acad
 
 <br>
 
-OK, PER PAGE 1 OF THE CODEBOOK, WHAT IS A 'POLITY' ACCORDING TO THIS PROJECT AND WHY DO THEY PREFER THAT CONCEPT TO 'THE STATE'?
+### Ok, per page 1 of the codebook, what is a 'polity' according to this project and why do they prefer that concept to 'the state'?
 
 (SLIDE)
 
@@ -137,7 +137,7 @@ class: middle, slideblue
 
 ???
 
-CAN ANYBODY TRANSLATE THIS INTO ENGLISH FOR US?
+### Can anybody translate this into english for us?
 
 (This sounds a lot like a super fancy way of explaining what a government does.)
 
@@ -147,9 +147,9 @@ CAN ANYBODY TRANSLATE THIS INTO ENGLISH FOR US?
 
 <br>
 
-SO, WHY DON'T THEY JUST REFER TO THEIR PROJECT AS ANALYZING STATES?
+### So, why don't they just refer to their project as analyzing states?
 
-- ISN'T EACH ROW OF THEIR DATA NAMED FOR A COUNTRY ANYWAY?
+#### - Isn't each row of their data named for a country anyway?
 
 (1. It avoids the problem of having to settle disputes over recognized vs unrecognized states.)
 
@@ -201,9 +201,9 @@ Everybody read these so we can discuss them.
 
 Don't worry about the component measures yet. 
 
-WHAT ARE THE PROS AND CONS OF DEFINING DEMOCRACY AND DICTATORSHIP THESE WAYS?
+### What are the pros and cons of defining democracy and dictatorship these ways?
 
-- ANYTHING IMPORTANT YOU WOULD ARGUE IS MISSING? 
+#### - Anything important you would argue is missing? 
 
 *DISCUSS*
 
@@ -250,7 +250,7 @@ Now let's talk about the component measures (p20-29).
 
 These two sets of coding rules represent the operationalizations for each concept.
 
-THINK BACK TO WEEK 2 AND REMIND ME, WHAT DOES OPERATIONALIZATION REFER TO?
+### Think back to week 2 and remind me, what does operationalization refer to?
 
 ("...selecting observable phenomena to represent abstract concepts" (Brians et al 2011, 89).)
 
@@ -258,9 +258,9 @@ THINK BACK TO WEEK 2 AND REMIND ME, WHAT DOES OPERATIONALIZATION REFER TO?
 
 In Pairs: Everybody take a few minutes to evaluate these.
 
-HOW WELL DO THESE OBSERVABLE PHENOMENA REPRESENT THE DEFINITIONS WE JUST DISCUSSED?
+### How well do these observable phenomena represent the definitions we just discussed?
 
-- IN OTHER WORDS, DO THESE VARIABLES WELL REPRESENT THE CONCEPTUAL DEFINITIONS?
+#### - In other words, do these variables well represent the conceptual definitions?
 
 Don't worry about the levels yet, just the component measures themselves.
 
@@ -270,23 +270,23 @@ Don't worry about the levels yet, just the component measures themselves.
 
 After operationalization comes instrumentation.
 
-THINK BACK TO WEEK 2 AND REMIND ME, WHAT DOES INSTRUMENTATION REFER TO?
+### Think back to week 2 and remind me, what does instrumentation refer to?
 
 (Convert your operationalization (definition) into a series of steps you can use to measure the concept in question)
 
 PAIRS: Now examine the levels under each variable.
 
-IF YOU WERE BEING ASKED TO CODE THESE VARIABLES, HOW DIFFICULT WOULD YOU FIND APPLYING THESE LEVELS TO REAL POLITIES IN THE WORLD?
+### If you were being asked to code these variables, how difficult would you find applying these levels to real polities in the world?
 
-- IN OTHER WORDS, DO YOU HAVE ANY VALIDITY OR RELIABILITY CONCERNS FOR THESE COMPONENT MEASURES?
+#### - In other words, do you have any validity or reliability concerns for these component measures?
 
 *DISCUSS*
 
 <br>
 
-- WHICH COMPONENTS DO YOU BELIEVE WILL BE EASIEST TO CODE?
+#### - Which components do you believe will be easiest to code?
 
-- WHICH THE HARDEST? WHY?
+#### - Which the hardest? Why?
 
 
 ---
@@ -301,15 +301,15 @@ As I noted before, the polity score (polity2 specifically) is probably the most 
 
 It is calculated by subtracting the Autoc score from the Democ score for each state in each year.
 
-HOW ARE WE DOING, EVERYBODY FOLLOWING THE LOGIC OF THEIR APPROACH HERE?
+### How are we doing, everybody following the logic of their approach here?
 
 <br>
 
 Before we dig into the data, one important note to discuss.
 
-EVERYBODY READ THE ENTRY ON P16-17 '2.4 POLITY' AND EXPLAIN TO ME THEIR HUGE AND FREQUENTLY OVERLOOKED NOTE OF CAUTION.
+### Everybody read the entry on p16-17 '2.4 polity' and explain to me their huge and frequently overlooked note of caution.
 
-WHAT ARE THEY TRYING TO WARN US ABOUT?
+### What are they trying to warn us about?
 
 (SLIDE)
 
@@ -335,9 +335,9 @@ They cover overlapping institutional designs especially in the middle of the pol
 
 Combining AUTOC and DEMOC creates a muddled mess in the middle values of the Polity score.
 
-DOES THIS MAKE SENSE?
+### Does this make sense?
 
-- ARE THEY CONVINCING YOU TO USE AUTOC AND DEMOC INSTEAD OF POLITY? WHY OR WHY NOT?
+#### - Are they convincing you to use autoc and democ instead of polity? Why or why not?
 
 <br>
 
@@ -363,9 +363,9 @@ Note: Polity2 recodes the regular polity score to help smooth out bumps due to c
 
 Talk to me about JUST our Polity2 score across time.
 
-WHAT DO YOU NOTICE HERE?
+### What do you notice here?
 
-- WHAT KIND OF STORY DOES POLITY TELL ABOUT THE AMERICAN EXPERIENCE OVER TIME?
+#### - What kind of story does polity tell about the American experience over time?
 
 (SLIDE)
 
@@ -396,7 +396,7 @@ ggplot(d_usa, aes(x = year, y = polity2)) +
 
 I would note that many researchers treat polity scores of 7 or greater as democracies.
 
-SO, AT WHAT POINTS WERE WE NOT A DEMOCRACY?
+### So, at what points were we not a democracy?
 
 + (pre 1825)
 + (1860s)
@@ -404,25 +404,25 @@ SO, AT WHAT POINTS WERE WE NOT A DEMOCRACY?
 
 This example helps highlight the problem in polity ignoring civil liberties.
 
-WHEN DID WOMEN GET THE VOTE? (1921)
+### When did women get the vote? (1921)
 
-- WHY DOESN'T THAT APPEAR TO INFLUENCE THE US AS A DEMOCRACY ACCORDING TO POLITY PRE-1921?
-
-<br>
-
-WHEN DID THE RIGHT TO VOTE GET ENFORCED ACROSS THE COUNTRY FOR AFRICAN AMERICANS? (1964 civil rights act)
-
-- WHY DOESN'T THAT HURT OUR DEMOCRACY SCORE PRE-1964?
+#### - Why doesn't that appear to influence the us as a democracy according to polity pre-1921?
 
 <br>
 
-ALL THAT SAID, HOW DO WE FEEL ABOUT THIS CODING SAYING WE ARE NOT CURRENTLY A DEMOCRACY?
+### When did the right to vote get enforced across the country for African Americans? (1964 civil rights act)
+
+#### - Why doesn't that hurt our democracy score pre-1964?
+
+<br>
+
+### All that said, how do we feel about this coding saying we are not currently a democracy?
 
 *DISCUSS*
 
 <br>
 
-IF YOU HAD TO MAKE AN ARGUMENT USING THIS DATA, WHAT PERIOD WOULD YOU SAY AMERICA WAS A DEMOCRACY?
+### If you had to make an argument using this data, what period would you say America was a democracy?
 
 *DISCUSS*
 
@@ -432,7 +432,7 @@ Ok, let's go deeper one level.
 
 Now focus on the separate autoc and democ scores for the us across time.
 
-DOES THIS GIVE US A DIFFERENT OR BETTER UNDERSTANDING OF THE AMERICAN EXPERIENCE OVER TIME? WHY OR WHY NOT?
+### Does this give us a different or better understanding of the American experience over time? WHY OR WHY NOT?
 
 (SLIDE)
 
@@ -465,7 +465,7 @@ d_usa |>
 
 ???
 
-DOES THIS GIVE US A DIFFERENT OR BETTER UNDERSTANDING OF THE AMERICAN EXPERIENCE OVER TIME? WHY OR WHY NOT?
+### Does this give us a different or better understanding of the American experience over time? Why or why not?
 
 + Interesting that we do not register almost at all on the autoc index across time
 
@@ -473,7 +473,7 @@ DOES THIS GIVE US A DIFFERENT OR BETTER UNDERSTANDING OF THE AMERICAN EXPERIENCE
 
 <br>
 
-BASED ON THIS DATA, HOW WOULD YOU DESCRIBE AMERICA AS A DEMOCRACY ACROSS OUR HISTORY?
+### Based on this data, how would you describe America as a democracy across our history?
 
 (A struggling one, no?)
 
@@ -481,7 +481,7 @@ BASED ON THIS DATA, HOW WOULD YOU DESCRIBE AMERICA AS A DEMOCRACY ACROSS OUR HIS
 
 Alright, go deeper again!
 
-IN PAIRS: FOCUS ON THE COMPONENT MEASURES AND TELL ME HOW SPECIFICALLY AMERICA HAS STRUGGLED WITH ITS DEMOCRACY OVER TIME.
+### IN PAIRS: Focus on the component measures and tell me how specifically America has struggled with its democracy over time.
 
 (SLIDE)
 
@@ -507,7 +507,7 @@ d_usa |>
 
 ???
 
-SO, WHAT SPECIFIC THINGS HAVE CHANGED IN THE US EXPERIENCE OVER TIME?
+### So, what specific things have changed in the us experience over time?
 
 1) Over our history it has been variation in parreg and parcomp
 
@@ -521,9 +521,9 @@ SO, WHAT SPECIFIC THINGS HAVE CHANGED IN THE US EXPERIENCE OVER TIME?
 
 <br>
 
-WHAT DO WE THINK OF THESE MEASURES? 
+### What do we think of these measures? 
 
-- ANY DISAGREEMENT HERE? WHY OR WHY NOT?
+#### - Any disagreement here? Why or why not?
 
 
 
@@ -579,7 +579,7 @@ Let's now get crazy!
 
 Redo the exercise but for ten years from now.
 
-WHERE WILL THE US BE ON THESE MEASURES IN 2031?
+### Where will the us be on these measures in 2031?
 
 <br>
 
@@ -607,10 +607,3 @@ Let the polity scores guide you in choosing case studies this week.
 For Wednesday use the autoc index and Friday the democ
 
 *Send email link*
-
-
-
-
-
-
-

@@ -55,9 +55,9 @@ Bring to class a **real-world case** that provides an example of an **democracy*
 
 <br>
 
-HAS EVERYBODY SUBMITTED AND CODED THEIR SECOND CASE?
+### Has everybody submitted and coded their second case?
 
-ALL CITATIONS IN APA FORMAT?
+### All citations in APA format?
 
 *Do a quick check?*
 
@@ -101,7 +101,7 @@ Everybody take a moment to get ready to present their case as an answer to these
 
 <br>
 
-DO WE NEED NEW VARIABLES TO CODE THE IMPORTANT VARIATION IN THESE CASES?
+### Do we need new variables to code the important variation in these cases?
 
 *If yes, add them and everybody code their cases*
 
@@ -145,7 +145,7 @@ Based on our QCA data construct two hypotheses for each of the following three c
 
 Remember, inference would require NEW cases with variation on both the predictors AND the outcome! 
 
-WHICH WOULD BE THE MOST PROMISING PLACES TO START IF WE WERE LAUNCHING A RESEARCH PROJECT? WHY?
+### Which would be the most promising places to start if we were launching a research project? Why?
 
 
 

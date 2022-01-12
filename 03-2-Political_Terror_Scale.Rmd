@@ -56,9 +56,9 @@ Evaluate the Political Terror Scale (PTS) research project
 
 On Monday we evaluated reports by the US State Department and Amnesty International as sources for measuring political violence around the world.
 
-WHAT WERE OUR KEY TAKEAWAYS ON MONDAY?
+### What were our key takeaways on Monday?
 
-- ARE THESE SOURCES "BETTER" THAN USING MEDIA REPORTING? WHY OR WHY NOT?
+#### - Are these sources "better" than using media reporting? Why or why not?
 
 <br>
 
@@ -84,9 +84,9 @@ class: middle, slideblue
 
 ???
 
-EVERYBODY READY FOR TODAY'S WORK?
+### Everybody ready for today's work?
 
-- ASSIGNMENT COMPLETE?
+#### - Assignment complete?
 
 <br>
 
@@ -127,9 +127,9 @@ Groups: Take a few minutes to do this together and then we'll report back.
 
 <br>
 
-OK, WHAT SO, HOW DO THESE DEFINITIONS COMPARE?
+### Ok, what so, how do these definitions compare?
 
-- WHAT ARE THE STRENGTHS AND WEAKNESSES OF THIS DEFINITION?
+#### - What are the strengths and weaknesses of this definition?
 
 
 
@@ -158,9 +158,9 @@ Groups: Take a few minutes to do this together and then we'll report back.
 
 <br>
 
-OK, REPORT BACK.
+### Ok, report back.
 
-- WHAT ARE THE STRENGTHS AND WEAKNESSES?
+#### - What are the strengths and weaknesses?
 
 
 
@@ -172,13 +172,12 @@ background-position: center
 
 ???
 
-GROUPS: DISCUSS THE STRENGTHS AND WEAKNESSES OF THE CODING SCHEME FOR THE PTS VARIABLE
+### GROUPS: Discuss the strengths and weaknesses of the coding scheme for the pts variable
 
 <br>
 
-OK, REPORT BACK.
-
-- WHAT ARE THE STRENGTHS AND WEAKNESSES?
+### Ok, report back.
+#### - What are the strengths and weaknesses?
 
 <br>
 
@@ -188,7 +187,7 @@ Each of you focus on the scores for the three countries you analyzed on Monday.
 
 Go back to the reports and see if you would have coded them the same way. 
 
-FINDINGS? TAKEAWAYS?
+### Findings? Takeaways?
 
 
 
@@ -235,11 +234,11 @@ d2019 |>
 
 *Questions after they work and report back*
 
-DO DIFFERENCES WITHIN A COUNTRY-YEAR TELL US MORE ABOUT THE USE OF VIOLENCE IN THAT STATE, BIAS IN THE SOURCES OF THE DATA OR PROBLEMS WITH THE PTS MEASURE THEY HAVE DESIGNED?
+### Do differences within a country-year tell us more about the use of violence in that state, bias in the sources of the data or problems with the pts measure they have designed?
 
 <br>
 
-DOES THIS HELP US UNDERSTAND THE VALUE IN INCLUDING ALL THREE MEASURES?
+### Does this help us understand the value in including all three measures?
 
 - Do all three bring greater confidence to our understanding?
 - Capture different things? 
@@ -294,9 +293,9 @@ d2014 |>
 
 *Questions after they work and report back*
 
-DOES THIS HELP US ANSWER THAT QUESTION ABOUT WHERE THE ERROR MAY LIE / HOW USEFUL IT IS TO KEEP ALL THREE MEASURES?
+### Does this help us answer that question about where the error may lie / how useful it is to keep all three measures?
 
-- MORE DISAGREEMENT IN THE PAST?
+#### - More disagreement in the past?
 
 
 
@@ -382,7 +381,7 @@ d |>
 
 *Questions after they work and report back*
 
-Report back and takeaways?
+### Report back and takeaways?
 
 
 
@@ -436,7 +435,7 @@ d2020 |>
 
 <br>
 
-BOTTOM LINE, HOW USEFUL IS THE PTS FOR HELPING US TEST THEORIES OF POLITICAL VIOLENCE? STRENGTHS AND WEAKNESSES?
+### Bottom line, how useful is the pts for helping us test theories of political violence? Strengths and weaknesses?
 
 
 
@@ -457,14 +456,4 @@ Make sure you understand the observations and variables enough to play with them
 For Friday we repeat today's work on the CIRIGHTS data project.
 
 Get ready to work!
-
-
-
-
-
-
-
-
-
-
 

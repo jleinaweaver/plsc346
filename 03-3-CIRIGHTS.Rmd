@@ -56,7 +56,7 @@ Evaluate the CIRIGHTS Data project
 
 Today we wrap up our week exploring the current projects that seek to measure political violence around the world and across time.
 
-WHAT WERE OUR BIG TAKEAWAYS FROM WEDNESDAY'S EXAMINATION OF THE POLITICAL TERROR SCALE?
+### What were our big takeaways from wednesday's examination of the Political Terror Scale?
 
 
 
@@ -75,9 +75,9 @@ Make sure you understand the observations and variables enough to play with them
 
 ???
 
-EVERYBODY READY FOR TODAY'S WORK?
+### Everybody ready for today's work?
 
-- ASSIGNMENT COMPLETE?
+#### - Assignment complete?
 
 <br>
 
@@ -116,7 +116,7 @@ Groups: Take a few minutes to do this together and then we'll report back.
 
 <br>
 
-OK, REPORT BACK.
+### Ok, report back.
 
 (More separate measures of human rights!)
 
@@ -152,9 +152,8 @@ Groups: Take a few minutes to do this together and then we'll report back.
 
 <br>
 
-OK, REPORT BACK.
-
-- WHAT ARE THE STRENGTHS AND WEAKNESSES?
+### Ok, report back.
+#### - What are the strengths and weaknesses?
 
 <br>
 
@@ -166,15 +165,15 @@ Go back to the reports and see if you would have coded them the same way.
 
 <br>
 
-FINDINGS? TAKEAWAYS?
+### Findings? Takeaways?
 
-+ WHAT DO WE LEARN ABOUT THESE VARIABLES? 
+#### - What do we learn about these variables? 
 
-+ WHAT DO WE LEARN ABOUT THESE CODING RULES?
+#### - What do we learn about these coding rules?
 
-+ WHICH VARIABLES SEEM THE EASIEST TO CODE / WE HAVE THE MOST CONFIDENCE IN?
+#### - Which variables seem the easiest to code / we have the most confidence in?
 
-+ WHICH THE LEAST?
+#### - Which the least?
 
 
 
@@ -260,15 +259,4 @@ Compare and contrast the 2017 CIRIGHTS codings with the 2017 PTS_S scores from t
 
 <br>
 
-BOTTOM LINE, HOW USEFUL IS THE CIRIGHTS FOR HELPING US TEST THEORIES OF POLITICAL VIOLENCE? STRENGTHS AND WEAKNESSES?
-
-
-
-
-
-
-
-
-
-
-
+### Bottom line, how useful is the cirights for helping us test theories of political violence? Strengths and weaknesses?

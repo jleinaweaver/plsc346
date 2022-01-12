@@ -84,9 +84,9 @@ class: middle
 
 First, let's start with what we've done so far.
 
-HOW HAVE WE BEEN DEFINING TERRORISM?
+### How have we been defining terrorism?
 
-- WHAT OBERVABLE PHENOMENA CAN WE TIE TO IT?
+#### - What obervable phenomena can we tie to it?
 
 *ON BOARD*
 
@@ -115,9 +115,9 @@ class: middle
 
 ???
 
-DOES TILLY'S (2004) GUIDING POINTS HELP US WITH THIS?
+### Does Tilly's (2004) guiding points help us with this?
 
-- PROS AND CONS OF THIS LIST?
+#### - Pros and cons of this list?
 
 
 
@@ -140,9 +140,9 @@ class: middle
 
 ???
 
-WHAT DO WE THINK?
+### What do we think?
 
-- HAVE WE ADDRESSED TILLY'S CONCERNS ABOUT ADOPTING UNHELPFUL GENERALIZATIONS?
+#### - Have we addressed tilly's concerns about adopting unhelpful generalizations?
 
 <br>
 
@@ -160,11 +160,11 @@ background-position: center
 
 Perspectives on Terrorism 1: "One person’s terrorist is another person’s freedom fighter"
 
-WHAT DOES THIS MEAN?
+### What does this mean?
 
-HOW DOES THIS HELP US THINK ABOUT TERRORISM? 
+### How does this help us think about terrorism? 
 
-HOW DOES OUR DEFINITION DEAL WITH THIS?
+### How does our definition deal with this?
 
 <br>
 
@@ -196,11 +196,11 @@ class: middle
 
 Perspective 2
 
-WHAT DOES THIS MEAN?
+### What does this mean?
 
-HOW DOES THIS HELP US THINK ABOUT TERRORISM? 
+### How does this help us think about terrorism? 
 
-HOW DOES OUR DEFINITION DEAL WITH THIS?
+### How does our definition deal with this?
 
 <br>
 
@@ -229,11 +229,11 @@ background-position: center
 
 Quote from Sen. Barry Goldwater during his run for the presidency in 1964: Extremism in defense of liberty is no vice.
 
-WHAT DOES THIS MEAN?
+### What does this mean?
 
-HOW DOES THIS HELP US THINK ABOUT TERRORISM? 
+### How does this help us think about terrorism? 
 
-HOW DOES OUR DEFINITION DEAL WITH THIS?
+### How does our definition deal with this?
 
 <br>
 
@@ -269,11 +269,11 @@ I am NOT asserting this is or isn't terrorism.
 
 <br>
 
-WHAT DOES THIS MEAN?
+### What does this mean?
 
-HOW DOES THIS HELP US THINK ABOUT TERRORISM? 
+### How does this help us think about terrorism? 
 
-HOW DOES OUR DEFINITION DEAL WITH THIS?
+### How does our definition deal with this?
 
 <br>
 
@@ -303,7 +303,7 @@ class: middle
 
 Today we add Alison Jaggar's definition and moral discussion of terrorism.
 
-COMPARE AND CONTRAST THIS DEFINITION WITH OUR CASE STUDIES AND TILLY'S FOUR STEPS. IS IT REALLY THAT SUBSTANTIVELEY DIFFERENT?
+### Compare and contrast this definition with our case studies and Tilly's four steps. Is it really that substantiveley different?
 
 - threats or actual violence?
 - does "subjugation" add anything new?
@@ -311,7 +311,7 @@ COMPARE AND CONTRAST THIS DEFINITION WITH OUR CASE STUDIES AND TILLY'S FOUR STEP
 
 <br>
 
-WHAT SPECIFIC ADVANTAGES DOES JAGGAR ARGUE THIS DEFINITION PROVIDES?
+### What specific advantages does Jaggar argue this definition provides?
 
 1. Terrorism Is Not a Specific Type of Conflict; Instead It Is a Tactic That May Be Employed in Various Types of Conflict and in Combination with Other Strategies of Making Claims
 
@@ -321,7 +321,7 @@ WHAT SPECIFIC ADVANTAGES DOES JAGGAR ARGUE THIS DEFINITION PROVIDES?
 
 <br>
 
-WHAT ARE THE TWO REASONS JAGGAR ARGUES THAT THIS DEFINITION MAKES CLEAR TERRORISM IS MORALLY REPUGNANT?
+### What are the two reasons Jaggar argues that this definition makes clear terrorism is morally repugnant?
 
 (p212: terrorism is bad)
 
@@ -368,47 +368,32 @@ knitr::include_graphics("libs/Images/10_3-venn_diagram.png")
 
 Despite this, Jaggar proposes a set of seven criteria that, when combined, may describe acts that are morally acceptable.
 
-EXPLAIN EACH TO ME
+### Explain each to me
 
 <br>
 
 Let's evaluate the list
 
-- ARE ALL SEVEN MUTUALLY EXCLUSIVE CRITERIA?
+#### - Are all seven mutually exclusive criteria?
 
-- ANY PROBLEMATIC / VAGUE INCLUSIONS?
+#### - Any problematic / vague inclusions?
 
 <br>
 
 Take a minute, evaluate your case study from monday using this list.
 
-- DOES ANYBODY HAVE A CASE THAT HITS MANY OF THESE ELEMENTS?
+#### - Does anybody have a case that hits many of these elements?
 
-- WHO HITS THE MOST?
+#### - Who hits the most?
 
-- WHO HITS THE FEWEST?
+#### - Who hits the fewest?
 
-- TO WHAT DEGREE IS CLASSIFYING YOUR CASE WITH THIS LIST A VALID AND RELIABLE EXERCISE? WHY OR WHY NOT?
-
-<br>
-
-OVERALL, DOES THIS DESCRIBE AN ACT OF MORALLY JUSTIFIED TERRORISM? WHY OR WHY NOT?
+#### - To what degree is classifying your case with this list a valid and reliable exercise? Why or why not?
 
 <br>
 
-CAN ANY ACT OF TERRORISM BE MORALLY JUSTIFIED? WHY OR WHY NOT?
+### Overall, does this describe an act of morally justified terrorism? Why or why not?
 
+<br>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+### Can any act of terrorism be morally justified? Why or why not?

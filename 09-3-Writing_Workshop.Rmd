@@ -70,7 +70,7 @@ class: middle, center
 
 ???
 
-ANY QUESTIONS ON THE ASSIGNMENT?
+### Any questions on the assignment?
 
 
 

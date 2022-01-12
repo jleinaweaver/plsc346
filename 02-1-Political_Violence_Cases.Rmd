@@ -69,7 +69,7 @@ background-position: center
 
 Our job this semester is to develop our scientific knowledge and understanding of political violence.
 
-WHAT DOES IT MEAN TO SAY WE WILL USE "SCIENCE" TO DEVELOP THIS KNOWLEDGE?
+### What does it mean to say we will use "science" to develop this knowledge?
 
 
 ---
@@ -93,23 +93,23 @@ In short, the "scientific" path to knowledge involves developing and testing mod
 
 <br>
 
-WHAT ARE MODELS?
+### What are models?
 (Models are simplifications of reality designed to allow us to better understand the key mechanisms around us.)
 
-GIVE ME AN EXAMPLE OF A MODEL.
-(Neorealism: States are first and foremost motivated by a desire to survive.)
-(Different types of learner: Visual, oral, etc)
-(Median voter theorem: Politicians who seek election in majority rule systems should moderate their policy platforms, promise policies desired by the median voter.)
-(Liberal or conservative ideologies are beliefs about what policies make society "best.")
+### Give me an example of a model.
++ (Neorealism: States are first and foremost motivated by a desire to survive.)
++ (Different types of learner: Visual, oral, etc)
++ (Median voter theorem: Politicians who seek election in majority rule systems should moderate their policy platforms, promise policies desired by the median voter.)
++ (Liberal or conservative ideologies are beliefs about what policies make society "best.")
 
 <br>
 
-WHAT IS EMPIRICAL DATA?
+### What is empirical data?
 (Empirical data is information acquired through observation.)
 
-OUT OF CURIOSITY, ARE YOU PERSONALLY SCIENTIFIC IN YOUR DAY-TO-DAY LIFE?
+### Out of curiosity, are you personally scientific in your day-to-day life?
 
-- HOW OFTEN DO YOU "TEST" YOUR THEORIES ABOUT THE WORLD USING DATA?
+#### - How often do you "test" your theories about the world using data?
 
 
 
@@ -123,7 +123,7 @@ background-position: center
 
 Last week we worked to develop two working definitions: one for politics and one for strategy.
 
-WHY IS IT IMPORTANT WE START BY DEFINING OUR TERMS?
+### Why is it important we start by defining our terms?
 
 (The definitions are the fundamental building blocks of our models.)
 - Can't test models if we don't agree on their parts.
@@ -145,26 +145,26 @@ background-position: center
 
 On Wednesday I gave you index cards.
 
-TELL ME ABOUT OUR SIMULATION OF "POLITICS."
+### Tell me about our simulation of "politics."
 
-- WAS IT A GOOD ONE? WHY OR WHY NOT?
+#### - Was it a good one? Why or why not?
 
-WAS THE SIMULATION INTERNALLY VALID?
+### Was the simulation internally valid?
 
-- ANYTHING KEY ASPECTS RELATED TO MAKING THESE DECISIONS MISSING?
+#### - Anything key aspects related to making these decisions missing?
 
-WAS THE SIMULATION EXTERNALLY VALID?
+### Was the simulation externally valid?
 
-- DID THE SIMULATION LOOK LIKE SOCIETAL DECISION-MAKING IN THE REAL WORLD?
-- DID IT LEAD YOU TO BEHAVE HOW YOU WOULD HAVE OUTSIDE THE CLASSROOM?
+#### - Did the simulation look like societal decision-making in the real world?
+#### - Did it lead you to behave how you would have outside the classroom?
 
 <br>
 
 I gave you a set of rules, assumed diverse and conflicting preferences, provided you a limited resource to deal with and then set you loose.
 
-WHAT DID THAT MODEL TELL US ABOUT POLITICS?
+### What did that model tell us about politics?
 
-- WHAT DYNAMICS DID WE OBSERVE?
+#### - What dynamics did we observe?
 
 (- Actors have different preferences)
 (- Enforcement is a problem)
@@ -174,7 +174,7 @@ WHAT DID THAT MODEL TELL US ABOUT POLITICS?
 
 <br>
 
-BASED ON THE SIMULATION, WHAT CAN WE USE AS OUR WORKING DEFINITION OF "POLITICS"?
+### Based on the simulation, what can we use as our working definition of "politics"?
 
 (SLIDE)
 
@@ -192,9 +192,9 @@ Decision-making that affects a community
 - Rule-making
 - Resource allocation (who pays? who benefits?)
 
-IS THIS A GOOD DEFINITION? 
-- WHAT ARE ITS STRENGTHS?
-- WHAT ARE ITS WEAKNESSES?
+### IS THIS A GOOD DEFINITION? 
+#### - WHAT ARE ITS STRENGTHS?
+#### - WHAT ARE ITS WEAKNESSES?
 
 
 
@@ -210,17 +210,17 @@ We then did something similar on Friday regarding "strategy."
 
 I gave you a set of rules, assumed diverse and conflicting preferences, added a mechanism of uncertainty and then set you loose.
 
-TELL ME ABOUT THE MODELS WE SIMULATED IN CLASS.
+### Tell me about the models we simulated in class.
 
-- HOW WERE THEY DIFFERENT FROM WEDNESDAYS MODEL?
+#### - How were they different from wednesdays model?
 
 (This time, however, I added an uncertainty mechanism (rock, paper, scissors) to complicate your decision-making.)
 
-- WHAT DEFINITION OF STRATEGY WERE THEY BUILT ON?
+#### - What definition of strategy were they built on?
 
-- WHAT DYNAMICS DID THEY ALLOW US TO OBSERVE?
+#### - What dynamics did they allow us to observe?
 
-- HOW EXTERNALLY VALID WERE THESE MODELS?
+#### - How externally valid were these models?
 
 ---
 
@@ -244,7 +244,7 @@ For today everyone should have brought a news article that describes a recent ac
 
 - I also assume that everyone knows at least the basic background of their case.
 
-DOES EVERYONE HAVE THEIR ARTICLE?
+### Does everyone have their article?
 
 
 

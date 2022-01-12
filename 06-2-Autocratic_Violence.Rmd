@@ -56,9 +56,9 @@ Bring to class a **real-world case** that provides an example of an **autocracy*
 
 <br>
 
-HAS EVERYBODY SUBMITTED THEIR CASE?
+### Has everybody submitted their case?
 
-ALL CITATIONS IN APA FORMAT?
+### All citations in apa format?
 
 *Do a quick check?*
 
@@ -210,7 +210,7 @@ Here we see that countries with coal reserves (values of '1' in COAL) appear to 
 
 In this way, QCA can represent a super useful way to build models or get a better sense of your data.
 
-DOES THIS MAKE SENSE?
+### Does this make sense?
 
 
 
@@ -258,7 +258,7 @@ To test our hypotheses we'd need autocracy cases with no violence as well.
 
 However, our goal is to brainstorm so we'll forgive ourselves this week.
 
-MAKE SENSE?
+### Make sense?
 
 
 ---
@@ -294,7 +294,7 @@ My hope is that this will help us generate some intuitions about the kinds of st
 
 Everybody take a few minutes to think about their own case and the cases they heard about and make a list of possible characteristics we could track.
 
-QUESTIONS ON THE TASK?
+### Questions on the task?
 
 Ok, get to it!
 
@@ -318,17 +318,17 @@ Now everybody code their own case on our Google sheet.
 
 <br>
 
-HOW DID THAT GO?
+### How did that go?
 
-- ANY MEASURES WE NEED TO TWEAK OR CLARIFY?
+#### - Any measures we need to tweak or clarify?
 
-- ANY NEW MEASURES OCCUR TO YOU AS YOU WORKED?
+#### - Any new measures occur to you as you worked?
 
 <br>
 
 Let's review the sheet.
 
-ANY OBSERVATIONS WE CAN MAKE ACROSS CASES?
+### Any observations we can make across cases?
 
 *Force this discussion*
 

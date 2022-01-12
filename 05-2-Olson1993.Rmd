@@ -87,7 +87,7 @@ Weber (1946) "Politics as Vocation"
 
 ???
 
-ON MONDAY, HOW DID GERMAN SOCIOLOGIST MAX WEBER ANSWER THIS QUESTION?
+### On Monday, how did German sociologist Max Weber answer this question?
 
 (SLIDE)
 
@@ -121,9 +121,9 @@ Fish gotta swim, man's gotta breathe and states exist only so long as they contr
 
 <br>
 
-IN WHAT SPECIFIC WAYS IS THIS A USEFUL MODEL OF POLITICAL VIOLENCE?
+### In what specific ways is this a useful model of political violence?
 
-AND IN WHAT SPECIFIC WAYS DOES THIS MODEL MAKE BAD PREDICTIONS?
+### And in what specific ways does this model make bad predictions?
 
 <br>
 
@@ -184,13 +184,13 @@ Second, it helped me understand how limited my view of countries as discrete "ty
 
 - Olson is challenging us to acknowledge that All governments are simply trying to organize a functional society, they just use different policies and institutions to do it.
 
-COOL, RIGHT?
+### Cool, right?
 
 <br>
 
-OK, WHERE DOES OLSON START? 
+### Ok, where does Olson start? 
 
-- WHAT IS THE KEY VARIATION IN THE WORLD HE IS TRYING TO EXPLAIN?
+#### - What is the key variation in the world he is trying to explain?
 
 (SLIDE)
 
@@ -273,11 +273,11 @@ Here we see a map of GDP per capita levels in 2018
 
 <br>
 
-WHAT DO WE LEARN FROM THIS MAP?
+### What do we learn from this map?
 
 <br>
 
-OK NOW, AND MOST RELEVANT FOR OUR WORK THIS WEEK, WHAT IS THE KEY PREDICTOR OLSON IS FOCUSING ON TO EXPLAIN THESE DIFFERENCES?
+### Ok now, and most relevant for our work this week, what is the key predictor olson is focusing on to explain these differences?
 
 (SLIDE)
 
@@ -313,7 +313,7 @@ We'll explore this project, and these specific classifications, more next week.
 
 <br>
 
-WHAT DO WE LEARN FROM THIS MAP?
+### What do we learn from this map?
 
 <br>
 
@@ -353,9 +353,9 @@ p1 +
 
 ???
 
-WHAT DO YOU SEE IN THESE POINTS?
+### What do you see in these points?
 
-- ANY EVIDENT RELATIONSHIP BETWEEN REGIME TYPE AND ECONOMIC DEVELOPMENT?
+#### - Any evident relationship between regime type and economic development?
 
 (SLIDE)
 
@@ -381,7 +381,7 @@ It's the middle ground where the poorest countries seem to congregate.
 
 And this is the observation that helps to drive home Olson's theoretical argument AND what connects his paper to our questions about violence.
 
-SOMEBODY TAKE A STAB, HOW DOES THIS PLOT CONNECT OLSON'S PAPER ON ECONOMIC DEVELOPMENT TO OUR WORK ON POLITICAL VIOLENCE?
+### Somebody take a stab, how does this plot connect olson's paper on economic development to our work on political violence?
 
 (SLIDE)
 
@@ -438,9 +438,9 @@ Focus first on the intro section.
 
 I think this is a direct response to Weber's view of human nature and the necessity of violence.
 
-WHAT IS OLSON'S RESPONSE TO WEBER?
+### What is Olson's response to Weber?
 
-- WE DON'T NEED TO ASSUME HUMAN NATURE IS BAD, DO WE?
+#### - We don't need to assume human nature is bad, do we?
 
 <br>
 
@@ -482,11 +482,13 @@ class: middle
 
 ???
 
-OK, HOW DOES OLSON DEVELOP HIS ARGUMENT IN THE SECOND SECTION?
+### Ok, how does Olson develop his argument in the second section?
 
-- WHY SHOULD VILLAGERS PREFER BEING DOMINATED BY A LOCAL WARLORD WHO CONTINUOUSLY STEALS FROM THEM OVER ROVING BANDITS WHO ARRIVE, STEAL AND THEN LEAVE THEM ALONE?
+####- Why should villagers prefer being dominated by a local warlord who continuously steals from them over roving bandits who arrive, steal and then leave them alone?
 
 *Encourage Discussion*
+
+
 
 ---
 
@@ -508,9 +510,9 @@ The rational, self-interested leader of a band of roving bandits is led, as thou
 
 So, Olson argues you, as the bandit, will protect me from harm just to make yourself better off.
 
-BUT WHY DOES THAT LOGIC EXTEND TO PROVIDING ME PUBLIC GOODS?
+### But why does that logic extend to providing me public goods?
 
-- I GET THAT YOU WANT MORE PROFIT, BUT HOW DOES PROVIDING ME WITH BENEFITS DO THAT?
+#### - I get that you want more profit, but how does providing me with benefits do that?
 
 (SLIDE: Illustration)
 
@@ -576,9 +578,9 @@ class: middle
 
 Ok, now jump to the next section, "The grasping hand."
 
-HOW DOES THE ARGUMENT IN THIS SECTION SHOW THE LIMIT OF DICTATORSHIPS AND PUBLIC GOODS PROVISION?
+### How does the argument in this section show the limit of dictatorships and public goods provision?
 
-- IT'S NOT ALL GOOD SELECTING A STATIONARY BANDIT IF YOU'RE ONE OF THE FARMERS, RIGHT?
+#### - It's not all good selecting a stationary bandit if you're one of the farmers, right?
 
 (SLIDE)
 
@@ -609,7 +611,7 @@ Why pay to install another pump just to speed the process if the badit king does
 
 In the language of the article, Olson argues the dictator will set a revenue-maximizing tax rate.
 
-WHAT DOES THAT MEAN IN ENGLISH?
+### What does that mean in English?
 
 (SLIDE)
 
@@ -628,7 +630,7 @@ background-position: center
 
 "Though the subjects of the autocrat are better off than they would be under anarchy, they must endure taxes or other impositions so high that, if they were increased further, income would fall by so much that even the autocrat, who absorbs only a portion of the fall in income in the form of lower tax collections, would be worse off" (570).
 
-MAKE SENSE?
+### Make sense?
 
 Here we see Olson start to draw out the distinction between the regime types.
 
@@ -651,7 +653,7 @@ p1 +
 
 Let's go back to our data.
 
-NOW USE THE OLSON MODEL SO FAR TO HELP US INTERPRET THE STORY BEHIND THESE DATA POINTS?
+### Now use the Olson model so far to help us interpret the story behind these data points?
 
 <br>
 
@@ -684,9 +686,9 @@ Autocratic wealth is highest where control is most absolute, but wealth on the r
 
 <br>
 
-HOW DOES OLSON EXPLAIN THIS DISCREPANCY?
+### How does Olson explain this discrepancy?
 
-- WHY DO DEMOCRACIES GROW BETTER AND FASTER ACCORDING TO THE SECTION ON "The reach of dictatorships and democracies compared"?
+#### - Why do democracies grow better and faster according to the section on "the reach of dictatorships and democracies compared"?
 
 <br>
 
@@ -698,9 +700,9 @@ Reducing tax rates at the very high end (where the stationary bandit places it) 
 
 <br>
 
-JUST OUT OF CURIOSITY, ACCORDING TO OLSON WHAT HAPPENS WHEN THE GOVERNMENT COMES TO REPRESENT A NARROWER AND NARROWER SET OF INTERESTS?
+### Just out of curiosity, according to Olson what happens when the government comes to represent a narrower and narrower set of interests?
 
-- SAY THROUGH GERRYMANDERING, A DENIAL OF SCIENCE AND ASYMMETRIC POLARIZATION?
+#### - Say through gerrymandering, a denial of science and asymmetric polarization?
 
 (Sh*t goes bad again)
 
@@ -708,7 +710,7 @@ JUST OUT OF CURIOSITY, ACCORDING TO OLSON WHAT HAPPENS WHEN THE GOVERNMENT COMES
 
 <br>
 
-HOW FREAKING COOL IS THIS MODEL?
+### How freaking cool is this model?
 
 Hot damn!
 
@@ -737,7 +739,7 @@ class: middle
 
 Sections five and six introduce the importance of time to this model.
 
-WHAT ARE THE KEY ELEMENTS DICTATORS MUST PROVIDE TO ENSURE SUSTAINED GROWTH?
+### What are the key elements dictators must provide to ensure sustained growth?
 
 <br>
 
@@ -751,9 +753,9 @@ Dictators must assure citizens he:
 
 <br>
 
-AND WHY IS THE LIST OF THINGS TO PROVIDE LONGER FOR DEMOCRACIES?
+### And why is the list of things to provide longer for democracies?
 
-- SHOULDN'T IT BE EASIER FOR DEMOCRACIES TO FOSTER GROWTH?
+#### - Shouldn't it be easier for democracies to foster growth?
 
 (SLIDE)
 
@@ -796,9 +798,8 @@ class: middle, center, inverse
 
 ???
 
-ALRIGHT, TIE THIS ALL UP FOR ME.
-
-HOW DOES OLSON (1993) ANSWER THE QUESTION WE STARTED WITH?
+### Alright, tie this all up for me.
+#### - How does Olson (1993) answer the question we started with?
 
 <br>
 

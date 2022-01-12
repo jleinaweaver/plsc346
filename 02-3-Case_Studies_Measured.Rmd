@@ -65,10 +65,10 @@ Brians, Craig Leonard, Lars Willnat, Jarol B. Manheim, and Richard C. Rich. 2011
 
 So far this week we've been working on our dependent variable for the semester.
 
-REMIND ME, WHAT IS A DEPENDENT VARIABLE?
+### Remind me, what is a dependent variable?
 (The outcome we are trying to explain)
 
-COULD SOMEONE USE THE DV WE'RE WORKING WITH IN THIS CLASS TO CONSTRUCT A RESEARCH QUESTION FOR OUR SEMESTER?
+### Could someone use the dv we're working with in this class to construct a research question for our semester?
 
 Good research questions focus in on the DV!
 
@@ -108,16 +108,16 @@ I do NOT mean to imply there is only one path through this or that step 2 is req
 
 <br>
 
-IN TERMS OF THE BRIANS ET AL (2011) READING FOR TODAY WHERE ARE WE CURRENTLY IN THE RESEARCH PROCESS?
+### in terms of the Brians et al (2011) reading for today where are we currently in the research process?
 
-* if silent *
+*if silent*
 
 For today, everybody should have a basic definition of political violence to work with.
 
-WHAT STEP IN THE RESEARCH PROCESS DO THESE DEFINITIONS REPRESENT?
+### What step in the research process do these definitions represent?
 (Operationalization)
 
-AND WHAT IS OPERATIONALIZATION ACCORDING TO THESE AUTHORS?
+### And what is operationalization according to these authors?
 ("...selecting observable phenomena to represent abstract concepts" (89).)
 
 <br>
@@ -128,7 +128,7 @@ Gathered case studies to help us all build out a collective perspective on the c
 
 For today, each group was tasked with operationalizing this abstract concept in the form of a clear definition.
 
-DOES THAT MAKE SENSE?
+### Does that make sense?
 
 
 ---
@@ -156,17 +156,17 @@ class: middle
 
 Today we will practice steps three and four!
 
-WHAT HAPPENS DURING THE INSTRUMENTATION STAGE?
+### What happens during the instrumentation stage?
 (Convert your operationalization (definition) into a series of steps you can use to measure the concept in question)
 
 Instrumentation is when you decide HOW you are going to measure the concept.
 - Determined by your operationalization and a STRONG concern about validity and reliability.
 
-WHAT DOES VALIDITY REFER TO?
+### What does validity refer to?
 ("...the extent to which our measures correspond to the concepts they are intended to reflect" (105).)
 - Aim should be to be appropriate and complete.
 
-AND WHAT IS RELIABILITY?
+### And what is reliability?
 (How stable are the results of our instrument?)
 
 
@@ -179,14 +179,14 @@ background-position: center
 
 ???
 
-HAS ANYBODY SEEN A DIAGRAM LIKE THIS BEFORE?
-- ONE THAT VISUALIZES VALIDITY AND RELIABILITY?
+### Has anybody seen a diagram like this before?
+#### - One that visualizes validity and reliability?
 
-DOES THIS HELP YOU INTUITIVELY GRASP THESE CONCEPTS?
+### Does this help you intuitively grasp these concepts?
 
 <br>
 
-DID THE READINGS MAKE SENSE ON THESE POINTS?
+### Did the readings make sense on these points?
 
 I know there's a ton of complexity in this chapter but you learn research design only by doing research.
 
@@ -231,9 +231,9 @@ When you've decided, add both to the new column in our spreadsheet.
 
 <br>
 
-GROUPS, TELL US BRIEFLY WHICH OPTION YOU CHOSE AND WHY.
+### Groups, tell us briefly which option you chose and why.
 
-- WHAT ARE THE BIGGEST SOURCES OF ERROR IN YOUR CHOSEN INSTRUMENT?
+#### - What are the biggest sources of error in your chosen instrument?
 
 <br>
 
@@ -245,7 +245,7 @@ I want you to measure each case using your instrument.
 
 You will add your measurement to our spreadsheet.
 
-ANY QUESTIONS BEFORE WE START?
+### Any questions before we start?
 
 <br>
 
@@ -274,30 +274,7 @@ Case 1: A peaceful protest is dispersed by soldiers ordered by the government to
 background-image: url('libs/Images/02_3-wto_protestors.jpg')
 background-size: 100%
 background-position: center
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
+class: bottom
 
 .size40[.content-box-blue[**WTO protestors destroy a Starbucks**]]
 
@@ -311,33 +288,7 @@ Case 2: Protestors at a WTO meeting begin to riot after dark and destroy a Starb
 background-image: url('libs/Images/02_3-kim_jong_un.jpg')
 background-size: 100%
 background-position: center
-class: center
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
+class: center, bottom
 
 .size35[.content-box-blue[**Totalitarian control of the state and its people**]]
 
@@ -353,29 +304,7 @@ Case 3: Kim Jong Un wields complete and total control over his state and people.
 background-image: url('libs/Images/02_3-river_pollution.jpg')
 background-size: 100%
 background-position: center
-class: center
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
+class: center, bottom
 
 .size35[.content-box-blue[**Industrial pollution destroys a fishery**]]
 
@@ -478,33 +407,33 @@ class: middle
 
 ???
 
-OK, HOW DID THAT GO?
+### Ok, how did that go?
 
-- WHAT HAVE WE LEARNED ABOUT THE CONCEPT "POLITICAL VIOLENCE"?
-
-<br>
-
-DO YOU BELIEVE YOUR MEASUREMENT IS A GOOD ONE? WHY OR WHY NOT?
-
-- FOCUSING JUST ON YOUR MEASURES, ARE YOU CONVINCED YOUR INSTRUMENT IS VALID? WHY OR WHY NOT?
-
-- ARE YOU CONVINCED YOUR INSTRUMENT IS RELIABLE? WHY OR WHY NOT?
-
-- IN OTHER WORDS, ANYBODY DISCOVER THEY NEED TO REFINE THE RULES OF THEIR INSTRUMENT?
+#### - What have we learned about the concept "political violence"?
 
 <br>
 
-WHAT DO WE LEARN ABOUT THESE CASES FROM THIS EXERCISE?
+### Do you believe your measurement is a good one? Why or why not?
 
-- A PRIORI, DO YOU BELIEVE ALL OF THESE THINGS ARE FORMS OF POLITICAL VIOLENCE? WHY OR WHY NOT?
+#### - Focusing just on your measures, are you convinced your instrument is valid? Why or why not?
 
-- WHICH CASES HAD THE MOST CONSISTENT MEASURES? DOES THAT MAKE SENSE?
+#### - Are you convinced your instrument is reliable? Why or why not?
 
-- WHICH CASES LED TO THE MOST CONFLICTED MEASURES? MAKE SENSE?
+#### - In other words, anybody discover they need to refine the rules of their instrument?
 
 <br>
 
-IS ERROR AVOIDABLE?
+### What do we learn about these cases from this exercise?
+
+#### - A priori, do you believe all of these things are forms of political violence? Why or why not?
+
+#### - Which cases had the most consistent measures? Does that make sense?
+
+#### - Which cases led to the most conflicted measures? Make sense?
+
+<br>
+
+### Is error avoidable?
 
 (Nope, but we hope it can be minimized!)
 
@@ -522,7 +451,7 @@ This is why peer-reviewed research is so valuable.
 
 If the choices aren't transparent, the results are basically meaningless.
 
-MAKE SENSE?
+### Make sense?
 
 <br>
 
@@ -534,7 +463,7 @@ Recognizing how those assumptions impact their conclusions.
 
 Being a credible expert means identifying the assumptions and understanding the costs and benefits of each choice.
 
-MAKE SENSE?
+### Make sense?
 
 
 
