@@ -87,17 +87,17 @@ class: middle, center, inverse
 
 ???
 
-HOW DOES THE FRAMING OF THIS PAPER HELP US ANSWER OUR BIG QUESTION?
+### How does the framing of this paper help us answer our big question?
 
 *Let them share thoughts*
 
-- RESEARCH QUESTION?
+#### - Research question?
 
-- KEY ACTORS?
+#### - Key actors?
 
-- KEY INSTITUTIONS?
+#### - Key institutions?
 
-- KEY PUZZLES?
+#### - Key puzzles?
 
 <br>
 
@@ -117,9 +117,9 @@ background-position: bottom
 
 ???
 
-WHAT DO WE THINK OF ABRAHMS' CRITIQUE OF THE PAPE (2003) ARTICLE WE READ AND DISCUSSED ON MONDAY? (p45-6)
+### What do we think of Abrahms' critique of the pape (2003) article we read and discussed on monday? (p45-6)
 
-- CONVINCING? WHY OR WHY NOT?
+#### - Convincing? Why or why not?
 
 *DISCUSS*
 
@@ -143,27 +143,27 @@ class: middle, center, inverse
 ???
 
 
-WHAT IS THE MODEL IN THIS PAPER?
+### What is the model in this paper?
 
 <br>
 
-1. WHAT DO WE THINK OF ABRAHMS' TWO VARIETIES OF TERRORISM?
+### 1. What do we think of Abrahms' two varieties of terrorism?
 
 - (strategic vs redemptive (46-7))
 
 <br>
 
-IS THIS TYPOLOGY SUBSTANTIALLY DIFFERENT FROM THE NATIONALIST AND RELIGIOUS EXAMPLES WE LOOKED AT LAST WEEK?
+### Is this typology substantially different from the nationalist and religious examples we looked at last week?
 
 <br>
 
-IS THIS TYPOLOGY SUBSTANTIALLY DIFFERENT FROM PAPE'S 'PURPOSES OF TERROR' TRADE-OFF BETWEEN COERCING OPPONENTS AND GAINING SUPPORTERS?
+### Is this typology substantially different from Pape's 'purposes of terror' trade-off between coercing opponents and gaining supporters?
 
 <br>
 
 Let's now talk about the main theory in the paper.
 
-2. HOW DOES ABRAHMS APPLY CORRESPONDENT INFERENCE THEORY TO TERRORISM?
+### 2. How does Abrahms apply correspondent inference theory to terrorism?
 
 - "The basic contention is that civilian-centric terrorist groups fail to coerce because they miscommunicate their policy objectives" (56).
 
@@ -171,7 +171,7 @@ Let's now talk about the main theory in the paper.
 
 <br>
 
-IS THIS A REASONABLE MODEL OF TERRORISM? WHY OR WHY NOT?
+### Is this a reasonable model of terrorism? Why or why not?
 
 
 
@@ -194,11 +194,11 @@ class: middle, center, inverse
 
 Let's start with the conclusion.
 
-WHAT DOES ABRAHMS CONCLUDE FROM HIS ANALYSIS? THE KEY TAKEAWAY?
+### What does Abrahms conclude from his analysis? The key takeaway?
 
 (Terrorism is not an effective strategy of coercion because of the signal it sends to the target.)
 
-REMIND ME, WHY IS TERRORISM A SIGNAL THAT ALMOST HAS TO FAIL?
+### Remind me, why is terrorism a signal that almost has to fail?
 
 - ("Terrorism miscommunicates groups' objectives because of its extremely high correspondence" (76).)
 
@@ -212,24 +212,24 @@ That's a big claim and we need to consider the methodology that underpins it.
 
 Let's talk case selection first.
 
-HOW DOES ABRAHMS CHOOSE HIS CASES?
+### How does Abrahms choose his cases?
 
 - (State Dept data on FTOs that have existed for quite a while)
 - Approach: Examine the "plight" of 28 terror groups taken from State Dept list of FTOs (foreign Terrorist Orgs)
 
-STRENGTHS AND WEAKNESSES OF THIS DATA SOURCE?
+### Strengths and weaknesses of this data source?
 
 <br>
 
 Remember, Abrahms big conclusion is that terrorism is not effective.
 
-BIG AND DIFFICULT QUESTION 1: TO WHAT DEGREE DOES REMOVING REDEMPTIVE TERRORISM FROM HIS CASE SELECTION PROCESS INFLUENCE THIS FINDING?
+### BIG AND DIFFICULT QUESTION 1: To what degree does removing redemptive terrorism from his case selection process influence this finding?
 
 * This will take some thought / discussion *
 
 <br>
 
-BIG AND DIFFICULT QUESTION 2: TO WHAT DEGREE DOES FOOTNOTE 25 ON P47 AFFECT THE ARGUMENT / ANALYSIS IN THIS PAPER?
+### BIG AND DIFFICULT QUESTION 2: to what degree does footnote 25 on p47 affect the argument / analysis in this paper?
 
 * This will take some thought / discussion *
 
@@ -244,9 +244,9 @@ background-position: center
 
 ???
 
-WHAT IS THE DEPENDENT VARIABLE IN THIS PAPER?
+### What is the dependent variable in this paper?
 
-HOW IS IT OPERATIONALIZED AND MEASURED?
+### How is it operationalized and measured?
 
 (Effectiveness: Compare each group's stated objectives with the policy outcomes.)
 
@@ -260,13 +260,13 @@ HOW IS IT OPERATIONALIZED AND MEASURED?
 
 <br>
 
-STRENGTHS AND WEAKNESSES OF THIS DATA SOURCE AND MEASUREMENT DECISION?
+### Strengths and weaknesses of this data source and measurement decision?
 
 (Reliability problems in the middle two categories?)
 
 <br>
 
-HOW DOES ABRAHMS ADDRESS THESE CONCERNS?
+### How does Abrahms address these concerns?
 
 (Analysis set up as a "hard test" of ineffectiveness (51))
 
@@ -282,13 +282,13 @@ HOW DOES ABRAHMS ADDRESS THESE CONCERNS?
 
 <br>
 
-TO WHAT DEGREE DO THESE CHOICES INCREASE YOUR CONFIDENCE IN THE ANALYSIS?
+### To what degree do these choices increase your confidence in the analysis?
 
 <br>
 
 As an aside, Abrahms asserts that terrorism looks ineffective even when compared to economic sanctions as a method of coercion.
 
-IS THIS A FAIR COMPARISON? WHY OR WHY NOT?
+### Is this a fair comparison? Why or why not?
 
 (p52, terrorism looks bad even against economic sanctions HOWEVER, that is an option only available to states.)
 
@@ -305,9 +305,9 @@ background-position: center
 
 ???
 
-EVALUATE FIGURE 1 FOR ME.
+### Evaluate Figure 1 for me.
 
-- WHAT DO WE LEARN FROM THIS?
+#### - What do we learn from this?
 
 <br>
 
@@ -329,9 +329,9 @@ background-position: center
 
 ???
 
-EVALUATE FIGURE 2 FOR ME.
+### Evaluate Figure 2 for me.
 
-- WHAT DO WE LEARN FROM THIS?
+#### - What do we learn from this?
 
 <br>
 
@@ -356,15 +356,15 @@ class: middle, center, inverse
 
 Abrahms then uses case studies to illustrate and reinforce his arguments.
 
-WHAT ARE THE CRITERIA ABRAHMS USES FOR SELECTING HIS CASE STUDIES? (p59-60)
+### What are the criteria Abrahms uses for selecting his case studies? (p59-60)
 
 <br>
 
-EVALUATE THEM
+### Evaluate them
 
 (Make sense to me.)
 
-WHAT DO WE THINK OF THE CASE STUDIES THEMSELVES? CONVINCING OR NOT?
+### What do we think of the case studies themselves? Convincing or not?
 
 1. Russia's Response to the 1999 Apartment Bombing; 
 
@@ -376,7 +376,7 @@ Really nicely written.
 
 <br>
 
-WHAT ARE THE POLICY IMPLICATIONS OF THIS RESEARCH ACCORDING TO ABRAHMS?
+### What are the policy implications of this research according to Abrahms?
 
 (SLIDE)
 
@@ -400,11 +400,11 @@ class: middle, slideblue
 
 ???
 
-EVALUATE EACH. ARE THEY CONVINCING? WHY OR WHY NOT?
+### Evaluate each. are they convincing? Why or why not?
 
 <br>
 
-ARE THESE CONSISTENT WITH PAPE'S ARGUMENTS RE: MODEST GOALS AND POLICY SUGGESTIONS? WHY OR WHY NOT?
+### Are these consistent with Pape's arguments re: modest goals and policy suggestions? Why or why not?
 
 
 
@@ -464,26 +464,5 @@ Section 5: Four policy implications and needs of future research
 2. the jihadists stand to gain from restricting their violence to military targets
 3. the self-defeating policy consequences of terrorism will ultimately dissuade potential jihadists from supporting it
 4. we must spread awareness of the fact that terrorism is NOT effective.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 

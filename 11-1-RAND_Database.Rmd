@@ -180,9 +180,9 @@ class: middle
 
 ???
 
-HOW FAMILIAR ARE YOU WITH THE RAND CORPORATION?
+### How familiar are you with the Rand Corporation?
 
-AFTER READING THROUGH THE WEBSITE MATERIAL DO YOU HAVE ANY CONCERNS ABOUT INSTITUTIONAL BIASES?
+### After reading through the website material do you have any concerns about institutional biases?
 
 
 
@@ -207,11 +207,11 @@ Terrorism is defined by the nature of the act, not by the identity of the perpet
 
 ???
 
-IS THIS A "GOOD" DEFINITION?
+### Is this a "good" definition?
 
-- HOW DOES IT COMPARE TO OUR CLASS DEFINITION?
+#### - How does it compare to our class definition?
 
-- HOW DOES IT COMPARE TO TILLY'S (2004) DEFINITION?
+#### - How does it compare to Tilly's (2004) definition?
 
 
 
@@ -237,7 +237,7 @@ class: middle, slideblue
 
 ???
 
-ANY CONCERNS WITH THE VARIABLES LISTED UNDER THE DATABASE SCOPE SECTION OF THE WEBSITE?
+### Any concerns with the variables listed under the database scope section of the website?
 
 I note that it lists variables that, for some reason, are not included in the database download they provide.
 
@@ -302,13 +302,13 @@ d2 |>
 
 ???
 
-WHAT DO YOU THINK THIS DATA TELLS US ABOUT THE GLOBAL EXPERIENCE OF TERRORISM?
+### What do you think this data tells us about the global experience of terrorism?
 
 <br>
 
-IS THIS EVIDENCE OF A WORSENING PROBLEM GLOBALLY OR A DATA AVAILABILITY / COLLECTION ISSUE?
+### Is this evidence of a worsening problem globally or a data availability / collection issue?
 
-- IN OTHER WORDS, IS THIS EVIDENCE TERRORISM WASN'T AS COMMON IN THE PAST OR WE SIMPLY DIDN'T OBSERVE IT AS EASILY (e.g. CABLE NEWS, SATELLITES, ETC.)? 
+#### - In other words, is this evidence terrorism wasn't as common in the past or we simply didn't observe it as easily (e.g. cable news, satellites, etc.)? 
 
 
 
@@ -395,15 +395,15 @@ Map represents a count of terror attacks overall.
 
 - e.g. I counted the number of attacks per country. 
 
-WHAT CONCLUSIONS CAN WE DRAW USING THIS MAP OF THE DATA?
+### What conclusions can we draw using this map of the data?
 
-- HOW CONFIDENT ARE WE THE RED COUNTRIES ARE THE TERROR HOTSPOTS?
+#### - How confident are we the red countries are the terror hotspots?
 
 <br>
 
-WHAT DO THE LIGHTER COUNTRIES IN AFRICA AND CENTRAL ASIA REPRESENT? LACK OF RELIABLE INFO OR PLACES WITH FEWER ATTACKS?
+### What do the lighter countries in africa and central asia represent? Lack of reliable info or places with fewer attacks?
 
-- DOES THINKING ABOUT THE SAMPLE SELECTION PROCEDURES (AND WHAT WE DON'T KNOW ABOUT THEM) AT RAND HELP US ANSWER THIS QUESTION?
+#### - Does thinking about the sample selection procedures (and what we don't know about them) at rand help us answer this question?
 
 
 
@@ -434,11 +434,11 @@ d2 |>
 
 Here's the map updated for the period since 2005, e.g. the most recent five years in the database.
 
-WHAT CONCLUSIONS CAN WE DRAW FROM THIS?
+### What conclusions can we draw from this?
 
 <br>
 
-ARE WE CONFIDENT THAT THIS CAPTURES ALL OF THE TERRORIST EVENTS IN THIS PERIOD?
+### Are we confident that this captures all of the terrorist events in this period?
 
 
 
@@ -467,11 +467,11 @@ d2 |>
 
 Rather than a count of attacks, here we see a sum of the fatalities.
 
-WHAT CONCLUSIONS CAN WE DRAW FROM THIS?
+### What conclusions can we draw from this?
 
 <br>
 
-ARE WE MORE CONFIDENT USING THE RAND DATABASE TO COUNT TERRORIST ATTACKS OR FATALITIES DUE TO ATTACKS? WHY?
+### Are we more confident using the rand database to count terrorist attacks or fatalities due to attacks? Why?
 
 
 
@@ -519,19 +519,19 @@ d2 |> count(Perpetrator) |> arrange(desc(n)) |> slice(1:10) |> knitr::kable()
 
 ???
 
-ANY OBSERVATIONS ABOUT THIS DATA?
+### Any observations about this data?
 
 + (Hard to interpret with all those unknowns and others.)
 
 <br>
 
-DOES THIS DATA IMPLY TERRORISM IS A MORE SECRETIVE ACTION THAN WE MAY HAVE ASSUMED OR SOMETHING ELSE?
+### Does this data imply terrorism is a more secretive action than we may have assumed or something else?
 
-- WHY SO MANY UNKNOWNS?
+#### - Why so many unknowns?
 
 <br>
 
-WHAT ARE THE MOST FREQUENT WEAPON TYPES USED IN TERRORIST EVENTS?
+### What are the most frequent weapon types used in terrorist events?
 
 (SLIDE)
 
@@ -552,7 +552,7 @@ d2 |> filter(Year2 >= 2000) |> count(Weapon) |> arrange(desc(n)) |> slice(1:10) 
 
 ???
 
-ANY OBSERVATIONS ABOUT THIS DATA?
+### Any observations about this data?
 
 
 
@@ -586,7 +586,7 @@ background-position: center
 
 *Time Remaining?*
 
-WHAT DOES THIS DATABASE TELL US ABOUT THE AMERICAN EXPERIENCE OF TERRORISM?
+### What does this database tell us about the American experience of terrorism?
 
 Take a few minutes, filter to look at only the US.
 
@@ -621,11 +621,11 @@ d_usa |> filter(Year2 >= 2005) |> count(Perpetrator) |> arrange(desc(n)) |> slic
 
 ???
 
-IS ENVIRONMENTAL TERRORISM THE MOST PRESSING THREAT TO US TODAY?
+### Is environmental terrorism the most pressing threat to us today?
 
 <br>
 
-HOW ABOUT MOST FREQUENT WEAPONS USED? ANY DIFFERENCE BETWEEN THE OVERALL AND JUST SINCE 1999?
+### How about most frequent weapons used? Any difference between the overall and just since 1999?
 
 (SLIDE)
 
@@ -664,7 +664,7 @@ Not much difference in weapon types used.
 
 <br>
 
-ARE THE INCIDENTS GETTING BIGGER OVER TIME (INJURIES AND FATALITIES)?
+### Are the incidents getting bigger over time (injuries and fatalities)?
 
 (SLIDE)
 
@@ -692,15 +692,15 @@ d_usa |>
 
 ???
 
-OBSERVATIONS?
+### Observations?
 
 <br>
 
-IF THIS IS THE REALITY, DO WE SPEND TOO MUCH TIME WORRYING ABOUT TERRORISM IN THE US?
+### If this is the reality, do we spend too much time worrying about terrorism in the US?
 
 <br>
 
-OVERALL, WHILE THIS ENDS IN 2009, IS THIS DATA CONSISTENT WITH YOUR SENSE OF THE AMERICAN EXPERIENCE OF TERRORISM?
+### Overall, while this ends in 2009, is this data consistent with your sense of the American experience of terrorism?
 
 
 

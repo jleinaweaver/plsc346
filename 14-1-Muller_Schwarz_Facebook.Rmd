@@ -63,7 +63,7 @@ Today we begin with the Müller and Schwarz article titled "Fanning the Flames o
 
 <br>
 
-WHAT IS THE BIG CLAIM IN THIS PAPER?
+### What is the big claim in this paper?
 
 (SLIDE)
 
@@ -121,21 +121,21 @@ class: middle, center, inverse
 
 ???
 
-HOW DOES THE FRAMING OF THIS PAPER HELP US EVALUATE THIS PROPOSAL?
+### How does the framing of this paper help us evaluate this proposal?
 
 Clearly the authors do not take this to terrorism, but I want us to.
 
-DOES THE BASIC STRUCTURE OF THE PAPER, e.g. THE CONCEPTS AND PERSPECTIVE, ALLOW US TO EVALUATE THIS PROPOSAL?
+### Does the basic structure of the paper, e.g. the concepts and perspective, allow us to evaluate this proposal?
 
 *Let them share thoughts about the framing of the paper*
 
-- RESEARCH QUESTION?
+#### - Research question?
 
-- KEY ACTORS?
+#### - Key actors?
 
-- KEY INSTITUTIONS?
+#### - Key institutions?
 
-- KEY PUZZLES?
+#### - Key puzzles?
 
 
 
@@ -156,7 +156,7 @@ class: middle, center, inverse
 
 ???
 
-WHAT IS THE MODEL IN THIS PAPER?
+### What is the model in this paper?
 
 Take some time on your own...
 
@@ -166,7 +166,7 @@ Compare to people next to you...
 
 <br>
 
-## class notes 2019-12-02
+#### class notes 2019-12-02
 
 1. Social media exposes people to different views
 2. Social media reinforces those ideas (echo chamber, confirmation bias)
@@ -174,7 +174,7 @@ Compare to people next to you...
 
 <br>
 
-WHO ARE THE 'PEOPLE' IN THIS MODEL? ANYBODY VS THOSE PREDISPOSED TO VIOLENCE?
+### Who are the 'people' in this model? Anybody vs those predisposed to violence?
 
 
 
@@ -195,7 +195,7 @@ class: middle, center, inverse
 
 ???
 
-DO WE HAVE ANY CONCERNS OR NEED FOR CLARIFICATIONS IN TERMS OF THE EMPIRICAL PARTS OF THE PAPER?
+### Do we have any concerns or need for clarifications in terms of the empirical parts of the paper?
 
 
 
@@ -209,7 +209,7 @@ background-position: center
 
 Let's talk concepts defined, operationalized and measured.
 
-EVALUATE THE DETAILS IN TABLE 1
+### Evaluate the details in Table 1
 
 *Discuss*
 
@@ -228,9 +228,9 @@ background-position: center
 
 ???
 
-WHAT DOES FIGURE 2 HELP US TO SEE AND THINK ABOUT?
+### What does Figure 2 help us to see and think about?
 
-- IS THIS CONVINCING? WHY OR WHY NOT?
+#### - Is this convincing? Why or why not?
 
 
 ---
@@ -242,9 +242,9 @@ background-position: center
 ???
 
 
-WHAT DOES FIGURE 4 HELP US TO SEE AND THINK ABOUT?
+### What does Figure 4 help us to see and think about?
 
-- IS THIS CONVINCING? WHY OR WHY NOT?
+#### - Is this convincing? Why or why not?
 
 
 ---
@@ -259,13 +259,13 @@ I think Figure 5b is kind of key.
 
 This is HUGE.
 
-WHY IS THIS SUCH AN IMPORTANT PIECE OF THE ANALYSIS?
+### Why is this such an important piece of the analysis?
 
 (Causality? To establish causality, we exploit exogenous variation in major internet and Facebook outages, which fully undo the correlation between social media and hate crime.)
 
-QUESTIONS ON THIS?
+### Questions on this?
 
-IS THIS A SLAM DUNK? WHY MAYBE NOT?
+#### - Is this a slam dunk? Why maybe not?
 
 
 
@@ -279,9 +279,9 @@ background-position: center
 
 A big part of establishing causality vs correlation is to argue you have controlled for all of the relevant confounders in your model.
 
-EXPLAIN TO ME WHICH OF THESE YOU BELIEVE ARE CONFOUNDERS IN THE KEY RELATIONSHIP?
+### Explain to me which of these you believe are confounders in the key relationship?
 
-- e.g. ALTERNATIVE EXPLANATIONS CONSIDERED?
+#### - e.g. alternative explanations considered?
 
 (Controls: We further find that the effect does not hold for sentiment unrelated to refugees; increases with user network interactions; and decreases with distracting news events.)
 
@@ -295,15 +295,15 @@ background-position: center
 
 ???
 
-BOTTOM LINE, DOES THIS PAPER DEMONSTRATE A CONVINCING LINK BETWEEN FACEBOOK USAGE AND TERRORIST INCIDENTS? WHY OR WHY NOT?
+### Bottom line, does this paper demonstrate a convincing link between facebook usage and terrorist incidents? Why or why not?
 
 <br>
 
-- NOT CONVINCED THESE ATTACKS ON REFUGEES ARE TERRORISM?
+#### - Not convinced these attacks on refugees are terrorism?
 
-- CORRELATION BUT NOT CAUSATION?
+#### - Correlation but not causation?
 
-- OTHER PROBLEMS IN THE PROPOSAL?
+#### - Other problems in the proposal?
 
 <br>
 

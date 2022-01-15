@@ -59,7 +59,7 @@ This week we explore the literature on the rationality and effectiveness of terr
 
 For today you read a hugely influential article by Robert Pape that examines "The Strategic Logic of Suicide Terrorism."
 
-GENERALLY SPEAKING, WHAT DID YOU THINK OF THE ARTICLE?
+### Generally speaking, what did you think of the article?
 
 (Has always struck me as well-written, well argued and well supported.)
 
@@ -82,23 +82,23 @@ class: middle, center, inverse
 
 ???
 
-HOW DOES THE FRAMING OF THIS PAPER HELP US ANSWER OUR BIG QUESTION?
+### How does the framing of this paper help us answer our big question?
 
-- RESEARCH QUESTION?
+#### - Research question?
 
-- KEY ACTORS?
+#### - Key actors?
 
-- KEY INSTITUTIONS?
+#### - Key institutions?
 
-- KEY PUZZLES?
+#### - Key puzzles?
 
 <br>
 
 Research Question: What explains the use of suicide terrorism by terror groups?
 
-IN WHAT SPECIFIC WAYS DOES THIS RESEARCH PROJECT AIM TO EXPAND OUR KNOWLEDGE ABOUT THE WORLD?
+### In what specific ways does this research project aim to expand our knowledge about the world?
 
-- WHAT GAPS IN THE LITERATURE HAS PAPE (2003) IDENTIFIED?
+#### - What gaps in the literature has Pape (2003) identified?
 
 - No single profile of terrorists likely exists.
 - Irrationality is likely a cop-out for explaining behavior
@@ -137,33 +137,33 @@ What I'd like you to do is compare and contrast this with Pape's definition of t
 
 Focus just on this paragraph on p345.
 
-WHAT STANDS OUT AS INTERESTING ABOUT PAPE'S DEFINITION?
+### What stands out as interesting about Pape's definition?
 
 <br>
 
 1) Cites both literature and the US State Department
 
-- WHY IS THIS INTERESTING FOR OUR PURPOSES?
+#### - Why is this interesting for our purposes?
 
 <br>
 
 2. Explicitly focuses on non-state actors only
 
-- WHY DO THIS?
+#### - Why do this?
 
 (Assist policy-makers and to avoid analytical confusion)
 
 <br>
 
-HOW CONVINCED ARE YOU BE THIS FIRST PART OF THE DEFINITION AND ITS RATIONALE?
+### How convinced are you be this first part of the definition and its rationale?
 
 <br>
 
 In a sense, the rest of Pape's definition looks like an operationalization of this initial definition.
 
-HOW DOES PAPE OPERATIONALIZE HIS CONCEPT?
+### How does Pape operationalize his concept?
 
-- WHAT "OBSERVABLE PHENOMENA" IS HE TELLING US TO FOCUS ON?
+#### - What "observable phenomena" is he telling us to focus on?
 
 
 
@@ -184,7 +184,7 @@ background-position: center
 
 Let's make sure we're clear on the typology.
 
-HOW DOES A DEMONSTRATIVE TERRORIST GROUP BALANCE THESE OBJECTIVES?
+### How does a demonstrative terrorist group balance these objectives?
 
 (Gain publicity to recruit more activists, raise attention to grievances from "soft liners on the other side" and/or gain attention from third parties who might exert pressure on other side.)
 
@@ -193,7 +193,7 @@ HOW DOES A DEMONSTRATIVE TERRORIST GROUP BALANCE THESE OBJECTIVES?
 
 <br>
 
-HOW DOES A DESTRUCTIVE TERRORIST GROUP BALANCE THESE OBJECTIVES?
+### How does a destructive terrorist group balance these objectives?
 
 (Seek to coerce opponents AND recruit supporters)
 
@@ -202,7 +202,7 @@ HOW DOES A DESTRUCTIVE TERRORIST GROUP BALANCE THESE OBJECTIVES?
 
 <br>
 
-HOW DOES A SUICIDE TERRORIST GROUP BALANCE THESE OBJECTIVES?
+### How does a suicide terrorist group balance these objectives?
 
 (Pursuing coercion even if it means losing support in your own community.)
 
@@ -210,21 +210,21 @@ HOW DOES A SUICIDE TERRORIST GROUP BALANCE THESE OBJECTIVES?
 
 <br>
 
-COMPARE AND CONTRAST THIS TYPOLOGY WITH THE MORE STANDARD TYPOLOGIES WE STUDIED TWO WEEKS AGO OR THAT WE HEAR SO OFTEN ABOUT IN THE MEDIA.
+### Compare and contrast this typology with the more standard typologies we studied two weeks ago or that we hear so often about in the media.
 
 - e.g. religious vs revolutionary vs fascist vs nationalist
 
-WHAT ARE THE STRENGTHS AND WEAKNESSES OF EACH TYPOLOGY?
+### What are the strengths and weaknesses of each typology?
 
 <br>
 
-NOW, COMPARE AND CONTRAST THIS FULLY ELABORATED DEFINITION WITH OUR CLASS DEFINITION.
+### Now, compare and contrast this fully elaborated definition with our class definition.
 
-- HOW SIMILAR?
+#### - How similar?
 
-- HOW DIFFERENT?
+#### - How different?
 
-- WHICH IS MORE USEFUL? WHY?
+#### - Which is more useful? why?
 
 
 
@@ -247,7 +247,7 @@ class: middle, inverse
 
 Ok, let's shift our focus to Pape's model.
 
-WHAT ARE THE KEY PREMISES THAT HELP US UNDERSTAND THE STRATEGIC LOGIC OF SUICIDE TERRORISM?
+### What are the key premises that help us understand the strategic logic of suicide terrorism?
 
 We briefly identified suicide terror on Pape's dimension, but now we need to explore it more deeply.
 
@@ -255,7 +255,7 @@ Everybody take a few minutes to diagram this argument.
 
 <br>
 
-* ON BOARD *
+*ON BOARD*
 
 - A strategic act
 - An act of coercion built on Schelling's (1966) "the rationality of irrationality" (344) (irrational act that demonstrates credibility to democratic audience of worse to come.)
@@ -267,9 +267,9 @@ Everybody take a few minutes to diagram this argument.
 
 <br>
 
-ARE WE CONVINCED BY THIS MODEL?
+### Are we convinced by this model?
 
-- WHY OR WHY NOT?
+#### - Why or why not?
 
 
 
@@ -295,35 +295,35 @@ class: middle, slideblue
 
 ???
 
-THE QUESTION FOR US TO END WITH TODAY IS, BASED ON PAPE'S WORK HOW CONFIDENT ARE WE IN THESE FIVE CONCLUSIONS?
+### The question for us to end with today is, based on Pape's work how confident are we in these five conclusions?
 
 <br>
 
-IS EACH ONE CLEAR AND SUPPORTED BY SOUND LOGIC?
+### Is each one clear and supported by sound logic?
 
 <br>
 
-IS EACH PART SUPPORTED BY EMPIRICAL EVIDENCE?
+### Is each part supported by empirical evidence?
 
 <br>
 
-DO THE PAPER'S ANALYSES MAKE SENSE?
+### Do the paper's analyses make sense?
 
 <br>
 
 Items to note for discussion
 
-HOW DID PAPE CONSTRUCT HIS DATASET?
+### How did pape construct his dataset?
 
 (Dataset culled from news media database (Lexis-Nexis).)
 
 <br>
 
-TO WHAT DEGREE DO WE BELIEVE THIS CREATED AN ACCURATE SAMPLE OF ATTACKS?
+### To what degree do we believe this created an accurate sample of attacks?
 
 <br>
 
-ARE WE CONVINCED BY FOOTNOTE 3? WHY OR WHY NOT?
+### Are we convinced by footnote 3? Why or why not?
 
 
 
@@ -335,13 +335,13 @@ background-position: center
 
 ???
 
-WHAT DO WE LEARN FROM TABLE 1?
+### What do we learn from Table 1?
 
 <br>
 
 Each column is a separate variable.
 
-EVALUATE THE VALIDITY AND RELIABILITY OF EACH VARIABLE.
+### Evaluate the validity and reliability of each variable.
 
 
 
@@ -353,9 +353,9 @@ background-position: center
 
 ???
 
-WHAT DO WE LEARN FROM TABLE 2?
+### What do we learn from Table 2?
 
-EVALUATE THE VALIDITY AND RELIABILITY OF EACH VARIABLE IN THIS TABLE.
+### Evaluate the validity and reliability of each variable in this table.
 
 
 
@@ -377,13 +377,13 @@ class: middle, inverse
 
 ???
 
-OVERALL, WHAT ARE THE STRENGTHS AND WEAKNESSES OF THIS ARTICLE?
+### Overall, what are the strengths and weaknesses of this article?
 
-- TO WHAT DEGREE ARE WE CONVINCED BY THE ARGUMENT AND ANALYSIS?
+#### - To what degree are we convinced by the argument and analysis?
 
 <br>
 
-WHAT DO WE THINK OF PAPE'S SUGGESTIONS FOR A COUNTERTERRORISM STRATEGY TO REDUCE SUICIDE TERRORISM?
+### What do we think of Pape's suggestions for a counterterrorism strategy to reduce suicide terrorism?
 
 
 

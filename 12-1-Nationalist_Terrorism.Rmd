@@ -89,13 +89,13 @@ class: middle, inverse
 
 ???
 
-WHAT DID WE CONCLUDE?
+### What did we conclude?
 
--  A GOOD DEFINITION MUST ACCOUNT FOR WHAT ELEMENTS?
+#### -  A good definition must account for what elements?
 
-- IS TERRORISM A SINGLE STRATEGY?
+#### - Is terrorism a single strategy?
 
-- CAN TERRORISM EVER BE MORAL?
+#### - Can terrorism ever be moral?
 
 
 
@@ -111,7 +111,7 @@ class: middle, inverse
 
 ???
 
-IS OUR DEFINITION GETTING BETTER?
+### Is our definition getting better?
 
 <br>
 
@@ -144,12 +144,12 @@ class: middle, center, inverse
 
 ???
 
-RESEARCH QUESTION?
+### Research question?
 ("What makes nationalist terrorism different from revolutionary, fascist, or religious terrorism is the territorial claim.")
 
-PUZZLES?
+### Puzzles?
 
-CONCEPTS DEFINED?
+### Concepts defined?
 
 
 ---
@@ -170,11 +170,11 @@ knitr::include_graphics("libs/Images/12_1-terror_defined.png")
 
 ???
 
-HOW DOES THE DEFINITION OF TERRORISM APPLIED HERE COMPARE AND CONTRAST TO OUR WORK ON THE CONCEPT LAST WEEK?
+### How does the definition of terrorism applied here compare and contrast to our work on the concept last week?
 
 <br>
 
-IS SETTING TERRORIST AS DIFFERENT FROM GUERILLA A USEFUL DISTINCTION FOR ANSWERING OUR BIG QUESTION? WHY OR WHY NOT?
+### Is setting terrorist as different from guerilla a useful distinction for answering our big question? Why or why not?
 
 
 
@@ -201,13 +201,13 @@ I want to combine our analyses of these two elements.
 
 Ok, everybody turn to the conclusion section (p302)
 
-AFTER ALL THE THEORY AND DATA ANALYZED, WHAT ARE THE MAIN CONCLUSIONS OF THE PAPER?
+### After all the theory and data analyzed, what are the main conclusions of the paper?
 
 (Nationalist terrorism is different because its central aim is territorial, its main strategy is attrition and its goal is for the state to surrender control of that territory.)
 
 <br>
 
-AS A CONTRAST, WHAT DOES THE AUTHOR ARGUE IS THE PURPOSE OF REVOLUTIONARY TERRORISM?
+### As a contrast, what does the author argue is the purpose of revolutionary terrorism?
 
 (Mobilization)
 
@@ -240,11 +240,11 @@ background-position: center
 
 Let's start with the case selection (290-294).
 
-1. ARE THESE COMPARABLE CASES? WHY OR WHY NOT?
+### 1. Are these comparable cases? Why or why not?
 
-- KEY SIMILARITIES?
+#### - Key similarities?
 
-- POSSIBLY PROBLEMATIC DIFFERENCES?
+#### - Possibly problematic differences?
 
 <br>
 
@@ -292,13 +292,13 @@ background-position: center
 
 <br>
 
-SO, GIVEN ALL OF THIS ARE WE COMFORTABLE GENERALIZING FROM THESE TWO CASES?
+### So, given all of this are we comfortable generalizing from these two cases?
 
-- DO THE ANALYSES OF THESE SPEAK TO NATIONALIST TERRORISM FOUND ELSEWHERE IN THE WORLD? WHY OR WHY NOT?
+#### - Do the analyses of these speak to nationalist terrorism found elsewhere in the world? Why or why not?
 
 <br>
 
-SO, BOTTOM LINE, IS CASE SELECTION A STRENGTH OR A WEAKNESS FOR THE PAPER?
+### So, bottom line, is case selection a strength or a weakness for the paper?
 
 
 
@@ -322,15 +322,15 @@ class: middle, slideblue, center
 
 Let's now evaluate the "war of attrition" as a strategy (p294-296).
 
-IS THIS A CLEAR AND USEFUL CONCEPT FOR THIS ANALYSIS?
+### Is this a clear and useful concept for this analysis?
 
-- DEFINITION OF "ATTRITION" (P294-5 IN MILITARY CONTEXT)
+#### - Definition of "attrition" (p294-5 in military context)
 
-- WHAT IS THE INTUITION BEING DEVELOPED HERE?
+#### - What is the intuition being developed here?
 
 <br>
 
-SO, IS IT A STRENGTH OR WEAKNESS OF THE PAPER?
+### So, is it a strength or weakness of the paper?
 
 <br>
 
@@ -364,11 +364,11 @@ class: middle, slideblue
 
 ???
 
-ARE WE CLEAR ON THESE?
+### Are we clear on these?
 
-DO THEY MAKE SENSE AS A MODEL OF POLITICS? WHY OR WHY NOT?
+### Do they make sense as a model of politics? Why or why not?
 
-SO, IS THE MODEL A STRENGTH OR WEAKNESS OF THE PAPER?
+### So, is the model a strength or weakness of the paper?
 
 
 
@@ -390,15 +390,15 @@ class: middle, slideblue
 
 ???
 
-HOW CONVINCED ARE YOU BY THE ANALYSES IN THE PAPER?
+### How convinced are you by the analyses in the paper?
 
-- DATA SOURCES AS STRENGTH OR WEAKNESS? (p298)
+#### - Data sources as strength or weakness? (p298)
 
-- OPERATIONALIZATIONS AND MEASUREMENT AS STRENGTH OR WEAKNESS??
+#### - Operationalizations and measurement as strength or weakness??
 
-- PROBLEMS WITH DEVELOPING THEORY AND TESTING THEORY ON THE SAME CASES OVER THE SAME PERIOD?
+#### - Problems with developing theory and testing theory on the same cases over the same period?
 
-- THE FINDINGS THEMSELVES (p298)
+#### - The findings themselves (p298)
 
 Opposite findings across the two groups are confusing...
 
@@ -434,22 +434,13 @@ class: middle, inverse
 
 So, bottom line for us.
 
-ARE WE CONVINCED THAT NATIONALIST TERRORISM IS FUNDAMENTALLY DISTINCT FROM OTHER TYPES OF TERRORISM OR ACTS OF POLITICAL VIOLENCE?
+### Are we convinced that nationalist terrorism is fundamentally distinct from other types of terrorism or acts of political violence?
 
-- WHY OR WHY NOT?
+#### - Why or why not?
 
 <br>
 
-DOES NATIONALIST TERRORISM REQUIRE DIFFERENT POLICY APPROACHES TO ADDRESS IT?
+### Does nationalist terrorism require different policy approaches to address it?
 
-- WHY OR WHY NOT?
-
-
-
-
-
-
-
-
-
+### - Why or why not?
 
