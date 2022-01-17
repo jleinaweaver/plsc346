@@ -79,13 +79,13 @@ background-size: 100%
 background-position: center
 class: center, middle
 
-.content-box-red[.size70[**1. Models / Theory**]]
+.size70[.content-box-red[**1. Models / Theory**]]
 
 <br>
 
 <br>
 
-.content-box-red[.size70[**2. Empirical Data**]]
+.size70[.content-box-red[**2. Empirical Data**]]
 
 ???
 
@@ -149,9 +149,13 @@ On Wednesday I gave you index cards.
 
 #### - Was it a good one? Why or why not?
 
+<br>
+
 ### Was the simulation internally valid?
 
 #### - Anything key aspects related to making these decisions missing?
+
+<br>
 
 ### Was the simulation externally valid?
 
@@ -208,23 +212,33 @@ background-position: center
 
 We then did something similar on Friday regarding "strategy."
 
-I gave you a set of rules, assumed diverse and conflicting preferences, added a mechanism of uncertainty and then set you loose.
+Let's talk about those survival simulations.
 
-### Tell me about the models we simulated in class.
+Let's talk about the models we simulated in class.
 
-#### - How were they different from wednesdays model?
+### In what ways were these simulations the same and in what ways different from our politics simulation on Wednesday?
 
-(This time, however, I added an uncertainty mechanism (rock, paper, scissors) to complicate your decision-making.)
+#### - Think about this in terms of how you approached each game.
 
-#### - What definition of strategy were they built on?
++ (The same: I gave you a set of rules, assumed diverse and conflicting preferences and set you loose)
 
-#### - What dynamics did they allow us to observe?
++ (Different: I added a mechanism of uncertainty AND made the game component more explicit)
 
-#### - How externally valid were these models?
+<br>
+
+Let's say I wanted to use the survival games as a test of how strategic each of you is.
+
+### In what ways is this a good measuring tool for strategic thinking and in what ways a bad one?
+
+
+
 
 ---
 
-class: middle, center, slidegreen
+background-image: url('libs/Images/background-blue_triangles2.png')
+background-size: 100%
+background-position: center
+class: middle
 
 .size70[**For Today**]
 
@@ -240,70 +254,102 @@ This week we are going to explore and define the central concept of our semester
 
 We will do this by exploring both real-world case studies and the academic literature.
 
+<br>
+
 For today everyone should have brought a news article that describes a recent act of political violence.
 
-- I also assume that everyone knows at least the basic background of their case.
-
 ### Does everyone have their article?
+
+I assume that everyone knows at least the basic background of their case.
+
+<br>
+
+I'd now like each of you to introduce your case to the class by answering three questions.
+
+
 
 
 
 ---
 
-background-image: url('libs/Images/background-green_blue_swirl_side.jpg')
+background-image: url('libs/Images/background-blue_triangles2.png')
 background-size: 100%
 background-position: center
 class: middle
 
 .size60[.center[**Define "Political Violence": Comparative Case Studies**]]
 
-.size50[
-1. What is the specific act you are labeling "political violence"?
-
-2. Why is this act "political"?
-
-3. Why is this an act of "violence"?
-]
+.size50[1) What is the specific act you are labeling "political violence"?]
 
 ???
 
-We'll go around the room, you will have two minutes to bring us up to speed on your case.
+Tell us what your specific act is AND briefly give us the background of it
 
-Focus on answering these three questions:
++ By "specific act" I mean that literally.
 
-1. What is the specific act you are labeling "political violence"?
-- plus, briefly give the background
++ The conflict in Sudan or the Cold War are the titles of books.
 
-By "specific act" I mean that literally.
-- The conflict in Sudan or the Cold War are the titles of books.
-- Our focus is on an actor or group of actors making a specific decision, e.g. attacking a market on a specific date to achieve a specific aim. 
++ Our focus is on an actor or group of actors making a specific decision, e.g. attacking a market on a specific date to achieve a specific aim. 
 
-<br>
+--
 
-2. Why is this act "political"?
-- e.g. what is the actor trying to achieve? Think strategically.
+.size50[2) Why is this act "political"?]
 
-3. Why is this an act of "violence"?
+???
 
 <br>
 
-Everybody take two minutes and get ready to brief us on your case.
+e.g. what is the actor trying to achieve? 
+
++ Think strategically.
+
+--
+
+.size50[3) Why is this an act of "violence"?]
+
+???
 
 <br>
 
-Ok, IMPORTANT, listen to each other carefully.
+Think about the nature of violence as we've been discussing it and use this to explain why your case is a good example of it.
+
+<br>
+
+Ok, everybody take two minutes to prepare your answers.
+
+<br>
+
+**IMPORTANT**, listen to each other carefully.
 
 - These cases and arguments are the data you will use for the rest of the week.
 
 - Take notes and be an active listener.
 
-- ALSO IMPORTANT: As we go around the room, don't change your answers to numbers two and three! We need to hear diverse perspectives.
-
 <br>
+
+**ALSO IMPORTANT**: As we go around the room, don't change your answers to numbers two and three! We need to hear diverse perspectives.
+
+
+
+
+---
+
+background-image: url('libs/Images/background-blue_triangles2.png')
+background-size: 100%
+background-position: center
+class: middle, center
+
+.size60[.center[**For Wednesday**]]
+
+.size55[
+Tilly, C. (2003). Varieties of Violence. In *The Politics of Collective Violence* (pp. 1–25). Cambridge, UK: Cambridge University Press.
+]
+
+???
 
 Excellent work, keep these in mind and will pick up the exercise on Wednesday.
 
-Read the Tilly chapter on violence and see if that alters your thinking about the concept.
+Read the Tilly chapter on violence and see if that alters your thinking about the concepts we started working on today.
 
 
 

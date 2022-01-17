@@ -40,8 +40,7 @@ class: slideblue
 
 **Sit with your groups from Wednesday**
 
-Convert your definitions into valid and reliable measurements of political violence.
-
+Develop valid and reliable measurements for our definitions of political violence
 ]
 
 <br>
@@ -53,13 +52,21 @@ Convert your definitions into valid and reliable measurements of political viole
 ???
 
 ### Prep for Class
-1. Prep Google doc to track students claiming different countries
+1. Prep email with link to Google SHEET for collecting definitions and measurements today
+    - Columns: Group members, Definition (Operationalization), Instrumentation
+    - DON'T add the new columns until up to that exercise in class.
+    - **DO ADD the definitions you were emailed**
+    - https://docs.google.com/spreadsheets/d/1sqWnR4K1Yqov5gLrAQoXrqoNXrTkmFP82Vjm6zu10KU/edit?usp=sharing
 
-2. Email with link to the doc
+2. Prep email with link to Google DOC to track students claiming different countries
+    - https://docs.google.com/document/d/1pZv9iGf2XJOmhNue2rPVqfzbNviRTi_F1RnuhBkMNJI/edit?usp=sharing
 
 <br>
 
-Brians, Craig Leonard, Lars Willnat, Jarol B. Manheim, and Richard C. Rich. 2011. “From Abstract to Concrete: Operationalization and Measurement.” In Empirical Political Analysis, Boston, MA: Longman, (ONLY p88-110)
+.size10[
+Reading:
+
+Brians, Craig Leonard, Lars Willnat, Jarol B. Manheim, and Richard C. Rich. 2011. “From Abstract to Concrete: Operationalization and Measurement.” In Empirical Political Analysis, Boston, MA: Longman, (ONLY p88-110)]
 
 <br>
 
@@ -68,11 +75,18 @@ So far this week we've been working on our dependent variable for the semester.
 ### Remind me, what is a dependent variable?
 (The outcome we are trying to explain)
 
-### Could someone use the dv we're working with in this class to construct a research question for our semester?
+### And what is the DV in this class?
+(Political Violence!)
 
-Good research questions focus in on the DV!
+<br>
 
-- What explains the variation in the use of political violence around the world?
+### So, phrase this as a research question for us.
+
+#### If this class were a research project, what is the research question we are trying to answer?
+
++ (Good research questions focus in on the DV!)
+
++ (What explains the variation in the use of political violence around the world?)
 
 
 
@@ -103,8 +117,9 @@ In your reading for today Brians et al (2011) discuss the intricacies of the res
 
 Here is the path we've been following in class this week.
 
-I do NOT mean to imply there is only one path through this or that step 2 is required.
-- This is simply how we're approaching the challenge.
++ I do NOT mean to imply there is only one path through this or that step 2 is required.
+
++ This is simply how we're approaching the challenge.
 
 <br>
 
@@ -112,23 +127,33 @@ I do NOT mean to imply there is only one path through this or that step 2 is req
 
 *if silent*
 
-For today, everybody should have a basic definition of political violence to work with.
-
-### What step in the research process do these definitions represent?
-(Operationalization)
-
-### And what is operationalization according to these authors?
-("...selecting observable phenomena to represent abstract concepts" (89).)
++ Have we identified a concept to explain?
++ Have we gathered empirical data (real world cases) to help us explore the concept?
++ Have you developed a working definition of the concept?
 
 <br>
 
-This week we identified a concept.
+For today, everybody has a basic definition of political violence to work with.
 
-Gathered case studies to help us all build out a collective perspective on the concept and its mechanisms.
+### Why is your working definition an operationalization of the political violence concept?
++ (Operationalization: "...selecting observable phenomena to represent abstract concepts" (89).)
 
-For today, each group was tasked with operationalizing this abstract concept in the form of a clear definition.
+<br>
 
-### Does that make sense?
+This week we have:
+
++ identified a concept,
++ Gathered case studies to help us all build out a collective perspective on the concept and its mechanisms, and
++ Each group has now operationalized this abstract concept in the form of a clear definition.
+
+<br>
+
+*SEND EMAIL WITH LINK TO SHEET OF DEFINITIONS*
+
+Let's take a look at the class definitions.
+
+### Any big changes from Wednesday?
+
 
 
 ---
@@ -157,17 +182,22 @@ class: middle
 Today we will practice steps three and four!
 
 ### What happens during the instrumentation stage?
-(Convert your operationalization (definition) into a series of steps you can use to measure the concept in question)
++ (Convert your operationalization (definition) into a series of steps you can use to measure the concept in question)
 
 Instrumentation is when you decide HOW you are going to measure the concept.
 - Determined by your operationalization and a STRONG concern about validity and reliability.
 
+<br>
+
 ### What does validity refer to?
-("...the extent to which our measures correspond to the concepts they are intended to reflect" (105).)
-- Aim should be to be appropriate and complete.
++ ("...the extent to which our measures correspond to the concepts they are intended to reflect" (105).)
+
+Aim should be to be appropriate and complete.
+
+<br>
 
 ### And what is reliability?
-(How stable are the results of our instrument?)
++ (How stable are the results of our instrument?)
 
 
 
@@ -180,9 +210,16 @@ background-position: center
 ???
 
 ### Has anybody seen a diagram like this before?
-#### - One that visualizes validity and reliability?
 
-### Does this help you intuitively grasp these concepts?
+<br>
+
+### Walk me through it, how does this illustrate validity and reliability?
+
+### If you were choosing a measure, how would you rank these from best to worst? Why?
+
++ (Validity is key. If you aren't measuring the idea you are targeting the results are meaningless.)
+
++ (Reliability then comes in as a way to choose between measures that all have some degree of validity)
 
 <br>
 
@@ -202,32 +239,44 @@ background-position: left
 class: slideblue
 
 .pull-right[
-.size35[
-.center[
-### A Nominal Measure
-Yes vs No
 
-<br>
+.center[## 4. Instrumentation
+.size30[
+### A Nominal Measure
++ e.g. Yes vs No
 
 ### An Ordinal Measure
-None, Low, Medium, High
-
-<br>
++ e.g. None, Low, Medium, High
 
 ### A Ratio Measure
-0 (least or none) to 100 (most)
-
++ e.g. 0 (least or none) to 100 (most)
 ]]]
 
 ???
 
-Ok, groups, take a few minutes to think through the instrumentation of your operationalization.
+Ok, groups, time for the instrumentation stage.
 
-In other words, you will use your definition to measure the amount of political violence in a case using what steps and categories?
++ Take a few minutes to think about how your definition of political violence can be measured.
 
-You must choose one of these three options and you must specify the steps you will take to generate a measurement from a specific case.
++ In other words, how will use your definition to measure the amount of political violence in a real-world case?
 
-When you've decided, add both to the new column in our spreadsheet.
++ What steps and/or categories would you need?
+
+<br>
+
+In a few minutes we will test your choices out!
+
++ I will present you a series of cases I want you to code using your instrumentation of your political violence definition.
+
+<br>
+
+So, select one of these options on the slide and clarify how you will apply it to a real-world case.
+
+### Questions?
+
+#### Submit a description of your instrument on our shared class spreadhseet (I'll add a new column)
+
+Go!
 
 <br>
 
@@ -239,17 +288,17 @@ When you've decided, add both to the new column in our spreadsheet.
 
 Ok, let's test out what you've built.
 
-I'm going to present you with a series of cases.
++ I'm going to present you with a series of cases.
 
-I want you to measure each case using your instrument.
++ I want you to measure each case using your instrument.
 
-You will add your measurement to our spreadsheet.
++ You will add your measurement to our spreadsheet.
 
 ### Any questions before we start?
 
 <br>
 
-* Save discussion for the end, just focus on coding cases to let the groups find their groove *
+**Save discussion for the end, just focus on coding cases to let the groups find their groove**
 
 
 
@@ -259,7 +308,7 @@ background-image: url('libs/Images/02_3-soldiers_fire_protestors.jpg')
 background-size: 100%
 background-position: center
 
-.size40[.content-box-blue[**Government agents disperse protestors**]]
+.size40[.content-box-blue[**1) Government agents disperse protestors**]]
 
 ???
 
@@ -276,7 +325,7 @@ background-size: 100%
 background-position: center
 class: bottom
 
-.size40[.content-box-blue[**WTO protestors destroy a Starbucks**]]
+.size40[.content-box-blue[**2) WTO protestors destroy a Starbucks**]]
 
 ???
 
@@ -290,7 +339,7 @@ background-size: 100%
 background-position: center
 class: center, bottom
 
-.size35[.content-box-blue[**Totalitarian control of the state and its people**]]
+.size35[.content-box-blue[**3) Totalitarian control of the state and its people**]]
 
 ???
 
@@ -306,7 +355,7 @@ background-size: 100%
 background-position: center
 class: center, bottom
 
-.size35[.content-box-blue[**Industrial pollution destroys a fishery**]]
+.size35[.content-box-blue[**4) Industrial pollution destroys a fishery**]]
 
 ???
 
@@ -320,7 +369,7 @@ background-image: url('libs/Images/02_3-Trump_Coal.jpg')
 background-size: 100%
 background-position: center
 
-.size35[.content-box-blue[**Government relaxes pollution standards**]]
+.size35[.content-box-blue[**5) Government relaxes pollution standards**]]
 
 ???
 
@@ -333,7 +382,7 @@ background-image: url('libs/Images/02_3-death_row.jpg')
 background-size: 100%
 background-position: center
 
-.size35[.content-box-blue[**The government's use of the death penalty**]]
+.size35[.content-box-blue[**6) The government's use of the death penalty**]]
 
 ???
 
@@ -348,7 +397,7 @@ background-size: 100%
 background-position: bottom
 class: center
 
-.size40[**The government's use of an income tax**]
+.size40[**7) The government's use of an income tax**]
 
 ???
 
@@ -362,7 +411,7 @@ background-image: url('libs/Images/02_3-segregated_diner.jpg')
 background-size: 100%
 background-position: center
 
-.size40[.content-box-blue[**Disruptive but peaceful protests**]]
+.size40[.content-box-blue[**8) Disruptive but peaceful protests**]]
 
 ???
 
@@ -395,37 +444,40 @@ class: middle
 .size35[
 **Cases**
 
-+ Soldiers end a protest
-+ Protestors riot
-+ Dictatorial control
-+ Industrial pollution
-+ Environmental standards
-+ The death penalty
-+ The income tax
-+ Disruptive, peaceful protests
+1. Soldiers end a protest
+2. Protestors riot
+3. Dictatorial control
+4. Industrial pollution
+5. Environmental standards
+6. The death penalty
+7. The income tax
+8. Disruptive, peaceful protests
 ]]
 
 ???
 
 ### Ok, how did that go?
-
-#### - What have we learned about the concept "political violence"?
-
-<br>
-
-### Do you believe your measurement is a good one? Why or why not?
-
-#### - Focusing just on your measures, are you convinced your instrument is valid? Why or why not?
-
-#### - Are you convinced your instrument is reliable? Why or why not?
-
-#### - In other words, anybody discover they need to refine the rules of their instrument?
+#### Any big picture thoughts before we talk?
 
 <br>
 
-### What do we learn about these cases from this exercise?
+First, let's talk about your instruments.
 
-#### - A priori, do you believe all of these things are forms of political violence? Why or why not?
+### Each Group: Focusing just on your measures, are you convinced your instrument is valid? Why or why not?
+
+<br>
+
+### Each Group: Focusing just on your measures, are you convinced your instrument is reliable? Why or why not?
+
+<br>
+
+### Given this work, would any group like to refine either their operationalization or instrumentation? Why or why not?
+
+<br>
+
+Now let's talk about the cases.
+
+### A priori, do you believe all of these things are forms of political violence? Why or why not?
 
 #### - Which cases had the most consistent measures? Does that make sense?
 
@@ -433,16 +485,23 @@ class: middle
 
 <br>
 
-### Is error avoidable?
+### Bottom line, what have you learned about the concept "political violence" from our work this week?
+#### - What are the key takeaways so far?
+
+<br>
+
+### Is error during measurement avoidable?
 
 (Nope, but we hope it can be minimized!)
 
-We cannot study a concept without introducing error)
++ We cannot study a concept without introducing error
 
 Huge leap moving from concept to definition.
+
 - Forces you to make many assumptions.
 
 Another leap moving from definition to measurement.
+
 - Many more assumptions.
 
 This means that the only way to learn something from someone else's work is think carefully about their process.
@@ -457,9 +516,7 @@ If the choices aren't transparent, the results are basically meaningless.
 
 To me this means that anytime we hear someone making an argument about political violence they could almost certainly be operating from a different understanding of the concept than me.
 
-We'd better get good at identifying assumptions 
-AND
-Recognizing how those assumptions impact their conclusions.
+We'd better get good at identifying assumptions, AND Recognizing how those assumptions impact their conclusions.
 
 Being a credible expert means identifying the assumptions and understanding the costs and benefits of each choice.
 
@@ -477,6 +534,17 @@ class: middle
 
 .size60[**For Monday**]
 
+???
+
+Next week we shift from building our knowledge using a few cases to using a TON of cases by analyzing academic research projects that exist to measure political violence around the world.
+
+<br>
+
+To get started I'm going to have you do a task I might have asked you to do in one of my classes in the past.
+
+
+--
+
 .size45[
 
 1. Read the coverage of three different countries in the 2020 Country Reports on Human Rights Practices (State Department) and Amnesty International's Annual Reports.
@@ -487,9 +555,25 @@ class: middle
 
 ???
 
+<br>
+
+Many of the big political violence research projects use country reports from the US State Department and AI, so we should read some for ourselves to get a sense of what they do and don't do well.
+
+Links are in the syllabus.
+
+Each of you should select three countries and review their reports.
+
 Be ready to discuss the strengths and weaknesses of these as sources for measuring political violence around the world. 
 
 *Send email with Google doc link*
+
+You have to claim your three countries on our shared document, no overlap!
+
+<br>
+
+I also gave you a recent article from Foreign Policy that is all about the question of how valid and reliable these reports are.
+
+### Questions?
 
 
 
