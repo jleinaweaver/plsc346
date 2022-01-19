@@ -56,6 +56,9 @@ Welcome to political violence
 
 ### Prep for Class
 1. Bring 6 index cards to class
+    + 3 worth 1/3 letter grade on a paper
+    + 2 get out of jail free cards
+    + 1 automatic "A" card
 
 <br>
 
@@ -176,7 +179,7 @@ Two index cards, each one is a "get out of jail" free card you can use this seme
 
 - Miss a day and need an excused absence?
 - Miss a paper deadline and need an extension? Within reason!
-- Bump a paper by a full letter grade (10 pts)
+- Bump a paper by 2/3 of letter grade (C+ up to a B!)
 
 10 minutes to distribute these cards before the offer expires.
 
@@ -192,28 +195,47 @@ Ok, talk to me about the process.
 
 ---
 
-class: middle, center
-
 background-image: url('libs/Images/background-swirls.jpg')
 background-size: 100%
 background-position: center
+class: middle, center
 
 .size80[.textblack[**Let's distribute an .textred[INSANE] benefit!**]]
 
 ???
 
-What if we wanted to distribute something really crazy?
+Last one, let's distribute a single index card worth an automatic "A" for any paper assignment in the class.
 
-Like, let's say, one index card worth an A in this class for your final grade?
+Go!
 
-### How would you approach ten minutes to decide who gets an automatic "A"?
+---
 
-<br>
+background-image: url('libs/Images/background-swirls.jpg')
+background-size: 100%
+background-position: center
 
-### If this exercise is a good model of politics, then what does "politics" refer to?
+```{r, out.width='95%'}
+knitr::include_graphics('libs/Images/01-1-jurrasic-park-samuel-l-jackson.gif')
+```
+
+???
+
+Yeah, that card is WAY too dangerous to exist.
+
+
+
+---
+
+background-image: url('libs/Images/background-swirls.jpg')
+background-size: 100%
+background-position: center
+class: middle, center
+
+.size60[**If these three games are a simulation of "politics", then what is "politics"?**]
+
+???
 
 (SLIDE)
-
 
 
 
@@ -264,11 +286,20 @@ Funny thing is, arguably, the only thing more fundamental and foundational to so
 ### Anybody recognize the photo?
 + (The January 6th protest/invasion/attempted coup)
 
-### Is the January 6th invasion of the Capitol Building an example of "politics" as we just defined it?
-+ *Discuss*
+<br>
 
-### Is the January 6th invasion of the Capitol Building an example of violence? Why or why not?
-+ *Discuss*
+### Is the January 6th invasion of the Capitol Building an example of "politics" as we just defined it?
+
+#### - Resource distribution at stake?
+#### - Who makes and enforces the rules at stake?
+
+*Discuss*
+
+<br>
+
+### Is the January 6th invasion of the Capitol Building an example of "violence"? Why or why not?
+
+*Discuss*
 
 
 
@@ -280,7 +311,9 @@ background-position: center
 
 ???
 
-Jay-sus, of course it was. [Link](https://www.washingtonpost.com/local/public-safety/police-union-says-140-officers-injured-in-capitol-riot/2021/01/27/60743642-60e2-11eb-9430-e7c77b5b0297_story.html)
+Of course it was! [Link](https://www.washingtonpost.com/local/public-safety/police-union-says-140-officers-injured-in-capitol-riot/2021/01/27/60743642-60e2-11eb-9430-e7c77b5b0297_story.html)
+
+Recent reporting has tallied up the damages:
 
 + "...about 140 officers were injured"
 
@@ -298,12 +331,10 @@ Jay-sus, of course it was. [Link](https://www.washingtonpost.com/local/public-sa
 
 ---
 
-class: middle, center
-
 background-image: url('libs/Images/01_1-Jan6th_Protest3.png')
 background-size: 100%
 background-position: center
-class: bottom, center
+class: bottom, center, inverse
 
 .textred[.size80[**Violence is a political strategy by rational, goal-seeking actors**]]
 
@@ -311,7 +342,19 @@ class: bottom, center
 
 Our organizing assumption this semester is that violence is a strategy chosen by rational, goal-seeking actors.
 
-### Can anybody tell me what that means in english?
+### Can anybody tell me what that means in English?
+
++ We assume that actors have preferences over outcomes.
+    + In other words, people want things and act to try and get those things.
+
+<br>
+
+### Why do many researchers of political violence start with this assumption?
+
++ (Assuming violent actors are "crazy" doesn't help us in any meaningful way.)
+    + The only way to stop "crazy" is with more violence.
+    
++ To understand or reduce violence we need to learn about these actors, their preferences and the systems they inhabit.
 
 <br>
 
@@ -319,19 +362,7 @@ Our organizing assumption this semester is that violence is a strategy chosen by
 
 #### - Is this assumption likely to help us understand or misunderstand the world of politics?
 
-<br>
-
-### Put differently, what proportion of political violent acts are committed by "crazy" people?
-
-(Assuming violent actors are "crazy" doesn't help us in any meaningful way.)
-
-- The only way to stop "crazy" is with more violence.
-
-We know that actors have preferences over outcomes.
-
-- In other words, people want things and act to try and get those things.
-
-To understand or reduce violence we need to learn about these actors, their preferences and the systems they inhabit.
+#### - Put differently, were some of these people actually irrational?
 
 
 
