@@ -55,20 +55,19 @@ Evaluate the reports from the US State Department and Amnesty International as s
 <br>
 
 Last week we worked to build conceptual definitions and measurements of political violence using news reports.
-
-I think that's a great way to begin as it helps us learn the process and build out our set of real-world examples.
-
-This week we shift to evaluating the sources used by many academics working in this field.
-
-The PTS and CI RIGHTS projects both use the yearly reports from the US State Department and Amnesty International.
-
-Today we'll focus on the sources and then we'll shift to the projects themselves on Wednesday and Friday.
+- I think that's a great way to begin as it helps us learn the process and build out our set of real-world examples.
 
 <br>
 
-With that in mind, please bring a laptop to class Wed and Fri so we can explore the data in class using Excel.
+This week we shift to evaluating the sources used by many academics working in this field.
+- The PTS and CI RIGHTS projects both use the yearly reports from the US State Department and Amnesty International.
 
-Let me know if you don't have a laptop you could bring to class.
+<br>
+
+Today we'll focus on the sources and then we'll shift to the projects themselves on Wednesday and Friday.
+
+With that in mind, please bring a laptop to class Wed and Fri so we can explore the data in class using Excel.
+- Let me know if you don't have a laptop you could bring to class.
 
 <br>
 
@@ -100,10 +99,10 @@ You will write a report that evaluates both the history and current experience o
 Assignment 1
 
 Don't lock in too hard on the specifics here yet.
-
 - More details to come next week.
+- We want to stay free to explore the material this week before we each zoom in on a single country.
 
-We want to stay free to explore the material this week before we each zoom in on a single country.
+<br>
 
 This week we'll explore and evaluate the sources of the data and the measures that exist.
 
@@ -112,10 +111,8 @@ Next week you'll have all three of our class meetings to work and get feedback o
 <br> 
 
 You'll sign up for countries at the end of the week.
-
 - No overlap, first-come first-served
-
-HOWEVER we won't claim countries until the end of this week!
+- HOWEVER we won't claim countries until the end of this week!
 
 I want us to see where the interesting variation is before you lock into the specifics of the assignment.
 
@@ -140,15 +137,43 @@ class: middle
 
 ???
 
-Today we review the source data with a focus on evaluating the sources themselves.
+### Everybody ready to go with these?
 
-Our aim isn't yet to focus in on the country experiences themselves.
+<br>
 
-Keep your focus on the sources and the pros and cons of using the State Department and Amnesty International reports as opposed to media reporting of current events.
+### In broad terms, what did you think of the form and format of the country reports?
 
-We'll then end by discussing the implications of the Nagel and Nordas piece in Foreign Policy.
+#### - Did you prefer reading the AI reports or the State Department reports? Why?
 
-### Everybody ready to go?
+#### - Which version was more informative? Why?
+
+<br>
+
+Talk to me about the countries you studied for a moment.
+
+### What is something you learned about your countries that surprised you?
+
+<br>
+
+### Examples of any countries committing really egregious acts of violence? Against who?
+
+
+
+
+---
+
+background-image: url('libs/Images/02_3-reliable_valid.png')
+background-size: 48%
+background-position: center
+class: middle, slideblue
+
+???
+
+Today our primary focus is on evaluating the sources and not the countries.
+- As I mentioned, these reports represent the source for many of the academic research projects we will examine.
+
+So, let's take this chance to evaluate the sources themselves.
+- How valid and reliable are they as representations of state practice in terms of violent acts committed?
 
 
 
@@ -161,30 +186,41 @@ class: middle
 
 .size60[**Reflections Warm-up**]
 
-.size40[
-1. How consistent are these two sources on each country?
+???
 
-2. Do the sources focus on the same things? How redundant are they?
+Before we analyze your findings I want each of you to take a moment to reflect on your work for today.
 
-3. How independent are the two sources?
-]
+--
+
+.size40[1) How consistent are these two sources on each country?]
 
 ???
 
-On your own, reflect on and summarize the findings of your three country review.
-
+## 1
 How consistent are these two sources on each country? 
-
 - e.g. Do they each paint the same picture?
 
-Do the two sources appear to emphasize different kinds of political violence? 
+--
 
+.size40[2) Do the sources focus on the same things? How redundant are they?]
+
+???
+
+## 2
+Do the two sources appear to emphasize different kinds of political violence? 
 - Are they focused on the same things? 
 - How redundant are they? 
 
-What sense do you have that these are two independent sources rather than endogenous ones?
+--
 
+.size40[3) How independent are the two sources?]
+
+???
+
+## 3
+What sense do you have that these are two independent sources rather than endogenous ones?
 - Do you get the feeling they read and are influenced by each others' reports?
+
 
 
 
@@ -205,15 +241,25 @@ What are the .textblue[**strengths**] and .textred[**weaknesses**] of relying on
 
 ???
 
-Form small groups of three.
+Form small groups (3).
 
-Share your analyses with each other and then make two lists we can put on the board in 10 minutes.
++ Share your answers to the three questions with each other, then 
+
++ prepare two lists we can put on the board in 10 minutes.
 
 <br>
 
-*ON BOARD*
+**Groups Report Back**, notes **ON BOARD** and **DISCUSS** each
 
 - ?
+
+<br>
+
+In past semesters I would typically spend the whole class on exploring the country case reports.
+
+However, the Trump administration really messed around with these things and we need to consider the implications of their actions.
+
+Let's now shift to the Nagel and Nordas article in Foreign Policy.
 
 
 
@@ -222,46 +268,37 @@ Share your analyses with each other and then make two lists we can put on the bo
 background-image: url('libs/Images/03_1-Nagel_Headline.png')
 background-size: 50%
 background-position: top left
+class: slideblue, bottom
 
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-```{r, echo = FALSE, fig.align = 'right', out.width = '75%'}
+```{r, echo = FALSE, fig.align = 'right', out.width = '85%'}
 knitr::include_graphics("libs/Images/03_1-Nagel_byline.png")
 ```
 
 ???
 
-### Ok, what's the central argument in this piece?
+### What is the central argument in this piece?
 
-*DISCUSS*
++ ("But under the Trump administration, the quality of these reports dropped. Not only did Trump shorten them and reduce their coverage, but when compared to reports produced by previous administrations, they also referred less to women, reproduction, racism, sexual violence and abuse, LGBTQ rights, and refugees.")
 
-("But under the Trump administration, the quality of these reports dropped. Not only did Trump shorten them and reduce their coverage, but when compared to reports produced by previous administrations, they also referred less to women, reproduction, racism, sexual violence and abuse, LGBTQ rights, and refugees.")
-
-("This reduction in quality has had a devastating impact on human rights protection worldwide.")
++ ("This reduction in quality has had a devastating impact on human rights protection worldwide.")
 
 <br>
 
-### How do the observations in this article impact our central job e.g. evaluating and tracking political violence around the world?
+### What are the key premises supporting this conclusion?
 
-*DISCUSS*
++ (?)
+
+<br>
+
+### Are you convinced by their argument? Why or why not?
+
++ (?)
+
+<br>
+
+### How does this argument impact our central job e.g. evaluating and tracking political violence around the world?
+
++ (?)
 
 
 
@@ -299,7 +336,10 @@ Bottom line q's
 
 ---
 
-class: middle, slideblue
+background-image: url('libs/Images/background-blue_triangles.jpg')
+background-size: 100%
+background-position: center
+class: middle
 
 .size60[.center[**For Wednesday**]]
 

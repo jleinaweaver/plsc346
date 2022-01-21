@@ -62,13 +62,16 @@ On Monday we evaluated reports by the US State Department and Amnesty Internatio
 
 <br>
 
-Today and Friday we evaluate two research projects that both use these 
+Today and Friday we evaluate two research projects that use these sources to create measures of political violence around the world and across time. 
 
 
 
 ---
 
-class: middle, slideblue
+background-image: url('libs/Images/background-green_blue_swirl_side.jpg')
+background-size: 100%
+background-position: center
+class: middle
 
 .size60[.center[**For Today**]]
 
@@ -107,7 +110,7 @@ Take a few minutes to make sure everyone in your group can:
 background-image: url('libs/Images/03-2-PTS_Logo.png')
 background-size: 70%
 background-position: top
-class: slidegreen, center, middle
+class: center, middle, slideblue
 
 <br>
 
@@ -127,7 +130,7 @@ Groups: Take a few minutes to do this together and then we'll report back.
 
 <br>
 
-### Ok, what so, how do these definitions compare?
+### Ok, so, how do these definitions compare?
 
 #### - What are the strengths and weaknesses of this definition?
 
@@ -138,7 +141,7 @@ Groups: Take a few minutes to do this together and then we'll report back.
 background-image: url('libs/Images/03-2-PTS_Logo.png')
 background-size: 70%
 background-position: top
-class: slidegreen, center, middle
+class: slideblue, center, middle
 
 <br>
 
@@ -232,7 +235,11 @@ d2019 |>
 
 ???
 
-*Questions after they work and report back*
+*Groups work on slide question, report back and then segue to questions below*
+
+*Some R Code in Rmd file!*
+
+<br>
 
 ### Do differences within a country-year tell us more about the use of violence in that state, bias in the sources of the data or problems with the pts measure they have designed?
 
@@ -240,9 +247,9 @@ d2019 |>
 
 ### Does this help us understand the value in including all three measures?
 
-- Do all three bring greater confidence to our understanding?
-- Capture different things? 
-- Add robustness?
+#### - Do all three bring greater confidence to our understanding?
+#### - Capture different things? 
+#### - Add robustness?
 
 
 
@@ -291,7 +298,11 @@ d2014 |>
 
 ???
 
-*Questions after they work and report back*
+*Groups work on slide question, report back and then segue to questions below*
+
+*Some R Code in Rmd file!*
+
+<br>
 
 ### Does this help us answer that question about where the error may lie / how useful it is to keep all three measures?
 
@@ -335,9 +346,12 @@ d2020 |>
 
 ???
 
-*Questions after they work and report back*
+*Groups work on slide question, report back and then segue to questions below*
+
+*Some R Code in Rmd file!*
 
 <br>
+
 
 ---
 
@@ -379,7 +393,11 @@ d |>
 
 ???
 
-*Questions after they work and report back*
+*Groups work on slide question, report back and then segue to questions below*
+
+*Some R Code in Rmd file!*
+
+<br>
 
 ### Report back and takeaways?
 
@@ -431,7 +449,7 @@ d2020 |>
 
 ???
 
-*Questions after they work and report back*
+*Groups work on slide question, report back and then segue to questions below*
 
 <br>
 
@@ -440,8 +458,10 @@ d2020 |>
 
 
 ---
-
-class: middle, slideblue, center
+background-image: url('libs/Images/background-green_blue_swirl_side.jpg')
+background-size: 100%
+background-position: center
+class: middle, center
 
 .size60[.center[**For Friday**]]
 

@@ -62,8 +62,10 @@ Today we wrap up our week exploring the current projects that seek to measure po
 
 
 ---
-
-class: middle, slideblue, center
+background-image: url('libs/Images/background-green_blue_swirl_side.jpg')
+background-size: 100%
+background-position: center
+class: middle, center
 
 .size60[.center[**For Today**]]
 
@@ -81,9 +83,9 @@ Make sure you understand the observations and variables enough to play with them
 
 <br>
 
-Organize yourselves into NEW groups of 3-4, circle your chairs
+Organize yourselves into **NEW** groups of 3-4, circle your chairs
 
-Take a few minutes to make sure everyone in your group is clear on the observations and variables in the data project (use the codebook as needed)
++ Take a few minutes to make sure everyone in your group is clear on the observations and variables in the data project (use the codebook as needed)
 
 
 
@@ -92,7 +94,7 @@ Take a few minutes to make sure everyone in your group is clear on the observati
 background-image: url('libs/Images/03_3-CIRIGHTS_Title.png')
 background-size: 50%
 background-position: top
-class: slidegreen, middle
+class: slidegreen, middle, center
 
 <br>
 
@@ -155,7 +157,34 @@ Groups: Take a few minutes to do this together and then we'll report back.
 ### Ok, report back.
 #### - What are the strengths and weaknesses?
 
+
+
+---
+
+background-image: url('libs/Images/03_3-CIRIGHTS_Title.png')
+background-size: 50%
+background-position: top
+class: slidegreen, middle
+
 <br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+.size45[
+Audit time! 
+
++ Examine the scores for the three countries you analyzed on Monday
+
++ Would you have coded these the same way? Why or why not?
+]
+
+???
 
 Audit Time!
 
@@ -202,7 +231,13 @@ d1981 <- d |>
 
 ???
 
-*Questions after they work and report back*
+Groups, take a few minutes to work on this question and report back.
+
+*While they work, you do the same!*
+
+<br>
+
+### Ok, what did you find?
 
 
 ---
@@ -232,8 +267,13 @@ d2017 <- d |>
 
 ???
 
-*Questions after they work and report back*
+Groups, take a few minutes to work on this question and report back.
 
+*While they work, you do the same!*
+
+<br>
+
+### Ok, what did you find?
 
 
 ---
@@ -255,8 +295,40 @@ Compare and contrast the 2017 CIRIGHTS codings with the 2017 PTS_S scores from t
 
 ???
 
-*Questions after they work and report back*
+Groups, take a few minutes to work on this question and report back.
+
+*While they work, you do the same!*
 
 <br>
 
-### Bottom line, how useful is the cirights for helping us test theories of political violence? Strengths and weaknesses?
+### Ok, what did you find?
+
+
+
+---
+
+background-image: url('libs/Images/background-green_blue_swirl_side.jpg')
+background-size: 100%
+background-position: center
+class: middle
+
+.center[.size55[**Measuring Political Violence by Countries**]]
+
+.size40[
+Sources: 
+- Amnesty International and the US State Department
+
+Measures:
+- The Political Terror Scale (PTS)
+- The CIRIGHTS Data project
+]
+
+
+???
+
+### Bottom line, how reliable and valid are the measures of state political violence represented by the research projects we've explored this week?
+
+#### - Strengths of existing sources and measures?
+
+#### - Weaknesses of existing sources and measures?
+
