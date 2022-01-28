@@ -89,8 +89,14 @@ On Monday we gathered a number of political violence case studies.
 <br>
 
 Today we take the next step in this case study analysis.
-
 - We need a definition!
+
+<br>
+
+#### Split class into groups of three
+- Work with people you haven't worked with in the past
+
+Go sit with your group
 
 
 
@@ -110,7 +116,7 @@ class: middle
 
 ???
 
-Working in groups of three you have 5 mins to make a list of the characteristics common to all of the cases presented on Monday.
+Groups, first job, you have 5 mins to make a list of the characteristics common to all of the cases presented on Monday.
 
 + Be careful, not about your interpretations yet. Just clear characteristics.
 
@@ -131,6 +137,18 @@ ON BOARD (column 1 of 3): "Common Characteristics"
 #### - Agree with inclusion on this list? Why or why not.
 
 <br>
+
+#### Notes from Spring 2022
+- Had goals / aims
+- Aimed to change or maintain SQ
+- Overt acts
+- Ideological contentious
+- Done by groups / individuals
+- Meant to draw attention
+- Aggressive acts
+- Targeted "the system"
+- Disruptive
+- Cause physical / emotional pain
 
 #### Notes from Fall 2019
 - Victim: Person or object
@@ -189,6 +207,20 @@ ON BOARD (column 2 of 3): "Types"
 
 <br>
 
+#### Notes from Spring 2022
+- Direct actions vs support
+- Coups vs not
+- National vs International
+- State sponsored vs not
+- Individual vs Group
+- Politics attempted prior to attack or not
+- Religious motive?
+- Religious target?
+- Territory/Resources
+- Physical vs emotional pressure
+- action vs potentiality
+- Support / Oppose SQ
+
 #### Notes from Fall 2019
 - Revolution vs "other"
 - Physical vs non-physical
@@ -237,15 +269,26 @@ Ok, now let's work as a class.
 
 ### How do we translate these groupings into key questions?
 
-#### Think of these as a set of questions that you will use to decide if something is "political violence" or not.
-
-#### - e.g. leaders vs opposition --> Who has to act?
+#### Think of these as a set of questions that you will use to decide BOTH if something is "political violence" and how much "political violence" it represents.
 
 <br>
 
 ON BOARD (column 3 of 3): "Key Questions"
 
 <br>
+
+#### Notes from Spring 2022
+- Does it impact the SQ?
+- Who did it?
+- What was the goal?
+- What was the motivation?
+- Did it succeed?
+- Was harm intended?
+- How was it justified?
+- Who were the victims?
+- How much damage?
+- Does it connect to prior actions? (Tilly's episodic nature)
+- What was the action?
 
 #### Fall 2019
 - What damage was done?
@@ -295,10 +338,13 @@ I wanted to expose you to some academic writing on violence and this seemed the 
 
 ### How does our work this week compare to Tilly's definition of "collective violence"?
 
++ (Tilly's definition of politics is SUPER NARROW, e.g. involving government)
+
 <br>
 
 ### What are the key characteristics of Tilly's definition of "collective violence"?
 
++ (Collective violence as contentious politics)
 + (Episodic)
 + (Social interaction e.g. at least two people)
 + (Immediate physical damage to persons and/or objects)

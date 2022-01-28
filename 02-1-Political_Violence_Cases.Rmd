@@ -69,7 +69,9 @@ background-position: center
 
 Our job this semester is to develop our scientific knowledge and understanding of political violence.
 
-### What does it mean to say we will use "science" to develop this knowledge?
+### How do we study the social world in a scientific manner?
+
+#### - What do we have to do?
 
 
 ---
@@ -83,20 +85,22 @@ class: center, middle
 
 <br>
 
+.size70[.content-box-red[**2. Empirical Data**]]
+
 <br>
 
-.size70[.content-box-red[**2. Empirical Data**]]
+.size70[.content-box-red[**3. Uncertainty**]]
 
 ???
 
-In short, the "scientific" path to knowledge involves developing and testing models using empirical data.
+In short, I am arguing that a "scientific" path to knowledge in the social sciences MUST INCLUDE three elements.
 
 <br>
 
 ### What are models?
-(Models are simplifications of reality designed to allow us to better understand the key mechanisms around us.)
++ (Models are simplifications of reality designed to allow us to better understand the key mechanisms around us.)
 
-### Give me an example of a model.
+#### - Give me an example of a model.
 + (Neorealism: States are first and foremost motivated by a desire to survive.)
 + (Different types of learner: Visual, oral, etc)
 + (Median voter theorem: Politicians who seek election in majority rule systems should moderate their policy platforms, promise policies desired by the median voter.)
@@ -105,7 +109,15 @@ In short, the "scientific" path to knowledge involves developing and testing mod
 <br>
 
 ### What is empirical data?
-(Empirical data is information acquired through observation.)
++ (Empirical data is information acquired through observation.)
+
+<br>
+
+### What role does uncertainty play in the scientific process?
++ (It's the whole ballgame!)
++ The key to this whole process is to be transparent in all our choices so that our findings can be replicated and we can offer useful descriptions of our uncertainty.
+
+<br>
 
 ### Out of curiosity, are you personally scientific in your day-to-day life?
 
@@ -123,16 +135,15 @@ background-position: center
 
 Last week we worked to develop two working definitions: one for politics and one for strategy.
 
-### Why is it important we start by defining our terms?
+If our aim in this class is to explain political violence, then these two  definitions are the fundamental building blocks of our models.
 
-(The definitions are the fundamental building blocks of our models.)
-- Can't test models if we don't agree on their parts.
+<br>
 
-To define our terms we used in class simulations.
+To define our terms we used in-class simulations.
 
-Technically, each simulation was a formal model of politics.
++ Technically, each simulation was a formal model of politics.
 
-- Each identified a set of players,  a set of rules and assumed diverse preferences.
++ Each identified a set of players,  a set of rules and assumed diverse preferences.
 
 
 ---
@@ -143,22 +154,14 @@ background-position: center
 
 ???
 
-On Wednesday I gave you index cards.
+Let's start by talking about the "politics" concept.
 
-### Tell me about our simulation of "politics."
-
-#### - Was it a good one? Why or why not?
-
-<br>
-
-### Was the simulation internally valid?
-
-#### - Anything key aspects related to making these decisions missing?
+### Was our simulation internally valid? 
+#### - e.g. Did it include all of the important elements that play a role in societal decision-making?
 
 <br>
 
-### Was the simulation externally valid?
-
+### Was our simulation externally valid? 
 #### - Did the simulation look like societal decision-making in the real world?
 #### - Did it lead you to behave how you would have outside the classroom?
 
@@ -168,13 +171,11 @@ I gave you a set of rules, assumed diverse and conflicting preferences, provided
 
 ### What did that model tell us about politics?
 
-#### - What dynamics did we observe?
-
-(- Actors have different preferences)
-(- Enforcement is a problem)
-(- Uncertainty everywhere)
-(- Social pressures matter)
-(- ...)
++ (- Actors have different preferences)
++ (- Enforcement is a problem)
++ (- Uncertainty everywhere)
++ (- Social pressures matter)
++ (- ...)
 
 <br>
 
