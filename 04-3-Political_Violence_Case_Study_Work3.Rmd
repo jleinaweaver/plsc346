@@ -60,10 +60,10 @@ The Political Violence Case Study
 
 ---
 
-background-image: url('libs/Images/background-light_grey.jpg')
+background-image: url('libs/Images/background-blue_cubes_v2.png')
 background-size: 100%
 background-position: center
-class: middle
+class: middle, inverse
 
 .size50[**Political Violence Case Study**]
 
@@ -83,20 +83,18 @@ Use all of the data sources from last week to write a report on **one country** 
 
 ---
 
-background-image: url('libs/Images/background-swirls.jpg')
+background-image: url('libs/Images/background-blue_cubes_v2.png')
 background-size: 100%
 background-position: center
-class: middle, center
+class: middle, inverse
 
-.size70[**For Friday**]
+.size70[**For Today**]
 
-.size40[
+.size45[
 
-For each of the conclusions you have identified, find a news story you can use to illustrate it.
+For each of the conclusions you have identified in the data, find a news story you can use to illustrate it
 
-This should supplement your evidence from our sources last week.
-
-Be ready to present each conclusion and its current events evidence.
+Be ready to present each conclusion and the current events evidence you found
 
 ]
 
@@ -106,11 +104,13 @@ Be ready to present each conclusion and its current events evidence.
 
 <br>
 
-Ok, let's go around the room and hear your conclusions and evidence.
+Ok, back into groups of three! 
 
-Who wants to share what they've got?
+Share what you brought and get feedback so you can start writing!
 
-Get some feedback?
+
+
+
 
 
 
