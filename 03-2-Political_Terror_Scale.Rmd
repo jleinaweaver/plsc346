@@ -19,8 +19,9 @@ output:
 library(tidyverse)
 library(readxl)
 library(stargazer)
-##library(kableExtra)
-##library(modelr)
+library(sf)
+library(rnaturalearth)
+library(rnaturalearthdata)
 
 knitr::opts_chunk$set(echo = FALSE,
                       eval = TRUE,
@@ -58,7 +59,7 @@ On Monday we evaluated reports by the US State Department and Amnesty Internatio
 
 ### What were our key takeaways on Monday?
 
-#### - Are these sources "better" than using media reporting? Why or why not?
+#### - What should we keep in mind when using these as our source docs for tracking political violence?
 
 <br>
 
@@ -68,10 +69,7 @@ Today and Friday we evaluate two research projects that use these sources to cre
 
 ---
 
-background-image: url('libs/Images/background-green_blue_swirl_side.jpg')
-background-size: 100%
-background-position: center
-class: middle
+class: middle, slideblue
 
 .size60[.center[**For Today**]]
 
@@ -93,7 +91,7 @@ class: middle
 
 <br>
 
-Everybody organize yourselves into groups of 3-4, circle the chairs
+Everybody organize yourselves into groups of 3 (*new people*), circle the chairs
 
 Take a few minutes to make sure everyone in your group can:
 
@@ -107,53 +105,54 @@ Take a few minutes to make sure everyone in your group can:
 
 ---
 
-background-image: url('libs/Images/03-2-PTS_Logo.png')
-background-size: 70%
-background-position: top
-class: center, middle, slideblue
+background-image: url('libs/Images/background-slate.jpg')
+background-size: 100%
+background-position: center
+class: middle, inverse
+
+```{r, fig.align='center', out.width='85%'}
+knitr::include_graphics('libs/Images/03-2-PTS_Logo.png')
+```
 
 <br>
 
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-.size60[Compare and contrast the definition of "political terror" to our definition from last week]
+.center[.size55[Compare and contrast the definition of "political terror" to our definitions of "political violence" from last week]]
 
 ???
 
 Groups: Take a few minutes to do this together and then we'll report back.
 
+Share the definitions you made in your other groups
+- Feel free to check our shared coding document if you forgot.
+
 <br>
 
-### Ok, so, how do these definitions compare?
+### Ok, so, how do our definitions compare?
 
 #### - What are the strengths and weaknesses of this definition?
 
 
 
+
 ---
 
-background-image: url('libs/Images/03-2-PTS_Logo.png')
-background-size: 70%
-background-position: top
-class: slideblue, center, middle
+background-image: url('libs/Images/background-slate.jpg')
+background-size: 100%
+background-position: center
+class: middle, inverse
+
+```{r, fig.align='center', out.width='85%'}
+knitr::include_graphics('libs/Images/03-2-PTS_Logo.png')
+```
 
 <br>
 
-<br>
+.center[.size55[Discuss the strengths and weaknesses of the data collection methodology (e.g. Sources, Units)]]
 
-<br>
+???
 
-<br>
 
-<br>
-
-.size60[Discuss the strengths and weaknesses of the data collection methodology (e.g. Sources, Units)]
+.size60[]
 
 ???
 
@@ -175,7 +174,7 @@ background-position: center
 
 ???
 
-### GROUPS: Discuss the strengths and weaknesses of the coding scheme for the pts variable
+### GROUPS: Is this a valid and reliable measure of "political violence" or "terror"? Why or why not?
 
 <br>
 
@@ -205,7 +204,7 @@ class: middle
 
 <br>
 
-.size40[
+.size50[
 Focus on PTS_A, PTS_H and PTS_S for 2020 (most recent year coded):
 - How much missing data?
 
@@ -214,7 +213,7 @@ Focus on PTS_A, PTS_H and PTS_S for 2020 (most recent year coded):
 
 ???
 
-*Groups work on slide question, report back and then segue to questions below*
+*Groups work on slide question, you have a few results slides after this*
 
 
 
@@ -249,7 +248,7 @@ x1 <- d2020 |>
     N = n(),
     NAs = sum(is.na(Value)),
     Prop = str_c(round(NAs/N, 2)*100, '%'),
-    Mean = round(mean(Value, na.rm = TRUE), 0),
+    Mean = round(mean(Value, na.rm = TRUE), 1),
     StdDev = round(sd(Value, na.rm = TRUE), 1),
     Min = round(min(Value, na.rm = TRUE), 0),
     Max = round(max(Value, na.rm = TRUE), 0)
@@ -265,18 +264,72 @@ x1 |>
 
 ### What can we learn from the basic descriptive statistics for 2020?
 
+<br>
+
+### To what extent are we limited in comparing across the three measures?
++ So many missing cases, but are they missing different states?
+
+<br>
+
+SLIDE: Focus on shared cases only
+
 
 
 ---
 
-class: middle, slideblue
+class: middle, center
+
+.size65[**Descriptive Statistics (2020)**]
+
+<br>
+
+```{r, eval=TRUE}
+# Descriptive Stats Table (shared cases only)
+x1a <- d2020 |> 
+  select(Country, PTS_A:PTS_S) |>
+  drop_na() |>
+  pivot_longer(cols = PTS_A:PTS_S, names_to = "Source", values_to = "Value") |>
+  group_by(Source) |>
+  summarize(
+    N = n(),
+    NAs = sum(is.na(Value)),
+    Prop = str_c(round(NAs/N, 2)*100, '%'),
+    Mean = round(mean(Value, na.rm = TRUE), 1),
+    StdDev = round(sd(Value, na.rm = TRUE), 1),
+    Min = round(min(Value, na.rm = TRUE), 0),
+    Max = round(max(Value, na.rm = TRUE), 0)
+  ) 
+
+x1a |>
+  kableExtra::kbl(align = c('l', rep('c', 7))) |>
+  kableExtra::kable_styling(bootstrap_options = c("striped", "hover"), font_size = 35) |>
+  column_spec(column = 1:8, width = "15em")
+```
+
+???
+
+### What happens when we focus just on the countries they all covered?
+
+<br>
+
+### Takeaways from this?
+
+
+
+
+---
+
+background-image: url('libs/Images/background-green_blue_swirl_side.jpg')
+background-size: 100%
+background-position: center
+class: middle
 
 ```{r, eval=TRUE}
 ## Focus only on cases with data across all three measures
 ## Matching on 42%
 x2 <- d2020 |> 
   count(PTS_A, PTS_H, PTS_S) |>
-  na.omit() |> 
+  na.omit() |> #summarize(sum(n))
   mutate(
     matching = if_else(PTS_A == PTS_H & PTS_A == PTS_S, 1*n, 0)
   ) |>
@@ -287,7 +340,7 @@ x2 <- d2020 |>
 ## Matching on 42%
 x3 <- d2020 |> 
   count(PTS_A, PTS_S) |>
-  na.omit() |> 
+  na.omit() |> #summarize(sum(n))
   mutate(
     matching = if_else(PTS_A == PTS_S, 1*n, 0)
   ) |>
@@ -298,7 +351,7 @@ x3 <- d2020 |>
 ## How often matching +-1 across the two main measures only?
 x4 <- d2020 |> 
   count(PTS_A, PTS_S) |>
-  na.omit() |> 
+  na.omit() |> #summarize(sum(n))
   mutate(
     Absolute_diff = abs(PTS_A - PTS_S),
     close = if_else(Absolute_diff <= 1, 1*n, 0)
@@ -327,22 +380,34 @@ x4 <- d2020 |>
 
 ]
 
-???
-
-### Do differences within a country-year tell us more about the use of violence in that state, bias in the sources of the data or problems with the PTS measure they have designed?
-
 <br>
 
-### Does this help us understand the value in including all three measures?
+.size25[*Note: Matching is done only on cases without missing data. All three measures have data on 97/212 countries. Excluding HRW bumps the coverage to 147/212.*]
 
-#### - Do all three bring greater confidence to our understanding?
-#### - Capture different things? 
-#### - Add robustness?
+???
+
+### Are these good or bad results in terms of matching percentages? Why?
 
 <br>
 
 ### Is the +/-1 as a percentage a meaningful piece of analysis? 
 #### - Given what the stages represent are we comfortable saying a difference of one on the scale isn't substantial?
+
+<br>
+
+### What are the different reasons a country might have different scores across the measures?
+
++ Different operationalizations of political violence by the three sources
++ Different validity and reliability of the sources
++ Problems with how the PTS team codes these variables (reliability)
++ ?
+
+<br>
+
+#### Does everybody understand how some of those differences are good and some are bad? Which are which?
+
+SLIDE: Map
+
 
 
 
@@ -350,12 +415,9 @@ x4 <- d2020 |>
 
 class: slideblue
 
-```{r, fig.retina=3, fig.align='center', out.width='100%', fig.height=5, fig.width=8}
+```{r, fig.retina=3, fig.align='center', out.width='100%', fig.height=5, fig.width=8, cache=TRUE}
 ## Make a map
 ## Three colors: missing, match, no match
-library(sf)
-library(rnaturalearth)
-library(rnaturalearthdata)
 
 ## Add genc3n to PTS data
 d2020_1 <- d2020 |>
@@ -363,26 +425,36 @@ d2020_1 <- d2020 |>
     Matching = if_else(PTS_A == PTS_S, 1, 0)
   )
 
-d2020_1$newcode2 <- countrycode::countrycode(d2020_1$COW_Code_A, origin = "cowc", destination = "genc3n")
+# ## Identify country identifiers
+## Problem because most of the numeric codes are omitting FRA, UK and Portugal
+## d2020_1$WordBank_Code_A has "FRA"
+# countrycode::guess_field(d2020_1$COW_Code_A)
+# countrycode::guess_field(d2020_1$COW_Code_N)
+# countrycode::guess_field(d2020_1$UN_Code_N)
+# countrycode::guess_field(d2020_1$WordBank_Code_A) # genc3c and iso3c 96.5%
+
+#d2020_1$newcode2 <- countrycode::countrycode(d2020_1$COW_Code_A, origin = "cowc", destination = "genc3n")
+#d2020_1$newcode2 <- countrycode::countrycode(d2020_1$UN_Code_N, origin = "iso3n", destination = "genc3n")
 
 ## Use rnaturalearth to define world map data
 worldmap <- ne_countries(scale = 'medium', type = 'map_units',
                          returnclass = 'sf')
 
-# ## Identify country identifiers
-# countrycode::guess_field(d2020_1$COW_Code_A)
-# countrycode::guess_field(d2020_1$COW_Code_N)
 # countrycode::guess_field(worldmap$un_a3) #98.7% genc3n
+# countrycode::guess_field(worldmap$adm0_a3) #98.7% iso3c
+# countrycode::guess_field(worldmap$iso_n3) #98.3% genc3n
 
 ## Merge data onto worldmap
-d10 <- left_join(worldmap, d2020_1, by = c("un_a3" = "newcode2"))
+d10 <- left_join(worldmap, d2020_1, by = c("adm0_a3" = "WordBank_Code_A"))
+
+#d10 |> as_tibble() |> select(Country, PTS_S)
 
 d10 |>
   mutate(
-    Matching_cat = if_else(Matching == 1, "Matching", "Not Matching", missing = "No Data"),
-    Matching_cat = factor(Matching_cat, levels = c("Matching", "Not Matching", "No Data"))
+    Matching_cat = if_else(Matching == 1, "Matching", "Not Matching", missing = "Insufficient Data"),
+    Matching_cat = factor(Matching_cat, levels = c("Matching", "Not Matching", "Insufficient Data"))
   ) |>
-  filter(!is.na(Matching_cat)) |>
+  #filter(!is.na(Matching_cat)) |>
   ggplot() +
   geom_sf(aes(fill = Matching_cat)) +
   labs(fill = "", title = "PTS_A vs PTS_S (2020)") +
@@ -392,8 +464,12 @@ d10 |>
 
 ???
 
-### Evidence of a selection effect in the states that match vs those that don't?
+### First, would you audit this map for me? Any colors look wrongly placed?
 
+<br>
+
+### Second, do we see any evidence here of a problematic selection effect?
+#### - Certain types of state more or less likely to be included?
 
 
 
@@ -408,7 +484,7 @@ class: middle
 
 <br>
 
-.size40[
+.size50[
 Focus on PTS_A, PTS_H and PTS_S for 2014 (oldest year with data in all three):
 - How much missing data?
 
@@ -418,6 +494,12 @@ Focus on PTS_A, PTS_H and PTS_S for 2014 (oldest year with data in all three):
 ???
 
 *Groups work on slide question, report back and then segue to questions below*
+
+Let's repeat that work for 2014.
+
+I'd like to see if the variation in values and coverage looks the same at that early point in the data.
+
+Has the project been consistent across time?
 
 
 
@@ -462,15 +544,21 @@ d2014 |>
   kableExtra::kbl(align = c('l', rep('c', 7))) |>
   kableExtra::kable_styling(bootstrap_options = c("striped", "hover"), font_size = 30) |>
   column_spec(column = 1:8, width = "15em")
-  
-
 ```
+
+???
+
+Pretty darn consistent.
+
 
 
 
 ---
 
-class: middle, slideblue
+background-image: url('libs/Images/background-green_blue_swirl_side.jpg')
+background-size: 100%
+background-position: center
+class: middle
 
 ```{r, eval=TRUE}
 ## Focus only on cases with data across all three measures
@@ -528,56 +616,11 @@ x4a <- d2014 |>
 
 ???
 
-### Does this help us answer that question about where the error may lie / how useful it is to keep all three measures?
+### Any evidence of inconsistency in project coding across time?
 
-#### - More disagreement in the past?
+<br>
 
-
-
-
----
-
-class: slideblue
-
-```{r, fig.retina=3, fig.align='center', out.width='100%', fig.height=5, fig.width=8}
-## Make a map
-## Three colors: missing, match, no match
-## Add genc3n to PTS data
-d2014_1 <- d2014 |>
-  mutate(
-    Matching = if_else(PTS_A == PTS_S, 1, 0)
-  )
-
-d2014_1$newcode2 <- countrycode::countrycode(d2014_1$COW_Code_A, origin = "cowc", destination = "genc3n")
-
-## Use rnaturalearth to define world map data
-worldmap <- ne_countries(scale = 'medium', type = 'map_units',
-                         returnclass = 'sf')
-
-# ## Identify country identifiers
-# countrycode::guess_field(d2020_1$COW_Code_A)
-# countrycode::guess_field(d2020_1$COW_Code_N)
-# countrycode::guess_field(worldmap$un_a3) #98.7% genc3n
-
-## Merge data onto worldmap
-d10 <- left_join(worldmap, d2014_1, by = c("un_a3" = "newcode2"))
-
-d10 |>
-  mutate(
-    Matching_cat = if_else(Matching == 1, "Matching", "Not Matching", missing = "No Data"),
-    Matching_cat = factor(Matching_cat, levels = c("Matching", "Not Matching", "No Data"))
-  ) |>
-  filter(!is.na(Matching_cat)) |>
-  ggplot() +
-  geom_sf(aes(fill = Matching_cat)) +
-  labs(fill = "", title = "PTS_A vs PTS_S (2014)") +
-  theme(legend.position = "bottom") +
-  scale_fill_manual(values = c("gold1", "green4", "white"))
-```
-
-???
-
-### Evidence of a selection effect in the states that match vs those that don't?
+Nah, so we'll skip the second map.
 
 
 
@@ -592,7 +635,7 @@ class: middle
 
 <br>
 
-.size40[
+.size50[
 3) Focus on 2020 and sort all countries by PTS_S.
 
   + Any surprises? 
@@ -602,8 +645,9 @@ class: middle
 
 ???
 
-*Groups work on slide question, report back and then segue to questions below*
+*Groups work on slide question, then report back*
 
+### Findings?
 
 
 
@@ -611,34 +655,39 @@ class: middle
 
 class: slideblue
 
-```{r, fig.retina=3, fig.align='center', out.width='100%', fig.height=5, fig.width=8}
+```{r, fig.retina=3, fig.align='center', out.width='100%', fig.height=5, fig.width=8, cache=TRUE}
 ## Make a map
-d2020$newcode2 <- countrycode::countrycode(d2014_1$COW_Code_A, origin = "cowc", destination = "genc3n")
+#d2020$newcode2 <- countrycode::countrycode(d2020$COW_Code_A, origin = "cowc", destination = "genc3n")
 
 ## Use rnaturalearth to define world map data
-worldmap <- ne_countries(scale = 'medium', type = 'map_units',
-                         returnclass = 'sf')
+#worldmap <- ne_countries(scale = 'medium', type = 'map_units', returnclass = 'sf')
 
 ## Merge data onto worldmap
-d10 <- left_join(worldmap, d2020, by = c("un_a3" = "newcode2"))
+d10 <- left_join(worldmap, d2020, by = c("adm0_a3" = "WordBank_Code_A"))
 
 d10 |>
   mutate(
     pts_s_cat = factor(PTS_S, levels = c("1", "2", "3", "4", "5"))
   ) |>
-  filter(!is.na(pts_s_cat)) |>
+  #filter(!is.na(pts_s_cat)) |>
   ggplot() +
   geom_sf(aes(fill = pts_s_cat)) +
   labs(fill = "", title = "PTS_S (2020)") +
-  theme(legend.position = "bottom") +
-  scale_fill_brewer(type = "seq", palette = "YlOrRd")
-
-  # scale_fill_manual(values = c("gold1", "green4", "white"))
+  #theme(legend.position = "right") +
+  scale_fill_manual(values = c("forestgreen", "darkolivegreen2", "lemonchiffon1", "sandybrown", "red3"))
 ```
 
 ???
 
+I've tried to match the colors on their levels of PTS figure.
 
+### Please audit the map for me again.
+
+<br>
+
+### So, talk to me about the state of political violence in the world according to PTS.
+
+#### - Given your work with the source docs on Monday are you more or less confident in this figure?
 
 
 ---
@@ -652,96 +701,63 @@ class: middle
 
 <br>
 
-.size40[
-4) Focus on the years since 2001 and find us examples of countries that have:
+.size45[
+4) Focus on PTS_S in the years since 2001 and find us examples of countries that have:
 
   + Improved the most across the years in the sample, and
   
   + Regressed the most across the years in the sample
 ]
 
-```{r, eval=FALSE}
-library(tidyverse)
-library(readxl)
-d <- read_excel("../../Data/PTS/PTS-2021.xlsx", na = "NA")
-
-d |> count(Year, PTS_H) |> print(n=100)
-d |> count(Year, PTS_A) |> print(n=300)
-d |> count(Year, PTS_S) |> print(n=300)
-
-d |>
-  select(Country, Year, PTS_S) |>
-  filter(Year %in% c(2001, 2020)) |>
-  pivot_wider(names_from = Year, values_from = PTS_S) |>
-  mutate(
-    Change = `2020` - `2001`
-  ) |> View()
-
-```
-
 ???
 
-*Groups work on slide question, report back and then segue to questions below*
+*Groups work on slide question then report back*
 
-*Some R Code in Rmd file!*
+- Sort by both country and year then scroll looking for big changes by country!
 
 <br>
 
-### Report back and takeaways?
+### Findings?
 
 
 
 ---
 
-background-image: url('libs/Images/background-green_blue_swirl_side.jpg')
-background-size: 100%
-background-position: center
-class: middle
+class: middle, slideblue
 
-.size70[.center[**Analysis Time!**]]
-
-<br>
-
-.size40[
-5) Go back to 2020 and focus on the OECD region identifier (not individual countries).
-
-Which regions are the most and least problematic? 
-
-Any Surprises?
-]
-
-```{r, eval=FALSE}
-library(tidyverse)
-library(readxl)
-d <- read_excel("../../Data/PTS/PTS-2021.xlsx", na = "NA")
-
-d2020 <- d |>
-  filter(Year == 2020)
-
-d2020 |>
-  group_by(Region) |>
-  summarize(
-    Mean_A = mean(PTS_A, na.rm=TRUE),
-    Mean_H = mean(PTS_H, na.rm=TRUE),
-    Mean_S = mean(PTS_S, na.rm=TRUE)
+```{r, fig.retina=3, fig.align='center', out.width='100%', fig.height=5, fig.width=8, cache=TRUE}
+# Quick stab focused just on changes between the min and max years in the question
+# Map of the changes across the period
+d11 <- d |>
+  select(Country, WordBank_Code_A, Year, PTS_S) |>
+  filter(Year %in% c(2001, 2020)) |>
+  pivot_wider(names_from = Year, values_from = PTS_S) |>
+  mutate(
+    Change = `2020` - `2001`
   )
 
-d2020 |>
-  group_by(Region) |>
-  summarize(
-    Median_A = median(PTS_A, na.rm=TRUE),
-    Median_H = median(PTS_H, na.rm=TRUE),
-    Median_S = median(PTS_S, na.rm=TRUE)
-  )
+## Merge data onto worldmap
+d10 <- left_join(worldmap, d11, by = c("adm0_a3" = "WordBank_Code_A"))
+
+d10 |>
+  mutate(
+    Changes_cat = factor(Change, levels = c("-2", "-1", "0", "1", "2"))
+  ) |>
+  #filter(!is.na(pts_s_cat)) |>
+  ggplot() +
+  geom_sf(aes(fill = Changes_cat)) +
+  labs(fill = "", title = "Changes in PTS_S (2001 to 2020)") +
+  #theme(legend.position = "bottom") +
+  scale_fill_manual(values = c("forestgreen", "darkolivegreen2", "lemonchiffon1", "sandybrown", "red3"))
 ```
 
 ???
 
-*Groups work on slide question, report back and then segue to questions below*
+### Bottom line, how useful is the PTS for helping us test theories of political violence? 
 
-<br>
+#### - What are its strengths and weaknesses?
 
-### Bottom line, how useful is the pts for helping us test theories of political violence? Strengths and weaknesses?
+#### - How do we best use it to analyze changes in the world?
 
 
 
