@@ -5,6 +5,8 @@
     <meta charset="utf-8" />
     <script src="libs/header-attrs-2.11/header-attrs.js"></script>
     <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <script src="libs/kePrint-0.0.1/kePrint.js"></script>
+    <link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
     <link rel="stylesheet" href="extra.css" type="text/css" />
   </head>
   <body>
@@ -189,22 +191,99 @@ class: middle
 &lt;br&gt;
 
 .size40[
-1) Focus on 2020 (most recent year coded), how much conflict across: PTS_A, PTS_H and PTS_S? 
-   + Specific examples?
+Focus on PTS_A, PTS_H and PTS_S for 2020 (most recent year coded):
+- How much missing data?
+
+- How often do they conflict? Examples?
 ]
-
-
-
 
 ???
 
 *Groups work on slide question, report back and then segue to questions below*
 
-*Some R Code in Rmd file!*
+
+
+---
+
+class: middle, center
+
+.size65[**Descriptive Statistics (2020)**]
 
 &lt;br&gt;
 
-### Do differences within a country-year tell us more about the use of violence in that state, bias in the sources of the data or problems with the pts measure they have designed?
+&lt;table class="table table-striped table-hover" style="font-size: 35px; margin-left: auto; margin-right: auto;"&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:left;"&gt; Source &lt;/th&gt;
+   &lt;th style="text-align:center;"&gt; N &lt;/th&gt;
+   &lt;th style="text-align:center;"&gt; NAs &lt;/th&gt;
+   &lt;th style="text-align:center;"&gt; Prop &lt;/th&gt;
+   &lt;th style="text-align:center;"&gt; Mean &lt;/th&gt;
+   &lt;th style="text-align:center;"&gt; StdDev &lt;/th&gt;
+   &lt;th style="text-align:center;"&gt; Min &lt;/th&gt;
+   &lt;th style="text-align:center;"&gt; Max &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;width: 15em; "&gt; PTS_A &lt;/td&gt;
+   &lt;td style="text-align:center;width: 15em; "&gt; 212 &lt;/td&gt;
+   &lt;td style="text-align:center;width: 15em; "&gt; 63 &lt;/td&gt;
+   &lt;td style="text-align:center;width: 15em; "&gt; 30% &lt;/td&gt;
+   &lt;td style="text-align:center;width: 15em; "&gt; 3 &lt;/td&gt;
+   &lt;td style="text-align:center;width: 15em; "&gt; 1.2 &lt;/td&gt;
+   &lt;td style="text-align:center;width: 15em; "&gt; 1 &lt;/td&gt;
+   &lt;td style="text-align:center;width: 15em; "&gt; 5 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;width: 15em; "&gt; PTS_H &lt;/td&gt;
+   &lt;td style="text-align:center;width: 15em; "&gt; 212 &lt;/td&gt;
+   &lt;td style="text-align:center;width: 15em; "&gt; 110 &lt;/td&gt;
+   &lt;td style="text-align:center;width: 15em; "&gt; 52% &lt;/td&gt;
+   &lt;td style="text-align:center;width: 15em; "&gt; 3 &lt;/td&gt;
+   &lt;td style="text-align:center;width: 15em; "&gt; 1.2 &lt;/td&gt;
+   &lt;td style="text-align:center;width: 15em; "&gt; 1 &lt;/td&gt;
+   &lt;td style="text-align:center;width: 15em; "&gt; 5 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;width: 15em; "&gt; PTS_S &lt;/td&gt;
+   &lt;td style="text-align:center;width: 15em; "&gt; 212 &lt;/td&gt;
+   &lt;td style="text-align:center;width: 15em; "&gt; 16 &lt;/td&gt;
+   &lt;td style="text-align:center;width: 15em; "&gt; 8% &lt;/td&gt;
+   &lt;td style="text-align:center;width: 15em; "&gt; 2 &lt;/td&gt;
+   &lt;td style="text-align:center;width: 15em; "&gt; 1.3 &lt;/td&gt;
+   &lt;td style="text-align:center;width: 15em; "&gt; 1 &lt;/td&gt;
+   &lt;td style="text-align:center;width: 15em; "&gt; 5 &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+???
+
+### What can we learn from the basic descriptive statistics for 2020?
+
+
+
+---
+
+class: middle, slideblue
+
+
+
+.size45[.center[**How often do the scores match? (2020)**]]
+
+.size40[
++ Matching across all three measures: 42%
+
++ Matching across AI and State only: 67%
+
++ Matching AI and State (+/- 1): 99%
+
+]
+
+???
+
+### Do differences within a country-year tell us more about the use of violence in that state, bias in the sources of the data or problems with the PTS measure they have designed?
 
 &lt;br&gt;
 
@@ -213,6 +292,23 @@ class: middle
 #### - Do all three bring greater confidence to our understanding?
 #### - Capture different things? 
 #### - Add robustness?
+
+&lt;br&gt;
+
+### Is the +/-1 as a percentage a meaningful piece of analysis? 
+#### - Given what the stages represent are we comfortable saying a difference of one on the scale isn't substantial?
+
+
+
+---
+
+class: slideblue
+
+&lt;img src="03-2-Political_Terror_Scale_files/figure-html/unnamed-chunk-4-1.png" width="100%" style="display: block; margin: auto;" /&gt;
+
+???
+
+### Evidence of a selection effect in the states that match vs those that don't?
 
 
 
@@ -229,23 +325,166 @@ class: middle
 &lt;br&gt;
 
 .size40[
-2) Repeat using 2014 (oldest year with data in all three vars), how much conflict across: PTS_A, PTS_H and PTS_S? 
-   + Specific examples?
+Focus on PTS_A, PTS_H and PTS_S for 2014 (oldest year with data in all three):
+- How much missing data?
+
+- How often do they conflict? Examples?
 ]
-
-
 
 ???
 
 *Groups work on slide question, report back and then segue to questions below*
 
-*Some R Code in Rmd file!*
+
+
+---
+
+class: middle, center
+
+.size45[**Descriptive Statistics (2020)**]
+
+&lt;table class="table table-striped table-hover" style="font-size: 30px; margin-left: auto; margin-right: auto;"&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:left;"&gt; Source &lt;/th&gt;
+   &lt;th style="text-align:center;"&gt; N &lt;/th&gt;
+   &lt;th style="text-align:center;"&gt; NAs &lt;/th&gt;
+   &lt;th style="text-align:center;"&gt; Prop &lt;/th&gt;
+   &lt;th style="text-align:center;"&gt; Mean &lt;/th&gt;
+   &lt;th style="text-align:center;"&gt; StdDev &lt;/th&gt;
+   &lt;th style="text-align:center;"&gt; Min &lt;/th&gt;
+   &lt;th style="text-align:center;"&gt; Max &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;width: 15em; "&gt; PTS_A &lt;/td&gt;
+   &lt;td style="text-align:center;width: 15em; "&gt; 212 &lt;/td&gt;
+   &lt;td style="text-align:center;width: 15em; "&gt; 63 &lt;/td&gt;
+   &lt;td style="text-align:center;width: 15em; "&gt; 30% &lt;/td&gt;
+   &lt;td style="text-align:center;width: 15em; "&gt; 3 &lt;/td&gt;
+   &lt;td style="text-align:center;width: 15em; "&gt; 1.2 &lt;/td&gt;
+   &lt;td style="text-align:center;width: 15em; "&gt; 1 &lt;/td&gt;
+   &lt;td style="text-align:center;width: 15em; "&gt; 5 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;width: 15em; "&gt; PTS_H &lt;/td&gt;
+   &lt;td style="text-align:center;width: 15em; "&gt; 212 &lt;/td&gt;
+   &lt;td style="text-align:center;width: 15em; "&gt; 110 &lt;/td&gt;
+   &lt;td style="text-align:center;width: 15em; "&gt; 52% &lt;/td&gt;
+   &lt;td style="text-align:center;width: 15em; "&gt; 3 &lt;/td&gt;
+   &lt;td style="text-align:center;width: 15em; "&gt; 1.2 &lt;/td&gt;
+   &lt;td style="text-align:center;width: 15em; "&gt; 1 &lt;/td&gt;
+   &lt;td style="text-align:center;width: 15em; "&gt; 5 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;width: 15em; "&gt; PTS_S &lt;/td&gt;
+   &lt;td style="text-align:center;width: 15em; "&gt; 212 &lt;/td&gt;
+   &lt;td style="text-align:center;width: 15em; "&gt; 16 &lt;/td&gt;
+   &lt;td style="text-align:center;width: 15em; "&gt; 8% &lt;/td&gt;
+   &lt;td style="text-align:center;width: 15em; "&gt; 2 &lt;/td&gt;
+   &lt;td style="text-align:center;width: 15em; "&gt; 1.3 &lt;/td&gt;
+   &lt;td style="text-align:center;width: 15em; "&gt; 1 &lt;/td&gt;
+   &lt;td style="text-align:center;width: 15em; "&gt; 5 &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
 
 &lt;br&gt;
+
+.size45[**Descriptive Statistics (2014)**]
+
+&lt;table class="table table-striped table-hover" style="font-size: 30px; margin-left: auto; margin-right: auto;"&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:left;"&gt; Source &lt;/th&gt;
+   &lt;th style="text-align:center;"&gt; N &lt;/th&gt;
+   &lt;th style="text-align:center;"&gt; NAs &lt;/th&gt;
+   &lt;th style="text-align:center;"&gt; Prop &lt;/th&gt;
+   &lt;th style="text-align:center;"&gt; Mean &lt;/th&gt;
+   &lt;th style="text-align:center;"&gt; StdDev &lt;/th&gt;
+   &lt;th style="text-align:center;"&gt; Min &lt;/th&gt;
+   &lt;th style="text-align:center;"&gt; Max &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;width: 15em; "&gt; PTS_A &lt;/td&gt;
+   &lt;td style="text-align:center;width: 15em; "&gt; 212 &lt;/td&gt;
+   &lt;td style="text-align:center;width: 15em; "&gt; 52 &lt;/td&gt;
+   &lt;td style="text-align:center;width: 15em; "&gt; 25% &lt;/td&gt;
+   &lt;td style="text-align:center;width: 15em; "&gt; 3 &lt;/td&gt;
+   &lt;td style="text-align:center;width: 15em; "&gt; 1.2 &lt;/td&gt;
+   &lt;td style="text-align:center;width: 15em; "&gt; 1 &lt;/td&gt;
+   &lt;td style="text-align:center;width: 15em; "&gt; 5 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;width: 15em; "&gt; PTS_H &lt;/td&gt;
+   &lt;td style="text-align:center;width: 15em; "&gt; 212 &lt;/td&gt;
+   &lt;td style="text-align:center;width: 15em; "&gt; 127 &lt;/td&gt;
+   &lt;td style="text-align:center;width: 15em; "&gt; 60% &lt;/td&gt;
+   &lt;td style="text-align:center;width: 15em; "&gt; 3 &lt;/td&gt;
+   &lt;td style="text-align:center;width: 15em; "&gt; 1.0 &lt;/td&gt;
+   &lt;td style="text-align:center;width: 15em; "&gt; 1 &lt;/td&gt;
+   &lt;td style="text-align:center;width: 15em; "&gt; 5 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;width: 15em; "&gt; PTS_S &lt;/td&gt;
+   &lt;td style="text-align:center;width: 15em; "&gt; 212 &lt;/td&gt;
+   &lt;td style="text-align:center;width: 15em; "&gt; 13 &lt;/td&gt;
+   &lt;td style="text-align:center;width: 15em; "&gt; 6% &lt;/td&gt;
+   &lt;td style="text-align:center;width: 15em; "&gt; 2 &lt;/td&gt;
+   &lt;td style="text-align:center;width: 15em; "&gt; 1.2 &lt;/td&gt;
+   &lt;td style="text-align:center;width: 15em; "&gt; 1 &lt;/td&gt;
+   &lt;td style="text-align:center;width: 15em; "&gt; 5 &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+
+
+---
+
+class: middle, slideblue
+
+
+
+.size45[.center[**How often do the scores match? (2020)**]]
+
+.size40[
++ Matching across all three measures: 42%
++ Matching across AI and State only: 67%
++ Matching AI and State (+/- 1): 99%
+]
+
+&lt;br&gt;
+
+.size45[.center[**How often do the scores match? (2014)**]]
+
+.size40[
++ Matching across all three measures: 55%
++ Matching across AI and State only: 68%
++ Matching AI and State (+/- 1): 97%
+]
+
+???
 
 ### Does this help us answer that question about where the error may lie / how useful it is to keep all three measures?
 
 #### - More disagreement in the past?
+
+
+
+
+---
+
+class: slideblue
+
+&lt;img src="03-2-Political_Terror_Scale_files/figure-html/unnamed-chunk-8-1.png" width="100%" style="display: block; margin: auto;" /&gt;
+
+???
+
+### Evidence of a selection effect in the states that match vs those that don't?
 
 
 
@@ -268,15 +507,22 @@ class: middle
   + Any countries with a score that challenges your intuitions?
 ]
 
-
-
 ???
 
 *Groups work on slide question, report back and then segue to questions below*
 
-*Some R Code in Rmd file!*
 
-&lt;br&gt;
+
+
+---
+
+class: slideblue
+
+&lt;img src="03-2-Political_Terror_Scale_files/figure-html/unnamed-chunk-9-1.png" width="100%" style="display: block; margin: auto;" /&gt;
+
+???
+
+
 
 
 ---

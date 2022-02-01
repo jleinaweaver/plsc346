@@ -206,42 +206,130 @@ class: middle
 <br>
 
 .size40[
-1) Focus on 2020 (most recent year coded), how much conflict across: PTS_A, PTS_H and PTS_S? 
-   + Specific examples?
+Focus on PTS_A, PTS_H and PTS_S for 2020 (most recent year coded):
+- How much missing data?
+
+- How often do they conflict? Examples?
 ]
-
-```{r, eval=FALSE}
-library(tidyverse)
-library(readxl)
-d <- read_excel("../../Data/PTS/PTS-2021.xlsx", na = "NA")
-
-d2019 <- d |>
-  filter(Year == 2020)
-
-d2019 |> count(PTS_A, PTS_H, PTS_S) |> print(n=100)
-
-## Matching on 42%
-d2019 |> 
-  count(PTS_A, PTS_H, PTS_S) |>
-  na.omit() |>
-  mutate(
-    matching = if_else(PTS_A == PTS_H & PTS_A == PTS_S, 1*n, 0)
-  ) |>
-  summarize(
-    sum(matching) / sum(n)
-  )
-```
-
 
 ???
 
 *Groups work on slide question, report back and then segue to questions below*
 
-*Some R Code in Rmd file!*
+
+
+---
+
+class: middle, center
+
+.size65[**Descriptive Statistics (2020)**]
 
 <br>
 
-### Do differences within a country-year tell us more about the use of violence in that state, bias in the sources of the data or problems with the pts measure they have designed?
+```{r, eval=TRUE}
+## PTS_A: Amnesty International
+## PTS_H: Human Rights Watch
+## PTS_S: State Dept
+
+library(tidyverse)
+library(readxl)
+library(kableExtra)
+d <- read_excel("../../Data/PTS/PTS-2021.xlsx", na = "NA")
+
+d2020 <- d |>
+  filter(Year == 2020)
+
+#d2020 |> count(PTS_A, PTS_H, PTS_S) |> print(n=100)
+
+# Descriptive Stats Table
+x1 <- d2020 |> 
+  pivot_longer(cols = PTS_A:PTS_S, names_to = "Source", values_to = "Value") |>
+  group_by(Source) |>
+  summarize(
+    N = n(),
+    NAs = sum(is.na(Value)),
+    Prop = str_c(round(NAs/N, 2)*100, '%'),
+    Mean = round(mean(Value, na.rm = TRUE), 0),
+    StdDev = round(sd(Value, na.rm = TRUE), 1),
+    Min = round(min(Value, na.rm = TRUE), 0),
+    Max = round(max(Value, na.rm = TRUE), 0)
+  ) 
+
+x1 |>
+  kableExtra::kbl(align = c('l', rep('c', 7))) |>
+  kableExtra::kable_styling(bootstrap_options = c("striped", "hover"), font_size = 35) |>
+  column_spec(column = 1:8, width = "15em")
+```
+
+???
+
+### What can we learn from the basic descriptive statistics for 2020?
+
+
+
+---
+
+class: middle, slideblue
+
+```{r, eval=TRUE}
+## Focus only on cases with data across all three measures
+## Matching on 42%
+x2 <- d2020 |> 
+  count(PTS_A, PTS_H, PTS_S) |>
+  na.omit() |> 
+  mutate(
+    matching = if_else(PTS_A == PTS_H & PTS_A == PTS_S, 1*n, 0)
+  ) |>
+  summarize(
+    Matching_Proportion = sum(matching) / sum(n)
+  )
+
+## Matching on 42%
+x3 <- d2020 |> 
+  count(PTS_A, PTS_S) |>
+  na.omit() |> 
+  mutate(
+    matching = if_else(PTS_A == PTS_S, 1*n, 0)
+  ) |>
+  summarize(
+    Matching_Proportion = sum(matching) / sum(n)
+  )
+
+## How often matching +-1 across the two main measures only?
+x4 <- d2020 |> 
+  count(PTS_A, PTS_S) |>
+  na.omit() |> 
+  mutate(
+    Absolute_diff = abs(PTS_A - PTS_S),
+    close = if_else(Absolute_diff <= 1, 1*n, 0)
+  ) |>
+  summarize(
+    Close_Proportion = sum(close) / sum(n)
+  )
+
+
+# ## Visualize
+# d2020 |>
+#   mutate(
+#     Matching = if_else(PTS_A == PTS_H & PTS_A == PTS_S, 1, 0)
+#   ) |>
+#   count(Matching)
+```
+
+.size45[.center[**How often do the scores match? (2020)**]]
+
+.size40[
++ Matching across all three measures: `r str_c(round(x2[1]*100, 0), '%')`
+
++ Matching across AI and State only: `r str_c(round(x3[1]*100, 0), '%')`
+
++ Matching AI and State (+/- 1): `r str_c(round(x4[1]*100, 0), '%')`
+
+]
+
+???
+
+### Do differences within a country-year tell us more about the use of violence in that state, bias in the sources of the data or problems with the PTS measure they have designed?
 
 <br>
 
@@ -250,6 +338,61 @@ d2019 |>
 #### - Do all three bring greater confidence to our understanding?
 #### - Capture different things? 
 #### - Add robustness?
+
+<br>
+
+### Is the +/-1 as a percentage a meaningful piece of analysis? 
+#### - Given what the stages represent are we comfortable saying a difference of one on the scale isn't substantial?
+
+
+
+---
+
+class: slideblue
+
+```{r, fig.retina=3, fig.align='center', out.width='100%', fig.height=5, fig.width=8}
+## Make a map
+## Three colors: missing, match, no match
+library(sf)
+library(rnaturalearth)
+library(rnaturalearthdata)
+
+## Add genc3n to PTS data
+d2020_1 <- d2020 |>
+  mutate(
+    Matching = if_else(PTS_A == PTS_S, 1, 0)
+  )
+
+d2020_1$newcode2 <- countrycode::countrycode(d2020_1$COW_Code_A, origin = "cowc", destination = "genc3n")
+
+## Use rnaturalearth to define world map data
+worldmap <- ne_countries(scale = 'medium', type = 'map_units',
+                         returnclass = 'sf')
+
+# ## Identify country identifiers
+# countrycode::guess_field(d2020_1$COW_Code_A)
+# countrycode::guess_field(d2020_1$COW_Code_N)
+# countrycode::guess_field(worldmap$un_a3) #98.7% genc3n
+
+## Merge data onto worldmap
+d10 <- left_join(worldmap, d2020_1, by = c("un_a3" = "newcode2"))
+
+d10 |>
+  mutate(
+    Matching_cat = if_else(Matching == 1, "Matching", "Not Matching", missing = "No Data"),
+    Matching_cat = factor(Matching_cat, levels = c("Matching", "Not Matching", "No Data"))
+  ) |>
+  filter(!is.na(Matching_cat)) |>
+  ggplot() +
+  geom_sf(aes(fill = Matching_cat)) +
+  labs(fill = "", title = "PTS_A vs PTS_S (2020)") +
+  theme(legend.position = "bottom") +
+  scale_fill_manual(values = c("gold1", "green4", "white"))
+```
+
+???
+
+### Evidence of a selection effect in the states that match vs those that don't?
 
 
 
@@ -266,47 +409,175 @@ class: middle
 <br>
 
 .size40[
-2) Repeat using 2014 (oldest year with data in all three vars), how much conflict across: PTS_A, PTS_H and PTS_S? 
-   + Specific examples?
+Focus on PTS_A, PTS_H and PTS_S for 2014 (oldest year with data in all three):
+- How much missing data?
+
+- How often do they conflict? Examples?
 ]
-
-```{r, eval=FALSE}
-library(tidyverse)
-library(readxl)
-d <- read_excel("../../Data/PTS/PTS-2021.xlsx", na = "NA")
-
-d |> count(Year, PTS_H) |> print(n=100)
-d |> count(Year, PTS_A) |> print(n=300)
-d |> count(Year, PTS_S) |> print(n=300)
-
-d2014 <- d |>
-  filter(Year == 2014)
-
-d2014 |> count(PTS_A, PTS_H, PTS_S) |> print(n=100)
-
-## Matching on 55% of observations
-d2014 |> 
-  count(PTS_A, PTS_H, PTS_S) |>
-  na.omit() |>
-  mutate(
-    matching = if_else(PTS_A == PTS_H & PTS_A == PTS_S, 1*n, 0)
-  ) |>
-  summarize(
-    sum(matching) / sum(n)
-  )
-```
 
 ???
 
 *Groups work on slide question, report back and then segue to questions below*
 
-*Some R Code in Rmd file!*
+
+
+---
+
+class: middle, center
+
+.size45[**Descriptive Statistics (2020)**]
+
+```{r, eval=TRUE}
+x1 |>
+  kableExtra::kbl(align = c('l', rep('c', 7))) |>
+  kableExtra::kable_styling(bootstrap_options = c("striped", "hover"), font_size = 30) |>
+  column_spec(column = 1:8, width = "15em")
+```
 
 <br>
+
+.size45[**Descriptive Statistics (2014)**]
+
+```{r, eval=TRUE}
+## PTS_A: Amnesty International
+## PTS_H: Human Rights Watch
+## PTS_S: State Dept
+
+d2014 <- d |>
+  filter(Year == 2014)
+
+# Descriptive Stats Table
+d2014 |> 
+  pivot_longer(cols = PTS_A:PTS_S, names_to = "Source", values_to = "Value") |>
+  group_by(Source) |>
+  summarize(
+    N = n(),
+    NAs = sum(is.na(Value)),
+    Prop = str_c(round(NAs/N, 2)*100, '%'),
+    Mean = round(mean(Value, na.rm = TRUE), 0),
+    StdDev = round(sd(Value, na.rm = TRUE), 1),
+    Min = round(min(Value, na.rm = TRUE), 0),
+    Max = round(max(Value, na.rm = TRUE), 0)
+  ) |>
+  kableExtra::kbl(align = c('l', rep('c', 7))) |>
+  kableExtra::kable_styling(bootstrap_options = c("striped", "hover"), font_size = 30) |>
+  column_spec(column = 1:8, width = "15em")
+  
+
+```
+
+
+
+---
+
+class: middle, slideblue
+
+```{r, eval=TRUE}
+## Focus only on cases with data across all three measures
+x2a <- d2014 |> 
+  count(PTS_A, PTS_H, PTS_S) |>
+  na.omit() |> 
+  mutate(
+    matching = if_else(PTS_A == PTS_H & PTS_A == PTS_S, 1*n, 0)
+  ) |>
+  summarize(
+    Matching_Proportion = sum(matching) / sum(n)
+  )
+
+## Matching
+x3a <- d2014 |> 
+  count(PTS_A, PTS_S) |>
+  na.omit() |> 
+  mutate(
+    matching = if_else(PTS_A == PTS_S, 1*n, 0)
+  ) |>
+  summarize(
+    Matching_Proportion = sum(matching) / sum(n)
+  )
+
+## How often matching +-1 across the two main measures only?
+x4a <- d2014 |> 
+  count(PTS_A, PTS_S) |>
+  na.omit() |> 
+  mutate(
+    Absolute_diff = abs(PTS_A - PTS_S),
+    close = if_else(Absolute_diff <= 1, 1*n, 0)
+  ) |>
+  summarize(
+    Close_Proportion = sum(close) / sum(n)
+  )
+```
+
+.size45[.center[**How often do the scores match? (2020)**]]
+
+.size40[
++ Matching across all three measures: `r str_c(round(x2[1]*100, 0), '%')`
++ Matching across AI and State only: `r str_c(round(x3[1]*100, 0), '%')`
++ Matching AI and State (+/- 1): `r str_c(round(x4[1]*100, 0), '%')`
+]
+
+<br>
+
+.size45[.center[**How often do the scores match? (2014)**]]
+
+.size40[
++ Matching across all three measures: `r str_c(round(x2a[1]*100, 0), '%')`
++ Matching across AI and State only: `r str_c(round(x3a[1]*100, 0), '%')`
++ Matching AI and State (+/- 1): `r str_c(round(x4a[1]*100, 0), '%')`
+]
+
+???
 
 ### Does this help us answer that question about where the error may lie / how useful it is to keep all three measures?
 
 #### - More disagreement in the past?
+
+
+
+
+---
+
+class: slideblue
+
+```{r, fig.retina=3, fig.align='center', out.width='100%', fig.height=5, fig.width=8}
+## Make a map
+## Three colors: missing, match, no match
+## Add genc3n to PTS data
+d2014_1 <- d2014 |>
+  mutate(
+    Matching = if_else(PTS_A == PTS_S, 1, 0)
+  )
+
+d2014_1$newcode2 <- countrycode::countrycode(d2014_1$COW_Code_A, origin = "cowc", destination = "genc3n")
+
+## Use rnaturalearth to define world map data
+worldmap <- ne_countries(scale = 'medium', type = 'map_units',
+                         returnclass = 'sf')
+
+# ## Identify country identifiers
+# countrycode::guess_field(d2020_1$COW_Code_A)
+# countrycode::guess_field(d2020_1$COW_Code_N)
+# countrycode::guess_field(worldmap$un_a3) #98.7% genc3n
+
+## Merge data onto worldmap
+d10 <- left_join(worldmap, d2014_1, by = c("un_a3" = "newcode2"))
+
+d10 |>
+  mutate(
+    Matching_cat = if_else(Matching == 1, "Matching", "Not Matching", missing = "No Data"),
+    Matching_cat = factor(Matching_cat, levels = c("Matching", "Not Matching", "No Data"))
+  ) |>
+  filter(!is.na(Matching_cat)) |>
+  ggplot() +
+  geom_sf(aes(fill = Matching_cat)) +
+  labs(fill = "", title = "PTS_A vs PTS_S (2014)") +
+  theme(legend.position = "bottom") +
+  scale_fill_manual(values = c("gold1", "green4", "white"))
+```
+
+???
+
+### Evidence of a selection effect in the states that match vs those that don't?
 
 
 
@@ -329,28 +600,45 @@ class: middle
   + Any countries with a score that challenges your intuitions?
 ]
 
-```{r, eval=FALSE}
-library(tidyverse)
-library(readxl)
-d <- read_excel("../../Data/PTS/PTS-2021.xlsx", na = "NA")
-
-d2020 <- d |>
-  filter(Year == 2020)
-
-d2020 |>
-  arrange(PTS_S) |>
-  select(Country, Year, PTS_S) |>
-  View()
-
-```
-
 ???
 
 *Groups work on slide question, report back and then segue to questions below*
 
-*Some R Code in Rmd file!*
 
-<br>
+
+
+---
+
+class: slideblue
+
+```{r, fig.retina=3, fig.align='center', out.width='100%', fig.height=5, fig.width=8}
+## Make a map
+d2020$newcode2 <- countrycode::countrycode(d2014_1$COW_Code_A, origin = "cowc", destination = "genc3n")
+
+## Use rnaturalearth to define world map data
+worldmap <- ne_countries(scale = 'medium', type = 'map_units',
+                         returnclass = 'sf')
+
+## Merge data onto worldmap
+d10 <- left_join(worldmap, d2020, by = c("un_a3" = "newcode2"))
+
+d10 |>
+  mutate(
+    pts_s_cat = factor(PTS_S, levels = c("1", "2", "3", "4", "5"))
+  ) |>
+  filter(!is.na(pts_s_cat)) |>
+  ggplot() +
+  geom_sf(aes(fill = pts_s_cat)) +
+  labs(fill = "", title = "PTS_S (2020)") +
+  theme(legend.position = "bottom") +
+  scale_fill_brewer(type = "seq", palette = "YlOrRd")
+
+  # scale_fill_manual(values = c("gold1", "green4", "white"))
+```
+
+???
+
+
 
 
 ---

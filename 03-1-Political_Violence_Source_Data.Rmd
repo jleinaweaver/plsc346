@@ -84,13 +84,13 @@ class: middle
 
 .size50[**Political Violence Case Study**]
 
-.size35[(due Feb 20)
+.size35[(Due Feb 20)
 
-You will write a report that evaluates both the history and current experience of political violence in a single state. 
+You will write a report that evaluates **both** the history and current experience of political violence in a single state. 
 
-+ Week 3: Explore and evaluate the sources of the data and the measures that exist
++ **Week 3:** Explore and evaluate the sources of the data and the measures that exist
 
-+ Week 4: Work on the report in class
++ **Week 4:** Work on the report in class
 
 ]
 
@@ -192,7 +192,9 @@ Before we analyze your findings I want each of you to take a moment to reflect o
 
 --
 
-.size40[1) How consistent are these two sources on each country?]
+<br>
+
+.size50[1) How consistent are these two sources on each country?]
 
 ???
 
@@ -202,7 +204,9 @@ How consistent are these two sources on each country?
 
 --
 
-.size40[2) Do the sources focus on the same things? How redundant are they?]
+<br>
+
+.size50[2) Do the sources operationalize political violence the same way?]
 
 ???
 
@@ -213,7 +217,9 @@ Do the two sources appear to emphasize different kinds of political violence?
 
 --
 
-.size40[3) How independent are the two sources?]
+<br>
+
+.size50[3) How independent are the two sources?]
 
 ???
 
@@ -231,11 +237,11 @@ background-size: 100%
 background-position: center
 class: middle, center
 
-.size60[**Small Groups Discussion**]
+.size65[**Small Groups Discussion**]
 
 <br>
 
-.size50[
+.size60[
 What are the .textblue[**strengths**] and .textred[**weaknesses**] of relying on these sources as ways to measure and track political violence around the world?
 ]
 
