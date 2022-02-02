@@ -1,6 +1,6 @@
 To see live preview, run xaringan::inf_mr()
 
-Output as pdf
+Output as pdf, use pagedown (https://github.com/rstudio/pagedown)
 pagedown::chrome_print(input = "File.html")
 
 Host completed slides on your github

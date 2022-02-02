@@ -71,7 +71,7 @@ class: middle
 
 .size50[**Political Violence Case Study**]
 
-.size35[(due Feb 20)
+.size35[(Due Feb 20)
 
 Use all of the data sources from last week to write a report on **one country** that:
 
@@ -83,6 +83,14 @@ Use all of the data sources from last week to write a report on **one country** 
 ???
 
 ### Any questions on the assignment?
+
+<br>
+
+I'm going to give you today get feedback and finalize your papers.
+
+But first, make sure you're ready for next Monday!
+
+SLIDE
 
 
 
@@ -99,3 +107,11 @@ Explore the data and codebook for the Polity5 Project (*Political Regime Charact
 
 - Bring a computer to class so we can work with the data.
 ]
+
+???
+
+Next week we extend our analyses to violence done by governments against their own citizens.
+
+To do that we need to clarify the regime type concept and we'll use Polity for that.
+
+Ok, get those papers submitted!

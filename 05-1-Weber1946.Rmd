@@ -186,15 +186,11 @@ Everybody take 10 minutes on your own to diagram this argument.
 
 <br>
 
-Ok, five minutes to work in small groups, consolidate into one argument diagram.
-
-*ON BOARD*
-
-Ok, let's diagram this argument.
-
-- Gather premises from groups, add or revise as needed.
+Small groups (3), five minutes to consolidate to one diagram between you.
 
 <br>
+
+*ON BOARD*
 
 #### NOTES 2019-09-09
 - The state is the leader (or a political association supporting that leader)
@@ -224,7 +220,7 @@ Let's refocus the thrust of this argument towards answering our question.
 
 (May 4, 1970: Kent State Shootings)
 
-- Ohio State students holding protest against the Vietnam war (and bombings of Cambodia and presence of soldiers on campus)
+- Kent State students in Ohion holding protest against the Vietnam war (and bombings of Cambodia and presence of soldiers on campus)
 
 - Twenty-eight National Guard soldiers fired approximately 67 rounds over a period of 13 seconds
 
@@ -234,9 +230,9 @@ Let's refocus the thrust of this argument towards answering our question.
 
 ### How does this photo and case add to our thinking about "threats to the state's power"?
 
-(Even an incredibly innocuous threat can result in violence if it challenges the state in ways the state does not approve of.)
++ (Even an incredibly innocuous threat can result in violence if it challenges the state in ways the state does not approve of.)
 
-(Mass obedience required)
++ (Mass obedience required)
 
 
 
@@ -281,7 +277,7 @@ This is a huge conclusion and one that, if we accept it as our model of statehoo
 
 <br>
 
-### Could a model like this be self-fulfilling?
+### Could a model like this be a self-fulfilling prophecy?
 
 #### - In other words, does operating like this force the state and our fellow citizens onto a more violent path?
 
@@ -299,3 +295,7 @@ background-position: center
 ### Ultimately, are we now convinced that our definitions of politics from week 1 are missing something important if they do not explicitly discuss the central role of violence in politics?
 
 #### - Why or why not?
+
+<br>
+
+### Give it a shot, how could we redefine "politics" to include violence?
