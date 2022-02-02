@@ -415,7 +415,7 @@ SLIDE: Map
 
 class: slideblue
 
-```{r, fig.retina=3, fig.align='center', out.width='100%', fig.height=5, fig.width=8, cache=TRUE}
+```{r, fig.retina=3, fig.align='center', out.width='100%', fig.height=3.5, fig.width=6.5, eval=TRUE, cache=TRUE}
 ## Make a map
 ## Three colors: missing, match, no match
 
@@ -655,7 +655,7 @@ class: middle
 
 class: slideblue
 
-```{r, fig.retina=3, fig.align='center', out.width='100%', fig.height=5, fig.width=8, cache=TRUE}
+```{r, fig.retina=3, fig.align='center', out.width='100%', fig.height=3.5, fig.width=6.5, eval=TRUE, cache=TRUE}
 ## Make a map
 #d2020$newcode2 <- countrycode::countrycode(d2020$COW_Code_A, origin = "cowc", destination = "genc3n")
 
@@ -725,7 +725,7 @@ class: middle
 
 class: middle, slideblue
 
-```{r, fig.retina=3, fig.align='center', out.width='100%', fig.height=5, fig.width=8, cache=TRUE}
+```{r, fig.retina=3, fig.align='center', out.width='100%', fig.height=3.5, fig.width=6.5, eval=TRUE, cache=TRUE}
 # Quick stab focused just on changes between the min and max years in the question
 # Map of the changes across the period
 d11 <- d |>

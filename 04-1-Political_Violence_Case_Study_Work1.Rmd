@@ -52,10 +52,7 @@ The Political Violence Case Study
 ???
 
 ### Prep for Class
-1. Prep email with link to country sign-up page on Google sheets
-    - https://docs.google.com/document/d/1pjG57sxC7I7x8uvLlkBBoOvKs26-VT9eOqbrfFZPeYA/edit?usp=sharing
-
-2. Post assignment description on Moodle
+1. ...
 
 <br>
 
@@ -93,7 +90,7 @@ You will draw on the reports from the State Department, Amnesty International an
 --
 
 .size35[
-- **Makes an argument** about what the current CIRIGHTS codings should be based on the 2020 Country Reports on Human Rights Practices from the State Department
+- **Makes an argument** about what the current PTS and CIRIGHTS codings should be based on the 2020 Country Reports on Human Rights Practices from the State Department
 ]
 
 ???
