@@ -224,6 +224,8 @@ Groups, take a few minutes to work on this question and report back.
 
 class: bottom, center
 
+.size55[**1980**]
+
 ```{r}
 library(tidyverse)
 d <- read_csv("../../Data/CIRIGHTS/CIRIGHTS_2021.01.21.csv")
@@ -441,11 +443,15 @@ d |>
   ) |>
   ggplot(aes(x = year, y = Mean, color = Variables)) +
   geom_line(size = 1.2) +
-  theme_bw() +
+  theme_light() +
   labs(x = "", y = "Mean Values",
-       title = "Track Political Violence Averages Across Time") +
-  coord_cartesian(ylim = c(0, 2)) +
-  scale_y_continuous(breaks = c(0,1,2))
+       title = "Tracking Political Violence Averages Across Time") +
+  coord_cartesian(ylim = c(0, 2), xlim = c(1980, 2021)) +
+  scale_y_continuous(breaks = c(0,1,2))  +
+  guides(color = "none") +
+  scale_color_brewer(type = "qual", palette = 2) +
+  annotate("text", x = 2020, y = c(1.73, 1.37, 1.24, 1.056), label = c("Disap", "Kill", "Prison", "Torture"), color = RColorBrewer::brewer.pal(4, name = "Dark2"))
+
 ```
 
 ???
