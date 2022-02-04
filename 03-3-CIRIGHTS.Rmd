@@ -55,16 +55,161 @@ Evaluate the CIRIGHTS Data project
 
 2. Post assignment description on Moodle
 
+3. Set email to go out at end of class
+
 <br>
 
-Today we wrap up our week exploring the current projects that seek to measure political violence around the world and across time.
+Today we wrap up our week critically analyzing the data you will need to measure political violence around the world and across time.
 
-### What were our big takeaways from Wednesday's examination of the Political Terror Scale?
+All of this builds to your first assignment!
+
+
+
+---
+
+background-image: url('libs/Images/background-blue_cubes_v2.png')
+background-size: 100%
+background-position: center
+class: middle, inverse
+
+.size50[**Political Violence Case Study**]
+
+.size35[(Due Feb 18)
+
+Use all of the data sources from this week to write a report on **one country** that:]
+
+???
+
+The report is due in two weeks.
+
+- My apologies if I had it as the 20th on Wed's slides. The syllabus and Moodle all have the correct date which is two weeks from today.
+
+<br>
+
+You will each prepare a report focused on the experience of political violence in a single country.
+- You will be expected to draw on ALL of the data from our work this week (e.g. the State Department, Amnesty International and the measurements from PTS and CIRIGHTS).
+
+--
+
+.size35[
+- **Summarizes AND analyzes** its recent history of political violence (e.g. over the last ten years), and 
+]
+
+???
+#### Part 1
+
+--
+
+.size35[
+- **Makes an argument** about what the current PTS and CIRIGHTS codings should be based on the 2020 Country Reports on Human Rights Practices from the State Department
+]
+
+???
+#### Part 2
+
+<br>
+
+I'll send out a sheet where you can claim a country after class today
+- No overlap, first-come first-served.
+
+### Questions on the assignment?
+
+<br>
+
+Ok, let's keep exploring the tools you'll need for the assignment.
 
 
 
 
 ---
+
+background-image: url('libs/Images/background-green_blue_swirl_side.jpg')
+background-size: 100%
+background-position: center
+class: middle, center
+
+.pull-left[
+<br>
+
+```{r}
+knitr::include_graphics('libs/Images/03-3-amnesty_international.jpg')
+```
+]
+
+.pull-right[
+```{r}
+knitr::include_graphics('libs/Images/03-3-USDeptState.png')
+```
+]
+
+???
+
+
+On Monday we analyzed the "source" documents for many of the big research projects studying political violence.
+
+### Key takeaways for you next week as you write your country reports?
+
+1. Reports add useful context for the numbers, reference that context!
+
+2. Reports cover more stuff than the coding projects, don't ignore those details!
+
+
+
+---
+
+background-image: url('libs/Images/background-green_blue_swirl_side.jpg')
+background-size: 100%
+background-position: center
+class: middle, center
+
+```{r, fig.retina=3, fig.align='center', out.width='100%', fig.height=4.5, fig.width=9.5, eval=TRUE, cache=TRUE}
+## Make a map
+library(tidyverse)
+library(readxl)
+library(stargazer)
+library(sf)
+library(rnaturalearth)
+library(rnaturalearthdata)
+
+## Input data
+d <- read_excel("../../Data/PTS/PTS-2021.xlsx", na = "NA")
+
+d2020 <- d |>
+  filter(Year == 2020)
+
+## Use rnaturalearth to define world map data
+worldmap <- ne_countries(scale = 'medium', type = 'map_units',          returnclass = 'sf')
+
+## Merge data onto worldmap
+d10 <- left_join(worldmap, d2020, by = c("adm0_a3" = "WordBank_Code_A"))
+
+d10 |>
+  mutate(
+    pts_s_cat = factor(PTS_S, levels = c("1", "2", "3", "4", "5"))
+  ) |>
+  #filter(!is.na(pts_s_cat)) |>
+  ggplot() +
+  geom_sf(aes(fill = pts_s_cat)) +
+  labs(fill = "", title = "PTS_S (2020)") +
+  #theme(legend.position = "right") +
+  scale_fill_manual(values = c("forestgreen", "darkolivegreen2", "lemonchiffon1", "sandybrown", "red3"))
+```
+
+???
+
+On Wednesday we analyzed the Political Terror Scale.
+
+### Key takeaways for you next week as you write your country reports?
+
+#### - How do the PTS scores supplement your reading/analysis of the source docs?
+
+#### - Any cautions you will want to include, e.g. caveats for helping the reader interpret the PTS scores?
+
+
+
+
+---
+
 background-image: url('libs/Images/background-green_blue_swirl_side.jpg')
 background-size: 100%
 background-position: center
@@ -94,83 +239,148 @@ Organize yourselves into **NEW** groups of 3-4, circle your chairs
 
 ---
 
-background-image: url('libs/Images/background-slate.jpg')
+background-image: url('libs/Images/background-green_blue_swirl_side.jpg')
 background-size: 100%
 background-position: center
-class: middle, center, inverse
+class: middle
 
-```{r, fig.align='center', out.width='65%'}
+.pull-left[
+
+<br>
+
+<br>
+
+<br>
+
+```{r, fig.align='center', out.width='100%'}
 knitr::include_graphics('libs/Images/03_3-CIRIGHTS_Title.png')
 ```
+]
 
-<br>
+.pull-right[
+.size40[The Physical Integrity Rights Index
 
-.size60[What does the CIRIGHTS project add to our PTS work from Wednesday?]
+- Disappearance
 
-???
+- Extrajudicial Killing
 
-Groups: Take a few minutes to do this together and then we'll report back.
+- Political Imprisonment
 
-<br>
-
-### Ok, report back.
-
-(More separate measures of human rights!)
-
-
-
-
----
-
-background-image: url('libs/Images/background-slate.jpg')
-background-size: 100%
-background-position: center
-class: middle, inverse
-
-```{r, fig.align='center', out.width='65%'}
-knitr::include_graphics('libs/Images/03_3-CIRIGHTS_Title.png')
-```
-
-<br>
-
-.size55[.center[Does the CIRIGHTS "Coding Protocol" generate valid and reliable measures of political violence? (p8)]]
-
-???
-
-Groups: Take a few minutes to do this together and then we'll report back.
-
-<br>
-
-### Ok, report back.
-#### - What are the strengths and weaknesses?
-
-
-
----
-
-background-image: url('libs/Images/background-slate.jpg')
-background-size: 100%
-background-position: center
-class: middle, inverse
-
-```{r, fig.align='center', out.width='65%'}
-knitr::include_graphics('libs/Images/03_3-CIRIGHTS_Title.png')
-```
-
-.size50[.center[Audit the CIRIGHTS scores for the three countries you analyzed on Monday.]
-
-- Disappearance, Extrajudicial Killing, Political Imprisonment and Torture
+- Torture
+]
 ]
 
 ???
 
-Audit time! Go back to the reports and see if you would have coded them the same way. 
+The CIRIGHTS project relies on essentially the same source documents as PTS but aims to capture more of the important variation in country behavior.
+
+For our purposes we'll focus primarily on the elements in the Physical Integrity Rights Index.
+
+These are the obvious choices, but I want everyone to think about their group definitions of political violence.
+
+### Based on those definitions, should we look to include one of the other measures in this dataset?
+
+#### - Maybe an element from the Empowerment Rights Index?
+
+- Foreign Movement, 
+- Domestic Movement, 
+- Freedom of Speech, 
+- Freedom of Assembly & Association, Workers’ Rights, Electoral Self-Determination, and Freedom of Religion indicators
+
+
+
+
+---
+
+background-image: url('libs/Images/background-green_blue_swirl_side.jpg')
+background-size: 100%
+background-position: center
+class: middle
+
+.pull-left[
+
+<br>
+
+<br>
+
+<br>
+
+```{r, fig.align='center', out.width='100%'}
+knitr::include_graphics('libs/Images/03_3-CIRIGHTS_Title.png')
+```
+]
+
+.pull-right[
+.size40[The Physical Integrity Rights Index
+
+- Disappearance
+
+- Extrajudicial Killing
+
+- Political Imprisonment
+
+- Torture
+]
+]
+
+???
+
+### Groups: Take a few minutes to review the "Coding Protocol" on p8 in order to evaluate the validity and reliability of these measures.
+
+<br>
+
+Ok, report back.
+
+### Any concerns with validity?
+
+### Any concerns with reliability?
+
+
+
+---
+
+background-image: url('libs/Images/background-green_blue_swirl_side.jpg')
+background-size: 100%
+background-position: center
+class: middle
+
+.pull-left[
+
+<br>
+
+<br>
+
+<br>
+
+```{r, fig.align='center', out.width='100%'}
+knitr::include_graphics('libs/Images/03_3-CIRIGHTS_Title.png')
+```
+]
+
+.pull-right[
+.size40[The Physical Integrity Rights Index
+
+- Disappearance
+
+- Extrajudicial Killing
+
+- Political Imprisonment
+
+- Torture
+]
+]
+
+???
+
+Let's now audit the data.
+
+Everybody focus on the three countries you analyzed on Monday. 
+
+### Would you have coded these the same way? Why or why not?
+
+<br>
 
 ### Findings? Takeaways?
-
-#### - What do we learn about these variables? 
-
-#### - What do we learn about these coding rules?
 
 #### - Which variables seem the easiest to code / we have the most confidence in?
 
@@ -224,7 +434,7 @@ Groups, take a few minutes to work on this question and report back.
 
 class: bottom, center
 
-.size55[**1980**]
+.size55[**1981**]
 
 ```{r}
 library(tidyverse)
@@ -303,7 +513,7 @@ d10 |>
   ggplot() +
   geom_sf(aes(fill = physint_cat)) +
   labs(fill = "", title = "Physical Integrity Rights Index (1981)") +
-  scale_fill_brewer(type = "seq", palette = 8, direction = -1)
+  scale_fill_brewer(type = "seq", palette = 8, direction = -1, na.value = "grey")
 ```
 
 ???
@@ -412,10 +622,10 @@ d10 |>
   mutate(
     physint_cat = factor(physint, levels = c("0", "1", "2", "3", "4", "5", "6", "7", "8"))
   ) |>
-  ggplot() +
+  ggplot() + 
   geom_sf(aes(fill = physint_cat)) +
   labs(fill = "", title = "Physical Integrity Rights Index (2017)") +
-  scale_fill_brewer(type = "seq", palette = 8, direction = -1)
+  scale_fill_brewer(type = "seq", palette = 8, direction = -1, na.value = "grey")
 ```
 
 ???
@@ -443,7 +653,7 @@ d |>
   ) |>
   ggplot(aes(x = year, y = Mean, color = Variables)) +
   geom_line(size = 1.2) +
-  theme_light() +
+  theme_minimal() +
   labs(x = "", y = "Mean Values",
        title = "Tracking Political Violence Averages Across Time") +
   coord_cartesian(ylim = c(0, 2), xlim = c(1980, 2021)) +
@@ -546,46 +756,6 @@ Measures:
 
 
 
----
-
-background-image: url('libs/Images/background-blue_cubes_v2.png')
-background-size: 100%
-background-position: center
-class: middle, inverse
-
-.size50[**Political Violence Case Study**]
-
-.size35[(Due Feb 20)
-
-Use all of the data sources from this week to write a report on **one country** that:]
-
-???
-
-You will each prepare a report focused on the experience of political violence in a single country.
-
-You will draw on the reports from the State Department, Amnesty International and the measurements from PTS and CIRIGHTS.
-
---
-
-.size35[
-- **Summarizes AND analyzes** its recent history of political violence (e.g. over the last ten years), and 
-]
-
---
-
-.size35[
-- **Makes an argument** about what the current PTS and CIRIGHTS codings should be based on the 2020 Country Reports on Human Rights Practices from the State Department
-]
-
-???
-
-### Questions on the assignment?
-
-<br>
-
-I'll send out a sheet where you can claim a country in just a moment.
-
-No overlap, first-come first-served.
 
 
 

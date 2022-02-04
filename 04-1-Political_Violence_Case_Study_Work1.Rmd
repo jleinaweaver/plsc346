@@ -40,7 +40,7 @@ class: slideblue
 .center[
 The Political Violence Case Study
 
-(due Feb 20)
+(Due Feb 18)
 ]]
 
 <br>
@@ -71,9 +71,9 @@ class: middle, inverse
 
 .size50[**Political Violence Case Study**]
 
-.size35[(due Feb 20)
+.size35[(Due Feb 18)
 
-Use all of the data sources from last week to write a report on **one country** that:]
+Use all of the data sources from this week to write a report on **one country** that:]
 
 ???
 
@@ -99,9 +99,12 @@ You will draw on the reports from the State Department, Amnesty International an
 
 <br>
 
-I'll send out a sheet where you can claim a country in just a moment.
+Remember:
 
-No overlap, first-come first-served.
+- All the sources means AI, State Dept, PTS and CIRIGHTS!
+
+- You must provide context for your claims. Use those primary source documents!
+
 
 
 

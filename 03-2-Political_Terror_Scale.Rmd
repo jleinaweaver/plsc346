@@ -65,7 +65,7 @@ class: middle
 
 .size50[**Political Violence Case Study**]
 
-.size35[(Due Feb 20)
+.size35[(Due Feb 18)
 
 You will write a report that evaluates **both** the history and current experience of political violence in a single state. 
 
@@ -516,9 +516,9 @@ SLIDE: Let's visualize the missing data problem
 
 ---
 
-class: slideblue
+class: middle, center, slideblue
 
-```{r, fig.retina=3, fig.align='center', out.width='100%', fig.height=3.5, fig.width=6.5, eval=TRUE, cache=TRUE}
+```{r, fig.retina=3, fig.align='center', out.width='100%', fig.height=4.5, fig.width=9.5, eval=TRUE, cache=TRUE}
 ## Make a map
 ## Three colors: missing, match, no match
 
@@ -766,9 +766,9 @@ SLIDE: Map of PTS_S for discussion
 
 ---
 
-class: slideblue
+class: middle, center, slideblue
 
-```{r, fig.retina=3, fig.align='center', out.width='100%', fig.height=3.5, fig.width=6.5, eval=TRUE, cache=TRUE}
+```{r, fig.retina=3, fig.align='center', out.width='100%', fig.height=4.5, fig.width=9.5, eval=TRUE, cache=TRUE}
 ## Make a map
 #d2020$newcode2 <- countrycode::countrycode(d2020$COW_Code_A, origin = "cowc", destination = "genc3n")
 
@@ -836,9 +836,9 @@ Focus on the scores for PTS_S in the years since 2001 and find us examples of co
 
 ---
 
-class: middle, slideblue
+class: middle, center, slideblue
 
-```{r, fig.retina=3, fig.align='center', out.width='100%', fig.height=3.5, fig.width=6.5, eval=TRUE, cache=TRUE}
+```{r, fig.retina=3, fig.align='center', out.width='100%', fig.height=4.5, fig.width=9.5, eval=TRUE, cache=TRUE}
 # Quick stab focused just on changes between the min and max years in the question
 # Map of the changes across the period
 d11 <- d |>
