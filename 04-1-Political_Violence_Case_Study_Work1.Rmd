@@ -32,11 +32,11 @@ knitr::opts_chunk$set(echo = FALSE,
 
 class: slideblue
 
-.size70[**Today's Agenda**]
+.size80[**Today's Agenda**]
 
 <br>
 
-.size50[
+.size55[
 .center[
 The Political Violence Case Study
 
@@ -126,3 +126,355 @@ Come to class ready to share your conclusions (3 minimum) about your country's e
 ???
 
 ### Questions on what you need for Wednesday?
+
+<br>
+
+SLIDE: Let's talk through merging and cleaning data in Excel
+
+
+
+---
+
+background-image: url('libs/Images/04-1-1-process_cirights_1.png')
+background-size: 97%
+background-position: center
+class: middle, slideblue
+
+???
+
+Open the CIRIGHTS data in Excel
+- In the app on your computer OR using the web version through your webmail
+
+
+
+---
+
+background-image: url('libs/Images/04-1-2-process_cirights_2.png')
+background-size: 97%
+background-position: center
+class: middle, slideblue
+
+???
+
+Delete all columns we don't need.
+
+- Just keep the key measures (unless you want more for your definition of political violence!)
+
+
+
+---
+
+background-image: url('libs/Images/04-1-3-process_cirights_3.png')
+background-size: 90%
+background-position: center
+class: middle, slideblue
+
+???
+
+Observations not always in country-year order.
+
+So, data ribbon, custom sort.
+
+- Check "My data has headers"
+
+- Sort by countryname
+
+- Add a second level, sort by year
+
+- Hit ok
+
+
+
+
+---
+
+background-image: url('libs/Images/04-1-4a-process_cirights.png')
+background-size: 96%
+background-position: center
+class: middle, slideblue
+
+???
+
+Results of the sort
+
+SLIDE: Now just keep the country-years you need!
+
+
+
+---
+
+background-image: url('libs/Images/04-1-4c-process_cirights.png')
+background-size: 96%
+background-position: center
+class: middle, slideblue
+
+???
+
+### Everybody got this?
+
+SLIDE: Repeat all this on the PTS dataset
+
+
+
+---
+
+background-image: url('libs/Images/04-1-4-process_pts_1.png')
+background-size: 96%
+background-position: center
+class: middle, slideblue
+
+???
+
+Now let's open the PTS dataset
+
+
+
+---
+
+background-image: url('libs/Images/04-1-5-process_pts_2.png')
+background-size: 96%
+background-position: center
+class: middle, slideblue
+
+???
+
+Delete unneeded columns
+
+Note I'm keeping the columns that try to tell you why you might have missing data in a country year.
+
+The codebook has the details on these codes.
+
+
+
+---
+
+background-image: url('libs/Images/04-1-6-process_pts_3.png')
+background-size: 96%
+background-position: center
+class: middle, slideblue
+
+???
+
+Only keep the years you need
+
+
+
+
+---
+
+background-image: url('libs/Images/04-1-7-combined_1.png')
+background-size: 96%
+background-position: center
+class: middle, slideblue
+
+???
+
+Copy the data onto a new sheet from both datasets
+
+Now clean it up by removing repeated columns: country and year
+
+
+
+---
+
+background-image: url('libs/Images/04-1-8-combined_2.png')
+background-size: 96%
+background-position: center
+class: middle, slideblue
+
+???
+
+### Questions on building your dataset?
+
+<br>
+
+SLIDE: Now for those who wish to use R like we did in DA this is much easier
+
+
+
+---
+
+```{r, eval=TRUE}
+## this version works on your system, next omits file locations for students
+# Load packages
+library(tidyverse)
+library(readxl)
+
+# PTS: Load, filter and select variables
+pts <- read_excel("../../Data/PTS/PTS-2020.xlsx", na = "NA") |>
+  filter(Country == "Afghanistan", Year > 2006) |>
+  select(Country, Year, PTS_A, PTS_S, NA_Status_A, NA_Status_S)
+
+# CIRIGHTS: Load, filter and select variables
+cirights <- read_csv("../../Data/CIRIGHTS/CIRIGHTS_2021.01.21.csv") |>
+  filter(countryname == "Afghanistan", year > 2006) |>
+  select(year, physint:tort)
+
+# Merge the datasets
+d <- left_join(pts, cirights, by = c("Year" = "year"))
+```
+
+.code130[
+```{r, echo=TRUE, eval=FALSE}
+# Load packages
+library(tidyverse)
+library(readxl)
+```
+]
+
+--
+
+.code130[
+```{r, echo=TRUE, eval=FALSE}
+# PTS: Load, filter and select variables
+pts <- read_excel("PTS-2020.xlsx", na = "NA") |>
+  filter(Country == "Afghanistan", Year > 2006) |>
+  select(Country, Year, PTS_A, PTS_S, NA_Status_A, NA_Status_S)
+```
+]
+
+???
+
+Remember, this code assumes both datasets are in the same folder on your computer as the script file with all this code.
+
+--
+
+.code130[
+```{r, echo=TRUE, eval=FALSE}
+# CIRIGHTS: Load, filter and select variables
+cirights <- read_csv("CIRIGHTS_2021.01.21.csv") |>
+  filter(countryname == "Afghanistan", year > 2006) |>
+  select(year, physint:tort)
+```
+]
+
+--
+
+.code130[
+```{r, echo=TRUE, eval=FALSE}
+# Merge the datasets
+d <- left_join(pts, cirights, by = c("Year" = "year"))
+```
+]
+
+???
+
+### Ringing any bells?
+
+
+
+---
+
+class: middle
+
+.size25[
+```{r}
+# Output data
+d |>
+  select(-NA_Status_A, -NA_Status_S) |>
+  kableExtra::kbl() |>
+  kableExtra::kable_styling(bootstrap_options = c("striped", "hover", "condensed"))
+```
+]
+
+???
+
+Either way you go we have data that looks like this.
+
+### Help each other brainstorm, what could we do with this?
+
+*ON BOARD*
+
++ Track across time: Line plots to show a trend in each variable across time
++ Summarize the overall: Bar plot or histogram of one variable for this country across time
++ Summarize overall: % of observed years with certain scores in disap, kill, polpris, tort
++ When PTS scores change which CIRIGHTS score change drove the change?
++ Underpin all with context from the actual country reports
+
+<br>
+
+SLIDES x 3: Examples (in level of difficulty of analysis)
+
+
+
+---
+
+class: middle, slideblue
+
+.center[.size35[**Tracking variables across time**]]
+
+```{r, fig.retina=3, fig.asp=0.618, fig.align='center', out.width = '80%', fig.width=7}
+## line plot physint across time
+d |>
+  ggplot(aes(x = Year, y = physint)) +
+  geom_line() +
+  ggthemes::theme_clean() +
+  labs(x = "", y = "Physical Integrity Rights Index",
+       title = "Physical Integrity Rights in Afghanistan (2007-2019)") +
+  scale_y_continuous(limits = c(0,8)) +
+  scale_x_continuous(breaks = seq(2007, 2019, 3))
+```
+
+
+
+---
+
+class: middle, slideblue
+
+.center[.size35[**Tracking variables across time**]]
+
+```{r, fig.retina=3, fig.asp=0.618, fig.align='center', out.width = '80%', fig.width=7}
+## bar plot PTS_S
+d |>
+  mutate(
+    PTS_S_char = as.character(PTS_S),
+    PTS_S2 = factor(PTS_S_char, levels = c("1", "2", "3", "4", "5"))
+  ) |> 
+  ggplot(aes(x = PTS_S2)) +
+  geom_bar() +
+  ggthemes::theme_clean() +
+  labs(x = "", y = "Physical Integrity Rights Index",
+       title = "Physical Integrity Rights in Afghanistan (2007-2019)") +
+  scale_x_discrete(limits = c("1", "2", "3", "4", "5")) +
+  scale_y_continuous(breaks = seq(0, 10, 2))
+```
+
+
+
+---
+
+class: middle, slideblue
+
+.center[.size35[**What proportion of the years saw bad scores in the CIRIGHTS sub-measures?**]]
+
+```{r, fig.retina=3, fig.asp=0.618, fig.align='center', out.width = '80%', fig.width=7}
+d |>
+  pivot_longer(cols = disap:tort, names_to = "CIRIGHTS", values_to = "Values") |>
+  group_by(CIRIGHTS) |>
+  summarize(
+    None = sum(Values == 2, na.rm = TRUE)/n(),
+    Occasionally = sum(Values == 1, na.rm = TRUE)/n(),
+    Frequently = sum(Values == 0, na.rm = TRUE)/n()
+  ) |>
+  pivot_longer(cols = None:Frequently, names_to = "Amount", values_to = "Values") |>
+  mutate(
+    Amount = factor(Amount, levels = c("None", "Occasionally", "Frequently"))
+  ) |>
+  ggplot(aes(x = CIRIGHTS, y = Values, fill = Amount)) +
+  geom_col(position = "dodge") +
+  scale_y_continuous(labels = scales::percent_format()) +
+  labs(x = "", y = "Proportion of Years", title = "Afghanistan CIRIGHTS Scores (2007-2019)") +
+  #guides(fill = guide_legend(reverse = TRUE)) +
+  guides(fill = "none") +
+  scale_fill_brewer(type = "seq", palette = 7) +
+  theme_bw() +
+  annotate("text", x = .68, y = .48, label = "None", srt = 90, hjust = 0) + # y = .02
+  annotate("text", x = 1, y = .33, label = "Occasional", srt = 90, hjust = 0) + 
+  annotate("text", x = 1.3, y = .1, label = "Frequent", srt = 90, hjust = 0) +
+  scale_x_discrete(labels = c("Disappearance", "Extrajudicial\nKillings", "Political\nPrisoners", "Torture"))
+```
+
+
+
+
+
