@@ -83,28 +83,29 @@ Use all of the data sources from last week to write a report on **one country** 
 
 ---
 
-background-image: url('libs/Images/background-blue_cubes_v2.png')
+background-image: url('libs/Images/background-swirls.jpg')
 background-size: 100%
 background-position: center
-class: middle, inverse
+class: middle, center
 
 .size70[**For Today**]
 
 .size45[
 
-For each of the conclusions you have identified in the data, find a news story you can use to illustrate it
+For each of your chosen conclusions:
 
-Be ready to present each conclusion and the current events evidence you found
+1. Make the visualization you will need (e.g. table, line plot or bar plot), and
 
+2. Find a news story or relevant anecdote from the source reports to support / illustrate it.
 ]
 
 ???
 
-### Everybody have their current events supplementary evidence?
+### Everybody have their visualization AND current events supplementary evidence?
 
 <br>
 
-Ok, back into groups of three! 
+Groups of three! 
 
 Share what you brought and get feedback so you can start writing!
 
