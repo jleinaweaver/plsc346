@@ -52,7 +52,7 @@ Explore the Polity5 Project
 
 ### Prep for Class
 1. Prep email with link to Google Doc to claim cases for Wednesday
-- 
+- https://docs.google.com/document/d/1PYAu5qFjaMK9Nw3V9dn1_8XH8OLXPho3Ohh-Ay3YRxI/edit?usp=sharing
 
 <br>
 
@@ -71,6 +71,12 @@ class: middle, center, inverse
 
 .size60[**What explains the variation in how and why states use violence against their citizens?**]
 
+???
+
+In this section of the course we've begun building out the tools we need to answer this question.
+
+--
+
 <br>
 
 .size45[
@@ -84,13 +90,13 @@ We NEED the state to use violence (Olson)
 
 ???
 
-In this secton of the course we've begun building out the tools we need to answer this question.
+<br>
 
-Last week we examined two theoretical frameworks that each aimed to help us understand the relationship between "the state" and "violence."
+#### Last week 
 
-### What stuck with you from last week?
+We examined two theoretical frameworks that each aimed to help us understand the relationship between "the state" and "violence."
 
-#### - Anything useful?
+### What stuck with you from last week? Important elements for how you prefer to model political violence by states?
 
 <br>
 
@@ -151,9 +157,9 @@ class: middle, slideblue
 
 #### - Isn't each row of their data named for a country anyway?
 
-(1. It avoids the problem of having to settle disputes over recognized vs unrecognized states.)
+1. (It avoids the problem of having to settle disputes over recognized vs unrecognized states.)
 
-(2. It makes coding easier in cases with disputed authority/fragmentation. Focus on a specific pattern of authority)
+2. (It makes coding easier in cases with disputed authority/fragmentation. Focus on a specific pattern of authority)
 
 
 *Notes*
@@ -193,17 +199,17 @@ knitr::include_graphics("libs/Images/06_1-polity5.png")
 
 ???
 
-Ok, hopefully this will all get clearer as we dig into the regime type classifications.
+Ok, this will all get clearer as we dig into the regime type classifications.
+
+<br>
 
 The first paragraph under each subsection (democracy and autocracy) defines the two regime types.
 
-Everybody read these so we can discuss them.
+- Everybody read these so we can discuss them.
 
-Don't worry about the component measures yet. 
+- Don't worry about the component measures yet. 
 
-### What are the pros and cons of defining democracy and dictatorship these ways?
-
-#### - Anything important you would argue is missing? 
+### What are the pros and cons of defining democracy and dictatorship these ways? Anything important you would argue is missing? 
 
 *DISCUSS*
 
@@ -248,11 +254,10 @@ knitr::include_graphics("libs/Images/06_1-autoc.png")
 
 Now let's talk about the component measures (p20-29).
 
-These two sets of coding rules represent the operationalizations for each concept.
+- These two sets of coding rules represent the operationalizations for each concept.
 
 ### Think back to week 2 and remind me, what does operationalization refer to?
-
-("...selecting observable phenomena to represent abstract concepts" (Brians et al 2011, 89).)
+- ("...selecting observable phenomena to represent abstract concepts" (Brians et al 2011, 89).)
 
 <br>
 
@@ -266,13 +271,42 @@ Don't worry about the levels yet, just the component measures themselves.
 
 *DISCUSS*
 
+
+
+
+---
+
+class: middle, slideblue
+
+.pull-left[
+.size70[.center[**Democ**]]
+
 <br>
+
+```{r, out.width='100%', fig.align='center'}
+knitr::include_graphics("libs/Images/06_1-Democ.png")
+```
+]
+
+.pull-right[
+.size70[.center[**Autoc**]]
+
+<br>
+
+```{r, out.width='100%', fig.align='center'}
+knitr::include_graphics("libs/Images/06_1-autoc.png")
+```
+]
+
+???
 
 After operationalization comes instrumentation.
 
 ### Think back to week 2 and remind me, what does instrumentation refer to?
 
-(Convert your operationalization (definition) into a series of steps you can use to measure the concept in question)
+- (Convert your operationalization (definition) into a series of steps you can use to measure the concept in question)
+
+<br>
 
 PAIRS: Now examine the levels under each variable.
 
@@ -299,7 +333,7 @@ background-position: center
 
 As I noted before, the polity score (polity2 specifically) is probably the most used measure of regime type in the academic literature.
 
-It is calculated by subtracting the Autoc score from the Democ score for each state in each year.
+- It is calculated by subtracting the Autoc score from the Democ score for each state in each year.
 
 ### How are we doing, everybody following the logic of their approach here?
 
@@ -329,15 +363,19 @@ In English...
 
 The "polity score" only exists because other researchers kept taking this data and making their own.
 
-HOWEVER, these researchers strongly argue that autocracy and democracy are NOT the opposite ends of a linear dimension.
+- HOWEVER, these researchers strongly argue that autocracy and democracy are NOT the opposite ends of a linear dimension.
 
-They cover overlapping institutional designs especially in the middle of the polity2 scale.
+- They cover overlapping institutional designs especially in the middle of the polity2 scale.
 
-Combining AUTOC and DEMOC creates a muddled mess in the middle values of the Polity score.
+<br>
+
+**BOTTOM LINE:** Combining AUTOC and DEMOC creates a muddled mess in the middle values of the Polity score.
 
 ### Does this make sense?
 
-#### - Are they convincing you to use autoc and democ instead of polity? Why or why not?
+<br>
+
+### Are they convincing you to use Autoc and Democ instead of Polity? Why or why not?
 
 <br>
 
@@ -357,9 +395,11 @@ background-position: center
 
 Alright, let's examine the US experience with these measures and see what we can learn.
 
-Everybody filter the data to focus on the US scores and let's start with just the big, over-arching number: polity2
+- Everybody filter the data to focus on the US scores and let's start with just the big, over-arching number: polity2
 
-Note: Polity2 recodes the regular polity score to help smooth out bumps due to civil wars and data problems.
+- Note: Polity2 recodes the regular polity score to help smooth out bumps due to civil wars and data problems.
+
+<br>
 
 Talk to me about JUST our Polity2 score across time.
 
@@ -414,7 +454,22 @@ This example helps highlight the problem in polity ignoring civil liberties.
 
 #### - Why doesn't that hurt our democracy score pre-1964?
 
-<br>
+
+
+---
+
+```{r, fig.retina=3, fig.align='center', out.width='97%', fig.asp=0.618, fig.width=6}
+## Visualize polity
+ggplot(d_usa, aes(x = year, y = polity2)) +
+  geom_line() +
+  theme_bw() +
+  labs(x = "", y = "Polity Scores", title = "The United States") +
+  scale_x_continuous(breaks = seq(1780, 2020, 20)) +
+  scale_y_continuous(breaks = 0:10) +
+  geom_hline(yintercept = 7, linetype = "dashed", color = "red")
+```
+
+???
 
 ### All that said, how do we feel about this coding saying we are not currently a democracy?
 
@@ -422,19 +477,10 @@ This example helps highlight the problem in polity ignoring civil liberties.
 
 <br>
 
-### If you had to make an argument using this data, what period would you say America was a democracy?
+### If you were designing your own measure of regime type, what period would you classify America as a democracy?
 
 *DISCUSS*
 
-<br>
-
-Ok, let's go deeper one level.
-
-Now focus on the separate autoc and democ scores for the us across time.
-
-### Does this give us a different or better understanding of the American experience over time? WHY OR WHY NOT?
-
-(SLIDE)
 
 
 
@@ -465,17 +511,19 @@ d_usa |>
 
 ???
 
-### Does this give us a different or better understanding of the American experience over time? Why or why not?
+Ok, let's go deeper one level.
 
-+ Interesting that we do not register almost at all on the autoc index across time
+### Does focusing on the separate indices give us a better understanding of the American experience over time? WHY OR WHY NOT?
 
-+ Per Polity, ours is a story of democratic consolidation and retrenchment over time.
++ (Interesting that we do not register almost at all on the autoc index across time)
+
++ (Per Polity, ours is a story of democratic consolidation and retrenchment over time.)
 
 <br>
 
 ### Based on this data, how would you describe America as a democracy across our history?
 
-(A struggling one, no?)
++ (A struggling one, no?)
 
 <br>
 
@@ -579,7 +627,7 @@ Let's now get crazy!
 
 Redo the exercise but for ten years from now.
 
-### Where will the us be on these measures in 2031?
+### Where will the US be on these measures in 2031?
 
 <br>
 
@@ -604,6 +652,6 @@ Bring to class a **real-world case** that provides an example of an **autocracy*
 
 Let the polity scores guide you in choosing case studies this week. 
 
-For Wednesday use the autoc index and Friday the democ
+For Wednesday use the Autoc index
 
 *Send email link*

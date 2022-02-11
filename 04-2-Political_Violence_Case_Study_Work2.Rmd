@@ -29,10 +29,6 @@ knitr::opts_chunk$set(echo = FALSE,
                       warning = FALSE,
                       comment = NA)
 
-# Load packages
-library(tidyverse)
-library(readxl)
-
 # PTS: Load, filter and select variables
 pts <- read_excel("../../Data/PTS/PTS-2020.xlsx", na = "NA") |>
   filter(Country == "Afghanistan", Year > 2006) |>
