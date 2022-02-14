@@ -103,7 +103,7 @@ State governments using violence against their citizens
 
 Today marks our shift to the second section of the course which focuses on how and why state governments use violence against their citizens.
 
-This week we're going to explore three theoretical perspectives that each try to help us answer this question.
+This week we're going to explore two theoretical perspectives that each try to help us answer this question.
 
 
 
@@ -128,9 +128,11 @@ For today I had you read an excerpt from a speech / essay by German sociologist 
 
 <br>
 
-### Based on the reading, how do you think max weber would respond to this question? 
+### Based on the reading, how do you think Max Weber would respond to this question? 
 
-### What is the big conclusion of the small excerpt i assigned you to read today?
+<br>
+
+### What is the big conclusion of the small excerpt I assigned you to read today?
 
 
 
@@ -148,9 +150,7 @@ class: middle, slidered
 
 It's not always so clean, but let's assume for the moment section 23 is the conclusion.
 
-### What does this say in english?
-
-#### - Simplify this down for me.
+### What does this say in English? Simplify this down for me.
 
 (SLIDE)
 
@@ -169,28 +169,197 @@ The state IS violence
 
 ???
 
-According to Weber, violence is not simply a tool used by political leaders in goal-seeking.
+According to Weber, political violence is not just a tool used by political leaders in goal-seeking, it is how we define the "state" itself.
 
-We cannot define the state in the absence of violence.
-
-This is a HUGE conclusion and one that, if we accept it as our model of statehood and politics, would likely lead us to some deeply problematic and possibly revolutionary places.
+This is a HUGE conclusion and we need to unpack it in order to evaluate if it is convincing or not.
 
 <br>
 
-In order to be useful we need to make sure we understand the whole model.
+However, this speech by Weber isn't just an argument, it is a scientific model.
+
+Quick aside back to your intro days!
+
+
+
+---
+
+background-image: url('libs/Images/05-1-maps.jpg')
+background-size: 46%
+background-position: center
+class: middle, slidered
+
+???
+
+As you all know, maps are incredibly useful devices for finding things!
+
+- Highway map to drive cross-country
+
+- Weather map for planning your week
+
+- Topographical map for going on a hike
+
+- Bottom right is some kind of finder for an insane regional scavenger hunt maybe?
+
+<br>
+
+SLIDE: However, ...
+
+
+
+
+
+---
+
+background-image: url('libs/Images/05-1-maps.jpg')
+background-size: 46%
+background-position: right
+class: middle, slidered
+
+.pull-left[
+
+<br>
+<br>
+
+.size40[**Maps are:**]
+
+.size30[
++ Neither true nor false
+
++ Limited in their accuracy
+
++ Partial representations
+
++ Useful for only some uses
+
++ A reflection of the interests of the designer
+
+]]
+
+???
+
+**Read slide and explain each**
+
+<br>
+
+The key is, none of these "problems" with a given map matter.
+
+The highway map would be awful for planning a day hike, but you already know that.
+
+- You don't say, the highway map makes a bad hiking tool therefore, the highway map is always bad!
+
+Each map is purpose built and focuses only on a small set of important elements.
+
+- If it tried to include everything it wouldn't be useful!
+
+<br>
+
+SLIDE: And...
+
+
+
+---
+
+class: middle, slidered
+
+.pull-left[
+
+<br>
+<br>
+
+.size40[**Scientific models are:**]
+
+.size30[
++ Neither true nor false
+
++ Limited in their accuracy
+
++ Partial representations
+
++ Useful for only some uses
+
++ A reflection of the interests of the designer
+
+]]
+
+.pull-right[
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+```{r}
+knitr::include_graphics('libs/Images/05-1-weber_conclusion.png')
+```
+]
+
+???
+
+The key here is, scientific models are just like maps.
+
+<br>
+
+This speech by Weber represents our first model of state violence.
+
+- It represents a map of the world designed to explain how and why the state would use violence against its own citizens.
+
+- Like any map it includes some features of the world and excludes ALL the rest.
+
+    - e.g. the actors, institutions and interactions in the system
+
+### Does that idea make sense? Does it help to think about models as maps?
+
+<br>
+
+So, here's the deal: **ALL** maps and models are **WRONG**, but some of them are useful!
+
+- Our job is to find the useful models and incorporate them into our understanding of the world.
+
+- A useful model must be 1) logical, and 2) it must make accurate predictions about the world.
+
+<br>
+
+SLIDE: To determine either of those things we first need to identify the key elements in the model!
+
+
+
+
+
+---
+
+background-image: url('libs/Images/background-desert_rock.jpg')
+background-size: 100%
+background-position: center
+class: middle, center
+
+.size70[**Weber (1946)**
+
+The state IS violence
+]
+
+.size60[**Identify the assumptions in this model of political violence**]
+
+???
+
+I want you to identify the assumptions in Weber's model of political violence.
 
 - What are the key premises, assumptions or mechanisms underpinning this conclusion?
 
-Everybody take 10 minutes on your own to diagram this argument.
-- Premises leading to this conclusion.
+- In other words, if this is a map of state violence, what are its main elements?
 
 <br>
 
-Small groups (3), five minutes to consolidate to one diagram between you.
+Everybody take some time on your own to diagram this argument (8 minutes?).
 
 <br>
 
-*ON BOARD*
+Small groups (3), consolidate to one diagram between you (10 minutes?).
+
+<br>
+
+Collect assumptions *ON BOARD* and discuss
 
 #### NOTES 2019-09-09
 - The state is the leader (or a political association supporting that leader)
@@ -220,7 +389,7 @@ Let's refocus the thrust of this argument towards answering our question.
 
 (May 4, 1970: Kent State Shootings)
 
-- Kent State students in Ohion holding protest against the Vietnam war (and bombings of Cambodia and presence of soldiers on campus)
+- Kent State students in Ohio holding protest against the Vietnam war (and bombings of Cambodia and presence of soldiers on campus)
 
 - Twenty-eight National Guard soldiers fired approximately 67 rounds over a period of 13 seconds
 
