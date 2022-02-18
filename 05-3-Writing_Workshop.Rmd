@@ -234,7 +234,7 @@ class: middle
 
 .size50[**Political Violence Case Study**]
 
-.size35[(Due Feb 20)
+.size35[(Due Feb 18)
 
 Use all of the data sources from last week to write a report on **one country** that:
 
