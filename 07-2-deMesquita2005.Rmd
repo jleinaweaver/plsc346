@@ -551,7 +551,7 @@ class: middle
 .size60[**For Friday**]
 
 .size40[
-Bring to class a recent example of an individual, group, state or group of states taking a specific action to stop a democracy from engaging in political violence.
+Bring to class a recent example of an individual, group, state or group of states taking a specific action to stop .textblue[**a democracy**] from engaging in political violence.
 
 Be ready to explain what happened, the strategy being employed and some idea of how effective it appears to have been.
 

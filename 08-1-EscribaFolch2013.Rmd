@@ -72,13 +72,26 @@ class: middle, center, inverse
 
 Remember, our big goal for this section of the class is to answer this question.
 
-What explains the variation in how and why states use violence against their citizens?
+- What explains the variation in how and why states use violence against their citizens?
 
 This week we'll examine two papers that focus on political violence used by autocracies.
 
 
 
---
+---
+
+background-image: url('libs/Images/08-1-House_Framing_v2.png')
+background-size: 100%
+background-position: center
+class: top, center, inverse
+
+.size60[**What explains the variation in how and why states use violence against their citizens?**]
+
+<br>
+
+<br>
+
+<br>
 
 <br>
 
@@ -88,29 +101,37 @@ This week we'll examine two papers that focus on political violence used by auto
 
 ???
 
-<br>
-
 Let's start by talking about the framing of the article.
 
-### How does the framing of this project help us answer our question?
+### Focus on how Escriba-Folch sets up the paper and tell me, what do we learn about his key assumptions from the framing of the problem?
 
-#### + Who gets an active role and who doesn't?
+*DISCUSS* 
 
-#### + What are the relevant institutions in this story?
+(save diagramming the model for Q2)
 
-#### + What are the interactions that matter and what are ignored?
+### What is the question and how is it worded?
+### What are the key concepts and how are they defined?
+### What literature are they connected to?
 
-*Force this exploration*
 
-<br>
+---
 
-So, here's a weird question.
+background-image: url('libs/Images/08-1-Article_Header.png')
+background-size: 88%
+background-position: center
+class: middle
+
+???
+
+So, here's a weird BUT IMPORTANT question.
 
 ### Do we have any problem with questions like this being researched?
 
 #### - Doesn't this promise to offer advice to bad people who do bad things in order to stay in power?
 
-#### - Are there any questions like this that should be off limits? Why or why not?
+<br>
+
+### In terms of studying political violence, do you believe there are any questions that should be off-limits? Why or why not?
 
 *Let this discussion go a bit*
 
@@ -126,48 +147,89 @@ class: middle, center, slideblue
 
 ???
 
-Before we discuss the model, let's make sure we're clear on the state of knowledge before this paper was written.
+Let's keep exploring the framing of the paper. 
+- This chunk of text is Escriba-Folch defining "repression."
 
-This chunk of text is Escriba-Folch defining repression.
-
-### What does this mean in English?
-
-#### - In other words, how do i know repression when i see it?
+### What does this mean in English? In other words, how do I know "repression" when I see it?
 
 <br>
 
 Appears to specify three things we should call repression.
 
 ### What is meant by "first amendment-type rights"?
-
-(Free speech and the right to organize?)
+- (Free speech and the right to organize?)
 
 ### "Due process in the enforcement and adjudication of law"?
-
-(Rule of law)
+- (Rule of law)
 
 ### "Personal integrity and security"?
-
-(Personal safety?)
-
-<br>
-
-### Is this consistent with our definitions of political violence?
-
-#### - Any concerns using this definition going forward?
+- (Personal safety?)
 
 <br>
 
-### Did anybody note some of the key findings from the literature according to Escriba-folch?
+### Compare and contrast this with our definitions of political violence so far in this class. Similarities and differences?
 
-#### - Anything stand out?
+
+
+---
+
+background-image: url('libs/Images/08-1-open_book.jpg')
+background-size: 100%
+background-position: center
+class: center, top, inverse
+
+.size50[**Per the literature, what was the state of the art for explaining state repression prior to this article?**]
+
+???
+
+### What were the key findings from the prior literature that aimed to explain the variation in state repression according to Escriba-Folch?
 
 (p545)
 
 - More repression: low per capita incomes, larger populations, and undergoing violent civil or interstate conflicts
+
 - Null: Human rights treaties not having an effect
+
 - Less repression: More trade, Democratic systems
+
 - No consistent relationship between dissent and repression has been found.
+
+<br>
+
+### Any surprises here?
+
+
+---
+
+background-image: url('libs/Images/background-red.png')
+background-size: 100%
+background-position: center
+class: middle, center, inverse
+
+.size60[**What explains the variation in how and why states use violence against their citizens?**]
+
+<br>
+
+<br>
+
+.size45[**Q2. How does the model of politics presented in this paper help us answer our big question?**]
+
+???
+
+Second question requires us to diagram the model at the heart of this paper.
+- Remember, scientific models are like maps!
+- All maps/models are "wrong" but some are useful!
+
+<br>
+
+*ON BOARD*: Interests, Institutions and Interactions
+
+Take five minutes on your own to identify the key Interests, Institutions and Interactions in this model (p546-549).
+
+<br>
+
+Pair up! Compare notes with the person next to you!
+
 
 
 
@@ -188,26 +250,24 @@ class: middle, center, inverse
 
 ???
 
-Let's now work on diagramming the model of violence in this paper.
+**Interests**
+- Dictators want to stay in power (losing power = exile, being brought to trial, or being killed)
+- Citizens want ?
 
-Take five minutes on your own to identify the key premises in this model.
+**Institutions**
+- Dictators are unconstrained by domestic law re tools of repression (?)
+- Two types of threat to the dictator:
+    1. (Irregular / violent threats (coups and revolts))
+    2. (Regular (e.g. nonviolent) threats)
+- Two types of repression available to the dictator: Violent Repression & Rights Restrictions
 
-<br>
-
-Compare notes with the people near you.
-
-<br>
-
-* ON BOARD *
-
-- Dictators are instrumentally rational!
-- Dictators want to stay in power
-  - losing it may entail unpalatable consequences such as exile, being brought to trial, or being killed
-- Dictators use repression because they estimate that its expected benefits exceed the costs
-- There are two distinct types of repression available as tools for dictators
-  - Violence vs Rights Restrictions
-- There are at least two distinct types of threat faced by dictators
+**Interactions**
 - Dictators try to match their type of repression to the type of threat they face.)
+- There are costs to using repression to stay in power
+
+(SLIDE: Exploring splitting repression into two types)
+
+(SLIDE: Exploring the two types of threat)
 
 
 
@@ -219,36 +279,28 @@ background-position: center
 
 ???
 
-### Ok, let's evaluate the choice to split repression into two separate catagories.
+Let's evaluate this choice to split repression into two separate catagories.
 
-#### - Why do this?
+### What are the two types of repression in the article?
+1. (Violent repression entails physical abuses, torture, imprisonment, killings, and disappearances.)
+2. (Restrictions on civil rights)
 
-#### - What is gained and what is lost by this choice?
+### Why do this? What is gained and what is lost by this choice?
 
 *Let this conversation go*
 
 <br>
 
-### What are the two types?
-
-+ (A. Violent repression entails physical abuses, torture, imprisonment, killings, and disappearances.)
-+ (B. Restrictions on civil rights)
-
-### What is the benefit of splitting this category in two?
-(Each tool offers different advantages and costs)
-
-Violent repression
-
-- Makes it more costly to challenge the leader, and
-- Directly eliminates source of threat
-
-Restricting rights
-
-- Prevents coordination
+#### Benefits
+- (Allows us to acknowledge that each tool offers different advantages and costs)
+- Violent repression
+    - Makes it more costly to challenge the leader, and
+    - Directly eliminates source of threat
+- Restricting rights
+    - Prevents coordination
 
 ### Any drawbacks to this choice?
-
-(Weakens reliability of measure, assumes we can easily tell the difference as regards "true" motivations.)
+- (Weakens reliability of measure, assumes we can easily tell the difference as regards "true" motivations.)
 
 
 
@@ -260,33 +312,28 @@ background-position: center
 
 ???
 
-### Ok, let's evaluate the choice to distinguish between different types of threat.
+Ok, let's now evaluate the choice to distinguish between different types of threat.
 
-#### - Why do this?
+### What are the two types of threat?
+1. (Irregular / violent threats (coups and revolts))
+2. (Regular (e.g. nonviolent) threats)
 
-#### - What is gained and what is lost by this choice?
+### Why do this? What is gained and what is lost by this choice?
 
 *Let this conversation go*
 
 <br>
 
-### Why is "losing power" a better measure of threat?
-
-Tailor your repression to the type of threat.
+- Tailor your repression to the type of threat.
 
 1. Irregular / violent threats (coups and revolts)
-
-- Violent repression may crush dissent BUT i. likely to inspire more escalation / radicalization of other groups; ii. signals weakness and invites a coup from government supporters afraid of damaging their own legitimacy
-
-- Restrictions (e.g. nonviolent repression) better suited to preventing the coordination required by groups to further irregular exit. Prevent unrest from happening in the first place.
-
-**MAKE SURE THIS IDEA IS CLEAR: WHAT IS THE COLLECTIVE ACTION PROBLEM WHEN FIGHTING AGAINST A DICTATOR?**
+    - Violent repression may crush dissent BUT i. likely to inspire more escalation / radicalization of other groups; ii. signals weakness and invites a coup from government supporters afraid of damaging their own legitimacy
+    - Restrictions (e.g. nonviolent repression) better suited to preventing the coordination required by groups to further irregular exit. Prevent unrest from happening in the first place.
+    - **MAKE SURE THIS IDEA IS CLEAR: WHAT IS THE COLLECTIVE ACTION PROBLEM WHEN FIGHTING AGAINST A DICTATOR?**
 
 2. Regular (e.g. nonviolent) threats
-
-- Typically arise from within the regime so restrictions on freedoms as barrier to collective action already overcome.
-
-- Only option is to "extend terror to eliminate challengers and their power base" (548).
+    - Typically arise from within the regime so restrictions on freedoms as barrier to collective action already overcome.
+    - Only option is to "extend terror to eliminate challengers and their power base" (548).
 
 
 
@@ -310,38 +357,24 @@ class: middle, center, inverse
 Our third question focuses on the analyses in the paper.
 
 ### What are the key findings in the paper?
-
-<br>
-
-(p551: Repression works!)
-
+- (p551: Repression works!)
 - First, the use of increased political terror is not significantly effective in preventing violent or irregular exits (models 1 and 3). ... In contrast, confirming hypothesis 1, restrictions on civil liberties are effective in making violent and irregular exits much less likely, as Figures 2a and 2c illustrate.
-
 - Second, both types of repression (terror and restrictions) significantly decrease the risks of a dictator being replaced through nonviolent or regular means, which confirms hypotheses 2 and 4. Yet, using political terror is more effective than using restrictions on civil liberties.
 
 <br>
 
-### How confident are we in the results?
-
-#### - Things done well?
-
-#### - Things that add uncertainty?
-
-*Let this discussion go*
+### How confident are we in the results? 
+#### - What does the paper do well and what adds uncertainty?
+- *Let this discussion go*
 
 <br>
 
 ### Important: sample used?
-
-(data on authoritarian leaders in 94 countries are used)
-
-<br>
+- (data on authoritarian leaders in 94 countries are used)
 
 ### Important: operationalizations employed?
-
-+ (exit types as dummy variables)
-
-+ (Repression: 1. Political Terror Scale (PTS), 2. Freedom House’s civil liberties index)
+- (exit types as dummy variables)
+- (Repression: 1. Political Terror Scale (PTS), 2. Freedom House’s civil liberties index)
 
 
 
@@ -363,8 +396,9 @@ class: middle, center, inverse
 
 ### What advice would you offer to policy-makers hoping to reduce political repression by dictators?
 
-(- Discourage protest movements?)
-(- Don't provide aid to pro-democracy groups?)
+- (Discourage protest movements?)
+
+- (Don't provide aid to pro-democracy groups?)
 
 <br>
 

@@ -51,7 +51,10 @@ Bring to class a **real-world case** that provides an example of an **autocracy*
 ???
 
 ### Prep for Class
-1. Prep email with link to Google SHEET (spreadsheet) to claim cases for Friday
+1. Review submitted cases for today
+    - https://docs.google.com/document/d/1PYAu5qFjaMK9Nw3V9dn1_8XH8OLXPho3Ohh-Ay3YRxI/edit?usp=sharing
+
+2. Prep email with link to Google SHEET (spreadsheet) to claim cases for Friday
     - Use a sheet so we can turn it into the QCA table
     - https://docs.google.com/spreadsheets/d/1XKweYSu3OnjnAPDEFFoXsJlKom311SbSL7hflzAB8YY/edit?usp=sharing
 

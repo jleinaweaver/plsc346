@@ -49,9 +49,8 @@ Review our cases: How have we tried to stop autocracies from committing violence
 ???
 
 ### Prep for Class
-1. ...
-
-<br>
+1. Use the same case sheet from last week for Monday's citations
+    - https://docs.google.com/document/d/1wWfBCAmcSC_mS87kNsIj4MUJi0EuOvTH-eAwhoAc4jE/edit?usp=sharing
 
 
 
@@ -103,8 +102,6 @@ background-position: center
 class: middle
 
 .size60[**For Today**]
-
-<br>
 
 .size40[
 Bring to class a recent example of an individual, group, state or group of states taking a specific action to stop an autocracy from engaging in political violence.
