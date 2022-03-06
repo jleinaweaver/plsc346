@@ -92,7 +92,10 @@ Today we'll explore the global norm of universal jurisdiction (UJ) as a "strateg
 
 ---
 
-class: middle, slideblue
+background-image: url('libs/Images/background-green_blue_swirl_side.jpg')
+background-size: 100%
+background-position: center
+class: middle
 
 .size60[.center[**Universal Jurisdiction**]]
 
@@ -114,35 +117,63 @@ We need to split the class into two groups to cover the two sides of this argume
 
 <br>
 
-Please keep in mind, the goal today is NOT TO WIN the argument.
+Please keep in mind, the goal today is **NOT TO WIN** the argument.
 
 The goal is to make sure we fully understand the trade-offs in embracing or rejecting this policy option.
 
-In 10 minutes I want each group to put their strongest case leading to this conclusion on the board.
+In 15 minutes I want each group to put their strongest case leading to this conclusion on the board.
 
-- Don't stress about this being perfect in its first draft, we're going to get feedback and go back to revise.
+### Questions?
+
+Get to work!
+
+
+
+
+---
+
+background-image: url('libs/Images/background-green_blue_swirl_side.jpg')
+background-size: 100%
+background-position: center
+class: middle
+
+.size65[.center[**Feedback and Revisions**]]
+
+.size55[
+- What is the strongest part of the argument?
+
+- What is the weakest part of the argument?
+]
+
+???
+
+In a moment I'll ask each group to present their argument diagram.
+
+Listening group, your job is to listen and the give them feedback.
+
+Help them identify the strongest and weakest parts of the diagram.
+- Which premises need to be clarified? 
+- Any holes in the logical flow?
 
 <br>
+
+*Present Argument 1*
+
+*Group 2, give them feedback*
+
+*Present Argument 2*
+
+*Group 1, give them feedback*
+
+<br>
+
+Groups, 10 minutes, take the feedback on board and now revise your argument on the board.
 
 *Present Each*
 
-Ok, groups take 5 minutes to prep feedback / counter-argument for the other group.
-
-Remember, the goal here is not to win, it is to make sure each argument fully engages with the trade-offs in embracing or rejecting UJ.
-
 <br>
 
-*Share Feedback*
-
-Groups, take the feedback on board and now work on revising your argument on the board.
-
-<br>
-
-*Present Each*
-
-<br>
-
-Ok class, where do we end up?
+Ok, bottom line, where do we end up?
 
 ### Under what specific conditions, do the trade-offs tip towards supporting the norm?
 
@@ -165,7 +196,9 @@ class: middle, center
 
 ???
 
-### Is anybody leaning towards writing a paper endorsing UJ? Why or why not?
+Hopefully our work today has helped you take a practice run at answering the question in paper 2.
+
+On Wednesday we'll repeat this exercise focused on R2P.
 
 
 

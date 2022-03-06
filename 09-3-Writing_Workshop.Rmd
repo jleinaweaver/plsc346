@@ -32,13 +32,15 @@ knitr::opts_chunk$set(echo = FALSE,
 
 class: slideblue
 
-.size70[**Today's Agenda**]
+.size80[**Today's Agenda**]
 
 <br>
 
-.size45[.center[
+.size55[.center[
 Writing Workshop
 ]]
+
+<br>
 
 <br>
 
