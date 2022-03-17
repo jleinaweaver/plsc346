@@ -51,7 +51,7 @@ Jaggar (2005): Can terrorism ever be morally permissible?
 ???
 
 ### Prep for Class
-1. Translate in class work defining terrorism onto the slides for today
+1. Translate in class work defining terrorism onto the slide for today (slide 3?)
 
 <br>
 
@@ -66,18 +66,14 @@ background-size: 100%
 background-position: center
 class: middle
 
-.size60[.center[**Terrorism**]]
+.size55[.center[**Terrorism**]]
 
-<br>
-
-## Define the Concept
 .size45[
-+ What does terrorism mean in the abstract?
-]
+1. **Define the Concept**
+    - What does terrorism mean in the abstract?
 
-## Operationalize the Concept
-.size45[
-+ What "observable phenomena" should represent it?
+2. **Operationalize the Concept**
+    - What "observable phenomena" should represent it?
 ]
 
 ???
@@ -99,7 +95,7 @@ background-size: 100%
 background-position: center
 class: middle
 
-.size60[.center[**The Concept of Terrorism (Tilly 2004)**]]
+.size55[.center[**The Concept of Terrorism (Tilly 2004)**]]
 
 <br>
 

@@ -32,12 +32,12 @@ knitr::opts_chunk$set(echo = FALSE,
 
 class: slideblue
 
-.size70[**Today's Agenda**]
+.size80[**Today's Agenda**]
 
 <br>
 
-.size50[.center[
-Continue to develop and refine our definition and operationalization of terrorism
+.size55[.center[
+Continue to develop and refine our operationalization of terrorism
 ]]
 
 <br>
@@ -51,17 +51,13 @@ Continue to develop and refine our definition and operationalization of terroris
 ???
 
 ### Prep for Class
-1. ...
-
-<br>
-
-**As students come in, put them in small groups of three**
+1. Focus most of today's work on the definitions, leave only a handful of minutes for the Dylann Roof discussion
 
 <br>
 
 On Monday we explored a variety of cases in an effort to bolster our intuitions about terrorism and to help us clarify the concept itself.
 
-Specifically we built a list of common characteristics and sub-groupings evident in those cases.
+- Specifically we built a list of common characteristics, identified sub-groupings and created a list of important questions.
 
 For today you read a short article by Charles Tilly who is one of the preeminent scholars studying terrorism today.
 
@@ -69,6 +65,11 @@ For today you read a short article by Charles Tilly who is one of the preeminent
 
 Tilly (2004) offers a lot of useful critical analysis of the exercise we are working through: Defining terrorism.
 
+<br>
+
+Everybody form groups of 3, create space between you and try to work with new people! 
+- Mix it up!
+
 
 
 ---
@@ -78,46 +79,54 @@ background-size: 100%
 background-position: center
 class: middle
 
-.size60[.center[**Terrorism**]]
+.size55[.center[**Terrorism**]]
 
-<br>
-
-## Define the Concept
 .size45[
-+ What does terrorism mean in the abstract?
-]
+1. **Define the Concept**
+    - What does terrorism mean in the abstract?
 
-## Operationalize the Concept
-.size45[
-+ What "observable phenomena" should represent it?
+2. **Operationalize the Concept**
+    - What "observable phenomena" should represent it?
 ]
 
 ???
 
-*Make small groups (3 per)**
-
 Groups you now have 20 minutes to use our case study work from Monday AND the Tilly (2004) argument to answer these two questions.
 
-### Is everybody clear on what i am asking for?
+### Is everybody clear on what I am asking for?
 
 Get to work!
 
 <br>
 
-PRESENT and DISCUSS each
-
-* Highlights ON BOARD: Definitions and Observable phenomena *
+*ON BOARD*: Definitions; Operationalizations
+- PRESENT and DISCUSS each
 
 <br>
+
+*Prior class definitional work*
+- (Maximize / Destabilize) use of (violence/harm/actions to cause fear) by non-state actor for (political/strategic/ideological/cause fear/change SQ) purposes targeting specific (people/group/idea).
+
+
+
+
+---
+
+background-image: url('libs/Images/10-1-terrorism_word_cloud.jpg')
+background-size: 100%
+background-position: center
+class: middle
+
+???
 
 Let's talk about Tilly's take on this exercise (on p9).
 
 ### How does he feel about our effort to create a single, concise definition of terrorism?
+- ("No useful generalization covers all the different sorts of political interaction for which observers, analysts, and participants sometimes use the term terror, much less for terrorists and terrorism" (9).)
 
-("No useful generalization covers all the different sorts of political interaction for which observers, analysts, and participants sometimes use the term terror, much less for terrorists and terrorism" (9).)
+<br>
 
-### Is he right?
-#### - Why or why not?
+### Is he right? Why or why not?
 
 
 
@@ -129,7 +138,7 @@ background-size: 100%
 background-position: center
 class: middle
 
-.size60[.center[**The Concept of Terrorism (Tilly 2004)**]]
+.size55[.center[**The Concept of Terrorism (Tilly 2004)**]]
 
 <br>
 
@@ -152,8 +161,9 @@ class: middle
 <br>
 
 ### And according to Tilly, who are the three audiences of the terror signal?
-
-(The targets themselves, potential allies of the perpetrators, and third parties that might cooperate with one or the other.)
+1. (The targets themselves)
+2. (potential allies of the perpetrators, and)
+3. (third parties that might cooperate with one or the other.)
 
 
 

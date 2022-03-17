@@ -51,9 +51,51 @@ Writing Workshop
 ???
 
 ### Prep for Class
-1. ...
+1. Prep email with evidence link for Monday
+    - https://docs.google.com/document/d/1wKZRrm5JaZAAWbkC14iGfbs6syAMHnyZCEucqvco8Rg/edit?usp=sharing
 
 <br>
+
+
+
+
+---
+
+background-image: url('libs/Images/background-green_blue_swirl_side.jpg')
+background-size: 100%
+background-position: center
+class: middle, center
+
+.size60[**For Monday**]
+
+<br>
+
+.size50[
+Bring to class one specific piece of evidence you argue represents an act of terrorism. 
+
+Make sure you are familiar with the actors and environment involved.
+]
+
+???
+
+*Send class email*
+
+Next week we kick off the third section of our class.
+
+- What explains the variation in how and why non-state actors use violence against states and people?
+
+- Specifically, we'll focus on terrorism.
+
+<br>
+
+We'll start with case studies and concept definitions next week.
+
+- This means I need everyone to submit a real-world case to help us define terrorism on Monday.
+
+- No overlap, first come, first served.
+
+### Questions on the assignment?
+
 
 
 
