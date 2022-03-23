@@ -175,7 +175,15 @@ Groups, 10 minutes, take the feedback on board and now revise your argument on t
 
 *Present Each*
 
-<br>
+
+
+---
+
+background-image: url('libs/Images/09_1-UJ.jpg')
+background-size: 90%
+background-position: center
+
+???
 
 Ok, bottom line, where do we end up?
 
