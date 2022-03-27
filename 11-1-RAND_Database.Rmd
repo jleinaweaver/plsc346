@@ -68,6 +68,8 @@ Explore the RAND Database of Worldwide Terrorism Incidents
 
 <br>
 
+The data, codebook and an R script to access the RAND data are all on Moodle.
+
 
 
 ---
@@ -91,8 +93,17 @@ class: middle, slideblue
 
 This week we will explore three major research projects that have been created in order to help us measure terrorism.
 
-Decision-makers can't begin to make informed decisions without data on the scope and characteristics of the problem, so understanding the strengths and weaknesses of these projects is vital.
+<br>
 
+Decision-makers absolutely need good data on the scope and characteristics of the problem and projects like these have arisen to fill those gaps.
+
+<br>
+
+Our job this week is to explore these projects in order to both:
+
+- learn what they tell us about global terrorism, and 
+
+- evaluate the strengths and weaknesses of each project so we know how they can be used to answer real-world questions. 
 
 
 
@@ -118,15 +129,16 @@ class: middle, slideblue
 
 ???
 
-For each of these projects we are going to focus on answering these questions.
+For each of these projects we are going to focus on answering these four questions.
 
 <br>
 
-*Split Class into Small Groups*
+*Split Class into Small Groups (3-4)*
 
 Go sit with your group!
 
 (SLIDE)
+
 
 
 ---
@@ -137,23 +149,22 @@ class: middle, slideblue
 
 <br>
 
-.size35[
-1) Pros and cons of generalizing from this dataset?
-
-+ How are the concepts defined?
-
-+ What is the sample selection process?
-
-+ Are the key variables valid and reliable?
-  + Country, Perpetrator, Weapon, Injuries, Fatalities
-
+.size45[
+1) What are the pros and cons of using this as our primary database of terrorism?
+- Who is the RAND Corporation?
+- How do they define the key concepts?
+- How are they measuring terrorism?
 ]
 
 ???
 
-Ok, get ready to tell us the pros and cons of using this dataset to measure terrorism.
+Groups take 10 minutes to make two lists you can put on the board.
+- Pros vs cons
 
-*DISCUSS*
+Think about the project in broad strokes
+- Who is the RAND Corporation, how do they define the key concepts and how are they measuring terrorism?
+
+<br>
 
 (SLIDE: Who is the RAND Corp?)
 
@@ -223,16 +234,13 @@ class: middle, slideblue
 
 <br>
 
-.size35[
-1) Pros and cons of generalizing from this dataset?
-
-+ How are the concepts defined?
-
-+ What is the sample selection process?
-
-+ **Are the key variables valid and reliable?**
-  + Country, Perpetrator, Weapon, Injuries, Fatalities
-
+.size45[
+**Are the key variables valid and reliable?**
+- Country
+- Perpetrator
+- Weapon
+- Injuries
+- Fatalities
 ]
 
 ???
@@ -247,34 +255,27 @@ I note that it lists variables that, for some reason, are not included in the da
 
 ---
 
-class: middle, slideblue
+class: middle, center, slideblue
 
-.size50[.center[.content-box-grey[**Operationalizing Terrorism**]]]
+.size65[.content-box-grey[**Operationalizing Terrorism**]]
 
 <br>
 
-## Research Questions
-.size35[
-1. Pros and cons of generalizing from this dataset?
-
-2. **Is the damage caused by terrorism getting worse?**
-
-3. Where are the terrorism hot spots in the world?
-
-4. Are the characteristics of terrorism changing?
+.size60[
+2) Is the damage caused by terrorism getting worse over time?
 ]
 
 ???
 
 Groups, take a few minutes to review the data.
 
-Get ready to tell us if the damage caused by terrorism getting worse.
-
-Focus on injuries and fatalities across time.
+Answer this question for us focusing on injuries and fatalities across time.
 
 <br>
 
-*Report Back*
+### Report Back, what did you find?
+
+### How did you attack this task?
 
 (SLIDE)
 
@@ -314,21 +315,14 @@ d2 |>
 
 ---
 
-class: middle, slideblue
+class: middle, center, slideblue
 
-.size50[.center[.content-box-grey[**Operationalizing Terrorism**]]]
+.size50[.content-box-grey[**Operationalizing Terrorism**]]
 
 <br>
 
-## Research Questions
-.size35[
-1. Pros and cons of generalizing from this dataset?
-
-2. Is the damage caused by terrorism getting worse?
-
-3. **Where are the terrorism hot spots in the world?**
-
-4. Are the characteristics of terrorism changing?
+.size60[
+3) Where are the terrorism hot spots in the world?
 ]
 
 ???
@@ -339,7 +333,11 @@ Analyze the data and identify for us the global hotspots for terrorism!
 
 <br>
 
-*Report Back*
+### Report Back, what did you find?
+
+### How did you attack this task?
+
+<br>
 
 (SLIDE: map count of attacks overall)
 
@@ -401,7 +399,7 @@ Map represents a count of terror attacks overall.
 
 <br>
 
-### What do the lighter countries in africa and central asia represent? Lack of reliable info or places with fewer attacks?
+### What do the lighter countries in Africa and Central Asia represent? Lack of reliable info or places with fewer attacks?
 
 #### - Does thinking about the sample selection procedures (and what we don't know about them) at rand help us answer this question?
 
@@ -471,7 +469,7 @@ Rather than a count of attacks, here we see a sum of the fatalities.
 
 <br>
 
-### Are we more confident using the rand database to count terrorist attacks or fatalities due to attacks? Why?
+### Are we more confident using the Rand Database to count terrorist attacks or fatalities due to attacks? Why?
 
 
 
@@ -483,15 +481,11 @@ class: middle, slideblue
 
 <br>
 
-## Research Questions
-.size35[
-1. Pros and cons of generalizing from this dataset?
+.size60[
+4) Are the characteristics of terrorism changing?
 
-2. Is the damage caused by terrorism getting worse?
-
-3. Where are the terrorism hot spots in the world?
-
-4. **Are the characteristics of terrorism changing?**
+- Who is doing it?
+- What weapons are they using?
 ]
 
 ???

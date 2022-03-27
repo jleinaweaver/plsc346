@@ -34,7 +34,7 @@ https://www.start.umd.edu/gtd/
 ???
 
 ### Prep for Class
-1. ...
+1. Post data and an R script file on LMS
 
 &lt;br&gt;
 
@@ -42,11 +42,21 @@ Today we move to our second big project that aims to identify and measure terror
 
 The full GTD database is 100 MB with 135 variables measuring 201k observations.
 
-That's functionally impossible to manage easily in Excel (although trivial in R).
+- That's functionally impossible to manage easily in Excel
 
-However, the website offers some handy querying and visualization tools we'll explore today.
+- That's super easy in in R
+    - The data, codebook and an R script to access the RAND data are all on Moodle.
 
-**For the courageous I can also set you up to do this in R!**
+ALSO, the GTD website offers some handy querying and visualization tools we'll explore today.
+
+&lt;br&gt;
+
+
+
+Where to put:
++ Are the variables valid and reliable?
+  + nperps, nkill, nwound, propvalue, weaptype1_txt, suicide, attacktype1_txt, targettype1_txt
+
 
 
 
@@ -77,6 +87,8 @@ Just like on Monday I want us to evaluate this project using these four question
 
 *Split Class into Small Groups*
 
+Make sure you're working with new people!
+
 Go sit with your group!
 
 (SLIDE)
@@ -91,27 +103,33 @@ class: middle, slideblue
 
 &lt;br&gt;
 
-.size35[
-1) Pros and cons of generalizing from this dataset?
-
-+ How are the concepts defined?
-
-+ What is the sample selection process?
-
-+ Are the variables valid and reliable?
-  + nperps, nkill, nwound, propvalue, weaptype1_txt, suicide, attacktype1_txt, targettype1_txt
-
+.size45[
+1) What are the pros and cons of using this as our primary database of terrorism?
+- Who is the National Consortium for the Study of Terrorism and Responses to Terrorism?
+- How do they define the key concepts?
+- How are they measuring terrorism?
 ]
 
 ???
 
-Ok, get ready to tell us the pros and cons of using this dataset as our tool for identifying and measuring terrorism.
+Groups take 10 minutes to make two lists you can put on the board.
+- Pros vs cons
 
-Focus on these variables.
+Think about the project in broad strokes
+- Who is the National Consortium for the Study of Terrorism and Responses to Terrorism, how do they define the key concepts and how are they measuring terrorism?
 
-*DISCUSS*
+&lt;br&gt;
 
-- (SLIDES: About the GTD, Defining terrorism, valid and reliable prompt?)
+(SLIDE: Who is the National Consortium for the Study of Terrorism and Responses to Terrorism?)
+
+(SLIDE: Terrorism Defined)
+
+(SLIDE: RAND definition of terrorism to compare)
+
+(SLIDE: Valid and reliable measures?)
+
+
+
 
 
 
@@ -176,17 +194,17 @@ Plus, at least two of the following criteria:
 
 ???
 
-### What do we think of this? a "good" definition?
-
-#### - How does it compare to our class definition?
-
-#### - How does it compare to Tilly's (2004) definition?
+### How does this compare to our class definition?
 
 &lt;br&gt;
 
-Let's compare it to the RAND database from Monday.
+### How does it compare to Tilly's (2004) definition?
 
-SLIDE
+&lt;br&gt;
+
+SLIDE: Let's compare it to the RAND database from Monday.
+
+
 
 
 
@@ -210,17 +228,11 @@ Terrorism is defined by the nature of the act, not by the identity of the perpet
 
 ???
 
-### Compare and contrast.
-
-#### - Has the gtd made any big or particularly useful changes? or is this basically the same thing?
+### Compare and contrast: Has the GTD made any big or particularly useful changes? or is this basically the same thing?
 
 &lt;br&gt;
 
-Before we move off the definition, let's talk about this strange 2 out of 3 idea in the extra criteria.
-
-(SLIDE)
-
-
+SLIDE: Before we move off the definition, let's talk about this strange 2 out of 3 idea in the extra criteria.
 
 
 
@@ -250,34 +262,25 @@ class: middle
 
 Here we see the proportion of cases that meet each of the three additional criteria.
 
-Each row tells us what proportion of cases qualify as terrorism by including some of the criteria.
+- Each row tells us what proportion of cases qualify as terrorism by including some of the criteria.
 
-Bottom row shows us 171k cases, or around 85% of the sample, meet all three criteria for inclusion.
+- Bottom row shows us 171k cases, or around 85% of the sample, meet all three criteria for inclusion.
 
-On the other end, approximately 2,300 cases, or around 1% of the sample, qualify by meeting only criteria 2 and 3 but not 1. 
+- On the other end, approximately 2,300 cases, or around 1% of the sample, qualify by meeting only criteria 2 and 3 but not 1. 
 
 ### Everybody clear on how to read this table?
 
 ### What conclusions can we draw from this? Does this tell us anything important about their views of terrorism?
 
-&lt;br&gt;
+- (98% of the cases in this dataset include the first two criteria (85+13).)
+- So, the researchers are telling us that, essentially, ALL terrorism meets criteria 1 and 2.
 
-98% of the cases in this dataset include the first two criteria (85+13).
+### The question for us is, what does criteria 3 add to our understanding? Why do they need it?
 
-So, the researchers are telling us that, essentially, ALL terrorism meets criteria 1 and 2.
+- Since a case must meet 2 out of 3 criteria, I'd like to know if the 2% of cases that qualify by including criteria 3 with only one of the others looks like the rest.
 
-### The question for us is, what does criteria 3 add to our understanding?
-
-#### - Why do we need it?
-
-&lt;br&gt;
-
-Since a case must meet 2 out of 3 criteria, I'd like to know if the 2% of cases that qualify by including criteria 3 with only one of the others looks like the rest.
-
-I'll spare you the insanity but I went down quite the rabbit hole with this and the cases looked fairly similar across the variables in this dataset.
-
-Some differences, but nothing crazy.
-
+- I'll spare you the insanity but I went down quite the rabbit hole with this and the cases looked fairly similar across the variables in this dataset.
+    - Some differences, but nothing crazy.
 
 
 
@@ -287,20 +290,20 @@ Some differences, but nothing crazy.
 
 class: middle, slideblue
 
-.size50[.center[**The Global Terrorism Database (GTD)**]]
+.size50[.center[.content-box-grey[**Operationalizing Terrorism**]]]
 
 &lt;br&gt;
 
-.size35[
-1) Pros and cons of generalizing from this dataset?
-
-+ How are the concepts defined?
-
-+ What is the sample selection process?
-
-+ **Are the variables valid and reliable?**
-  + nperps, nkill, nwound, propvalue, weaptype1_txt, suicide, attacktype1_txt, targettype1_txt
-
+.size40[
+**Are the key variables valid and reliable?**
+- nperps
+- nkill
+- nwound
+- propvalue
+- weaptype1_txt
+- suicide
+- attacktype1_txt
+- targettype1_txt
 ]
 
 ???
@@ -397,42 +400,27 @@ Let's play with this tool to explore terrorism according to the GTD.
 
 ---
 
-class: middle, slideblue
+class: middle, center, slideblue
 
-.size45[.center[**The Global Terrorism Database (GTD)**]]
+.size65[.content-box-grey[**Operationalizing Terrorism**]]
 
 &lt;br&gt;
 
-## Research Questions
-.size35[
-1. Pros and cons of generalizing from this dataset?
-2. **Is the damage caused by terrorism getting worse?**
-3. **Where are the terrorism hot spots in the world?**
-4. **Are the characteristics of terrorism changing?**
-]
-
-### Examine all cases across time broken out by:
-.size40[
-+ casualites, fatalities, injuries, weapon types and regions 
+.size60[
+2) Is the damage caused by terrorism getting worse over time?
 ]
 
 ???
 
-Ok, pairs, take some time to examine the data and try to answer these three questions.
+Groups, take a few minutes to review the data.
 
-We don't need to filter the cases yet.
-
-Go back to the "all events" line plot and use the plot adjustments to examine the casualties, fatalities, injuries, weapon types and regions across time.
-
-I'd love to ask you to do country as well but the visualization tool can only do 25 countries at a time and I don't believe it can make maps.
-
-Get ready to report back what we learn from these.
+Go back to the "all events" line plot and use the plot adjustments to examine the casualties, fatalities and injuries across time.
 
 &lt;br&gt;
 
-Let's start with casualties, fatalities, and injuries.
+### Report Back, what did you find?
 
-SLIDE
+(SLIDE)
 
 
 
@@ -488,9 +476,31 @@ Ok, let's talk about the differences here.
 
 #### - The definition of fatalities?
 
+
+
+---
+
+class: middle, slideblue
+
+.size50[.center[.content-box-grey[**Operationalizing Terrorism**]]]
+
 &lt;br&gt;
 
-Let's shift our focus to the weapons types.
+.size60[
+4) Are the characteristics of terrorism changing?
+
+- What weapons are they using?
+]
+
+???
+
+Given the features of the web search tool, let's jump to question 4 and focus on weapon types.
+
+Dig into the data and report back!
+
+### What did you find?
+
+(SLIDE)
 
 
 
@@ -528,36 +538,32 @@ It definitely isn't!!
 
 #### - What are the most common types of terrorist weapon across time?
 
-&lt;br&gt;
-
-
 
 
 ---
 
-class: middle, slideblue
+class: middle, center, slideblue
 
-.size45[.center[**The Global Terrorism Database (GTD)**]]
+.size50[.content-box-grey[**Operationalizing Terrorism**]]
 
 &lt;br&gt;
 
-## Research Questions: Focus on the USA
-.size35[
-1. Pros and cons of generalizing from this dataset?
-2. Is the damage caused by terrorism getting worse?
-3. **Where are the terrorism hot spots in the world?**
-4. Are the characteristics of terrorism changing?
+.size60[
+3) Where are the terrorism hot spots in the world?
 ]
 
 ???
 
-### Ok, what did you learn from examining the trends across the regions?
+Ok, focus on regions and review the data.
 
-#### - Anything of note?
+Analyze the data and identify for us the global hotspots for terrorism!
 
 &lt;br&gt;
 
-For the country level, let's look at some maps!
+### Report Back, what did you find?
+
+(SLIDE: For the country level, let's look at some maps!)
+
 
 
 
@@ -591,8 +597,6 @@ Let's check out the most recent year in the db, 2019.
 
 ???
 
-Here's the map updated for the period since 2015, e.g. the most recent five years in the database.
-
 ### What conclusions can we draw from this?
 
 &lt;br&gt;
@@ -613,7 +617,7 @@ Rather than a count of attacks, here we see a sum of the fatalities.
 
 &lt;br&gt;
 
-### Are we more confident using the gtd database to count terrorist attacks or fatalities due to attacks? Why?
+### Are we more confident using the GTD database to count terrorist attacks or fatalities due to attacks? Why?
 
 &lt;br&gt;
 
@@ -654,9 +658,40 @@ Here we see summary statistics for the variables we've been exploring but focuse
 
 ### What do we learn from this?
 
+
+
+---
+
+class: middle, center, slideblue
+
+&lt;img src="libs/Images/11-2-rand.png" width="708" /&gt;
+
 &lt;br&gt;
 
-### At this point, would you recommend people use the Rand database or GTD? why?
+&lt;img src="libs/Images/11-2-GTD.png" width="800" /&gt;
+
+???
+
+### At this point, would you recommend decision-makers use the Rand database or GTD to better understand terrorism around the world? why?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
