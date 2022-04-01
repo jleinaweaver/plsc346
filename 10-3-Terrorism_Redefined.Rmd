@@ -78,71 +78,43 @@ class: middle
 
 ???
 
-First, let's start with what we've done so far.
+With a few days to reflect on our work we need a working definition of terrorism!
 
-### How have we been defining terrorism?
+### What do we have?
 
-#### - What obervable phenomena can we tie to it?
+### What obervable phenomena can we tie to it?
 
-*ON BOARD*
+*ON BOARD: Definition and Observable Phenomena*
+
+<br>
+
+### Notes from prior semesters
+- Non-state actor using violence/harmful acts to send a signal to the target / recruit allies / dissuade 3rd parties
+
+- Intimidation strategy using violence against people or property and connected to a political struggle
 
 
 
 ---
 
-background-image: url('libs/Images/background-blue_triangles2.png')
-background-size: 100%
+background-image: url('libs/Images/10-3-jaggar_header.png')
+background-size: 85%
 background-position: center
-class: middle
-
-.size55[.center[**The Concept of Terrorism (Tilly 2004)**]]
-
-<br>
-
-.size45[
-1. Terror as a strategy 
-
-2. Multiple uses of terror 
-
-3. Terror and other forms of struggle 
-
-4. Terror and specialists in coercion
-]
 
 ???
 
-### Does Tilly's (2004) guiding points help us with this?
+I think this Jaggar article you read for today introduces some really important ideas we need to consider in both defining terrorism and undertsanding it as a strategy.
 
-#### - Pros and cons of this list?
+*Read the quote on screen*
 
+I'm certainly not advancing any of these complications as an argument that it represents the RIGHT way to think about terrorism.
 
-
----
-
-background-image: url('libs/Images/background-blue_triangles2.png')
-background-size: 100%
-background-position: center
-class: middle
-
-.size60[.center[**Terrorism Defined?**]]
+Our job as social scientists is to be familiar with the many competing narratives that exist so we can explain and predict the behavior of actors in the world.
 
 <br>
 
-.size45[
-+ Non-state actor using violence/harmful acts to send a signal to the target / recruit allies / dissuade 3rd parties
+Let's build up to the Jagger article for today by examining four perspectives on terrorism that complicate the definitional challenge.
 
-+ Intimidation strategy using violence against people or property and connected to a political struggle
-]
-
-???
-
-### What do we think?
-
-#### - Have we addressed tilly's concerns about adopting unhelpful generalizations?
-
-<br>
-
-Let's build up to the Jagger article for today by examining four more complicating perspectives on terrorism.
 
 
 
@@ -154,7 +126,7 @@ background-position: center
 
 ???
 
-Perspectives on Terrorism 1: "One person’s terrorist is another person’s freedom fighter"
+Perspective on Terrorism 1: "One person’s terrorist is another person’s freedom fighter"
 
 ### What does this mean?
 
@@ -164,13 +136,17 @@ Perspectives on Terrorism 1: "One person’s terrorist is another person’s fre
 
 <br>
 
-Perspective 1: Can we ever separate the subjective element outside of defining terrorism?
+I think of this as a reminder to never forget the subjective nature of the act.
 
-No one thinks of themselves as the bad guy.
+No one thinks of themselves as the bad guy in their own story.
 
-- Important for understanding strategies chosen by these actors.
+<br>
 
-- Some lines likely exist they will not cross, some justification absolutely exists for their behavior.
+This matters for thinking about terrorism as a strategy
+
+- Every person has lines they will not cross,
+
+- Every person has some justification or rationalization for their behavior.
 
 
 
@@ -190,28 +166,21 @@ class: middle
 
 ???
 
-Perspective 2
+*Read the quote*
 
-### What does this mean?
+### What does this mean and how does it frame terrorism for us?
+- (Even weak groups can achieve terrifying ends if they are sufficiently committed to their cause.)
+    - Small groups with "correct timing, surgical precision and an unambiguous purpose" can represent "an invaluable weapon of war" (Martin 2016 p33).
 
-### How does this help us think about terrorism? 
-
-### How does our definition deal with this?
-
-<br>
-
-(Even weak groups can achieve terrifying ends if they are sufficiently committed to their cause.)
-
-- Small groups with "correct timing, surgical precision and an unambiguous purpose" can represent "an invaluable weapon of war" (Martin 2016 p33).
-
-- Does this pre-suppose that terrorism is a strategy only of the weak?
+- Perspective 2 argues terrorism is NOT AT ALL subjective. It is based on context and norms.
+    - Any non-state actor choosing to use or threaten violence against civilians to achieve aims outside the norms and rules by which our society has decided to organize itself is a terrorist. 
 
 <br>
 
-Perspective 2: Can we ever separate the subjective element outside of defining terrorism? Of course we can. It's context based, not subjective.
+### Do we buy this? What does it mean for our definition if we do?
+- Our definition must adjust to whatever the local conditions are in a state
+- And yes that means people living under brutal regimes are bound by the rules of those regimes (the functioning society)
 
-- Any non-state actor choosing to use or threaten violence against civilians to achieve aims outside the norms and rules by which our society has decided to organize itself is a terrorist. 
-- Yes this means our definition must adjust to whatever the local conditions are in a state and yes that means people living under brutal regimes are bound by the rules of those regimes, but acting outside those rules in ways that harm non-combatants is terrorism.
 
 
 
@@ -223,26 +192,19 @@ background-position: center
 
 ???
 
+*Read quote*
+
 Quote from Sen. Barry Goldwater during his run for the presidency in 1964: Extremism in defense of liberty is no vice.
 
-### What does this mean?
-
-### How does this help us think about terrorism? 
-
-### How does our definition deal with this?
-
-<br>
-
-(Swap out "liberty" for any other cause and one can understand the kind of single-minded devotion that leads to terrorist actions.)
-
+### What does this mean and how does it frame terrorism for us?
+- (Swap out "liberty" for any other cause and one can understand the kind of single-minded devotion that leads to terrorist actions.)
 - Frames the cause in terms of good vs evil.
 
 <br>
 
-Perspective 3: Goldwater quote to muddy the waters again and connect to US policy discourse. 
+This perspective on terrorism pervades many modern debates in the US and has been used to justify some truly messed up acts.
 
-- This sentiment pervades many modern debates in the US and has been used to justify some truly messed up acts.
-
+### Does this bring us back to the subjectivity problem of Perspective 1 or is this black-and-white framing something new?
 
 
 
@@ -255,33 +217,24 @@ background-position: center
 
 ???
 
-Destroy the town to save it.
+*Read quote*
 
+We must destroy the town to save it.
 - A notorious quote from a US Army officer explaining why a Vietnamese town overrun by Viet Cong soldiers had been destroyed by aerial bombing.
 
 I am NOT asserting this is or isn't terrorism.
-
 - Just interested in the perspective on a controversial act of violence.
 
 <br>
 
-### What does this mean?
+### What does this mean and how does it frame terrorism for us?
+- (Symbolic argument: There is nothing worse than being occupied by the enemy so bombing the town prevented that outcome.)
+    - The "village" can be replaced by any symbolic value.
 
-### How does this help us think about terrorism? 
+- Terrorists often use this kind of logic to justify imposing hardships on even their own supporters.
 
-### How does our definition deal with this?
-
-<br>
-
-(Symbolic argument: There is nothing worse than being occupied by the enemy so bombing the town prevented that outcome.)
-
-- The "village" can be replaced by any symbolic value.
-
-Terrorists often use this kind of logic to justify imposing hardships on even their own supporters.
-
-<br>
-
-Perspective 4: History is written by the powerful. States can convey legitimacy on horrible acts (or at least can try to...)
+- History is written by the powerful. 
+    - States can convey legitimacy on horrible acts (or at least can try to...)
 
 
 ---
@@ -315,7 +268,20 @@ Today we add Alison Jaggar's definition and moral discussion of terrorism.
 
 3. This Account Facilitates Moral Assessment
 
-<br>
+
+
+---
+
+background-image: url('libs/Images/background-blue_triangles2.png')
+background-size: 100%
+background-position: center
+class: middle
+
+.size35[
+"Terrorism is the use of extreme threats or violence designed to intimidate or subjugate governments, groups, or individuals. It is a tactic of coercion intended to promote further ends that in themselves may be good, bad or indifferent. Terrorism may be practiced by governments or international bodies or forces, sub-state groups or even individuals. Its threats or violence are aimed directly or immediately at the bodies or belongings of innocent civilians but these are typically terrorists’ secondary targets; the primary targets of terrorists are the governments, groups or individuals that they wish to intimidate" (Jaggar 2005, 209).
+]
+
+???
 
 ### What are the two reasons Jaggar argues that this definition makes clear terrorism is morally repugnant?
 
@@ -376,7 +342,7 @@ Let's evaluate the list
 
 <br>
 
-Take a minute, evaluate your case study from monday using this list.
+Take a minute, evaluate your case study from Monday using this list.
 
 #### - Does anybody have a case that hits many of these elements?
 
