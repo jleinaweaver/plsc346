@@ -1,0 +1,548 @@
+---
+output:
+  xaringan::moon_reader:
+    css: ["default", "extra.css"]
+    lib_dir: libs
+    seal: false
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: '16:9'
+---
+
+```{r, echo = FALSE, warning = FALSE, message = FALSE}
+##xaringan::inf_mr()
+## For offline work: https://bookdown.org/yihui/rmarkdown/some-tips.html#working-offline
+## Images not appearing? Put images folder inside the libs folder as that is the main data directory
+
+library(tidyverse)
+library(readxl)
+##library(stargazer)
+##library(kableExtra)
+##library(modelr)
+
+knitr::opts_chunk$set(echo = FALSE,
+                      eval = TRUE,
+                      error = FALSE,
+                      message = FALSE,
+                      warning = FALSE,
+                      comment = NA)
+
+## Input data
+d <- read_excel("../../../../00-Data_for_Classes/EDTG-Extended_Data_on_Terrorist_Groups/EDTG_Data.xls", guess_max = 10000)
+```
+
+class: slideblue
+
+.size80[**Today's Agenda**]
+
+<br>
+
+.size45[
+Hou, D., Gaibulloev, K., & Sandler, T. (2020). Introducing Extended Data on Terrorist Groups (EDTG), 1970 to 2016. Journal of Conflict Resolution, 64(1), 199–225.
+]
+
+<br>
+
+.center[.size40[
+  Justin Leinaweaver (Spring 2022)
+]]
+
+???
+
+### Prep for Class
+1. Make sure data and codebook on LMS
+
+2. Open the data file in Excel so you can show them how to do things if they get stuck.
+
+<br>
+
+*Split class into small groups (2-3 is good per group, but too many groups makes presenting at the end of class difficult)*
+
+Go sit with your group.
+
+<br>
+
+Today I want us to examine the Extended Data on Terrorist Groups (EDTG) database.
+
+- This is a project born from concerns about the RAND data and building on the work of the GTD.
+
+- The data is on our LMS and at 10k rows, Excel should be able to handle it easily.
+
+<br>
+
+Groups, make sure everybody has the data downloaded and opened in Excel (Web or Desktop version).
+
+
+
+
+
+---
+
+background-image: url('libs/Images/11-2-rand.png')
+background-size: 100%
+background-position: center
+class: slideblue
+
+???
+
+Before we dig in, let's discuss the critique of RAND in the article for today.
+
+### What are the three critiques raised by these authors of the RAND Database (p202)?
+
+(SLIDE)
+
+
+
+---
+
+background-image: url('libs/Images/11-2-rand.png')
+background-size: 100%
+background-position: top
+class: bottom, slideblue
+
+.size55[
+1. No updates after 2007 (now 2009?)
+
+2. Only domestic attacks since 1998
+
+3. Only "significant" events
+]
+
+???
+
+### What does this mean for anybody who uses Rand as their primary source for measuring terrorism around the world?
+
+*DISCUSS*
+
+- SUPER weird that these notes aren't clear on the RAND website. 
+    - If true, these are incredibly important caveats to using their database.
+
+
+
+---
+
+background-image: url('libs/Images/11-3-Data_from_last_class.png')
+background-size: 93%
+background-position: top
+
+???
+
+### Could these design choices explain the big differences between RAND and GTD that we noted on Wednesday?
+
+
+
+---
+
+class: middle, center, slideblue
+
+.size60[**Extended Data on Terrorist Groups (EDTG)**]
+
+<br>
+
+.size55[
+What is the goal of this project?
+]
+
+???
+
+Talk to me about the bona fides of the EDTG project.
+
+### What is the goal of the project?
+- "To understand terrorism and its drivers, researchers must investigate terrorist groups’ characteristics and actions that create casualties, achieve demands, determine base location, and affect their longevity. Knowledge of those things can foster more effective counter-terrorism measures to limit terrorist groups’ carnage, political consequences, and economic ramifications" (200).
+
+
+
+
+---
+
+class: middle, slideblue
+
+.size60[.center[**Extended Data on Terrorist Groups (EDTG)**]]
+
+<br>
+
+.size55[
+What are the pros and cons of using this as our primary database of terrorism?
+]
+
+???
+
+### What are the pros and cons of adopting this as our primary database of terrorism?
+
+Pros:
+- Rooted in established GTD project approaches
+- Draws on expertise/experience/findings from three major projects
+    - International Terrorism: Attributes of Terrorist Events (ITERATE; Mickolus et al. 2018)
+    - Global Terrorism Database (GTD; National Consortium for the Study of Terrorism and Response to Terrorism [START] 2018)
+    - RAND Database of Worldwide Terrorism Incidents (RAND 2012)
+- Includes MANY key measures to describe terror groups by bases, ideology, aims, etc.
+
+Cons:
+- Year-Group dyad is somewhat limiting for capturing group characteristics. Can we say these groups are stable on these characteristics within a single year?
+- Are dummy variables appropriate for these complicated questions? Is it really so easy to identify the "ideology" or "aims" of diverse groups of non-state actors in fluid organizations using dummy variables?
+- What does "size" actually mean? How do you officially "join" a group?
+
+<br>
+
+The danger is that this dataset implies a high level of accuracy in terms of describing these groups, e.g. 0s vs 1s on most measures. 
+- Is that merited?
+
+
+
+
+
+
+---
+
+background-image: url('libs/Images/11_3-domestic_terror.jpg')
+background-size: 100%
+background-position: center
+class: center
+
+<br>
+
+.size45[.content-box-red[**Who are the domestic terror groups**]]
+
+.size45[.content-box-red[**currently active in the USA? (2016)**]]
+
+???
+
+Let's practice navigating the dataset.
+
+Groups, turn on the filter for the data and identify the terror groups in 2016 with a base in the US.
+
+
+
+
+---
+
+class: middle
+
+.size40[
+```{r, results='asis'}
+## How many cases with the US as one of the bases?
+d_usa <- d[str_detect(d$base, pattern = "U.S."),] |>
+  filter(year == 2016)
+
+## Extract group names
+usa_names <- d_usa |> select(gname)
+
+## Build table of those groups and years covered
+d |>
+  filter(gname %in% usa_names[[1]]) |>
+  group_by(gname) |>
+  summarize(
+    min = min(year),
+    max = max(year)
+  ) |>
+  mutate(
+    Period = str_c(min, " - ", max),
+    min = NULL,
+    max = NULL
+  ) |>
+  kableExtra::kbl() |>
+  kableExtra::column_spec(column = 1, width = '18em')
+
+
+```
+]
+
+???
+
+### Did everybody find these five terror groups?
+- Note that "U.S." isn't always the first country in the list of base countries.
+
+<br>
+
+### Are we to assume this means there are only five terror groups based in the US in 2016?
+
+- Per their case selection criteria, yes.
+- Groups must have committed an attack
+
+<br>
+
+### Scan across the data for these groups ACROSS TIME, what do we learn about them?
+
+
+
+
+---
+
+```{r, fig.retina=3, fig.asp=0.618, out.width='95%', fig.width=5.5}
+## Total Attacks across time
+# totals1 <- d|>
+#   filter(gname %in% usa_names[[1]]) |>
+#   group_by(year) |>
+#   summarize(
+#     attacks = sum(total_atks),
+#     casualties = sum(total_casualties)
+#   )
+# 
+# d |>
+#   filter(gname %in% usa_names[[1]]) |>
+#   ggplot(aes(x = year, y = total_atks)) +
+#   geom_col(aes(fill = gname)) +
+#   geom_line(data = totals1, aes(x = year, y = attacks))
+  
+d |>
+  filter(gname %in% usa_names[[1]]) |>
+  ggplot(aes(x = year, y = total_atks, color = gname)) +
+  geom_line(position = position_jitter(h = .2)) +
+  theme_bw() +
+  labs(x = "", y = "Total Attacks", color = "Group") +
+  #guides(color = "none") +
+  scale_color_discrete(labels = c("ALF", "ELF", "JDL", "KKK", "SC")) +
+  scale_y_continuous(breaks = seq(0, 12, 1))
+
+# d |>
+#   filter(gname %in% usa_names[[1]]) |>
+#   ggplot(aes(x = year, y = total_atks, color = gname)) +
+#   geom_line() +
+#   theme_bw() +
+#   labs(x = "", y = "Total Attacks") +
+#   facet_wrap(~ gname) +
+#   guides(color = "none") +
+#   scale_y_continuous(breaks = seq(0, 12, 1))
+```
+
+???
+
+Here we see total attacks per group per year.
+
+### Any takeaways?
+
+(SLIDE: Casualties)
+
+<br>
+
+Animal Liberation Front (1976-2016)
+- Left wing group
+- Peak size of group 10-99
+- Aims for a policy change goal
+
+Earth Liberation Front	1992 - 2016
+- Left wing group
+- Peak size of group 10-99
+- Aims for a policy change goal
+
+Jewish Defense League (JDL)_2	2013 - 2016
+- Religious group
+- Peak size of group 10-99
+- Aims for a policy change goal
+
+Ku Klux Klan	1970 - 2016
+- Right-wing
+- peak size 1,000-10,000
+- Aim: seeks an empire, regime-change, or social-revolution goal
+
+Sovereign Citizen	2011 - 2016
+- Left-wing
+- peak size NA
+- Aim: seeks an empire, regime-change, or social-revolution goal
+
+
+
+---
+
+```{r, fig.retina=3, fig.asp=0.618, out.width='95%', fig.width=5.5}
+## Total casualties
+d |>
+  filter(gname %in% usa_names[[1]]) |>
+  ggplot(aes(x = year, y = total_casualties, color = gname)) +
+  geom_line(position = position_jitter(h = .2)) +
+  theme_bw() +
+  labs(x = "", y = "Total Casualties", color = "Group") +
+  #guides(color = "none") +
+  scale_color_discrete(labels = c("ALF", "ELF", "JDL", "KKK", "SC")) +
+  scale_y_continuous(breaks = seq(0, 15, 1))
+
+# d |>
+#   filter(gname %in% usa_names[[1]]) |>
+#   ggplot(aes(x = year, y = total_casualties, color = gname)) +
+#   geom_line() +
+#   theme_bw() +
+#   labs(x = "", y = "Total Casualties") +
+#   facet_wrap(~ gname) +
+#   guides(color = "none") +
+#   scale_y_continuous(breaks = seq(0, 15, 1))
+```
+
+???
+
+Here we see total casualties (injuries + deaths) per group per year.
+
+### Any takeaways?
+
+<br>
+
+Animal Liberation Front (1976-2016)
+- Left wing group
+- Peak size of group 10-99
+- Aims for a policy change goal
+
+Earth Liberation Front	1992 - 2016
+- Left wing group
+- Peak size of group 10-99
+- Aims for a policy change goal
+
+Jewish Defense League (JDL)_2	2013 - 2016
+- Religious group
+- Peak size of group 10-99
+- Aims for a policy change goal
+
+Ku Klux Klan	1970 - 2016
+- Right-wing
+- peak size 1,000-10,000
+- Aim: seeks an empire, regime-change, or social-revolution goal
+
+Sovereign Citizen	2011 - 2016
+- Left-wing
+- peak size NA
+- Aim: seeks an empire, regime-change, or social-revolution goal
+
+
+---
+
+class: middle, center
+
+# Total US-Based Terrorism (1970-2016)
+
+.size35[
+```{r, results='asis'}
+## Build table of those groups and years covered
+d |>
+  filter(gname %in% usa_names[[1]]) |>
+  group_by(gname) |>
+  summarize(
+    Attacks = sum(total_atks),
+    Injuries = sum(total_injuries),
+    Deaths =  sum(total_deaths)
+  ) %>%
+  add_row(gname = "Total", Attacks = sum(.$Attacks), Injuries = sum(.$Injuries), Deaths = sum(.$Deaths)) |>
+  kableExtra::kbl() |>
+  kableExtra::column_spec(column = 1, width = '18em') |>
+  kableExtra::row_spec(6, bold = TRUE, background = " #85c1e9 ")
+```
+]
+
+???
+
+### Ok, talk to me about these groups and the experience of domestic terrorism in the US.
+
+### - What do we learn from this?
+
+<br>
+
+### Do these results paint an accurate picture of US based terrorism? Why or why not? 
+
+
+
+---
+
+background-image: url('libs/Images/11_3-GTD2019_worldmap.jpg')
+background-size: 100%
+background-position: center
+
+<br>
+
+.size35[.content-box-red[**Global Terror Groups (2016)**]]
+
+???
+
+Let's go global now!
+
+I want each group to claim one terror group that was active in 2016 
+- No overlap!
+
+Take some time to review the data about that group and get ready to introduce it to the class.
+
+SLIDE: Details...
+
+
+
+
+---
+
+class: middle, slideblue
+
+.size35[.center[**Use the EDTG to brief us on an active terrorist group**]]
+
+.size30[
+- **Active Period**: year, duration
+- **Bases**: base, num_base, mul_bases
+- **Location**: EAP, ECA, LAC, MENA, NA, SAS, SSA
+- **Attacks**: total_atks, total_injuries, total_casualties, total_deaths
+- **Ideology**: left, nat, rel, right
+- **Size**: size, peak_size
+- **Aims**: ercsr, pch, sq, tch
+- **Global Impact**: shr_trans, num_allies, num_rivals, num_enemies, 
+- **Structure**: terrctrl, lead_hierarch, drugtk, kidnap, state_sponsor, social_service, public_service
+- **Ending**: endstr, fate_leader
+]
+
+???
+
+Introduce your case to us along all these groupings.
+
+As you review your case I want you to think carefully about the validity and reliability of these measures.
+- How complete a picture of this group do these variables give us?
+
+<br>
+
+Let's hear what you found! Introduce us to your group.
+
+<br>
+
+### Bottom line, is the EDTG our best choice for studying terrorism? Why or why not?
+
+### Are we convinced these new measures are both valid and reliable? Why or why not?
+
+<br>
+
+duration: The duration in years of a terrorist group’s existence since its formation.
+
+base: The base countries of a terrorist group.
+
+total_atks: This variable indicates the number of attacks that a terrorist group launched in a given year.
+
+Types of group
++ left (left wing)
++ nat (nationalist/separatist)
++ rel (religious)
++ right (right wing)
+
+size: The strength of a terrorist group.
+
+peak_size: The largest size that a terrorist group achieved.
+
+Types of goal
++ ercsr: seeks an empire, regime-change, or social-revolution goal.
++ pch: a policy-change goal
++ sq: seeks status quo (stop a change)
++ tch: seeks a territorial-change goal
+
+total_deaths: The total number of deaths caused by a terrorist group in a given year.
+
+total_injuries: The total number of injuries caused by a terrorist group in a given year.
+
+total_casualties: The total number of deaths and injuries caused by a terrorist group in a given year.
+
+endstr: categories for how the group ended
+
+drugtk: This dummy variable indicates whether a terrorist group traffics in drugs and/or grows or supplies drugs.
+
+kidnap: This dummy variable indicates whether a terrorist group engages in kidnappings in a given year.
+
+state_sponsor: This dummy variable indicates whether a terrorist group has been provided with any kind of support by states in a given year.
+
+public_service: This dummy variable indicates whether a terrorist group has ever provided social service.
+
+
+
+
+
+
+
+

@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>11-3-EDTG.knit</title>
+    <meta charset="utf-8" />
+    <script src="libs/header-attrs-2.11/header-attrs.js"></script>
+    <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <script src="libs/kePrint-0.0.1/kePrint.js"></script>
+    <link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
+    <link rel="stylesheet" href="extra.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+
+
+
+
+class: slideblue
+
+.size80[**Today's Agenda**]
+
+&lt;br&gt;
+
+.size45[
+Hou, D., Gaibulloev, K., &amp; Sandler, T. (2020). Introducing Extended Data on Terrorist Groups (EDTG), 1970 to 2016. Journal of Conflict Resolution, 64(1), 199–225.
+]
+
+&lt;br&gt;
+
+.center[.size40[
+  Justin Leinaweaver (Spring 2022)
+]]
+
+???
+
+### Prep for Class
+1. Make sure data and codebook on LMS
+
+2. Open the data file in Excel so you can show them how to do things if they get stuck.
+
+&lt;br&gt;
+
+*Split class into small groups (2-3 is good per group, but too many groups makes presenting at the end of class difficult)*
+
+Go sit with your group.
+
+&lt;br&gt;
+
+Today I want us to examine the Extended Data on Terrorist Groups (EDTG) database.
+
+- This is a project born from concerns about the RAND data and building on the work of the GTD.
+
+- The data is on our LMS and at 10k rows, Excel should be able to handle it easily.
+
+&lt;br&gt;
+
+Groups, make sure everybody has the data downloaded and opened in Excel (Web or Desktop version).
+
+
+
+
+
+---
+
+background-image: url('libs/Images/11-2-rand.png')
+background-size: 100%
+background-position: center
+class: slideblue
+
+???
+
+Before we dig in, let's discuss the critique of RAND in the article for today.
+
+### What are the three critiques raised by these authors of the RAND Database (p202)?
+
+(SLIDE)
+
+
+
+---
+
+background-image: url('libs/Images/11-2-rand.png')
+background-size: 100%
+background-position: top
+class: bottom, slideblue
+
+.size55[
+1. No updates after 2007 (now 2009?)
+
+2. Only domestic attacks since 1998
+
+3. Only "significant" events
+]
+
+???
+
+### What does this mean for anybody who uses Rand as their primary source for measuring terrorism around the world?
+
+*DISCUSS*
+
+- SUPER weird that these notes aren't clear on the RAND website. 
+    - If true, these are incredibly important caveats to using their database.
+
+
+
+---
+
+background-image: url('libs/Images/11-3-Data_from_last_class.png')
+background-size: 93%
+background-position: top
+
+???
+
+### Could these design choices explain the big differences between RAND and GTD that we noted on Wednesday?
+
+
+
+---
+
+class: middle, center, slideblue
+
+.size60[**Extended Data on Terrorist Groups (EDTG)**]
+
+&lt;br&gt;
+
+.size55[
+What is the goal of this project?
+]
+
+???
+
+Talk to me about the bona fides of the EDTG project.
+
+### What is the goal of the project?
+- "To understand terrorism and its drivers, researchers must investigate terrorist groups’ characteristics and actions that create casualties, achieve demands, determine base location, and affect their longevity. Knowledge of those things can foster more effective counter-terrorism measures to limit terrorist groups’ carnage, political consequences, and economic ramifications" (200).
+
+
+
+
+---
+
+class: middle, slideblue
+
+.size60[.center[**Extended Data on Terrorist Groups (EDTG)**]]
+
+&lt;br&gt;
+
+.size55[
+What are the pros and cons of using this as our primary database of terrorism?
+]
+
+???
+
+### What are the pros and cons of adopting this as our primary database of terrorism?
+
+Pros:
+- Rooted in established GTD project approaches
+- Draws on expertise/experience/findings from three major projects
+    - International Terrorism: Attributes of Terrorist Events (ITERATE; Mickolus et al. 2018)
+    - Global Terrorism Database (GTD; National Consortium for the Study of Terrorism and Response to Terrorism [START] 2018)
+    - RAND Database of Worldwide Terrorism Incidents (RAND 2012)
+- Includes MANY key measures to describe terror groups by bases, ideology, aims, etc.
+
+Cons:
+- Year-Group dyad is somewhat limiting for capturing group characteristics. Can we say these groups are stable on these characteristics within a single year?
+- Are dummy variables appropriate for these complicated questions? Is it really so easy to identify the "ideology" or "aims" of diverse groups of non-state actors in fluid organizations using dummy variables?
+- What does "size" actually mean? How do you officially "join" a group?
+
+&lt;br&gt;
+
+The danger is that this dataset implies a high level of accuracy in terms of describing these groups, e.g. 0s vs 1s on most measures. 
+- Is that merited?
+
+
+
+
+
+
+---
+
+background-image: url('libs/Images/11_3-domestic_terror.jpg')
+background-size: 100%
+background-position: center
+class: center
+
+&lt;br&gt;
+
+.size45[.content-box-red[**Who are the domestic terror groups**]]
+
+.size45[.content-box-red[**currently active in the USA? (2016)**]]
+
+???
+
+Let's practice navigating the dataset.
+
+Groups, turn on the filter for the data and identify the terror groups in 2016 with a base in the US.
+
+
+
+
+---
+
+class: middle
+
+.size40[
+&lt;table&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:left;"&gt; gname &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; Period &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;width: 18em; "&gt; Animal Liberation Front &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 1976 - 2016 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;width: 18em; "&gt; Earth Liberation Front &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 1992 - 2016 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;width: 18em; "&gt; Jewish Defense League (JDL)_2 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 2013 - 2016 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;width: 18em; "&gt; Ku Klux Klan &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 1970 - 2016 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;width: 18em; "&gt; Sovereign Citizen &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 2011 - 2016 &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+]
+
+???
+
+### Did everybody find these five terror groups?
+- Note that "U.S." isn't always the first country in the list of base countries.
+
+&lt;br&gt;
+
+### Are we to assume this means there are only five terror groups based in the US in 2016?
+
+- Per their case selection criteria, yes.
+- Groups must have committed an attack
+
+&lt;br&gt;
+
+### Scan across the data for these groups ACROSS TIME, what do we learn about them?
+
+
+
+
+---
+
+&lt;img src="11-3-EDTG_files/figure-html/unnamed-chunk-3-1.png" width="95%" /&gt;
+
+???
+
+Here we see total attacks per group per year.
+
+### Any takeaways?
+
+(SLIDE: Casualties)
+
+&lt;br&gt;
+
+Animal Liberation Front (1976-2016)
+- Left wing group
+- Peak size of group 10-99
+- Aims for a policy change goal
+
+Earth Liberation Front	1992 - 2016
+- Left wing group
+- Peak size of group 10-99
+- Aims for a policy change goal
+
+Jewish Defense League (JDL)_2	2013 - 2016
+- Religious group
+- Peak size of group 10-99
+- Aims for a policy change goal
+
+Ku Klux Klan	1970 - 2016
+- Right-wing
+- peak size 1,000-10,000
+- Aim: seeks an empire, regime-change, or social-revolution goal
+
+Sovereign Citizen	2011 - 2016
+- Left-wing
+- peak size NA
+- Aim: seeks an empire, regime-change, or social-revolution goal
+
+
+
+---
+
+&lt;img src="11-3-EDTG_files/figure-html/unnamed-chunk-4-1.png" width="95%" /&gt;
+
+???
+
+Here we see total casualties (injuries + deaths) per group per year.
+
+### Any takeaways?
+
+&lt;br&gt;
+
+Animal Liberation Front (1976-2016)
+- Left wing group
+- Peak size of group 10-99
+- Aims for a policy change goal
+
+Earth Liberation Front	1992 - 2016
+- Left wing group
+- Peak size of group 10-99
+- Aims for a policy change goal
+
+Jewish Defense League (JDL)_2	2013 - 2016
+- Religious group
+- Peak size of group 10-99
+- Aims for a policy change goal
+
+Ku Klux Klan	1970 - 2016
+- Right-wing
+- peak size 1,000-10,000
+- Aim: seeks an empire, regime-change, or social-revolution goal
+
+Sovereign Citizen	2011 - 2016
+- Left-wing
+- peak size NA
+- Aim: seeks an empire, regime-change, or social-revolution goal
+
+
+---
+
+class: middle, center
+
+# Total US-Based Terrorism (1970-2016)
+
+.size35[
+&lt;table&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:left;"&gt; gname &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; Attacks &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; Injuries &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; Deaths &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;width: 18em; "&gt; Animal Liberation Front &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 65 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;width: 18em; "&gt; Earth Liberation Front &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 39 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;width: 18em; "&gt; Jewish Defense League (JDL)_2 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;width: 18em; "&gt; Ku Klux Klan &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 6 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 10 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 6 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;width: 18em; "&gt; Sovereign Citizen &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 6 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;width: 18em; font-weight: bold;background-color: #85c1e9 !important;"&gt; Total &lt;/td&gt;
+   &lt;td style="text-align:right;font-weight: bold;background-color: #85c1e9 !important;"&gt; 115 &lt;/td&gt;
+   &lt;td style="text-align:right;font-weight: bold;background-color: #85c1e9 !important;"&gt; 21 &lt;/td&gt;
+   &lt;td style="text-align:right;font-weight: bold;background-color: #85c1e9 !important;"&gt; 8 &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+]
+
+???
+
+### Ok, talk to me about these groups and the experience of domestic terrorism in the US.
+
+### - What do we learn from this?
+
+&lt;br&gt;
+
+### Do these results paint an accurate picture of US based terrorism? Why or why not? 
+
+
+
+---
+
+background-image: url('libs/Images/11_3-GTD2019_worldmap.jpg')
+background-size: 100%
+background-position: center
+
+&lt;br&gt;
+
+.size35[.content-box-red[**Global Terror Groups (2016)**]]
+
+???
+
+Let's go global now!
+
+I want each group to claim one terror group that was active in 2016 
+- No overlap!
+
+Take some time to review the data about that group and get ready to introduce it to the class.
+
+SLIDE: Details...
+
+
+
+
+---
+
+class: middle, slideblue
+
+.size35[.center[**Use the EDTG to brief us on an active terrorist group**]]
+
+.size30[
+- **Active Period**: year, duration
+- **Bases**: base, num_base, mul_bases
+- **Location**: EAP, ECA, LAC, MENA, NA, SAS, SSA
+- **Attacks**: total_atks, total_injuries, total_casualties, total_deaths
+- **Ideology**: left, nat, rel, right
+- **Size**: size, peak_size
+- **Aims**: ercsr, pch, sq, tch
+- **Global Impact**: shr_trans, num_allies, num_rivals, num_enemies, 
+- **Structure**: terrctrl, lead_hierarch, drugtk, kidnap, state_sponsor, social_service, public_service
+- **Ending**: endstr, fate_leader
+]
+
+???
+
+Introduce your case to us along all these groupings.
+
+As you review your case I want you to think carefully about the validity and reliability of these measures.
+- How complete a picture of this group do these variables give us?
+
+&lt;br&gt;
+
+Let's hear what you found! Introduce us to your group.
+
+&lt;br&gt;
+
+### Bottom line, is the EDTG our best choice for studying terrorism? Why or why not?
+
+### Are we convinced these new measures are both valid and reliable? Why or why not?
+
+&lt;br&gt;
+
+duration: The duration in years of a terrorist group’s existence since its formation.
+
+base: The base countries of a terrorist group.
+
+total_atks: This variable indicates the number of attacks that a terrorist group launched in a given year.
+
+Types of group
++ left (left wing)
++ nat (nationalist/separatist)
++ rel (religious)
++ right (right wing)
+
+size: The strength of a terrorist group.
+
+peak_size: The largest size that a terrorist group achieved.
+
+Types of goal
++ ercsr: seeks an empire, regime-change, or social-revolution goal.
++ pch: a policy-change goal
++ sq: seeks status quo (stop a change)
++ tch: seeks a territorial-change goal
+
+total_deaths: The total number of deaths caused by a terrorist group in a given year.
+
+total_injuries: The total number of injuries caused by a terrorist group in a given year.
+
+total_casualties: The total number of deaths and injuries caused by a terrorist group in a given year.
+
+endstr: categories for how the group ended
+
+drugtk: This dummy variable indicates whether a terrorist group traffics in drugs and/or grows or supplies drugs.
+
+kidnap: This dummy variable indicates whether a terrorist group engages in kidnappings in a given year.
+
+state_sponsor: This dummy variable indicates whether a terrorist group has been provided with any kind of support by states in a given year.
+
+public_service: This dummy variable indicates whether a terrorist group has ever provided social service.
+
+
+
+
+
+
+
+
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"ratio": "16:9"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

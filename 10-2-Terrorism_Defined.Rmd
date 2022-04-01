@@ -93,6 +93,17 @@ class: middle
 
 Groups you now have 20 minutes to use our case study work from Monday AND the Tilly (2004) argument to answer these two questions.
 
+<br>
+
+Don't over-think this.
+- This is almost exactly the exercise we did on Monday.
+- The list of common characteristics represents your options for the defintion.
+- The sub-groups and questions represent the observable phenomena.
+
+Your job is to pick the pieces you found most compelling.
+
+In 20 minutes you will write your definition AND list of observable phenomena on the board.
+
 ### Is everybody clear on what I am asking for?
 
 Get to work!
@@ -119,15 +130,24 @@ class: middle
 
 ???
 
-Let's talk about Tilly's take on this exercise (on p9).
-
-### How does he feel about our effort to create a single, concise definition of terrorism?
+### How does Tilly feel about our effort to create a single, concise definition of terrorism? (p9)
 - ("No useful generalization covers all the different sorts of political interaction for which observers, analysts, and participants sometimes use the term terror, much less for terrorists and terrorism" (9).)
-
-<br>
 
 ### Is he right? Why or why not?
 
+Sure it's possible, but that's not a deal-breaker for us.
+
+1. He's saying there's no consensus across all "observers, analysts, and participants," not that we can't define the concept.
+    - Let's not assume all of those perspectives are equal.
+
+2. We have huge needs to be able to identify and measure terrorism so we need a clear place to start.
+    - Can't address it if we can't measure it.
+    
+<br>
+
+The goal for us as social scientists is to be able to clearly communicate A SINGLE compelling definition for terrorism, NOT create THE ONLY definition.
+
+That definition then guides us as we measure terrorism in the world.
 
 
 
@@ -164,6 +184,14 @@ class: middle
 1. (The targets themselves)
 2. (potential allies of the perpetrators, and)
 3. (third parties that might cooperate with one or the other.)
+
+<br>
+
+### For Friday: Take home all class definitions and work to combine them into one!
+
+
+
+
 
 
 

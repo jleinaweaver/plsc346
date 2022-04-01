@@ -69,7 +69,7 @@ Today's Agenda: Explore Sedgwick's (2004) arguments concerning religious terrori
 background-image: url('libs/Images/background-blues_and_greys.jpg')
 background-size: 100%
 background-position: center
-class: middle, inverse
+class: middle, inverse, textwhite
 
 .size60[.center[**A non-state actor using violence outside societal norms against people or property, meant to intimidate and connected to a political struggle**]]
 
@@ -88,7 +88,7 @@ I tried to adapt to your concerns about failed attempts at violence.
 background-image: url('libs/Images/background-blues_and_greys.jpg')
 background-size: 100%
 background-position: center
-class: middle, center, inverse
+class: middle, center, inverse, textwhite
 
 .size60[**What explains the variation in how and why non-state actors use violence against states and people?**]
 
@@ -100,19 +100,18 @@ class: middle, center, inverse
 
 ???
 
-### How does the framing of this paper help us answer our big question?
+Let's talk about the framing of the paper.
 
-#### - Research question?
-
-#### - Key actors?
-
-#### - Key institutions?
-
-#### - Key puzzles?
+### What is the question and how is it worded?
+- (Is religious terrorism a distinctly different form of terrorism?)
 
 <br>
 
-Research Question: Is religious terrorism a distinctly different form of terrorism?
+### What literature is the paper connected to?
+
+<br>
+
+### What are the key concepts and how are they defined?
 
 <br>
 
@@ -129,7 +128,7 @@ Or, similarly to our discussion on Monday, is religious terror distinct enough f
 background-image: url('libs/Images/background-blues_and_greys.jpg')
 background-size: 100%
 background-position: center
-class: middle, inverse
+class: middle, inverse, textwhite
 
 .size55[.center[**Q1. How does the framing of this project help us answer our question?**]]
 
@@ -209,7 +208,7 @@ Key to this analysis is that Sedgwick differentiates between ultimate aims and i
 
 ### Is this an arbitrary divide in order to support the argument or a separation of two distinctly different things?
 
-* Make sure both sides of debate represented *
+*Make sure both sides of debate represented*
 
 <br>
 
@@ -236,7 +235,7 @@ Let's shift to the 9/11 strategy argument.
 background-image: url('libs/Images/background-blues_and_greys.jpg')
 background-size: 100%
 background-position: center
-class: middle, inverse
+class: middle, inverse, textwhite
 
 .size55[.center[**Q2. How does the model of politics presented in this paper help us answer our big question?**]]
 
@@ -272,7 +271,7 @@ and
 background-image: url('libs/Images/background-blues_and_greys.jpg')
 background-size: 100%
 background-position: center
-class: middle, center, inverse
+class: middle, center, inverse, textwhite
 
 .size60[**What explains the variation in how and why non-state actors use violence against states and people?**]
 
@@ -290,14 +289,16 @@ class: middle, center, inverse
 
 1. "propaganda of the deed" is closest thing to a coherent theory of terrorist action, but needs to be fleshed out.
 
+<br>
+
 (Weaknesses)
 
 1. Lacks a coherent theory / clearly testable hypotheses.
-- How do I use this to look at the world and see if you are right?
-- Is "propaganda of the deed" supposed to be a uniquely religious terror strategy or just something AQ does?
+    - How do I use this to look at the world and see if you are right?
+    - Is "propaganda of the deed" supposed to be a uniquely religious terror strategy or just something AQ does?
 
 2. Historical analogies are interesting but I'm not sure what they prove?
-- Ultimately, seems to be that sedgwick argues religious terror is a distinct thing but the three best known examples of it aren't really it...
+    - Ultimately, seems to be that sedgwick argues religious terror is a distinct thing but the three best known examples of it aren't really it...
 
 
 
@@ -306,7 +307,7 @@ class: middle, center, inverse
 background-image: url('libs/Images/background-blues_and_greys.jpg')
 background-size: 100%
 background-position: center
-class: middle, inverse
+class: middle, inverse, textwhite
 
 .size55[.center[**What explains the variation in how and why non-state actors use violence against states and people?**]]
 
@@ -322,13 +323,28 @@ class: middle, inverse
 
 ### Ultimately, are we convinced that religious terrorism fundamentally different from other types?
 
+<br>
+
 ### If so, do we need special strategies to counter it?
 
-<br>
+
+
+
+---
+
+background-image: url('libs/Images/12-2-Isis.jpg')
+background-size: 100%
+background-position: center
+class: middle, inverse, textwhite
+
+???
 
 ### Thinking about the papers this week, are we convinced that a typology approach to terrorism is a useful strategy for policymakers seeking to reduce the risks?
 
-- Nationalist (ETA, IRA), Religious (ISIS, AQ), Ideological leftists (Communists, anarchists), Ideological right (Nazis, skinheads, Klan)
+- Nationalist (ETA, IRA), 
+- Religious (ISIS, AQ), 
+- Ideological leftists (Communists, anarchists), 
+- Ideological right (Nazis, skinheads, Klan)
 
 <br>
 
