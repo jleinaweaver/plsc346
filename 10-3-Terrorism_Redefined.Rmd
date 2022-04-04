@@ -80,13 +80,20 @@ class: middle
 
 With a few days to reflect on our work we need a working definition of terrorism!
 
-### What do we have?
+Let's focus on making a list of criteria.
 
-### What obervable phenomena can we tie to it?
+### What are the key characteristics of terrorism?
 
-*ON BOARD: Definition and Observable Phenomena*
+*ON BOARD*
 
 <br>
+
+### Class Definition (2022 SP)
+- violence or threat of violence
+- non-state actor
+- Incite fear (intimidate or subjugate) in audience beyond the target
+- Outside "normal" rules
+- Member of established group with clear aims/ideology
 
 ### Notes from prior semesters
 - Non-state actor using violence/harmful acts to send a signal to the target / recruit allies / dissuade 3rd parties
@@ -128,11 +135,7 @@ background-position: center
 
 Perspective on Terrorism 1: "One person’s terrorist is another person’s freedom fighter"
 
-### What does this mean?
-
-### How does this help us think about terrorism? 
-
-### How does our definition deal with this?
+### What does this mean and how does it frame terrorism for us?
 
 <br>
 
