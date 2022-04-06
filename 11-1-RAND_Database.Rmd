@@ -41,6 +41,9 @@ d2 <- d |>
     Year2 = if_else(Year == 2068, 1968, Year)
   )
 
+#### In class notes
+#d2 |> group_by(Year) |> summarize(sum(Fatalities)) |> print(n=100)
+
 ```
 
 class: slideblue
@@ -152,13 +155,13 @@ class: middle, slideblue
 .size45[
 1) What are the pros and cons of using this as our primary database of terrorism?
 - Who is the RAND Corporation?
-- How do they define the key concepts?
+- How do they define terrorism?
 - How are they measuring terrorism?
 ]
 
 ???
 
-Groups take 10 minutes to make two lists you can put on the board.
+Groups take 8 minutes to answer this question.
 - Pros vs cons
 
 Think about the project in broad strokes
@@ -195,6 +198,16 @@ class: middle
 
 ### After reading through the website material do you have any concerns about institutional biases?
 
+<br>
+
+RAND advertises itself as a non-partisan think-tank.
+- Many contracts and much funding through US military and military contractors
+
+This does tend to influence their problem-framings and perspectives on defense issues.
+- Not a question of misrepresenting data, but asking and answering questions in line with US defense industry perspectives.
+
+Seems quite evident as we explore the data here.
+
 
 
 
@@ -218,11 +231,9 @@ Terrorism is defined by the nature of the act, not by the identity of the perpet
 
 ???
 
-### Is this a "good" definition?
+### How does this compare to our class definition of terrorism?
 
-#### - How does it compare to our class definition?
-
-#### - How does it compare to Tilly's (2004) definition?
+### Any concerns from adopting this as our primary approach to measuring and studying terrorism around the world? 
 
 <br>
 
@@ -264,14 +275,16 @@ I note that it lists variables that, for some reason, are not included in the da
 
 ---
 
-class: middle, center, slideblue
+class: middle, slideblue
 
-.size65[.content-box-grey[**Operationalizing Terrorism**]]
+.center[.size65[.content-box-grey[**Operationalizing Terrorism**]]]
 
 <br>
 
-.size60[
+.size50[
 2) Is the damage caused by terrorism getting worse over time?
+
+- Sum the injuries and fatalities in 1970, 1980, 1990, 2000 and 2009
 ]
 
 ???
@@ -331,7 +344,7 @@ class: middle, center, slideblue
 <br>
 
 .size60[
-3) Where are the terrorism hot spots in the world?
+3) Focus on only the most recent five years (2005-2009), where are the terrorism hot spots in the world?
 ]
 
 ???
@@ -398,17 +411,15 @@ d2 |>
 
 ???
 
-Map represents a count of terror attacks overall.
+Just to start, here's a map of overall database attacks
 
 - e.g. I counted the number of attacks per country. 
 
 ### What conclusions can we draw using this map of the data?
 
-#### - How confident are we the red countries are the terror hotspots?
+### - How confident are we the red countries are the terror hotspots?
 
-<br>
-
-### What do the lighter countries in Africa and Central Asia represent? Lack of reliable info or places with fewer attacks?
+### - What do the lighter countries in Africa and Central Asia represent? Lack of reliable info or places with fewer attacks?
 
 #### - Does thinking about the sample selection procedures (and what we don't know about them) at rand help us answer this question?
 
@@ -418,7 +429,7 @@ Map represents a count of terror attacks overall.
 
 ```{r, fig.retina=3, fig.align='center', out.width='100%', fig.height=5, fig.width=8}
 ###################################################
-## Map of terror attacks per country overall
+## Map of terror attacks per country since 2005
 d2 |>
   filter(Year2 >= 2005) |>
   group_by(cow) |>
@@ -491,7 +502,7 @@ class: middle, slideblue
 <br>
 
 .size60[
-4) Are the characteristics of terrorism changing?
+4) Focus on the same period, are the characteristics of terrorism changing?
 
 - Who is doing it?
 - What weapons are they using?
@@ -516,7 +527,7 @@ class: center, slideblue
 .size30[
 ```{r}
 ## Count groups
-d2 |> count(Perpetrator) |> arrange(desc(n)) |> slice(1:10) |> knitr::kable()
+d2 |> filter(Year2 >= 2005) |> count(Perpetrator) |> arrange(desc(n)) |> slice(1:10) |> knitr::kable()
 ```
 ]
 
@@ -549,7 +560,7 @@ class: center, slideblue
 .size30[
 ```{r}
 ## Count groups
-d2 |> filter(Year2 >= 2000) |> count(Weapon) |> arrange(desc(n)) |> slice(1:10) |> knitr::kable()
+d2 |> filter(Year2 >= 2005) |> count(Weapon) |> arrange(desc(n)) |> slice(1:10) |> knitr::kable()
 ```
 ]
 
