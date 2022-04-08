@@ -253,6 +253,7 @@ d |>
 
 ### Did everybody find these five terror groups?
 - Note that "U.S." isn't always the first country in the list of base countries.
+    - Is this a "con" for the dataset?
 
 <br>
 

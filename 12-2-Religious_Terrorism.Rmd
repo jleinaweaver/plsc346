@@ -60,7 +60,8 @@ Explore Sedgwick's (2004) arguments concerning religious terrorism
 ???
 
 ### Prep for Class
-1. ...
+1. Prep email link to Google Doc to collect cases for Monday
+    - https://docs.google.com/document/d/1VxpQcFCyLm9UySFbvhUDyl9pe0c-C3P4VeOAjqGGN2U/edit?usp=sharing
 
 <br>
 
@@ -370,7 +371,28 @@ class: middle, inverse, textwhite
 
 
 
+---
 
+background-image: url('libs/Images/background-swirls.jpg')
+background-size: 100%
+background-position: center
+class: middle, center
+
+## For Monday
+
+.size55[
+Bring to class a piece of evidence showing terrorism (e.g. a terrorist group, a terrorist threat or a specific terror attack) changing the behavior of a target audience (e.g. society, community, government) in some specific way.
+]
+
+???
+
+*Send email*
+
+Next week we examine the ongoing debate about whether or not terrorism "works" as a strategy.
+
+We'll kick off by examining case studies you collect for us!
+
+### Any questions on the prompt for Monday?
 
 
 
