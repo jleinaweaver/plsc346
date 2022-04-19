@@ -98,6 +98,8 @@ I would like us to evaluate this research but as evidence for a slightly differe
 
 <br>
 
+## My Proposal
+
 I want us to evaluate this paper as an argument that Facebook increases the incidence of terrorism.
 
 We've studied political violence all semester and terrorism now for a few weeks, so let's see if this paper supports this proposal.
@@ -121,22 +123,28 @@ class: middle, center, inverse
 
 ???
 
-### How does the framing of this paper help us evaluate this proposal?
+Clearly the authors do not take their argument directly to terrorism, but I want us to.
 
-Clearly the authors do not take this to terrorism, but I want us to.
+- How does the framing of this paper help us evaluate this proposal?
 
-### Does the basic structure of the paper, e.g. the concepts and perspective, allow us to evaluate this proposal?
+<br>
 
-*Let them share thoughts about the framing of the paper*
+### What is the question and how is it worded?
+- (Research Question: )
 
-#### - Research question?
+<br>
 
-#### - Key actors?
+### What literature is the paper connected to?
+- ?
 
-#### - Key institutions?
+<br>
 
-#### - Key puzzles?
+### What are the key concepts this paper uses to measure violence?
+- ?
 
+<br>
+
+### How close is this measure of violence to meeting our definition of terrorism?
 
 
 ---
