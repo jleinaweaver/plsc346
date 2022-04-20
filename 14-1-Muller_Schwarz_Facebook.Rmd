@@ -32,15 +32,13 @@ knitr::opts_chunk$set(echo = FALSE,
 
 class: slideblue
 
-.size70[**Today's Agenda**]
+.size80[**Today's Agenda**]
 
 <br>
 
-.size45[.center[
+.size50[.center[
 Müller, K. & Schwarz, C. (2020, Jun 5). Fanning the Flames of Hate: Social Media and Hate Crime. *Social Science Research Network (SSRN)*.
 ]]
-
-<br>
 
 <br>
 
@@ -57,63 +55,25 @@ Müller, K. & Schwarz, C. (2020, Jun 5). Fanning the Flames of Hate: Social Medi
 
 This week I want us to explore some cutting-edge research that is, so far, unpublished but has caused a bit of a stir in the media.
 
+<br>
+
 The question these articles explore is, how has social media impacted the decision by individuals and groups to use violence to further political ends.
+
+<br>
 
 Today we begin with the Müller and Schwarz article titled "Fanning the Flames of Hate: Social Media and Hate Crime."
 
-<br>
-
-### What is the big claim in this paper?
-
-(SLIDE)
 
 
 
 ---
 
-background-image: url('libs/Images/14_1-facebook_dr_evil.png')
-background-size: 100%
-background-position: center
-
-???
-
-Facebook usage leads to violence by non-state actors against refugees.
-
-- "We show that anti-refugee sentiment on Facebook predicts crimes against refugees in otherwise similar municipalities with higher social media usage."
-
-<br>
-
-Now, here's the deal.
-
-I would like us to evaluate this research but as evidence for a slightly different proposal.
-
---
-
-.center[.size40[.content-box-red[**Proposal: Facebook Increases Terrorism**]]]
-
-
-???
-
-<br>
-
-<br>
-
-## My Proposal
-
-I want us to evaluate this paper as an argument that Facebook increases the incidence of terrorism.
-
-We've studied political violence all semester and terrorism now for a few weeks, so let's see if this paper supports this proposal.
-
-
-
----
-
-background-image: url('libs/Images/background-blues_and_greys.jpg')
+background-image: url('libs/Images/background-red.png')
 background-size: 100%
 background-position: center
 class: middle, center, inverse
 
-.size60[**Proposal: Facebook Increases Terrorism**]
+.size60[**Fanning the Flames of Hate: Social Media and Hate Crime (Müller & Schwarz 2020)**]
 
 <br>
 
@@ -123,87 +83,80 @@ class: middle, center, inverse
 
 ???
 
-Clearly the authors do not take their argument directly to terrorism, but I want us to.
+Let's start our analysis in the same place we always should, the framing.
 
-- How does the framing of this paper help us evaluate this proposal?
-
-<br>
-
-### What is the question and how is it worded?
-- (Research Question: )
+### What is the research question and what do we learn from its phrasing?
+- (Does social media "propagate" hate crimes?)
+    - propagate: spread and promote (an idea, theory, etc.) widely.
 
 <br>
 
 ### What literature is the paper connected to?
-- ?
+1. ("Previous research has shown that traditional media can play a role in violent outbursts or ethnic hatred (e.g Yanagizawa-Drott, 2014; Adena et al., 2015; DellaVigna et al., 2014).")
+
+2. (social media platforms allow users to easily self-select into niche topics and
+extreme viewpoints, e.g. echo chambers)
+
+3. (Social media has also become a widely-consumed news source, particularly for young people (Hölig and Hasebrink, 2016))
+
+4. (In the US, around half of all adults use social media to get news and two thirds of Facebook users use it as a news source (Pew Research Center, 2018).)
 
 <br>
 
-### What are the key concepts this paper uses to measure violence?
-- ?
+### And, what is the big claim in this paper?
 
-<br>
+(SLIDE)
 
-### How close is this measure of violence to meeting our definition of terrorism?
-
-
----
-
-background-image: url('libs/Images/background-blues_and_greys.jpg')
-background-size: 100%
-background-position: center
-class: middle, center, inverse
-
-.size60[**Proposal: Facebook Increases Terrorism**]
-
-<br>
-
-<br>
-
-.size45[**Q2. How does the model of politics presented in this paper help us evaluate this proposal?**]
-
-???
-
-### What is the model in this paper?
-
-Take some time on your own...
-
-Compare to people next to you...
-
-*ON BOARD*
-
-<br>
-
-#### class notes 2019-12-02
-
-1. Social media exposes people to different views
-2. Social media reinforces those ideas (echo chamber, confirmation bias)
-3. Over time, repeated exposures change identity
-
-<br>
-
-### Who are the 'people' in this model? Anybody vs those predisposed to violence?
 
 
 
 ---
 
-background-image: url('libs/Images/background-blues_and_greys.jpg')
+background-image: url('libs/Images/14_1-facebook_dr_evil_v2.png')
 background-size: 100%
 background-position: center
-class: middle, center, inverse
+class: bottom, inverse, textwhite, center
 
-.size60[**Proposal: Facebook Increases Terrorism**]
-
-<br>
-
-<br>
-
-.size45[**Q3. How does the analysis in this project help us evaluate this proposal?**]
+.size35[**"We show that anti-refugee sentiment on Facebook predicts crimes against refugees in otherwise similar municipalities with higher social media usage" (abstract)**]
 
 ???
 
-### Do we have any concerns or need for clarifications in terms of the empirical parts of the paper?
+Facebook usage leads to violence by non-state actors against refugees.
+
+- "We show that anti-refugee sentiment on Facebook predicts crimes against refugees in otherwise similar municipalities with higher social media usage."
+
+<br>
+
+### Can anybody simplify this down for me and connect it to the work we've been doing in this final section of our class?
+- (SLIDE: Facebook Usage Increases Terrorism)
+
+
+
+---
+
+background-image: url('libs/Images/14_1-facebook_dr_evil_v2.png')
+background-size: 100%
+background-position: center
+class: bottom, inverse, textwhite
+
+.center[.size50[**Facebook Usage Increases Terrorism**]]
+
+
+???
+
+I know the article doesn't invoke the dreaded T-word, but let's talk about it for a sec.
+
+### How do the "hate crimes" explained in this paper compare to our class definition of terrorism?
+
+### - Can we make this connection OR is it a distraction from the actual point?
+
+*DISCUSS and DEBATE*
+
+<br>
+
+### How do they operationalize hate crimes?
+- (SLIDE: Summary stats table)
+
 
 
 
@@ -215,17 +168,110 @@ background-position: center
 
 ???
 
-Let's talk concepts defined, operationalized and measured.
+Let's talk about the operationalization and measurement of hate crimes here.
 
-### Evaluate the details in Table 1
-
-*Discuss*
-
-(Case: Germany and the right-wing party Alternative für Deutschland (AfD))
+### Talk me through the strengths and weaknesses of the "refugee attacks" variables.
+- *Discuss*
 
 <br>
 
-Let's talk about some key aspects of the analyses.
+### What do these descriptive statistics tell us about the sample?
+
+<br>
+
+SLIDE: Before we discuss the social media data, let's diagram the model.
+
+
+
+
+---
+
+background-image: url('libs/Images/background-red.png')
+background-size: 100%
+background-position: center
+class: middle, center, inverse
+
+.size60[**Fanning the Flames of Hate: Social Media and Hate Crime (Müller & Schwarz 2020)**]
+
+<br>
+
+<br>
+
+.size45[**Q2. How does the model of politics presented in this paper help us evaluate this proposal?**]
+
+???
+
+Take some time on your own to diagram the model in this paper.
+- Who are the interests, what are the institutions and the complicating interactions that connect social media to hate crimes?
+
+<br>
+
+Compare to people next to you...
+
+<br>
+
+*ON BOARD*
+
+- Interests: ?
+- Institutions: ?
+- Interactions: ?
+
+<br>
+
+#### class notes 2019-12-02
+
+1. Social media exposes people to different views
+2. Social media reinforces those ideas (echo chamber, confirmation bias)
+3. Over time, repeated exposures change identity
+
+Who are the 'people' in this model? Anybody vs those predisposed to violence?
+
+
+
+
+---
+
+background-image: url('libs/Images/14_1-Table1.png')
+background-size: 90%
+background-position: center
+
+???
+
+Let's now talk about how the paper operationalizes the predictor variables.
+
+### Talk me through the strengths and weaknesses of the "social media" variables.
+- *Discuss*
+- (Case: Germany and the right-wing party Alternative für Deutschland (AfD))
+
+<br>
+
+### What do these descriptive statistics tell us about the sample?
+
+
+
+
+---
+
+background-image: url('libs/Images/background-red.png')
+background-size: 100%
+background-position: center
+class: middle, center, inverse
+
+.size60[**Fanning the Flames of Hate: Social Media and Hate Crime (Müller & Schwarz 2020)**]
+
+<br>
+
+<br>
+
+.size45[**Q3. How does the analysis in this project help us evaluate this proposal?**]
+
+???
+
+### How do the authors try to test their model with this data?
+
+### - Is it convincing? Why or why not?
+
+
 
 
 ---

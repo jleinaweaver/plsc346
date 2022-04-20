@@ -76,12 +76,14 @@ Data, slides and errata for my class at Drury University (PLSC 346: Political Vi
 
 14-1-Muller_Schwarz_Facebook.html
 
-14-2-Chen_et_al_YouTube.html
+14-2-Political_Violence_USA.html
 
-14-3-Political_Violence_USA.html
+14-3-Final_Brainstorm.html
 
-15-1-Stopping_Terror_Cases.html
+15-1-Final_Paper_Data.html
 
-15-2-Stopping_Terror_Outline1.html
+15-2-Final_Paper_Outline.html
 
 15-3-Writing_Workshop.html
+
+OMIT-Chen_et_al_YouTube.html
