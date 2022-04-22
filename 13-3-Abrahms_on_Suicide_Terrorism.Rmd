@@ -74,6 +74,24 @@ I bring this up to point out that the more you read this high quality stuff, the
 
 ---
 
+class: middle, slideblue
+
+.size55[
+
+**Syllabus Change for Next Week**
+
+- **Monday**: Müller & Schwarz (2020)
+
+- **Wednesday**: Gellman (2021)
+
+- **Friday**: Start the final projects
+
+]
+
+
+
+---
+
 background-image: url('libs/Images/background-blues_and_greys.jpg')
 background-size: 100%
 background-position: center
