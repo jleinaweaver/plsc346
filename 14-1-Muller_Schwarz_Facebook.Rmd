@@ -61,8 +61,35 @@ The question these articles explore is, how has social media impacted the decisi
 
 <br>
 
+SLIDE: Quick note, syllabus change this week (announced last week)
+
+
+
+
+
+---
+
+class: middle, slideblue
+
+.size55[
+
+**Syllabus Change for Next Week**
+
+- **Monday**: Müller & Schwarz (2020)
+
+- **Wednesday**: Gellman (2021)
+
+- **Friday**: Start the final projects
+
+]
+
+???
+
 Today we begin with the Müller and Schwarz article titled "Fanning the Flames of Hate: Social Media and Hate Crime."
 
+Wednesday, the Gellman paper on the growing political violence in the US
+
+Friday we start the final papers
 
 
 
