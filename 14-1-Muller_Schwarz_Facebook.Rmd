@@ -115,8 +115,41 @@ Let's start our analysis in the same place we always should, the framing.
 ### What is the research question and what do we learn from its phrasing?
 - (Does social media "propagate" hate crimes?)
     - propagate: spread and promote (an idea, theory, etc.) widely.
+    
+<br>
+
+### How plausible to you is the underlying mechanism here?
+#### - Is this asking us to assume there exists a large segment of our population that read nonsense on the internet and it actually changes their positions on important topics?
+
+*Encourage this discussion with loaded prompts*
+- Does TV advertising work on you? Why or why not?
+- Does advertising at the grocery store work on you?
 
 <br>
+
+Key here is this doesn't require us to assume people are stupid.
+- e.g. I read about Jewish space lasers on the internet and now I believe!
+
+*For you: this is a paper about overcoming the collective action problem and coming to see your in-group as supportive of violence against the out-group*
+
+
+
+---
+
+background-image: url('libs/Images/background-red.png')
+background-size: 100%
+background-position: center
+class: middle, center, inverse
+
+.size60[**Fanning the Flames of Hate: Social Media and Hate Crime (Müller & Schwarz 2020)**]
+
+<br>
+
+<br>
+
+.size45[**Q1. How does the framing of this project help us evaluate this proposal?**]
+
+???
 
 ### What literature is the paper connected to?
 1. ("Previous research has shown that traditional media can play a role in violent outbursts or ethnic hatred (e.g Yanagizawa-Drott, 2014; Adena et al., 2015; DellaVigna et al., 2014).")
@@ -237,11 +270,12 @@ Compare to people next to you...
 
 <br>
 
-*ON BOARD*
+Fundamentally, as discussed bottom p4, this is about overcoming collective action problems and coming to see your in-group as supportive of violence against the out-group.
 
-- Interests: ?
-- Institutions: ?
-- Interactions: ?
+
+
+
+
 
 <br>
 
