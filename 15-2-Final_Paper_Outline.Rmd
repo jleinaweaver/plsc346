@@ -50,6 +50,44 @@ Work on Final Paper Projects
 
 
 
+
+---
+
+class: middle, slideblue
+
+.center[.size50[**You must submit the final paper to Moodle AND Watermark**]]
+
+```{r, out.width='80%', fig.align='center'}
+knitr::include_graphics('libs/Images/00-Watermark1.png')
+```
+
+???
+
+Super important head's up!
+
+Sorry to hit you with a bit of housekeeping, but I need everybody to submit their final paper twice.
+- Once to Moodle, and once to Watermark for departmental assessment. 
+
+- This will not impact your final grade. 
+
+- It is designed to require every department on campus to continuously monitor student growth and learning.
+
+- You access Watermark through the OneLogin portal (link on the Drury website). 
+
+- Log in, select our class and you should see a link to this assignment.
+
+<br>
+
+My apologies for adding an extra item to your to-do list, but I'm told I will not be able to submit your final grade in this class at the end of term unless you have uploaded the paper to Watermark. 
+
+### Any questions on this?
+
+
+
+
+
+
+
 ---
 
 class: middle, slideblue
