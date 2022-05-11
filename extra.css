@@ -1,3 +1,22 @@
+/* Adjust table row coloring by copying the full .remark-slide here and editing it to modify the odd rows in addition to the already coded even ones! */
+.remark-slide table {
+  margin: auto;
+  border-top: 1px solid #666;
+  border-bottom: 1px solid #666;
+}
+.remark-slide table thead th { border-bottom: 1px solid #ddd; }
+th, td { padding: 5px; }
+.remark-slide thead, .remark-slide tfoot, .remark-slide tr:nth-child(even), .remark-slide tr:nth-child(odd) { background: #faf9f8 }
+
+/* Create full screen slides for R plots */
+.full {
+  padding: 0px;
+}
+
+.full p {
+  margin-top: 0px;
+}
+
 /* Create font size containers */
 .size100 { font-size: 100px; }
 .size90 { font-size: 90px; }
@@ -10,10 +29,26 @@
 .size45 { font-size: 45px; }
 .size40 { font-size: 40px; }
 .size35 { font-size: 35px; }
+.size34 { font-size: 34px; }
+.size33 { font-size: 33px; }
+.size32 { font-size: 32px; }
+.size31 { font-size: 31px; }
 .size30 { font-size: 30px; }
 .size25 { font-size: 25px; }
+.size24 { font-size: 24px; }
+.size23 { font-size: 23px; }
 .size22 { font-size: 22px; }
+.size21 { font-size: 21px; }
 .size20 { font-size: 20px; }
+.size19 { font-size: 19px; }
+.size18 { font-size: 18px; }
+.size17 { font-size: 17px; }
+.size16 { font-size: 16px; }
+.size15 { font-size: 15px; }
+.size14 { font-size: 14px; }
+.size13 { font-size: 13px; }
+.size12 { font-size: 12px; }
+.size11 { font-size: 11px; }
 .size10 { font-size: 10px; }
 
 /* Control font size in R code chunk */
@@ -26,6 +61,10 @@
 .code115 .remark-code { font-size: 115% !important; }
 .code110 .remark-code { font-size: 110% !important; }
 .code105 .remark-code { font-size: 105% !important; }
+.code95 .remark-code { font-size: 95% !important; }
+.code90 .remark-code { font-size: 90% !important; }
+.code85 .remark-code { font-size: 85% !important; }
+.code80 .remark-code { font-size: 80% !important; }
 
 /* Color Text */
 .textgrey { color: grey; }
@@ -33,7 +72,8 @@
 .textred { color: red; }
 .textblue { color: blue; }
 .textwhite { color: white; }
-.textorange { color: #FFBF00; }
+.textgreen { color: green; }
+.textorange { color: orange; }
 
 /* Omit page numbers */
 .remark-slide-number {
@@ -43,7 +83,6 @@
 /* Add background color to a slide */
 .slideblue { background-color: #aed6f1; }
 .slidegreen { background-color: #a9dfbf; }
-.slidegrey { background-color: # #e5e8e8; }
 .slidered { background-color: #f5b7b1; }
 .slidepurple { background-color: #e8daef; }
 .slideorange { background-color: #fad7a0; }
@@ -60,6 +99,7 @@
      Content box width: 160px
      Content box height: 80px */
 }
+.content-box-white,
 .content-box-blue,
 .content-box-gray,
 .content-box-grey,
@@ -68,14 +108,17 @@
 .content-box-purple,
 .content-box-red,
 .content-box-yellow {
-    border-radius: 20px;
-    margin: 0 0 20px;
+    border-radius: 15px;
+    margin: 0 0 25px;
     overflow: hidden;
     padding: 20px;
     width: 100%;
 }
+.content-box-white {
+    background-color: #FFFFFF;
+}
 .content-box-blue {
-    background-color: #F0F8FF;
+    background-color: #b3ccff;
 }
 .content-box-gray {
     background-color: #e2e2e2;
