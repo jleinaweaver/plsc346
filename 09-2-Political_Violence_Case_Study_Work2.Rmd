@@ -1,0 +1,459 @@
+---
+output:
+  xaringan::moon_reader:
+    css: ["default", "extra.css"]
+    lib_dir: libs
+    seal: false
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: '16:9'
+---
+
+```{r, echo = FALSE, warning = FALSE, message = FALSE}
+##xaringan::inf_mr()
+## For offline work: https://bookdown.org/yihui/rmarkdown/some-tips.html#working-offline
+## Images not appearing? Put images folder inside the libs folder as that is the main data directory
+
+library(tidyverse)
+library(readxl)
+library(stargazer)
+##library(kableExtra)
+##library(modelr)
+
+knitr::opts_chunk$set(echo = FALSE,
+                      eval = TRUE,
+                      error = FALSE,
+                      message = FALSE,
+                      warning = FALSE,
+                      comment = NA)
+
+# PTS: Load, filter and select variables
+pts <- read_excel("../../Data/PTS/2023-05-PTS_2022/PTS-2022.xlsx", na = "NA") |>
+  filter(Country == "Afghanistan", Year > 2006) |>
+  select(Country, Year, PTS_A, PTS_S, NA_Status_A, NA_Status_S)
+
+# CIRIGHTS: Load, filter and select variables
+cirights <- read_excel("../../Data/CIRIGHTS/cirights-v1.25.22.11/CIRIGHTS V1.25.22.11/cirights_v1.22.11.25.xlsx") |>
+  filter(country == "Afghanistan", year > 2006) |>
+  select(year, physint_sum, polpris:kill)
+
+# Merge the datasets
+d <- left_join(pts, cirights, by = c("Year" = "year"))
+```
+
+background-image: url('libs/Images/00-Leviathan_Cover_55.png')
+background-size: 100%
+background-position: center
+class: middle
+
+.size70[**Today's Agenda**]
+
+<br>
+
+.size50[
+.center[
+The Political Violence Case Study
+
+(Due Feb 18)
+]]
+
+<br>
+
+.center[.size40[
+  Justin Leinaweaver (Fall 2023)
+]]
+
+???
+
+### Prep for Class
+1. ...
+
+<br>
+
+
+
+---
+
+background-image: url('libs/Images/background-blue_cubes_v2.png')
+background-size: 100%
+background-position: center
+class: middle, inverse
+
+.size50[**Political Violence Case Study**]
+
+.size35[(Due Feb 18)
+
+Use all of the data sources from last week to write a report on **one country** that:
+
+- **Summarizes AND analyzes** its recent history of political violence (e.g. over the last ten years), and 
+
+- **Makes an argument** about what the current PTS and CIRIGHTS codings should be based on the 2020 Country Reports on Human Rights Practices from the State Department
+]
+
+???
+
+### Any questions on the assignment?
+
+
+
+---
+
+background-image: url('libs/Images/04-1-8-combined_2.png')
+background-size: 96%
+background-position: center
+class: middle, slideblue
+
+???
+
+### At this point does everyone have a cleaned copy of the data focused only on their country over ten years?
+
+*Slides in 04-1 show the steps if you need them again*
+
+
+
+---
+
+background-image: url('libs/Images/background-blue_cubes_v2.png')
+background-size: 100%
+background-position: center
+class: middle, inverse
+
+# For Today
+
+.size45[.center[
+Come to class ready to share your conclusions (3 minimum) about your country's experience of political violence over the last ten years]]
+
+.size35[
+1. US State Department Human Rights Country Reports
+2. Amnesty International Country Reports
+3. The PTS datatset
+4. The CIRIGHTS dataset
+]
+
+???
+
+For today I asked each of you to reflect on all your data and analyses in order to draw out three key conclusions about their country's experience of political violence.
+
+### Is everybody ready to go with this?
+
+<br>
+
+Before we hear about your work, let's do a quick refreshed from Data Analysis on methods for using data to support an argument.
+
+
+
+
+---
+
+background-image: url('libs/Images/background-slate.jpg')
+background-size: 100%
+background-position: center
+class: middle
+
+# Simple Ways to Visualize Data
+
+.size50[
+1. Tables
+
+2. Line Plots
+
+3. Bar Plots
+]
+
+???
+
+I suspect these three basic approaches will represent more than enough tools for the current assignment.
+
+
+
+
+---
+
+class: middle
+
+# 1. Tables
+
+.size25[
+```{r}
+# Output data
+d |>
+  select(Year, "Physical Integrity Index" = physint_sum) |>
+  filter(Year < 2018) |>
+  kableExtra::kbl(align = 'c') |>
+  kableExtra::kable_styling(bootstrap_options = c("striped", "hover", "condensed"))
+```
+]
+
+???
+
+Tables can be a very useful way of conveying specific data to a reader.
+
+They ain't fancy but they're easy to include and they get the basic job done!
+
+<br>
+
+### Any easy conclusions from this table?
+
+<br>
+
+### Questions on this?
+
+
+---
+
+background-image: url('libs/Images/background-slate.jpg')
+background-size: 100%
+background-position: center
+class: middle
+
+# 2. Line Plots
+
+```{r, fig.retina=3, fig.asp=0.618, fig.align='center', out.width = '80%', fig.width=7}
+## line plot physint across time
+d |>
+  ggplot(aes(x = Year, y = physint_sum)) +
+  geom_line(color = "blue", size = 1.3) +
+  ggthemes::theme_clean() +
+  labs(x = "", y = "Physical Integrity Rights Index",
+       title = "Physical Integrity Rights in Afghanistan (2007-2019)") +
+  scale_y_continuous(limits = c(0,8)) +
+  scale_x_continuous(breaks = seq(2007, 2019, 3))
+```
+
+???
+
+Useful for showing trends in numeric variables across time!
+
+- Much better than the table!
+
+<br>
+
+### Any obvious conclusions from this viz?
+
+<br>
+
+### Questions on this?
+
+
+---
+
+background-image: url('libs/Images/background-slate.jpg')
+background-size: 100%
+background-position: center
+class: middle
+
+# 3. Bar Plots
+
+```{r, fig.retina=3, fig.asp=0.618, fig.align='center', out.width = '80%', fig.width=7}
+## bar plot PTS_S
+d |>
+  mutate(
+    PTS_S_char = as.character(PTS_S),
+    PTS_S2 = factor(PTS_S_char, levels = c("1", "2", "3", "4", "5"))
+  ) |> 
+  ggplot(aes(x = PTS_S2)) +
+  geom_bar(fill = "gold2") +
+  ggthemes::theme_clean() +
+  labs(x = "", y = "Physical Integrity Rights Index",
+       title = "Physical Integrity Rights in Afghanistan (2007-2019)") +
+  scale_x_discrete(limits = c("1", "2", "3", "4", "5")) +
+  scale_y_continuous(breaks = seq(0, 10, 2))
+```
+
+???
+
+Summarize categories across all ten years
+
+- Use a bar plot to count the levels for your country and represent the counts with bars.
+
+<br>
+
+### Any obvious conclusions from this viz?
+
+<br>
+
+SLIDE: We can use this same approach with multiple variables like the sub-measures from CIRIGHTS
+
+<br>
+
+### Questions on this?
+
+
+---
+
+background-image: url('libs/Images/background-slate.jpg')
+background-size: 100%
+background-position: center
+class: middle
+
+```{r, fig.retina=3, fig.asp=0.618, fig.align='center', out.width = '94%', fig.width=7}
+d |>
+  pivot_longer(cols = disap:tort, names_to = "CIRIGHTS", values_to = "Values") |>
+  group_by(CIRIGHTS) |>
+  summarize(
+    None = sum(Values == 2, na.rm = TRUE),
+    Occasionally = sum(Values == 1, na.rm = TRUE),
+    Frequently = sum(Values == 0, na.rm = TRUE)
+  ) |>
+  pivot_longer(cols = None:Frequently, names_to = "Amount", values_to = "Values") |>
+  mutate(
+    Amount = factor(Amount, levels = c("None", "Occasionally", "Frequently"))
+  ) |>
+  ggplot(aes(x = CIRIGHTS, y = Values, fill = Amount)) +
+  geom_col(position = "dodge") +
+  #scale_y_continuous(labels = scales::percent_format()) +
+  labs(x = "", y = "Count of Scores", title = "Afghanistan CIRIGHTS Scores (2007-2019)") +
+  #guides(fill = guide_legend(reverse = TRUE)) +
+  guides(fill = "none") +
+  scale_fill_brewer(type = "seq", palette = 7) +
+  theme_bw() +
+  annotate("text", x = .68, y = 6.5, label = "None", srt = 90, hjust = 0) + # y = .02
+  annotate("text", x = 1, y = 4.5, label = "Occasional", srt = 90, hjust = 0) + 
+  annotate("text", x = 1.3, y = 1.5, label = "Frequent", srt = 90, hjust = 0) +
+  scale_x_discrete(labels = c("Disappearance", "Extrajudicial\nKillings", "Political\nPrisoners", "Torture"))
+```
+
+???
+
+We can extend the logic of the bar plots across the sub-measures in the CIRIGHTS database.
+
+<br>
+
+### Any obvious conclusions from this viz?
+
+<br>
+
+### Questions on this?
+
+
+---
+
+background-image: url('libs/Images/background-blue_cubes_v2.png')
+background-size: 100%
+background-position: center
+class: middle, inverse
+
+# For Today
+
+.size45[.center[
+Come to class ready to share your conclusions (3 minimum) about your country's experience of political violence over the last ten years]]
+
+.size35[
+1. US State Department Human Rights Country Reports
+2. Amnesty International Country Reports
+3. The PTS datatset
+4. The CIRIGHTS dataset
+]
+
+???
+
+Ok, before we share your conclusions I want everybody to think about the different techniques I just ran through.
+
+For each of your conclusions, which approach do you need / want to use?
+
+Write it down, because that's your plan for next steps!
+
+<br>
+
+### Ok, let's hear your conclusions!
+
+#### Tell us your country, and for each conclusion how you would like to present the data in your report.
+
+*Present and Discuss each*
+
+
+
+---
+
+background-image: url('libs/Images/background-swirls.jpg')
+background-size: 100%
+background-position: center
+class: middle, center
+
+.size70[**For Friday**]
+
+.size45[
+
+For each of your chosen conclusions:
+
+1. Make the visualization you will need (e.g. table, line plot or bar plot), and
+
+2. Find a news story or relevant anecdote from the source reports to support / illustrate it.
+]
+
+???
+
+Each of the key conclusions in your report (including your argument about coding the 2020 CIRIGHTS variables) requires evidence.
+
+Your main evidence comes from our sources last week, but will be FAR stronger with supplementary examples.
+
+For each conclusion find a news story or the source docs (State department or AI) other piece of external evidence to illustrate your argument.
+
+
+
+---
+
+background-image: url('libs/Images/background-blue_cubes_v2.png')
+background-size: 100%
+background-position: center
+class: middle, inverse
+
+.size50[**Political Violence Case Study**]
+
+.size35[(due Feb 18)
+
+Use all of the data sources from last week to write a report on **one country** that:
+
+- **Summarizes AND analyzes** its recent history of political violence (e.g. over the last ten years), and 
+
+- **Makes an argument** about what the current PTS and CIRIGHTS codings should be based on the 2020 Country Reports on Human Rights Practices from the State Department
+]
+
+???
+
+### Any questions on the assignment?
+
+
+---
+
+background-image: url('libs/Images/background-swirls.jpg')
+background-size: 100%
+background-position: center
+class: middle, center
+
+.size70[**For Today**]
+
+.size45[
+
+For each of your chosen conclusions:
+
+1. Make the visualization you will need (e.g. table, line plot or bar plot), and
+
+2. Find a news story or relevant anecdote from the source reports to support / illustrate it.
+]
+
+???
+
+### Everybody have their visualization AND current events supplementary evidence?
+
+<br>
+
+Groups of three! 
+
+Share what you brought and get feedback so you can start writing!
+
+
+
+
+
+
+
+
+
+
+
+
+
+

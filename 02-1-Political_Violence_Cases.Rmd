@@ -1,0 +1,552 @@
+---
+output:
+  xaringan::moon_reader:
+    css: ["default", "extra.css"]
+    lib_dir: libs
+    seal: false
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: '16:9'
+---
+
+```{r, echo = FALSE, warning = FALSE, message = FALSE}
+##xaringan::inf_mr()
+## For offline work: https://bookdown.org/yihui/rmarkdown/some-tips.html#working-offline
+## Images not appearing? Put images folder inside the libs folder as that is the main data directory
+
+library(tidyverse)
+library(readxl)
+library(stargazer)
+##library(kableExtra)
+##library(modelr)
+
+knitr::opts_chunk$set(echo = FALSE,
+                      eval = TRUE,
+                      error = FALSE,
+                      message = FALSE,
+                      warning = FALSE,
+                      comment = NA)
+```
+
+background-image: url('libs/Images/00-Leviathan_Cover_55.png')
+background-size: 100%
+background-position: center
+class: middle
+
+.size70[**Today's Agenda**]
+
+<br>
+
+.size50[
+
+Using case studies to define "political violence"
+
+]
+
+<br>
+
+<br>
+
+.center[.size40[
+  Justin Leinaweaver (Fall 2023)
+]]
+
+???
+
+### Prep for Class
+1. Be ready to take notes for yourself on the cases they present
+
+<br>
+
+
+
+---
+
+background-image: url('libs/Images/02_1-protestor_gas.jpg')
+background-size: 100%
+background-position: center
+class: bottom
+
+.center[.content-box-blue[.size40[**How do we "scientifically" analyze political violence?**]]]
+
+???
+
+*Refresher on the search for models: Notes in DA SP23 13-1*
+
+<br>
+
+Our job this semester is to develop our scientific knowledge and understanding of political violence.
+
+### How do we study the social world in a scientific manner?
+
+#### - What do we have to do?
+
+
+
+---
+
+background-image: url('libs/Images/02_1-protestor_gas.jpg')
+background-size: 100%
+background-position: center
+class: middle
+
+.center[.content-box-blue[.size40[**How do we "scientifically" analyze political violence?**]]]
+
+.size55[
+<br>
+
+<br>
+
+<br>
+]
+
+```{r, fig.retina = 3, fig.align = 'center', fig.width = 8, fig.height=1, out.width='100%'}
+d1a <- tibble(
+  x = c(0),
+  y = c(1),
+  labels = c("Data")
+)
+
+ggplot(data = d1a, aes(x = x, y = y)) +
+  geom_point(size = 8) +
+  theme_void() +
+  coord_cartesian(xlim = c(-4, 4)) +
+  geom_label(aes(label = labels), size = 7)
+  #annotate("segment", x = -2.3, xend = -1.2, y = 1, yend = 1, arrow = arrow()) +
+  #annotate("segment", x = 1.2, xend = 2.5, y = 1, yend = 1, arrow = arrow())
+```
+
+???
+
+Science is rooted in empirical data
+
+### What is empirical data?
++ (Empirical data is information acquired through observation.)
+
+<br>
+
+### What do we learn about the world from the data we collect?
+
+### - In other words, how do we use "data"?
+
+- Describe variation
+- Answer questions
+- ?
+
+<br>
+
+### And what is true about ALL of the data we have to analyze?
+- (**SLIDE**: It requires measurement!)
+
+
+
+
+
+
+---
+
+background-image: url('libs/Images/02_1-protestor_gas.jpg')
+background-size: 100%
+background-position: center
+class: middle, center
+
+.center[.content-box-blue[.size40[**How do we "scientifically" analyze political violence?**]]]
+
+.size55[
+<br>
+
+<br>
+
+<br>
+]
+
+```{r, fig.retina = 3, fig.align = 'center', fig.width = 8, fig.height=1, out.width='100%'}
+d1a <- tibble(
+  x = c(0, 3),
+  y = c(1, 1),
+  labels = c("Measurement", "Data")
+)
+
+ggplot(data = d1a, aes(x = x, y = y)) +
+  geom_point(size = 8) +
+  theme_void() +
+  coord_cartesian(xlim = c(-1, 4)) +
+  geom_label(aes(label = labels), size = 7) +
+  annotate("segment", x = 1, xend = 2.5, y = 1, yend = 1, arrow = arrow())
+```
+
+???
+
+Talk to me about measurement.
+
+### Why is ALL knowledge contingent on measurement?
+
+<br>
+
+### What does this mean is the role of uncertainty in the scientific process?
++ (It's the whole ballgame!)
++ The key to this whole process is to be transparent in all our choices so that our findings can be replicated and we can offer useful descriptions of our uncertainty.
+
+<br>
+
+So, level 1 of scientifically analyzing political violence requires us to think critically about where our data comes from!
+
+- All data is produced by measurement
+
+- All measurement is uncertain
+
+- Therefore, ALL data is somewhat uncertain.
+
+<br>
+
+Level 1 of science is a process of measuring uncertainty around our knowledge and working to shrink the uncertainty.
+
+
+
+
+---
+
+background-image: url('libs/Images/02_1-protestor_gas.jpg')
+background-size: 100%
+background-position: center
+class: middle, center
+
+.center[.content-box-blue[.size40[**How do we "scientifically" analyze political violence?**]]]
+
+.size55[
+<br>
+
+<br>
+
+<br>
+]
+
+```{r, fig.retina = 3, fig.align = 'center', fig.width = 8, fig.height=1, out.width='100%'}
+d1a <- tibble(
+  x = c(-3, 0, 3),
+  y = c(1, 1, 1),
+  labels = c("Nature", "Measurement", "Data")
+)
+
+ggplot(data = d1a, aes(x = x, y = y)) +
+  geom_point(size = 8) +
+  theme_void() +
+  coord_cartesian(xlim = c(-4, 4)) +
+  geom_label(aes(label = labels), size = 7) +
+  annotate("segment", x = -2.3, xend = -1.2, y = 1, yend = 1, arrow = arrow()) +
+  annotate("segment", x = 1.2, xend = 2.5, y = 1, yend = 1, arrow = arrow())
+```
+
+???
+
+Moving to level 2 of science requires expanding our understanding of the data generating process to include another element.
+
+### What does "Nature" represent here?
+- The actual underlying process by which "Nature" produces the outcomes we are interested in.
+
+- Includes all the complexity of the world that combines to result in something.
+
+<br>
+
+The ultimate goal of science is to develop models of these natural processes!
+
+### What are models?
++ (Models are simplifications of reality designed to allow us to better understand the natural mechanisms that make the outcomes we are interested in.)
+
+### Give me an example of a model.
+- Natural sciences
+    - Gravity, evolution, ...
+
+- IR
+    - Neorealism: States are first and foremost motivated by a desire to survive.
+    
+- Americanists
+    - Ponder on leverage! Presidential "power" is greatest when personal approval is higher than general trust in government
+    - Median voter theorem: Politicians who seek election in majority rule systems should moderate their policy platforms, promise policies desired by the median voter.
+
+
+
+
+
+---
+
+background-image: url('libs/Images/background-blue_cubes_lighter3.png')
+background-size: 100%
+background-position: center
+class: middle
+
+.center[.size50[.content-box-blue[**Studying Political Violence "Scientifically"**]]]
+
+<br>
+
+```{r, fig.retina = 3, fig.align = 'center', fig.width = 8, fig.height=1.25, out.width='100%'}
+d1a <- tibble(
+  x = c(-3, 0, 3),
+  y = c(1, 1, 1),
+  labels = c("Nature\n(model)", "Measurement", "Data")
+)
+
+ggplot(data = d1a, aes(x = x, y = y)) +
+  geom_point(size = 8) +
+  theme_void() +
+  coord_cartesian(xlim = c(-4, 4)) +
+  geom_label(aes(label = labels), size = 7) +
+  annotate("segment", x = -2.3, xend = -1.2, y = 1, yend = 1, arrow = arrow()) +
+  annotate("segment", x = 1.2, xend = 2.5, y = 1, yend = 1, arrow = arrow())
+```
+
+.size40[
+1. Model produces data
+
+2. Model has unknown parameters
+
+3. Data reduces the uncertainty in the parameters
+]
+
+???
+
+In short, I am arguing that a "scientific" path to knowledge in the social sciences must acknowledge this process
+
+- Our job is to use data to learn about the natural world / develop models
+
+- Doing that requires being able to tell what part of the data is uncertainty due to measurement and what part is the signal of the natural process
+
+<br>
+
+### Out of curiosity, are you personally scientific in your day-to-day life?
+
+#### - How often do you "test" your theories about the world using data?
+
+
+
+---
+
+background-image: url('libs/Images/02_1-pols_and_strategy1.png')
+background-size: 100%
+background-position: center
+
+???
+
+Last week we worked to develop two working definitions: one for politics and one for strategy.
+
+If our aim in this class is to explain political violence, then these two  definitions are the fundamental building blocks of our models.
+
+<br>
+
+To define our terms we used in-class simulations.
+
++ Technically, each simulation was a formal model of politics.
+
++ Each identified a set of players,  a set of rules and assumed diverse preferences.
+
+
+---
+
+background-image: url('libs/Images/02_1-pols_and_strategy2.png')
+background-size: 100%
+background-position: center
+
+???
+
+Let's start by talking about the "politics" concept.
+
+### Was our simulation internally valid? 
+#### - e.g. Did it include all of the important elements that play a role in societal decision-making?
+
+<br>
+
+### Was our simulation externally valid? 
+#### - Did the simulation look like societal decision-making in the real world?
+#### - Did it lead you to behave how you would have outside the classroom?
+
+<br>
+
+I gave you a set of rules, assumed diverse and conflicting preferences, provided you a limited resource to deal with and then set you loose.
+
+### What did that model tell us about politics?
+
++ (- Actors have different preferences)
++ (- Enforcement is a problem)
++ (- Uncertainty everywhere)
++ (- Social pressures matter)
++ (- ...)
+
+<br>
+
+### Based on the simulation, what can we use as our working definition of "politics"?
+
+(SLIDE)
+
+
+---
+
+background-image: url('libs/Images/02_1-pols_and_strategy3.png')
+background-size: 100%
+background-position: center
+
+???
+
+Decision-making that affects a community
+
+- Rule-making
+- Resource allocation (who pays? who benefits?)
+
+### IS THIS A GOOD DEFINITION? 
+#### - WHAT ARE ITS STRENGTHS?
+#### - WHAT ARE ITS WEAKNESSES?
+
+
+
+---
+
+background-image: url('libs/Images/02_1-pols_and_strategy4.png')
+background-size: 100%
+background-position: center
+
+???
+
+We then did something similar on Friday regarding "strategy."
+
+Let's talk about those survival simulations.
+
+Let's talk about the models we simulated in class.
+
+### In what ways were these simulations the same and in what ways different from our politics simulation on Wednesday?
+
+#### - Think about this in terms of how you approached each game.
+
++ (The same: I gave you a set of rules, assumed diverse and conflicting preferences and set you loose)
+
++ (Different: I added a mechanism of uncertainty AND made the game component more explicit)
+
+<br>
+
+Let's say I wanted to use the survival games as a test of how strategic each of you is.
+
+### In what ways is this a good measuring tool for strategic thinking and in what ways a bad one?
+
+
+
+
+---
+
+background-image: url('libs/Images/background-blue_triangles2.png')
+background-size: 100%
+background-position: center
+class: middle
+
+.size70[**For Today**]
+
+<br>
+
+.size50[
+BRING a news article that describes a recent act of political violence (make sure you can briefly describe the background of the case).
+]
+
+???
+
+This week we are going to explore and define the central concept of our semester "political violence."
+
+We will do this by exploring both real-world case studies and the academic literature.
+
+<br>
+
+For today everyone should have brought a news article that describes a recent act of political violence.
+
+### Does everyone have their article?
+
+I assume that everyone knows at least the basic background of their case.
+
+<br>
+
+I'd now like each of you to introduce your case to the class by answering three questions.
+
+
+
+
+
+---
+
+background-image: url('libs/Images/background-blue_triangles2.png')
+background-size: 100%
+background-position: center
+class: middle
+
+.size60[.center[**Define "Political Violence": Comparative Case Studies**]]
+
+.size50[1) What is the specific act you are labeling "political violence"?]
+
+???
+
+Tell us what your specific act is AND briefly give us the background of it
+
++ By "specific act" I mean that literally.
+
++ The conflict in Sudan or the Cold War are the titles of books.
+
++ Our focus is on an actor or group of actors making a specific decision, e.g. attacking a market on a specific date to achieve a specific aim. 
+
+--
+
+.size50[2) Why is this act "political"?]
+
+???
+
+<br>
+
+e.g. what is the actor trying to achieve? 
+
++ Think strategically.
+
+--
+
+.size50[3) Why is this an act of "violence"?]
+
+???
+
+<br>
+
+Think about the nature of violence as we've been discussing it and use this to explain why your case is a good example of it.
+
+<br>
+
+Ok, everybody take two minutes to prepare your answers.
+
+<br>
+
+**IMPORTANT**, listen to each other carefully.
+
+- These cases and arguments are the data you will use for the rest of the week.
+
+- Take notes and be an active listener.
+
+<br>
+
+**ALSO IMPORTANT**: As we go around the room, don't change your answers to numbers two and three! We need to hear diverse perspectives.
+
+
+
+
+---
+
+background-image: url('libs/Images/background-blue_triangles2.png')
+background-size: 100%
+background-position: center
+class: middle, center
+
+.size60[.center[**For Wednesday**]]
+
+.size55[
+Tilly, C. (2003). Varieties of Violence. In *The Politics of Collective Violence* (pp. 1–25). Cambridge, UK: Cambridge University Press.
+]
+
+???
+
+Excellent work, keep these in mind and will pick up the exercise on Wednesday.
+
+Read the Tilly chapter on violence and see if that alters your thinking about the concepts we started working on today.
+
+
+

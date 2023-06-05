@@ -1,0 +1,738 @@
+---
+output:
+  xaringan::moon_reader:
+    css: ["default", "extra.css"]
+    lib_dir: libs
+    seal: false
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: '16:9'
+---
+
+```{r, echo = FALSE, warning = FALSE, message = FALSE}
+##xaringan::inf_mr()
+## For offline work: https://bookdown.org/yihui/rmarkdown/some-tips.html#working-offline
+## Images not appearing? Put images folder inside the libs folder as that is the main data directory
+
+library(tidyverse)
+##library(readxl)
+##library(stargazer)
+##library(kableExtra)
+##library(modelr)
+
+knitr::opts_chunk$set(echo = FALSE,
+                      eval = TRUE,
+                      error = FALSE,
+                      message = FALSE,
+                      warning = FALSE,
+                      comment = NA)
+
+## Input the data
+library(lubridate)
+
+d <- read_csv("../../../../00-Data_for_Classes/RAND_Database_Worldwide_Terrorism/RAND_Database_of_Worldwide_Terrorism_Incidents.csv")
+
+d2 <- d |> 
+  mutate(
+    Date2 = dmy(Date),
+    Year = year(Date2),
+    Year2 = if_else(Year == 2068, 1968, Year)
+  )
+
+#### In class notes
+#d2 |> group_by(Year) |> summarize(sum(Fatalities)) |> print(n=100)
+
+```
+
+background-image: url('libs/Images/00-Leviathan_Cover_55.png')
+background-size: 100%
+background-position: center
+class: middle
+
+.size70[**Today's Agenda**]
+
+<br>
+
+.size55[.center[
+Explore the RAND Database of Worldwide Terrorism Incidents
+]]
+
+<br>
+
+<br>
+
+.center[.size40[
+  Justin Leinaweaver (Fall 2023)
+]]
+
+???
+
+### Prep for Class
+1. Post data and an R script file on LMS
+
+<br>
+
+The data, codebook and an R script to access the RAND data are all on Moodle.
+
+
+
+---
+
+class: middle, slideblue
+
+.size50[.center[.content-box-grey[**Operationalizing Terrorism**]]]
+
+<br>
+
+## Data Projects
+.size45[
++ RAND Database of Worldwide Terrorism Incidents (RDWTI)
+
++ Global Terrorism Database (GTD)
+
++ Extended Data on Terrorist Groups (EDTG)
+]
+
+???
+
+This week we will explore three major research projects that have been created in order to help us measure terrorism.
+
+<br>
+
+Decision-makers absolutely need good data on the scope and characteristics of the problem and projects like these have arisen to fill those gaps.
+
+<br>
+
+Our job this week is to explore these projects in order to both:
+
+- learn what they tell us about global terrorism, and 
+
+- evaluate the strengths and weaknesses of each project so we know how they can be used to answer real-world questions. 
+
+
+
+
+---
+
+class: middle, slideblue
+
+.size50[.center[.content-box-grey[**Operationalizing Terrorism**]]]
+
+<br>
+
+## Research Questions
+.size35[
+1. Pros and cons of generalizing from this dataset?
+
+2. Is the damage caused by terrorism getting worse?
+
+3. Where are the terrorism hot spots in the world?
+
+4. Are the characteristics of terrorism changing?
+]
+
+???
+
+For each of these projects we are going to focus on answering these four questions.
+
+<br>
+
+*Split Class into Small Groups (3-4)*
+
+Go sit with your group!
+
+(SLIDE)
+
+
+
+---
+
+class: middle, slideblue
+
+.size50[.center[.content-box-grey[**Operationalizing Terrorism**]]]
+
+<br>
+
+.size45[
+1) What are the pros and cons of using this as our primary database of terrorism?
+- Who is the RAND Corporation?
+- How do they define terrorism?
+- How are they measuring terrorism?
+]
+
+???
+
+Groups take 8 minutes to answer this question.
+- Pros vs cons
+
+Think about the project in broad strokes
+- Who is the RAND Corporation, how do they define the key concepts and how are they measuring terrorism?
+
+<br>
+
+(SLIDE: Who is the RAND Corp?)
+
+(SLIDE: Terrorism Defined)
+
+(SLIDE: Valid and reliable measures?)
+
+
+
+
+---
+
+background-image: url('libs/Images/11_1-RAND_Logo.png')
+background-size: 45%
+background-position: left
+class: middle
+
+.pull-right[
+
+.size30[
+.center[
+**The RAND Corporation is a research organization that develops solutions to public policy challenges to help make communities throughout the world safer and more secure, healthier and more prosperous. RAND is nonprofit, nonpartisan, and committed to the public interest.**
+]]]
+
+???
+
+### How familiar are you with the Rand Corporation?
+
+### After reading through the website material do you have any concerns about institutional biases?
+
+<br>
+
+RAND advertises itself as a non-partisan think-tank.
+- Many contracts and much funding through US military and military contractors
+
+This does tend to influence their problem-framings and perspectives on defense issues.
+- Not a question of misrepresenting data, but asking and answering questions in line with US defense industry perspectives.
+
+Seems quite evident as we explore the data here.
+
+
+
+
+---
+
+class: middle, slideblue
+
+.size55[.center[**RAND Defines Terrorism**]]
+
+.size40[
+
+Terrorism is defined by the nature of the act, not by the identity of the perpetrators or the nature of the cause; key elements include:
+
++ Violence or the threat of violence
++ Calculated to create fear and alarm
++ Intended to coerce certain actions
++ Motive must include a political objective
++ Generally directed against civilian targets
++ Can be a group or an individual
+]
+
+???
+
+### How does this compare to our class definition of terrorism?
+
+### Any concerns from adopting this as our primary approach to measuring and studying terrorism around the world? 
+
+<br>
+
+### Class Definition (2022 SP)
+- violence or threat of violence
+- non-state actor
+- Incite fear (intimidate or subjugate) in audience beyond the target
+- Outside "normal" rules
+- Member of established group with clear aims/ideology
+
+
+
+---
+
+class: middle, slideblue
+
+.size50[.center[.content-box-grey[**Operationalizing Terrorism**]]]
+
+<br>
+
+.size45[
+**Are the key variables valid and reliable?**
+- Country
+- Perpetrator
+- Weapon
+- Injuries
+- Fatalities
+]
+
+???
+
+### Any concerns with the variables listed under the database scope section of the website?
+
+I note that it lists variables that, for some reason, are not included in the database download they provide.
+
+*DISCUSS*
+
+
+
+---
+
+class: middle, slideblue
+
+.center[.size65[.content-box-grey[**Operationalizing Terrorism**]]]
+
+<br>
+
+.size50[
+2) Is the damage caused by terrorism getting worse over time?
+
+- Sum the injuries and fatalities in 1970, 1980, 1990, 2000 and 2009
+]
+
+???
+
+Groups, take a few minutes to review the data.
+
+Answer this question for us focusing on injuries and fatalities across time.
+
+<br>
+
+### Report Back, what did you find?
+
+### How did you attack this task?
+
+(SLIDE)
+
+
+
+---
+
+```{r, fig.retina=3, fig.align='center', fig.asp=0.618, out.width='100%', fig.width=5}
+d2 |>
+  group_by(Year2) |>
+  summarize(
+    Injuries = sum(Injuries),
+    Fatalities = sum(Fatalities)
+  ) |>
+  pivot_longer(cols = Injuries:Fatalities, names_to = "Type", values_to = "Values") |>
+  ggplot(aes(x = Year2, y = Values, color = Type)) +
+  geom_line() +
+  labs(x = "", y = "Count") +
+  scale_color_manual(values = c("red", "blue")) +
+  theme_bw() +
+  annotate("label", x = 1975, y = 15000, label = "Fatalities", color = "red") +
+  annotate("label", x = 1975, y = 13000, label = "Injuries", color = "blue") +
+  guides(color = "none")
+```
+
+???
+
+### What do you think this data tells us about the global experience of terrorism?
+
+<br>
+
+### Is this evidence of a worsening problem globally or a data availability / collection issue?
+
+#### - In other words, is this evidence terrorism wasn't as common in the past or we simply didn't observe it as easily (e.g. cable news, satellites, etc.)? 
+
+
+
+---
+
+class: middle, center, slideblue
+
+.size50[.content-box-grey[**Operationalizing Terrorism**]]
+
+<br>
+
+.size60[
+3) Focus on only the most recent five years (2005-2009), where are the terrorism hot spots in the world?
+]
+
+???
+
+Groups, take a few minutes to review the data.
+
+Analyze the data and identify for us the global hotspots for terrorism!
+
+<br>
+
+### Report Back, what did you find?
+
+### How did you attack this task?
+
+<br>
+
+(SLIDE: map count of attacks overall)
+
+(SLIDE: map count of fatalities overall)
+
+(SLIDE: map count of fatalities 2005-2009)
+
+
+
+
+---
+
+```{r, fig.retina=3, fig.align='center', out.width='100%', fig.height=5, fig.width=8}
+# following packages require installing libudunits2-dev and libgdal-dev in synaptic
+library(sf)
+library(rnaturalearth)
+library(rnaturalearthdata)
+library(countrycode)
+
+## Use rnaturalearth to define world map data
+worldmap <- ne_countries(scale = 'medium', type = 'map_units',
+                         returnclass = 'sf')
+#worldmap2 <- as_tibble(worldmap)
+#countrycode::guess_field(worldmap$un_a3) # 98.7% genc3n
+#countrycode::guess_field(worldmap2$sovereignt) # 92.5% cow.name
+#countrycode::guess_field(worldmap2$admin) # 84% cldr.variant.en
+
+#countrycode::guess_field(d2$Country) # 80% country.name.en
+d2$cow <- countrycode::countrycode(sourcevar = d2$Country, origin = "country.name.en", destination = "cow.name")
+
+###################################################
+## Map of terror attacks per country overall
+d2 |>
+  group_by(cow) |>
+  summarize(
+    Attacks = n()
+  ) |>
+  mutate(
+    Attacks_cat = cut(Attacks, breaks = c(0, 10, 50, 100, 11000), labels = c("< 10", "< 50", "< 100", "> 100"), include.lowest = TRUE)
+  ) %>%
+  left_join(worldmap, ., by = c("sovereignt" = "cow")) |>
+  ggplot() +
+  geom_sf(aes(fill = Attacks_cat)) +
+  labs(fill = "", title = "Terror Attacks (1968 - 2009)",
+       caption = "Source: RAND DWTI") +
+  #theme(legend.position = "bottom") +
+  scale_fill_brewer(type = "seq", palette = "YlOrRd")
+```
+
+???
+
+Just to start, here's a map of overall database attacks
+
+- e.g. I counted the number of attacks per country. 
+
+### What conclusions can we draw using this map of the data?
+
+### - How confident are we the red countries are the terror hotspots?
+
+### - What do the lighter countries in Africa and Central Asia represent? Lack of reliable info or places with fewer attacks?
+
+#### - Does thinking about the sample selection procedures (and what we don't know about them) at rand help us answer this question?
+
+
+
+---
+
+```{r, fig.retina=3, fig.align='center', out.width='100%', fig.height=5, fig.width=8}
+###################################################
+## Map of terror attacks per country since 2005
+d2 |>
+  filter(Year2 >= 2005) |>
+  group_by(cow) |>
+  summarize(
+    Attacks = n()
+  ) |> #summary()
+  mutate(
+    Attacks_cat = cut(Attacks, breaks = c(0, 10, 50, 100, 11000), labels = c("< 10", "< 50", "< 100", "> 100"), include.lowest = TRUE)
+  ) %>%
+  left_join(worldmap, ., by = c("sovereignt" = "cow")) |>
+  ggplot() +
+  geom_sf(aes(fill = Attacks_cat)) +
+  labs(fill = "", title = "Terror Attacks (2005 - 2009)",
+       caption = "Source: RAND DWTI") +
+  #theme(legend.position = "bottom") +
+  scale_fill_brewer(type = "seq", palette = "YlOrRd")
+```
+
+???
+
+Here's the map updated for the period since 2005, e.g. the most recent five years in the database.
+
+### What conclusions can we draw from this?
+
+<br>
+
+### Are we confident that this captures all of the terrorist events in this period?
+
+
+
+---
+
+```{r, fig.retina=3, fig.align='center', out.width='100%', fig.height=5, fig.width=8}
+## Map of terror fatalities per country last five years of data
+d2 |>
+  filter(Year2 >= 2005) |>
+  group_by(cow) |>
+  summarize(
+    Fatal = sum(Fatalities)
+  ) %>% #summary()
+  mutate(
+    Fatal_cat = cut(Fatal, breaks = c(0, 5, 100, 500, 35000), labels = c("< 5", "< 100", "< 500", "> 500"), include.lowest = TRUE)
+  ) %>%
+  left_join(worldmap, ., by = c("sovereignt" = "cow")) |>
+  ggplot() +
+  geom_sf(aes(fill = Fatal_cat)) +
+  labs(fill = "", title = "Terrorism Fatalities (2005 - 2009)",
+       caption = "Source: RAND DWTI") +
+  scale_fill_brewer(type = "seq", palette = "YlOrRd")
+```
+
+???
+
+Rather than a count of attacks, here we see a sum of the fatalities.
+
+### What conclusions can we draw from this?
+
+<br>
+
+### Are we more confident using the Rand Database to count terrorist attacks or fatalities due to attacks? Why?
+
+
+
+---
+
+class: middle, slideblue
+
+.size50[.center[.content-box-grey[**Operationalizing Terrorism**]]]
+
+<br>
+
+.size60[
+4) Focus on the same period, are the characteristics of terrorism changing?
+
+- Who is doing it?
+- What weapons are they using?
+]
+
+???
+
+e.g.
+
++ Who is doing the terrorism?
+
++ What weapons are they using?
+
+
+
+---
+
+class: center, slideblue
+
+.size60[**Most frequent terror groups?**]
+
+.size30[
+```{r}
+## Count groups
+d2 |> filter(Year2 >= 2005) |> count(Perpetrator) |> arrange(desc(n)) |> slice(1:10) |> knitr::kable()
+```
+]
+
+???
+
+### Any observations about this data?
+
++ (Hard to interpret with all those unknowns and others.)
+
+<br>
+
+### Does this data imply terrorism is a more secretive action than we may have assumed or something else?
+
+#### - Why so many unknowns?
+
+<br>
+
+### What are the most frequent weapon types used in terrorist events?
+
+(SLIDE)
+
+
+
+---
+
+class: center, slideblue
+
+.size55[**Most frequent weapons?**]
+
+.size30[
+```{r}
+## Count groups
+d2 |> filter(Year2 >= 2005) |> count(Weapon) |> arrange(desc(n)) |> slice(1:10) |> knitr::kable()
+```
+]
+
+???
+
+### Any observations about this data?
+
+
+
+
+
+---
+
+background-image: url('libs/Images/11_1-USA_Map_Flag2.png')
+background-size: 85%
+background-position: center
+
+.size60[.center[**The RAND Database of Worldwide Terrorism Incidents**]]
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+.size55[.center[**Describe the US experience of terrorism over time?**]]
+
+???
+
+*Time Remaining?*
+
+### What does this database tell us about the American experience of terrorism?
+
+Take a few minutes, filter to look at only the US.
+
+
+
+---
+
+class: center, slideblue
+
+.size50[**Terror Groups in the USA**]
+
+.pull-left[
+.size45[**All Observations**]
+
+.size25[
+```{r}
+## Filter
+d_usa <- d2 |> filter(Country == "United States")
+
+## Count groups
+d_usa |> count(Perpetrator) |> arrange(desc(n)) |> slice(1:8) |> knitr::kable()
+```
+]]
+
+.pull-right[
+.size45[**2005 - 2009**]
+.size30[
+```{r}
+d_usa |> filter(Year2 >= 2005) |> count(Perpetrator) |> arrange(desc(n)) |> slice(1:8) |> knitr::kable()
+```
+]]
+
+???
+
+### Is environmental terrorism the most pressing threat to us today?
+
+<br>
+
+### How about most frequent weapons used? Any difference between the overall and just since 1999?
+
+(SLIDE)
+
+
+
+---
+
+class: center, slideblue
+
+.size50[**Terror Weapons in the USA**]
+
+.pull-left[
+.size45[**All Observations**]
+
+.size30[
+```{r}
+## Filter
+d_usa <- d2 |> filter(Country == "United States")
+
+## Count groups
+d_usa |> count(Weapon) |> arrange(desc(n)) |> slice(1:8) |> knitr::kable()
+```
+]]
+
+.pull-right[
+.size45[**2005 - 2009**]
+.size30[
+```{r}
+d_usa |> filter(Year2 >= 2005) |> count(Weapon) |> arrange(desc(n)) |> slice(1:8) |> knitr::kable()
+```
+]]
+
+???
+
+Not much difference in weapon types used.
+
+<br>
+
+### Are the incidents getting bigger over time (injuries and fatalities)?
+
+(SLIDE)
+
+
+
+---
+
+```{r, fig.retina=3, fig.align='center', fig.asp=0.618, out.width='100%', fig.width=5}
+d_usa |>
+  group_by(Year2) |>
+  summarize(
+    Injuries = sum(Injuries),
+    Fatalities = sum(Fatalities)
+  ) |>
+  pivot_longer(cols = Injuries:Fatalities, names_to = "Type", values_to = "Values") |>
+  ggplot(aes(x = Year2, y = Values, color = Type)) +
+  geom_line() +
+  labs(x = "", y = "Count") +
+  scale_color_manual(values = c("red", "blue")) +
+  theme_bw() +
+  annotate("label", x = 1975, y = 2500, label = "Fatalities", color = "red") +
+  annotate("label", x = 1975, y = 2200, label = "Injuries", color = "blue") +
+  guides(color = "none")
+```
+
+???
+
+### Observations?
+
+<br>
+
+### If this is the reality, do we spend too much time worrying about terrorism in the US?
+
+<br>
+
+### Overall, while this ends in 2009, is this data consistent with your sense of the American experience of terrorism?
+
+
+
+---
+
+class: middle, slideblue, center
+
+.size60[.center[**For Wednesday**]]
+
+<br>
+
+.size50[
+Explore the Global Terrorism Database (GTD)
+
+https://www.start.umd.edu/gtd/
+]
+
+

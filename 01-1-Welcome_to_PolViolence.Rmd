@@ -1,0 +1,532 @@
+---
+output:
+  xaringan::moon_reader:
+    css: ["default", "extra.css"]
+    lib_dir: libs
+    seal: false
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: '16:9'
+---
+
+```{r, echo = FALSE, warning = FALSE, message = FALSE}
+##xaringan::inf_mr()
+## For offline work: https://bookdown.org/yihui/rmarkdown/some-tips.html#working-offline
+## Images not appearing? Put images folder inside the libs folder as that is the main data directory
+
+library(tidyverse)
+library(readxl)
+library(stargazer)
+##library(kableExtra)
+##library(modelr)
+
+knitr::opts_chunk$set(echo = FALSE,
+                      eval = TRUE,
+                      error = FALSE,
+                      message = FALSE,
+                      warning = FALSE,
+                      comment = NA)
+```
+
+background-image: url('libs/Images/00-Leviathan_Cover_55.png')
+background-size: 100%
+background-position: center
+class: middle
+
+.size80[**Today's Agenda**]
+
+<br>
+
+.size60[
+
+Welcome to political violence
+
+]
+
+<br>
+
+<br>
+
+<br>
+
+.center[.size40[
+  Justin Leinaweaver (Fall 2023)
+]]
+
+???
+
+### Prep for Class
+1. Bring 6 index cards to class
+    + 3 worth 1/3 letter grade on a paper
+    + 2 get out of jail free cards
+    + 1 automatic "A" card
+
+<br>
+
+Welcome to PLSC 346: Political Violence
+
+### Is everybody in the right place?
+
+
+
+---
+
+background-image: url('libs/Images/background-blue_triangles.jpg')
+background-size: 100%
+background-position: center
+
+.pull-left[
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+.size60[**Introductions**]
+
+]
+
+.pull-right[
+.size50[
+
+1. Name
+
+2. Year in school
+
+3. Major
+
+4. Act of political violence?
+
+]]
+
+???
+
+I'm Dr. Leinaweaver.
+
+- Political scientist
+
+- Research interests: international politics, environmental politics and bargaining / negotiations.
+
+<br>
+
+### Your turn!
++ Name, year, major AND 
+
++ What is one act you could do after class that we would all agree is political violence?
+
+
+
+---
+
+class: middle, center
+
+background-image: url('libs/Images/background-blue_triangles.jpg')
+background-size: 100%
+background-position: center
+
+.size80[.textblack[**Let's distribute some benefits!**]]
+
+???
+
+We should start our work this semester by making sure we're all on the same page concept-wise.
+
+And we can't get much more fundamental than defining politics in a political science class.
+
+<br>
+
+To start this process, let's distribute some benefits.
+
+Three index cards, each is worth three bonus points you can apply to a paper grade this semester.
+
+Three points bumps you 1/3 of a letter grade: B becomes a B+
+
+You have 10 minutes to distribute these cards before the offer expires.
+
+All I ask is that the class reach a consensus on the outcome.
+
+- Once you have all agreed, let me know and I'll distribute the cards.
+
+<br>
+
+Ok, talk to me about the process.
+
+### How did you personally approach the game?
+
+### How did the class make a collective decision?
+
+### Are you happy with the outcome? why or why not?
+
+### If you could have decided on your own with no input from the rest of the class, would you have chosen a different distribution?
+
+
+
+---
+
+class: middle, center
+
+background-image: url('libs/Images/background-blue_triangles.jpg')
+background-size: 100%
+background-position: center
+
+.size80[.textblack[**Let's distribute some .textred[MUCH BETTER] benefits!**]]
+
+???
+
+Let's raise the stakes and try this again.
+
+Two index cards, each one is a "get out of jail" free card you can use this semester.
+
+- Miss a day and need an excused absence?
+- Miss a paper deadline and need an extension? Within reason!
+- Bump a paper by 2/3 of letter grade (C+ up to a B!)
+
+10 minutes to distribute these cards before the offer expires.
+
+<br>
+
+Ok, talk to me about the process.
+
+### Did anything change in how you approached this game?
+
+### Did you notice any differences in how your colleagues approached this decision?
+
+
+
+---
+
+background-image: url('libs/Images/background-blue_triangles.jpg')
+background-size: 100%
+background-position: center
+class: middle, center
+
+.size80[.textblack[**Let's distribute an .textred[INSANE] benefit!**]]
+
+???
+
+Last one, let's distribute a single index card worth an automatic "A" for any paper assignment in the class.
+
+Go!
+
+---
+
+background-image: url('libs/Images/background-blue_triangles.jpg')
+background-size: 100%
+background-position: center
+
+```{r, out.width='95%'}
+knitr::include_graphics('libs/Images/01-1-jurrasic-park-samuel-l-jackson.gif')
+```
+
+???
+
+Yeah, that card is WAY too dangerous to exist.
+
+
+
+---
+
+background-image: url('libs/Images/background-blue_triangles.jpg')
+background-size: 100%
+background-position: center
+class: middle, center
+
+.size60[**If these three games are a simulation of "politics", then what is "politics"?**]
+
+???
+
+(SLIDE)
+
+
+
+---
+
+background-image: url('libs/Images/01_1-politics_game.png')
+background-size: 100%
+class: center
+
+???
+
+All of this is meant to help you think about "politics" like a political scientist.
+
+"Politics" as:
+
+- Decision-making in a community
+
+- How we make and enforce “the rules”
+
+- Who gets what, when and how?
+
+<br>
+
+### Any questions on this?
+
+In these terms, politics is fundamental to the functioning of every society.
+
+
+
+---
+
+background-image: url('libs/Images/01_1-Jan6th_Protest.jpg')
+background-size: 100%
+class: center
+
+???
+
+Funny thing is, arguably, the only thing more fundamental and foundational to society than politics is violence.
+
++ Violence is an ancient human phenomenon and a powerful motivator in society.
+
++ To some scholars, it is the only explanation you need for politics
+
++ It isn't hard to see its effect around us whether you use it or are afraid of it.
+
+<br>
+
+### Anybody recognize the photo?
++ (The January 6th protest/invasion/attempted coup)
+
+<br>
+
+### Is the January 6th invasion of the Capitol Building an example of "politics" as we just defined it?
+
+#### - Resource distribution at stake?
+#### - Who makes and enforces the rules at stake?
+
+*Discuss*
+
+<br>
+
+### Is the January 6th invasion of the Capitol Building an example of "violence"? Why or why not?
+
+*Discuss*
+
+
+
+---
+
+background-image: url('libs/Images/01_1-Jan6th_Protest2.jpg')
+background-size: 100%
+background-position: center
+
+???
+
+Of course it was! [Link](https://www.washingtonpost.com/local/public-safety/police-union-says-140-officers-injured-in-capitol-riot/2021/01/27/60743642-60e2-11eb-9430-e7c77b5b0297_story.html)
+
+Recent reporting has tallied up the damages:
+
++ "...about 140 officers were injured"
+
++ "Capitol Police Officer Brian D. Sicknick died after trying to defend the Capitol from rioters."
+
++ "...several concussions from head blows from various objects..."
+
++ "Other injuries included swollen ankles and wrists, bruised arms and legs, and irritated lungs from bear and pepper spray."
+
++ "Reports say officers were pushed down stairs, trampled by rioters, punched and run over in a stampede."
+
++ “I’ve talked to officers who have done two tours in Iraq who said this was scarier to them than their time in combat,” acting D.C. police chief Robert J. Contee III said at a news conference earlier this month."
+
+
+
+---
+
+background-image: url('libs/Images/01_1-Jan6th_Protest3.png')
+background-size: 100%
+background-position: center
+class: bottom, center, inverse
+
+.textred[.size80[**Violence is a political strategy by rational, goal-seeking actors**]]
+
+???
+
+Our organizing assumption this semester is that violence is a strategy chosen by rational, goal-seeking actors.
+
+### Can anybody tell me what that means in English?
+
++ We assume that actors have preferences over outcomes.
+    + In other words, people want things and act to try and get those things.
+
+<br>
+
+### Why do many researchers of political violence start with this assumption?
+
++ (Assuming violent actors are "crazy" doesn't help us in any meaningful way.)
+    + The only way to stop "crazy" is with more violence.
+    
++ To understand or reduce violence we need to learn about these actors, their preferences and the systems they inhabit.
+
+<br>
+
+### How problematic is this as an assumption?
+
+#### - Is this assumption likely to help us understand or misunderstand the world of politics?
+
+#### - Put differently, were some of these people actually irrational?
+
+
+
+
+---
+
+background-image: url('libs/Images/background-space1.jpg')
+background-size: 100%
+background-position: center
+
+class: middle
+
+.textwhite[.size50[**LO1: Content Knowledge**]
+
+.size40[Students should demonstrate a basic understanding of the uses of political violence by state and non-state actors at the domestic and international levels.]
+]
+
+
+
+---
+
+background-image: url('libs/Images/background-space1.jpg')
+background-size: 100%
+background-position: center
+
+class: middle
+
+.textwhite[.size50[**LO2: Methods Knowledge**]
+
+.size40[Students should demonstrate their ability to use comparative and quantitative methods for testing theories of political violence.]
+]
+
+
+
+---
+
+background-image: url('libs/Images/background-space1.jpg')
+background-size: 100%
+background-position: center
+
+class: middle
+
+.textwhite[.size50[**LO3: Critical Thinking and Problem-Solving Skills**]
+
+.size40[Students should be able to evaluate strategies for reducing acts of political violence at the domestic and international levels.]
+]
+
+
+
+---
+
+class: middle, center
+
+.size60[**Course Grade**]
+
+```{css, echo=F}
+/* Change the background color to white for shaded rows (even rows) */
+.remark-slide thead, .remark-slide tr:nth-child(2n) {
+      background-color: white;
+}
+```
+
+```{r}
+tibble(
+  col1 = c("Participation", "Argument Paper 1", "Argument Paper 2", "Argument Paper 3", "Total"),
+  col2 = c("", "(Feb 18)", "(Apr 1)", "(Final Exam)", ""),
+  col3 = c(40, rep(20, 3), 100)
+) |>
+  kableExtra::kbl(align = c("l", "c", "c"), col.names = c("", "", "%")) |>
+  kableExtra::kable_styling(font_size = 50) |>
+  kableExtra::column_spec(1, width = "11em") |>
+  kableExtra::column_spec(2, width = "7em") |>
+  kableExtra::row_spec(c(0, 5), bold = TRUE, background = "#b3ccff")
+
+```
+
+???
+
+Course Grade
+
+Heavy on the participation!
+
+Definitely a seminar, not a lecture.
+
+
+
+
+---
+
+background-image: url('libs/Images/background-blue_triangles.jpg')
+background-size: 100%
+background-position: center
+
+class: middle
+
+.size60[**Participation**]
+
+.size45[
++ Get to class on time,
+
++ Have the materials you need to be productive,
+
++ Be engaged while in class (e.g., no sleeping, playing with your gadgets, leaving early, arriving late).
+]
+
+
+
+---
+
+background-image: url('libs/Images/01_1-office_space.jpg')
+background-size: 68%
+background-position: center
+
+???
+
+Excused absence coming up?
+
+It is your responsibility to complete a make-up assignment.
+
+### Any questions on the participation policy?
+
+
+
+
+---
+
+background-image: url('libs/Images/01_1-coyote.jpg')
+background-size: 84%
+class: center, bottom
+
+???
+
+The Attendance Cliff
+
+Anyone with more than five unexcused absences in the semester cannot earn higher than a C+ in the course (regardless of grades earned on other assignments).
+
+### Any questions on the attendance policy?
+
+
+---
+
+background-image: url('libs/Images/01_1-read_syllabus.jpg')
+background-size: 100%
+class: center, bottom
+
+???
+
+Read the syllabus.
+
+So much good stuff there on our class policies, your daily reading assignments and details on the assignments you'll be submitting during the semester.
+
+<br>
+
+Everybody take a look at the syllabus requirements for Friday.
+
+### Any questions on what you need to do?
+
++ (Two short readings)
+
++ (Be ready to define "strategy" for us.)
+
+
+

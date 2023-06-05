@@ -1,0 +1,575 @@
+---
+output:
+  xaringan::moon_reader:
+    css: ["default", "extra.css"]
+    lib_dir: libs
+    seal: false
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: '16:9'
+---
+
+```{r, echo = FALSE, warning = FALSE, message = FALSE}
+##xaringan::inf_mr()
+## For offline work: https://bookdown.org/yihui/rmarkdown/some-tips.html#working-offline
+## Images not appearing? Put images folder inside the libs folder as that is the main data directory
+
+library(tidyverse)
+##library(readxl)
+##library(stargazer)
+##library(kableExtra)
+##library(modelr)
+
+knitr::opts_chunk$set(echo = FALSE,
+                      eval = TRUE,
+                      error = FALSE,
+                      message = FALSE,
+                      warning = FALSE,
+                      comment = NA)
+```
+
+background-image: url('libs/Images/00-Leviathan_Cover_55.png')
+background-size: 100%
+background-position: center
+class: middle
+
+.size70[**Today's Agenda**]
+
+<br>
+
+.size40[.center[
+Bueno de Mesquita, B., Cherif, F., Downs, G. and Smith, A. 2005. "Thinking Inside the Box: A Closer Look at Democracy and Human Rights." *International Studies Quarterly*. 49(3): 439–58.
+]]
+
+<br>
+
+.center[.size40[
+  Justin Leinaweaver (Fall 2023)
+]]
+
+???
+
+### Prep for Class
+1. Email link to Google doc for collecting evidence for Friday
+    - https://docs.google.com/document/d/1wWfBCAmcSC_mS87kNsIj4MUJi0EuOvTH-eAwhoAc4jE/edit?usp=sharing
+    
+2. Open the Polity codebook
+
+3. Open the ISQ article
+
+
+
+
+
+
+---
+
+background-image: url('libs/Images/background-red.png')
+background-size: 100%
+background-position: center
+class: middle, center, inverse
+
+.size60[**What explains the variation in how and why states use violence against their citizens?**]
+
+???
+
+Remember, our big goal for this section of the class is to answer this question.
+
+- What explains the variation in how and why states use violence against their citizens?
+
+- On Monday we dug into the Davenport and Armstrong (2004) article.
+
+<br>
+
+### What did we learn from that article that would help us answer our question?
+
+### - Does democracy limit repression? Why or why not?
+
+
+
+---
+
+background-image: url('libs/Images/background-blue_triangles.jpg')
+background-size: 100%
+background-position: center
+class: middle, slideblue
+
+.size45[.center[
+Bueno de Mesquita, B., Cherif, F., Downs, G. and Smith, A. 2005. "Thinking Inside the Box: A Closer Look at Democracy and Human Rights." *International Studies Quarterly*. 49(3): 439–58.
+]]
+
+???
+
+For today you read excerpts from this article.
+
+### How does this article connect to the Davenport and Armstrong article from Monday?
+
+- (Picks up where they left off and digs into the components of democracy)
+    - "The central focus of our study is to ascertain what, if any, specific aspects of democracy are necessary or sufficient to achieve improved quality of life in terms of diminishing, or even eliminating, human rights violations" (440).
+
+<br>
+
+### Why do we need this new article? what does it help us to achieve in the real-world?
+
+- (Limiting violence against citizens is an important goal but "spreading democracy" is REALLY, REALLY hard to do.)
+
+- (Policy-makers and reformers need better, real-world guidance)
+    - This paper helps us identify which specific reforms should be prioritized if what we care about is reducing human rights violations.
+
+<br>
+
+### And what is the over-arching argument made in this paper?
+
+#### - In broad strokes, do these authors believe we should focus on the components of democracy or democracy as an index?
+
+- (Not all dimensions of democracy contribute equally to reductions in human rights abuses BUT all appears somewhat relevant albeit at varying degrees.)
+
+
+
+---
+
+class: middle, slideblue
+
+.size40[.center[**How does this specific mechanism influence the decision by governments whether or not to use violence against their citizens?**]
+
+1. Executive Constraint (XCONST)
+
+2. Executive Competition (XRCOMP)
+
+3. Participation Competition (PARCOMP)
+
+4. Regulation of Participation (PARREG)
+
+5. Openness of Recruitment (XROPEN)
+]
+
+???
+
+*Make five groups*
+
+- Go sit with your group!
+
+- *Assign each component from Polity to a group*
+
+<br>
+
+First step, each group needs to clarify the argument their measure represents.
+
+- How does this specific mechanism influence the decision by democratic governments whether or not to use violence against their citizens?
+
+- FOCUS on the Polity codebook for diagramming your argument.
+
+<br>
+
+### Any questions?
+
+Get to it!
+
+<br>
+
+*PRESENT and DISCUSS each*
+
+### How exactly does each of these mechanisms / institutions reduce the appeal of political violence?
+
+
+
+
+
+
+---
+
+class: middle, slideblue
+
+.size40[.center[**How does this specific mechanism influence the decision by governments whether or not to use violence against their citizens?**]
+
+1. Executive Constraint (XCONST)
+
+2. Executive Competition (XRCOMP)
+
+3. Participation Competition (PARCOMP)
+
+4. Regulation of Participation (PARREG)
+
+5. Openness of Recruitment (XROPEN)
+]
+
+???
+
+Before we move to the findings for each measure, we need to answer an important question.
+
+### Are these five fundamentally different arguments or do they all basically use different words to say the same thing?
+
+#### - In other words, have you each built an argument that "democracy" decreases violence or that one specific part of the thing we call democracy decreases violence?
+
+(SLIDE)
+
+
+
+
+---
+
+background-image: url('libs/Images/07_2-Table1_deMesquita.png')
+background-size: 95%
+background-position: center
+
+???
+
+Answering this question is why the authors give us Table 1.
+
+### Can anybody help us make sense of what this table is showing?
+
+<br>
+
+The question is, do these five things measure fundamentally different ideas or not?
+
+- Do we simply find that states with high scores on one of these have high scores on all of them?
+
+- If so, we can use the democ index and be done with it.
+
+- If not, then there is value to studying them separately.
+
+
+
+---
+
+background-image: url('libs/Images/07_2-Table1_deMesquita2.png')
+background-size: 95%
+background-position: center
+
+???
+
+Let's focus on just the first two columns.
+
+Don't worry about the technical definition of what this is.
+
+- ...the "Components" are the pseudo-r^2 from running an ordered logit regression of the variable in this row on the other four variables.
+
+<br>
+
+The idea here is very similar to looking at correlations.
+
+### Can anybody tell us what a correlation is?
+
+(SLIDE)
+
+
+
+---
+
+background-image: url('libs/Images/background-blue_triangles.jpg')
+background-size: 100%
+background-position: center
+class: middle
+
+.size40[.center[**Correlation: The Degree of Linear Association**]]
+
+<br>
+
+```{r, fig.retina=3, fig.align = 'center', out.width = '100%', fig.height=3.5, fig.width = 9, cache=TRUE}
+## Show correlations
+cor_examples <- function(sd) {
+    tibble(
+    x = rnorm(50, mean = 8, sd = 2),
+    y = x + rnorm(50, 0, sd),
+    Group = str_c("Correlation: ", round(cor(x, y), 2))
+    )
+}
+
+## Positive linear
+set.seed(54)
+rbind(cor_examples(1),
+      cor_examples(3),
+      cor_examples(18)) |>
+ggplot(aes(x = x, y = y)) +
+    geom_point() +
+    geom_smooth(method = "lm", se = FALSE) +
+    theme_bw() +
+  labs(x = "", y = "") +
+    facet_wrap(~Group, scales = "free")
+
+
+```
+
+???
+
+**The "Fabulous" Advantages of correlation (Wheelan)**
+
+<br>
+
+A measure of linear association
+
+- How well do two variables vary together in a linear fashion?
+
+- Always between -1 and 1
+
+- No units attached
+
+<br>
+
+As you can see from the examples here, the closer to 1, the closer the dots are to the line.
+
+- As x increases so does y (but not causal!)
+
+### Make sense?
+
+
+
+
+---
+
+background-image: url('libs/Images/background-blue_triangles.jpg')
+background-size: 100%
+background-position: center
+class: middle
+
+.size40[.center[**Correlation: The Degree of Linear Association**]]
+
+<br>
+
+```{r, fig.retina=3, fig.align = 'center', out.width = '100%', fig.height=3.5, fig.width = 9, cache=TRUE}
+## Show correlations
+cor_examples <- function(sd) {
+    tibble(
+    x = rnorm(50, mean = 8, sd = 2),
+    y = -x - rnorm(50, 0, sd),
+    Group = str_c("Correlation: ", round(cor(x, y), 2))
+    )
+}
+
+## Positive linear
+set.seed(54)
+rbind(cor_examples(.9),
+      cor_examples(2.05),
+      cor_examples(7)) |>
+ggplot(aes(x = x, y = y)) +
+    geom_point() +
+    geom_smooth(method = "lm", se = FALSE) +
+    theme_bw() +
+  labs(x = "", y = "") +
+    facet_wrap(~Group, scales = "free")
+```
+
+???
+
+This also works for negative associations too!
+
+- Negative correlations with a slope tilting down to the right.
+
+<br>
+
+As you can see from the examples here, the closer to -1, the closer the dots are to the line.
+
+- As x increases, y decreases (but not causal!)
+
+### Questions on these examples?
+
+
+
+---
+
+background-image: url('libs/Images/07_2-Table1_deMesquita2.png')
+background-size: 95%
+background-position: center
+
+???
+
+This R^2 approach is different from a correlation in that it lets us compare each polity component against all the others combined.
+
+- Results from 0 to 1
+
+- Doesn't matter if the association is positive or negative, all association increases the score.
+
+<br>
+
+Values closer to '1' mean that you can explain much of the variation in that one variable using the others.
+
+- In other words, it captures something already represented in the other variables.
+
+<br>
+
+Values close to '0' mean you cannot explain the variable in the row using the other variables.
+
+- In other words, it captures something different in the world than the others.
+
+### Does that make sense?
+
+
+
+---
+
+background-image: url('libs/Images/07_2-Table1_deMesquita2.png')
+background-size: 95%
+background-position: center
+
+???
+
+### So, what do these component scores tell us about the separate measures of democracy created by Polity?
+
+- (Regulation of participation, participation competition and executive constraint capture very different things from the others.)
+
+- (Openness of recruitment overlaps a bit with the others)
+
+- (Executive competition overlaps even more.)
+
+<br>
+
+### Do those results make sense?
+
+#### - For example, states with high levels of executive competition are also likely to score better on the other measures?
+
+The authors indicate these results are sufficiently low enough to merit testing each indicator separately.
+
+
+
+---
+
+background-image: url('libs/Images/background-blue_triangles.jpg')
+background-size: 100%
+background-position: center
+class: middle, center
+
+.size60[**Analyze the Findings**]
+
+.size50[
+How big is the effect of this measure on the likelihood of governments to use political violence against their citizens?
+]
+
+???
+
+Groups, get ready to tell us how large the effect of your mechanism is on political violence.
+
+- Look through the article's analyses for mentions of your component.
+
+- What is its effect on political violence?
+
+<br>
+
+*PRESENT and DISCUSS each*
+
+(SLIDE: Table 3 marginal effects)
+
+
+
+
+---
+
+background-image: url('libs/Images/07_2-Table3_BdM.png')
+background-size: 95%
+background-position: center
+
+???
+
+*Results summarized in Table 2, Figure 1 and Table 3*
+
+Findings to Highlight:
+
+1. Party competition is most important in reducing human rights violations.
+    - HOWEVER, can't just do that, true party competition depends on other necessary institutions being in place first.
+
+2. Elections are not a good place to begin state-building.
+
+3. Strong threshold effect, democracy doesn't effectively prevent human rights abuses until very high polity score attained.
+
+
+
+---
+
+background-image: url('libs/Images/background-blue_triangles.jpg')
+background-size: 100%
+background-position: center
+class: middle, center
+
+.size60[**Policy Recommendations**]
+
+.size50[
+What specific recommendations could we make to policy-makers who are interested in reducing the likelihood of governments using political violence against their citizens?
+]
+
+???
+
+### Policy recommendations?
+
+<br>
+
+### Are there any policies that aim to promote democratization but that according to this research might actually increase the use of violence by governments?
+
+
+
+
+
+---
+
+background-image: url('libs/Images/background-red.png')
+background-size: 100%
+background-position: center
+class: middle, center, inverse
+
+.size60[**What explains the variation in how and why states use violence against their citizens?**]
+
+???
+
+### So, bottom line takeaways that answer our big question?
+
+
+
+---
+
+background-image: url('libs/Images/background-blue_triangles.jpg')
+background-size: 100%
+background-position: center
+
+class: middle
+
+.size50[**Course Grade**]
+
+.size40[
+||Proportion|
+|:-----|:----:|
+|Participation|40%|
+|Argument Paper 1|20%|
+|**Argument Paper 2**|**20%**|
+|Argument Paper 3|20%|
+]
+
+.size50[.center[
+Argument Paper 2: Reducing Government Violence
+]]
+
+???
+
+On Friday we'll start working towards your second paper for the class.
+
+That paper will ask you to propose a strategy for reducing the use of violence by states against their own citizens.
+
+To build to that we'll gather cases on the next two Fridays.
+
+
+
+
+---
+
+background-image: url('libs/Images/background-blue_triangles.jpg')
+background-size: 100%
+background-position: center
+
+class: middle
+
+.size60[**For Friday**]
+
+.size40[
+Bring to class a recent example of an individual, group, state or group of states taking a specific action to stop .textblue[**a democracy**] from engaging in political violence.
+
+Be ready to explain what happened, the strategy being employed and some idea of how effective it appears to have been.
+
+**Submit APA citation before class.**
+]
+
+???
+
+### Questions on the assignment?
+
+*Send email link*
+
+

@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>05-1-PTS_Data.knit</title>
+    <meta charset="utf-8" />
+    <script src="libs/header-attrs-2.21/header-attrs.js"></script>
+    <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <script src="libs/kePrint-0.0.1/kePrint.js"></script>
+    <link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
+    <link rel="stylesheet" href="extra.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+
+
+
+
+background-image: url('libs/Images/00-Leviathan_Cover_55.png')
+background-size: 100%
+background-position: center
+class: middle
+
+.size70[**Today's Agenda**]
+
+&lt;br&gt;
+
+.size60[
+.center[
+Evaluate the Political Terror Scale (PTS) Project
+]]
+
+&lt;br&gt;
+
+.center[.size40[
+  Justin Leinaweaver (Fall 2023)
+]]
+
+???
+
+### Prep for Class
+1. ...
+
+&lt;br&gt;
+
+
+
+
+---
+
+background-image: url('libs/Images/background-light_grey.jpg')
+background-size: 100%
+background-position: center
+class: middle
+
+.size50[**Political Violence Data**]
+
+.size35[(Due Sep 22)
+
+What is your recommendation for the *SINGLE* most useful approach to measuring political violence around the world?
+
+- Country Reports on Human Rights Practices from the State Department
+- The Annual Country Reports from Amnesty International
+- The Political Terror Scale (PTS)
+- The CIRIGHTS data project
+- V-Dem Personal Integrity Rights
+]
+
+???
+
+Last week and this one we are exploring and analyzing the data and research projects that exist to track political violence by states across time.
+
+
+
+---
+
+background-image: url('libs/Images/02_2-protestors_fire2.png')
+background-size: 100%
+background-position: center
+class: middle
+
+.size50[**Measuring "Political Violence"**]
+
+.size45[
+**1) Concept**
+
+**2) Operationalization**
+
+**3) Instrumentation**
+
+**4) Measurement**
+]
+
+???
+
+Refresh week 2 material from Brians et al (2011): concept -&gt; operationalization ("The process of selecting observable phenomena to represent abstract concepts") -&gt; instrumentation (
+...the specification of steps to take in making observations") -&gt; measurement ("The application of an instrument to assign numerical values to cases")
+
+
+---
+
+background-image: url('libs/Images/background-light_grey.jpg')
+background-size: 100%
+background-position: center
+class: middle
+
+.pull-left[
+&lt;br&gt;
+
+&lt;img src="libs/Images/03-3-amnesty_international.jpg" width="95%" /&gt;
+]
+
+.pull-right[
+&lt;img src="libs/Images/03-3-USDeptState.png" width="95%" /&gt;
+]
+
+.center[.size45[Evaluate: Operationalization, Instrumentation, and Measurement]]
+
+???
+
+
+On Monday we analyzed the "source" documents for many of the big research projects studying political violence.
+
+### Key takeaways for you next week as you write your country reports?
+
+1. Reports add useful context for the numbers, reference that context!
+
+2. Reports cover more stuff than the coding projects, don't ignore those details!
+
+
+&lt;br&gt;
+
+On Monday we evaluated reports by the US State Department and Amnesty International.
+
+### What are the takeaways from our work on Monday that will help you write an excellent report?
+
+#### - What should we keep in mind when using these as our source docs for tracking political violence?
+
+
+
+
+
+
+---
+
+background-image: url('libs/Images/background-light_grey.jpg')
+background-size: 100%
+background-position: center
+class: middle
+
+.size60[.center[**For Today**]]
+
+.size40[
+**Explore the data and codebook for the [Political Terror Scale (PTS)](http://www.politicalterrorscale.org/Data/Download.html). Make sure you understand the observations and variables enough to play with them in class.**
+
+*Recommended Links (in syllabus):*
+
+1. [Sorting Rows in Excel](https://www.excel-easy.com/data-analysis/sort.html)
+2. [Filtering Rows in Excel](https://www.excel-easy.com/data-analysis/filter.html)
+3. [Pivot Tables in Excel](https://www.excel-easy.com/data-analysis/pivot-tables.html)
+]
+
+???
+
+### Everybody ready for today's work?
+
+
+
+
+---
+
+background-image: url('libs/Images/background-light_grey.jpg')
+background-size: 100%
+background-position: center
+class: middle
+
+&lt;img src="libs/Images/03-2-PTS_Logo.png" width="85%" style="display: block; margin: auto;" /&gt;
+
+.center[.size45[Evaluate: Operationalization, Instrumentation, and Measurement]]
+
+???
+
+Groups: Take a few minutes to do this together and then we'll report back.
+
+&lt;br&gt;
+
+### Ok, so, how do our definitions compare?
+
+#### - What are the strengths and weaknesses of this definition for measuring and tracking "political violence" more broadly?
+
+Compare and contrast the definition of "political terror" to our definitions of "political violence" from last week
+
+&lt;br&gt;
+
+#### Notes
+
+- "We define political terror as violations of basic human rights to the physical integrity of the person by agents of the state within the territorial boundaries of the state in question. It is important to note that political terror as defined by the PTS is not synonymous with terrorism or the use of violence and intimidation in pursuit of political aims. The concept is also distinguishable from terrorism as a tactic or from criminal acts" (1).
+
+- "Violations of physical integrity rights – also referred to as violations of personal integrity or security – constitute the scope of violence that is captured by the PTS" (1). "Not considered are corporal and capital punishment in the context of legal proceedings conforming to international standards" (2).
+    - torture and cruel and unusual treatment and punishment;
+    - beatings, excessive use of force, brutality;
+    - rape and sexual violence;
+    - killings and unlawful use of deadly force;
+    - summary or extra-judicial executions;
+    - political assassinations and murder;
+    - political imprisonment, arbitrary arrest and detention;
+    - incommunicado and clandestine imprisonment and detention;
+    - forced disappearances;
+    - kidnappings, forced relocations and removal;
+    
+- Agents: "Physical integrity rights violations are only captured if they are perpetrated, sanctioned, or ordered by agents of the state" (2).
+
+- Motivations: "It is important to note that the PTS includes “non-politically motivated violations” of physical integrity rights by state agents" (2).
+
+
+
+
+---
+
+background-image: url('libs/Images/03_2-PTS_Levels.png')
+background-size: 100%
+background-position: center
+
+instrumentation
+
+???
+
+### GROUPS: Is this a valid and reliable measure of "political violence" or "terror"?
+
+#### - In other words, based on how they constructed these measures are we confident in saying that a move of one unit on the PTS scale translates to a substantial change in violence in that state-year?
+
+#### - As part of this, make sure to discuss the data collection methodology. How did they gather the data? From where?
+
+
+&lt;br&gt;
+
+Ok, report back.
+
+### Is this a valid measure? Why or why not?
+#### - Impacted by sources and data collection?
+
+&lt;br&gt;
+
+### Is this a reliable measure? Why or why not?
+#### - Impacted by sources and data collection?
+
+
+
+---
+
+background-image: url('libs/Images/03_2-PTS_Levels.png')
+background-size: 75%
+background-position: top center
+class: bottom, center, slideblue
+
+measurement
+
+.size45[**Audit the scores for the three countries you studied on Monday (2021). Would you have coded these the same way as PTS?**]
+
+???
+
+Audit Time!
+
+Each of you focus on the scores for the three countries you analyzed on Monday. 
+
+Go back to the reports and see if you would have coded them the same way. 
+
+&lt;br&gt;
+
+### Ok, any big discrepancies from how you read the reports?
+
+#### - Takeaways for us?
+
+
+
+
+---
+
+background-image: url('libs/Images/background-light_grey.jpg')
+background-size: 100%
+background-position: center
+class: middle, center
+
+.size70[
+Is there any evidence of selection bias in the three PTS measures in 2021 (most recent year coded)? 
+]
+
+???
+
+Let's dig into the data.
+
+- REMEMBER, our key exercise here is to analyze the validity and reliability of the measures SO THAT later we can use them to analyze country behavior.
+
+&lt;br&gt;
+
+Use the autofilter to zoom in on 2021 only
+
+Then scroll through and talk to me about the kinds of countries with missing data in the three measures.
+
+&lt;br&gt;
+
+### Any questions on sorting and filtering in Excel?
+
+- (**SLIDE**: web excel examples)
+
+
+
+---
+
+background-image: url('libs/Images/background-light_grey.jpg')
+background-size: 100%
+background-position: center
+class: middle
+
+&lt;img src="libs/Images/04_1-Autofilter1.png" width="100%" style="display: block; margin: auto;" /&gt;
+
+???
+
+
+
+---
+
+background-image: url('libs/Images/background-light_grey.jpg')
+background-size: 100%
+background-position: center
+class: middle
+
+&lt;img src="libs/Images/04_1-Autofilter2.png" width="100%" style="display: block; margin: auto;" /&gt;
+
+???
+
+Turn on autofilter
+
+
+
+---
+
+background-image: url('libs/Images/background-light_grey.jpg')
+background-size: 100%
+background-position: center
+class: middle
+
+&lt;img src="libs/Images/04_1-Autofilter3.png" width="64%" style="display: block; margin: auto;" /&gt;
+
+???
+
+Use autofilter
+
+
+
+---
+
+background-image: url('libs/Images/background-light_grey.jpg')
+background-size: 100%
+background-position: center
+class: middle, center
+
+.size70[
+Is there any evidence of selection bias in the three PTS measures in 2021 (most recent year coded)? 
+]
+
+???
+
+### Does one measure cover more countries than the others?
+
+- (**SLIDE**: Missing data stats)
+
+
+
+---
+
+background-image: url('libs/Images/background-light_grey.jpg')
+background-size: 100%
+background-position: center
+class: middle, center
+
+&lt;table class="table table-striped table-hover" style="font-size: 22px; margin-left: auto; margin-right: auto;"&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:left;"&gt; Source &lt;/th&gt;
+   &lt;th style="text-align:center;"&gt; N &lt;/th&gt;
+   &lt;th style="text-align:center;"&gt; Missing &lt;/th&gt;
+   &lt;th style="text-align:center;"&gt; Missing (%) &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;width: 12em; "&gt; PTS_A &lt;/td&gt;
+   &lt;td style="text-align:center;width: 12em; "&gt; 212 &lt;/td&gt;
+   &lt;td style="text-align:center;width: 12em; "&gt; 57 &lt;/td&gt;
+   &lt;td style="text-align:center;width: 12em; "&gt; 27% &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;width: 12em; "&gt; PTS_H &lt;/td&gt;
+   &lt;td style="text-align:center;width: 12em; "&gt; 212 &lt;/td&gt;
+   &lt;td style="text-align:center;width: 12em; "&gt; 108 &lt;/td&gt;
+   &lt;td style="text-align:center;width: 12em; "&gt; 51% &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;width: 12em; "&gt; PTS_S &lt;/td&gt;
+   &lt;td style="text-align:center;width: 12em; "&gt; 212 &lt;/td&gt;
+   &lt;td style="text-align:center;width: 12em; "&gt; 16 &lt;/td&gt;
+   &lt;td style="text-align:center;width: 12em; "&gt; 8% &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;img src="05-1-PTS_Data_files/figure-html/unnamed-chunk-9-1.png" width="80%" style="display: block; margin: auto;" /&gt;
+
+???
+
+### So, what selection bias concerns do you have?
+
+&lt;br&gt;
+
+### Any idea why HRW is missing so much data?
+
+&lt;br&gt;
+
+### To what extent are we limited in comparing across the three measures?
++ So many missing cases, but are they missing different states?
+
+
+
+---
+
+background-image: url('libs/Images/background-light_grey.jpg')
+background-size: 100%
+background-position: center
+class: middle, center
+
+.size70[
+Do all three PTS measures produce the same country scores in 2021?  How similar are they?
+]
+
+???
+
+
+Compare and contrast the scores for PTS_A, PTS_H and PTS_S for 2021 (most recent year coded)
+
+- Evidence of conflicts in the codings?
+
+*Groups work on slide question, you have a few results slides after this*
+
+
+
+---
+
+background-image: url('libs/Images/background-light_grey.jpg')
+background-size: 100%
+background-position: center
+class: middle
+
+
+
+.size45[.center[**How often do the scores match? (2021)**]]
+
+.size30[
++ Matching across all three measures: 49/101 (49%)
+
++ Matching across AI and State only: 95/152 (62%)
+]
+
+&lt;img src="05-1-PTS_Data_files/figure-html/unnamed-chunk-11-1.png" width="60%" style="display: block; margin: auto;" /&gt;
+
+???
+
+### Are these good or bad results in terms of matching percentages? Why?
+
+&lt;br&gt;
+
+### Is the +/-1 as a percentage a meaningful piece of analysis? 
+#### - Given what the stages represent are we comfortable saying a difference of one on the scale isn't substantial?
+
+&lt;br&gt;
+
+### What are the different reasons a country might have different scores across the measures?
+
++ Different operationalizations of political violence by the three sources
++ Different validity and reliability of the sources
++ Problems with how the PTS team codes these variables (reliability)
++ ?
+
+&lt;br&gt;
+
+**SLIDE**: Let's check your intuitions!
+
+
+
+
+---
+
+background-image: url('libs/Images/background-light_grey.jpg')
+background-size: 100%
+background-position: center
+class: middle
+
+&lt;img src="05-1-PTS_Data_files/figure-html/unnamed-chunk-12-1.png" width="100%" style="display: block; margin: auto;" /&gt;
+
+???
+
+### First, would you audit this map for me? Any colors look wrongly placed?
+
+&lt;br&gt;
+
+### Second, do we see any evidence here of a problematic selection effect?
+#### - Certain types of state more or less likely to be included?
+
+&lt;br&gt;
+
+### Bottom line, do you believe the PTS data for 2021 is sufficiently valid and relaible to use as an expert measure of political violence around the world? Why or why not?
+
+#### - As a person writing an analysis of a country using this data, which of those reasons are good for you and which bad?
+
+
+
+
+---
+
+background-image: url('libs/Images/background-light_grey.jpg')
+background-size: 100%
+background-position: center
+class: middle, center
+
+.size70[
+Any countries with a PTS_S score in 2021 that challenges your intuitions?
+]
+
+???
+
+*Groups work on slide question, then report back*
+
+SLIDE: Map of PTS_S for discussion
+
+
+
+
+---
+
+
+background-image: url('libs/Images/background-light_grey.jpg')
+background-size: 100%
+background-position: center
+class: middle
+
+&lt;img src="05-1-PTS_Data_files/figure-html/unnamed-chunk-13-1.png" width="100%" style="display: block; margin: auto;" /&gt;
+
+???
+
+I've tried to match the colors on their levels of PTS figure.
+
+### Please audit the map for me again.
+
+&lt;br&gt;
+
+### Findings? Talk to me about the state of political violence in the world according to PTS.
+
+&lt;br&gt;
+
+### Any caveats on this based on our exploration of the methodology?
+
+
+
+
+---
+
+background-image: url('libs/Images/background-light_grey.jpg')
+background-size: 100%
+background-position: center
+class: middle
+
+.size55[
+Focus on the scores for PTS_S in the years since 2001 and find us examples of countries that have:
+
+  + Improved the most, and
+  
+  + Regressed the most across the years in the sample
+]
+
+???
+
+*Groups work on slide question then report back*
+
+- Sort by both country and year then scroll looking for big changes by country!
+
+&lt;br&gt;
+
+### Findings?
+
+
+
+---
+
+class: middle, center, slideblue
+
+&lt;img src="05-1-PTS_Data_files/figure-html/unnamed-chunk-14-1.png" width="100%" style="display: block; margin: auto;" /&gt;
+
+???
+
+### Bottom line, how useful is the PTS for helping us test theories of political violence? 
+
+#### - What are its strengths and weaknesses?
+
+#### - How do we best use it to analyze changes in the world?
+
+
+
+---
+
+background-image: url('libs/Images/background-light_grey.jpg')
+background-size: 100%
+background-position: center
+class: middle
+
+.size60[.center[**For Next Class**]]
+
+.size50[
+**Explore the data and codebook for the [CIRIGHTS Data project](https://www.dropbox.com/sh/t8utmzsvde8m63q/AAAs1_WIJTqXurAE5nvEKWE5a?dl=0).**
+
+Make sure you understand the observations and variables enough to play with them in class.
+]
+
+???
+
+For Friday we repeat today's work on the CIRIGHTS data project.
+
+Get ready to work!
+
+
+
+
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"ratio": "16:9"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

@@ -1,0 +1,372 @@
+---
+output:
+  xaringan::moon_reader:
+    css: ["default", "extra.css"]
+    lib_dir: libs
+    seal: false
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: '16:9'
+---
+
+```{r, echo = FALSE, warning = FALSE, message = FALSE}
+##xaringan::inf_mr()
+## For offline work: https://bookdown.org/yihui/rmarkdown/some-tips.html#working-offline
+## Images not appearing? Put images folder inside the libs folder as that is the main data directory
+
+library(tidyverse)
+##library(readxl)
+##library(stargazer)
+##library(kableExtra)
+##library(modelr)
+
+knitr::opts_chunk$set(echo = FALSE,
+                      eval = TRUE,
+                      error = FALSE,
+                      message = FALSE,
+                      warning = FALSE,
+                      comment = NA)
+```
+
+background-image: url('libs/Images/00-Leviathan_Cover_55.png')
+background-size: 100%
+background-position: center
+class: middle
+
+.size70[**Today's Agenda**]
+
+<br>
+
+.size55[.center[
+Explore Pape's (2003) arguments concerning suicide terrorism
+]]
+
+<br>
+
+<br>
+
+.center[.size40[
+  Justin Leinaweaver (Fall 2023)
+]]
+
+???
+
+### Prep for Class
+1. ...
+
+<br>
+
+This week we explore the literature on the rationality and effectiveness of terrorism.
+
+<br>
+
+For today you read a hugely influential article by Robert Pape that examines "The Strategic Logic of Suicide Terrorism."
+
+### Generally speaking, what did you think of the article?
+
+(Has always struck me as well-written, well argued and well supported.)
+
+
+
+---
+
+background-image: url('libs/Images/background-blues_and_greys.jpg')
+background-size: 100%
+background-position: center
+class: middle, center, inverse, textwhite
+
+.size60[**What explains the variation in how and why non-state actors use violence against states and people?**]
+
+<br>
+
+<br>
+
+.size45[**Q1. How does the framing of this project help us answer our question?**]
+
+???
+
+Let's talk about the framing of the paper.
+
+### What is the question and how is it worded?
+- (Research Question: What explains the use of suicide terrorism by terror groups?)
+
+<br>
+
+### What literature is the paper connected to?
+#### - What gaps in the literature has Pape (2003) identified?
+- No single profile of terrorists likely exists.
+- Irrationality is likely a cop-out for explaining behavior
+- We need better counter-terror strategies and they depend on a better understanding of the problem.
+
+So, seems like an important project, right?
+
+<br>
+
+### What are the key concepts and how are they defined?
+- (SLIDE: Terrorism defined)
+
+
+
+---
+
+background-image: url('libs/Images/13_2-Pape_Terrorism.png')
+background-size: 60%
+background-position: center
+
+???
+
+### What stands out as key to Pape's definition (p345)?
+- Violence used by non-state "organization"
+- Purpose: Along a continuum between two competing objectives: gain supporters vs coerce opponents
+- Trade-off: Violence coerces but may alienate supporters...
+- Premises lead to three predictions: A typology of terrorism
+- Cites both literature and the US State Department
+- Explicitly focuses on non-state actors only
+
+<br>
+
+### How does this compare to what we've developed as our class definition?
+- SP2022 Notes
+- violence or threat of violence
+- non-state actor
+- Incite fear (intimidate or subjugate) in audience beyond the target
+- Outside "normal" rules
+- Member of established group with clear aims/ideology
+
+<br>
+
+### How does Pape operationalize his concept? What "observable phenomena" is he telling us to focus on?
+
+
+
+---
+
+background-image: url('libs/Images/13_2-Terror_Dimension.png')
+background-size: 100%
+background-position: center
+
+???
+
+Let's make sure we're clear on the typology.
+
+### How does a demonstrative terrorist group balance these objectives?
+- (Gain publicity to recruit more activists, raise attention to grievances from "soft liners on the other side" and/or gain attention from third parties who might exert pressure on other side.)
+    - More about the threat of harm than actual harm (e.g. high body counts).
+    - Orange Volunteers, Red Brigades (Italy)
+
+<br>
+
+### How does a destructive terrorist group balance these objectives?
+- (Seek to coerce opponents AND recruit supporters)
+    - Inflict real harm on targets and willing to risk losing support from some groups in the process
+    - IRA, FARC
+
+<br>
+
+### How does a suicide terrorist group balance these objectives?
+- (Pursuing coercion even if it means losing support in your own community.)
+    - The most focused on coercion of the types, aim is large body counts.
+
+
+
+---
+
+background-image: url('libs/Images/13_2-Terror_Dimension.png')
+background-size: 100%
+background-position: center
+
+???
+
+### Compare and contrast this typology with the more standard typologies we studied last week (e.g. religious vs revolutionary vs fascist vs nationalist).
+
+<br>
+
+### Does this typology represent a component that is missing from our class definition? Why or why not?
+
+SP2022 Notes
+- violence or threat of violence
+- non-state actor
+- Incite fear (intimidate or subjugate) in audience beyond the target
+- Outside "normal" rules
+- Member of established group with clear aims/ideology
+
+
+---
+
+background-image: url('libs/Images/background-blues_and_greys.jpg')
+background-size: 100%
+background-position: center
+class: middle, inverse, textwhite
+
+.size55[.center[**Q2. How does the model of politics presented in this paper help us answer our big question?**]]
+
+<br>
+
+<br>
+
+.size45[.center[**The Strategic Logic of Suicide Terrorism**]]
+
+???
+
+Ok, let's shift our focus to Pape's model. 
+
+Everybody take a few minutes on your own to flesh out an answer to this question.
+
+### What is the strategic logic of suicide terrorism?
+
+We'll gather the premises on the board in a moment.
+
+(SLIDE)
+
+
+
+
+---
+
+background-image: url('libs/Images/background-blues_and_greys.jpg')
+background-size: 100%
+background-position: center
+class: middle, inverse, textwhite
+
+.size55[.center[**Q2. How does the model of politics presented in this paper help us answer our big question?**]]
+
+<br>
+
+<br>
+
+.size45[.center[**The Strategic Logic of Suicide Terrorism**]]
+
+???
+
+*ON BOARD* 
+
+- A strategic act
+- An act of coercion built on Schelling's (1966) "the rationality of irrationality" (344) (irrational act that demonstrates credibility to democratic audience of worse to come.)
+- Prioritizes coercion over maintaining support of your own community
+- Large body counts lead to government concessions OR popular revolt against the government (346)
+- Coercer is weaker than the target, only option is "punishment"
+- Coercive leverage created by raising expectations of future damage, not necessarily about the actual damage created.
+- Suicide strategy magnifies coercive logic in three ways: 1. suicide attacks generally more destructive (more likely to succeed, simpler plans e.g. no need for escape plans, scarier weapons e.g. suicide vests), 2. sends signal that fear of retaliation is not a deterrent; 3. violating norms of the use of violence makes the signal that more pain is to come all the scarier.
+
+<br>
+
+### Is the model logical?
+
+<br>
+
+### Does this appear to be a useful simplification of a hard to understand decision or is it leaving something important out?
+
+
+
+
+---
+
+class: middle, slideblue
+
+.size45[.center[**"Five Principal Findings" (Pape 2003)**]]
+
+<br>
+
+.size40[
+1. Suicide terrorism is strategic 
+
+2. Designed to coerce modern democracies 
+
+3. Suicide terror works...
+
+4. ...but only in moderation 
+
+5. Stopping suicide terror requires better homeland security, not offensive military actions or concessions
+]
+
+???
+
+The question for us to end with today is, based on Pape's work how confident are we in these five conclusions?
+
+### Is each one clear and supported by sound logic?
+
+<br>
+
+Let's talk methodology.
+
+### How did Pape construct his dataset?
+- (Dataset culled from news media database (Lexis-Nexis).)
+
+### To what degree do we believe this created an accurate sample of attacks?
+
+<br>
+
+### Are we convinced by footnote 3? Why or why not?
+
+
+
+---
+
+background-image: url('libs/Images/13_2-Pape_Table1.png')
+background-size: 80%
+background-position: center
+
+???
+
+### What do we learn from Table 1?
+
+<br>
+
+Each column is a separate variable.
+
+### Evaluate the validity and reliability of each variable.
+
+
+
+---
+
+background-image: url('libs/Images/13_2-Pape_Table2.png')
+background-size: 95%
+background-position: center
+
+???
+
+### What do we learn from Table 2?
+
+### Evaluate the validity and reliability of each variable in this table.
+
+
+
+---
+
+class: middle, slideblue
+
+.size45[.center[**"Five Principal Findings" (Pape 2003)**]]
+
+<br>
+
+.size40[
+1. Suicide terrorism is strategic 
+
+2. Designed to coerce modern democracies 
+
+3. Suicide terror works...
+
+4. ...but only in moderation 
+
+5. Stopping suicide terror requires better homeland security, not offensive military actions or concessions
+]
+
+???
+
+### Based on all of this, how confident are we in this set of conclusions?
+
+#### What are the strengths and weaknesses of this article?
+
+<br>
+
+### Based on all of this, what are Pape's suggestions for counterterrorism strategies to reduce suicide terrorism?
+
+
+
+
+
+
+

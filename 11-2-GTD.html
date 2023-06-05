@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>11-2-GTD.knit</title>
+    <meta charset="utf-8" />
+    <script src="libs/header-attrs-2.21/header-attrs.js"></script>
+    <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <link rel="stylesheet" href="extra.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+
+
+
+
+background-image: url('libs/Images/00-Leviathan_Cover_55.png')
+background-size: 100%
+background-position: center
+class: middle
+
+.size70[**Today's Agenda**]
+
+&lt;br&gt;
+
+.size55[.center[
+Explore the Global Terrorism Database (GTD)
+
+https://www.start.umd.edu/gtd/
+]]
+
+&lt;br&gt;
+
+.center[.size40[
+  Justin Leinaweaver (Fall 2023)
+]]
+
+???
+
+### Prep for Class
+1. Post data and an R script file on LMS
+
+&lt;br&gt;
+
+Today we move to our second big project that aims to identify and measure terrorism events around the world.
+
+The full GTD database is 100 MB with 135 variables measuring 201k observations.
+
+- That's functionally impossible to manage easily in Excel
+
+- That's super easy in in R
+    - The data, codebook and an R script to access the RAND data are all on Moodle.
+
+ALSO, the GTD website offers some handy querying and visualization tools we'll explore today.
+
+&lt;br&gt;
+
+
+
+Where to put:
++ Are the variables valid and reliable?
+  + nperps, nkill, nwound, propvalue, weaptype1_txt, suicide, attacktype1_txt, targettype1_txt
+
+
+
+
+---
+
+class: middle, slideblue
+
+.size50[.center[.content-box-grey[**Global Terrorism Database (GTD)**]]]
+
+&lt;br&gt;
+
+## Research Questions
+.size35[
+1. Pros and cons of generalizing from this dataset?
+
+2. Is the damage caused by terrorism getting worse?
+
+3. Where are the terrorism hot spots in the world?
+
+4. Are the characteristics of terrorism changing?
+]
+
+???
+
+Just like on Monday I want us to evaluate this project using these four questions.
+
+&lt;br&gt;
+
+*Split Class into Small Groups*
+
+Make sure you're working with new people!
+
+Go sit with your group!
+
+(SLIDE)
+
+
+
+---
+
+class: middle, slideblue
+
+.size50[.center[.content-box-grey[**Global Terrorism Database (GTD)**]]]
+
+&lt;br&gt;
+
+.size45[
+1) What are the pros and cons of using this as our primary database of terrorism?
+- Who is the National Consortium for the Study of Terrorism and Responses to Terrorism?
+- How do they define the key concepts?
+- How are they measuring terrorism?
+]
+
+???
+
+Groups take 10 minutes to make two lists you can put on the board.
+- Pros vs cons
+
+Think about the project in broad strokes
+- Who is the National Consortium for the Study of Terrorism and Responses to Terrorism, how do they define the key concepts and how are they measuring terrorism?
+
+&lt;br&gt;
+
+(SLIDE: Who is the National Consortium for the Study of Terrorism and Responses to Terrorism?)
+
+(SLIDE: Terrorism Defined)
+
+(SLIDE: RAND definition of terrorism to compare)
+
+(SLIDE: Valid and reliable measures?)
+
+
+
+
+
+
+---
+
+class: middle, slideblue
+
+.size45[.center[**The Global Terrorism Database (GTD)**]]
+
+.size35[
++ Maintained by the National Consortium for the Study of Terrorism and Responses to Terrorism (START) at the University of Maryland
+
++ Includes an advisory oversight board with academic experts in the field of terrorism studies
+
++ Contains information on over 200,000 terrorist attacks
+
++ Currently the most comprehensive **unclassified** database on terrorist attacks in the world
+]
+
+???
+
+### After reading through the website material do you have any concerns about institutional biases?
+
+&lt;br&gt;
+
+### Is the "unclassified" note here hinting at something we don't know about that they do know about? 
+
+&lt;br&gt;
+
+### Ok, talk to me about the data collection methodology.
+
+#### - How do they collect their data?
+
+&lt;br&gt;
+
+(p10)
+
+- combines automated and manual data collection strategies
+- over one million media articles on any topic published daily worldwide - Lexis Nexis for English and BBC Monitoring for English-language translations of sources from around 150 countries in over 100 languages
+- First pass: customized keyword filters and natural language processing (NLP) to identify terrorism articles
+- Second pass: Researchers review subset of articles identified and code them.
+- Quality Control: The coding strategy relies on six coding teams that each specialize on a particular domain of the GTD Codebook.
+
+
+---
+
+class: middle, slideblue
+
+.size40[.center[**GTD Defines Terrorism**]]
+
+.size30[
++ The incident must be intentional...
++ The incident must entail some level of violence or immediate threat of violence...
++ The perpetrators of the incidents must be sub-national actors...
+
+Plus, at least two of the following criteria:
+
+1. The act must be aimed at attaining a political, economic, religious, or social goal. 
+2. There must be evidence of an intention to coerce, intimidate, or convey some other message to a larger audience (or audiences) than the immediate victims.
+3. The action must be outside the context of legitimate warfare activities.
+]
+
+???
+
+### How does this compare to our class definition?
+
+&lt;br&gt;
+
+### How does it compare to Tilly's (2004) definition?
+
+&lt;br&gt;
+
+SLIDE: Let's compare it to the RAND database from Monday.
+
+
+
+
+
+---
+
+class: middle, slideblue
+
+.size55[.center[**RAND Defines Terrorism**]]
+
+.size40[
+
+Terrorism is defined by the nature of the act, not by the identity of the perpetrators or the nature of the cause; key elements include:
+
++ Violence or the threat of violence
++ Calculated to create fear and alarm
++ Intended to coerce certain actions
++ Motive must include a political objective
++ Generally directed against civilian targets
++ Can be a group or an individual
+]
+
+???
+
+### Compare and contrast: Has the GTD made any big or particularly useful changes? or is this basically the same thing?
+
+&lt;br&gt;
+
+SLIDE: Before we move off the definition, let's talk about this strange 2 out of 3 idea in the extra criteria.
+
+
+
+---
+
+class: middle
+
+.size35[
+
+| Criteria 1 | Criteria 2 | Criteria 3 | Count  | Proportion |
+|:----------:|:----------:|:----------:|:------:|:----------:|
+|            |    Yes     |    Yes     |  2332  |    0.01    |
+|    Yes     |            |    Yes     |  1392  |    0.01    |
+|    Yes     |    Yes     |            | 26157  |    0.13    |
+|    Yes     |    Yes     |    Yes     | 171302 |    0.85    |
+]
+
+.size30[
+1. The act must be aimed at attaining a political, economic, religious, or social goal. 
+
+2. There must be evidence of an intention to coerce, intimidate, or convey some other message to a larger audience (or audiences) than the immediate victims.
+
+3. The action must be outside the context of legitimate warfare activities.
+]
+
+???
+
+Here we see the proportion of cases that meet each of the three additional criteria.
+
+- Each row tells us what proportion of cases qualify as terrorism by including some of the criteria.
+
+- Bottom row shows us 171k cases, or around 85% of the sample, meet all three criteria for inclusion.
+
+- On the other end, approximately 2,300 cases, or around 1% of the sample, qualify by meeting only criteria 2 and 3 but not 1. 
+
+### Everybody clear on how to read this table?
+
+### What conclusions can we draw from this? Does this tell us anything important about their views of terrorism?
+
+- (98% of the cases in this dataset include the first two criteria (85+13).)
+- So, the researchers are telling us that, essentially, ALL terrorism meets criteria 1 and 2.
+
+### The question for us is, what does criteria 3 add to our understanding? Why do they need it?
+
+- Since a case must meet 2 out of 3 criteria, I'd like to know if the 2% of cases that qualify by including criteria 3 with only one of the others looks like the rest.
+
+- I'll spare you the insanity but I went down quite the rabbit hole with this and the cases looked fairly similar across the variables in this dataset.
+    - Some differences, but nothing crazy.
+
+
+
+
+
+---
+
+class: middle, slideblue
+
+.size50[.center[.content-box-grey[**Operationalizing Terrorism**]]]
+
+&lt;br&gt;
+
+.size40[
+**Are the key variables valid and reliable?**
+- nperps
+- nkill
+- nwound
+- propvalue
+- weaptype1_txt
+- suicide
+- attacktype1_txt
+- targettype1_txt
+]
+
+???
+
+### Any validity or reliability concerns with these specific variables in the codebook?
+
+*DISCUSS*
+
+
+
+
+---
+
+background-image: url('libs/Images/11_2-Access_GTD.png')
+background-size: 70%
+background-position: bottom
+class: slideblue
+
+.center[.size55[.content-box-blue[https://www.start.umd.edu/gtd/]]]
+
+???
+
+As I told you when we started today, the GTD database is 100 MB spread across 135 variables and over 200k terror events.
+
+Excel can't handle that well.
+
+So, I'll now point you to the web search and reporting tool on the GTD website.
+
+On the GTD website select "Access the GTD" at the top and then "Search and Browse"
+
+
+
+---
+
+background-image: url('libs/Images/11_2-GTD_DB1.png')
+background-size: 85%
+background-position: center
+class: slideblue
+
+???
+
+"Search and Browse" will take you here to what is actually the output of a search that includes all the possible results.
+
+Scroll down to see a visualization, the criteria selected (none yet) and the events identified.
+
+When you click into this the first time it includes all of the possible 200k events.
+
+
+
+---
+
+background-image: url('libs/Images/11_2-GTD_DB2.png')
+background-size: 85%
+background-position: center
+class: slideblue
+
+???
+
+By clicking the options next to the plot it'll show you the cases broken out by the possible criteria.
+
+
+
+
+---
+
+background-image: url('libs/Images/11_2-GTD_DB3.png')
+background-size: 85%
+background-position: center
+class: slideblue
+
+???
+
+You can also click the "Back to Advanced Search" to change the results on this page.
+
+
+
+
+---
+
+background-image: url('libs/Images/11_2-GTD_DB4.png')
+background-size: 85%
+background-position: center
+class: slideblue
+
+???
+
+Using the search features on the website you can narrow your results / visualizations by any of these features.
+
+&lt;br&gt;
+
+Let's play with this tool to explore terrorism according to the GTD.
+
+
+
+---
+
+class: middle, center, slideblue
+
+.size65[.content-box-grey[**Operationalizing Terrorism**]]
+
+&lt;br&gt;
+
+.size60[
+2) Is the damage caused by terrorism getting worse over time?
+]
+
+???
+
+Groups, take a few minutes to review the data.
+
+Go back to the "all events" line plot and use the plot adjustments to examine the casualties, fatalities and injuries across time.
+
+&lt;br&gt;
+
+### Report Back, what did you find?
+
+(SLIDE)
+
+
+
+---
+
+&lt;img src="11-2-GTD_files/figure-html/unnamed-chunk-4-1.png" width="100%" style="display: block; margin: auto;" /&gt;
+
+???
+
+### What do you think this data tells us about the global experience of terrorism?
+
+#### - What is happening since 2000???
+
+&lt;br&gt;
+
+### How does this compare to the totals produced by the Rand database?
+
+(SLIDE)
+
+
+
+
+---
+
+&lt;img src="11-2-GTD_files/figure-html/unnamed-chunk-5-1.png" width="100%" style="display: block; margin: auto;" /&gt;
+
+???
+
+Here we see a HUGE difference in estimates of fatalities.
+
+Let's zoom in on the common years only.
+
+
+
+
+---
+
+&lt;img src="11-2-GTD_files/figure-html/unnamed-chunk-6-1.png" width="100%" style="display: block; margin: auto;" /&gt;
+
+???
+
+Ok, let's talk about the differences here.
+
+### Which line is the better estimate of fatalities due to terrorism? Why?
+
+&lt;br&gt;
+
+### What explains the difference: 
+
+#### - Sample selection, 
+
+#### - The definition of terrorism, and/or
+
+#### - The definition of fatalities?
+
+&lt;br&gt;
+
+### Can we identify what is specific to 2008-2009 that Rand picks up on? Is this violence in Iraq/Afghanistan?
+
+
+
+---
+
+class: middle, slideblue
+
+.size50[.center[.content-box-grey[**Operationalizing Terrorism**]]]
+
+&lt;br&gt;
+
+.size60[
+4) Are the characteristics of terrorism changing?
+
+- What weapons are they using?
+]
+
+???
+
+Given the features of the web search tool, let's jump to question 4 and focus on weapon types.
+
+Dig into the data and report back!
+
+### What did you find?
+
+(SLIDE)
+
+
+
+---
+
+&lt;img src="11-2-GTD_files/figure-html/unnamed-chunk-7-1.png" width="100%" style="display: block; margin: auto;" /&gt;
+
+???
+
+### What do we learn from the weapons types used over time?
+
+#### - Any interesting changes?
+
+&lt;br&gt;
+
+(SLIDE: Proportional plot to make comparisons easier)
+
+
+
+---
+
+&lt;img src="11-2-GTD_files/figure-html/unnamed-chunk-8-1.png" width="100%" style="display: block; margin: auto;" /&gt;
+
+???
+
+This version of the plot expands each bar to 100% so we can see the proportion of weapons used in each year.
+
+Be incredibly careful here though as it, and anytime you compare percentages, tricks the brain into thinking the number of attacks per year is constant.
+
+It definitely isn't!!
+
+&lt;br&gt;
+
+### What do we learn from this data?
+
+#### - What are the most common types of terrorist weapon across time?
+
+
+
+---
+
+class: middle, center, slideblue
+
+.size50[.content-box-grey[**Operationalizing Terrorism**]]
+
+&lt;br&gt;
+
+.size60[
+3) Where are the terrorism hot spots in the world?
+]
+
+???
+
+Ok, focus on regions and review the data.
+
+Analyze the data and identify for us the global hotspots for terrorism!
+
+&lt;br&gt;
+
+### Report Back, what did you find?
+
+(SLIDE: For the country level, let's look at some maps!)
+
+
+
+
+---
+
+&lt;img src="11-2-GTD_files/figure-html/unnamed-chunk-9-1.png" width="100%" style="display: block; margin: auto;" /&gt;
+
+???
+
+Map represents a count of terror attacks overall.
+
+- e.g. I counted the number of attacks per country. 
+
+### What conclusions can we draw using this map of the data?
+
+#### - How confident are we the red countries are the terror hotspots?
+
+#### - How does this compare to the data from Rand?
+
+(Fills in small counts in Africa.)
+
+&lt;br&gt;
+
+Let's check out the most recent year in the db, 2019.
+
+
+
+---
+
+&lt;img src="11-2-GTD_files/figure-html/unnamed-chunk-10-1.png" width="100%" style="display: block; margin: auto;" /&gt;
+
+???
+
+### What conclusions can we draw from this?
+
+&lt;br&gt;
+
+### Are we confident that this captures all of the terrorist events in this period?
+
+
+
+---
+
+&lt;img src="11-2-GTD_files/figure-html/unnamed-chunk-11-1.png" width="100%" style="display: block; margin: auto;" /&gt;
+
+???
+
+Rather than a count of attacks, here we see a sum of the fatalities.
+
+### What conclusions can we draw from this?
+
+&lt;br&gt;
+
+### Are we more confident using the GTD database to count terrorist attacks or fatalities due to attacks? Why?
+
+&lt;br&gt;
+
+Let's end by focusing on the US experience of terrorism over the last ten years.
+
+Filter the GTD report for the USA and 2010 to 2019.
+
+Get ready to tell me what the cases look like.
+
+
+
+---
+
+class: middle, center
+
+.size50[.center[**USA (2010 - 2019)**]]
+
+.size40[
+
+|Variables           |   N| Mean| StdDev| Min| Max|
+|:-------------------|---:|----:|------:|---:|---:|
+|Criteria 1          | 412| 0.92|   0.27|   0|   1|
+|Criteria 2          | 412| 1.00|   0.07|   0|   1|
+|Criteria 3          | 412| 1.00|   0.07|   0|   1|
+|Killed              | 412| 0.92|   4.42|   0|  60|
+|Property (millions) | 412| 3.03|  16.63|   0| 100|
+|Suicide Attack      | 412| 0.02|   0.13|   0|   1|
+|Wounded             | 412| 4.42|  43.65|   0| 850|
+]
+
+???
+
+Here we see summary statistics for the variables we've been exploring but focused on the US from 2010 to 2019.
+
+### Any questions on the columns in this table?
+
+&lt;br&gt;
+
+### What do we learn from this?
+
+
+
+---
+
+class: middle, center, slideblue
+
+![](libs/Images/11-2-rand.png)&lt;!-- --&gt;
+
+&lt;br&gt;
+
+![](libs/Images/11-2-GTD.png)&lt;!-- --&gt;
+
+???
+
+### At this point, would you recommend decision-makers use the Rand database or GTD to better understand terrorism around the world? why?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"ratio": "16:9"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

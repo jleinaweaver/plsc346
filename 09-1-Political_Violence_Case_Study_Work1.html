@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>04-1-Political_Violence_Case_Study_Work1.knit</title>
+    <meta charset="utf-8" />
+    <script src="libs/header-attrs-2.11/header-attrs.js"></script>
+    <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <script src="libs/kePrint-0.0.1/kePrint.js"></script>
+    <link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
+    <link rel="stylesheet" href="extra.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+
+
+
+
+class: slideblue
+
+.size80[**Today's Agenda**]
+
+&lt;br&gt;
+
+.size55[
+.center[
+The Political Violence Case Study
+
+(Due Feb 18)
+]]
+
+&lt;br&gt;
+
+.center[.size40[
+  Justin Leinaweaver (Spring 2022)
+]]
+
+???
+
+### Prep for Class
+1. ...
+
+&lt;br&gt;
+
+I am giving you our class meetings this week to work on your first assignment for the class.
+
+A political violence case study.
+
+
+
+---
+
+background-image: url('libs/Images/background-blue_cubes_v2.png')
+background-size: 100%
+background-position: center
+class: middle, inverse
+
+.size50[**Political Violence Case Study**]
+
+.size35[(Due Feb 18)
+
+Use all of the data sources from this week to write a report on **one country** that:]
+
+???
+
+You will each prepare a report focused on the experience of political violence in a single country.
+
+You will draw on the reports from the State Department, Amnesty International and the measurements from PTS and CIRIGHTS.
+
+--
+
+.size35[
+- **Summarizes AND analyzes** its recent history of political violence (e.g. over the last ten years), and 
+]
+
+--
+
+.size35[
+- **Makes an argument** about what the current PTS and CIRIGHTS codings should be based on the 2020 Country Reports on Human Rights Practices from the State Department
+]
+
+???
+
+### Questions on the assignment?
+
+&lt;br&gt;
+
+Remember:
+
+- All the sources means AI, State Dept, PTS and CIRIGHTS!
+
+- You must provide context for your claims. Use those primary source documents!
+
+
+
+
+---
+
+background-image: url('libs/Images/background-blue_cubes_v2.png')
+background-size: 100%
+background-position: center
+class: middle, inverse
+
+# For Wednesday
+
+.size45[.center[
+Come to class ready to share your conclusions (3 minimum) about your country's experience of political violence over the last ten years]]
+
+.size35[
+1. US State Department Human Rights Country Reports
+2. Amnesty International Country Reports
+3. The PTS datatset
+4. The CIRIGHTS dataset
+]
+
+???
+
+### Questions on what you need for Wednesday?
+
+&lt;br&gt;
+
+SLIDE: Let's talk through merging and cleaning data in Excel
+
+
+
+---
+
+background-image: url('libs/Images/04-1-1-process_cirights_1.png')
+background-size: 97%
+background-position: center
+class: middle, slideblue
+
+???
+
+Open the CIRIGHTS data in Excel
+- In the app on your computer OR using the web version through your webmail
+
+
+
+---
+
+background-image: url('libs/Images/04-1-2-process_cirights_2.png')
+background-size: 97%
+background-position: center
+class: middle, slideblue
+
+???
+
+Delete all columns we don't need.
+
+- Just keep the key measures (unless you want more for your definition of political violence!)
+
+
+
+---
+
+background-image: url('libs/Images/04-1-3-process_cirights_3.png')
+background-size: 90%
+background-position: center
+class: middle, slideblue
+
+???
+
+Observations not always in country-year order.
+
+So, data ribbon, custom sort.
+
+- Check "My data has headers"
+
+- Sort by countryname
+
+- Add a second level, sort by year
+
+- Hit ok
+
+
+
+
+---
+
+background-image: url('libs/Images/04-1-4a-process_cirights.png')
+background-size: 96%
+background-position: center
+class: middle, slideblue
+
+???
+
+Results of the sort
+
+SLIDE: Now just keep the country-years you need!
+
+
+
+---
+
+background-image: url('libs/Images/04-1-4c-process_cirights.png')
+background-size: 96%
+background-position: center
+class: middle, slideblue
+
+???
+
+### Everybody got this?
+
+SLIDE: Repeat all this on the PTS dataset
+
+
+
+---
+
+background-image: url('libs/Images/04-1-4-process_pts_1.png')
+background-size: 96%
+background-position: center
+class: middle, slideblue
+
+???
+
+Now let's open the PTS dataset
+
+
+
+---
+
+background-image: url('libs/Images/04-1-5-process_pts_2.png')
+background-size: 96%
+background-position: center
+class: middle, slideblue
+
+???
+
+Delete unneeded columns
+
+Note I'm keeping the columns that try to tell you why you might have missing data in a country year.
+
+The codebook has the details on these codes.
+
+
+
+---
+
+background-image: url('libs/Images/04-1-6-process_pts_3.png')
+background-size: 96%
+background-position: center
+class: middle, slideblue
+
+???
+
+Only keep the years you need
+
+
+
+
+---
+
+background-image: url('libs/Images/04-1-7-combined_1.png')
+background-size: 96%
+background-position: center
+class: middle, slideblue
+
+???
+
+Copy the data onto a new sheet from both datasets
+
+Now clean it up by removing repeated columns: country and year
+
+
+
+---
+
+background-image: url('libs/Images/04-1-8-combined_2.png')
+background-size: 96%
+background-position: center
+class: middle, slideblue
+
+???
+
+### Questions on building your dataset?
+
+&lt;br&gt;
+
+SLIDE: Now for those who wish to use R like we did in DA this is much easier
+
+
+
+---
+
+
+
+.code130[
+
+```r
+# Load packages
+library(tidyverse)
+library(readxl)
+```
+]
+
+--
+
+.code130[
+
+```r
+# PTS: Load, filter and select variables
+pts &lt;- read_excel("PTS-2020.xlsx", na = "NA") |&gt;
+  filter(Country == "Afghanistan", Year &gt; 2006) |&gt;
+  select(Country, Year, PTS_A, PTS_S, NA_Status_A, NA_Status_S)
+```
+]
+
+???
+
+Remember, this code assumes both datasets are in the same folder on your computer as the script file with all this code.
+
+--
+
+.code130[
+
+```r
+# CIRIGHTS: Load, filter and select variables
+cirights &lt;- read_csv("CIRIGHTS_2021.01.21.csv") |&gt;
+  filter(countryname == "Afghanistan", year &gt; 2006) |&gt;
+  select(year, physint:tort)
+```
+]
+
+--
+
+.code130[
+
+```r
+# Merge the datasets
+d &lt;- left_join(pts, cirights, by = c("Year" = "year"))
+```
+]
+
+???
+
+### Ringing any bells?
+
+
+
+---
+
+class: middle
+
+.size25[
+&lt;table class="table table-striped table-hover table-condensed" style="margin-left: auto; margin-right: auto;"&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:left;"&gt; Country &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; Year &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; PTS_A &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; PTS_S &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; physint &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; disap &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; kill &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; polpris &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; tort &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Afghanistan &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2007 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 5 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 5 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 4 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Afghanistan &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2008 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 5 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 5 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Afghanistan &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2009 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 5 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 5 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Afghanistan &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2010 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 5 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 4 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Afghanistan &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2011 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 5 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 5 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 4 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Afghanistan &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2012 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 4 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 4 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 4 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Afghanistan &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2013 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; NA &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 5 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Afghanistan &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2014 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 4 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 5 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Afghanistan &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2015 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 5 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 4 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Afghanistan &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2016 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 5 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 5 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Afghanistan &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2017 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 5 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 5 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Afghanistan &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2018 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; NA &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 5 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; NA &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; NA &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; NA &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; NA &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; NA &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Afghanistan &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2019 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 5 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 5 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; NA &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; NA &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; NA &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; NA &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; NA &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+]
+
+???
+
+Either way you go we have data that looks like this.
+
+### Questions on cleaning / prepping your dataset?
+
+&lt;br&gt;
+
+Back to the assignment for Wednesday!
+
+
+
+---
+
+background-image: url('libs/Images/background-blue_cubes_v2.png')
+background-size: 100%
+background-position: center
+class: middle, inverse
+
+# For Wednesday
+
+.size45[.center[
+Come to class ready to share your conclusions (3 minimum) about your country's experience of political violence over the last ten years]]
+
+.size35[
+1. US State Department Human Rights Country Reports
+2. Amnesty International Country Reports
+3. The PTS datatset
+4. The CIRIGHTS dataset
+]
+
+???
+
+So, you should each have data on a single country for ten years worth of time sourced from:
+
+1. US State Department Human Rights Country Reports,
+
+2. Amnesty International Country Reports,
+
+3. The PTS datatset, and
+
+4. The CIRIGHTS dataset.
+
+&lt;br&gt;
+
+Given all of this data and analysis I'm looking forward to hearing your  conclusions on Wednesday!
+
+
+
+
+
+
+
+
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"ratio": "16:9"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
