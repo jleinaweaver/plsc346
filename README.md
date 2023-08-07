@@ -26,11 +26,11 @@ Data, slides and errata for my class at Drury University (PLSC 346: Political Vi
 
 05-3-VDem_Data.html
 
-06-1-Analyzing_Across_Datasets.html
+06-1-Brainstorm_Paper_1.html
 
-06-2-Build_per_Source_Lists.html
+06-2-Writing_Workshop_Paper_1.html
 
-06-3-Writing_Workshop.html
+06-3-Prepping_Paper_2.html
 
 07-1-Davenport_Armstrong2004.html
 
@@ -66,17 +66,19 @@ Data, slides and errata for my class at Drury University (PLSC 346: Political Vi
 
 12-3-Abrahms_on_Suicide_Terrorism.html
 
-13-1-US_Extremist_Group_Cases.html
+13-1-Collins2021_New_Wave.html
 
-13-2-Collins2021_New_Wave.html
+13-2-PIRUS_Dataset.html
 
-13-3-Robinson2023_Far_Right.html
+13-3-Jasko_etal2022.html
+
+13-4-Countering_Extremism.html
 
 14-1-Terrorism_Internet_Cases.html
 
 14-2-Muller_Schwarz_Facebook.html
 
-14-3-Debate_Hate_Speech.html
+14-3-Debate_Digital_Hate_Speech.html
 
 15-1-Final_Paper_Data.html
 

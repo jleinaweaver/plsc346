@@ -216,7 +216,7 @@ d1 <- read_excel("../../Data/Polity/p5v2018.xls", guess_max = 10000, na = ".") |
   filter(year == 2018) |>
   select(country, ccode, year, democ, autoc, polity2)
 
-d2 <- read_excel("../../Data/WDI-GDP-2018_2021-11-30.xlsx", na = "NA")
+d2 <- read_excel("../../Data/WDI/WDI-GDP-2018_2021-11-30.xlsx", na = "NA")
 
 ## Classify polity
 d1a <- d1 |>
@@ -866,6 +866,32 @@ We have to examine how the violence is used and for what aims in order to unders
 <br>
 
 There's so much more to explore in this paper but there's no way we haven't run out of time!
+
+
+
+---
+
+background-image: url('libs/Images/background-blue_triangles2.png')
+background-size: 100%
+background-position: center
+class: middle
+
+.size50[**For Next Class**]
+
+<br>
+
+.size35[
+Find us two real world examples of state governments using violence against the people inside their territory (the more recent the better). 
+- Find one example from a country you consider to be more "democratic" and one from a country you consider to be more "autocratic."
+
+- Your examples should be specific events (e.g. action X on date Y) rather than broad generalizations (country X harms group Y).
+]
+
+???
+
+For each case, submit an APA citation and brief explanation of what you selected and why. 
+
+-  No overlap in events!
 
 
 

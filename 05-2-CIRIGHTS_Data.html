@@ -7,15 +7,6 @@
     <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
     <script src="libs/kePrint-0.0.1/kePrint.js"></script>
     <link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
-    <script src="libs/htmlwidgets-1.6.2/htmlwidgets.js"></script>
-    <link href="libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
-    <script src="libs/datatables-binding-0.27/datatables.js"></script>
-    <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
-    <link href="libs/dt-core-1.12.1/css/jquery.dataTables.min.css" rel="stylesheet" />
-    <link href="libs/dt-core-1.12.1/css/jquery.dataTables.extra.css" rel="stylesheet" />
-    <script src="libs/dt-core-1.12.1/js/jquery.dataTables.min.js"></script>
-    <link href="libs/crosstalk-1.2.0/css/crosstalk.min.css" rel="stylesheet" />
-    <script src="libs/crosstalk-1.2.0/js/crosstalk.min.js"></script>
     <link rel="stylesheet" href="extra.css" type="text/css" />
   </head>
   <body>
@@ -58,17 +49,20 @@ background-size: 100%
 background-position: center
 class: middle
 
-.size50[**Political Violence Data**]
+.size45[**Paper 1**]
 
-.size35[(Due Sep 22)
+.size30[
+If someone came to you with the goal of better understanding the use of political violence by governments around the world, which of the data sources that we explored in class would you recommend and why?
 
-What is your recommendation for the *SINGLE* most useful approach to measuring political violence around the world?
+- The US State Department's "Country Reports on Human Rights Practices"
 
-- Country Reports on Human Rights Practices from the State Department
-- The Annual Country Reports from Amnesty International
+- **Amnesty International's "Annual Country Reports"**
+
 - The Political Terror Scale (PTS)
-- The CIRIGHTS data project
-- V-Dem Personal Integrity Rights
+
+- The CIRIGHTS data project's "Physical Integrity Rights"
+
+- Varieties of Democracy's (V-Dem) "Personal Integrity Rights"
 ]
 
 ???
@@ -356,10 +350,50 @@ Then scroll through and talk to me about the kinds of countries with missing dat
 
 ---
 
-Results
+class: slideblue, middle
+
+&lt;table class="table table-striped table-hover" style="font-size: 22px; margin-left: auto; margin-right: auto;"&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:left;"&gt; Source &lt;/th&gt;
+   &lt;th style="text-align:center;"&gt; N &lt;/th&gt;
+   &lt;th style="text-align:center;"&gt; Missing &lt;/th&gt;
+   &lt;th style="text-align:center;"&gt; Missing (%) &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;width: 12em; "&gt; disap &lt;/td&gt;
+   &lt;td style="text-align:center;width: 12em; "&gt; 195 &lt;/td&gt;
+   &lt;td style="text-align:center;width: 12em; "&gt; 0 &lt;/td&gt;
+   &lt;td style="text-align:center;width: 12em; "&gt; 0% &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;width: 12em; "&gt; kill &lt;/td&gt;
+   &lt;td style="text-align:center;width: 12em; "&gt; 195 &lt;/td&gt;
+   &lt;td style="text-align:center;width: 12em; "&gt; 0 &lt;/td&gt;
+   &lt;td style="text-align:center;width: 12em; "&gt; 0% &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;width: 12em; "&gt; polpris &lt;/td&gt;
+   &lt;td style="text-align:center;width: 12em; "&gt; 195 &lt;/td&gt;
+   &lt;td style="text-align:center;width: 12em; "&gt; 0 &lt;/td&gt;
+   &lt;td style="text-align:center;width: 12em; "&gt; 0% &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;width: 12em; "&gt; tort &lt;/td&gt;
+   &lt;td style="text-align:center;width: 12em; "&gt; 195 &lt;/td&gt;
+   &lt;td style="text-align:center;width: 12em; "&gt; 0 &lt;/td&gt;
+   &lt;td style="text-align:center;width: 12em; "&gt; 0% &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;img src="05-2-CIRIGHTS_Data_files/figure-html/unnamed-chunk-7-1.png" width="80%" style="display: block; margin: auto;" /&gt;
 
 ???
 
+No significant missing data
 
 
 ---
@@ -379,9 +413,58 @@ How much do the measures overlap in 2020? Do we need all four sub-measures or is
 
 ---
 
-Results
+class: middle, slideblue
+
+.center[.size55[**Correlations Across the Measures**]]
+
+&lt;br&gt;
+
+&lt;table class="table" style="font-size: 40px; margin-left: auto; margin-right: auto;"&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:left;"&gt;   &lt;/th&gt;
+   &lt;th style="text-align:center;"&gt; disap &lt;/th&gt;
+   &lt;th style="text-align:center;"&gt; kill &lt;/th&gt;
+   &lt;th style="text-align:center;"&gt; polpris &lt;/th&gt;
+   &lt;th style="text-align:center;"&gt; tort &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;width: 5em; "&gt; disap &lt;/td&gt;
+   &lt;td style="text-align:center;width: 5em; "&gt; 1.00 &lt;/td&gt;
+   &lt;td style="text-align:center;width: 5em; "&gt; 0.57 &lt;/td&gt;
+   &lt;td style="text-align:center;width: 5em; "&gt; 0.58 &lt;/td&gt;
+   &lt;td style="text-align:center;width: 5em; "&gt; 0.46 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;width: 5em; "&gt; kill &lt;/td&gt;
+   &lt;td style="text-align:center;width: 5em; "&gt; 0.57 &lt;/td&gt;
+   &lt;td style="text-align:center;width: 5em; "&gt; 1.00 &lt;/td&gt;
+   &lt;td style="text-align:center;width: 5em; "&gt; 0.44 &lt;/td&gt;
+   &lt;td style="text-align:center;width: 5em; "&gt; 0.57 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;width: 5em; "&gt; polpris &lt;/td&gt;
+   &lt;td style="text-align:center;width: 5em; "&gt; 0.58 &lt;/td&gt;
+   &lt;td style="text-align:center;width: 5em; "&gt; 0.44 &lt;/td&gt;
+   &lt;td style="text-align:center;width: 5em; "&gt; 1.00 &lt;/td&gt;
+   &lt;td style="text-align:center;width: 5em; "&gt; 0.50 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;width: 5em; "&gt; tort &lt;/td&gt;
+   &lt;td style="text-align:center;width: 5em; "&gt; 0.46 &lt;/td&gt;
+   &lt;td style="text-align:center;width: 5em; "&gt; 0.57 &lt;/td&gt;
+   &lt;td style="text-align:center;width: 5em; "&gt; 0.50 &lt;/td&gt;
+   &lt;td style="text-align:center;width: 5em; "&gt; 1.00 &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
 
 ???
+
+Measure of linear association
+
 
 
 
@@ -393,7 +476,7 @@ background-position: center
 class: middle, center
 
 .size70[
-What are the most common violations across the four sub-measures?
+What are the most common scores across the four sub-measures?
 ]
 
 ???
@@ -402,207 +485,63 @@ What are the most common violations across the four sub-measures?
 
 ---
 
-Results
+class: full, slideblue
+
+&lt;img src="05-2-CIRIGHTS_Data_files/figure-html/unnamed-chunk-9-1.png" width="98%" style="display: block; margin: auto;" /&gt;
 
 ???
 
-
-
----
-
-class: bottom, center
-
-.size55[**1981**]
-
-&lt;table class="table table-striped table-hover" style="font-size: 35px; margin-left: auto; margin-right: auto;"&gt;
+&lt;table&gt;
  &lt;thead&gt;
   &lt;tr&gt;
-   &lt;th style="text-align:left;"&gt; Measure &lt;/th&gt;
-   &lt;th style="text-align:center;"&gt; N &lt;/th&gt;
-   &lt;th style="text-align:center;"&gt; Mean &lt;/th&gt;
-   &lt;th style="text-align:center;"&gt; StdDev &lt;/th&gt;
-   &lt;th style="text-align:center;"&gt; Min &lt;/th&gt;
-   &lt;th style="text-align:center;"&gt; Max &lt;/th&gt;
+   &lt;th style="text-align:center;"&gt; Measure &lt;/th&gt;
+   &lt;th style="text-align:center;"&gt; Score 0 &lt;/th&gt;
+   &lt;th style="text-align:center;"&gt; Score 1 &lt;/th&gt;
+   &lt;th style="text-align:center;"&gt; Score 2 &lt;/th&gt;
   &lt;/tr&gt;
  &lt;/thead&gt;
 &lt;tbody&gt;
   &lt;tr&gt;
-   &lt;td style="text-align:left;width: 15em; "&gt; polpris &lt;/td&gt;
-   &lt;td style="text-align:center;width: 15em; "&gt; 176 &lt;/td&gt;
-   &lt;td style="text-align:center;width: 15em; "&gt; 0.9 &lt;/td&gt;
-   &lt;td style="text-align:center;width: 15em; "&gt; 0.86 &lt;/td&gt;
-   &lt;td style="text-align:center;width: 15em; "&gt; 0 &lt;/td&gt;
-   &lt;td style="text-align:center;width: 15em; "&gt; 2 &lt;/td&gt;
+   &lt;td style="text-align:center;width: 3em; "&gt; disap &lt;/td&gt;
+   &lt;td style="text-align:center;width: 3em; "&gt; 27 &lt;/td&gt;
+   &lt;td style="text-align:center;width: 3em; "&gt; 23 &lt;/td&gt;
+   &lt;td style="text-align:center;width: 3em; "&gt; 145 &lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
-   &lt;td style="text-align:left;width: 15em; "&gt; tort &lt;/td&gt;
-   &lt;td style="text-align:center;width: 15em; "&gt; 176 &lt;/td&gt;
-   &lt;td style="text-align:center;width: 15em; "&gt; 1.2 &lt;/td&gt;
-   &lt;td style="text-align:center;width: 15em; "&gt; 0.81 &lt;/td&gt;
-   &lt;td style="text-align:center;width: 15em; "&gt; 0 &lt;/td&gt;
-   &lt;td style="text-align:center;width: 15em; "&gt; 2 &lt;/td&gt;
+   &lt;td style="text-align:center;width: 3em; "&gt; kill &lt;/td&gt;
+   &lt;td style="text-align:center;width: 3em; "&gt; 42 &lt;/td&gt;
+   &lt;td style="text-align:center;width: 3em; "&gt; 60 &lt;/td&gt;
+   &lt;td style="text-align:center;width: 3em; "&gt; 93 &lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
-   &lt;td style="text-align:left;width: 15em; "&gt; kill &lt;/td&gt;
-   &lt;td style="text-align:center;width: 15em; "&gt; 176 &lt;/td&gt;
-   &lt;td style="text-align:center;width: 15em; "&gt; 1.4 &lt;/td&gt;
-   &lt;td style="text-align:center;width: 15em; "&gt; 0.79 &lt;/td&gt;
-   &lt;td style="text-align:center;width: 15em; "&gt; 0 &lt;/td&gt;
-   &lt;td style="text-align:center;width: 15em; "&gt; 2 &lt;/td&gt;
+   &lt;td style="text-align:center;width: 3em; "&gt; polpris &lt;/td&gt;
+   &lt;td style="text-align:center;width: 3em; "&gt; 44 &lt;/td&gt;
+   &lt;td style="text-align:center;width: 3em; "&gt; 34 &lt;/td&gt;
+   &lt;td style="text-align:center;width: 3em; "&gt; 117 &lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
-   &lt;td style="text-align:left;width: 15em; "&gt; disap &lt;/td&gt;
-   &lt;td style="text-align:center;width: 15em; "&gt; 176 &lt;/td&gt;
-   &lt;td style="text-align:center;width: 15em; "&gt; 1.6 &lt;/td&gt;
-   &lt;td style="text-align:center;width: 15em; "&gt; 0.70 &lt;/td&gt;
-   &lt;td style="text-align:center;width: 15em; "&gt; 0 &lt;/td&gt;
-   &lt;td style="text-align:center;width: 15em; "&gt; 2 &lt;/td&gt;
+   &lt;td style="text-align:center;width: 3em; "&gt; tort &lt;/td&gt;
+   &lt;td style="text-align:center;width: 3em; "&gt; 81 &lt;/td&gt;
+   &lt;td style="text-align:center;width: 3em; "&gt; 76 &lt;/td&gt;
+   &lt;td style="text-align:center;width: 3em; "&gt; 38 &lt;/td&gt;
   &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
 
-&lt;br&gt;
-
-&lt;br&gt;
-
-&lt;br&gt;
-
-.size30[*Note: Higher numbers are better, e.g. evidence of less violence*]
-
-???
-
-### Takeaways from this?
 
 
 ---
 
-class: middle, slideblue
-
-&lt;img src="05-2-CIRIGHTS_Data_files/figure-html/unnamed-chunk-7-1.png" width="100%" style="display: block; margin: auto;" /&gt;
-
-???
-
-### Takeaways from this?
-
-&lt;br&gt;
-
-physint: Physical Integrity Rights Index. It ranges from 0 (no government respect for these four rights) to 8 (full government respect for these four rights)
-
-
-
-
----
-
+background-image: url('libs/Images/background-light_grey.jpg')
+background-size: 100%
+background-position: center
 class: middle, center
 
-.size30[**1981**]
-&lt;table class="table table-striped table-hover" style="font-size: 30px; margin-left: auto; margin-right: auto;"&gt;
- &lt;thead&gt;
-  &lt;tr&gt;
-   &lt;th style="text-align:left;"&gt; Measure &lt;/th&gt;
-   &lt;th style="text-align:center;"&gt; N &lt;/th&gt;
-   &lt;th style="text-align:center;"&gt; Mean &lt;/th&gt;
-   &lt;th style="text-align:center;"&gt; StdDev &lt;/th&gt;
-   &lt;th style="text-align:center;"&gt; Min &lt;/th&gt;
-   &lt;th style="text-align:center;"&gt; Max &lt;/th&gt;
-  &lt;/tr&gt;
- &lt;/thead&gt;
-&lt;tbody&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:left;width: 15em; "&gt; polpris &lt;/td&gt;
-   &lt;td style="text-align:center;width: 15em; "&gt; 176 &lt;/td&gt;
-   &lt;td style="text-align:center;width: 15em; "&gt; 0.9 &lt;/td&gt;
-   &lt;td style="text-align:center;width: 15em; "&gt; 0.86 &lt;/td&gt;
-   &lt;td style="text-align:center;width: 15em; "&gt; 0 &lt;/td&gt;
-   &lt;td style="text-align:center;width: 15em; "&gt; 2 &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:left;width: 15em; "&gt; tort &lt;/td&gt;
-   &lt;td style="text-align:center;width: 15em; "&gt; 176 &lt;/td&gt;
-   &lt;td style="text-align:center;width: 15em; "&gt; 1.2 &lt;/td&gt;
-   &lt;td style="text-align:center;width: 15em; "&gt; 0.81 &lt;/td&gt;
-   &lt;td style="text-align:center;width: 15em; "&gt; 0 &lt;/td&gt;
-   &lt;td style="text-align:center;width: 15em; "&gt; 2 &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:left;width: 15em; "&gt; kill &lt;/td&gt;
-   &lt;td style="text-align:center;width: 15em; "&gt; 176 &lt;/td&gt;
-   &lt;td style="text-align:center;width: 15em; "&gt; 1.4 &lt;/td&gt;
-   &lt;td style="text-align:center;width: 15em; "&gt; 0.79 &lt;/td&gt;
-   &lt;td style="text-align:center;width: 15em; "&gt; 0 &lt;/td&gt;
-   &lt;td style="text-align:center;width: 15em; "&gt; 2 &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:left;width: 15em; "&gt; disap &lt;/td&gt;
-   &lt;td style="text-align:center;width: 15em; "&gt; 176 &lt;/td&gt;
-   &lt;td style="text-align:center;width: 15em; "&gt; 1.6 &lt;/td&gt;
-   &lt;td style="text-align:center;width: 15em; "&gt; 0.70 &lt;/td&gt;
-   &lt;td style="text-align:center;width: 15em; "&gt; 0 &lt;/td&gt;
-   &lt;td style="text-align:center;width: 15em; "&gt; 2 &lt;/td&gt;
-  &lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-
-.size30[**2020**]
-&lt;table class="table table-striped table-hover" style="font-size: 30px; margin-left: auto; margin-right: auto;"&gt;
- &lt;thead&gt;
-  &lt;tr&gt;
-   &lt;th style="text-align:left;"&gt; Measure &lt;/th&gt;
-   &lt;th style="text-align:center;"&gt; N &lt;/th&gt;
-   &lt;th style="text-align:center;"&gt; Mean &lt;/th&gt;
-   &lt;th style="text-align:center;"&gt; StdDev &lt;/th&gt;
-   &lt;th style="text-align:center;"&gt; Min &lt;/th&gt;
-   &lt;th style="text-align:center;"&gt; Max &lt;/th&gt;
-  &lt;/tr&gt;
- &lt;/thead&gt;
-&lt;tbody&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:left;width: 15em; "&gt; tort &lt;/td&gt;
-   &lt;td style="text-align:center;width: 15em; "&gt; 195 &lt;/td&gt;
-   &lt;td style="text-align:center;width: 15em; "&gt; 0.8 &lt;/td&gt;
-   &lt;td style="text-align:center;width: 15em; "&gt; 0.75 &lt;/td&gt;
-   &lt;td style="text-align:center;width: 15em; "&gt; 0 &lt;/td&gt;
-   &lt;td style="text-align:center;width: 15em; "&gt; 2 &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:left;width: 15em; "&gt; disap &lt;/td&gt;
-   &lt;td style="text-align:center;width: 15em; "&gt; 195 &lt;/td&gt;
-   &lt;td style="text-align:center;width: 15em; "&gt; 1.6 &lt;/td&gt;
-   &lt;td style="text-align:center;width: 15em; "&gt; 0.72 &lt;/td&gt;
-   &lt;td style="text-align:center;width: 15em; "&gt; 0 &lt;/td&gt;
-   &lt;td style="text-align:center;width: 15em; "&gt; 2 &lt;/td&gt;
-  &lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;br&gt;
-
-&lt;br&gt;
-
-&lt;br&gt;
-
-.size30[*Note: Higher numbers are better, e.g. evidence of less violence*]
+.size70[
+Have the utilization rates for the types of violations varied across time?
+]
 
 ???
-
-
-
----
-
-class: slideblue
-
-&lt;img src="05-2-CIRIGHTS_Data_files/figure-html/unnamed-chunk-10-1.png" width="100%" style="display: block; margin: auto;" /&gt;
-
-???
-
-physint: Physical Integrity Rights Index. It ranges from 0 (no government respect for these four rights) to 8 (full government respect for these four rights)
-
-&lt;br&gt;
-
-### What do we see from this?
-
-+ More coverage of the world
-+ US dropping...
 
 
 
@@ -635,11 +574,54 @@ Any countries with a total index score that challenges your intuitions?
 
 ---
 
-Results
+class: full, middle, slideblue
+
+&lt;img src="05-2-CIRIGHTS_Data_files/figure-html/unnamed-chunk-12-1.png" width="100%" style="display: block; margin: auto;" /&gt;
 
 ???
 
+We'll talk about the US in a sec.
+
 ### How does this compare to the worst offenders per PTS?
+
+### Any surprises?
+
+&lt;br&gt;
+
+Interestingly, the CIRIGHTS group do not include color codings for the US in the report they released last year.
+
+- Let's examine the US scores together.
+
+### what do you think of these scores for us?
+
+
+```
+# A tibble: 1 × 7
+  country                   year physint_sum polpris disap  tort  kill
+  &lt;chr&gt;                    &lt;dbl&gt;       &lt;dbl&gt;   &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;
+1 United States of America  2020           3       1     2     0     0
+```
+
+&lt;br&gt;
+
+**SLIDE**: Let's look at the US over time
+
+
+
+---
+
+class: middle, slideblue
+
+.pull-left[
+.center[.size40[.content-box-white[**USA in CIRIGHTS**]]]
+
+&lt;img src="05-2-CIRIGHTS_Data_files/figure-html/unnamed-chunk-14-1.png" width="100%" style="display: block; margin: auto;" /&gt;
+]
+
+.pull-right[
+&lt;img src="05-2-CIRIGHTS_Data_files/figure-html/unnamed-chunk-15-1.png" width="80%" style="display: block; margin: auto;" /&gt;
+]
+
 
 
 
@@ -651,7 +633,7 @@ background-position: center
 class: middle
 
 .size55[
-Focus on the scores for total index score in the years since 2001 and find us examples of countries that have:
+Focus on the scores for total index score in the years since 2001 and find us other examples of countries that have:
 
   + Improved the most, and
   
@@ -664,47 +646,13 @@ Focus on the scores for total index score in the years since 2001 and find us ex
 
 ---
 
-Results
+class: full, middle, slideblue
+
+&lt;img src="05-2-CIRIGHTS_Data_files/figure-html/unnamed-chunk-16-1.png" width="100%" style="display: block; margin: auto;" /&gt;
 
 ???
 
 
-
----
-
-background-image: url('libs/Images/background-light_grey.jpg')
-background-size: 100%
-background-position: center
-class: middle
-
-.size45[
-Compare and contrast the 2020 CIRIGHTS codings with the 2020 PTS_S scores from the PTS project.
-
-+ Are they consistent? 
-
-+ Any big differences? 
-
-+ Can we find state examples where the scores differ significantly across the two projects?
-]
-
-???
-
-Groups, take a few minutes to work on this question and report back.
-
-*While they work, you do the same!*
-
-&lt;br&gt;
-
-### Ok, what did you find?
-
-
-
----
-
-class: middle, center
-
-<div class="datatables html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-28e4221282f381c58f57" style="width:100%;height:auto;"></div>
-<script type="application/json" data-for="htmlwidget-28e4221282f381c58f57">{"x":{"filter":"none","vertical":false,"data":[["Afghanistan","Albania","Algeria","Andorra","Angola","Antigua and Barbuda","Argentina","Armenia","Australia","Austria","Azerbaijan","Bahamas","Bahrain","Bangladesh","Barbados","Belarus","Belgium","Belize","Benin","Bhutan","Bolivia, Plurinational State of","Bosnia and Herzegovina","Botswana","Brazil","Brunei Darussalam","Bulgaria","Burkina Faso","Burundi","Cabo Verde","Cambodia","Cameroon","Canada","Central African Republic","Chad","Chile","China","Colombia","Comoros","Congo","Congo, the Democratic Republic of the","Costa Rica","Cote d'Ivoire","Croatia","Cuba","Cyprus","Czech Republic","Denmark","Djibouti","Dominica","Dominican Republic","Ecuador","Egypt","El Salvador","Equatorial Guinea","Eritrea","Estonia","Eswatini","Ethiopia","Fiji","Finland","France","Gabon","Gambia","Georgia","Germany","Ghana","Greece","Grenada","Guatemala","Guinea","Guinea-Bissau","Guyana","Haiti","Honduras","Hungary","Iceland","India","Indonesia","Iran, Islamic Republic of","Iraq","Ireland","Israel","Italy","Jamaica","Japan","Jordan","Kazakhstan","Kenya","Kiribati","Korea, Democratic People's Republic of","Korea, Republic of","Kosovo","Kuwait","Kyrgyzstan","Lao People's Democratic Republic","Latvia","Lebanon","Lesotho","Liberia","Libya","Liechtenstein","Lithuania","Luxembourg","Madagascar","Malawi","Malaysia","Maldives","Mali","Malta","Marshall Islands","Mauritania","Mauritius","Mexico","Micronesia, Federated States of","Moldova, Republic of","Monaco","Mongolia","Montenegro","Morocco","Mozambique","Myanmar","Namibia","Nauru","Nepal","Netherlands","New Zealand","Nicaragua","Niger","Nigeria","North Macedonia","Norway","Oman","Pakistan","Palau","Panama","Papua New Guinea","Paraguay","Peru","Philippines","Poland","Portugal","Qatar","Romania","Russian Federation","Rwanda","Saint Kitts and Nevis","Saint Lucia","Saint Vincent and the Grenadines","Samoa","San Marino","Sao Tome and Principe","Saudi Arabia","Senegal","Seychelles","Sierra Leone","Singapore","Slovakia","Slovenia","Solomon Islands","Somalia","South Africa","South Sudan","Spain","Sri Lanka","Sudan","Suriname","Sweden","Switzerland","Syrian Arab Republic","Taiwan, Province of China","Tajikistan","Tanzania, United Republic of","Thailand","Timor-Leste","Togo","Tonga","Trinidad and Tobago","Tunisia","Turkey","Turkmenistan","Tuvalu","Uganda","Ukraine","United Arab Emirates","United Kingdom","Uruguay","Uzbekistan","Vanuatu","Venezuela, Bolivarian Republic of","Viet Nam","Yemen","Zambia","Zimbabwe"],[5,2,2,1,3,1,2,3,2,1,4,2,3,4,1,4,2,2,2,1,3,1,1,4,1,2,4,5,1,3,4,2,3,3,3,5,3,2,3,5,1,3,1,3,2,1,1,4,1,3,2,4,3,3,5,1,2,4,2,1,2,2,1,2,1,3,2,1,3,4,2,2,3,3,2,1,4,3,5,4,1,3,2,3,1,2,3,4,1,5,2,2,2,3,2,1,3,3,3,5,1,1,1,4,2,3,2,4,1,1,2,2,4,1,3,1,2,2,2,4,5,2,1,3,1,1,4,4,4,2,1,1,4,1,1,3,2,3,4,2,2,1,2,4,3,1,2,1,1,1,1,4,3,1,3,1,2,1,1,5,3,5,2,3,4,2,1,1,5,1,3,4,3,2,3,1,2,3,5,3,1,4,4,3,1,1,3,1,5,3,5,3,3],[2,7,6,8,5,8,3,6,6,8,3,7,4,1,8,2,7,6,4,7,4,6,7,4,8,6,2,0,7,2,1,6,6,3,5,0,3,5,5,1,7,4,7,1,7,7,7,4,7,4,6,0,2,2,2,7,5,4,6,8,6,5,7,5,7,6,7,8,6,2,6,6,6,5,7,8,0,3,0,0,8,3,5,5,8,6,4,3,8,0,7,7,5,5,6,6,5,4,6,1,8,7,8,4,6,6,7,2,8,7,6,6,3,8,4,8,7,5,5,4,1,6,8,4,7,8,0,3,2,6,8,6,0,8,8,4,5,4,1,7,6,6,6,0,2,8,7,8,7,8,8,0,6,8,6,8,7,8,8,2,4,0,7,3,3,7,8,8,0,8,3,3,3,6,4,7,6,6,2,4,8,2,3,6,7,8,4,8,0,2,1,5,2],[0,2,1,2,1,2,2,2,2,2,0,2,0,1,2,0,2,2,1,1,0,2,2,2,2,2,2,0,2,0,0,2,2,0,2,0,0,1,1,1,2,1,2,0,2,2,2,1,1,2,2,0,2,0,0,2,1,1,2,2,2,1,2,0,2,2,2,2,2,0,2,2,2,2,2,2,0,0,0,0,2,1,2,2,2,1,1,2,2,0,2,2,0,1,1,2,2,2,2,1,2,2,2,1,2,2,2,1,2,2,2,2,2,2,1,2,2,1,0,2,0,2,2,2,2,2,0,1,1,2,2,1,0,2,2,2,2,2,0,2,2,2,2,0,0,2,2,2,2,2,2,0,2,2,2,2,2,2,2,1,2,0,2,0,0,2,2,2,0,2,0,0,1,2,1,2,2,2,0,0,2,0,1,1,2,2,1,2,0,0,0,2,0],[1,2,2,2,2,2,1,2,2,2,2,2,2,0,2,1,2,2,2,2,2,2,2,2,2,2,0,0,2,1,1,2,2,2,2,0,1,2,2,0,2,1,2,0,2,2,2,1,2,2,2,0,0,1,0,2,2,2,2,2,2,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,0,2,0,0,2,2,2,2,2,2,2,0,2,0,2,2,2,2,2,2,2,2,2,0,2,2,2,2,2,2,2,0,2,2,2,2,0,2,2,2,2,2,2,1,1,2,2,2,2,2,0,0,0,2,2,2,0,2,2,2,2,2,1,2,2,2,2,0,1,2,2,2,2,2,2,0,2,2,2,2,2,2,2,1,2,0,2,2,1,2,2,2,0,2,1,1,1,2,2,2,2,2,1,2,2,1,1,2,2,2,2,2,0,1,0,2,2],[0,1,1,2,1,2,0,1,1,2,0,1,0,0,2,0,1,1,0,2,0,0,1,0,2,0,0,0,1,0,0,1,1,1,0,0,1,1,1,0,1,1,1,0,1,1,1,1,2,0,1,0,0,0,0,1,1,1,1,2,0,1,1,1,1,1,1,2,1,0,0,1,1,0,1,2,0,0,0,0,2,0,0,1,2,1,0,1,2,0,1,1,1,0,1,0,0,0,1,0,2,1,2,1,0,1,1,0,2,1,1,1,0,2,0,2,1,0,1,1,0,1,2,0,1,2,0,1,0,0,2,1,0,2,2,0,0,0,0,1,1,0,1,0,0,2,1,2,1,2,2,0,1,2,2,2,1,2,2,0,0,0,1,0,1,1,2,2,0,2,1,1,0,0,0,1,1,0,0,0,2,0,0,1,1,2,0,2,0,0,0,0,0],[1,2,2,2,1,2,0,1,1,2,1,2,2,0,2,1,2,1,1,2,2,2,2,0,2,2,0,0,2,1,0,1,1,0,1,0,1,1,1,0,2,1,2,1,2,2,2,1,2,0,1,0,0,1,2,2,1,0,1,2,2,2,2,2,2,1,2,2,1,0,2,1,1,1,2,2,0,1,0,0,2,0,1,0,2,2,1,0,2,0,2,2,2,2,2,2,1,0,1,0,2,2,2,0,2,1,2,1,2,2,1,1,1,2,1,2,2,2,2,0,0,1,2,0,2,2,0,1,1,2,2,2,0,2,2,0,1,0,0,2,1,2,1,0,1,2,2,2,2,2,2,0,1,2,0,2,2,2,2,0,0,0,2,1,1,2,2,2,0,2,1,1,1,2,1,2,1,2,1,2,2,1,1,2,2,2,1,2,0,1,1,1,0]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Country<\/th>\n      <th>PTS_S<\/th>\n      <th>physint_sum<\/th>\n      <th>polpris<\/th>\n      <th>disap<\/th>\n      <th>tort<\/th>\n      <th>kill<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"className":"dt-right","targets":[1,2,3,4,5,6]}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
 
 
 ---
@@ -736,8 +684,34 @@ Measures:
 
 
 
+---
+
+background-image: url('libs/Images/background-light_grey.jpg')
+background-size: 100%
+background-position: center
+class: middle
+
+.size60[.center[**For Next Class**]]
+
+.size50[
+The V-Dem Varieties of Democracy "Personal Integrity Rights"
 
 
+]
+
+???
+
+For Friday we repeat today's work on the CIRIGHTS data project.
+
+Get ready to work!
+
+The V-Dem Varieties of Democracy "Personal Integrity Rights"
+- FILE 1: V-Dem/V-Dem-CY-Core_csv_v13/codebook_v13.pdf
+- FILE 2: V-Dem/V-Dem-CY-Core_csv_v13/V_Dem_Personal_Integrity_Rights-2022.xlsx
+Syllabus Tasks
+1. Review the V-Dem Varieties of Democracy Codebook *ONLY p30, 32-34, 40-42, 176-178*
+2. Audit the "Personal Integrity Rights" scores for your country cases from last week
+3. Spend some time exploring the dataset and find us something interesting to discuss
 
 
 

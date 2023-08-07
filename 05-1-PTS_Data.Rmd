@@ -68,20 +68,25 @@ background-size: 100%
 background-position: center
 class: middle
 
-.size50[**Political Violence Data**]
+.size45[**Paper 1**]
 
-.size35[(Due Sep 22)
+.size30[
+If someone came to you with the goal of better understanding the use of political violence by governments around the world, which of the data sources that we explored in class would you recommend and why?
 
-What is your recommendation for the *SINGLE* most useful approach to measuring political violence around the world?
+- The US State Department's "Country Reports on Human Rights Practices"
 
-- Country Reports on Human Rights Practices from the State Department
-- The Annual Country Reports from Amnesty International
+- **Amnesty International's "Annual Country Reports"**
+
 - The Political Terror Scale (PTS)
-- The CIRIGHTS data project
-- V-Dem Personal Integrity Rights
+
+- The CIRIGHTS data project's "Physical Integrity Rights"
+
+- Varieties of Democracy's (V-Dem) "Personal Integrity Rights"
 ]
 
 ???
+
+### Takeaways from last class?
 
 Last week and this one we are exploring and analyzing the data and research projects that exist to track political violence by states across time.
 
@@ -433,9 +438,68 @@ x1 |>
 ```
 
 ```{r, fig.retina=3, fig.align='center', out.width='80%', fig.height=4.5, fig.width=9.5, eval=TRUE, cache=TRUE}
+## Use rnaturalearth to define world map data
+worldmap <- ne_countries(scale = 'medium', type = 'countries', returnclass = 'sf')
+
+# d2021$COW_Code_A matches cowc 99.5%
+# worldmap$adm0_a3 matches iso3c 95.9%
+
+d2021$newcode1 <- countrycode::countrycode(d2021$COW_Code_A, origin = "cowc", destination = "iso3c")
+worldmap$newcode1 <- countrycode::countrycode(worldmap$adm0_a3, origin = "iso3c", destination = "iso3c")
+
+## Identify country identifiers
+## Problem because most of the numeric codes are omitting FRA, UK and Portugal
+# table(is.na(d2021$COW_Code_A)) # 11
+# table(is.na(d2021$COW_Code_N)) # 11
+# table(is.na(d2021$UN_Code_N)) # 16
+# table(is.na(d2021$WordBank_Code_A)) # 12
+# 
+# table(is.na(worldmap$iso_n3)) # 26
+# table(is.na(worldmap$un_a3)) # 36
+# table(is.na(worldmap$adm0_a3)) #
+# table(is.na(worldmap$gu_a3)) #
+# table(is.na(worldmap$su_a3)) #
+# table(is.na(worldmap$brk_a3)) #
+# table(is.na(worldmap$wb_a3)) # 60
+# 
+# # d2021$WordBank_Code_A has "FRA"
+# countrycode::guess_field(d2021$COW_Code_A) # 99.5% cowc
+# countrycode::guess_field(d2021$COW_Code_N) # 99.5 cown
+# countrycode::guess_field(d2021$UN_Code_N)
+# countrycode::guess_field(d2021$WordBank_Code_A) # genc3c and iso3c 96.5%
+
+#d2021_1$newcode2 <- countrycode::countrycode(d2020_1$COW_Code_A, origin = "cowc", destination = "genc3n")
+#d2021_1$newcode2 <- countrycode::countrycode(d2020_1$UN_Code_N, origin = "iso3n", destination = "genc3n")
+
+# missing data 
+#countrycode::guess_field(worldmap$iso_n3) #98.3% genc3n
+#countrycode::guess_field(worldmap$un_a3) #98.7% genc3n
+#countrycode::guess_field(worldmap$wb_a3) # wb 97, iso3c, 96.6
+
+# countrycode::guess_field(worldmap$adm0_a3) #95.8% iso3c
+# countrycode::guess_field(worldmap$gu_a3) # 87% iso3c
+# countrycode::guess_field(worldmap$su_a3) # 87% iso3c
+# countrycode::guess_field(worldmap$brk_a3) # 85.6% iso3c
+
+
+
+############################################################
+### tldr d2021$WordBank_Code_A has a few codes different from what countrycode expects
+# 1. DRC Congo, 2. South Sudan, 3. Western Sahara, 4. Romania
+
+# guess field is missing DRC congo
+# map is expecting an iso3c code of "COD" bot the current "ZAR"
+# View(d2021)
+# library(countrycode)
+# codelist_panel |> filter(year == 2021) |> View()
+# d2021$WordBank_Code_A[d2021$COW_Code_A == "DRC"] <- "COD"
+# d2021$WordBank_Code_A[d2021$COW_Code_A == "SSD"] <- "SSD"
+# #d2021$WordBank_Code_A[d2021$Country == "Western Sahara"] <- "?"
+# d2021$WordBank_Code_A[d2021$COW_Code_A == "ROM"] <- "ROU"
+
 ## Make a map
 d2021_1 <- d2021 |>
-  group_by(WordBank_Code_A) |>
+  group_by(newcode1, Country) |>
   summarize(
     miss_a = sum(is.na(PTS_A)),
     miss_h = sum(is.na(PTS_H)),
@@ -445,8 +509,8 @@ d2021_1 <- d2021 |>
     missing = miss_a + miss_h+miss_s,
     Sources = 3 - missing
   ) |> 
-  filter(!is.na(WordBank_Code_A)) |>
-  filter(WordBank_Code_A != "YUG") |>
+  filter(!is.na(newcode1)) |>
+  #filter(WordBank_Code_A != "YUG") |>
   mutate(
     Sources_cat = case_when(
       Sources == 3 ~ "3 Sources",
@@ -455,31 +519,30 @@ d2021_1 <- d2021 |>
       Sources == 0 ~ "No Data",
       is.na(Sources) ~ "No Data"
     )
-  )
+  ) |>
+  ungroup()
 
 #d2021_1 |> count(Sources_cat)
 
-# ## Identify country identifiers
-## Problem because most of the numeric codes are omitting FRA, UK and Portugal
-## d2020_1$WordBank_Code_A has "FRA"
-# countrycode::guess_field(d2020_1$COW_Code_A)
-# countrycode::guess_field(d2020_1$COW_Code_N)
-# countrycode::guess_field(d2020_1$UN_Code_N)
-# countrycode::guess_field(d2020_1$WordBank_Code_A) # genc3c and iso3c 96.5%
-
-#d2020_1$newcode2 <- countrycode::countrycode(d2020_1$COW_Code_A, origin = "cowc", destination = "genc3n")
-#d2020_1$newcode2 <- countrycode::countrycode(d2020_1$UN_Code_N, origin = "iso3n", destination = "genc3n")
-
-## Use rnaturalearth to define world map data
-worldmap <- ne_countries(scale = 'medium', type = 'map_units', returnclass = 'sf')
-
-# countrycode::guess_field(worldmap$un_a3) #98.7% genc3n
-# countrycode::guess_field(worldmap$adm0_a3) #98.7% iso3c
-# countrycode::guess_field(worldmap$iso_n3) #98.3% genc3n
-
 ## Merge data onto worldmap
-d10 <- left_join(worldmap, d2021_1, by = c("adm0_a3" = "WordBank_Code_A"))
+d10 <- left_join(worldmap, d2021_1, by = "newcode1")
 
+# Audit for missing data
+# names(d10)
+# tibble(d10) |> 
+#   select(name, Sources_cat) |> 
+#   filter(is.na(Sources_cat)) |> 
+#   print(n=100)
+# 
+# d2021 |> select(Country, PTS_A:PTS_S) |> View()
+
+d10$Sources_cat[d10$name == "S. Sudan"] <- "3 Sources"
+d10$Sources_cat[d10$name == "W. Sahara"] <- "2 Sources"
+d10$Sources_cat[d10$name == "Kosovo"] <- "3 Sources"
+d10$Sources_cat[d10$name == "Serbia"] <- "3 Sources"
+#d10$Sources_cat[d10$name == "Somaliland"] <- "NA"
+
+# Output map
 d10 |>
   ggplot() +
   geom_sf(aes(fill = Sources_cat)) +
@@ -625,36 +688,30 @@ class: middle
 ```{r, fig.retina=3, fig.align='center', out.width='100%', fig.height=4.5, fig.width=9.5, eval=TRUE, cache=TRUE}
 ## Make a map
 ## Three colors: missing, match, no match
-
-## Add genc3n to PTS data
 d2021_1 <- d2021 |>
-  mutate(
+  filter(!is.na(newcode1)) |>
+  group_by(newcode1, Country) |>
+  summarize(
     Matching = if_else(PTS_A == PTS_S, 1, 0)
-  )
+  ) |>
+  ungroup()
 
-# ## Identify country identifiers
-## Problem because most of the numeric codes are omitting FRA, UK and Portugal
-## d2020_1$WordBank_Code_A has "FRA"
-# countrycode::guess_field(d2020_1$COW_Code_A)
-# countrycode::guess_field(d2020_1$COW_Code_N)
-# countrycode::guess_field(d2020_1$UN_Code_N)
-# countrycode::guess_field(d2020_1$WordBank_Code_A) # genc3c and iso3c 96.5%
+d10 <- left_join(worldmap, d2021_1, by = "newcode1")
 
-#d2020_1$newcode2 <- countrycode::countrycode(d2020_1$COW_Code_A, origin = "cowc", destination = "genc3n")
-#d2020_1$newcode2 <- countrycode::countrycode(d2020_1$UN_Code_N, origin = "iso3n", destination = "genc3n")
+# # Audit for missing data
+# names(d10)
+# tibble(d10) |>
+#   select(name, Matching) |>
+#   filter(is.na(Matching)) |>
+#   print(n=100)
+# 
+# d2021 |> select(Country, PTS_A, PTS_S) |> View()
 
-## Use rnaturalearth to define world map data
-worldmap <- ne_countries(scale = 'medium', type = 'map_units',
-                         returnclass = 'sf')
-
-# countrycode::guess_field(worldmap$un_a3) #98.7% genc3n
-# countrycode::guess_field(worldmap$adm0_a3) #98.7% iso3c
-# countrycode::guess_field(worldmap$iso_n3) #98.3% genc3n
-
-## Merge data onto worldmap
-d10 <- left_join(worldmap, d2021_1, by = c("adm0_a3" = "WordBank_Code_A"))
-
-#d10 |> as_tibble() |> select(Country, PTS_S)
+d10$Matching[d10$name == "S. Sudan"] <- "1"
+#d10$Matching[d10$name == "W. Sahara"] <- ""
+d10$Matching[d10$name == "Kosovo"] <- "0"
+d10$Matching[d10$name == "Serbia"] <- "1"
+#d10$Matching[d10$name == "Somaliland"] <- ""
 
 d10 |>
   mutate(
@@ -717,13 +774,24 @@ class: middle
 
 ```{r, fig.retina=3, fig.align='center', out.width='100%', fig.height=4.5, fig.width=9.5, eval=TRUE, cache=TRUE}
 ## Make a map
-#d2020$newcode2 <- countrycode::countrycode(d2020$COW_Code_A, origin = "cowc", destination = "genc3n")
+d2021_1 <- d2021 |>
+  filter(!is.na(newcode1))
 
-## Use rnaturalearth to define world map data
-#worldmap <- ne_countries(scale = 'medium', type = 'map_units', returnclass = 'sf')
+d10 <- left_join(worldmap, d2021_1, by = "newcode1")
 
-## Merge data onto worldmap
-d10 <- left_join(worldmap, d2021, by = c("adm0_a3" = "WordBank_Code_A"))
+# # Audit for missing data
+# tibble(d10) |>
+#   select(name, PTS_S) |>
+#   filter(is.na(PTS_S)) |>
+#   print(n=100)
+# 
+# d2021 |> select(Country, PTS_S) |> View()
+
+d10$PTS_S[d10$name == "S. Sudan"] <- "5"
+#d10$PTS_S[d10$name == "W. Sahara"] <- ""
+d10$PTS_S[d10$name == "Kosovo"] <- "2"
+d10$PTS_S[d10$name == "Serbia"] <- "2"
+#d10$PTS_S[d10$name == "Somaliland"] <- ""
 
 d10 |>
   mutate(
@@ -799,6 +867,22 @@ d11 <- d |>
 ## Merge data onto worldmap
 d10 <- left_join(worldmap, d11, by = c("adm0_a3" = "WordBank_Code_A"))
 
+## Audit the missing data
+# View(d11)
+# tibble(d10) |>
+#   select(name, Change) |>
+#   filter(is.na(Change)) |>
+#   print(n=100)
+
+d10$Change[d10$name == "Dem. Rep. Congo"] <- "0"
+d10$Change[d10$name == "Romania"] <- "0"
+
+# d10$Change[d10$name == "W. Sahara"] <- ""
+# d10$Change[d10$name == "Kosovo"] <- ""
+# d10$Change[d10$name == "Serbia"] <- ""
+# d10$Change[d10$name == "Somaliland"] <- ""
+
+
 d10 |>
   mutate(
     Changes_cat = factor(Change, levels = c("-2", "-1", "0", "1", "2"))
@@ -838,7 +922,7 @@ Make sure you understand the observations and variables enough to play with them
 
 ???
 
-For Friday we repeat today's work on the CIRIGHTS data project.
+For next class we repeat today's work on the PTS data project.
 
 Get ready to work!
 

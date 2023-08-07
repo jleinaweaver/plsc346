@@ -1,0 +1,290 @@
+---
+output:
+  xaringan::moon_reader:
+    css: ["default", "extra.css"]
+    lib_dir: libs
+    seal: false
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: '16:9'
+---
+
+```{r, echo = FALSE, warning = FALSE, message = FALSE}
+library(tidyverse)
+library(readxl)
+library(stargazer)
+library(kableExtra)
+##library(modelr)
+
+knitr::opts_chunk$set(echo = FALSE,
+                      eval = TRUE,
+                      error = FALSE,
+                      message = FALSE,
+                      warning = FALSE,
+                      comment = NA)
+
+# Combined data
+d <- read_excel("../../Data/Combined_PTS_CIRIGHTS_VDem-2011-2020.xlsx", na = "NA")
+```
+
+background-image: url('libs/Images/00-Leviathan_Cover_55.png')
+background-size: 100%
+background-position: center
+class: middle
+
+.size70[**Today's Agenda**]
+
+<br>
+
+.size60[
+Let's Apply All this Data!
+
+- Laying the Foundations for Paper 2
+]
+
+<br>
+
+.center[.size40[
+  Justin Leinaweaver (Fall 2023)
+]]
+
+???
+
+### Prep for Class
+1. ?
+
+
+
+---
+
+background-image: url('libs/Images/background-green_blue_swirl_side.jpg')
+background-size: 100%
+background-position: center
+class: middle
+
+.size40[.content-box-white[**Paper 1**]]
+
+.size35[
+If someone came to you with the goal of better understanding the use of political violence by governments around the world, which of the data sources that we explored in class would you recommend and why? 
+
+Your report should introduce each source to the reader with your analysis of its strengths and weaknesses. 
+
+Ultimately, your central argument should be a clear recommendation of which source(s) they should focus on.
+]
+
+???
+
+Last week and this one we are exploring and analyzing the data and research projects that exist to track political violence by states across time.
+
+
+
+
+---
+
+background-image: url('libs/Images/background-green_blue_swirl_side.jpg')
+background-size: 100%
+background-position: center
+class: middle
+
+.size40[.content-box-white[**Paper 2**]]
+
+.size35[
+Write a report on the two countries you have been studying that analyzes their recent experience of political violence
+
+- **Section 1**: **Summarize AND analyze** the last eight years of political violence in your chosen countries (2015-2022) using **ALL FIVE of the data sources** reviewed in your first paper
+]
+
+--
+
+.size35[
+- **Section 2**: Make an argument about what the **2022 PTS and CIRIGHTS codings** should be for your chosen countries based on the Country Reports on Human Rights Practices from the State Department and the AI country reports.
+]
+
+???
+
+### Questions on the assignment?
+
+<br>
+
+Remember:
+
+- All the sources means State Dept, AI, PTS, CIRIGHTS and V-Dem!
+
+- You must provide context for your claims. Use those primary source documents!
+
+
+F - Set up paper 2 and start exploring across the data (See class slides in OLD week 4-1, 4-2 and 4-3)
+1. Prompt for paper 2
+- Select countries
+2. Build the combined spreadsheet
+- FILE: Combined_PTS_CIRIGHTS_VDem-2011-2020.xlsx
+3. Review basics in Excel or R (descriptive stats, line plot, scatter plot, bar plot)
+4. GOAL for wk 9: Identify 5 conclusions about your country's experience of political violence. Be ready to present your key conclusions to small groups for feedback
+
+
+
+
+---
+
+background-image: url('libs/Images/background-slate.jpg')
+background-size: 100%
+background-position: center
+class: middle
+
+# Simple Ways to Visualize Data
+
+.size50[
+1. Tables
+
+2. Line Plots
+
+3. Bar Plots
+]
+
+???
+
+I suspect these three basic approaches will represent more than enough tools for the current assignment.
+
+
+
+
+---
+
+background-image: url('libs/Images/background-slate.jpg')
+background-size: 100%
+background-position: center
+class: middle
+
+.size50[.content-box-white[**1. Tables**]]
+
+<br>
+
+.size25[
+```{r}
+# Output data
+d |>
+  select(Country, Year, "Physical Integrity Index" = physint_sum) |>
+  filter(Country == "Afghanistan", Year < 2016) |>
+  kbl(align = 'c') |>
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed"), font_size = '40') |>
+  column_spec(column = 1:3, width = '7em')
+```
+]
+
+???
+
+Tables can be a very useful way of conveying specific data to a reader.
+
+- They ain't fancy but they're easy to include and they get the basic job done!
+
+- Make it in Excel, Word or R
+
+<br>
+
+### Any easy conclusions from this table?
+
+<br>
+
+### Questions on this?
+
+
+---
+
+background-image: url('libs/Images/background-slate.jpg')
+background-size: 100%
+background-position: center
+class: middle
+
+.size50[.content-box-white[**2. Line Plots**]]
+
+```{r, fig.retina=3, fig.asp=0.618, fig.align='center', out.width = '80%', fig.width=7}
+## line plot physint across time
+d |>
+  filter(Country == "Afghanistan", Year < 2016) |>
+  ggplot(aes(x = Year, y = physint_sum)) +
+  geom_line(color = "blue", size = 1.3) +
+  ggthemes::theme_clean() +
+  labs(x = "", y = "Physical Integrity Rights Index",
+       title = "Physical Integrity Rights in Afghanistan (2011-2015)") +
+  scale_y_continuous(limits = c(0,8)) +
+  scale_x_continuous(breaks = seq(2011, 2015, 1))
+```
+
+???
+
+Useful for showing trends in numeric variables across time!
+
+- Much better than the table!
+
+- In Excel highlight the column and insert a line-plot chart
+
+<br>
+
+### Any obvious conclusions from this viz?
+
+<br>
+
+### Questions on this?
+
+
+---
+
+background-image: url('libs/Images/background-slate.jpg')
+background-size: 100%
+background-position: center
+class: middle
+
+.size50[.content-box-white[**3. Bar Plots**]]
+
+```{r, fig.retina=3, fig.asp=0.618, fig.align='center', out.width = '80%', fig.width=7}
+## bar plot PTS_S
+d |>
+  filter(Country == "Afghanistan", Year < 2016) |>
+  mutate(
+    PTS_S_char = as.character(PTS_S),
+    PTS_S2 = factor(PTS_S_char, levels = c("1", "2", "3", "4", "5"))
+  ) |> 
+  ggplot(aes(x = PTS_S2)) +
+  geom_bar(fill = "gold2", width = .7) +
+  ggthemes::theme_clean() +
+  labs(x = "", y = "Physical Integrity Rights Index",
+       title = "Physical Integrity Rights in Afghanistan (2011-2015)") +
+  scale_x_discrete(limits = c("1", "2", "3", "4", "5")) +
+  scale_y_continuous(breaks = seq(0, 5, 1))
+```
+
+???
+
+Summarize categories across all ten years
+
+- Use a bar plot to count the levels for your country and represent the counts with bars.
+
+<br>
+
+### Any obvious conclusions from this viz?
+
+
+
+---
+
+background-image: url('libs/Images/background-blue_triangles.jpg')
+background-size: 100%
+background-position: center
+
+class: middle
+
+.size55[.content-box-white[**For Paper 2**]]
+.size50[
+- Week 9 (Oct 16th): Have your data visualizations completed and ready to present!
+]
+
+<br>
+
+.size55[.content-box-white[**For Next Class**]]
+.size50[
+- Davenport and Armstrong (2004)
+]
+
+???

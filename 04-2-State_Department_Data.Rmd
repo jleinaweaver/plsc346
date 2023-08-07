@@ -40,7 +40,7 @@ class: middle
 <br>
 
 .size45[
-Operationalizing "Political Violence"
+Measuring "Political Violence"
 
 - US State Department Country Reports on Human Rights Practices
 ]
@@ -67,17 +67,20 @@ background-size: 100%
 background-position: center
 class: middle
 
-.size50[**Political Violence Data Report**]
+.size45[**Paper 1**]
 
-.size35[(Due Sep 22)
+.size30[
+If someone came to you with the goal of better understanding the use of political violence by governments around the world, which of the data sources that we explored in class would you recommend and why?
 
-If someone came to you with the goal of measuring political violence around the world, which of the following sources would you recommend focusing on? Why?
+- **The US State Department's "Country Reports on Human Rights Practices"**
 
-- Country Reports on Human Rights Practices from the State Department
-- The Annual Country Reports from Amnesty International
+- Amnesty International's "Annual Country Reports"
+
 - The Political Terror Scale (PTS)
-- The CIRIGHTS data project
-- V-Dem Personal Integrity Rights
+
+- The CIRIGHTS data project's "Physical Integrity Rights"
+
+- Varieties of Democracy's (V-Dem) "Personal Integrity Rights"
 ]
 
 ???
@@ -152,16 +155,18 @@ class: middle
 .size60[**For Today**]
 
 .size45[
+1. Readings in syllabus: Weber (2023); Nagel & Nordas (2021)
 
-1. Read the coverage of three different countries in the 2022 Country Reports on Human Rights Practices (State Department) and Amnesty International's Annual Reports.
-
-2. Weber 2023
-
-3. Nagel, R. & Nordas, R. (2021, May 7). Report Back Better. *Foreign Policy*.
-
+2. Select two countries (non-US) and read the Country Reports on Human Rights Practices (State Department) for both 2020 and 2021 (2 countries x 2 years = 4 reports). 
 ]
 
 ???
+
+No overlap in country selections!
+
+Submit to Canvas a brief summary of the state of human rights across those two years in each of your chosen countries (2-3 sentences each).
+
+NOTE for the class: Why 2020 and 2021 (not 2022)? Paper 1 is about evaluating the data sources of political violence while we learn about the concept. Those two years match up with the data projects we will explore next week.
 
 ### Everybody ready to go with these?
 
@@ -371,20 +376,24 @@ Bottom line q's
 background-image: url('libs/Images/background-blue_triangles.jpg')
 background-size: 100%
 background-position: center
+
 class: middle
 
-.size60[.center[**For Wednesday**]]
+.size60[**For Next Class**]
 
 .size40[
-**Explore the data and codebook for the [Political Terror Scale (PTS)](http://www.politicalterrorscale.org/Data/Download.html). Make sure you understand the observations and variables enough to play with them in class.**
+1. Readings in syllabus: AI FAQ; Clark and Sikkink (2013)
 
-*Recommended Links (in syllabus):*
-
-1. [Sorting Rows in Excel](https://www.excel-easy.com/data-analysis/sort.html)
-2. [Filtering Rows in Excel](https://www.excel-easy.com/data-analysis/filter.html)
-3. [Pivot Tables in Excel](https://www.excel-easy.com/data-analysis/pivot-tables.html)
+2. Read the Amnesty International Reports for the same two countries you analyzed today (2020 and 2021 reports)
 ]
 
+???
+
+Amnesty International Reports (ASSIGNMENT same two countries for both years, Amnesty FAQ on the reports, Clark and Sikkink 2013 ONLY p545-548)
+
+ASSIGNMENT: Review the AI country reports for the same countries you evaluated last class (2020 and 2021).
+
+Submit to Canvas a brief comparison of the details provided by AI with those provided by the State Department across those two years in each of your chosen countries (2-3 sentences each). How are the similar? How are they different?
 
 
 

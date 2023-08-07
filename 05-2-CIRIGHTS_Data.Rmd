@@ -16,7 +16,10 @@ library(tidyverse)
 library(readxl)
 library(stargazer)
 library(kableExtra)
-##library(modelr)
+library(sf)
+library(rnaturalearth)
+library(rnaturalearthdata)
+library(countrycode)
 
 knitr::opts_chunk$set(echo = FALSE,
                       eval = TRUE,
@@ -60,17 +63,20 @@ background-size: 100%
 background-position: center
 class: middle
 
-.size50[**Political Violence Data**]
+.size45[**Paper 1**]
 
-.size35[(Due Sep 22)
+.size30[
+If someone came to you with the goal of better understanding the use of political violence by governments around the world, which of the data sources that we explored in class would you recommend and why?
 
-What is your recommendation for the *SINGLE* most useful approach to measuring political violence around the world?
+- The US State Department's "Country Reports on Human Rights Practices"
 
-- Country Reports on Human Rights Practices from the State Department
-- The Annual Country Reports from Amnesty International
+- **Amnesty International's "Annual Country Reports"**
+
 - The Political Terror Scale (PTS)
-- The CIRIGHTS data project
-- V-Dem Personal Integrity Rights
+
+- The CIRIGHTS data project's "Physical Integrity Rights"
+
+- Varieties of Democracy's (V-Dem) "Personal Integrity Rights"
 ]
 
 ???
@@ -366,10 +372,99 @@ Then scroll through and talk to me about the kinds of countries with missing dat
 
 ---
 
-Results
+class: slideblue, middle
+
+```{r}
+d <- read_excel("../../Data/CIRIGHTS/cirights-v1.25.22.11/CIRIGHTS V1.25.22.11/cirights_v1.22.11.25.xlsx")
+
+d2020 <- d |>
+  filter(year == 2020)
+
+#View(d2020 |> select(country, disap, kill, polpris, tort))
+
+# Descriptive Stats Table
+x1 <- d2020 |> 
+  pivot_longer(cols = polpris:kill, names_to = "Source", values_to = "Value") |>
+  group_by(Source) |>
+  summarize(
+    N = n(),
+    NAs = sum(is.na(Value)),
+    Prop = str_c(round(NAs/N, 2)*100, '%'),
+    #Mean = round(mean(Value, na.rm = TRUE), 1),
+    #StdDev = round(sd(Value, na.rm = TRUE), 1),
+    #Min = round(min(Value, na.rm = TRUE), 0),
+    #Max = round(max(Value, na.rm = TRUE), 0)
+  ) 
+
+x1 |>
+  kableExtra::kbl(align = c('l', rep('c', 3)), col.names = c("Source", "N", "Missing", "Missing (%)")) |>
+  kableExtra::kable_styling(bootstrap_options = c("striped", "hover"), font_size = 22) |>
+  column_spec(column = 1:4, width = "12em")
+```
+
+```{r, fig.retina=3, fig.align='center', out.width='80%', fig.height=4.5, fig.width=9.5, eval=TRUE, cache=FALSE}
+## Make a map
+## Use rnaturalearth to define world map data
+worldmap <- ne_countries(scale = 'medium', type = 'countries', returnclass = 'sf')
+
+# # Identify merging country label
+# guess_field(d2020$country)
+# guess_field(d2020$iso_a3) # 100% genc3c, iso3c, wb
+# guess_field(d2020$ciri)
+# guess_field(d2020$cow) # 99.5% cown
+# guess_field(d2020$polity)
+# guess_field(d2020$unctry) # 98% iso3n
+# guess_field(d2020$unreg)
+# guess_field(worldmap$adm0_a3) #95.8% iso3c
+# 
+# # Add newcodes
+# d2020$newcode1 <- countrycode(d2020$iso_a3, origin = "iso3c", destination = "iso3c")
+# 
+# worldmap$newcode1 <- countrycode(worldmap$adm0_a3, origin = "iso3c", destination = "iso3c")
+#d10 <- left_join(worldmap, d2020, by = "newcode1")
+
+# Merge
+d2020_1 <- d2020 |>
+  select(country, iso_a3, physint_sum, polpris:kill) |>
+  mutate(
+    Missing = 0
+  )
+
+d10 <- left_join(worldmap, d2020_1, by = c("adm0_a3" = "iso_a3"))
+
+# Audit missing data
+# d2020_1 |>
+#   select(country, physint_sum, polpris:kill, Missing) |>
+#   View()
+# 
+# tibble(d10) |>
+#   select(name, physint_sum, polpris:kill, Missing) |>
+#   filter(is.na(Missing)) |>
+#   print(n = 100)
+# 
+# tibble(d10)
+# tibble(d10) |> count(Missing)
+
+
+d10$Missing[d10$name == "Kosovo"] <- 0
+d10$Missing[d10$name == "S. Sudan"] <- 0
+d10$Missing[d10$name == "Serbia"] <- 0
+
+
+d10 |>
+  mutate(
+    Missing = if_else(is.na(Missing), "Missing Data", "Data Collected")
+  ) |>
+  ggplot() +
+  geom_sf(aes(fill = factor(Missing))) +
+  labs(fill = "", title = "CIRIGHTS Missing Data (2020)") +
+  theme(legend.position = "bottom") +
+  scale_fill_brewer(type = "div", palette = 2, direction = -1)
+```
 
 ???
 
+No significant missing data
 
 
 ---
@@ -389,9 +484,25 @@ How much do the measures overlap in 2020? Do we need all four sub-measures or is
 
 ---
 
-Results
+class: middle, slideblue
+
+.center[.size55[**Correlations Across the Measures**]]
+
+<br>
+
+```{r, fig.align='center'}
+d2020 |>
+  select(disap, kill, polpris, tort) |>
+  cor() |>
+  kbl(digits = 2, align = c(rep('c', 5))) |>
+  column_spec(column = 1:5, width = "5em") |>
+  kable_styling(font_size = 40)
+```
 
 ???
+
+Measure of linear association
+
 
 
 
@@ -403,7 +514,7 @@ background-position: center
 class: middle, center
 
 .size70[
-What are the most common violations across the four sub-measures?
+What are the most common scores across the four sub-measures?
 ]
 
 ???
@@ -412,189 +523,60 @@ What are the most common violations across the four sub-measures?
 
 ---
 
-Results
+class: full, slideblue
 
-???
-
-
-
----
-
-class: bottom, center
-
-.size55[**1981**]
-
-```{r}
-d <- read_excel("../../Data/CIRIGHTS/cirights-v1.25.22.11/CIRIGHTS V1.25.22.11/cirights_v1.22.11.25.xlsx")
-
-d1981 <- d |>
-  filter(year == 1981)
-
-# d1981 |>
-#   select(countryname, year, disap:tort)
-
-x1 <- d1981 |>
-  pivot_longer(cols = c(polpris, disap, tort, kill), names_to = "Measure", values_to = "Values") |>
-  group_by(Measure) |>
-  summarize(
-    N = n(),
-    Mean = round(mean(Values, na.rm = T), 1),
-    StdDev = round(sd(Values, na.rm = T), 2),
-    Min = min(Values, na.rm = T),
-    Max = max(Values, na.rm = T)
-  ) |>
-  arrange(Mean)
-
-x1 |>
-  kableExtra::kbl(align = c('l', rep('c', 5))) |>
-  kableExtra::kable_styling(bootstrap_options = c("striped", "hover"), font_size = 35) |>
-  kableExtra::column_spec(column = 1:6, width = "15em")
-```
-
-<br>
-
-<br>
-
-<br>
-
-.size30[*Note: Higher numbers are better, e.g. evidence of less violence*]
-
-???
-
-### Takeaways from this?
-
-
----
-
-class: middle, slideblue
-
-```{r, fig.retina=3, fig.align='center', out.width='100%', fig.height=3.5, fig.width=6.5, eval=TRUE, cache=TRUE}
-## Make a map of physint
-library(sf)
-library(rnaturalearth)
-library(rnaturalearthdata)
-
-## Use rnaturalearth to define world map data
-worldmap <- ne_countries(scale = 'medium', type = 'map_units', returnclass = 'sf')
-
-# countrycode::guess_field(worldmap$un_a3) #98.7% genc3n
-# countrycode::guess_field(worldmap$adm0_a3) #98.7% iso3c
-# countrycode::guess_field(worldmap$iso_n3) #98.3% genc3n, iso3n
-
-# countrycode::guess_field(d1981$ccode)   # iso3n
-# countrycode::guess_field(d1981$cow)   # cown
-# countrycode::guess_field(d1981$unctry)
-# countrycode::guess_field(d1981$unreg)
-
-## Add codes
-d1981$newcode <- countrycode::countrycode(sourcevar = d1981$cow, origin = "cown", destination = "iso3c")
-
-## Merge data onto worldmap
-d10 <- left_join(worldmap, d1981, by = c("adm0_a3" = "newcode"))
-
-d10 |>
-  mutate(
-    physint_cat = factor(physint_sum, levels = c("0", "1", "2", "3", "4", "5", "6", "7", "8"))
-  ) |>
-  ggplot() +
-  geom_sf(aes(fill = physint_cat)) +
-  labs(fill = "", title = "Physical Integrity Rights Index (1981)") +
-  scale_fill_brewer(type = "seq", palette = 8, direction = -1, na.value = "grey")
-```
-
-???
-
-### Takeaways from this?
-
-<br>
-
-physint: Physical Integrity Rights Index. It ranges from 0 (no government respect for these four rights) to 8 (full government respect for these four rights)
-
-
-
-
----
-
-class: middle, center
-
-.size30[**1981**]
-```{r}
-x1 |>
-  kableExtra::kbl(align = c('l', rep('c', 5))) |>
-  kableExtra::kable_styling(bootstrap_options = c("striped", "hover"), font_size = 30) |>
-  kableExtra::column_spec(column = 1:6, width = "15em")
-```
-
-.size30[**2020**]
-```{r}
-d2020 <- d |>
-  filter(year == 2020)
-
-x2 <- d2020 |>
+```{r, fig.align='center', fig.retina=3, fig.asp=0.618, out.width='98%', fig.width=8, cache=TRUE}
+d2020 |>
+  select(disap, kill, polpris, tort) |>
   pivot_longer(cols = disap:tort, names_to = "Measure", values_to = "Values") |>
   group_by(Measure) |>
-  summarize(
-    N = n(),
-    Mean = round(mean(Values, na.rm = T), 1),
-    StdDev = round(sd(Values, na.rm = T), 2),
-    Min = min(Values, na.rm = T),
-    Max = max(Values, na.rm = T)
+  count(Values) |>
+  mutate(
+    Values = case_when(
+      Values == 0 ~ "Score 0",
+      Values == 1 ~ "Score 1",
+      Values == 2 ~ "Score 2"
+    )
   ) |>
-  arrange(Mean)
-
-x2 |>
-  kableExtra::kbl(align = c('l', rep('c', 5))) |>
-  kableExtra::kable_styling(bootstrap_options = c("striped", "hover"), font_size = 30) |>
-  kableExtra::column_spec(column = 1:6, width = "15em")
+  ggplot(aes(x = Measure, y = n, fill = Values)) +
+  geom_col(position = "dodge", color = "grey", width = .6) +
+  #geom_hline(yintercept = c(25, 50, 75, 100), color = "white") +
+  theme_bw() +
+  #scale_fill_manual(values = c("red", "orange", "green3"))
+  scale_fill_brewer(type = "div", palette = 5) +
+  labs(x = "", y = "Count", fill = "",
+       title = "Physical Integrity Rights",
+       caption = "Source: CIRIGHTS 2020") +
+  scale_x_discrete(labels = c("Disappearances", "Killings", "Political Prisoners", "Torture"))
 ```
 
-<br>
-
-<br>
-
-<br>
-
-.size30[*Note: Higher numbers are better, e.g. evidence of less violence*]
-
 ???
+
+```{r}
+d2020 |>
+  select(disap, kill, polpris, tort) |>
+  pivot_longer(cols = disap:tort, names_to = "Measure", values_to = "Values") |>
+  group_by(Measure) |>
+  count(Values) |>
+  pivot_wider(names_from = Values, values_from = n, names_prefix = "Score ") |>
+  kbl(align = 'c') |>
+  column_spec(column = 1:4, width = "3em")
+```
 
 
 
 ---
 
-class: slideblue
+background-image: url('libs/Images/background-light_grey.jpg')
+background-size: 100%
+background-position: center
+class: middle, center
 
-```{r, fig.retina=3, fig.align='center', out.width='100%', fig.height=3.5, fig.width=6.5, eval=TRUE, cache=TRUE}
-## Make a map of physint
-## Use rnaturalearth to define world map data
-worldmap <- ne_countries(scale = 'medium', type = 'map_units', returnclass = 'sf')
-
-## Add codes
-d2020$newcode <- countrycode::countrycode(sourcevar = d2020$cow, origin = "cown", destination = "iso3c")
-
-## Merge data onto worldmap
-d10 <- left_join(worldmap, d2020, by = c("adm0_a3" = "newcode"))
-
-d10 |>
-  mutate(
-    physint_cat = factor(physint_sum, levels = c("0", "1", "2", "3", "4", "5", "6", "7", "8"))
-  ) |>
-  ggplot() + 
-  geom_sf(aes(fill = physint_cat)) +
-  labs(fill = "", title = "Physical Integrity Rights Index (2020)") +
-  scale_fill_brewer(type = "seq", palette = 8, direction = -1, na.value = "grey")
-```
+.size70[
+Have the utilization rates for the types of violations varied across time?
+]
 
 ???
-
-physint: Physical Integrity Rights Index. It ranges from 0 (no government respect for these four rights) to 8 (full government respect for these four rights)
-
-<br>
-
-### What do we see from this?
-
-+ More coverage of the world
-+ US dropping...
 
 
 
@@ -608,16 +590,17 @@ d |>
   summarize(
     Mean = mean(Values, na.rm = TRUE)
   ) |>
+  ungroup() |>
   ggplot(aes(x = year, y = Mean, color = Variables)) +
   geom_line(size = 1.2) +
-  theme_minimal() +
+  theme_bw() +
   labs(x = "", y = "Mean Values",
        title = "Tracking Political Violence Averages Across Time") +
-  coord_cartesian(ylim = c(.5,1.9), xlim = c(1980, 2021)) +
-  scale_y_continuous(breaks = c(0,1,2))  +
+  coord_cartesian(ylim = c(0,2), xlim = c(1980, 2021)) +
+  scale_y_continuous(breaks = 0:2, labels = 0:2)  +
   guides(color = "none") +
   scale_color_brewer(type = "qual", palette = 2) +
-  annotate("text", x = 2021, y = c(1.73, 1.37, 1.24, 1.056), label = c("Disap", "Kill", "Prison", "Torture"), color = RColorBrewer::brewer.pal(4, name = "Dark2"))
+  annotate("text", x = 2021, y = c(1.73, 1.2, 1.45, .65), label = c("Disap", "Kill", "Prison", "Torture"), color = RColorBrewer::brewer.pal(4, name = "Dark2"))
 
 ```
 
@@ -646,11 +629,110 @@ Any countries with a total index score that challenges your intuitions?
 
 ---
 
-Results
+class: full, middle, slideblue
+
+```{r, fig.retina=3, fig.align='center', out.width='100%', fig.height=5, fig.width=9.5, eval=TRUE, cache=FALSE}
+## Make a map
+# Merge
+d10 <- left_join(worldmap, d2020, by = c("adm0_a3" = "iso_a3"))
+
+# Audit missing data
+# d2020 |>
+#   select(country, physint_sum, polpris:kill) |>
+#   View()
+# 
+# tibble(d10) |>
+#   select(name, physint_sum, polpris:kill) |>
+#   filter(is.na(physint_sum)) |>
+#   print(n = 100)
+
+d10$physint_sum[d10$name == "Kosovo"] <- 7
+d10$physint_sum[d10$name == "S. Sudan"] <- 0
+d10$physint_sum[d10$name == "Serbia"] <- 6
+
+d10 |>
+  ggplot() +
+  geom_sf(aes(fill = factor(physint_sum))) +
+  labs(fill = "", title = "physint_sum (2020)") +
+  #theme(legend.position = "bottom") +
+  scale_fill_brewer(type = "div", palette = 5, na.value="darkgrey")
+```
 
 ???
 
+We'll talk about the US in a sec.
+
 ### How does this compare to the worst offenders per PTS?
+
+### Any surprises?
+
+<br>
+
+Interestingly, the CIRIGHTS group do not include color codings for the US in the report they released last year.
+
+- Let's examine the US scores together.
+
+### what do you think of these scores for us?
+
+```{r}
+d2020 |>
+  filter(iso_a3 == "USA") |>
+  select(country, year, physint_sum, polpris:kill) |>
+  print(n=50)
+```
+
+<br>
+
+**SLIDE**: Let's look at the US over time
+
+
+
+---
+
+class: middle, slideblue
+
+.pull-left[
+.center[.size40[.content-box-white[**USA in CIRIGHTS**]]]
+
+```{r, fig.retina=3, out.width='100%', fig.width=7, fig.align='center', fig.asp=1, cache=TRUE}
+d |>
+  filter(iso_a3 == "USA") |>
+  ggplot(aes(x = year, y = physint_sum)) +
+  geom_line(size = .4) +
+  geom_point() +
+  theme_bw() +
+  labs(x = "", y = "Physical Integrity Rights") +
+  scale_y_continuous(breaks = 0:8, labels = 0:8, limits = c(0,8))
+```
+]
+
+.pull-right[
+```{r, fig.retina=3, out.width='80%', fig.width=7, fig.align='center', fig.asp=1.5, cache=TRUE}
+## You make a line plot of averages across time for each measure
+d |>
+  filter(iso_a3 == "USA") |>
+  pivot_longer(cols = polpris:kill, names_to = "Variables", values_to = "Values") |>
+  mutate(
+    Variables = case_when(
+      Variables == "disap" ~ "Disappearances",
+      Variables == "kill" ~ "Killings",
+      Variables == "tort" ~ "Torture",
+      Variables == "polpris" ~ "Political Prisoners"
+    )
+  ) |>
+  ggplot(aes(x = year, y = Values, color = Variables)) +
+  geom_line(size = .4) +
+  geom_point() +
+  theme_bw() +
+  facet_wrap(~ Variables, ncol = 1) +
+  guides(color = "none") +
+  scale_y_continuous(breaks = 0:2, labels = 0:2) +
+  scale_x_continuous(breaks = seq(1980, 2020, 4)) +
+  labs(x = "") +
+  scale_color_brewer(type = "qual", palette = 2)
+```
+]
+
 
 
 
@@ -662,7 +744,7 @@ background-position: center
 class: middle
 
 .size55[
-Focus on the scores for total index score in the years since 2001 and find us examples of countries that have:
+Focus on the scores for total index score in the years since 2001 and find us other examples of countries that have:
 
   + Improved the most, and
   
@@ -675,65 +757,49 @@ Focus on the scores for total index score in the years since 2001 and find us ex
 
 ---
 
-Results
+class: full, middle, slideblue
 
-???
+```{r, fig.retina=3, fig.align='center', out.width='100%', fig.height=5, fig.width=9.5, eval=TRUE, cache=FALSE}
+## Make a map
 
+# Summarize data
+d_diff <- d |>
+  filter(year %in% c(2001, 2020)) |>
+  select(country, iso_a3, year, physint_sum) |>
+  pivot_wider(names_from = year, values_from = physint_sum, names_prefix = "physint_") |>
+  mutate(
+    Difference = physint_2020 - physint_2001
+  )
 
+# Merge
+d11 <- left_join(worldmap, d_diff, by = c("adm0_a3" = "iso_a3"))
 
----
+# Audit missing data
+# d_diff |>
+#   select(country, Difference) |>
+#   View()
+# 
+# tibble(d10) |>
+#   select(name, Difference) |>
+#   filter(is.na(Difference)) |>
+#   print(n = 100)
 
-background-image: url('libs/Images/background-light_grey.jpg')
-background-size: 100%
-background-position: center
-class: middle
+# d10$Difference[d10$name == "Kosovo"] <- 7
+# d10$Difference[d10$name == "S. Sudan"] <- 0
+# d10$Difference[d10$name == "Serbia"] <- 6
 
-.size45[
-Compare and contrast the 2020 CIRIGHTS codings with the 2020 PTS_S scores from the PTS project.
-
-+ Are they consistent? 
-
-+ Any big differences? 
-
-+ Can we find state examples where the scores differ significantly across the two projects?
-]
-
-???
-
-Groups, take a few minutes to work on this question and report back.
-
-*While they work, you do the same!*
-
-<br>
-
-### Ok, what did you find?
-
-
-
----
-
-class: middle, center
-
-```{r}
-## CIRIGHTS
-cirights <- d2020 |>
-  select(country:unctry, physint_sum, polpris:kill)
-
-## PTS
-pts <- read_excel("../../Data/PTS/2023-05-PTS_2022/PTS-2022.xlsx", na = "NA") |>
-  filter(Year == 2020)
-
-## Merge the datasets
-d100 <- inner_join(pts, cirights, by = c("COW_Code_N" = "cow")) |>
-  select(Country, Year, COW_Code_N, PTS_A:PTS_S, physint_sum:kill)
-
-##
-d100 |>
-  filter(!is.na(PTS_S)) |>
-  select(Country, PTS_S, physint_sum:kill) |>
-  DT::datatable(rownames = FALSE)
-
+d11 |>
+  ggplot() +
+  geom_sf(aes(fill = Difference)) +
+  labs(fill = "", title = "Changes in the Physical Integrity Index (2001 to 2020)") +
+  #theme(legend.position = "bottom") +
+  #scale_fill_gradient(low = "red", high = "blue")
+  scale_fill_gradient2()
 ```
+
+???
+
+
 
 
 ---
@@ -765,8 +831,34 @@ Measures:
 
 
 
+---
+
+background-image: url('libs/Images/background-light_grey.jpg')
+background-size: 100%
+background-position: center
+class: middle
+
+.size60[.center[**For Next Class**]]
+
+.size50[
+The V-Dem Varieties of Democracy "Personal Integrity Rights"
 
 
+]
+
+???
+
+For Friday we repeat today's work on the CIRIGHTS data project.
+
+Get ready to work!
+
+The V-Dem Varieties of Democracy "Personal Integrity Rights"
+- FILE 1: V-Dem/V-Dem-CY-Core_csv_v13/codebook_v13.pdf
+- FILE 2: V-Dem/V-Dem-CY-Core_csv_v13/V_Dem_Personal_Integrity_Rights-2022.xlsx
+Syllabus Tasks
+1. Review the V-Dem Varieties of Democracy Codebook *ONLY p30, 32-34, 40-42, 176-178*
+2. Audit the "Personal Integrity Rights" scores for your country cases from last week
+3. Spend some time exploring the dataset and find us something interesting to discuss
 
 
 

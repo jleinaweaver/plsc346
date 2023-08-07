@@ -16,7 +16,10 @@ library(tidyverse)
 library(readxl)
 library(stargazer)
 library(kableExtra)
-##library(modelr)
+library(sf)
+library(rnaturalearth)
+library(rnaturalearthdata)
+library(countrycode)
 
 knitr::opts_chunk$set(echo = FALSE,
                       eval = TRUE,
@@ -24,6 +27,8 @@ knitr::opts_chunk$set(echo = FALSE,
                       message = FALSE,
                       warning = FALSE,
                       comment = NA)
+
+d <- read_excel("../../Data/V-Dem/V-Dem-CY-Core_csv_v13/V_Dem_Personal_Integrity_Rights-1789-2022.xlsx", na = "NA")
 ```
 
 background-image: url('libs/Images/00-Leviathan_Cover_55.png')
@@ -37,7 +42,7 @@ class: middle
 
 .size60[
 .center[
-Evaluate the CIRIGHTS Data project
+Evaluate the V-Dem Varieties of Democracy Data project on "Personal Integrity Rights" 
 ]]
 
 <br>
@@ -60,17 +65,20 @@ background-size: 100%
 background-position: center
 class: middle
 
-.size50[**Political Violence Data**]
+.size45[**Paper 1**]
 
-.size35[(Due Sep 22)
+.size30[
+If someone came to you with the goal of better understanding the use of political violence by governments around the world, which of the data sources that we explored in class would you recommend and why?
 
-What is your recommendation for the *SINGLE* most useful approach to measuring political violence around the world?
+- The US State Department's "Country Reports on Human Rights Practices"
 
-- Country Reports on Human Rights Practices from the State Department
-- The Annual Country Reports from Amnesty International
+- **Amnesty International's "Annual Country Reports"**
+
 - The Political Terror Scale (PTS)
-- The CIRIGHTS data project
-- V-Dem Personal Integrity Rights
+
+- The CIRIGHTS data project's "Physical Integrity Rights"
+
+- Varieties of Democracy's (V-Dem) "Personal Integrity Rights"
 ]
 
 ???
@@ -112,51 +120,68 @@ background-size: 100%
 background-position: center
 class: middle
 
-```{r, fig.align='center', out.width='85%'}
-knitr::include_graphics('libs/Images/03-2-PTS_Logo.png')
-```
-
-.center[.size45[Evaluate: Operationalization, Instrumentation, and Measurement]]
-
-???
-
-Refresher on our work from last class analyzing the Political Terror Scale.
-
-### Strengths and weaknesses of using the PTS data to measure political violence around the world?
-
-### Key takeaways for you next week as you write your country reports?
-
-#### - How do the PTS scores supplement your reading/analysis of the source docs?
-
-#### - Any cautions you will want to include, e.g. caveats for helping the reader interpret the PTS scores?
+.pull-left[
 
 <br>
 
-+ PTS represents expert codings by area experts (right?) with reliability checks built-in. Using these measures backs up YOUR analysis of the source docs. It's not just you interpreting them this way but backed by experts!
+<br>
 
-+ PTS enables and facilitates comparisons, but not just across countries. Your reports analyze a single country across time which is a comparison exercise. You are comparing your country to itself each year through time!
+<br>
 
-+ BUT as we noted PTS is limited. 
-    + Five point scale but is it safe to assume that holds for all people in the country? White dude watching TV vs LGBTQ+ person in a protest against the government?
-    + PTS focuses pretty narrowly on government violence of a particular type. Leaves out much we might argue is important to measuring political violence.
+```{r, fig.align='center', out.width='100%'}
+knitr::include_graphics('libs/Images/03_3-CIRIGHTS_Title.png')
+```
+]
+
+.pull-right[
+.size40[.center[The Physical Integrity Rights Index]
+
+- Disappearance
+
+- Extrajudicial Killing
+
+- Political Imprisonment
+
+- Torture
+]
+]
+
+.center[.size40[Evaluate: Operationalization, Instrumentation, and Measurement]]
+
+???
+
+Refresher on our work from last class analyzing CIRIGHTS.
+
+### Strengths and weaknesses of using the CIRIGHTS data to measure political violence around the world?
+
+### Key takeaways for you next week as you write your country reports?
+
+#### - How do the CIRIGHTS scores supplement your reading/analysis of the source docs?
+
+#### - Any cautions you will want to include, e.g. caveats for helping the reader interpret the CIRIGHTS scores?
+
 
 
 
 
 ---
 
-background-image: url('libs/Images/background-green_blue_swirl_side.jpg')
+background-image: url('libs/Images/background-light_grey.jpg')
 background-size: 100%
 background-position: center
 class: middle, center
 
-.size60[.center[**For Today**]]
+.size45[.center[.content-box-white[**The V-Dem Varieties of Democracy**]]]
 
-.size50[
-**Explore the data and codebook for the [CIRIGHTS Data project](https://www.dropbox.com/sh/t8utmzsvde8m63q/AAAs1_WIJTqXurAE5nvEKWE5a?dl=0).**
+<br>
 
-Make sure you understand the observations and variables enough to play with them in class.
-]
+```{r, fig.align='center', out.width='85%'}
+knitr::include_graphics('libs/Images/05_3-VDem_Civil_Liberty.png')
+```
+
+<br>
+
+.size40[**Personal Integrity Rights**: Freedom from torture, Freedom from political killings, Freedom from forced labor (men/women)]
 
 ???
 
@@ -164,8 +189,6 @@ Make sure you understand the observations and variables enough to play with them
 
 
 
-
-
 ---
 
 background-image: url('libs/Images/background-light_grey.jpg')
@@ -173,96 +196,31 @@ background-size: 100%
 background-position: center
 class: middle
 
-.pull-left[
-
-<br>
-
-<br>
-
-<br>
-
-```{r, fig.align='center', out.width='100%'}
-knitr::include_graphics('libs/Images/03_3-CIRIGHTS_Title.png')
+```{r, fig.align='center', out.width='35%'}
+knitr::include_graphics('libs/Images/05_3-VDem_Logo.png')
 ```
-]
 
-.pull-right[
-.size40[The Physical Integrity Rights Index
-
-- Disappearance
-
-- Extrajudicial Killing
-
-- Political Imprisonment
-
-- Torture
-]
+.size40[**Personal Integrity Rights**
+- Freedom from Torture
+- Freedom from Political Killings
+- Freedom from Forced Labor (men)
+- Freedom from Forced Labor (women)
 ]
 
 .center[.size45[Evaluate: Operationalization, Instrumentation, and Measurement]]
 
 ???
 
-The CIRIGHTS project relies on essentially the same source documents as PTS but aims to capture more of the important variation in country behavior.
+The V Dem project...
 
-For our purposes we'll focus primarily on the elements in the Physical Integrity Rights Index.
+For our purposes we'll focus primarily on the elements in the Personal Integrity Rights Index.
+
+- Note how each country-year includes model generated ordinal score, 70% coverage (low to high) and the number of coders involved
 
 <br>
 
 Split class into groups (one group per category), build strengths and weaknesses lists on the board analyzing the codebook across these three categories: operationalization, instrumentation, measurement
 
-
-
-
-
-These are the obvious choices, but I want everyone to think about their group definitions of political violence.
-
-### Based on those definitions, should we look to include one of the other measures in this dataset?
-
-#### - Maybe an element from the Empowerment Rights Index?
-
-- Foreign Movement, 
-- Domestic Movement, 
-- Freedom of Speech, 
-- Freedom of Assembly & Association, Workers’ Rights, Electoral Self-Determination, and Freedom of Religion indicators
-
-
-
-
----
-
-background-image: url('libs/Images/background-light_grey.jpg')
-background-size: 100%
-background-position: center
-class: middle
-
-.pull-left[
-
-<br>
-
-<br>
-
-<br>
-
-```{r, fig.align='center', out.width='100%'}
-knitr::include_graphics('libs/Images/03_3-CIRIGHTS_Title.png')
-```
-]
-
-.pull-right[
-.size40[The Physical Integrity Rights Index
-
-- Disappearance
-
-- Extrajudicial Killing
-
-- Political Imprisonment
-
-- Torture
-]
-]
-
-???
 
 ### Groups: Take a few minutes to review the "Coding Protocol" on p8 in order to evaluate the validity and reliability of these measures.
 
@@ -283,37 +241,28 @@ background-size: 100%
 background-position: center
 class: middle
 
-.pull-left[
-
-<br>
-
-<br>
-
-<br>
-
-```{r, fig.align='center', out.width='100%'}
-knitr::include_graphics('libs/Images/03_3-CIRIGHTS_Title.png')
+```{r, fig.align='center', out.width='35%'}
+knitr::include_graphics('libs/Images/05_3-VDem_Logo.png')
 ```
+
+.size40[**Personal Integrity Rights**
+- Freedom from Torture
+- Freedom from Political Killings
+- Freedom from Forced Labor (men)
+- Freedom from Forced Labor (women)
 ]
 
-.pull-right[
-.size40[The Physical Integrity Rights Index
-
-- Disappearance
-
-- Extrajudicial Killing
-
-- Political Imprisonment
-
-- Torture
-]
-]
+.center[.size45[Audit the Data (2021)]]
 
 ???
 
 Let's now audit the data.
 
-Everybody focus on the three countries you analyzed on Monday. 
+Everybody focus on the two countries you analyzed on Monday. 
+
+- Consider the number of coders assigned to your country-year and the range of codings provided
+
+
 
 ### Would you have coded these the same way? Why or why not?
 
@@ -328,14 +277,7 @@ Everybody focus on the three countries you analyzed on Monday.
 <br>
 
 ### Notes
-
-+ disap: Disappearance. A score of 0 indicates that disappearances have occurred frequently in a given year; a score of 1 indicates that disappearances occasionally occurred; and a score of 2 indicates that disappearances did not occur in a given year.
-
-+ kill: Extrajudicial Killing. A score of 0 indicates that extrajudicial killings were practiced frequently in a given year; a score of 1 indicates that extrajudicial killings were practiced occasionally; and a score of 2 indicates that such killings did not occur in a given year.
-
-+ polpris: Political Imprisonment. A score of 0 indicates that there were many people imprisoned because of their religious, political, or other beliefs in a given year; a score of 1indicates that a few people were imprisoned; and a score of 2 indicates that no persons were imprisoned for any of the above reasons in a given year.
-
-+ tort: Torture. A score of 0 indicates that torture was practiced frequently in a given year; a score of 1 indicates that torture was practiced occasionally; and a score of 2 indicates that torture did not occur in a given year.
+- ?
 
 
 
@@ -347,18 +289,12 @@ background-position: center
 class: middle, center
 
 .size70[
-Is there any evidence of selection bias in the CIRIGHTS measures in 2020 (most recent year coded)? 
+Is there any evidence of selection bias in the V-Dem "Personal Integrity Rights" measures in 2022 (most recent year coded)? 
 ]
 
 ???
 
-Let's dig into the data.
-
-- REMEMBER, our key exercise here is to analyze the validity and reliability of the measures SO THAT later we can use them to analyze country behavior.
-
-<br>
-
-Use the autofilter to zoom in on 2020 only
+Use the autofilter to zoom in on 2022 only
 
 Then scroll through and talk to me about the kinds of countries with missing data in the three measures.
 
@@ -366,265 +302,166 @@ Then scroll through and talk to me about the kinds of countries with missing dat
 
 ---
 
-Results
+class: slideblue, middle, full
 
-???
+```{r, fig.retina=3, fig.align='center', out.width='95%', fig.height=6, fig.width=10, cache=FALSE}
+## Make a map
+## Use rnaturalearth to define world map data
+worldmap <- ne_countries(scale = 'medium', type = 'countries', returnclass = 'sf')
 
+# Subset data
+d2022 <- d |>
+  filter(year == 2022)
 
+# Identify merging country label
+# guess_field(d2022$country_name) # vdem.name 98.9%
+# guess_field(d2022$country_text_id) # wb 98%, iso3c 97.8%
+# guess_field(d2022$COWcode) # cown 100%
+# guess_field(worldmap$adm0_a3) #95.8% iso3c
 
----
+d2022$newcode1 <- countrycode(d2022$COWcode, origin = "cown", destination = "iso3c")
 
-background-image: url('libs/Images/background-light_grey.jpg')
-background-size: 100%
-background-position: center
-class: middle, center
+# Summarize data
+d22_NA <- d2022 |>
+  select(newcode1, country_name, v2cltort_ord, v2clkill_ord, v2clslavem_ord, v2clslavef_ord) |>
+  mutate(
+    Missing = if_else(is.na(v2cltort_ord) | is.na(v2clkill_ord) | is.na(v2clslavem_ord) | is.na(v2clslavef_ord), 1, 0)
+  )
 
-.size70[
-How much do the measures overlap in 2020? Do we need all four sub-measures or is the index sufficient? 
-]
+# Merge data
+d10 <- left_join(worldmap, d22_NA, by = c("adm0_a3" = "newcode1"))
 
-???
+# Audit missing data
+# d22_NA |>
+#   select(country_name, v2cltort_ord, v2clkill_ord, v2clslavem_ord, v2clslavef_ord, Missing) |>
+#   View()
+# 
+# tibble(d10) |>
+#   select(name, Missing) |>
+#   filter(is.na(Missing)) |>
+#   print(n = 100)
+# 
+# tibble(d10) |> count(Missing)
 
+d10$Missing[d10$name == "Kosovo"] <- 0
+d10$Missing[d10$name == "S. Sudan"] <- 0
+d10$Missing[d10$name == "Serbia"] <- 0
 
-
----
-
-Results
-
-???
-
-
-
----
-
-background-image: url('libs/Images/background-light_grey.jpg')
-background-size: 100%
-background-position: center
-class: middle, center
-
-.size70[
-What are the most common violations across the four sub-measures?
-]
-
-???
-
-
-
----
-
-Results
-
-???
-
-
-
----
-
-class: bottom, center
-
-.size55[**1981**]
-
-```{r}
-d <- read_excel("../../Data/CIRIGHTS/cirights-v1.25.22.11/CIRIGHTS V1.25.22.11/cirights_v1.22.11.25.xlsx")
-
-d1981 <- d |>
-  filter(year == 1981)
-
-# d1981 |>
-#   select(countryname, year, disap:tort)
-
-x1 <- d1981 |>
-  pivot_longer(cols = c(polpris, disap, tort, kill), names_to = "Measure", values_to = "Values") |>
-  group_by(Measure) |>
-  summarize(
-    N = n(),
-    Mean = round(mean(Values, na.rm = T), 1),
-    StdDev = round(sd(Values, na.rm = T), 2),
-    Min = min(Values, na.rm = T),
-    Max = max(Values, na.rm = T)
+d10 |>
+  mutate(
+    Missing = if_else(is.na(Missing), "Missing Data", "Data Collected")
   ) |>
-  arrange(Mean)
-
-x1 |>
-  kableExtra::kbl(align = c('l', rep('c', 5))) |>
-  kableExtra::kable_styling(bootstrap_options = c("striped", "hover"), font_size = 35) |>
-  kableExtra::column_spec(column = 1:6, width = "15em")
+  ggplot() +
+  geom_sf(aes(fill = factor(Missing))) +
+  labs(fill = "", title = "V-Dem Missing Data (2022)") +
+  theme(legend.position = "bottom") +
+  scale_fill_brewer(type = "div", palette = 2, direction = -1)
 ```
 
-<br>
+???
 
-<br>
 
-<br>
+---
 
-.size30[*Note: Higher numbers are better, e.g. evidence of less violence*]
+background-image: url('libs/Images/background-light_grey.jpg')
+background-size: 100%
+background-position: center
+class: middle, center
+
+.size70[
+How much do the measures overlap in 2022? 
+
+Do we need all four sub-measures to accurately reflect government violence against individuals? 
+]
 
 ???
 
-### Takeaways from this?
 
 
 ---
 
 class: middle, slideblue
 
-```{r, fig.retina=3, fig.align='center', out.width='100%', fig.height=3.5, fig.width=6.5, eval=TRUE, cache=TRUE}
-## Make a map of physint
-library(sf)
-library(rnaturalearth)
-library(rnaturalearthdata)
+.center[.size55[.content-box-white[**Correlations Across the Measures**]]]
 
-## Use rnaturalearth to define world map data
-worldmap <- ne_countries(scale = 'medium', type = 'map_units', returnclass = 'sf')
+<br>
 
-# countrycode::guess_field(worldmap$un_a3) #98.7% genc3n
-# countrycode::guess_field(worldmap$adm0_a3) #98.7% iso3c
-# countrycode::guess_field(worldmap$iso_n3) #98.3% genc3n, iso3n
-
-# countrycode::guess_field(d1981$ccode)   # iso3n
-# countrycode::guess_field(d1981$cow)   # cown
-# countrycode::guess_field(d1981$unctry)
-# countrycode::guess_field(d1981$unreg)
-
-## Add codes
-d1981$newcode <- countrycode::countrycode(sourcevar = d1981$cow, origin = "cown", destination = "iso3c")
-
-## Merge data onto worldmap
-d10 <- left_join(worldmap, d1981, by = c("adm0_a3" = "newcode"))
-
-d10 |>
-  mutate(
-    physint_cat = factor(physint_sum, levels = c("0", "1", "2", "3", "4", "5", "6", "7", "8"))
-  ) |>
-  ggplot() +
-  geom_sf(aes(fill = physint_cat)) +
-  labs(fill = "", title = "Physical Integrity Rights Index (1981)") +
-  scale_fill_brewer(type = "seq", palette = 8, direction = -1, na.value = "grey")
+```{r, fig.align='center'}
+d2022 |>
+  select(v2cltort_ord, v2clkill_ord, v2clslavem_ord, v2clslavef_ord) |>
+  cor() |>
+  kbl(digits = 2, align = c(rep('c', 5))) |>
+  column_spec(column = 1:5, width = "5em") |>
+  kable_styling(font_size = 32)
 ```
 
 ???
 
-### Takeaways from this?
+Measure of linear association
 
-<br>
+- Torture and killing correlate VERY highly
 
-physint: Physical Integrity Rights Index. It ranges from 0 (no government respect for these four rights) to 8 (full government respect for these four rights)
-
+- Forced labor for men and women also correlate very highly
 
 
 
 ---
 
+background-image: url('libs/Images/background-light_grey.jpg')
+background-size: 100%
+background-position: center
 class: middle, center
 
-.size30[**1981**]
-```{r}
-x1 |>
-  kableExtra::kbl(align = c('l', rep('c', 5))) |>
-  kableExtra::kable_styling(bootstrap_options = c("striped", "hover"), font_size = 30) |>
-  kableExtra::column_spec(column = 1:6, width = "15em")
-```
+.size70[
+What are the most common scores across the four sub-measures?
+]
 
-.size30[**2020**]
-```{r}
-d2020 <- d |>
-  filter(year == 2020)
+???
 
-x2 <- d2020 |>
-  pivot_longer(cols = disap:tort, names_to = "Measure", values_to = "Values") |>
+
+
+---
+
+class: full, slideblue
+
+```{r, fig.align='center', fig.retina=3, fig.asp=0.618, out.width='98%', fig.width=8, cache=TRUE}
+d2022 |>
+  select(v2cltort_ord, v2clkill_ord, v2clslavem_ord, v2clslavef_ord) |>
+  pivot_longer(cols = v2cltort_ord:v2clslavef_ord, names_to = "Measure", values_to = "Values") |>
   group_by(Measure) |>
-  summarize(
-    N = n(),
-    Mean = round(mean(Values, na.rm = T), 1),
-    StdDev = round(sd(Values, na.rm = T), 2),
-    Min = min(Values, na.rm = T),
-    Max = max(Values, na.rm = T)
-  ) |>
-  arrange(Mean)
-
-x2 |>
-  kableExtra::kbl(align = c('l', rep('c', 5))) |>
-  kableExtra::kable_styling(bootstrap_options = c("striped", "hover"), font_size = 30) |>
-  kableExtra::column_spec(column = 1:6, width = "15em")
-```
-
-<br>
-
-<br>
-
-<br>
-
-.size30[*Note: Higher numbers are better, e.g. evidence of less violence*]
-
-???
-
-
-
----
-
-class: slideblue
-
-```{r, fig.retina=3, fig.align='center', out.width='100%', fig.height=3.5, fig.width=6.5, eval=TRUE, cache=TRUE}
-## Make a map of physint
-## Use rnaturalearth to define world map data
-worldmap <- ne_countries(scale = 'medium', type = 'map_units', returnclass = 'sf')
-
-## Add codes
-d2020$newcode <- countrycode::countrycode(sourcevar = d2020$cow, origin = "cown", destination = "iso3c")
-
-## Merge data onto worldmap
-d10 <- left_join(worldmap, d2020, by = c("adm0_a3" = "newcode"))
-
-d10 |>
+  count(Values) |>
   mutate(
-    physint_cat = factor(physint_sum, levels = c("0", "1", "2", "3", "4", "5", "6", "7", "8"))
+    Values = case_when(
+      Values == 0 ~ "Score 0",
+      Values == 1 ~ "Score 1",
+      Values == 2 ~ "Score 2",
+      Values == 3 ~ "Score 3",
+      Values == 4 ~ "Score 4"
+    )
   ) |>
-  ggplot() + 
-  geom_sf(aes(fill = physint_cat)) +
-  labs(fill = "", title = "Physical Integrity Rights Index (2020)") +
-  scale_fill_brewer(type = "seq", palette = 8, direction = -1, na.value = "grey")
+  ggplot(aes(x = Measure, y = n, fill = Values)) +
+  geom_col(position = "dodge", color = "grey", width = .6) +
+  theme_bw() +
+  #scale_fill_manual(values = c("red", "orange", "green3"))
+  scale_fill_brewer(type = "div", palette = 5) +
+  scale_x_discrete(limits = c("v2cltort_ord", "v2clkill_ord", "v2clslavem_ord", "v2clslavef_ord"), labels = c("Torture", "Killings", "Forced Labor (M)", "Forced Labor (W)")) +
+  labs(x = "", y = "Count", fill = "",
+       title = "Personal Integrity Rights",
+       caption = "Source: V-Dem 2022")
 ```
 
 ???
 
-physint: Physical Integrity Rights Index. It ranges from 0 (no government respect for these four rights) to 8 (full government respect for these four rights)
-
-<br>
-
-### What do we see from this?
-
-+ More coverage of the world
-+ US dropping...
-
-
-
----
-
-```{r, fig.retina=3, out.width='97%', fig.width=6, fig.align='center', fig.asp=0.618}
-## You make a line plot of averages across time for each measure
-d |>
-  pivot_longer(cols = polpris:kill, names_to = "Variables", values_to = "Values") |>
-  group_by(year, Variables) |>
-  summarize(
-    Mean = mean(Values, na.rm = TRUE)
-  ) |>
-  ggplot(aes(x = year, y = Mean, color = Variables)) +
-  geom_line(size = 1.2) +
-  theme_minimal() +
-  labs(x = "", y = "Mean Values",
-       title = "Tracking Political Violence Averages Across Time") +
-  coord_cartesian(ylim = c(.5,1.9), xlim = c(1980, 2021)) +
-  scale_y_continuous(breaks = c(0,1,2))  +
-  guides(color = "none") +
-  scale_color_brewer(type = "qual", palette = 2) +
-  annotate("text", x = 2021, y = c(1.73, 1.37, 1.24, 1.056), label = c("Disap", "Kill", "Prison", "Torture"), color = RColorBrewer::brewer.pal(4, name = "Dark2"))
-
+```{r}
+d2022 |>
+  select(v2cltort_ord, v2clkill_ord, v2clslavem_ord, v2clslavef_ord) |>
+  pivot_longer(cols = v2cltort_ord:v2clslavef_ord, names_to = "Measure", values_to = "Values") |>
+  group_by(Measure) |>
+  count(Values) |>
+  pivot_wider(names_from = Values, values_from = n, names_prefix = "Score ") |>
+  kbl(align = 'c') |>
+  column_spec(column = 1:4, width = "3em")
 ```
-
-???
-
-Remember, lower values are bad!
-
 
 
 
@@ -637,7 +474,7 @@ background-position: center
 class: middle, center
 
 .size70[
-Any countries with a total index score that challenges your intuitions? 
+Have the utilization rates for the types of violations varied across time?
 ]
 
 ???
@@ -646,11 +483,152 @@ Any countries with a total index score that challenges your intuitions?
 
 ---
 
-Results
+class: middle, full
+
+```{r, fig.retina=3, out.width='97%', fig.width=7.5, fig.align='center', fig.asp=0.618}
+## You make a line plot of averages across time for each measure
+d |>
+  select(country_name, country_text_id, year, "Torture" = v2cltort_ord, "Killings" = v2clkill_ord, "Forced_male" = v2clslavem_ord, "Forced_fem" = v2clslavef_ord) |>
+  filter(year >= 1980) |>
+  pivot_longer(cols = Torture:Forced_fem, names_to = "Variables", values_to = "Values") |>
+  group_by(year, Variables) |>
+  summarize(
+    Mean = mean(Values, na.rm = TRUE)
+  ) |>
+  ungroup() |>
+  ggplot(aes(x = year, y = Mean, color = Variables)) +
+  geom_line(size = 1.2) +
+  theme_bw() +
+  labs(x = "", y = "Mean Values",
+       title = "Tracking Personal Integrity Rights Averages Across Time",
+       caption = "Source: V-Dem",
+       color = "") +
+  coord_cartesian(ylim = c(0,4), xlim = c(1980, 2022)) +
+  scale_y_continuous(breaks = 0:4, labels = 0:4)  +
+  theme(legend.position = "bottom") +
+  #guides(color = "none") +
+  scale_color_brewer(type = "qual", palette = 2)
+
+## Box plots across time
+d |>
+  filter(year >= 1980) |>
+  ggplot(aes(x = factor(year), y = v2cltort_ord)) +
+  geom_boxplot()
+```
 
 ???
 
-### How does this compare to the worst offenders per PTS?
+
+
+---
+
+background-image: url('libs/Images/background-light_grey.jpg')
+background-size: 100%
+background-position: center
+class: middle, center
+
+.size70[
+Any countries with a current torture score ('v2cltort_ord') that challenges your intuitions? 
+]
+
+???
+
+Given the high correlation between torture and killing this should represent both fairly well.
+
+
+
+---
+
+class: slideblue, middle, full
+
+```{r, fig.retina=3, fig.align='center', out.width='95%', fig.height=6, fig.width=10, cache=FALSE}
+## Make a map
+
+d2022$newcode1 <- countrycode(d2022$COWcode, origin = "cown", destination = "iso3c")
+
+# # Summarize data
+# d22_NA <- d2022 |>
+#   select(newcode1, country_name, v2cltort_ord, v2clkill_ord, v2clslavem_ord, v2clslavef_ord) |>
+#   mutate(
+#     Missing = if_else(is.na(v2cltort_ord) | is.na(v2clkill_ord) | is.na(v2clslavem_ord) | is.na(v2clslavef_ord), 1, 0)
+#   )
+
+# Merge data
+d11 <- left_join(worldmap, d2022, by = c("adm0_a3" = "newcode1"))
+
+# Audit missing data
+# d2022 |>
+#   select(country_name, v2cltort_ord) |>
+#   View()
+# 
+# tibble(d11) |>
+#   select(name, v2cltort_ord) |>
+#   filter(is.na(v2cltort_ord)) |>
+#   print(n = 100)
+
+d11$v2cltort_ord[d11$name == "Kosovo"] <- 3
+d11$v2cltort_ord[d11$name == "S. Sudan"] <- 1
+d11$v2cltort_ord[d11$name == "Serbia"] <- 3
+
+d11 |>
+  ggplot() +
+  geom_sf(aes(fill = factor(v2cltort_ord))) +
+  labs(fill = "", title = "Freedom from Torture (V-Dem 2022)") +
+  theme(legend.position = "right") +
+  scale_fill_brewer(type = "div", palette = 5, na.value="darkgrey")
+```
+
+???
+
+
+
+---
+
+background-image: url('libs/Images/background-light_grey.jpg')
+background-size: 100%
+background-position: center
+class: middle, center
+
+.size70[
+Any countries with a current Freedom from Forced Labor (women) score ('v2clslavef_ord') that challenges your intuitions? 
+]
+
+???
+
+Given the high correlation between the male and female scores this should represent both fairly well.
+
+
+
+---
+
+class: slideblue, middle, full
+
+```{r, fig.retina=3, fig.align='center', out.width='95%', fig.height=6, fig.width=10, cache=FALSE}
+## Make a map
+
+# Audit missing data
+# d2022 |>
+#   select(country_name, v2clslavef_ord) |>
+#   View()
+# 
+# tibble(d11) |>
+#   select(name, v2clslavef_ord) |>
+#   filter(is.na(v2clslavef_ord)) |>
+#   print(n = 100)
+
+d11$v2clslavef_ord[d11$name == "Kosovo"] <- 3
+d11$v2clslavef_ord[d11$name == "S. Sudan"] <- 1
+d11$v2clslavef_ord[d11$name == "Serbia"] <- 3
+
+d11 |>
+  ggplot() +
+  geom_sf(aes(fill = factor(v2clslavef_ord))) +
+  labs(fill = "", title = "Freedom from Forced Labor (women) (V-Dem 2022)") +
+  theme(legend.position = "right") +
+  scale_fill_brewer(type = "div", palette = 5, na.value="darkgrey")
+```
+
+???
 
 
 
@@ -662,7 +640,7 @@ background-position: center
 class: middle
 
 .size55[
-Focus on the scores for total index score in the years since 2001 and find us examples of countries that have:
+Focus on the years since 2001 and find us examples of countries that have:
 
   + Improved the most, and
   
@@ -675,65 +653,97 @@ Focus on the scores for total index score in the years since 2001 and find us ex
 
 ---
 
-Results
+class: slideblue, middle, full
 
-???
+```{r, fig.retina=3, fig.align='center', out.width='95%', fig.height=6, fig.width=10, cache=FALSE}
+## Make a map
 
+# Summarize data
+d_diffs <- d |>
+  filter(year %in% c(2001, 2022)) |>
+  select(country_name, COWcode, year, v2cltort_ord) |>
+  pivot_wider(names_from = year, values_from = v2cltort_ord, names_prefix = "torture_") |>
+  mutate(
+    Difference = torture_2022 - torture_2001
+  )
 
+d_diffs$newcode1 <- countrycode(d_diffs$COWcode, origin = "cown", destination = "iso3c")
 
----
+# Merge data
+d12 <- left_join(worldmap, d_diffs, by = c("adm0_a3" = "newcode1"))
 
-background-image: url('libs/Images/background-light_grey.jpg')
-background-size: 100%
-background-position: center
-class: middle
+# Audit missing data
+# d_diffs |>
+#   select(country_name, Difference) |>
+#   View()
+# 
+# tibble(d12) |>
+#   select(name, Difference) |>
+#   filter(is.na(Difference)) |>
+#   print(n = 100)
 
-.size45[
-Compare and contrast the 2020 CIRIGHTS codings with the 2020 PTS_S scores from the PTS project.
+d12$Difference[d12$name == "Kosovo"] <- 0
+#d12$Difference[d12$name == "S. Sudan"] <- xxx
+d12$Difference[d12$name == "Serbia"] <- -1
 
-+ Are they consistent? 
-
-+ Any big differences? 
-
-+ Can we find state examples where the scores differ significantly across the two projects?
-]
-
-???
-
-Groups, take a few minutes to work on this question and report back.
-
-*While they work, you do the same!*
-
-<br>
-
-### Ok, what did you find?
-
-
-
----
-
-class: middle, center
-
-```{r}
-## CIRIGHTS
-cirights <- d2020 |>
-  select(country:unctry, physint_sum, polpris:kill)
-
-## PTS
-pts <- read_excel("../../Data/PTS/2023-05-PTS_2022/PTS-2022.xlsx", na = "NA") |>
-  filter(Year == 2020)
-
-## Merge the datasets
-d100 <- inner_join(pts, cirights, by = c("COW_Code_N" = "cow")) |>
-  select(Country, Year, COW_Code_N, PTS_A:PTS_S, physint_sum:kill)
-
-##
-d100 |>
-  filter(!is.na(PTS_S)) |>
-  select(Country, PTS_S, physint_sum:kill) |>
-  DT::datatable(rownames = FALSE)
-
+d12 |>
+  ggplot() +
+  geom_sf(aes(fill = factor(Difference))) +
+  labs(fill = "", title = "Changes in Freedom from Torture (V-Dem 2001 to 2022)") +
+  theme(legend.position = "right") +
+  scale_fill_brewer(type = "div", palette = 5, na.value="darkgrey")
 ```
+
+???
+
+
+
+---
+
+class: slideblue, middle, full
+
+```{r, fig.retina=3, fig.align='center', out.width='95%', fig.height=6, fig.width=10, cache=FALSE}
+## Make a map
+
+# Summarize data
+d_diffs2 <- d |>
+  filter(year %in% c(2001, 2022)) |>
+  select(country_name, COWcode, year, v2clslavef_ord) |>
+  pivot_wider(names_from = year, values_from = v2clslavef_ord, names_prefix = "forced_") |>
+  mutate(
+    Difference = forced_2022 - forced_2001
+  )
+
+d_diffs2$newcode1 <- countrycode(d_diffs2$COWcode, origin = "cown", destination = "iso3c")
+
+# Merge data
+d13 <- left_join(worldmap, d_diffs2, by = c("adm0_a3" = "newcode1"))
+
+# Audit missing data
+# d_diffs2 |>
+#   select(country_name, Difference) |>
+#   View()
+# 
+# tibble(d13) |>
+#   select(name, Difference) |>
+#   filter(is.na(Difference)) |>
+#   print(n = 100)
+
+d13$Difference[d13$name == "Kosovo"] <- 0
+#d13$Difference[d13$name == "S. Sudan"] <- xxx
+d13$Difference[d13$name == "Serbia"] <- -1
+
+d13 |>
+  ggplot() +
+  geom_sf(aes(fill = factor(Difference))) +
+  labs(fill = "", title = "Changes in Freedom from Forced Labor (women) (V-Dem 2001 to 2022)") +
+  theme(legend.position = "right") +
+  scale_fill_brewer(type = "div", palette = 5, na.value="darkgrey")
+```
+
+???
+
+
 
 
 ---
@@ -752,6 +762,7 @@ Sources:
 Measures:
 - The Political Terror Scale (PTS)
 - The CIRIGHTS Data project
+- The V-Dem Data project
 ]
 
 
@@ -763,7 +774,11 @@ Measures:
 
 #### - Weaknesses of existing sources and measures?
 
+<br>
 
+NEXT CLASS: Get to work on the first paper.
+
+- Compare and contrast across all sources!
 
 
 
