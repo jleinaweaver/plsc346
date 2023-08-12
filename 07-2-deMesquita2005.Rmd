@@ -561,9 +561,9 @@ class: middle
 .size40[
 Bring to class a recent example of an individual, group, state or group of states taking a specific action to stop .textblue[**a democracy**] from engaging in political violence.
 
-Be ready to explain what happened, the strategy being employed and some idea of how effective it appears to have been.
+1. APA citation to the case, and
 
-**Submit APA citation before class.**
+2. A brief explanation of what specific acts of violence were occurring and what specific strategy was applied to stop it.
 ]
 
 ???

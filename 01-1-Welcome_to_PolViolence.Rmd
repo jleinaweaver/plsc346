@@ -39,17 +39,12 @@ class: middle
 
 <br>
 
-.size60[
+.size50[
+Welcome to PLSC 346: Political Violence
+- Define Key Concepts
 
-Welcome to political violence
-
+- Plan for the Semester
 ]
-
-<br>
-
-<br>
-
-<br>
 
 .center[.size40[
   Justin Leinaweaver (Fall 2023)
@@ -58,10 +53,7 @@ Welcome to political violence
 ???
 
 ### Prep for Class
-1. Bring 6 index cards to class
-    + 3 worth 1/3 letter grade on a paper
-    + 2 get out of jail free cards
-    + 1 automatic "A" card
+1. ...
 
 <br>
 
@@ -78,35 +70,19 @@ background-size: 100%
 background-position: center
 
 .pull-left[
-
+.size60[
 <br>
 
 <br>
 
-<br>
-
-<br>
-
-.size60[**Introductions**]
-
-]
-
-.pull-right[
-.size50[
-
-1. Name
-
-2. Year in school
-
-3. Major
-
-4. Act of political violence?
-
+**Introductions**
 ]]
 
 ???
 
 I'm Dr. Leinaweaver.
+
+- 12th year at Drury
 
 - Political scientist
 
@@ -114,144 +90,219 @@ I'm Dr. Leinaweaver.
 
 <br>
 
-### Your turn!
-+ Name, year, major AND 
+**SLIDE**: I need to take roll so now it's your turn!
 
-+ What is one act you could do after class that we would all agree is political violence?
+--
 
-
-
----
-
-class: middle, center
-
-background-image: url('libs/Images/background-blue_triangles.jpg')
-background-size: 100%
-background-position: center
-
-.size80[.textblack[**Let's distribute some benefits!**]]
-
-???
-
-We should start our work this semester by making sure we're all on the same page concept-wise.
-
-And we can't get much more fundamental than defining politics in a political science class.
+.pull-right[
 
 <br>
 
-To start this process, let's distribute some benefits.
+.size55[
 
-Three index cards, each is worth three bonus points you can apply to a paper grade this semester.
+1. Name
 
-Three points bumps you 1/3 of a letter grade: B becomes a B+
+2. Year in school
 
-You have 10 minutes to distribute these cards before the offer expires.
+3. Major
 
-All I ask is that the class reach a consensus on the outcome.
+4. Specific act of political violence
 
-- Once you have all agreed, let me know and I'll distribute the cards.
+]]
+
+???
 
 <br>
 
-Ok, talk to me about the process.
+### In a moment I want everyone to give their name, year in school, major AND
 
-### How did you personally approach the game?
-
-### How did the class make a collective decision?
-
-### Are you happy with the outcome? why or why not?
-
-### If you could have decided on your own with no input from the rest of the class, would you have chosen a different distribution?
-
-
-
----
-
-class: middle, center
-
-background-image: url('libs/Images/background-blue_triangles.jpg')
-background-size: 100%
-background-position: center
-
-.size80[.textblack[**Let's distribute some .textred[MUCH BETTER] benefits!**]]
-
-???
-
-Let's raise the stakes and try this again.
-
-Two index cards, each one is a "get out of jail" free card you can use this semester.
-
-- Miss a day and need an excused absence?
-- Miss a paper deadline and need an extension? Within reason!
-- Bump a paper by 2/3 of letter grade (C+ up to a B!)
-
-10 minutes to distribute these cards before the offer expires.
+### - What is one specific thing you could do today after class that you argue is an example of political violence?
 
 <br>
 
-Ok, talk to me about the process.
+Everybody take a moment to think about this last piece and write down your answer!
 
-### Did anything change in how you approached this game?
+- As we go around the room I want you to give the answer you wrote down, don't be influenced by what you hear from others!
 
-### Did you notice any differences in how your colleagues approached this decision?
+<br>
+
+### Can I have a volunteer to track the suggestions on the board?
+
+- Let's do it!
 
 
 
 ---
 
-background-image: url('libs/Images/background-blue_triangles.jpg')
-background-size: 100%
-background-position: center
 class: middle, center
 
-.size80[.textblack[**Let's distribute an .textred[INSANE] benefit!**]]
+background-image: url('libs/Images/01_1-Red_Dark_Art_Abstract.jpg')
+background-size: 100%
+background-position: center
+class: center, middle
+
+.size65[.content-box-red[**Define "Violence"**]]
 
 ???
 
-Last one, let's distribute a single index card worth an automatic "A" for any paper assignment in the class.
+Ok, everybody pair up!
 
-Go!
+- Pairs I want you to compare and contrast all our class suggestions in order to extract a one sentence-ish definition of "violence."
+
+- Don't Google it! Aim here is to derive a definition based on your suggested cases
+
+- Therefore, these definitions can represent a sort of consensus-based, prior knowledge for the class
+
+<br>
+
+### Questions on the task?
+
+- Get to it!
+
+<br>
+
+PRESENT and DISCUSS proposals
+
+- *ON BOARD*
+
+<br>
+
+**SLIDE**: Let's compare your definitions with a couple more established defintions.
+
+
+
 
 ---
 
-background-image: url('libs/Images/background-blue_triangles.jpg')
-background-size: 100%
-background-position: center
-
-```{r, out.width='95%'}
-knitr::include_graphics('libs/Images/01-1-jurrasic-park-samuel-l-jackson.gif')
-```
-
-???
-
-Yeah, that card is WAY too dangerous to exist.
-
-
-
----
-
-background-image: url('libs/Images/background-blue_triangles.jpg')
-background-size: 100%
-background-position: center
 class: middle, center
 
-.size60[**If these three games are a simulation of "politics", then what is "politics"?**]
+background-image: url('libs/Images/01_1-Red_Dark_Art_Abstract_v2.png')
+background-size: 100%
+background-position: center
+class: middle, inverse
+
+.size45[
+**Oxford Languages Definition of "Violence"**
+
+1. "behavior involving physical force intended to hurt, damage, or kill someone or something." 
+
+2. "strength of emotion or an unpleasant or destructive natural force." 
+
+3. (LAW) "the unlawful exercise of physical force or intimidation by the exhibition of such force."
+]
 
 ???
 
-(SLIDE)
+This is otherwise known as the Google dictionary version.
+
+- COMPARE and CONTRAST with our definitions
+
+<br>
+
+**SLIDE**: Let's look at one other well known definition
+
 
 
 
 ---
 
-background-image: url('libs/Images/01_1-politics_game.png')
+class: middle, center
+
+background-image: url('libs/Images/01_1-Red_Dark_Art_Abstract_v2.png')
 background-size: 100%
-class: center
+background-position: center
+class: middle, inverse
+
+.size35[
+**Oxford Languages Definition of "Violence"**
+- "behavior involving physical force intended to hurt, damage, or kill someone or something" OR "the unlawful exercise of physical force or intimidation by the exhibition of such force."
+
+**The WHO's Definition of "Violence"**
+- "...the intentional use of physical force or power, threatened or actual, against oneself, another person, or against a group or community, that either results in or has a high likelihood of resulting in injury, death, psychological harm, maldevelopment or deprivation" (2002).
+]
 
 ???
 
-All of this is meant to help you think about "politics" like a political scientist.
+Source: The World Health Organization's "World Report on Violence and Health (WRVH), (Krug E, Dahlberg L, Mercy J.et alWorld report on violence and health. Geneva: World Health Organization, 2002).
+
+<br>
+
+### How is this different from the Oxford Languages definition?
+
+<br>
+
+### Is it important to our definition that the WHO adds "threat" as a form of violence? Why or why not?
+- (Oxford focuses on physical and exhibition of force) 
+
+<br>
+
+### Doesn't adding threat make the term "violence" MUCH more vague/imprecise/subjective? 
+- (Maybe that's a good thing? Easy doesn't mean accurate)
+
+<br>
+
+### So, where do we end up? What is "violence"?
+
+
+
+
+---
+
+class: middle, center
+
+background-image: url('libs/Images/01_1-Blue_Art_Abstract.jpg')
+background-size: 100%
+background-position: center
+class: center, middle
+
+.size65[.content-box-blue[**Define "Politics"**]]
+
+???
+
+Ok, now switch to the other concept and find a new partner!
+
+- Pairs I want you to compare and contrast all our class suggestions in order to extract a one sentence-ish definition of "politics."
+
+- Don't Google it! Aim here is to derive a definition based on your suggested cases
+
+- Therefore, these definitions can represent a sort of consensus-based, prior knowledge for the class
+
+<br>
+
+### Questions on the task?
+
+- Get to it!
+
+<br>
+
+PRESENT and DISCUSS proposals
+
+- *ON BOARD*
+
+
+
+---
+
+class: middle, center
+
+background-image: url('libs/Images/01_1-Blue_Abstract_v2.png')
+background-size: 100%
+background-position: center
+class: middle, inverse
+
+.size60[**"Politics" is...**
+
+- Decision-making in a community
+
+- How we make and enforce the "rules"
+
+- Who gets what, when and how?
+]
+
+???
+
+These are all classic definitions of the word "politics."
+
 
 "Politics" as:
 
@@ -269,13 +320,25 @@ In these terms, politics is fundamental to the functioning of every society.
 
 
 
+
 ---
 
-background-image: url('libs/Images/01_1-Jan6th_Protest.jpg')
+class: middle, center
+
+background-image: url('libs/Images/01_1-Blue_and_Red_Art_Abstract.jpg')
 background-size: 100%
-class: center
+background-position: center
+class: center, middle
+
+.size65[.content-box-white[**Define "Political Violence"**]]
 
 ???
+
+### So, at this point what is our working definition of "political violence"? 
+
+*ON BOARD*
+
+<br>
 
 Funny thing is, arguably, the only thing more fundamental and foundational to society than politics is violence.
 
@@ -287,23 +350,31 @@ Funny thing is, arguably, the only thing more fundamental and foundational to so
 
 <br>
 
-### Anybody recognize the photo?
-+ (The January 6th protest/invasion/attempted coup)
+Now, here's the deal.
+
+- I'm actually less concerned with finding the end-all, be-all definition of political violence and am actually far more interested in explaining whatever acts we decide are relevant
+
+- So, we pick our target and then the work begins: Why is it happening and how do we stop it from happening again?
 
 <br>
 
-### Is the January 6th invasion of the Capitol Building an example of "politics" as we just defined it?
+**SLIDE**: With that in mind let's talk about January 6th for a sec
 
-#### - Resource distribution at stake?
-#### - Who makes and enforces the rules at stake?
 
-*Discuss*
 
-<br>
 
-### Is the January 6th invasion of the Capitol Building an example of "violence"? Why or why not?
+---
 
-*Discuss*
+background-image: url('libs/Images/01_1-Jan6th_Protest.jpg')
+background-size: 100%
+class: center
+
+???
+
+### Does this event meet our definition of "political violence"? Why or why not?
+
+- (**SLIDE**)
+
 
 
 
@@ -315,9 +386,9 @@ background-position: center
 
 ???
 
-Of course it was! [Link](https://www.washingtonpost.com/local/public-safety/police-union-says-140-officers-injured-in-capitol-riot/2021/01/27/60743642-60e2-11eb-9430-e7c77b5b0297_story.html)
+[Link](https://www.washingtonpost.com/local/public-safety/police-union-says-140-officers-injured-in-capitol-riot/2021/01/27/60743642-60e2-11eb-9430-e7c77b5b0297_story.html)
 
-Recent reporting has tallied up the damages:
+Definitely violent!
 
 + "...about 140 officers were injured"
 
@@ -330,6 +401,11 @@ Recent reporting has tallied up the damages:
 + "Reports say officers were pushed down stairs, trampled by rioters, punched and run over in a stampede."
 
 + “I’ve talked to officers who have done two tours in Iraq who said this was scarier to them than their time in combat,” acting D.C. police chief Robert J. Contee III said at a news conference earlier this month."
+
+<br>
+
+**SLIDE**: But what does it mean to describe this as "political"?
+
 
 
 
@@ -349,7 +425,8 @@ Our organizing assumption this semester is that violence is a strategy chosen by
 ### Can anybody tell me what that means in English?
 
 + We assume that actors have preferences over outcomes.
-    + In other words, people want things and act to try and get those things.
+
++ In other words, people want things and act to try and get those things.
 
 <br>
 
@@ -362,11 +439,47 @@ Our organizing assumption this semester is that violence is a strategy chosen by
 
 <br>
 
-### How problematic is this as an assumption?
+This is a big assumption and, in some case this semester, you will feel like it is a bad place to start.
 
-#### - Is this assumption likely to help us understand or misunderstand the world of politics?
+- e.g. this assumes that acts of violence you find abhorent were still done for rational reasons.
 
-#### - Put differently, were some of these people actually irrational?
+- I hope we'll have room to explore and consider this assumption during the term.
+
+<br>
+
+**SLIDE**: Ok, big picture class organization stuff!
+
+
+
+---
+
+background-image: url('libs/Images/background-space1.jpg')
+background-size: 100%
+background-position: center
+
+class: middle
+
+.textwhite[.size40[
+**LO1 (Content Knowledge)**: Students should demonstrate a basic understanding of the uses of political violence by state and non-state actors at the domestic and international levels.
+
+**LO2 (Methods Knowledge)**: Students should demonstrate their ability to use comparative and quantitative methods for testing theories of political violence.
+
+**LO3 (Critical Thinking/Problem-Solving)**: Students should be able to evaluate strategies for reducing acts of political violence at the domestic and international levels.
+]]
+
+???
+
+Get ready!
+
+- LO1 means theory and models
+
+- LO2 means data testing
+
+- LO3 means using theories and data to solve real-world problems
+
+<br>
+
+### Questions on the LOs?
 
 
 
@@ -379,40 +492,17 @@ background-position: center
 
 class: middle
 
-.textwhite[.size50[**LO1: Content Knowledge**]
+.textwhite[.size45[
+**Semester Outline**
 
-.size40[Students should demonstrate a basic understanding of the uses of political violence by state and non-state actors at the domestic and international levels.]
-]
+**Section 1 - Introducing the Challenge** (2 weeks)
 
+**Section 2 - How and why do governments use violence against the people inside their borders?** (7 weeks)
 
+**Section 3 - How and why do non-state actors use political violence?** (7 weeks)
+]]
 
----
-
-background-image: url('libs/Images/background-space1.jpg')
-background-size: 100%
-background-position: center
-
-class: middle
-
-.textwhite[.size50[**LO2: Methods Knowledge**]
-
-.size40[Students should demonstrate their ability to use comparative and quantitative methods for testing theories of political violence.]
-]
-
-
-
----
-
-background-image: url('libs/Images/background-space1.jpg')
-background-size: 100%
-background-position: center
-
-class: middle
-
-.textwhite[.size50[**LO3: Critical Thinking and Problem-Solving Skills**]
-
-.size40[Students should be able to evaluate strategies for reducing acts of political violence at the domestic and international levels.]
-]
+???
 
 
 
@@ -431,16 +521,15 @@ class: middle, center
 
 ```{r}
 tibble(
-  col1 = c("Participation", "Argument Paper 1", "Argument Paper 2", "Argument Paper 3", "Total"),
-  col2 = c("", "(Feb 18)", "(Apr 1)", "(Final Exam)", ""),
-  col3 = c(40, rep(20, 3), 100)
+  col1 = c("Participation", "The Papers", "", "", "", "Total"),
+  col2 = c("", "", "(Sep 29)", "(Oct 27)", "(Final Exam)", ""),
+  col3 = c(30, 70, rep("", 3), 100)
 ) |>
   kableExtra::kbl(align = c("l", "c", "c"), col.names = c("", "", "%")) |>
   kableExtra::kable_styling(font_size = 50) |>
   kableExtra::column_spec(1, width = "11em") |>
   kableExtra::column_spec(2, width = "7em") |>
-  kableExtra::row_spec(c(0, 5), bold = TRUE, background = "#b3ccff")
-
+  kableExtra::row_spec(c(0, 6), bold = TRUE, background = "#b3ccff")
 ```
 
 ???
@@ -456,77 +545,156 @@ Definitely a seminar, not a lecture.
 
 ---
 
-background-image: url('libs/Images/background-blue_triangles.jpg')
-background-size: 100%
-background-position: center
+background-image: url('libs/Images/01_1-coyote.jpg')
+background-size: 85%
+class: center
 
-class: middle
+???
 
-.size60[**Participation**]
+My attendance policy is simple.
 
-.size45[
-+ Get to class on time,
+The only way I can ensure everyone makes progress on the LOs is by being in class and doing the work.
 
-+ Have the materials you need to be productive,
+- This means I have to make sure you are here!
 
-+ Be engaged while in class (e.g., no sleeping, playing with your gadgets, leaving early, arriving late).
-]
+<br>
+
+To help encourage you I use an attendance cliff.
+
+- Anyone with more than FOUR unexcused absences in the semester cannot earn higher than a ‘C’
+in the course
+
+- Regardless of grades earned on other assignments.
+
+### Questions on this?
+
 
 
 
 ---
 
 background-image: url('libs/Images/01_1-office_space.jpg')
-background-size: 68%
-background-position: center
+background-size: 65%
+background-class: center
+class: slideblue
 
 ???
 
-Excused absence coming up?
+What if you have an excused absence coming up?
 
-It is your responsibility to complete a make-up assignment.
+- It is your responsibility to email me **BEFORE** the absence in order to receive a make-up assignment.
 
-### Any questions on the participation policy?
-
-
-
-
----
-
-background-image: url('libs/Images/01_1-coyote.jpg')
-background-size: 84%
-class: center, bottom
-
-???
-
-The Attendance Cliff
-
-Anyone with more than five unexcused absences in the semester cannot earn higher than a C+ in the course (regardless of grades earned on other assignments).
-
-### Any questions on the attendance policy?
-
-
----
-
-background-image: url('libs/Images/01_1-read_syllabus.jpg')
-background-size: 100%
-class: center, bottom
-
-???
-
-Read the syllabus.
-
-So much good stuff there on our class policies, your daily reading assignments and details on the assignments you'll be submitting during the semester.
+- Easy peasy
 
 <br>
 
-Everybody take a look at the syllabus requirements for Friday.
+This is also the place where I say to you, whatever is going on that might keep you out of class, please keep me in the loop. 
 
-### Any questions on what you need to do?
+- I genuinely want you to make progress on our learning outcomes
 
-+ (Two short readings)
+<br>
 
-+ (Be ready to define "strategy" for us.)
+So, if things are getting rough for you please come talk to me.
 
+**I will always offer you flexibility in the face of struggle IF YOU COME TO ME BEFORE DEADLINES HAVE PASSED!**
+
+### Fair enough?
+
+
+
+
+---
+
+background-image: url('libs/Images/01_1-participation-points.jpg')
+background-size: 85%
+background-class: center
+class: slideblue
+
+???
+
+Ok, so I've got you coming to class now how do I make sure you're engaged?
+
+- Participation points!
+
+<br>
+
+Basically, if you:
+
+- Get to class on time,
+
+- Have the materials you need to work, and
+
+- Submit all daily required assignments BEFORE class,
+
+You'll be good to go and these are easy free points.
+
+<br>
+
+### Questions on this?
+
+
+
+---
+
+background-image: url('libs/Images/01_1-matrix_meme.jpg')
+background-size: 95%
+class: center
+
+???
+
+Your first job is to download the syllabus from Canvas and read it carefully.
+
+It includes detail on everything you need to know.
+- Assignment deadlines
+- Readings
+- Drury policies
+- Office hours
+
+ALSO, I can see who downloaded it, so don’t delay!
+
+<br>
+
+We'll be using Canvas for submitting assignments, posting to the discussions and accessing the class readings.
+
+- Let me know if you have trouble accessing our materials on Canvas.
+
+
+
+
+---
+
+background-image: url('libs/Images/01_1-Canvas_Modules.png')
+background-size: 95%
+class: center, slideblue
+
+???
+
+Speaking of Canvas!
+
+- ALL of the assigned readings and daily assignments are available on Canvas in the "Modules" section.
+
+- I have organized the Modules by week of the semester to mirror the structure of the syllabus
+
+<br>
+
+The syllabus includes many web links, but if they don't work I have uploaded backups onto Canvas.
+
+- ALL of the assigned readings should be on Canvas
+
+- Please let me know BEFORE class if you ever can't find an assigned reading.
+
+<br>
+
+Here you can see your assignment for Friday.
+
+Aim: Define and explore the concepts of "strategy" and "rationality"
+
+- The readings are short chapters from the beginning of a PHENOMENAL book on "Strategy" by Lawrence Freedman.
+
+<br>
+
+### Questions on anything?
+
+- See you next class!
 
 
