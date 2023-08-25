@@ -127,7 +127,32 @@ Our class is focused on exploring and hopefully explaining "political violence" 
 <br>
 
 ### Where does that put us in this process?
-- (Working on operationalization and moving towards instrumentation)
+- (**SLIDE**: We're now working on operationalization and moving towards instrumentation.)
+
+
+
+---
+
+background-image: url('libs/Images/02_3-protestor_fire.png')
+background-size: 100%
+background-position: center
+class: middle
+
+.size50[**Political Violence**]
+
+.size45[
+**1) Concept**
+
+**2) Case studies**
+
+.textblue[**3) Operationalization**]
+
+**4) Instrumentation**
+
+**5) Measurement**
+]
+
+???
 
 ### What is involved in the operationalization step?
 - ("...selecting observable phenomena to represent abstract concepts" (89).)
@@ -144,11 +169,13 @@ Let's take a look at the group definitions so far.
 
 ### - Areas that need to be more precise?
 
-### - Ideas for strengthening them?
+### - Areas that need to be more explicit?
 
 <br>
 
-*Spend some time on this*
+GROUPS: Take the feedback and refine your definitions to make it "precise" and "explicit".
+
+
 
 
 
@@ -170,12 +197,12 @@ class: middle
 
 .textblue[**4) Instrumentation**]
 
-.textblue[**5) Measurement**]
+**5) Measurement**
 ]
 
 ???
 
-Now we move to the final two steps of the process.
+Now we move to the next step of the process.
 
 ### Per the reading, what happens during the instrumentation stage?
 + (Convert your operationalization (definition) into a series of steps you can use to measure the concept in question)
@@ -190,13 +217,14 @@ Instrumentation is when you decide HOW you are going to measure the concept.
 
 <br>
 
-### Refresh my memory, what does validity refer to?
+### What does it mean to say an instrument is "valid"?
 - ("...the extent to which our measures correspond to the concepts they are intended to reflect" (105).)
 
 <br>
 
-### And what is reliability?
-+ (How stable are the results of our instrument?)
+### What does it mean to say an instrument is "reliable"?
+- (How stable are the results of our instrument?)
+- Would different coders produce the same result using your instrument to measure the same case?
 
 
 
@@ -247,58 +275,113 @@ class: middle
 <br>
 
 .size35[
-### 1. A Nominal Instrument
-+ e.g. Yes vs No
+## 1. A Nominal Instrument
 
 <br>
 
-### 2. An Ordinal Instrument
-+ e.g. None, Low, Medium, High
+## 2. An Ordinal Instrument
 ]]
 
 ???
 
 Groups your job now is to develop TWO instruments for your operationalization
 
-1. A nominal measure of "political violence"
-    - e.g. Yes vs no this meets our definition
+1. A nominal measure of your operationalization of "political violence", and 
+2. An ordinal measure of your operationalization of "political violence"
 
-2. An ordinal measure of (If yes is the amount low, medium or high). 
-    - Groups must define the three levels of the ordinal component before we begin.
+<br>
+
+### Per the reading, what is a nominal measure?
+- ("...provides the least information about phenomena; it gives only a set of discrete categories to use in distinguishing between cases" (95).)
+
+- ("Using nominal measurement is simply a way of sorting cases into groups designated by the names used in a classificatory scheme" (95).)
+
+- e.g. nationality
+
+<br>
+
+**SLIDE**: So, the first instrument should simply be a "yes"/"no" type question.
+
+
+
+---
+
+background-image: url('libs/Images/02_3-reliable_valid.png')
+background-size: 45%
+background-position: left
+class: middle
+
+.pull-right[
+
+.size45[.center[.content-box-purple[**Instrumentation**]]]
+
+<br>
+
+.size35[
+## 1. A Nominal Instrument
+- Responses: "Yes" vs "No"
+
+<br>
+
+## 2. An Ordinal Instrument
+]]
+
+???
+
+### Per the reading, what is an ordinal measure?
+- ("...allows us to both categorize and to order, or rank, phenomena. ... With ordinal measurement we can say which cases have more (or less) of the measured quality than other cases, and we can rank cases in the order of how much of the quality they exhibit" (95).)
+
+- e.g. social class: lower, middle or upper class
+
+<br>
+
+**SLIDE**: So, the second instrument should produce ordinal responses
 
 
 
 
+---
+
+background-image: url('libs/Images/02_3-reliable_valid.png')
+background-size: 45%
+background-position: left
+class: middle
+
+.pull-right[
+
+.size45[.center[.content-box-purple[**Instrumentation**]]]
+
+<br>
+
+.size35[
+## 1. A Nominal Instrument
+- Responses: "Yes" vs "No"
+
+<br>
+
+## 2. An Ordinal Instrument
+- Responses: "None", "Low", "Medium" and "High"
+]]
+
+???
 
 Ok, groups, time for the instrumentation stage.
 
-+ Take a few minutes to think about how your definition of political violence can be measured.
+- Take some time to instrument your operationalization of "political violence."
 
-+ In other words, how will use your definition to measure the amount of political violence in a real-world case?
-
-+ What steps and/or categories would you need?
+- In a few minutes we will test your instruments out!
 
 <br>
-
-In a few minutes we will test your choices out!
-
-+ I will present you a series of cases I want you to code using your instrumentation of your political violence definition.
-
-<br>
-
-So, select one of these options on the slide and clarify how you will apply it to a real-world case.
 
 ### Questions?
 
-#### Submit a description of your instrument on our shared class spreadhseet (I'll add a new column)
-
-Go!
+- Upload your instruments on on the spreadsheet
 
 <br>
 
-### Groups, tell us briefly which option you chose and why.
+### Groups, talk us through your instruments.
 
-#### - What are the biggest sources of error in your chosen instrument?
+### - What are the biggest sources of error in your instruments?
 
 <br>
 
@@ -306,7 +389,7 @@ Ok, let's test out what you've built.
 
 + I'm going to present you with a series of cases.
 
-+ I want you to measure each case using your instrument.
++ I want you to measure each case using your instruments.
 
 + You will add your measurement to our spreadsheet.
 
@@ -441,7 +524,7 @@ background-size: 100%
 background-position: center
 class: middle
 
-.center[.size40[**Clarifying the Political Violence Variable**]]
+.center[.size60[.content-box-white[**Measuring "Political Violence"**]]]
 
 .pull-left[
 .size40[
@@ -472,18 +555,17 @@ class: middle
 
 ???
 
-### Ok, how did that go?
-#### Any big picture thoughts before we talk?
+### Ok, how did that go? Any big picture thoughts before we talk?
 
 <br>
 
 First, let's talk about your instruments.
 
-### Each Group: Focusing just on your measures, are you convinced your instrument is valid? Why or why not?
+### Groups: Focusing just on your measures, are you convinced your instrument is valid? Why or why not?
 
 <br>
 
-### Each Group: Focusing just on your measures, are you convinced your instrument is reliable? Why or why not?
+### Groups: Focusing just on your measures, are you convinced your instrument is reliable? Why or why not?
 
 <br>
 
@@ -499,32 +581,67 @@ Now let's talk about the cases.
 
 #### - Which cases led to the most conflicted measures? Make sense?
 
+
+
+
+---
+
+background-image: url('libs/Images/background-swirls.jpg')
+background-size: 100%
+background-position: center
+class: middle
+
+.center[.size60[.content-box-white[**Measuring "Political Violence"**]]]
+
+.pull-left[
+.size40[
+1. Concept
+
+2. Case studies 
+
+3. Operationalization 
+
+4. Instrumentation 
+
+5. Measurement
+]]
+
+.pull-right[
+.size35[
+**Cases**
+
+1. Soldiers end a protest
+2. Protestors riot
+3. Dictatorial control
+4. Industrial pollution
+5. Environmental standards
+6. The death penalty
+7. The income tax
+8. Disruptive, peaceful protests
+]]
+
+???
+
+Ok, big question.
+
+### Based on your work this week, is it possible to measure "political violence" without including error (uncertainty) in your conclusions?
+- (Nope, but we hope it can be minimized!)
+
 <br>
 
-### Bottom line, what have you learned about the concept "political violence" from our work this week?
-#### - What are the key takeaways so far?
+We cannot study any concept without introducing error.
+- It is a huge leap moving from concept to operationalization
+    - Forces you to make many assumptions.
+
+- It is a huge leap from operationalization to measurement.
+    - Many more assumptions and trade-offs in the process of designing an instrument.
 
 <br>
-
-### Is error during measurement avoidable?
-
-(Nope, but we hope it can be minimized!)
-
-+ We cannot study a concept without introducing error
-
-Huge leap moving from concept to definition.
-
-- Forces you to make many assumptions.
-
-Another leap moving from definition to measurement.
-
-- Many more assumptions.
 
 This means that the only way to learn something from someone else's work is think carefully about their process.
+- This is why peer-reviewed research is so valuable.
 
-This is why peer-reviewed research is so valuable.
-
-If the choices aren't transparent, the results are basically meaningless.
+- If the choices aren't transparent, the results are basically meaningless.
 
 ### Make sense?
 
@@ -532,11 +649,15 @@ If the choices aren't transparent, the results are basically meaningless.
 
 To me this means that anytime we hear someone making an argument about political violence they could almost certainly be operating from a different understanding of the concept than me.
 
-We'd better get good at identifying assumptions, AND Recognizing how those assumptions impact their conclusions.
+- We'd better get good at identifying assumptions, AND Recognizing how those assumptions impact their conclusions.
 
-Being a credible expert means identifying the assumptions and understanding the costs and benefits of each choice.
+- Being a credible expert means identifying the assumptions and understanding the costs and benefits of each choice.
 
 ### Make sense?
+
+<br>
+
+### Bottom line, what have you learned about the concept "political violence" from our work this week? What are the key takeaways so far?
 
 
 
@@ -548,48 +669,16 @@ background-size: 100%
 background-position: center
 class: middle
 
-.size60[**For Monday**]
+.size60[.content-box-white[**For Next Class**]]
 
-???
+.size55[
 
-Next week we shift from building our knowledge using a few cases to using a TON of cases by analyzing academic research projects that exist to measure political violence around the world.
-
-<br>
-
-To get started I'm going to have you do a task I might have asked you to do in one of my classes in the past.
-
-
---
-
-.size45[
-
-1. Read the coverage of three different countries in the 2022 Country Reports on Human Rights Practices (State Department) and Amnesty International's Annual Reports.
-
-2. Weber 2023
-
-3. Nagel, R. & Nordas, R. (2021, May 7). Report Back Better. *Foreign Policy*.
+Weber, M. (1946). Politics as Vocation. In H. H. Gerth & C. W. Mills (Eds.), *Max Weber: Essays in Sociology* (pp. 77–128). New York: Oxford University Press.
 
 ]
 
 ???
 
-<br>
-
-Many of the big political violence research projects use country reports from the US State Department and AI, so we should read some for ourselves to get a sense of what they do and don't do well.
-
-Links are in the syllabus.
-
-Each of you should select three countries and review their reports.
-
-Be ready to discuss the strengths and weaknesses of these as sources for measuring political violence around the world. 
-
-*Send email with Google doc link*
-
-You have to claim your three countries on our shared document, no overlap!
-
-<br>
-
-I also gave you a recent article from Foreign Policy that is all about the question of how valid and reliable these reports are.
 
 ### Questions?
 
