@@ -35,18 +35,16 @@ background-size: 100%
 background-position: center
 class: middle
 
-.size70[**Today's Agenda**]
+.center[.size35[**II. How and why do governments use violence against the people inside their borders?**]]
 
+<br>
 
-.size50[.center[
+.size50[
 
-The state IS violence 
+**Today's Agenda**
 
-OR 
-
-The state USES violence
-]]
-
+- Analyze Olson's (1993) Answer
+]
 
 <br>
 
@@ -63,55 +61,36 @@ The state USES violence
 
 Today we continue our discussion of the theoretical roots of violence and the state.
 
+<br>
+
+### How did German sociologist Max Weber answer this question?
+
+### - What were the key parts of his model of political violence by states?
+
+- (**SLIDE**)
+
+
+
+
 
 
 ---
 
-background-image: url('libs/Images/background-red.png')
+background-image: url('libs/Images/background-desert_rock-Filtered50.png')
 background-size: 100%
 background-position: center
-class: middle, center, inverse
+class: middle
 
-.size60[**What explains the variation in how and why states use violence against their citizens?**]
-
-???
-
-On Monday we started our work on this question:
-
-What explains the variation in how and why states use violence against their citizens?
-
---
-
-<br>
-
-.size50[
-Weber (1946) "Politics as Vocation"
-]
-
-???
-
-<br>
-
-### On Monday, how did German sociologist Max Weber answer this question?
-
-(SLIDE)
-
-
-
----
-
-class: middle, slidered
+.size50[.content-box-grey[**Weber's (1918/1946) Model**]]
 
 .size45[
-**Weber: The Modern State IS violence**
+- Politicians want to .textred[**expropriate**] value and increase their .textred[**power**]
 
-+ A .textred[**compulsory**] association
+- The state .textred[**monopolizes**] the .textred[**legitimate use of force**]
 
-+ Organizes .textred[**domination**] within a territory
+- To maintain control, leaders must ensure mass .textred[**obedience**] from the people and the administrative state
 
-+ .textred[**Monopolizes**] the .textred[**legitimate use of force**]
-
-+ Mass .textred[**obedience**] required
+Therefore, the state is a .textred[**compulsory**] association of organized .textred[**domination**]
 ]
 
 ???
@@ -130,39 +109,37 @@ This means thinking of violence as a tool somewhat misses the point.
 
 <br>
 
-The problem is that this model predicts violence in basically every circumstance.
+The problem is that this model predicts violence (expropriation or physical harm) in basically every circumstance.
 
-While the model may be simple, intuitive and somewhat elegant, it's quite limited for explaining actual variation in the world.
+- While the model may be simple, intuitive and somewhat elegant, it's quite limited for explaining actual variation in the world.
 
 
 ---
 
-background-image: url('libs/Images/background-red.png')
+background-image: url('libs/Images/background-red_flipped.png')
 background-size: 100%
 background-position: center
 class: middle, center
 
-.size50[
-Olson, Mancur. (1993). Dictatorship, Democracy, and Development. *The American Political Science Review*. 87(3): 567–76.
-]
+.center[.size50[**II. How and why do governments use violence against the people inside their borders?**]]
 
 <br>
 
-.size60[
-**The state USES violence**
+.size50[
+Olson, Mancur. (1993). Dictatorship, Democracy, and Development. *The American Political Science Review*. 87(3): 567–76.
 ]
 
 ???
 
 The reading I gave you for today gives us an alternative model for thinking about politics, the state and violence.
 
-- Contra Weber, the state is not definitionally violence.
-
-Olson wants us to see the state as actors pursuing goals who can use violence to achieve their aims.
+- Contra Weber, the state is not, by definition, violence personified.
 
 <br>
 
-I feel strongly that this is an important evolution in explaining and understanding political violence.
+Olson wants us to see the leaders of states as actors pursuing goals who can use violence to achieve their aims.
+
+- I feel strongly that this is an important evolution in explaining and understanding political violence by governments.
 
 
 
@@ -175,17 +152,14 @@ background-position: center
 
 ???
 
-Quick aside.
+Quick aside: I love this article.
 
-I love this article.
+- This was one of those readings I did as a grad student that helped me immeasurably in helping me learn to think like a social scientist.
 
-This was one of those readings I did as a grad student that helped me immeasurably in helping me learn to think like a social scientist.
+- First, this was one of the first articles where I was really able to see the connection between theory and the world I live in.
 
-- It was one of the first times I was really able to see the connection between theory and the world I live in.
-
-Second, it helped me understand how limited my view of countries as discrete "types" of regime was.
-
-- Thinking of countries first as a regime type (e.g. Democracy or dictatorship) hides more important variation than it reveals
+- Second, it helped me understand how limited my view of countries as discrete "types" of regime was.
+    - Thinking of countries as a dichotomous regime type (e.g. Democracy or dictatorship) hides more important variation than it reveals
 
 <br>
 
@@ -193,21 +167,22 @@ Olson is challenging us to recognize that **ALL** governments aim to organize a 
 
 - They simply choose different policies and institutions to do it.
 
-### Cool, right?
-
 <br>
 
 ### Ok, where does Olson start? 
 
 #### - What is the key variation in the world he is trying to explain?
 
-(SLIDE)
+- (**SLIDE**)
 
 
 
 ---
 
 ```{r, fig.retina=3, fig.align='center', out.width='100%', fig.height=5, fig.width=8, cache=TRUE}
+## At some point you need to update this, try v-dem polyarchy measure
+
+
 ## Scatterplot regime type and economic development
 ## Super blunt force test
 
@@ -217,6 +192,13 @@ d1 <- read_excel("../../Data/Polity/p5v2018.xls", guess_max = 10000, na = ".") |
   select(country, ccode, year, democ, autoc, polity2)
 
 d2 <- read_excel("../../Data/WDI/WDI-GDP-2018_2021-11-30.xlsx", na = "NA")
+
+# # Focus on V-Dem electoral democracy index (polyarchy); it is foundational to all five of their indicies
+# d1 <- read_excel("../../Data/V-Dem/V-Dem-CY-Core_csv_v13/V_Dem_High_Level_Democracy_Indices.xlsx", na = "NA") |>
+#   filter(year == 2021) |>
+#   select(country_name:v2x_polyarchy)
+# 
+# d2 <- read_excel("../../Data/WDI/WDI-GDP-2021_2023-08-01.xlsx", na = "NA")
 
 ## Classify polity
 d1a <- d1 |>
@@ -272,7 +254,7 @@ d10 |>
 
 Economic development
 
-In other words, why are some states richer than others?
+- In other words, why are some states richer than others?
 
 <br>
 
@@ -290,9 +272,9 @@ Here we see a map of GDP per capita levels in 2018
 
 <br>
 
-### Ok now, and most relevant for our work this week, what is the key predictor olson is focusing on to explain these differences?
+### Ok now, and most relevant for our work this week, what is the key predictor Olson is focusing on to explain these differences?
 
-(SLIDE)
+(**SLIDE**)
 
 
 
@@ -362,7 +344,7 @@ p1 +
 
 #### - Any evident relationship between regime type and economic development?
 
-(SLIDE)
+(**SLIDE**)
 
 
 ---
@@ -382,7 +364,7 @@ p1 +
 
 It appears from this that the richest states in the world are either very democratic or very autocratic.
 
-It's the middle ground where the poorest countries seem to congregate.
+- It's the middle ground where the poorest countries seem to congregate.
 
 <br>
 
@@ -390,7 +372,7 @@ This is the observation that helps to drive home Olson's theoretical argument AN
 
 ### Somebody take a stab, how does this plot connect olson's paper on economic development to our work on political violence?
 
-(SLIDE)
+(**SLIDE**)
 
 
 
@@ -399,7 +381,9 @@ This is the observation that helps to drive home Olson's theoretical argument AN
 background-image: url('libs/Images/05_2-soldier_flower_afghan_girl.webp')
 background-size: 100%
 background-position: center
-class: middle
+class: top, center
+
+.size45[.content-box-white[**The state can organize violence to productive ends**]]
 
 ???
 
@@ -414,7 +398,7 @@ Per Olson, the state has a monopoly on violence because we need it to.
 
 ---
 
-background-image: url('libs/Images/background-red.png')
+background-image: url('libs/Images/background-red_flipped.png')
 background-size: 100%
 background-position: center
 class: middle
@@ -422,95 +406,242 @@ class: middle
 .size50[.center[**Olson (1993) "Dictatorship, Democracy, and Development"**]]
 
 .size40[
-1. **The Intro**
-2. .textgrey[The First Blessing of the Invisible Hand]
-3. .textgrey[The Grasping Hand]
-4. .textgrey[The Reach of Dictatorships and Democracies Compared]
-5. .textgrey[Long Live the King]
-6. .textgrey[Democracy, Individual Rights and Economic Development]
-7. .textgrey[The Improbable Transition]
+1. The Intro
+2. The First Blessing of the Invisible Hand
+3. The Grasping Hand
+4. The Reach of Dictatorships and Democracies Compared
+5. Long Live the King
+6. Democracy, Individual Rights and Economic Development
+7. The Improbable Transition
 ]
 
 ???
 
-Let's work to clarify Olson's model of state politics
+Let's try to identify Olson's model of how and why governments use political violence internally
 
 - And if, by the end, we feel better about human nature and society, all the better.
 
-Each section is making part of the argument, let's unpack each one in an effort to diagram the overarching model
+- Each section makes part of the argument, so let's unpack each one in an effort to diagram the overarching model
 
 <br>
 
-Focus first on the intro section.
+As we work through the paper, let's try to diagram Olson's argument in terms of the interests, institutions and interactions at play.
 
-I think this is a direct response to Weber's view of human nature and the necessity of violence.
-
-### What is Olson's response to Weber?
-
-#### - We don't need to assume human nature is bad, do we?
 
 
 
 ---
 
-background-image: url('libs/Images/05-2-group_sizes.webp')
+background-image: url('libs/Images/background-red_flipped.png')
 background-size: 100%
 background-position: center
-class: inverse
+class: middle
 
-.size50[**Large groups are harder to manage!**]
+.size35[.center[.content-box-white[**The Introduction (Olson 1993, p567-568)**]]]
+
+.size35[
+**Interests**
+- ?
+
+**Institutions**
+- ?
+
+**Interactions**
+- ?
+]
 
 ???
 
-Violence is not because people are bad, it's because big groups are harder to manage!
+Focus first on the introduction of the paper
 
-- Not about bad motives, lack of trustworthiness
+- I think the ideas in the introduction are a direct response to Weber's model of state political violence.
 
 <br>
 
-Small groups can provide peaceful order by voluntary agreement because 
+Let's step through diagramming the introduction together.
 
-1. each obtains a gain large enough to make providing the whole good worth it, 
+<br>
+
+Weber starts his model focused on leaders and politicians as grasping, power-hungry takers from society.
+
+### Who does Olson focus on as the key interests in this section?
+- (**SLIDE**)
+
+
+
+---
+
+background-image: url('libs/Images/background-red_flipped.png')
+background-size: 100%
+background-position: center
+class: middle
+
+.size35[.center[.content-box-white[**The Introduction (Olson 1993, p567-568)**]]]
+
+.size35[
+**Interests**
+- Individuals want peaceful order and public goods
+
+**Institutions**
+- ?
+
+**Interactions**
+- ?
+]
+
+???
+
+Olson appears to be beginning his argument about the state, violence, and economic development from the bottom-up.
+
+- In a sense, the people are the foundation of the society.
+
+<br>
+
+### What are public goods? Examples?
+- (Technically: Non-rival and non-excludable goods)
+- Ex: Security (national defense), city lights, clean air, roads, etc.
+
+<br>
+
+### What are the operating institutions in the introduction section?
+- (**SLIDE**)
+
+
+
+---
+
+background-image: url('libs/Images/background-red_flipped.png')
+background-size: 100%
+background-position: center
+class: middle
+
+.size35[.center[.content-box-white[**The Introduction (Olson 1993, p567-568)**]]]
+
+.size35[
+**Interests**
+- Individuals want peaceful order and public goods
+
+**Institutions**
+- Anarchy
+
+**Interactions**
+- ?
+]
+
+???
+
+Arguably, there aren't any.
+
+- This section lays out the challenges that face a society of individuals living in the absence of an imposed structure.
+
+<br>
+
+### Ok then, why can't the individuals get what they want in this scenario (interactions)?
+
+### - Per Weber, is it because we are hungry for power?
+- (**SLIDE**)
+
+
+
+
+---
+
+background-image: url('libs/Images/background-red_flipped.png')
+background-size: 100%
+background-position: center
+class: middle
+
+.size35[.center[.content-box-white[**The Introduction (Olson 1993, p567-568)**]]]
+
+.size35[
+**Interests**
+- Individuals want peaceful order and public goods
+
+**Institutions**
+- Anarchy
+
+**Interactions**
+- Group size matters for "success"
+    - Small groups = voluntary agreements
+    - Large groups = must be compelled to contribute
+]
+
+???
+
+Remember that "success" here is defined by what the interests want
+- e.g. providing peaceful order and public goods
+
+<br>
+
+Explain these interactions to me.
+
+### Why can small groups use voluntary agreements to get what they want?
+- (Small groups can provide peaceful order by voluntary agreement because )
+1. each individual obtains a gain large enough to make providing the whole good worth it, 
 
 2. threats of non-cooperation as punishment for bad actions effective.
 
 <br>
 
-Voluntary action insufficient in large groups because the individual's benefit from maintaining the peace is tiny (total / population) but they bear the whole cost of their efforts to achieve it.
+### Why can't large groups use voluntary agreements to get what they want?
+- In the absence of institutions violence is not because people are bad, it's because big groups are harder to manage!
+    - Not about bad motives or a lack of trustworthiness
 
-### Make sense?
+- Large groups cannot rely on voluntary action because the individual's benefit from maintaining the peace is tiny (total / population) but they bear the whole cost of their efforts to achieve it.
+
+<br>
+
+This represents the baseline problem faced by all societies according to Olson
+
+- We don't have to make any assumptions about human nature to explain these problems
+
+- Small societies can thrive without centralized domination, BUT large societies tend to under-provide public goods
+
+- **SLIDE**: And how have communities solved this problem throughout history?
+
+<br>
+
+#### Reading Notes - INTRO
+- Poor villager quote: "Monarchy is the best kind of government because the King is then owner of the country. Like the owner of a house, when the wiring is wrong, he fixes it" (26).
+- "...no society can work satisfactorily if it does not have a peaceful order and usually other public goods as well (567)."
+- "...the victims of violence and theft lose not only what is taken from them but also the incentive to produce any goods that would be taken by others" (567).
+- Small groups can provide peaceful order by voluntary agreement because 1. each obtains a gain large enough to make providing the whole good worth it, 2. threats of non-cooperation as punishment for bad actions effective.
+- Voluntary action insufficient in large groups because the individual's benefit from maintaining the peace is tiny (total / population) but they bear the whole cost of their efforts to achieve it.
 
 
 
 
 ---
 
-background-image: url('libs/Images/background-red.png')
+background-image: url('libs/Images/background-red_flipped.png')
 background-size: 100%
 background-position: center
 class: middle
 
-.size50[.center[**Olson (1993) "Dictatorship, Democracy, and Development"**]]
+.size35[.center[.content-box-white[**The First Blessing of the Invisible Hand (Olson 1993)**]]]
 
-.size40[
-1. .textgrey[The Intro]
-2. **The First Blessing of the Invisible Hand**
-3. .textgrey[The Grasping Hand]
-4. .textgrey[The Reach of Dictatorships and Democracies Compared]
-5. .textgrey[Long Live the King]
-6. .textgrey[Democracy, Individual Rights and Economic Development]
-7. .textgrey[The Improbable Transition]
+.size35[
+**Interests**
+- Individuals want peaceful order and public goods
+
+**Institutions**
+- Anarchy
+
+**Interactions**
+- Group size matters for "success"
+    - Small groups = voluntary agreements
+    - Large groups = must be compelled to contribute
 ]
 
 ???
 
-### How does Olson develop his argument in the second section?
+### What from Section 2 gets added or changed in the model diagram?
+
+- Talk in pairs for a sec and then get ready to report back!
 
 <br>
 
-### Why should villagers prefer domination by a local warlord to occasional attacks by roving bandits?
-
-*Encourage Discussion*
+**SLIDE**: Before the diagram, let's talk through the story in Section 2.
 
 
 
@@ -522,52 +653,71 @@ background-position: center
 
 ???
 
+### According to Olson, why should I, the leader of a band of roving bandits prefer to give up my wandering days and instead take over your village as its king?
+- (Profit-maximization!)
+
+<br>
+
 The rational, self-interested leader of a band of roving bandits is led, as though by an invisible hand, to settle down, wear a crown, and replace anarchy with government.
 
-- It doesn't matter how bloodthirsty the bandit, profit is maximized by becoming my protector!
+- It doesn't matter how bloodthirsty the bandit, profit is maximized by becoming its protector!
 
 - If you maintain monopoly on theft in your domain and apply regular taxes that only claim part of villager income, the villagers keep their incentive to keep producing! 
 
-<br>
-
-**A less than total claim on a growing economy makes you richer than taking so much it leaves no incentive for villagers to produce.**
+- **A less than total claim on a growing economy makes you richer than taking so much it leaves no incentive for villagers to produce.**
 
 <br>
 
-So, Olson argues you, as the bandit, will protect me from harm just to make yourself better off.
-
-### However, why should that logic extend to providing me public goods?
+### Ok, I get that the bandit king will protect me, but why should he provide me with public goods?
 
 #### - In other words, I get that you won't steal everything, but why would you also work to provide me benefits?
 
-(SLIDE: Illustration)
+- (**SLIDE**: Illustration)
 
 
 ---
 
-background-image: url('libs/Images/05_2-Autocrat_Public_Goods1.png')
+background-image: url('libs/Images/03_2-Viking_Raid.jpg')
 background-size: 100%
 background-position: center
+class: slidered
 
 ???
 
-Imagine you are the local dictator.
+Imagine you are the bandit king
+
+- Other roving bandits keep attacking your new kingdom stealing stuff, destroying resources and killing the people
+
+- They are ruining your good thing!
+
+--
+
+```{r, echo = FALSE, fig.align = 'right', out.width = '45%'}
+knitr::include_graphics("libs/Images/03_2-motte_bailey.webp")
+```
+
+???
+
+<br>
 
 The decision to install a wall around your village is an easy one even if the initial cost is high.
 
-In the wall-less scenario:
-- There are constant threats to your control by outside groups
-- The villagers have zero incentive to invest heavily in the future
+- In short, you provide a very expensive public good BECAUSE your return on investment is massive
 
-So, you spend the money on the wall because the return to your investment is massive.
+- No fear of constant death, more productive village!
+
+<br>
+
+### Make sense?
 
 
 
 ---
 
-background-image: url('libs/Images/05_2-Autocrat_Public_Goods3.png')
+background-image: url('libs/Images/03_2-ancient_irrigation.jpg')
 background-size: 100%
 background-position: center
+class: slidered
 
 ???
 
@@ -575,43 +725,119 @@ The decision to build extensive irrigation systems can also be seen through this
 
 - Farm productivity explodes if irrigation not done by hand anymore.
 
-- Again, you reap a huge benefit beyond the large cost of the intial investment.
+- Again, the warlord reaps a huge benefit well beyond the large cost of the initial investment.
 
 <br>
 
-### QUOTE (if needed)
-+ "The larger or more encompassing the stake an organization or individual has in a society, the greater the incentive the organization or individual has to take action to provide public goods for the society. If an autocrat received one-third of any increase in the income of his domain in increased tax collections, he would then get one-third of the benefits of the public goods he provided. He would then have an incentive to provide public goods up to the point where the national income rose by the reciprocal of one-third, or three, from his last unit of public good expenditure" (569).
+So, even totalitarian monsters have a strong incentive to provide public goods!
+
 
 
 
 ---
 
-background-image: url('libs/Images/background-red.png')
+background-image: url('libs/Images/background-red_flipped.png')
 background-size: 100%
 background-position: center
 class: middle
 
-.size50[.center[**Olson (1993) "Dictatorship, Democracy, and Development"**]]
+.size35[.center[.content-box-white[**The First Blessing of the Invisible Hand (Olson 1993)**]]]
 
-.size40[
-1. .textgrey[The Intro]
-2. .textgrey[The First Blessing of the Invisible Hand]
-3. **The Grasping Hand**
-4. .textgrey[The Reach of Dictatorships and Democracies Compared]
-5. .textgrey[Long Live the King]
-6. .textgrey[Democracy, Individual Rights and Economic Development]
-7. .textgrey[The Improbable Transition]
+.size35[
+**Interests**
+- Individuals want peaceful order and public goods
+
+**Institutions**
+- Anarchy
+
+**Interactions**
+- Group size matters for "success"
+    - Small groups = voluntary agreements
+    - Large groups = must be compelled to contribute
 ]
 
 ???
 
-Ok, now jump to the next section, "The grasping hand."
+### Ok, so, what tweaks do we make to our diagram for this section?
 
-### How does the argument in this section show the limit of dictatorships and public goods provision?
+- New Actor: Warlord wants profit-maximization
+- Updated institutions: Anarchy replaced by rules of warlord
+- Updated Interactions: Large group problems taken care of by warlord; guarantees safety, but compels contribution
 
-#### - It's not all good selecting a stationary bandit if you're one of the farmers, right?
+<br>
 
-(SLIDE)
+(**SLIDE**: New diagram)
+
+
+
+
+---
+
+background-image: url('libs/Images/background-red_flipped.png')
+background-size: 100%
+background-position: center
+class: middle
+
+.size35[.center[.content-box-white[**The First Blessing of the Invisible Hand (Olson 1993)**]]]
+
+.size35[
+**Interests**
+- Individuals -> peaceful order and public goods
+- .textred[Warlord -> profit-maximization]
+
+**Institutions**
+- <s>Anarchy</s>.textred[Warlord's rules (obey and pay taxes)]
+
+**Interactions**
+- .textred[Warlord guarantees safety, but compels contributions (regardless of group size)]
+]
+
+???
+
+### Ok, how's everybody doing? Making sense?
+
+<br>
+
+#### Reading Notes - THE FIRST BLESSING OF THE INVISIBLE HAND
+- The puzzle: Why should warlords, who were stationary bandits continuously stealing from a given group of victims, be preferred, by those victims, to roving bandits who soon departed? Isn't the risk of occasional plunder preferable to continuous, illegitimate taxation?
+- Logic of the stationary bandit: If you maintain monopoly on theft in your domain and apply regular taxes that only claim part of villager income, the villagers left with incentive to keep producing! A less than total claim on a growing economy makes you richer than taking so much it leaves no incentive for villagers to produce.
+- "Thus we have "the first blessing of the invisible hand": the rational, self-interested leader of a band of roving bandits is led, as though by an invisible hand, to settle down, wear a crown, and replace anarchy with government. The gigantic increase in output that normally arises from the provision of a peaceful order and other public goods gives the stationary bandit a far larger take than he could obtain without providing government" (568).
+- "Thus government for groups larger than tribes normally arises, not because of social contracts or voluntary transactions of any kind, but rather because of rational self-interest among those who can organize the greatest capacity for violence" (568).
+- "The larger or more encompassing the stake an organization or individual has in a society, the greater the incentive the organization or individual has to take action to provide public goods for the society. If an autocrat received one-third of any increase in the income of his domain in increased tax collections, he would then get one-third of the benefits of the public goods he provided. He would then have an incentive to provide public goods up to the point where the national income rose by the reciprocal of one-third, or three, from his last unit of public good expenditure" (569).
+
+
+
+
+---
+
+background-image: url('libs/Images/background-red_flipped.png')
+background-size: 100%
+background-position: center
+class: middle
+
+.size35[.center[.content-box-white[**The Grasping Hand (Olson 1993)**]]]
+
+.size35[
+**Interests**
+- Individuals -> peaceful order and public goods
+- Warlord -> profit-maximization
+
+**Institutions**
+- Warlord's rules (obey and pay taxes)
+
+**Interactions**
+- Warlord guarantees safety, but compels contributions (regardless of group size)
+]
+
+???
+
+### What from Section 3 gets added or changed in the model diagram?
+
+- Talk in pairs for a sec and then get ready to report back!
+
+<br>
+
+**SLIDE**: Before the diagram, let's talk through the story in Section 3.
 
 
 
@@ -624,11 +850,11 @@ background-position: center
 
 ???
 
-The danger is that you, the dictator, will stop investing when the return doesn't far exceed the cost of the investment.
+### Explain the cattle analogy to me and why this is a bad thing if you're one of the villagers.
 
-- Even if an investment would make the lives of your people better.
+- The stationary bandit should only invest in in public goods when the returns are MASSIVE
 
-- If production remains the same after the investment, then the stationary bandit shouldn't invest.
+- Public goods that improve the lives of your people but without large economic returns will be ignored
 
 - "Thus he is not like the wolf that preys on the elk, but more like the rancher who makes sure that his cattle are protected and given water" (569).
 
@@ -636,38 +862,90 @@ The danger is that you, the dictator, will stop investing when the return doesn'
 
 This device pictured on the slide makes it easy for the cows to get their own water, now they just have to learn to take turns.
 
-**BUT** I'm not paying for a second pump just to speed the process if the cows don't absoltuely need it.
+- **BUT** I'm not paying for a second pump just to speed the process if the cows don't absolutely need it.
 
 <br>
 
 In the language of the article, Olson argues the dictator will set a revenue-maximizing tax rate.
 
 ### What does that mean in English?
-
-(SLIDE)
-
-
----
-
-background-image: url('libs/Images/05_2-Autocrat_Public_Goods4.png')
-background-size: 100%
-background-position: center
-
-???
-
-(He is going to take every spare coin you earn)
-
-- Anything that doesn't keep you productive goes in his pocket.
+- (He is going to take every spare coin you earn)
+    - Anything that doesn't keep you productive goes in his pocket.
 
 <br>
 
 "Though the subjects of the autocrat are better off than they would be under anarchy, they must endure taxes or other impositions so high that, if they were increased further, income would fall by so much that even the autocrat, who absorbs only a portion of the fall in income in the form of lower tax collections, would be worse off" (570).
 
-<br>
+
+
+
+---
+
+background-image: url('libs/Images/background-red_flipped.png')
+background-size: 100%
+background-position: center
+class: middle
+
+.size35[.center[.content-box-white[**The Grasping Hand (Olson 1993)**]]]
+
+.size35[
+**Interests**
+- Individuals -> peaceful order and public goods
+- Warlord -> profit-maximization
+
+**Institutions**
+- Warlord's rules (obey and pay taxes)
+
+**Interactions**
+- Warlord guarantees safety, but compels contributions (regardless of group size)
+]
+
+???
+
+### Ok, what tweaks do we need to our diagram?
+
+
+
+
+
+---
+
+background-image: url('libs/Images/background-red_flipped.png')
+background-size: 100%
+background-position: center
+class: middle
+
+.size35[.center[.content-box-white[**The Grasping Hand (Olson 1993)**]]]
+
+.size35[
+**Interests**
+- Individuals -> peaceful order and public goods
+- Warlord -> profit-maximization
+
+**Institutions**
+- Warlord's rules (obey and pay taxes)
+
+**Interactions**
+- Warlord guarantees safety, but compels contributions .textred[and sets a revenue-maximizing tax rate]
+]
+
+???
 
 ### Make sense?
 
+<br>
+
 Here we see Olson start to draw out the distinction between the regime types.
+
+- **SLIDE**: And in the next section this regime type analysis is made more explicit.
+
+<br>
+
+#### Reading Notes - THE GRASPING HAND
+- All is not peachy keen, however: "In other words, the autocratic ruler has an incentive to extract the maximum possible surplus from the whole society and to use it for his own purposes" (569).
+- "Thus he is not like the wolf that preys on the elk, but more like the rancher who makes sure that his cattle are protected and given water" (569).
+- The rational self-interested autocrat chooses the revenue-maximizing tax rate" (570).
+- "Though the subjects of the autocrat are better off than they would be under anarchy, they must endure taxes or other impositions so high that, if they were increased further, income would fall by so much that even the autocrat, who absorbs only a portion of the fall in income in the form of lower tax collections, would be worse off" (570).
 
 
 
@@ -692,11 +970,15 @@ Let's go back to our data.
 
 <br>
 
-1) Wealth is highest at the ends because safety is being actively provided.
+Assuming all of these dots, as countries, represent large societies we should expect they each have trouble providing peace and public goods in anarchy.
 
-- At both ends, the state uses violence to ensure production is protected and incentivized.
+- However, at each end of the spectrum, where government is most reified and operational, contributions are compelled and growth is more likely!
 
-And... SLIDE
+- In other words, "wealth" is highest at the ends because safety is being actively provided and contributions are being extracted.
+
+<br>
+
+**SLIDE**: Interestingly...
 
 
 
@@ -709,8 +991,10 @@ p1 +
   geom_point() +
   annotate("text", x = -8, y = 250, label = "Autocracy", color = "red") +
   annotate("text", x = 8, y = 250, label = "Democracy", color = "blue") +
-  geom_smooth(data = subset(d, polity2 < 0), color = "red") +
-  geom_smooth(data = subset(d, polity2 > 0), color = "blue")
+  annotate("segment", x = -10, xend = -6, y = mean(d$gdp_pc[d$polity_cat == "Autocracy"], na.rm = TRUE), yend = mean(d$gdp_pc[d$polity_cat == "Autocracy"], na.rm = TRUE), color = "red", size = 2.5) +
+  annotate("text", x = -4.5, y = 17000, label = "$16.6k", size = 5, color = "red") +
+  annotate("segment", x = 10, xend = 6, y = mean(d$gdp_pc[d$polity_cat == "Democracy"], na.rm = TRUE), yend = mean(d$gdp_pc[d$polity_cat == "Democracy"], na.rm = TRUE), color = "blue", size = 2.5) +
+  annotate("text", x = 4.5, y = 24000, label = "$24.0k", size = 5, color = "blue")
 ```
 
 ???
@@ -740,6 +1024,7 @@ Reducing tax rates at the very high end (where the stationary bandit places it) 
 
 
 
+
 ---
 
 background-image: url('libs/Images/05-2-gerrymandering.png')
@@ -764,30 +1049,99 @@ Hot damn!
 
 
 
+
 ---
 
-background-image: url('libs/Images/background-red.png')
+background-image: url('libs/Images/background-red_flipped.png')
 background-size: 100%
 background-position: center
 class: middle
 
-.size50[.center[**Olson (1993) "Dictatorship, Democracy, and Development"**]]
+.size35[.center[.content-box-white[**The Reach of Dictatorships and Democracies Compared**]]]
 
-.size40[
-1. .textgrey[The Intro]
-2. .textgrey[The First Blessing of the Invisible Hand]
-3. .textgrey[The Grasping Hand]
-4. .textgrey[The Reach of Dictatorships and Democracies Compared]
-5. **Long Live the King**
-6. **Democracy, Individual Rights and Economic Development**
-7. .textgrey[The Improbable Transition]
+.size35[
+**Interests**
+- Individuals -> peaceful order and public goods
+- Warlord -> profit-maximization
+
+**Institutions**
+- Warlord's rules (obey and pay taxes)
+
+**Interactions**
+- Warlord guarantees safety, but compels contributions and sets a revenue-maximizing tax rate
 ]
 
 ???
 
-Sections five and six introduce the importance of time to this model.
+Ok, next step in the argument.
 
-### What are the key elements dictators must provide to ensure sustained growth?
+### What needs to change here?
+
+
+
+
+---
+
+background-image: url('libs/Images/background-red_flipped.png')
+background-size: 100%
+background-position: center
+class: middle
+
+.size35[
+**Interests**
+- Individuals -> peaceful order and public goods
+- <s>Warlord</s> .textred[Leader] -> profit-maximization
+
+**Institutions**
+- <s>Warlord's rules (obey and pay taxes)</s> .textred[Government sets tax rates and provides goods]
+
+**Interactions**
+- <s>Warlord</s> .textred[Dictators provide safety and some public goods but at very high costs (revenue-maximizing tax rate)]
+- .textred[Democratic governments provide safety and more public goods at lower tax rates (depending on size of population represented)]
+]
+
+???
+
+### Make sense?
+
+<br>
+
+#### Reading Notes - THE REACH OF DICTATORSHIPS AND DEMOCRACIES COMPARED
+- Compares situation to a two party democracy.
+- Incumbents like to run on a "you-never-had-it-so-good" record and this would be impossible if you claim all the net surplus from society.
+- Only need to "buy" a majority, so the leader IS a majority.
+- The majority has two paths to profit: 1. taxing society AND 2. growing the economy because it captures some proportion of that income as representing a sizable group of people in the economy.
+- "But a majority at the revenue-maximizing tax rate is bound to increase its income from a reduction in tax rates: when the national income goes up, it not only, like the autocrat, collects taxes on a larger national income but also earns more income in the market. So the optimal tax rate for it is bound to be lower than the autocrat's" (570).
+- HOWEVER, the narrower the interest you represent in society (e.g. small party in PR system) the less of the national income you capture in the economy and the more you will rely on targeted taxes. "Thus the more encompassing an interest-the larger the share of the national income it receives taking all sources together-the less the social losses from its redistributions to itself. Conversely, the narrower the interest, the less it will take account of the social costs of redistributions to itself" (571).
+
+
+
+
+---
+
+background-image: url('libs/Images/background-red_flipped.png')
+background-size: 100%
+background-position: center
+class: middle
+
+.size35[
+**Interests**
+- Individuals -> peaceful order and public goods
+- Leader -> profit-maximization
+
+**Institutions**
+- Government sets tax rates and provides goods
+
+**Interactions**
+- Dictators provide safety and some public goods but at very high costs (revenue-maximizing tax rate)
+- Democratic governments provide safety and more public goods at lower tax rates (depending on size of population represented)
+]
+
+???
+
+The next two sections of the paper, **Long Live the King** and **Democracy, Individual Rights and Economic Development**, introduce the challenges of time for each regime type.
+
+### What are the key elements dictators must provide to ensure sustained growth over time?
 
 <br>
 
@@ -805,7 +1159,8 @@ Dictators must assure citizens he:
 
 #### - Shouldn't it be easier for democracies to foster growth?
 
-(SLIDE)
+- (**SLIDE**)
+
 
 
 
@@ -819,32 +1174,136 @@ background-position: center
 
 No!
 
-Democracies must do all three AND provide some guarantee against the state, the most powerful actor in the system.
+- Democracies must do all three AND provide some guarantee against the state, the most powerful actor in the system.
+
+<br>
 
 Remember the poor villager's quote:
 
 - "Monarchy is the best kind of government because the King is then owner of the country. Like the owner of a house, when the wiring is wrong, he fixes it" (26).
 
-In a democracy everybody owns the house together, so nobody owns it...
+- In a democracy everybody owns the house together, so nobody owns it...
 
-- The majority may prioritize fixing only their part of it.
+- Free-riding is rampant
 
-- Or might decide to actively take away the stuff of the minority for their own gain.
-
-<br>
-
-"An economy will be able to reap all potential gains from investment and from long-term transactions only if it has a government that is believed to be both strong enough to last and inhibited from violating individual rights to property and rights to contract enforcement (572).
 
 
 
 ---
 
-background-image: url('libs/Images/background-red.png')
+background-image: url('libs/Images/03_2-election-partisanship-fb.jpg')
 background-size: 100%
 background-position: center
-class: middle, center, inverse
 
-.size60[**What explains the variation in how and why states use violence against their citizens?**]
+???
+
+In addition, some electoral rules in democracies incentivize polarization!
+
+- The majority may prioritize protecting and providing benefits to only the groups they represent,
+
+- Or they might decide to actively take away the stuff of the minority for their own gain.
+
+
+
+
+---
+
+background-image: url('libs/Images/background-red_flipped.png')
+background-size: 100%
+background-position: center
+class: middle
+
+.size35[
+**Interests**
+- Individuals -> peaceful order and public goods
+- Leader -> profit-maximization
+
+**Institutions**
+- Government sets tax rates and provides goods
+
+**Interactions**
+- Dictators provide safety and some public goods but at very high costs (revenue-maximizing tax rate)
+- Democratic governments provide safety and more public goods at lower tax rates (depending on size of population represented)
+]
+
+???
+
+### Final tweaks to the model?
+
+
+
+---
+
+background-image: url('libs/Images/background-red_flipped.png')
+background-size: 100%
+background-position: center
+class: middle
+
+.size35[
+**Interests**
+- Individuals -> peaceful order and public goods
+- Leader -> profit-maximization
+
+**Institutions**
+- Government sets tax rates and provides goods
+
+**Interactions**
+- Dictators provide public goods at very high costs .textred[if time horizons are long]
+- Democratic governments provide public goods at lower cost .textred[so long as they represent more of the population]
+]
+
+???
+
+### Make sense?
+
+
+<br>
+
+#### Reading Notes - LONG LIVE THE KING
+- Maximizing economic growth requires assuring citizens the autocrat:
+1. Has a long time-horizon e.g. a promise citizens that they will be protected from theft now AND from him in the future (expropriation).
+2. Will enforce contracts
+3. will ensure a stable currency
+- However, these promises lack credibility and an autocrat fearing for the future may not intend to maintain any of these things indefinitely.
+- "Many autocrats, at least at times, have had short time horizons: the examples of confiscations, repudiated loans, debased coinages, and inflated currencies perpetrated by monarchs and dictators over the course of history are almost beyond counting" (571).
+- Therefore, societies better off if dictator is concerned about his dynasty. "If the king anticipates and values dynastic succession, that further lengthens the planning horizon and is good for his subjects" (571).
+
+#### Reading Notes - DEMOCRACY, INDIVIDUAL RIGHTS AND ECONOMIC DEVELOPMENT
+- Maximizing economic growth requires all the things previously stated and some guarantee against the state, the most powerful actor in the system
+- "An economy will be able to reap all potential gains from investment and from long-term transactions only if it has a government that is believed to be both strong enough to last and inhibited from violating individual rights to property and rights to contract enforcement (572).
+- "Interestingly, the conditions that are needed to have the individual rights needed for maximum economic development are exactly the same conditions that are needed to have a lasting democracy" (572).
+- Even though democratic leaders can have short time horizons, successions are predictable and managed by rule of law. Democracy may be inefficient, but their citizens do make long-term future plans assuming the system will continue as-is.
+- The argument that capital should flow from the unstable to stable democracies.
+
+
+#### Reading Notes - THE IMPROBABLE TRANSITION
+- What special circumstances explain democracy rising out of autocracy?
+- Richer countries more likely to be democracies and democracies usually win against non-democracies, so change can be imposed.
+- "So the theory here predicts that democracy would be most likely to emerge spontaneously when the' individual or individuals or group leaders who orchestrated the overthrow of an autocracy could not establish another autocracy, much as they would gain from doing so" (573).
+- Why not form replace the big state with many small autocracies? 1. Groups could be scrambled together, no clearly defined and separate regions. 2. each may believe such a small unit would not be viable for long.
+- Just leaves power sharing
+- Democracy arising in 1689 England, glorious revolution: "None of the victorious leaders, groups, or tendencies was then strong enough to impose its will upon all of the others or to create a new autocracy. None had any incentive to give William and Mary the power to establish one either. The best option available to each of the leaders and groups with power was to agree upon the ascendancy of a Parliament that included them all and to take out some insurance against the power of the others through an independent judiciary and a Bill of Rights" (574).
+
+#### Reading Notes - THE DIFFERENT SOURCES OF PROGRESS IN AUTOCRACIES AND DEMOCRACIES
+- wrap-up
+
+
+
+
+---
+
+background-image: url('libs/Images/background-red_flipped.png')
+background-size: 100%
+background-position: center
+class: middle, center
+
+.center[.size50[**II. How and why do governments use violence against the people inside their borders?**]]
+
+<br>
+
+.size50[
+Olson, Mancur. (1993). Dictatorship, Democracy, and Development. *The American Political Science Review*. 87(3): 567–76.
+]
 
 ???
 
@@ -861,11 +1320,14 @@ class: middle, center, inverse
 
 Bottom line, the existence of state violence doesn't mean the state or the people are bad.
 
-We have to examine how the violence is used and for what aims in order to understand it.
+- We have to examine how the violence is used and for what aims in order to understand it.
+
+- "An economy will be able to reap all potential gains from investment and from long-term transactions only if it has a government that is believed to be both strong enough to last and inhibited from violating individual rights to property and rights to contract enforcement (572).
 
 <br>
 
 There's so much more to explore in this paper but there's no way we haven't run out of time!
+
 
 
 
@@ -880,14 +1342,17 @@ class: middle
 
 <br>
 
-.size35[
+```{r, echo = FALSE, fig.align = 'center', out.width = '100%'}
+knitr::include_graphics("libs/Images/03_2-Assign_for_Monday.png")
+```
+
+???
+
 Find us two real world examples of state governments using violence against the people inside their territory (the more recent the better). 
 - Find one example from a country you consider to be more "democratic" and one from a country you consider to be more "autocratic."
 
 - Your examples should be specific events (e.g. action X on date Y) rather than broad generalizations (country X harms group Y).
-]
 
-???
 
 For each case, submit an APA citation and brief explanation of what you selected and why. 
 
