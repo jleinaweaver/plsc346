@@ -12,7 +12,7 @@ Data, slides and errata for my class at Drury University (PLSC 346: Political Vi
 
 03-1-Weber1946.html
 
-03-2-Olson1993.html OR 03-2-Olson1993_v2.html
+03-2-Olson1993_v2.html
 
 04-1-Government_Violence_Cases.html
 

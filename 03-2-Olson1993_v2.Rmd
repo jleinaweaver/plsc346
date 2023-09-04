@@ -257,7 +257,7 @@ Economic development
 
 <br>
 
-Here we see a map of GDP per capita levels in 2018
+Here we see a map of GDP per capita levels in 2022 (most recently published by WB)
 
 - Data taken from the WB's WDI database
 
@@ -268,6 +268,10 @@ Here we see a map of GDP per capita levels in 2018
 <br>
 
 ### What do we learn from this map?
+
+<br>
+
+### Is this map's results consistent with your prior knowledge / intuitions about democracy around the world?
 
 <br>
 
@@ -282,25 +286,66 @@ Here we see a map of GDP per capita levels in 2018
 ```{r, fig.retina=3, fig.align='center', out.width='100%', fig.height=5, fig.width=8, cache=TRUE}
 # Map of polyarchy in 2022
 d10 |>
+  mutate(
+    poly4 = case_when(
+      v2x_polyarchy <= .25 ~ "0 - 25%",
+      v2x_polyarchy <= .5 ~ "26 - 50%",
+      v2x_polyarchy <= .75 ~ "51 - 75%",
+      v2x_polyarchy > .75 ~ "76 - 100%",
+    )
+  ) |>
   ggplot() +
-  geom_sf(aes(fill = polyarchy_cat)) +
+  geom_sf(aes(fill = poly4)) +
   labs(fill = "", title = "Polyarchy Scores (2022)",
        subtitle = "Degree of Electoral Democracy") +
   theme(legend.position = "bottom") +
-  scale_fill_manual(values = c("red", "orange", "skyblue3"))
+  scale_fill_manual(values = c("red", "orange", "skyblue3", "dodgerblue3"))
+  
+  
+# d10 |>
+#   ggplot() +
+#   geom_sf(aes(fill = v2x_polyarchy)) +
+#   labs(fill = "", title = "Polyarchy Scores (2022)",
+#        subtitle = "Degree of Electoral Democracy") +
+#   scale_fill_gradient(low = "white", high = "darkblue")
+
+# # Map of polyarchy in 2022 in three groups
+# d10 |>
+#   ggplot() +
+#   geom_sf(aes(fill = polyarchy_cat)) +
+#   labs(fill = "", title = "Polyarchy Scores (2022)",
+#        subtitle = "Degree of Electoral Democracy") +
+#   theme(legend.position = "bottom") +
+#   scale_fill_manual(values = c("red", "orange", "skyblue3"))
 ```
 
 ???
 
-Regime type
+Regime Type
+- Measuring "regime type" is incredibly difficult.
 
-Here we see a rough estimate of countries in 2018 by regime type using the Polity Project's data.
-
-We'll explore this project, and these specific classifications, more next week.
+- All the same challenges we encountered last week in operationalizing and instrumenting "political violence."
 
 <br>
 
+Here we see data compiled by the V-Dem Project that aims to measure the degree of electoral democracy present in each country.
+
+- Essentially this focuses on how well the rulers in a country are responsive to their citizens through electoral competition
+
+- Depends on things like:
+    - extensive suffrage,
+    - political and civil society organizations can operate freely
+    - elections are clean and not marred by fraud or systematic irregularities
+    - elections actually change who is in charge
+    - Between elections: freedom of expression and an independent media
+    
+<br>
+
 ### What do we learn from this map?
+
+<br>
+
+### Is this map's results consistent with your prior knowledge / intuitions about democracy around the world?
 
 <br>
 
@@ -326,16 +371,11 @@ Let's set up a scatter plot so we can see if any relationship appears evidence b
 
 
 
-
 ---
 
 ```{r, fig.retina=3, out.width='95%', fig.asp=0.618, cache=TRUE}
 p1 + 
-  annotate("rect", xmin=0, xmax=.25, ymin=0, ymax=1.7e5, fill = "pink", alpha = .5) +
-  annotate("rect", xmin=.75, xmax=1, ymin=0, ymax=1.7e5, fill = "lightblue", alpha = .5) +
-  geom_point() +
-  annotate("text", x = .125, y = 250, label = "Autocracy", color = "red") +
-  annotate("text", x = .87, y = 250, label = "Democracy", color = "blue")
+  geom_point()
 ```
 
 ???
@@ -344,7 +384,35 @@ p1 +
 
 #### - Any evident relationship between regime type and economic development?
 
-(**SLIDE**)
+<br>
+
+**SLIDE**: Let's add a trend line!
+
+
+
+---
+
+```{r, fig.retina=3, out.width='95%', fig.asp=0.618, cache=TRUE}
+p1 + 
+  geom_point() +
+  geom_smooth()
+```
+
+???
+
+Here we see a loess line applied to these data points
+- LOESS is locally weighted smoothing
+
+- In other words, allow the line to find the average of each couple of points
+
+- Allows the line to follow the pattern
+
+<br>
+
+### What does this suggest about the relationship between regime type and economic development?
+
+- (**SLIDE**: The extremes are richest!)
+
 
 
 ---
@@ -363,6 +431,12 @@ p1 +
 
 ???
 
+For sake of simplicity let's assume the very lowest scoring states here are dictatorships and the highest scoring are democracies
+
+- In between are what we might call anocracies, e.g. a "regime that mixes democratic with autocratic features"
+
+<br>
+
 It appears from this that the richest states in the world are either very democratic or very autocratic.
 
 - It's the middle ground where the poorest countries seem to congregate.
@@ -371,7 +445,7 @@ It appears from this that the richest states in the world are either very democr
 
 This is the observation that helps to drive home Olson's theoretical argument AND what connects his paper to our questions about violence.
 
-### Somebody take a stab, how does this plot connect olson's paper on economic development to our work on political violence?
+### Somebody take a stab, how does this plot connect Olson's paper on economic development to our work on political violence?
 
 (**SLIDE**)
 
