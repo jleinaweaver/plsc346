@@ -35,12 +35,13 @@ background-size: 100%
 background-position: center
 class: middle
 
-.size70[**Today's Agenda**]
+.center[.size35[**II. How and why do governments use violence against the people inside their borders?**]]
 
 <br>
 
 .size45[
-Measuring "Political Violence"
+
+**Today's Agenda**: Measuring "Political Violence"
 
 - US State Department Country Reports on Human Rights Practices
 ]
@@ -54,9 +55,39 @@ Measuring "Political Violence"
 ???
 
 ### Prep for Class
-1. ?
+1. Check Canvas submissions
 
 <br>
+
+**SLIDE**: Today we continue our work on the first paper...
+
+
+
+
+---
+
+background-image: url('libs/Images/background-blue_triangles2.png')
+background-size: 100%
+background-position: center
+class: middle
+
+.size40[.content-box-white[**Paper 1**]]
+
+.size35[
+If someone came to you with the goal of better understanding the use of political violence by governments around the world, which of the data sources that we explored in class would you recommend and why? 
+
+Your report should introduce each source to the reader with your analysis of its strengths and weaknesses. 
+
+Ultimately, your central argument should be a clear recommendation of which source(s) they should focus on.
+]
+
+???
+
+Just want to keep your eyes on the proverbial prize!
+
+<br>
+
+### Questions on the prompt?
 
 
 
@@ -67,11 +98,9 @@ background-size: 100%
 background-position: center
 class: middle
 
-.size45[**Paper 1**]
+.size50[.content-box-purple[**Sources of Political Violence Data**]]
 
-.size30[
-If someone came to you with the goal of better understanding the use of political violence by governments around the world, which of the data sources that we explored in class would you recommend and why?
-
+.size35[
 - **The US State Department's "Country Reports on Human Rights Practices"**
 
 - Amnesty International's "Annual Country Reports"
@@ -85,19 +114,20 @@ If someone came to you with the goal of better understanding the use of politica
 
 ???
 
-Your paper must make an affirmative argument for which sources to use and how best to use them. Any sources you choose to omit from your recommendation should be explained. 
-
-
-<br>
-
-Today we'll focus on the sources and then we'll shift to the projects themselves on Wednesday and Friday.
-
-With that in mind, please bring a laptop to class Wed and Fri so we can explore the data in class using Excel.
-- Let me know if you don't have a laptop you could bring to class.
+You'll be evaluating five different sources of data on political violence within countries.
 
 <br>
 
-In addition to all the important work we're doing to understand and measure political violence, it's also time to start working on your first assignment for this class.
+Today we'll focus on the widely read and debated reports from the US State Department.
+
+- Many of the quantitative projects out there use the data in these reports to build their own measures.
+    - For example, both PTS and CIRIGHTS use these reports
+
+- This makes our work today particularly important for ensuring you can deeply analyze those projects!
+
+<br>
+
+**SLIDE**: Evaluating data means thinking carefully about the challenges in measuring the empirical world.
 
 
 
@@ -108,33 +138,158 @@ background-size: 100%
 background-position: center
 class: middle
 
-.size50[**Measuring "Political Violence"**]
+.size50[.content-box-white[**Measuring "Political Violence"**]]
 
 .size45[
 **1) Concept**
 
-**2) Operationalization**
+**2) Case Studies**
 
-**3) Instrumentation**
+**3) Operationalization**
 
-**4) Measurement**
+**4) Instrumentation**
+
+**5) Measurement**
 ]
 
 ???
 
-Last week we worked to build conceptual definitions and measurements of political violence using news reports.
+Two weeks ago we worked through a five step process for generating data about political violence.
 
-- I think that's a great way to begin as it helps us learn the process and build out our set of real-world examples.
-
-<br>
-
-Review each
+### Refresh my memory! What did we do in each step and why was it an important part of the process?
 
 <br>
 
-Over the next two weeks we shift to evaluating the sources used by many academics working in this field.
-- The PTS and CI RIGHTS projects both use the yearly reports from the US State Department and Amnesty International.
+### - Define operationalization
+- ("...selecting observable phenomena to represent abstract concepts" (89).)
 
+- ("To be useful...operational definitions must tell us precisely and explicitly what to do in order to determine what quantitative value should be associated with a variable in any given case (92).)
+
+<br>
+
+### - Define Instrumentation
+- (Convert your operationalization (definition) into a series of steps you can use to measure the concept in question)
+
+### - What does it mean to say an instrument produces "valid" data?
+- ("...the extent to which our measures correspond to the concepts they are intended to reflect" (105).)
+
+### - What does it mean to say an instrument produces "reliable" data?
+- (How stable are the results of our instrument?)
+- Would different coders produce the same result using your instrument to measure the same case?
+
+<br>
+
+### - Define Measurement
+- (Applying the instrument to the cases to generate values/data/numbers)
+
+<br>
+
+**SLIDE**: Technically, we can generalize this process by focusing on three steps
+
+
+
+
+---
+
+background-image: url('libs/Images/background-light_grey.jpg')
+background-size: 100%
+background-position: center
+class: middle
+
+.size50[.content-box-white[**Measuring a Concept**]]
+
+.pull-left[
+.size45[
+
+<br>
+
+**1) Operationalization**
+
+**2) Instrumentation**
+
+**3) Measurement**
+]]
+
+.pull-right[
+```{r, echo = FALSE, fig.align = 'center', out.width = '85%'}
+knitr::include_graphics("libs/Images/02_3-reliable_valid.png")
+```
+]
+
+???
+
+This is essentially how almost every quantitative research project is designed, implemented and discussed.
+
+- How do they operationalize the concept?
+
+- What instrument did they design?
+
+- How was the instrument used to produce measurements?
+
+- Is the resulting data valid and reliable?
+
+<br>
+
+### Questions on this?
+
+<br>
+
+**SLIDE**: Let's apply it to our work from last class!
+
+
+
+
+---
+
+background-image: url('libs/Images/background-light_grey.jpg')
+background-size: 100%
+background-position: center
+class: middle
+
+.size50[.content-box-white[**Measuring "Domestic Political Violence by Governments"**]]
+
+.pull-left[
+.size45[
+
+<br>
+
+**1) Operationalization**
+
+**2) Instrumentation**
+
+**3) Measurement**
+]]
+
+.pull-right[
+```{r, echo = FALSE, fig.align = 'center', out.width = '85%'}
+knitr::include_graphics("libs/Images/02_3-reliable_valid.png")
+```
+]
+
+???
+
+Last class we analyzed real world cases of state governments using political violence against their domestic populations.
+
+- Get ready to analyze this effort for me using these guiding questions
+
+- Work in pairs
+
+<br>
+
+
+
+- What specific validity concerns do you have about the work we did last class to generate new hypotheses about how and why governments use violence domestically?
+
+
+- What specific reliability concerns do you have about the work we did last class to generate new hypotheses about how and why governments use violence domestically?
+
+
+ (Our cases today reflect a fairly biased version of the world e.g. what gets media attention, how we search Google, only one violent act per country, etc.)
+
+
+
+
+generated hypotheses about the use of political violence by state governments against their domestic populations
 
 
 
