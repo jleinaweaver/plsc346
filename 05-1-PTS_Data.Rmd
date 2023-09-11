@@ -29,6 +29,14 @@ knitr::opts_chunk$set(echo = FALSE,
                       message = FALSE,
                       warning = FALSE,
                       comment = NA)
+
+## PTS_A: Amnesty International
+## PTS_H: Human Rights Watch
+## PTS_S: State Dept
+d <- read_excel("../../Data/PTS/2023-05-PTS_2022/PTS-2022.xlsx", na = "NA")
+
+d2021 <- d |>
+  filter(Year == 2021)
 ```
 
 background-image: url('libs/Images/00-Leviathan_Cover_55.png')
@@ -122,37 +130,6 @@ Last week we focused on two sources of data on government's domestic uses of pol
 
 ### What is the concept each source is trying to measure? e.g. what specific flavor of political violence?
 - (**SLIDE**: Human Rights Practices)
-
-
----
-
-background-image: url('libs/Images/background-light_grey.jpg')
-background-size: 100%
-background-position: center
-class: middle, center
-
-.size50[.content-box-white[**Measuring "Human Rights Practices"**]]
-
-.pull-left[
-<br>
-
-```{r, out.width='100%'}
-knitr::include_graphics('libs/Images/03-3-amnesty_international.jpg')
-```
-]
-
-.pull-right[
-```{r, out.width='100%'}
-knitr::include_graphics('libs/Images/03-3-USDeptState.png')
-```
-]
-
-???
-
-Now remember, our aim in this class is to measure and explain "political violence."
-
-### In what ways might "human rights practices" be different or narrower from describing "political violence"?
-
 
 
 
@@ -346,11 +323,11 @@ class: middle
 <br>
 
 .size45[
-.center[.content-box-white[**"Political Violence"**]]
+1. .content-box-white[**"Political Violence" (Class)**]
 
-.center[.content-box-white[**"Human Rights Practices"**]]
+2. .content-box-white[**"Human Rights Practices" (State Dept and AI)**]
 
-.center[.content-box-white[**"Political Terror"**]]
+3. .content-box-white[**"Political Terror" (PTS)**]
 ]
 
 ???
@@ -493,39 +470,15 @@ Audit Time!
 
 Each of you focus on the scores for the two country-years you analyzed on Monday. 
 
-- Go back to the reports and see if you would have coded them the same way. 
+### Would you have coded these country-years the same way? Why or why not?
 
 <br>
 
-### Ok, any big discrepancies from how you read the reports?
+### Any lessons for us from the audit process about the validity and reliability of the PTS?
 
 <br>
 
-### Takeaways for us in terms of validity and reliability?
-
-
-
-
-
-
-Rest of today let's dig into the data a bit
-
-Did you guys notice anything interesting in the data to share?
-
-
-Here are some things I wanted to check to help me think more about validity and reliability...
-
-
-
-
-
-
-
-
-
-
-
-
+**SLIDE**: Let's continue to audit the data
 
 
 
@@ -538,94 +491,16 @@ background-position: center
 class: middle, center
 
 .size70[
-Is there any evidence of selection bias in the three PTS measures in 2021 (most recent year coded)? 
+Is there any evidence of selection bias in 2021 (most recent year coded)? 
+
+e.g. missing data problems in a certain kind of country
 ]
 
 ???
 
-Let's dig into the data.
+Let's examine the PTS data for evidence of selection bias
 
-- REMEMBER, our key exercise here is to analyze the validity and reliability of the measures SO THAT later we can use them to analyze country behavior.
-
-<br>
-
-Use the autofilter to zoom in on 2021 only
-
-Then scroll through and talk to me about the kinds of countries with missing data in the three measures.
-
-<br>
-
-### Any questions on sorting and filtering in Excel?
-
-- (**SLIDE**: web excel examples)
-
-
-
----
-
-background-image: url('libs/Images/background-light_grey.jpg')
-background-size: 100%
-background-position: center
-class: middle
-
-```{r, echo = FALSE, fig.align = 'center', out.width = '100%'}
-knitr::include_graphics("libs/Images/04_1-Autofilter1.png")
-```
-
-???
-
-
-
----
-
-background-image: url('libs/Images/background-light_grey.jpg')
-background-size: 100%
-background-position: center
-class: middle
-
-```{r, echo = FALSE, fig.align = 'center', out.width = '100%'}
-knitr::include_graphics("libs/Images/04_1-Autofilter2.png")
-```
-
-???
-
-Turn on autofilter
-
-
-
----
-
-background-image: url('libs/Images/background-light_grey.jpg')
-background-size: 100%
-background-position: center
-class: middle
-
-```{r, echo = FALSE, fig.align = 'center', out.width = '64%'}
-knitr::include_graphics("libs/Images/04_1-Autofilter3.png")
-```
-
-???
-
-Use autofilter
-
-
-
----
-
-background-image: url('libs/Images/background-light_grey.jpg')
-background-size: 100%
-background-position: center
-class: middle, center
-
-.size70[
-Is there any evidence of selection bias in the three PTS measures in 2021 (most recent year coded)? 
-]
-
-???
-
-### Does one measure cover more countries than the others?
-
-- (**SLIDE**: Missing data stats)
+- e.g. "occurs when individuals or groups in a study differ systematically from the population of interest leading to a systematic error in an association or outcome."
 
 
 
@@ -637,19 +512,11 @@ background-position: center
 class: middle, center
 
 ```{r, eval=TRUE}
-## PTS_A: Amnesty International
-## PTS_H: Human Rights Watch
-## PTS_S: State Dept
-d <- read_excel("../../Data/PTS/2023-05-PTS_2022/PTS-2022.xlsx", na = "NA")
-
-d2021 <- d |>
-  filter(Year == 2021)
-
 #d2021 |> count(PTS_A, PTS_H, PTS_S) |> print(n=100)
 
 # Descriptive Stats Table
 x1 <- d2021 |> 
-  pivot_longer(cols = PTS_A:PTS_S, names_to = "Source", values_to = "Value") |>
+  pivot_longer(cols = c(PTS_A, PTS_S), names_to = "Source", values_to = "Value") |>
   group_by(Source) |>
   summarize(
     N = n(),
@@ -732,18 +599,18 @@ d2021_1 <- d2021 |>
   group_by(newcode1, Country) |>
   summarize(
     miss_a = sum(is.na(PTS_A)),
-    miss_h = sum(is.na(PTS_H)),
+    #miss_h = sum(is.na(PTS_H)),
     miss_s = sum(is.na(PTS_S))
   ) |>
   mutate(
-    missing = miss_a + miss_h+miss_s,
-    Sources = 3 - missing
+    missing = miss_a + miss_s,
+    Sources = 2 - missing
   ) |> 
-  filter(!is.na(newcode1)) |>
+  filter(!is.na(newcode1)) |> 
   #filter(WordBank_Code_A != "YUG") |>
   mutate(
     Sources_cat = case_when(
-      Sources == 3 ~ "3 Sources",
+      #Sources == 3 ~ "3 Sources",
       Sources == 2 ~ "2 Sources",
       Sources == 1 ~ "1 Source",
       Sources == 0 ~ "No Data",
@@ -766,10 +633,10 @@ d10 <- left_join(worldmap, d2021_1, by = "newcode1")
 # 
 # d2021 |> select(Country, PTS_A:PTS_S) |> View()
 
-d10$Sources_cat[d10$name == "S. Sudan"] <- "3 Sources"
+d10$Sources_cat[d10$name == "S. Sudan"] <- "2 Sources"
 d10$Sources_cat[d10$name == "W. Sahara"] <- "2 Sources"
-d10$Sources_cat[d10$name == "Kosovo"] <- "3 Sources"
-d10$Sources_cat[d10$name == "Serbia"] <- "3 Sources"
+d10$Sources_cat[d10$name == "Kosovo"] <- "2 Sources"
+d10$Sources_cat[d10$name == "Serbia"] <- "2 Sources"
 #d10$Sources_cat[d10$name == "Somaliland"] <- "NA"
 
 # Output map
@@ -779,21 +646,16 @@ d10 |>
   labs(fill = "", title = "PTS Missing Data") +
   theme(legend.position = "bottom") +
   #scale_fill_brewer(type = "seq", palette = 7)
-  scale_fill_manual(values = c("wheat1", "cadetblue1", "dodgerblue1"))
+  scale_fill_manual(values = c("wheat1", "dodgerblue1"))
 ```
 
 ???
 
 ### So, what selection bias concerns do you have?
 
-<br>
+- (In 2021: Appears like AI only missing data for super tiny states (e.g. island nations with small populations))
 
-### Any idea why HRW is missing so much data?
 
-<br>
-
-### To what extent are we limited in comparing across the three measures?
-+ So many missing cases, but are they missing different states?
 
 
 
@@ -805,13 +667,15 @@ background-position: center
 class: middle, center
 
 .size70[
-Do all three PTS measures produce the same country scores in 2021?  How similar are they?
+Do both PTS measures produce the same country scores in 2021?  
+
+How similar are they?
 ]
 
 ???
 
 
-Compare and contrast the scores for PTS_A, PTS_H and PTS_S for 2021 (most recent year coded)
+Compare and contrast the scores for PTS_A and PTS_S for 2021 (most recent year coded)
 
 - Evidence of conflicts in the codings?
 
@@ -827,19 +691,6 @@ background-position: center
 class: middle
 
 ```{r, eval=TRUE}
-## Focus only on cases with data across all three measures
-all3 <- d2021 |>
-  select(Country, Year, PTS_A:PTS_S) |>
-  na.omit() |>
-  mutate(
-    Matching = if_else(PTS_A == PTS_H & PTS_A == PTS_S, "Matches", "Doesn't Match")
-  ) |>
-  count(Matching) |>
-  mutate(
-    Cases = sum(n),
-    Prop = n/Cases
-  )
-
 # Focus on AI and State only
 main2 <- d2021 |>
   select(Country, Year, PTS_A, PTS_S) |>
@@ -865,36 +716,29 @@ main2_1 <- d2021 |>
 props1 <- main2_1 |> count(Diff) |> mutate(Prop = n/sum(n))
 ```
 
-.size45[.center[**How often do the scores match? (2021)**]]
 
-.size30[
-+ Matching across all three measures: `r all3$n[all3$Matching == "Matches"]`/`r all3$Cases[all3$Matching == "Matches"]` (`r str_c(round(all3$Prop[all3$Matching == "Matches"]*100, 0), '%')`)
+```{r, fig.retina=3, fig.align='center', out.width='90%', fig.asp=0.618, fig.width = 8, eval=TRUE, cache=TRUE}
+subcap1 <- str_c("Matching: ", main2$n[main2$Matching == "Matches"], "/", main2$Cases[main2$Matching == "Matches"], " = ", round(main2$Prop[main2$Matching == "Matches"]*100, 0), "%")
 
-+ Matching across AI and State only: `r main2$n[main2$Matching == "Matches"]`/`r main2$Cases[main2$Matching == "Matches"]` (`r str_c(round(main2$Prop[main2$Matching == "Matches"]*100, 0), '%')`)
-]
-
-```{r, fig.retina=3, fig.align='center', out.width='60%', fig.asp=0.618, eval=TRUE, cache=TRUE}
 main2_1 |>
   ggplot(aes(x = Diff)) +
   geom_bar(width = .6) +
   geom_hline(yintercept = seq(25, 75, 25), color = "white") +
   theme_bw() +
   labs(x = "PTS_A - PTS_S", y = "", 
-       title = "Most state scores match perfectly and almost all are +/- 1")
+       title = "Comparing PTS Scores: State Dept vs AI",
+       subtitle = subcap1)
 ```
 
 ???
 
-### Are these good or bad results in terms of matching percentages? Why?
+### Are these good or bad results in terms of matching percentages? Why or why not?
+
+### - In other words, given the levels of the instrument are we comfortable saying a difference of one on the scale is or isn't substantial?
 
 <br>
 
-### Is the +/-1 as a percentage a meaningful piece of analysis? 
-#### - Given what the stages represent are we comfortable saying a difference of one on the scale isn't substantial?
-
-<br>
-
-### What are the different reasons a country might have different scores across the measures?
+### Based on our evaluations last week of the sources, what are the reasons a country might have different scores across the measures?
 
 + Different operationalizations of political violence by the three sources
 + Different validity and reliability of the sources
@@ -904,7 +748,6 @@ main2_1 |>
 <br>
 
 **SLIDE**: Let's check your intuitions!
-
 
 
 
@@ -962,14 +805,83 @@ d10 |>
 
 <br>
 
-### Second, do we see any evidence here of a problematic selection effect?
-#### - Certain types of state more or less likely to be included?
+### Second, does the visual approach highlight for us any other reasons the scores might differ vs match?
+
+### - Political reasons? NGO capacity reasons?
 
 <br>
 
-### Bottom line, do you believe the PTS data for 2021 is sufficiently valid and relaible to use as an expert measure of political violence around the world? Why or why not?
+### Which states have a difference in scores greater than 1? Any surprises there?
 
-#### - As a person writing an analysis of a country using this data, which of those reasons are good for you and which bad?
+- (Honestly, I'm kind of surprised that the state dept hits these states harder than AI!)
+
+```{r}
+main2_1 |> filter(Diff == 2 | Diff == -2)
+```
+
+<br>
+
+**SLIDE**: Let's dig into these differences some more.
+
+
+
+
+---
+
+background-image: url('libs/Images/background-light_grey.jpg')
+background-size: 100%
+background-position: center
+class: middle
+
+```{r, fig.retina=3, fig.align='center', out.width='61%', fig.asp=.45, fig.width = 9, cache=TRUE}
+## Map of more negative scores
+compare1 <- d2021 |>
+  select(Country, Year, PTS_A, PTS_S, newcode1) |>
+  na.omit() |>
+  mutate(
+    Absolute_diff = abs(PTS_A - PTS_S),
+    Diff = PTS_A - PTS_S, 
+    state_negative = if_else(PTS_S > PTS_A, "State Negative", NA_character_),
+    ai_negative = if_else(PTS_A > PTS_S, "AI Negative", NA_character_)
+  )
+
+d12 <- left_join(worldmap, compare1, by = "newcode1")
+
+d12 |>
+  ggplot() +
+  geom_sf(aes(fill = state_negative)) +
+  labs(fill = "", title = "Cases where the US State Dept is more negative (2021)") +
+  theme(legend.position = "right") +
+  scale_fill_manual(values = c("indianred3"), na.value = "white")
+```
+
+```{r, fig.retina=3, fig.align='center', out.width='61%', fig.asp=.45, fig.width = 9, cache=TRUE}
+d12 |>
+  ggplot() +
+  geom_sf(aes(fill = ai_negative)) +
+  labs(fill = "", title = "Cases where Amnesty International is more negative (2021)") +
+  theme(legend.position = "right") +
+  scale_fill_manual(values = c("indianred3"), na.value = "white")
+
+# # State listings
+# # State Dept more negative
+# main2_1 |>
+#   filter(PTS_S > PTS_A) |> print(n=50)
+# 
+# # AI more negative
+# main2_1 |>
+#   filter(PTS_S < PTS_A)
+```
+
+???
+
+### Any surprises on these maps?
+
+<br>
+
+### Are these differences  more likely to reflect true differences in the two reports OR in the (un?)reliability of the PTS instrument?
+
+
 
 
 
@@ -1142,7 +1054,7 @@ background-size: 100%
 background-position: center
 class: middle
 
-.size60[.center[**For Next Class**]]
+.size60[.center[.content-box-white[**For Next Class**]]]
 
 .size50[
 **Explore the data and codebook for the [CIRIGHTS Data project](https://www.dropbox.com/sh/t8utmzsvde8m63q/AAAs1_WIJTqXurAE5nvEKWE5a?dl=0).**

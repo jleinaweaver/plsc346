@@ -34,14 +34,16 @@ background-size: 100%
 background-position: center
 class: middle
 
-.size70[**Today's Agenda**]
+.center[.size35[**II. How and why do governments use violence against the people inside their borders?**]]
 
 <br>
 
-.size60[
-.center[
-Evaluate the CIRIGHTS Data project
-]]
+.size45[
+
+**Today's Agenda**: Measuring "Political Violence"
+
+- The CIRIGHTS Data project
+]
 
 <br>
 
@@ -52,7 +54,35 @@ Evaluate the CIRIGHTS Data project
 ???
 
 ### Prep for Class
-1. ?
+1. ...
+
+<br>
+
+**SLIDE**: Today we continue our work on the first paper...
+
+
+
+
+---
+
+background-image: url('libs/Images/background-blue_triangles2.png')
+background-size: 100%
+background-position: center
+class: middle
+
+.size40[.content-box-white[**Paper 1**]]
+
+.size35[
+If someone came to you with the goal of better understanding the use of political violence by governments around the world, which of the data sources that we explored in class would you recommend and why? 
+
+Your report should introduce each source to the reader with your analysis of its strengths and weaknesses. 
+
+Ultimately, your central argument should be a clear recommendation of which source(s) they should focus on.
+]
+
+???
+
+### Questions on the prompt?
 
 
 
@@ -63,16 +93,14 @@ background-size: 100%
 background-position: center
 class: middle
 
-.size45[**Paper 1**]
+.size50[.content-box-purple[**Sources of Political Violence Data**]]
 
-.size30[
-If someone came to you with the goal of better understanding the use of political violence by governments around the world, which of the data sources that we explored in class would you recommend and why?
-
+.size35[
 - The US State Department's "Country Reports on Human Rights Practices"
 
-- **Amnesty International's "Annual Country Reports"**
+- Amnesty International's "Annual Country Reports"
 
-- The Political Terror Scale (PTS)
+- **The Political Terror Scale (PTS)**
 
 - The CIRIGHTS data project's "Physical Integrity Rights"
 
@@ -81,60 +109,13 @@ If someone came to you with the goal of better understanding the use of politica
 
 ???
 
-Last week and this one we are exploring and analyzing the data and research projects that exist to track political violence by states across time.
+Last class we explored the Political Terror Scale (PTS)
 
+### Key takeaways? 
 
+### - e.g. elements of validity and reliability arguments that stood out for you?
 
----
-
-background-image: url('libs/Images/02_2-protestors_fire2.png')
-background-size: 100%
-background-position: center
-class: middle
-
-.size50[**Measuring "Political Violence"**]
-
-.size45[
-**1) Concept**
-
-**2) Operationalization**
-
-**3) Instrumentation**
-
-**4) Measurement**
-]
-
-???
-
-Refresh week 2 material from Brians et al (2011): concept -> operationalization ("The process of selecting observable phenomena to represent abstract concepts") -> instrumentation (
-...the specification of steps to take in making observations") -> measurement ("The application of an instrument to assign numerical values to cases")
-
-
-
----
-
-background-image: url('libs/Images/background-light_grey.jpg')
-background-size: 100%
-background-position: center
-class: middle
-
-```{r, fig.align='center', out.width='85%'}
-knitr::include_graphics('libs/Images/03-2-PTS_Logo.png')
-```
-
-.center[.size45[Evaluate: Operationalization, Instrumentation, and Measurement]]
-
-???
-
-Refresher on our work from last class analyzing the Political Terror Scale.
-
-### Strengths and weaknesses of using the PTS data to measure political violence around the world?
-
-### Key takeaways for you next week as you write your country reports?
-
-#### - How do the PTS scores supplement your reading/analysis of the source docs?
-
-#### - Any cautions you will want to include, e.g. caveats for helping the reader interpret the PTS scores?
+### - How do the PTS scores supplement your reading/analysis of the source docs?
 
 <br>
 
@@ -151,12 +132,12 @@ Refresher on our work from last class analyzing the Political Terror Scale.
 
 ---
 
-background-image: url('libs/Images/background-green_blue_swirl_side.jpg')
+background-image: url('libs/Images/background-light_grey.jpg')
 background-size: 100%
 background-position: center
-class: middle, center
+class: middle
 
-.size60[.center[**For Today**]]
+.size60[.center[.content-box-white[**For Today**]]]
 
 .size50[
 **Explore the data and codebook for the [CIRIGHTS Data project](https://www.dropbox.com/sh/t8utmzsvde8m63q/AAAs1_WIJTqXurAE5nvEKWE5a?dl=0).**
@@ -168,6 +149,113 @@ Make sure you understand the observations and variables enough to play with them
 
 ### Everybody ready for today's work?
 
+<br>
+
+Before we dive into the data we have to evaluate its validity and reliability.
+
+### So, let's begin in this same place we've begun with the other sources, what is the concept the CIRIGHTS project is trying to measure?
+
+- (**SLIDE**)
+
+
+
+
+---
+
+background-image: url('libs/Images/background-light_grey.jpg')
+background-size: 100%
+background-position: center
+class: middle
+
+
+```{r, fig.align='center', out.width='75%'}
+knitr::include_graphics('libs/Images/05-2-CIRIGHTS_Logo.png')
+```
+
+<br>
+
+.size50[
+.center[.content-box-white[**"...government respect for human rights (p2)"**]]
+]
+
+???
+
+### And why is this their focus? What is their primary data source?
+- (The US State Department Country Reports on Human Rights Practices!)
+
+- Although, note on p1 that they also use AI reports for the "Personal Integrity Rights" scores
+
+<br>
+
+As you can see in the ToC the CIRIGHTS project divides "respect for human rights" into four broad categories: 
+1. Physical integrity rights
+
+2. Empowerment rights and freedoms
+
+3. Occupational/ workers’ rights
+
+4. Justice rights
+
+<br>
+
+### Is this a "good" way to organize a quantitative exploration of government practices on human rights? Why or why not?
+
+<br>
+
+### - Are all of these instruments a valid representation of the concept?
+
+### - Any overlap across categories or debatable instrument placements?
+
+
+
+
+---
+
+background-image: url('libs/Images/background-light_grey.jpg')
+background-size: 100%
+background-position: center
+class: middle
+
+.center[.size35[.content-box-white[**Measuring "Physical Integrity Rights" (CIRIGHTS)**]]]
+
+.pull-left[
+
+.size35[
+<br>
+]
+
+.size45[**1) Operationalization**]
+
+<br>
+
+.size45[**2) Instrumentation**]
+
+<br>
+
+.size45[**3) Measurement**]
+]
+
+.pull-right[
+
+.size35[
+<br>
+]
+
+.size40[
+1. Disappearance
+
+2. Extrajudicial Killing
+
+3. Political Imprisonment
+
+4. Torture
+]
+]
+
+
+???
+
+GROUPS: Make an argument about validity and reliability
 
 
 
