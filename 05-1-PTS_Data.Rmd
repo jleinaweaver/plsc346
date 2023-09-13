@@ -323,11 +323,11 @@ class: middle
 <br>
 
 .size45[
-1. .content-box-white[**"Political Violence" (Class)**]
+.center[.content-box-white[**"Political Violence" (Class)**]]
 
-2. .content-box-white[**"Human Rights Practices" (State Dept and AI)**]
+1. **"Human Rights Practices" (State Dept and AI)**
 
-3. .content-box-white[**"Political Terror" (PTS)**]
+2. **"Political Terror" (PTS)**
 ]
 
 ???
@@ -475,6 +475,14 @@ Each of you focus on the scores for the two country-years you analyzed on Monday
 <br>
 
 ### Any lessons for us from the audit process about the validity and reliability of the PTS?
+
+<br>
+
+### Open it up to the class: What did you find or notice when exploring the dataset?
+
+### - Show us something cool!
+
+- *Let them lead this and after a while feel free to segue to your slides*
 
 <br>
 

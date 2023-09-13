@@ -29,6 +29,8 @@ knitr::opts_chunk$set(echo = FALSE,
                       comment = NA)
 
 d <- read_excel("../../Data/V-Dem/V-Dem-CY-Core_csv_v13/V_Dem_Personal_Integrity_Rights-1789-2022.xlsx", na = "NA")
+
+#d_full <- read_csv("../../Data/V-Dem/V-Dem-CY-Core_csv_v13/V-Dem-CY-Core-v13.csv")
 ```
 
 background-image: url('libs/Images/00-Leviathan_Cover_55.png')
@@ -36,14 +38,16 @@ background-size: 100%
 background-position: center
 class: middle
 
-.size70[**Today's Agenda**]
+.center[.size35[**II. How and why do governments use violence against the people inside their borders?**]]
 
 <br>
 
-.size60[
-.center[
-Evaluate the V-Dem Varieties of Democracy Data project on "Personal Integrity Rights" 
-]]
+.size45[
+
+**Today's Agenda**: Measuring "Political Violence"
+
+- V-Dem Varieties of Democracy Data project on "Personal Integrity Rights" 
+]
 
 <br>
 
@@ -56,6 +60,38 @@ Evaluate the V-Dem Varieties of Democracy Data project on "Personal Integrity Ri
 ### Prep for Class
 1. ?
 
+<br>
+
+Alright everybody, today we evaluate and explore our last dataset focused on measuring the use of political violence by governments acting domestically.
+
+<br>
+
+**SLIDE**: But first...
+
+
+
+---
+
+background-image: url('libs/Images/background-blue_triangles2.png')
+background-size: 100%
+background-position: center
+class: middle
+
+.size40[.content-box-white[**Paper 1**]]
+
+.size35[
+If someone came to you with the goal of better understanding the use of political violence by governments around the world, which of the data sources that we explored in class would you recommend and why? 
+
+Your report should introduce each source to the reader with your analysis of its strengths and weaknesses. 
+
+Ultimately, your central argument should be a clear recommendation of which source(s) they should focus on.
+]
+
+???
+
+### Questions on the prompt?
+
+
 
 
 ---
@@ -65,101 +101,35 @@ background-size: 100%
 background-position: center
 class: middle
 
-.size45[**Paper 1**]
+.size50[.content-box-purple[**Sources of Political Violence Data**]]
 
-.size30[
-If someone came to you with the goal of better understanding the use of political violence by governments around the world, which of the data sources that we explored in class would you recommend and why?
-
+.size35[
 - The US State Department's "Country Reports on Human Rights Practices"
 
-- **Amnesty International's "Annual Country Reports"**
+- Amnesty International's "Annual Country Reports"
 
 - The Political Terror Scale (PTS)
 
-- The CIRIGHTS data project's "Physical Integrity Rights"
+- **The CIRIGHTS data project's "Physical Integrity Rights"**
 
 - Varieties of Democracy's (V-Dem) "Personal Integrity Rights"
 ]
 
 ???
 
-Last week and this one we are exploring and analyzing the data and research projects that exist to track political violence by states across time.
-
-
-
----
-
-background-image: url('libs/Images/02_2-protestors_fire2.png')
-background-size: 100%
-background-position: center
-class: middle
-
-.size50[**Measuring "Political Violence"**]
-
-.size45[
-**1) Concept**
-
-**2) Operationalization**
-
-**3) Instrumentation**
-
-**4) Measurement**
-]
-
-???
-
-Refresh week 2 material from Brians et al (2011): concept -> operationalization ("The process of selecting observable phenomena to represent abstract concepts") -> instrumentation (
-...the specification of steps to take in making observations") -> measurement ("The application of an instrument to assign numerical values to cases")
-
-
-
----
-
-background-image: url('libs/Images/background-light_grey.jpg')
-background-size: 100%
-background-position: center
-class: middle
-
-.pull-left[
+Last class we explored the CIRIGHTS data project's "Physical Integrity Rights" that is built using four separate measures
+1. Torture
+2. Extrajudicial killing
+3. Disappearances
+4. Political imprisonment
 
 <br>
 
-<br>
+### Key takeaways? 
 
-<br>
+### - e.g. elements of validity and reliability arguments that stood out for you?
 
-```{r, fig.align='center', out.width='100%'}
-knitr::include_graphics('libs/Images/03_3-CIRIGHTS_Title.png')
-```
-]
-
-.pull-right[
-.size40[.center[The Physical Integrity Rights Index]
-
-- Disappearance
-
-- Extrajudicial Killing
-
-- Political Imprisonment
-
-- Torture
-]
-]
-
-.center[.size40[Evaluate: Operationalization, Instrumentation, and Measurement]]
-
-???
-
-Refresher on our work from last class analyzing CIRIGHTS.
-
-### Strengths and weaknesses of using the CIRIGHTS data to measure political violence around the world?
-
-### Key takeaways for you next week as you write your country reports?
-
-#### - How do the CIRIGHTS scores supplement your reading/analysis of the source docs?
-
-#### - Any cautions you will want to include, e.g. caveats for helping the reader interpret the CIRIGHTS scores?
-
+### - What do you need to keep in mind in order to use CIRIGHTS scores appropriately?
 
 
 
@@ -171,22 +141,28 @@ background-size: 100%
 background-position: center
 class: middle, center
 
-.size45[.center[.content-box-white[**The V-Dem Varieties of Democracy**]]]
+.size70[**For Today**]
 
-<br>
-
-```{r, fig.align='center', out.width='85%'}
-knitr::include_graphics('libs/Images/05_3-VDem_Civil_Liberty.png')
-```
-
-<br>
-
-.size40[**Personal Integrity Rights**: Freedom from torture, Freedom from political killings, Freedom from forced labor (men/women)]
+.size60[
+Be ready to evaluate and explore the V-Dem Varieties of Democracy "Personal Integrity Rights" data
+]
 
 ???
 
 ### Everybody ready for today's work?
 
+<br>
+
+The V-Dem project takes a VERY different approach to measuring state behavior than what we've focused on so far.
+
+- This represents our first big move away from the State Department and AI as our primary sources of data about the world.
+
+- It's not the easiest process to understand at a granular level, but the general intuition isn't too bad.
+
+<br>
+
+**SLIDE**: Let's start big picture
+
 
 
 ---
@@ -196,41 +172,456 @@ background-size: 100%
 background-position: center
 class: middle
 
-```{r, fig.align='center', out.width='35%'}
-knitr::include_graphics('libs/Images/05_3-VDem_Logo.png')
-```
+.center[.size50[**II. How and why do governments use violence against the people inside their borders?**]]
 
-.size40[**Personal Integrity Rights**
-- Freedom from Torture
-- Freedom from Political Killings
-- Freedom from Forced Labor (men)
-- Freedom from Forced Labor (women)
+<br>
+
+.size40[
+.center[.content-box-white[**"Political Violence" (Class)**]]
+
+1. **"Human Rights Practices" (State Dept, AI, CIRIGHTS)**
+
+2. **"Political Terror" (PTS)**
+
+3. **"Personal Integrity Rights" (V-Dem)**
 ]
-
-.center[.size45[Evaluate: Operationalization, Instrumentation, and Measurement]]
 
 ???
 
-The V Dem project...
-
-For our purposes we'll focus primarily on the elements in the Personal Integrity Rights Index.
-
-- Note how each country-year includes model generated ordinal score, 70% coverage (low to high) and the number of coders involved
+Remember, the aim of our class is to describe and explain "political violence" and the aim of the second section of the class is focused on domestic violence by governments
 
 <br>
 
-Split class into groups (one group per category), build strengths and weaknesses lists on the board analyzing the codebook across these three categories: operationalization, instrumentation, measurement
-
-
-### Groups: Take a few minutes to review the "Coding Protocol" on p8 in order to evaluate the validity and reliability of these measures.
+### At a purely conceptual level, are we comfortable adding "Personal Integrity Rights" to this list of "similar enough" measures? Why or why not?
 
 <br>
 
-Ok, report back.
+### What are the concepts V-Dem includes under this umbrella term?
+- (Four Items: Freedom from torture, Freedom from political killings, Freedom from forced labor for men, Freedom from forced labor for women)
 
-### Any concerns with validity?
+<br>
 
-### Any concerns with reliability?
+### How does this compare to the four measures used by the CIRIGHTS Project? Disappearance, Extrajudicial Killing, Political Imprisonment and Torture
+
+<br>
+
+**SLIDE**: Let's dive into the evaluation!
+
+
+
+
+---
+
+background-image: url('libs/Images/background-light_grey.jpg')
+background-size: 100%
+background-position: center
+class: middle
+
+.center[.size35[.content-box-white[**Measuring "Personal Integrity Rights" (V-Dem)**]]]
+
+.pull-left[
+.center[.size40[
+**Operationalization**
+
+<html>&#8595;</html>
+
+**Instrumentation**
+
+<html>&#8595;</html>
+
+**Measurement**
+]]]
+
+.pull-right[
+
+.size35[
+<br>
+]
+
+.size35[
+1. Freedom from torture
+
+2. Freedom from political killings
+
+3. Freedom from forced labor for men
+
+4. Freedom from forced labor for women
+]
+]
+
+???
+
+*Split class into 4 groups: One group per measure*
+
+GROUPS: Make an argument about the validity and reliability of your assigned measure based on the operationalization, instrumentation and measurement described in the codebook.
+
+- Build strengths and weaknesses lists directly on the board
+
+<br>
+
+### Questions on the assignment?
+
+- Get to it!
+
+<br>
+
+**SLIDES** for each
+
+<br>
+
+#### Notes
+Civil Liberties coding advice: "The following questions are focused on actual practices (de facto) rather than formal legal or constitutional rights (de jure). Note that if there is significant variation in the respect for a particular civil liberty across the territory, the score should reflect the "average situation" across the territorial scope of the country unit (for each period) as defined in the coder instructions" (p176).
+
+
+
+
+---
+
+background-image: url('libs/Images/background-light_grey.jpg')
+background-size: 100%
+background-position: center
+class: middle
+
+.center[.size35[.content-box-white[**Measuring "Personal Integrity Rights" (V-Dem)**]]]
+
+<br>
+
+```{r, echo = FALSE, fig.align = 'center', out.width = '85%'}
+knitr::include_graphics("libs/Images/05_3-VDem_Torture_Instrument.png")
+```
+
+
+
+???
+
+Validity and Reliability
+
+Strengths
+- ?
+
+Weaknesses
+- ?
+
+
+
+---
+
+background-image: url('libs/Images/background-light_grey.jpg')
+background-size: 100%
+background-position: center
+class: middle
+
+.center[.size35[.content-box-white[**Measuring "Personal Integrity Rights" (V-Dem)**]]]
+
+```{r, echo = FALSE, fig.align = 'center', out.width = '85%'}
+knitr::include_graphics("libs/Images/05_3-VDem_Killings1_Instrument.png")
+```
+
+```{r, echo = FALSE, fig.align = 'center', out.width = '70%'}
+knitr::include_graphics("libs/Images/05_3-VDem_Killings2_Instrument.png")
+```
+
+???
+
+Validity and Reliability
+
+Strengths
+- ?
+
+Weaknesses
+- ?
+
+
+
+---
+
+background-image: url('libs/Images/background-light_grey.jpg')
+background-size: 100%
+background-position: center
+class: middle
+
+.center[.size35[.content-box-white[**Measuring "Personal Integrity Rights" (V-Dem)**]]]
+
+<br>
+
+```{r, echo = FALSE, fig.align = 'center', out.width = '85%'}
+knitr::include_graphics("libs/Images/05_3-VDem_MensLabor_Instrument.png")
+```
+
+
+
+???
+
+Validity and Reliability
+
+Strengths
+- ?
+
+Weaknesses
+- ?
+
+
+
+---
+
+background-image: url('libs/Images/background-light_grey.jpg')
+background-size: 100%
+background-position: center
+class: middle
+
+.center[.size30[.content-box-white[**Measuring "Personal Integrity Rights" (V-Dem)**]]]
+
+```{r, echo = FALSE, fig.align = 'center', out.width = '75%'}
+knitr::include_graphics("libs/Images/05_3-VDem_WomensLabor1_Instrument.png")
+```
+
+```{r, echo = FALSE, fig.align = 'center', out.width = '75%'}
+knitr::include_graphics("libs/Images/05_3-VDem_WomensLabor2_Instrument.png")
+```
+
+???
+
+Validity and Reliability
+
+Strengths
+- ?
+
+Weaknesses
+- ?
+
+<br>
+
+**SLIDE**: Let's now talk about how V-Dem does post-measurement data processing!
+
+
+
+---
+
+background-image: url('libs/Images/background-light_grey.jpg')
+background-size: 100%
+background-position: center
+class: middle
+
+.center[.size45[.content-box-white[**Every Country-Year is Coded by Multiple Experts**]]]
+
+<br>
+
+.pull-left[
+```{r, fig.align='center', out.width='100%'}
+knitr::include_graphics('libs/Images/05_3-V-Dem_Coding_Disagreements-Canada.png')
+```
+]
+
+.pull-right[
+```{r}
+# d_full |>
+#   filter(country_text_id == "CAN", year >= 1900) |>
+#   select(country_name, year, v2clkill:v2clkill_nr) |>
+#   View()
+
+# Canada data transformed model results back onto five point scale with 70% CI
+d |>
+  filter(country_text_id == "CAN", year %in% c(2015, 2005, 1995, 1985, 1975, 1965, 1955, 1945, 1935, 1925, 1915)) |>
+  select(country_name, year, v2clkill_nr, v2clkill_ord) |>
+  kbl(align = 'c') %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"), font_size = 22)
+```
+]
+
+
+???
+
+### Notes
+- See V-Dem [Faq on coder bias](https://v-dem.net/about/faq/)
+- ee V-Dem [Methodology](https://v-dem.net/about/v-dem-project/methodology/)
+- See Marquardt 2018
+
+<br>
+
+Essentially, each V-dem score is the result of having multiple experts in each country code the basic characteristics for that country-year.
+
+- They then combine and weight those different scores using a model that implements Item Response Theory (IRT)
+
+- The output is a consensus score and a 70% confidence interval which I've included in the dataset you have
+
+<br>
+
+The slide is showing you an example of the raw data fed into the model
+
+- On the left is a figure tracking all expert codings for "political killing" in Canada since 1900 and running up to 2015.
+
+- On the right is a table showing the consensus score for "political killing" in Canada that year and the number of experts who submitted a code.
+
+<br>
+
+What I hope you see here is a stark difference of opinion that existed across the four coders in the early 20th century of Canada.
+
+- Competing scores of 3 and 5 that the model essentially averaged out to a 4
+
+- Much more complicated than an average but you get the idea.
+
+<br>
+
+**SLIDE**: Let's look at another example
+
+
+
+
+---
+
+background-image: url('libs/Images/background-light_grey.jpg')
+background-size: 100%
+background-position: center
+class: middle
+
+.center[.size45[.content-box-white[**Every Country-Year is Coded by Multiple Experts**]]]
+
+<br>
+
+.pull-left[
+```{r, fig.align='center', out.width='100%'}
+knitr::include_graphics('libs/Images/05_3-V-Dem_Coding_Disagreements-Germany.png')
+```
+]
+
+.pull-right[
+```{r}
+# d_full |>
+#   filter(country_text_id == "CAN", year >= 1900) |>
+#   select(country_name, year, v2clkill:v2clkill_nr) |>
+#   View()
+
+# Canada data transformed model results back onto five point scale with 70% CI
+d |>
+  filter(country_text_id == "CAN", year %in% c(2015, 2005, 1995, 1985, 1975, 1965, 1955, 1945, 1935, 1925, 1915)) |>
+  select(country_name, year, v2clkill_nr, v2clkill_ord) |>
+  kbl(align = 'c') %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"), font_size = 22)
+```
+]
+
+???
+
+REDO ABOVE USING GERMANY
+
+Note that big differences exist but the trends are fairly consistent!
+
+
+
+
+---
+
+background-image: url('libs/Images/background-light_grey.jpg')
+background-size: 100%
+background-position: center
+class: middle
+
+.center[.size45[.content-box-white[**Every Country-Year is Coded by Multiple Experts**]]]
+
+<br>
+
+.pull-left[
+```{r, fig.align='center', out.width='100%'}
+knitr::include_graphics('libs/Images/05_3-V-Dem_Coding_Disagreements-Turkey.png')
+```
+]
+
+.pull-right[
+```{r}
+# d_full |>
+#   filter(country_text_id == "CAN", year >= 1900) |>
+#   select(country_name, year, v2clkill:v2clkill_nr) |>
+#   View()
+
+# Canada data transformed model results back onto five point scale with 70% CI
+d |>
+  filter(country_text_id == "CAN", year %in% c(2015, 2005, 1995, 1985, 1975, 1965, 1955, 1945, 1935, 1925, 1915)) |>
+  select(country_name, year, v2clkill_nr, v2clkill_ord) |>
+  kbl(align = 'c') %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"), font_size = 22)
+```
+]
+
+???
+
+REDO ABOVE USING TURKEY
+
+
+
+
+---
+
+05_3-Fig2_Histograms_Marquardt2018.png
+
+???
+
+Add histograms from the IRT paper showing most cases have plenty of experts
+
+<br>
+
+Discuss bias notes in V-Dem FAQ page
+
+<br>
+
+### Ok, what does this mean for us in terms of validity and reliability of the V-Dem measures?
+
+1. Be careful using any country-year with small number of coders
+
+2. Definitely consider the CI when interpreting changes in a score
+
+
+
+
+
+---
+
+background-image: url('libs/Images/background-light_grey.jpg')
+background-size: 100%
+background-position: center
+class: middle
+
+.center[.size55[.content-box-white[**Experts Often Disagree (1900-2015)**]]]
+
+```{r, fig.align='center', out.width='100%'}
+knitr::include_graphics('libs/Images/05_3-V-Dem_Coding_Disagreements1.png')
+```
+
+???
+
+```{r}
+# Canada data transformed model results back onto five point scale with 70% CI
+d |>
+  filter(country_text_id == "CAN", year >= 2000) |>
+  select(country_name, year, v2clkill_ord_codelow:v2clkill_nr)
+
+# Germany data transformed model results back onto five point scale with 70% CI
+d |>
+  filter(country_name == "Germany", year >= 2000) |>
+  select(country_name, year, v2clkill_ord_codelow:v2clkill_nr)
+```
+
+
+
+
+
+
+---
+
+background-image: url('libs/Images/background-light_grey.jpg')
+background-size: 100%
+background-position: center
+class: middle
+
+.size40[.content-box-white[**Experts Often Disagree (1900-2015)**]]
+
+```{r, fig.align='center', out.width='100%'}
+knitr::include_graphics('libs/Images/05_3-V-Dem_Coding_Disagreements1.png')
+```
+
+???
+
+
+
 
 
 
@@ -252,23 +643,23 @@ knitr::include_graphics('libs/Images/05_3-VDem_Logo.png')
 - Freedom from Forced Labor (women)
 ]
 
-.center[.size45[Audit the Data (2021)]]
+.center[.size45[.content-box-white[**Audit the Data (2021)**]]]
 
 ???
 
 Let's now audit the data.
 
-Everybody focus on the two countries you analyzed on Monday. 
+- Everybody focus on the two countries you've been studying for two weeks.
 
 - Consider the number of coders assigned to your country-year and the range of codings provided
 
-
+<br>
 
 ### Would you have coded these the same way? Why or why not?
 
 <br>
 
-### Findings? Takeaways?
+### Overarching takeaways on the V-Dem operationalizations, instrumentation and measurements?
 
 #### - Which variables seem the easiest to code / we have the most confidence in?
 
@@ -276,8 +667,19 @@ Everybody focus on the two countries you analyzed on Monday.
 
 <br>
 
-### Notes
-- ?
+**SLIDE**: Let's talk VERY BRIEFLY about how the V-Dem project combines expert codings for each country-year.
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
