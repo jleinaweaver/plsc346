@@ -186,28 +186,13 @@ knitr::include_graphics('libs/Images/05-2-CIRIGHTS_Logo.png')
 
 <br>
 
-As you can see in the codebook's ToC the CIRIGHTS project divides "respect for human rights" into four broad categories: 
-1. Physical integrity rights
-
-2. Empowerment rights and freedoms
-
-3. Occupational/ workers’ rights
-
-4. Justice rights
+Everybody open up the ToC in the CIRIGHTS codebook.
 
 <br>
 
-### Is this a "good" way to organize a quantitative exploration of government practices on human rights? Why or why not?
+As you can see in the codebook's ToC the CIRIGHTS project divides "respect for human rights" into four broad categories
 
-### - Are these four indices a good way to break down human rights practices?
-
-### - Are all of these instruments a valid representation of the concept?
-
-### - Any debatable instrument placements?
-
-<br>
-
-Moving forward we'll be focusing on the "Physical integrity rights" index which I think makes the most sense given our work on Monday's cases.
+- Moving forward we'll be focusing on the "Physical integrity rights" index which I think makes the most sense given our work on Monday's cases.
 
 - However, in thinking about your group definitions of political violence...
 
@@ -220,8 +205,9 @@ Moving forward we'll be focusing on the "Physical integrity rights" index which 
 - Freedom of Speech, 
 - Freedom of Assembly & Association, Workers’ Rights, Electoral Self-Determination, and Freedom of Religion indicators
 
+<br>
 
-
+**SLIDE**: Ok, let's unpack the "Physical integrity rights"
 
 
 ---

@@ -73,6 +73,9 @@ Ultimately, your central argument should be a clear recommendation of which sour
 
 ### Questions on the prompt?
 
+&lt;br&gt;
+
+
 
 
 
@@ -123,7 +126,7 @@ background-size: 100%
 background-position: center
 class: middle, center
 
-.size70[**For Today**]
+.size70[.content-box-white[**For Today**]]
 
 .size60[
 Be ready to evaluate and explore the V-Dem Varieties of Democracy "Personal Integrity Rights" data
@@ -147,6 +150,7 @@ The V-Dem project takes a VERY different approach to measuring state behavior th
 
 
 
+
 ---
 
 background-image: url('libs/Images/background-light_grey.jpg')
@@ -154,14 +158,16 @@ background-size: 100%
 background-position: center
 class: middle
 
-.center[.size50[**II. How and why do governments use violence against the people inside their borders?**]]
+.center[.size55[.content-box-white[**"Political Violence"**]]]
 
+.size30[
 &lt;br&gt;
+]
 
-.size40[
-.center[.content-box-white[**"Political Violence" (Class)**]]
+.center[.size45[**II. How and why do governments use violence against the people inside their borders?**]]
 
-1. **"Human Rights Practices" (State Dept, AI, CIRIGHTS)**
+.size45[
+1. **"Human Rights Practices" (State Dept and AI)**
 
 2. **"Political Terror" (PTS)**
 
@@ -170,7 +176,9 @@ class: middle
 
 ???
 
-Remember, the aim of our class is to describe and explain "political violence" and the aim of the second section of the class is focused on domestic violence by governments
+Remember, the overarching aim of our class is to describe and explain "political violence"
+
+The aim of the second section of the class is focused on this big question about governments using violence within their borders
 
 &lt;br&gt;
 
@@ -365,6 +373,7 @@ Weaknesses
 
 
 
+
 ---
 
 background-image: url('libs/Images/background-light_grey.jpg')
@@ -373,6 +382,62 @@ background-position: center
 class: middle
 
 .center[.size45[.content-box-white[**Every Country-Year is Coded by Multiple Experts**]]]
+
+&lt;br&gt;
+
+&lt;img src="libs/Images/05_3-Marquardt2018-Fig2ab.png" width="92%" style="display: block; margin: auto;" /&gt;
+
+???
+
+The team behind V-Dem has published a bunch of research on their methods.
+
+- I'll pull some highlights from a 2018 article in Political Analysis to give you the intuition behind their work.
+
+- Marquardt &amp; Pemstein (2018). IRT Models for Expert-Coded Panel Data. Political Analysis, 26(4), 431–456. 
+
+&lt;br&gt;
+
+Step 1 of their process is to get multiple country experts to use the instruments for a single country-year
+
+&lt;br&gt;
+
+Here I'm showing you histograms on the number of experts per country-year and the number of experts per observation in the dataset.
+
+- The project's goal is a minimum of five experts per country
+
+- Panel (a) shows
+    - The average is 12 experts/country
+    - Only 27 countries had fewer than the target
+
+- Panel (b) shows the number of expert ratings per variable
+    - Average is 6
+    - Each expert is allowed to skip measurements they don't feel confident in rating
+
+&lt;br&gt;
+
+### Everybody understand these histograms?
+
+### Per the methodology document on the V-Dem website, why do they use experts for this work?
+- ("We use experts because many key features of democracy are not directly observable. For example, it is easy to observe whether or not a legislature has the legal right to investigate an executive. However, assessing the extent to which the legislature actually does so requires evaluation by experts with extensive conceptual and case knowledge.")
+
+&lt;br&gt;
+
+### What does that imply for the reliability of the data they produce?
+
+&lt;br&gt;
+
+**SLIDE**: Their next challenge is to combine all these ratings to produce a single score
+
+
+
+---
+
+background-image: url('libs/Images/background-light_grey.jpg')
+background-size: 100%
+background-position: center
+class: middle
+
+.center[.size55[.content-box-white[**Experts Often Disagree**]]]
 
 &lt;br&gt;
 
@@ -381,122 +446,151 @@ class: middle
 ]
 
 .pull-right[
-&lt;table class="table table-striped table-hover table-condensed table-responsive" style="font-size: 22px; margin-left: auto; margin-right: auto;"&gt;
+&lt;table class="table table-striped table-hover table-condensed table-responsive" style="font-size: 16px; margin-left: auto; margin-right: auto;"&gt;
  &lt;thead&gt;
   &lt;tr&gt;
-   &lt;th style="text-align:center;"&gt; country_name &lt;/th&gt;
    &lt;th style="text-align:center;"&gt; year &lt;/th&gt;
    &lt;th style="text-align:center;"&gt; v2clkill_nr &lt;/th&gt;
+   &lt;th style="text-align:center;"&gt; v2clkill_ord_codelow &lt;/th&gt;
    &lt;th style="text-align:center;"&gt; v2clkill_ord &lt;/th&gt;
+   &lt;th style="text-align:center;"&gt; v2clkill_ord_codehigh &lt;/th&gt;
   &lt;/tr&gt;
  &lt;/thead&gt;
 &lt;tbody&gt;
   &lt;tr&gt;
-   &lt;td style="text-align:center;"&gt; Canada &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 1905 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 7 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 4 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 4 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 4 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
    &lt;td style="text-align:center;"&gt; 1915 &lt;/td&gt;
    &lt;td style="text-align:center;"&gt; 7 &lt;/td&gt;
    &lt;td style="text-align:center;"&gt; 4 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 4 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 4 &lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
-   &lt;td style="text-align:center;"&gt; Canada &lt;/td&gt;
    &lt;td style="text-align:center;"&gt; 1925 &lt;/td&gt;
    &lt;td style="text-align:center;"&gt; 6 &lt;/td&gt;
    &lt;td style="text-align:center;"&gt; 4 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 4 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 4 &lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
-   &lt;td style="text-align:center;"&gt; Canada &lt;/td&gt;
    &lt;td style="text-align:center;"&gt; 1935 &lt;/td&gt;
    &lt;td style="text-align:center;"&gt; 6 &lt;/td&gt;
    &lt;td style="text-align:center;"&gt; 4 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 4 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 4 &lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
-   &lt;td style="text-align:center;"&gt; Canada &lt;/td&gt;
    &lt;td style="text-align:center;"&gt; 1945 &lt;/td&gt;
    &lt;td style="text-align:center;"&gt; 6 &lt;/td&gt;
    &lt;td style="text-align:center;"&gt; 4 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 4 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 4 &lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
-   &lt;td style="text-align:center;"&gt; Canada &lt;/td&gt;
    &lt;td style="text-align:center;"&gt; 1955 &lt;/td&gt;
    &lt;td style="text-align:center;"&gt; 6 &lt;/td&gt;
    &lt;td style="text-align:center;"&gt; 4 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 4 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 4 &lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
-   &lt;td style="text-align:center;"&gt; Canada &lt;/td&gt;
    &lt;td style="text-align:center;"&gt; 1965 &lt;/td&gt;
    &lt;td style="text-align:center;"&gt; 6 &lt;/td&gt;
    &lt;td style="text-align:center;"&gt; 4 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 4 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 4 &lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
-   &lt;td style="text-align:center;"&gt; Canada &lt;/td&gt;
    &lt;td style="text-align:center;"&gt; 1975 &lt;/td&gt;
    &lt;td style="text-align:center;"&gt; 6 &lt;/td&gt;
    &lt;td style="text-align:center;"&gt; 4 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 4 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 4 &lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
-   &lt;td style="text-align:center;"&gt; Canada &lt;/td&gt;
    &lt;td style="text-align:center;"&gt; 1985 &lt;/td&gt;
    &lt;td style="text-align:center;"&gt; 6 &lt;/td&gt;
    &lt;td style="text-align:center;"&gt; 4 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 4 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 4 &lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
-   &lt;td style="text-align:center;"&gt; Canada &lt;/td&gt;
    &lt;td style="text-align:center;"&gt; 1995 &lt;/td&gt;
    &lt;td style="text-align:center;"&gt; 6 &lt;/td&gt;
    &lt;td style="text-align:center;"&gt; 4 &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:center;"&gt; Canada &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; 2005 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; 16 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 4 &lt;/td&gt;
    &lt;td style="text-align:center;"&gt; 4 &lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
-   &lt;td style="text-align:center;"&gt; Canada &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 2005 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 16 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 4 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 4 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 4 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
    &lt;td style="text-align:center;"&gt; 2015 &lt;/td&gt;
    &lt;td style="text-align:center;"&gt; 12 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 4 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 4 &lt;/td&gt;
    &lt;td style="text-align:center;"&gt; 4 &lt;/td&gt;
   &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
 ]
 
-
 ???
 
-### Notes
-- See V-Dem [Faq on coder bias](https://v-dem.net/about/faq/)
-- ee V-Dem [Methodology](https://v-dem.net/about/v-dem-project/methodology/)
-- See Marquardt 2018
+Let's use Canada as an example of the challenge facing the researchers.
 
 &lt;br&gt;
 
-Essentially, each V-dem score is the result of having multiple experts in each country code the basic characteristics for that country-year.
+On the left is a line plot of different coder ratings for the "Freedom from political killings" variable from 1900 to 2015.
 
-- They then combine and weight those different scores using a model that implements Item Response Theory (IRT)
+- The y-axis is the four point scale for "Freedom from political killings"
+    - Note they've take the 0-4 scale and made it 1-5 here
 
-- The output is a consensus score and a 70% confidence interval which I've included in the dataset you have
-
-&lt;br&gt;
-
-The slide is showing you an example of the raw data fed into the model
-
-- On the left is a figure tracking all expert codings for "political killing" in Canada since 1900 and running up to 2015.
-
-- On the right is a table showing the consensus score for "political killing" in Canada that year and the number of experts who submitted a code.
+- The x-axis is time in years
 
 &lt;br&gt;
 
-What I hope you see here is a stark difference of opinion that existed across the four coders in the early 20th century of Canada.
+On the right is our tabular data with snapshots every ten years since 1905
 
-- Competing scores of 3 and 5 that the model essentially averaged out to a 4
-
-- Much more complicated than an average but you get the idea.
+- This shows the number of experts who coded this variable in that year, the consensus result and a 70% confidence interval
 
 &lt;br&gt;
 
-**SLIDE**: Let's look at another example
+In essence, the second step of the process is when all the expert ratings are fed into a model that uses the logic of Item Response Theory (IRT) to identify a consensus value (with CIs)
 
+- Essentially, IRT is an attempt to use observed outcomes to learn something about the underlying dynamics that produced them
+
+- In other words, V-Dem assumes each expert's coding tells us something about the natural world and combining them together gets us a better estimate of it.
+
+&lt;br&gt;
+
+Confusingly, the plot on the left shows the scale as 1-5 and our tabular data on the original 0-4.
+
+- So, keep in mind that the fours in the table are fives on the plot
+
+&lt;br&gt;
+
+### What do we notice here? Talk to me about the expert ratings of Canada.
+
+- Almost total consensus on top score with one outlier consistently rating across time
+
+- The one outlier doesn't move the final rating or the CI
+
+- The researchers note that this outlier speaks to the reliability, or lack thereof, of the experts they recruit
+
+&lt;br&gt;
+
+**SLIDE**: Let's look at another case!
 
 
 
@@ -507,7 +601,7 @@ background-size: 100%
 background-position: center
 class: middle
 
-.center[.size45[.content-box-white[**Every Country-Year is Coded by Multiple Experts**]]]
+.center[.size55[.content-box-white[**Experts Often Disagree**]]]
 
 &lt;br&gt;
 
@@ -516,80 +610,92 @@ class: middle
 ]
 
 .pull-right[
-&lt;table class="table table-striped table-hover table-condensed table-responsive" style="font-size: 22px; margin-left: auto; margin-right: auto;"&gt;
+&lt;table class="table table-striped table-hover table-condensed table-responsive" style="font-size: 16px; margin-left: auto; margin-right: auto;"&gt;
  &lt;thead&gt;
   &lt;tr&gt;
-   &lt;th style="text-align:center;"&gt; country_name &lt;/th&gt;
    &lt;th style="text-align:center;"&gt; year &lt;/th&gt;
    &lt;th style="text-align:center;"&gt; v2clkill_nr &lt;/th&gt;
+   &lt;th style="text-align:center;"&gt; v2clkill_ord_codelow &lt;/th&gt;
    &lt;th style="text-align:center;"&gt; v2clkill_ord &lt;/th&gt;
+   &lt;th style="text-align:center;"&gt; v2clkill_ord_codehigh &lt;/th&gt;
   &lt;/tr&gt;
  &lt;/thead&gt;
 &lt;tbody&gt;
   &lt;tr&gt;
-   &lt;td style="text-align:center;"&gt; Canada &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 1905 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 21 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 3 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 3 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 3 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
    &lt;td style="text-align:center;"&gt; 1915 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; 7 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; 4 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 21 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 3 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 3 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 3 &lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
-   &lt;td style="text-align:center;"&gt; Canada &lt;/td&gt;
    &lt;td style="text-align:center;"&gt; 1925 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; 6 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; 4 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 10 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 3 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 3 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 3 &lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
-   &lt;td style="text-align:center;"&gt; Canada &lt;/td&gt;
    &lt;td style="text-align:center;"&gt; 1935 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; 6 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; 4 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 11 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 0 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 0 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 0 &lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
-   &lt;td style="text-align:center;"&gt; Canada &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; 1945 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; 6 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; 4 &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:center;"&gt; Canada &lt;/td&gt;
    &lt;td style="text-align:center;"&gt; 1955 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; 6 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 11 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 4 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 4 &lt;/td&gt;
    &lt;td style="text-align:center;"&gt; 4 &lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
-   &lt;td style="text-align:center;"&gt; Canada &lt;/td&gt;
    &lt;td style="text-align:center;"&gt; 1965 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; 6 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 11 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 4 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 4 &lt;/td&gt;
    &lt;td style="text-align:center;"&gt; 4 &lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
-   &lt;td style="text-align:center;"&gt; Canada &lt;/td&gt;
    &lt;td style="text-align:center;"&gt; 1975 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; 6 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 11 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 4 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 4 &lt;/td&gt;
    &lt;td style="text-align:center;"&gt; 4 &lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
-   &lt;td style="text-align:center;"&gt; Canada &lt;/td&gt;
    &lt;td style="text-align:center;"&gt; 1985 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; 6 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 11 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 4 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 4 &lt;/td&gt;
    &lt;td style="text-align:center;"&gt; 4 &lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
-   &lt;td style="text-align:center;"&gt; Canada &lt;/td&gt;
    &lt;td style="text-align:center;"&gt; 1995 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; 6 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 11 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 4 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 4 &lt;/td&gt;
    &lt;td style="text-align:center;"&gt; 4 &lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
-   &lt;td style="text-align:center;"&gt; Canada &lt;/td&gt;
    &lt;td style="text-align:center;"&gt; 2005 &lt;/td&gt;
    &lt;td style="text-align:center;"&gt; 16 &lt;/td&gt;
    &lt;td style="text-align:center;"&gt; 4 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 4 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 4 &lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
-   &lt;td style="text-align:center;"&gt; Canada &lt;/td&gt;
    &lt;td style="text-align:center;"&gt; 2015 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; 12 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 8 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 4 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 4 &lt;/td&gt;
    &lt;td style="text-align:center;"&gt; 4 &lt;/td&gt;
   &lt;/tr&gt;
 &lt;/tbody&gt;
@@ -598,9 +704,38 @@ class: middle
 
 ???
 
-REDO ABOVE USING GERMANY
+Again, remember you have to add '1' to the scores in the table to match their line plot.
 
-Note that big differences exist but the trends are fairly consistent!
+### What do we notice here? Talk to me about the expert ratings of Germany.
+
+- Compellingly, while the coders differ the trends they identify are very consistent
+    - Things get worse during the world wars and improve afterwards
+
+&lt;br&gt;
+
+### Per the FAQ on the V-Dem website, why do the researchers believe their instruments and approach helps minimize the role of expert bias in messing up the scores?
+
+- (1. Experts are asked to code specific, low-level concepts not high level aggregates)
+
+- (2. Instruments are designed with specific levels for coding)
+
+- (3. The V-Dem Measurement Model (MM) already tries to adapt for experts to vary in terms of whether they tend to swing high or low vs others)
+
+- (4. Experts are trained and practice on hypothetical cases which helps tweak the model)
+
+- (5. Over time each expert leaves a tack record that can be evaluated and compared to others for future model tweaks)
+
+&lt;br&gt;
+
+Certainly doesn't end the problem but they are working on it!
+
+&lt;br&gt;
+
+### Questions on this?
+
+&lt;br&gt;
+
+**SLIDE**: Let's look at a tougher case!
 
 
 
@@ -612,90 +747,109 @@ background-size: 100%
 background-position: center
 class: middle
 
-.center[.size45[.content-box-white[**Every Country-Year is Coded by Multiple Experts**]]]
+.center[.size55[.content-box-white[**Experts Often Disagree**]]]
 
 &lt;br&gt;
 
 .pull-left[
-&lt;img src="libs/Images/05_3-V-Dem_Coding_Disagreements-Turkey.png" width="100%" style="display: block; margin: auto;" /&gt;
+&lt;img src="libs/Images/05_3-V-Dem_Coding_Disagreements-Russia.png" width="100%" style="display: block; margin: auto;" /&gt;
 ]
 
 .pull-right[
-&lt;table class="table table-striped table-hover table-condensed table-responsive" style="font-size: 22px; margin-left: auto; margin-right: auto;"&gt;
+&lt;table class="table table-striped table-hover table-condensed table-responsive" style="font-size: 16px; margin-left: auto; margin-right: auto;"&gt;
  &lt;thead&gt;
   &lt;tr&gt;
-   &lt;th style="text-align:center;"&gt; country_name &lt;/th&gt;
    &lt;th style="text-align:center;"&gt; year &lt;/th&gt;
    &lt;th style="text-align:center;"&gt; v2clkill_nr &lt;/th&gt;
+   &lt;th style="text-align:center;"&gt; v2clkill_ord_codelow &lt;/th&gt;
    &lt;th style="text-align:center;"&gt; v2clkill_ord &lt;/th&gt;
+   &lt;th style="text-align:center;"&gt; v2clkill_ord_codehigh &lt;/th&gt;
   &lt;/tr&gt;
  &lt;/thead&gt;
 &lt;tbody&gt;
   &lt;tr&gt;
-   &lt;td style="text-align:center;"&gt; Canada &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 1905 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 11 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 1 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 1 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 1 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
    &lt;td style="text-align:center;"&gt; 1915 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; 7 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; 4 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 11 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 1 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 1 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 2 &lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
-   &lt;td style="text-align:center;"&gt; Canada &lt;/td&gt;
    &lt;td style="text-align:center;"&gt; 1925 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; 6 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; 4 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 10 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 0 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 0 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 0 &lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
-   &lt;td style="text-align:center;"&gt; Canada &lt;/td&gt;
    &lt;td style="text-align:center;"&gt; 1935 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; 6 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; 4 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 10 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 0 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 0 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 0 &lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
-   &lt;td style="text-align:center;"&gt; Canada &lt;/td&gt;
    &lt;td style="text-align:center;"&gt; 1945 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; 6 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; 4 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 10 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 0 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 0 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 0 &lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
-   &lt;td style="text-align:center;"&gt; Canada &lt;/td&gt;
    &lt;td style="text-align:center;"&gt; 1955 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; 6 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; 4 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 10 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 1 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 1 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 2 &lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
-   &lt;td style="text-align:center;"&gt; Canada &lt;/td&gt;
    &lt;td style="text-align:center;"&gt; 1965 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; 6 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; 4 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 10 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 1 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 2 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 2 &lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
-   &lt;td style="text-align:center;"&gt; Canada &lt;/td&gt;
    &lt;td style="text-align:center;"&gt; 1975 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; 6 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; 4 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 10 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 1 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 2 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 2 &lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
-   &lt;td style="text-align:center;"&gt; Canada &lt;/td&gt;
    &lt;td style="text-align:center;"&gt; 1985 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; 6 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; 4 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 10 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 1 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 2 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 2 &lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
-   &lt;td style="text-align:center;"&gt; Canada &lt;/td&gt;
    &lt;td style="text-align:center;"&gt; 1995 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; 6 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; 4 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 10 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 3 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 3 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 3 &lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
-   &lt;td style="text-align:center;"&gt; Canada &lt;/td&gt;
    &lt;td style="text-align:center;"&gt; 2005 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; 16 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; 4 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 17 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 2 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 2 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 2 &lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
-   &lt;td style="text-align:center;"&gt; Canada &lt;/td&gt;
    &lt;td style="text-align:center;"&gt; 2015 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; 12 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; 4 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 14 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 1 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 1 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 1 &lt;/td&gt;
   &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -703,22 +857,9 @@ class: middle
 
 ???
 
-REDO ABOVE USING TURKEY
+Russia is a particularly hard case for this variable, "freedom from political killing", but even here there are detectable trends in the data.
 
-
-
-
----
-
-05_3-Fig2_Histograms_Marquardt2018.png
-
-???
-
-Add histograms from the IRT paper showing most cases have plenty of experts
-
-&lt;br&gt;
-
-Discuss bias notes in V-Dem FAQ page
+### Talk to me about the line plot and the consensus scores in the table. How confident are we in these consensus scores?
 
 &lt;br&gt;
 
@@ -727,80 +868,6 @@ Discuss bias notes in V-Dem FAQ page
 1. Be careful using any country-year with small number of coders
 
 2. Definitely consider the CI when interpreting changes in a score
-
-
-
-
-
----
-
-background-image: url('libs/Images/background-light_grey.jpg')
-background-size: 100%
-background-position: center
-class: middle
-
-.center[.size55[.content-box-white[**Experts Often Disagree (1900-2015)**]]]
-
-&lt;img src="libs/Images/05_3-V-Dem_Coding_Disagreements1.png" width="100%" style="display: block; margin: auto;" /&gt;
-
-???
-
-
-```
-# A tibble: 23 × 6
-   country_name  year v2clkill_ord_codelow v2clkill_ord v2clkill_ord_codehigh
-   &lt;chr&gt;        &lt;dbl&gt;                &lt;dbl&gt;        &lt;dbl&gt;                 &lt;dbl&gt;
- 1 Canada        2000                    4            4                     4
- 2 Canada        2001                    4            4                     4
- 3 Canada        2002                    4            4                     4
- 4 Canada        2003                    4            4                     4
- 5 Canada        2004                    4            4                     4
- 6 Canada        2005                    4            4                     4
- 7 Canada        2006                    4            4                     4
- 8 Canada        2007                    4            4                     4
- 9 Canada        2008                    4            4                     4
-10 Canada        2009                    4            4                     4
-# ℹ 13 more rows
-# ℹ 1 more variable: v2clkill_nr &lt;dbl&gt;
-```
-
-```
-# A tibble: 23 × 6
-   country_name  year v2clkill_ord_codelow v2clkill_ord v2clkill_ord_codehigh
-   &lt;chr&gt;        &lt;dbl&gt;                &lt;dbl&gt;        &lt;dbl&gt;                 &lt;dbl&gt;
- 1 Germany       2000                    4            4                     4
- 2 Germany       2001                    4            4                     4
- 3 Germany       2002                    4            4                     4
- 4 Germany       2003                    4            4                     4
- 5 Germany       2004                    4            4                     4
- 6 Germany       2005                    4            4                     4
- 7 Germany       2006                    4            4                     4
- 8 Germany       2007                    4            4                     4
- 9 Germany       2008                    4            4                     4
-10 Germany       2009                    4            4                     4
-# ℹ 13 more rows
-# ℹ 1 more variable: v2clkill_nr &lt;dbl&gt;
-```
-
-
-
-
-
-
----
-
-background-image: url('libs/Images/background-light_grey.jpg')
-background-size: 100%
-background-position: center
-class: middle
-
-.size40[.content-box-white[**Experts Often Disagree (1900-2015)**]]
-
-&lt;img src="libs/Images/05_3-V-Dem_Coding_Disagreements1.png" width="100%" style="display: block; margin: auto;" /&gt;
-
-???
-
-
 
 
 
@@ -845,16 +912,7 @@ Let's now audit the data.
 
 &lt;br&gt;
 
-**SLIDE**: Let's talk VERY BRIEFLY about how the V-Dem project combines expert codings for each country-year.
-
-
-
-
-
-
-
-
-
+**SLIDE**: With time remaining let's look at the data!
 
 
 
@@ -884,7 +942,7 @@ Then scroll through and talk to me about the kinds of countries with missing dat
 
 class: slideblue, middle, full
 
-&lt;img src="05-3-VDem_Data_files/figure-html/unnamed-chunk-18-1.png" width="95%" style="display: block; margin: auto;" /&gt;
+&lt;img src="05-3-VDem_Data_files/figure-html/unnamed-chunk-16-1.png" width="95%" style="display: block; margin: auto;" /&gt;
 
 ???
 
@@ -985,7 +1043,7 @@ What are the most common scores across the four sub-measures?
 
 class: full, slideblue
 
-&lt;img src="05-3-VDem_Data_files/figure-html/unnamed-chunk-20-1.png" width="98%" style="display: block; margin: auto;" /&gt;
+&lt;img src="05-3-VDem_Data_files/figure-html/unnamed-chunk-18-1.png" width="98%" style="display: block; margin: auto;" /&gt;
 
 ???
 
@@ -1039,30 +1097,6 @@ class: full, slideblue
 
 
 
----
-
-background-image: url('libs/Images/background-light_grey.jpg')
-background-size: 100%
-background-position: center
-class: middle, center
-
-.size70[
-Have the utilization rates for the types of violations varied across time?
-]
-
-???
-
-
-
----
-
-class: middle, full
-
-&lt;img src="05-3-VDem_Data_files/figure-html/unnamed-chunk-22-1.png" width="97%" style="display: block; margin: auto;" /&gt;&lt;img src="05-3-VDem_Data_files/figure-html/unnamed-chunk-22-2.png" width="97%" style="display: block; margin: auto;" /&gt;
-
-???
-
-
 
 ---
 
@@ -1085,7 +1119,7 @@ Given the high correlation between torture and killing this should represent bot
 
 class: slideblue, middle, full
 
-&lt;img src="05-3-VDem_Data_files/figure-html/unnamed-chunk-23-1.png" width="95%" style="display: block; margin: auto;" /&gt;
+&lt;img src="05-3-VDem_Data_files/figure-html/unnamed-chunk-20-1.png" width="95%" style="display: block; margin: auto;" /&gt;
 
 ???
 
@@ -1112,7 +1146,100 @@ Given the high correlation between the male and female scores this should repres
 
 class: slideblue, middle, full
 
-&lt;img src="05-3-VDem_Data_files/figure-html/unnamed-chunk-24-1.png" width="95%" style="display: block; margin: auto;" /&gt;
+&lt;img src="05-3-VDem_Data_files/figure-html/unnamed-chunk-21-1.png" width="95%" style="display: block; margin: auto;" /&gt;
+
+???
+
+
+
+---
+
+class: slideblue, middle, full
+
+&lt;img src="05-3-VDem_Data_files/figure-html/unnamed-chunk-22-1.png" width="95%" style="display: block; margin: auto;" /&gt;
+
+???
+
+
+
+
+---
+
+background-image: url('libs/Images/background-blue_triangles2.png')
+background-size: 100%
+background-position: center
+class: middle
+
+.size40[.content-box-white[**Paper 1**]]
+
+.size35[
+If someone came to you with the goal of better understanding the use of political violence by governments around the world, which of the data sources that we explored in class would you recommend and why? 
+
+Your report should introduce each source to the reader with your analysis of its strengths and weaknesses. 
+
+Ultimately, your central argument should be a clear recommendation of which source(s) they should focus on.
+]
+
+???
+
+We've now covered all the sources for the first paper.
+
+### Any questions on the prompt?
+
+
+
+
+---
+
+background-image: url('libs/Images/background-light_grey.jpg')
+background-size: 100%
+background-position: center
+class: middle, center
+
+.size70[.content-box-white[**For Next Class**]]
+
+.size60[
+Review your notes on the five sources we have explored in class and be ready to make an argument for and against each of them.
+]
+
+???
+
+
+
+
+
+
+
+
+
+
+
+---
+
+old slides
+
+
+
+---
+
+background-image: url('libs/Images/background-light_grey.jpg')
+background-size: 100%
+background-position: center
+class: middle, center
+
+.size70[
+Have the utilization rates for the types of violations varied across time?
+]
+
+???
+
+
+
+---
+
+class: middle, full
+
+&lt;img src="05-3-VDem_Data_files/figure-html/unnamed-chunk-23-1.png" width="97%" style="display: block; margin: auto;" /&gt;&lt;img src="05-3-VDem_Data_files/figure-html/unnamed-chunk-23-2.png" width="97%" style="display: block; margin: auto;" /&gt;
 
 ???
 
@@ -1141,63 +1268,9 @@ Focus on the years since 2001 and find us examples of countries that have:
 
 class: slideblue, middle, full
 
-&lt;img src="05-3-VDem_Data_files/figure-html/unnamed-chunk-25-1.png" width="95%" style="display: block; margin: auto;" /&gt;
+&lt;img src="05-3-VDem_Data_files/figure-html/unnamed-chunk-24-1.png" width="95%" style="display: block; margin: auto;" /&gt;
 
 ???
-
-
-
----
-
-class: slideblue, middle, full
-
-&lt;img src="05-3-VDem_Data_files/figure-html/unnamed-chunk-26-1.png" width="95%" style="display: block; margin: auto;" /&gt;
-
-???
-
-
-
-
----
-
-background-image: url('libs/Images/background-light_grey.jpg')
-background-size: 100%
-background-position: center
-class: middle
-
-.center[.size55[**Measuring Political Violence by Countries**]]
-
-.size40[
-Sources: 
-- Amnesty International and the US State Department
-
-Measures:
-- The Political Terror Scale (PTS)
-- The CIRIGHTS Data project
-- The V-Dem Data project
-]
-
-
-???
-
-### Bottom line, how reliable and valid are the measures of state political violence represented by the research projects we've explored this week?
-
-#### - Strengths of existing sources and measures?
-
-#### - Weaknesses of existing sources and measures?
-
-&lt;br&gt;
-
-NEXT CLASS: Get to work on the first paper.
-
-- Compare and contrast across all sources!
-
-
-
-
-
-
-
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>

@@ -91,6 +91,9 @@ Ultimately, your central argument should be a clear recommendation of which sour
 
 ### Questions on the prompt?
 
+<br>
+
+
 
 
 
@@ -141,7 +144,7 @@ background-size: 100%
 background-position: center
 class: middle, center
 
-.size70[**For Today**]
+.size70[.content-box-white[**For Today**]]
 
 .size60[
 Be ready to evaluate and explore the V-Dem Varieties of Democracy "Personal Integrity Rights" data
@@ -165,6 +168,7 @@ The V-Dem project takes a VERY different approach to measuring state behavior th
 
 
 
+
 ---
 
 background-image: url('libs/Images/background-light_grey.jpg')
@@ -172,14 +176,16 @@ background-size: 100%
 background-position: center
 class: middle
 
-.center[.size50[**II. How and why do governments use violence against the people inside their borders?**]]
+.center[.size55[.content-box-white[**"Political Violence"**]]]
 
+.size30[
 <br>
+]
 
-.size40[
-.center[.content-box-white[**"Political Violence" (Class)**]]
+.center[.size45[**II. How and why do governments use violence against the people inside their borders?**]]
 
-1. **"Human Rights Practices" (State Dept, AI, CIRIGHTS)**
+.size45[
+1. **"Human Rights Practices" (State Dept and AI)**
 
 2. **"Political Terror" (PTS)**
 
@@ -188,7 +194,9 @@ class: middle
 
 ???
 
-Remember, the aim of our class is to describe and explain "political violence" and the aim of the second section of the class is focused on domestic violence by governments
+Remember, the overarching aim of our class is to describe and explain "political violence"
+
+The aim of the second section of the class is focused on this big question about governments using violence within their borders
 
 <br>
 
@@ -395,6 +403,7 @@ Weaknesses
 
 
 
+
 ---
 
 background-image: url('libs/Images/background-light_grey.jpg')
@@ -403,6 +412,64 @@ background-position: center
 class: middle
 
 .center[.size45[.content-box-white[**Every Country-Year is Coded by Multiple Experts**]]]
+
+<br>
+
+```{r, fig.align='center', out.width='92%'}
+knitr::include_graphics('libs/Images/05_3-Marquardt2018-Fig2ab.png')
+```
+
+???
+
+The team behind V-Dem has published a bunch of research on their methods.
+
+- I'll pull some highlights from a 2018 article in Political Analysis to give you the intuition behind their work.
+
+- Marquardt & Pemstein (2018). IRT Models for Expert-Coded Panel Data. Political Analysis, 26(4), 431–456. 
+
+<br>
+
+Step 1 of their process is to get multiple country experts to use the instruments for a single country-year
+
+<br>
+
+Here I'm showing you histograms on the number of experts per country-year and the number of experts per observation in the dataset.
+
+- The project's goal is a minimum of five experts per country
+
+- Panel (a) shows
+    - The average is 12 experts/country
+    - Only 27 countries had fewer than the target
+
+- Panel (b) shows the number of expert ratings per variable
+    - Average is 6
+    - Each expert is allowed to skip measurements they don't feel confident in rating
+
+<br>
+
+### Everybody understand these histograms?
+
+### Per the methodology document on the V-Dem website, why do they use experts for this work?
+- ("We use experts because many key features of democracy are not directly observable. For example, it is easy to observe whether or not a legislature has the legal right to investigate an executive. However, assessing the extent to which the legislature actually does so requires evaluation by experts with extensive conceptual and case knowledge.")
+
+<br>
+
+### What does that imply for the reliability of the data they produce?
+
+<br>
+
+**SLIDE**: Their next challenge is to combine all these ratings to produce a single score
+
+
+
+---
+
+background-image: url('libs/Images/background-light_grey.jpg')
+background-size: 100%
+background-position: center
+class: middle
+
+.center[.size55[.content-box-white[**Experts Often Disagree**]]]
 
 <br>
 
@@ -421,49 +488,59 @@ knitr::include_graphics('libs/Images/05_3-V-Dem_Coding_Disagreements-Canada.png'
 
 # Canada data transformed model results back onto five point scale with 70% CI
 d |>
-  filter(country_text_id == "CAN", year %in% c(2015, 2005, 1995, 1985, 1975, 1965, 1955, 1945, 1935, 1925, 1915)) |>
-  select(country_name, year, v2clkill_nr, v2clkill_ord) |>
+  filter(country_text_id == "CAN", year %in% c(2015, 2005, 1995, 1985, 1975, 1965, 1955, 1945, 1935, 1925, 1915, 1905)) |>
+  select(year, v2clkill_nr, v2clkill_ord_codelow, v2clkill_ord, v2clkill_ord_codehigh) |>
   kbl(align = 'c') %>%
-  kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"), font_size = 22)
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"), font_size = 16)
 ```
 ]
 
-
 ???
 
-### Notes
-- See V-Dem [Faq on coder bias](https://v-dem.net/about/faq/)
-- ee V-Dem [Methodology](https://v-dem.net/about/v-dem-project/methodology/)
-- See Marquardt 2018
+Let's use Canada as an example of the challenge facing the researchers.
 
 <br>
 
-Essentially, each V-dem score is the result of having multiple experts in each country code the basic characteristics for that country-year.
+On the left is a line plot of different coder ratings for the "Freedom from political killings" variable from 1900 to 2015.
 
-- They then combine and weight those different scores using a model that implements Item Response Theory (IRT)
+- The y-axis is the four point scale for "Freedom from political killings"
+    - Note they've take the 0-4 scale and made it 1-5 here
 
-- The output is a consensus score and a 70% confidence interval which I've included in the dataset you have
-
-<br>
-
-The slide is showing you an example of the raw data fed into the model
-
-- On the left is a figure tracking all expert codings for "political killing" in Canada since 1900 and running up to 2015.
-
-- On the right is a table showing the consensus score for "political killing" in Canada that year and the number of experts who submitted a code.
+- The x-axis is time in years
 
 <br>
 
-What I hope you see here is a stark difference of opinion that existed across the four coders in the early 20th century of Canada.
+On the right is our tabular data with snapshots every ten years since 1905
 
-- Competing scores of 3 and 5 that the model essentially averaged out to a 4
-
-- Much more complicated than an average but you get the idea.
+- This shows the number of experts who coded this variable in that year, the consensus result and a 70% confidence interval
 
 <br>
 
-**SLIDE**: Let's look at another example
+In essence, the second step of the process is when all the expert ratings are fed into a model that uses the logic of Item Response Theory (IRT) to identify a consensus value (with CIs)
 
+- Essentially, IRT is an attempt to use observed outcomes to learn something about the underlying dynamics that produced them
+
+- In other words, V-Dem assumes each expert's coding tells us something about the natural world and combining them together gets us a better estimate of it.
+
+<br>
+
+Confusingly, the plot on the left shows the scale as 1-5 and our tabular data on the original 0-4.
+
+- So, keep in mind that the fours in the table are fives on the plot
+
+<br>
+
+### What do we notice here? Talk to me about the expert ratings of Canada.
+
+- Almost total consensus on top score with one outlier consistently rating across time
+
+- The one outlier doesn't move the final rating or the CI
+
+- The researchers note that this outlier speaks to the reliability, or lack thereof, of the experts they recruit
+
+<br>
+
+**SLIDE**: Let's look at another case!
 
 
 
@@ -474,7 +551,7 @@ background-size: 100%
 background-position: center
 class: middle
 
-.center[.size45[.content-box-white[**Every Country-Year is Coded by Multiple Experts**]]]
+.center[.size55[.content-box-white[**Experts Often Disagree**]]]
 
 <br>
 
@@ -493,18 +570,47 @@ knitr::include_graphics('libs/Images/05_3-V-Dem_Coding_Disagreements-Germany.png
 
 # Canada data transformed model results back onto five point scale with 70% CI
 d |>
-  filter(country_text_id == "CAN", year %in% c(2015, 2005, 1995, 1985, 1975, 1965, 1955, 1945, 1935, 1925, 1915)) |>
-  select(country_name, year, v2clkill_nr, v2clkill_ord) |>
+  filter(country_text_id == "DEU", year %in% c(2015, 2005, 1995, 1985, 1975, 1965, 1955, 1945, 1935, 1925, 1915, 1905)) |>
+  select(year, v2clkill_nr, v2clkill_ord_codelow, v2clkill_ord, v2clkill_ord_codehigh) |>
   kbl(align = 'c') %>%
-  kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"), font_size = 22)
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"), font_size = 16)
 ```
 ]
 
 ???
 
-REDO ABOVE USING GERMANY
+Again, remember you have to add '1' to the scores in the table to match their line plot.
 
-Note that big differences exist but the trends are fairly consistent!
+### What do we notice here? Talk to me about the expert ratings of Germany.
+
+- Compellingly, while the coders differ the trends they identify are very consistent
+    - Things get worse during the world wars and improve afterwards
+
+<br>
+
+### Per the FAQ on the V-Dem website, why do the researchers believe their instruments and approach helps minimize the role of expert bias in messing up the scores?
+
+- (1. Experts are asked to code specific, low-level concepts not high level aggregates)
+
+- (2. Instruments are designed with specific levels for coding)
+
+- (3. The V-Dem Measurement Model (MM) already tries to adapt for experts to vary in terms of whether they tend to swing high or low vs others)
+
+- (4. Experts are trained and practice on hypothetical cases which helps tweak the model)
+
+- (5. Over time each expert leaves a tack record that can be evaluated and compared to others for future model tweaks)
+
+<br>
+
+Certainly doesn't end the problem but they are working on it!
+
+<br>
+
+### Questions on this?
+
+<br>
+
+**SLIDE**: Let's look at a tougher case!
 
 
 
@@ -516,13 +622,13 @@ background-size: 100%
 background-position: center
 class: middle
 
-.center[.size45[.content-box-white[**Every Country-Year is Coded by Multiple Experts**]]]
+.center[.size55[.content-box-white[**Experts Often Disagree**]]]
 
 <br>
 
 .pull-left[
 ```{r, fig.align='center', out.width='100%'}
-knitr::include_graphics('libs/Images/05_3-V-Dem_Coding_Disagreements-Turkey.png')
+knitr::include_graphics('libs/Images/05_3-V-Dem_Coding_Disagreements-Russia.png')
 ```
 ]
 
@@ -535,31 +641,18 @@ knitr::include_graphics('libs/Images/05_3-V-Dem_Coding_Disagreements-Turkey.png'
 
 # Canada data transformed model results back onto five point scale with 70% CI
 d |>
-  filter(country_text_id == "CAN", year %in% c(2015, 2005, 1995, 1985, 1975, 1965, 1955, 1945, 1935, 1925, 1915)) |>
-  select(country_name, year, v2clkill_nr, v2clkill_ord) |>
+  filter(country_text_id == "RUS", year %in% c(2015, 2005, 1995, 1985, 1975, 1965, 1955, 1945, 1935, 1925, 1915, 1905)) |>
+  select(year, v2clkill_nr, v2clkill_ord_codelow, v2clkill_ord, v2clkill_ord_codehigh) |>
   kbl(align = 'c') %>%
-  kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"), font_size = 22)
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"), font_size = 16)
 ```
 ]
 
 ???
 
-REDO ABOVE USING TURKEY
+Russia is a particularly hard case for this variable, "freedom from political killing", but even here there are detectable trends in the data.
 
-
-
-
----
-
-05_3-Fig2_Histograms_Marquardt2018.png
-
-???
-
-Add histograms from the IRT paper showing most cases have plenty of experts
-
-<br>
-
-Discuss bias notes in V-Dem FAQ page
+### Talk to me about the line plot and the consensus scores in the table. How confident are we in these consensus scores?
 
 <br>
 
@@ -568,59 +661,6 @@ Discuss bias notes in V-Dem FAQ page
 1. Be careful using any country-year with small number of coders
 
 2. Definitely consider the CI when interpreting changes in a score
-
-
-
-
-
----
-
-background-image: url('libs/Images/background-light_grey.jpg')
-background-size: 100%
-background-position: center
-class: middle
-
-.center[.size55[.content-box-white[**Experts Often Disagree (1900-2015)**]]]
-
-```{r, fig.align='center', out.width='100%'}
-knitr::include_graphics('libs/Images/05_3-V-Dem_Coding_Disagreements1.png')
-```
-
-???
-
-```{r}
-# Canada data transformed model results back onto five point scale with 70% CI
-d |>
-  filter(country_text_id == "CAN", year >= 2000) |>
-  select(country_name, year, v2clkill_ord_codelow:v2clkill_nr)
-
-# Germany data transformed model results back onto five point scale with 70% CI
-d |>
-  filter(country_name == "Germany", year >= 2000) |>
-  select(country_name, year, v2clkill_ord_codelow:v2clkill_nr)
-```
-
-
-
-
-
-
----
-
-background-image: url('libs/Images/background-light_grey.jpg')
-background-size: 100%
-background-position: center
-class: middle
-
-.size40[.content-box-white[**Experts Often Disagree (1900-2015)**]]
-
-```{r, fig.align='center', out.width='100%'}
-knitr::include_graphics('libs/Images/05_3-V-Dem_Coding_Disagreements1.png')
-```
-
-???
-
-
 
 
 
@@ -667,16 +707,7 @@ Let's now audit the data.
 
 <br>
 
-**SLIDE**: Let's talk VERY BRIEFLY about how the V-Dem project combines expert codings for each country-year.
-
-
-
-
-
-
-
-
-
+**SLIDE**: With time remaining let's look at the data!
 
 
 
@@ -868,59 +899,6 @@ d2022 |>
 
 
 
----
-
-background-image: url('libs/Images/background-light_grey.jpg')
-background-size: 100%
-background-position: center
-class: middle, center
-
-.size70[
-Have the utilization rates for the types of violations varied across time?
-]
-
-???
-
-
-
----
-
-class: middle, full
-
-```{r, fig.retina=3, out.width='97%', fig.width=7.5, fig.align='center', fig.asp=0.618}
-## You make a line plot of averages across time for each measure
-d |>
-  select(country_name, country_text_id, year, "Torture" = v2cltort_ord, "Killings" = v2clkill_ord, "Forced_male" = v2clslavem_ord, "Forced_fem" = v2clslavef_ord) |>
-  filter(year >= 1980) |>
-  pivot_longer(cols = Torture:Forced_fem, names_to = "Variables", values_to = "Values") |>
-  group_by(year, Variables) |>
-  summarize(
-    Mean = mean(Values, na.rm = TRUE)
-  ) |>
-  ungroup() |>
-  ggplot(aes(x = year, y = Mean, color = Variables)) +
-  geom_line(size = 1.2) +
-  theme_bw() +
-  labs(x = "", y = "Mean Values",
-       title = "Tracking Personal Integrity Rights Averages Across Time",
-       caption = "Source: V-Dem",
-       color = "") +
-  coord_cartesian(ylim = c(0,4), xlim = c(1980, 2022)) +
-  scale_y_continuous(breaks = 0:4, labels = 0:4)  +
-  theme(legend.position = "bottom") +
-  #guides(color = "none") +
-  scale_color_brewer(type = "qual", palette = 2)
-
-## Box plots across time
-d |>
-  filter(year >= 1980) |>
-  ggplot(aes(x = factor(year), y = v2cltort_ord)) +
-  geom_boxplot()
-```
-
-???
-
-
 
 ---
 
@@ -1036,6 +1014,165 @@ d11 |>
 
 ---
 
+class: slideblue, middle, full
+
+```{r, fig.retina=3, fig.align='center', out.width='95%', fig.height=6, fig.width=10, cache=FALSE}
+## Make a map
+
+# Summarize data
+d_diffs2 <- d |>
+  filter(year %in% c(2001, 2022)) |>
+  select(country_name, COWcode, year, v2clslavef_ord) |>
+  pivot_wider(names_from = year, values_from = v2clslavef_ord, names_prefix = "forced_") |>
+  mutate(
+    Difference = forced_2022 - forced_2001
+  )
+
+d_diffs2$newcode1 <- countrycode(d_diffs2$COWcode, origin = "cown", destination = "iso3c")
+
+# Merge data
+d13 <- left_join(worldmap, d_diffs2, by = c("adm0_a3" = "newcode1"))
+
+# Audit missing data
+# d_diffs2 |>
+#   select(country_name, Difference) |>
+#   View()
+# 
+# tibble(d13) |>
+#   select(name, Difference) |>
+#   filter(is.na(Difference)) |>
+#   print(n = 100)
+
+d13$Difference[d13$name == "Kosovo"] <- 0
+#d13$Difference[d13$name == "S. Sudan"] <- xxx
+d13$Difference[d13$name == "Serbia"] <- -1
+
+d13 |>
+  ggplot() +
+  geom_sf(aes(fill = factor(Difference))) +
+  labs(fill = "", title = "Changes in Freedom from Forced Labor (women) (V-Dem 2001 to 2022)") +
+  theme(legend.position = "right") +
+  scale_fill_brewer(type = "div", palette = 5, na.value="darkgrey")
+```
+
+???
+
+
+
+
+---
+
+background-image: url('libs/Images/background-blue_triangles2.png')
+background-size: 100%
+background-position: center
+class: middle
+
+.size40[.content-box-white[**Paper 1**]]
+
+.size35[
+If someone came to you with the goal of better understanding the use of political violence by governments around the world, which of the data sources that we explored in class would you recommend and why? 
+
+Your report should introduce each source to the reader with your analysis of its strengths and weaknesses. 
+
+Ultimately, your central argument should be a clear recommendation of which source(s) they should focus on.
+]
+
+???
+
+We've now covered all the sources for the first paper.
+
+### Any questions on the prompt?
+
+
+
+
+---
+
+background-image: url('libs/Images/background-light_grey.jpg')
+background-size: 100%
+background-position: center
+class: middle, center
+
+.size70[.content-box-white[**For Next Class**]]
+
+.size60[
+Review your notes on the five sources we have explored in class and be ready to make an argument for and against each of them.
+]
+
+???
+
+
+
+
+
+
+
+
+
+
+
+---
+
+old slides
+
+
+
+---
+
+background-image: url('libs/Images/background-light_grey.jpg')
+background-size: 100%
+background-position: center
+class: middle, center
+
+.size70[
+Have the utilization rates for the types of violations varied across time?
+]
+
+???
+
+
+
+---
+
+class: middle, full
+
+```{r, fig.retina=3, out.width='97%', fig.width=7.5, fig.align='center', fig.asp=0.618}
+## You make a line plot of averages across time for each measure
+d |>
+  select(country_name, country_text_id, year, "Torture" = v2cltort_ord, "Killings" = v2clkill_ord, "Forced_male" = v2clslavem_ord, "Forced_fem" = v2clslavef_ord) |>
+  filter(year >= 1980) |>
+  pivot_longer(cols = Torture:Forced_fem, names_to = "Variables", values_to = "Values") |>
+  group_by(year, Variables) |>
+  summarize(
+    Mean = mean(Values, na.rm = TRUE)
+  ) |>
+  ungroup() |>
+  ggplot(aes(x = year, y = Mean, color = Variables)) +
+  geom_line(size = 1.2) +
+  theme_bw() +
+  labs(x = "", y = "Mean Values",
+       title = "Tracking Personal Integrity Rights Averages Across Time",
+       caption = "Source: V-Dem",
+       color = "") +
+  coord_cartesian(ylim = c(0,4), xlim = c(1980, 2022)) +
+  scale_y_continuous(breaks = 0:4, labels = 0:4)  +
+  theme(legend.position = "bottom") +
+  #guides(color = "none") +
+  scale_color_brewer(type = "qual", palette = 2)
+
+## Box plots across time
+d |>
+  filter(year >= 1980) |>
+  ggplot(aes(x = factor(year), y = v2cltort_ord)) +
+  geom_boxplot()
+```
+
+???
+
+
+
+---
+
 background-image: url('libs/Images/background-light_grey.jpg')
 background-size: 100%
 background-position: center
@@ -1097,94 +1234,3 @@ d12 |>
 ```
 
 ???
-
-
-
----
-
-class: slideblue, middle, full
-
-```{r, fig.retina=3, fig.align='center', out.width='95%', fig.height=6, fig.width=10, cache=FALSE}
-## Make a map
-
-# Summarize data
-d_diffs2 <- d |>
-  filter(year %in% c(2001, 2022)) |>
-  select(country_name, COWcode, year, v2clslavef_ord) |>
-  pivot_wider(names_from = year, values_from = v2clslavef_ord, names_prefix = "forced_") |>
-  mutate(
-    Difference = forced_2022 - forced_2001
-  )
-
-d_diffs2$newcode1 <- countrycode(d_diffs2$COWcode, origin = "cown", destination = "iso3c")
-
-# Merge data
-d13 <- left_join(worldmap, d_diffs2, by = c("adm0_a3" = "newcode1"))
-
-# Audit missing data
-# d_diffs2 |>
-#   select(country_name, Difference) |>
-#   View()
-# 
-# tibble(d13) |>
-#   select(name, Difference) |>
-#   filter(is.na(Difference)) |>
-#   print(n = 100)
-
-d13$Difference[d13$name == "Kosovo"] <- 0
-#d13$Difference[d13$name == "S. Sudan"] <- xxx
-d13$Difference[d13$name == "Serbia"] <- -1
-
-d13 |>
-  ggplot() +
-  geom_sf(aes(fill = factor(Difference))) +
-  labs(fill = "", title = "Changes in Freedom from Forced Labor (women) (V-Dem 2001 to 2022)") +
-  theme(legend.position = "right") +
-  scale_fill_brewer(type = "div", palette = 5, na.value="darkgrey")
-```
-
-???
-
-
-
-
----
-
-background-image: url('libs/Images/background-light_grey.jpg')
-background-size: 100%
-background-position: center
-class: middle
-
-.center[.size55[**Measuring Political Violence by Countries**]]
-
-.size40[
-Sources: 
-- Amnesty International and the US State Department
-
-Measures:
-- The Political Terror Scale (PTS)
-- The CIRIGHTS Data project
-- The V-Dem Data project
-]
-
-
-???
-
-### Bottom line, how reliable and valid are the measures of state political violence represented by the research projects we've explored this week?
-
-#### - Strengths of existing sources and measures?
-
-#### - Weaknesses of existing sources and measures?
-
-<br>
-
-NEXT CLASS: Get to work on the first paper.
-
-- Compare and contrast across all sources!
-
-
-
-
-
-
-
