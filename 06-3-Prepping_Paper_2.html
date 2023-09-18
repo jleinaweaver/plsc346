@@ -39,7 +39,7 @@ Let's Use All this Data!
 ???
 
 ### Prep for Class
-1. ?
+1. You may want the combined dataset on the classroom PC
 
 
 
@@ -145,45 +145,73 @@ Write a report on the **two countries** you have been studying that analyzes the
 
 
 
-
-F - Set up paper 2 and start exploring across the data (See class slides in OLD week 4-1, 4-2 and 4-3)
-1. Prompt for paper 2
-- Select countries
-2. Build the combined spreadsheet
-- FILE: Combined_PTS_CIRIGHTS_VDem-2011-2020.xlsx
-3. Review basics in Excel or R (descriptive stats, line plot, scatter plot, bar plot)
-4. GOAL for wk 9: Identify 5 conclusions about your country's experience of political violence. Be ready to present your key conclusions to small groups for feedback
-
-
-
-
 ---
 
-background-image: url('libs/Images/background-slate.jpg')
+background-image: url('libs/Images/background-slate_v2.png')
 background-size: 100%
 background-position: center
 class: middle
 
-# Simple Ways to Visualize Data
+.size50[.content-box-white[**Collect and Organize your Data**]
 
-.size50[
-1. Tables
+1. Create new spreadsheet
 
-2. Line Plots
+2. Filter each dataset (PTS, CIRIGHTS, V-Dem) to your two countries
 
-3. Bar Plots
+3. Copy relevant rows to new spreadsheet
+
+4. Merge rows to ensure country-year observations
 ]
 
 ???
 
-I suspect these three basic approaches will represent more than enough tools for the current assignment.
+Your first step is typically referred to as "Data Cleaning"
+
+- Before you start analyzing you need to have your data organized
+
+- Build a new spreadsheet that collects only the data relevant to your project
+
+- e.g. all years and relevant variables for only your two countries
+
+&lt;br&gt;
+
+### Any questions on this process?
+
+- Get to it!
+
+- Once you finish your new dataset ask around and see who else could use some help!
 
 
 
 
 ---
 
-background-image: url('libs/Images/background-slate.jpg')
+background-image: url('libs/Images/background-slate_v2.png')
+background-size: 100%
+background-position: center
+class: middle
+
+.size55[.content-box-white[**Basic Data Analysis**]
+
+1. Tables 
+
+2. Bar Plots
+
+3. Line Plots
+
+4. Scatter Plots
+]
+
+???
+
+We covered all of these tools in extensive detail in Data Analysis, but let's do a quick refresher
+
+
+
+
+---
+
+background-image: url('libs/Images/background-slate_v2.png')
 background-size: 100%
 background-position: center
 class: middle
@@ -192,78 +220,190 @@ class: middle
 
 &lt;br&gt;
 
-.size25[
-&lt;table class="table table-striped table-hover table-condensed" style="font-size: 40px; margin-left: auto; margin-right: auto;"&gt;
+&lt;img src="libs/Images/06-3-Piazza_Choi2018-Table1.png" width="100%" style="display: block; margin: auto;" /&gt;
+
+???
+
+The most common use of tables in the academic literature is to give the reader a sense of the shape of the data (since they wont have access to it)
+
+&lt;br&gt;
+
+Typical summary or descriptive statistics table includes:
+
+- Number of observations (N)
+
+- Mean and Standard Deviation
+
+- Range: Minimum and Maximum
+
+&lt;br&gt;
+
+This selection of statistics instantly tells you
+
+- How much missing data in each variable, 
+
+- How wide each distribution is, and
+    - The range
+
+- The shape of each distribution
+    - Std Dev: platykurtic vs leptokurtic
+
+&lt;br&gt;
+
+### Why might you consider including a summary statistics table in your second paper?
+
+- (**SLIDE**)
+
+
+
+---
+
+background-image: url('libs/Images/background-slate_v2.png')
+background-size: 100%
+background-position: center
+class: middle
+
+.size50[.content-box-white[**1. Tables**]]
+
+&lt;br&gt;
+
+&lt;table class="table table-striped table-hover table-condensed table-responsive" style="font-size: 40px; margin-left: auto; margin-right: auto;"&gt;
  &lt;thead&gt;
   &lt;tr&gt;
-   &lt;th style="text-align:center;"&gt; Country &lt;/th&gt;
-   &lt;th style="text-align:center;"&gt; Year &lt;/th&gt;
-   &lt;th style="text-align:center;"&gt; Physical Integrity Index &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; Physint_sum &lt;/th&gt;
+   &lt;th style="text-align:center;"&gt; N &lt;/th&gt;
+   &lt;th style="text-align:center;"&gt; Mean &lt;/th&gt;
+   &lt;th style="text-align:center;"&gt; Std_Dev &lt;/th&gt;
+   &lt;th style="text-align:center;"&gt; Min &lt;/th&gt;
+   &lt;th style="text-align:center;"&gt; Max &lt;/th&gt;
   &lt;/tr&gt;
  &lt;/thead&gt;
 &lt;tbody&gt;
   &lt;tr&gt;
-   &lt;td style="text-align:center;width: 7em; "&gt; Afghanistan &lt;/td&gt;
-   &lt;td style="text-align:center;width: 7em; "&gt; 2011 &lt;/td&gt;
-   &lt;td style="text-align:center;width: 7em; "&gt; 4 &lt;/td&gt;
+   &lt;td style="text-align:left;width: 8em; "&gt; All Obs &lt;/td&gt;
+   &lt;td style="text-align:center;width: 8em; "&gt; 2650 &lt;/td&gt;
+   &lt;td style="text-align:center;width: 8em; "&gt; 5.2 &lt;/td&gt;
+   &lt;td style="text-align:center;width: 8em; "&gt; 2.4 &lt;/td&gt;
+   &lt;td style="text-align:center;width: 8em; "&gt; 0 &lt;/td&gt;
+   &lt;td style="text-align:center;width: 8em; "&gt; 8 &lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
-   &lt;td style="text-align:center;width: 7em; "&gt; Afghanistan &lt;/td&gt;
-   &lt;td style="text-align:center;width: 7em; "&gt; 2012 &lt;/td&gt;
-   &lt;td style="text-align:center;width: 7em; "&gt; 4 &lt;/td&gt;
+   &lt;td style="text-align:left;width: 8em; "&gt; Afghanistan &lt;/td&gt;
+   &lt;td style="text-align:center;width: 8em; "&gt; 11 &lt;/td&gt;
+   &lt;td style="text-align:center;width: 8em; "&gt; 2.2 &lt;/td&gt;
+   &lt;td style="text-align:center;width: 8em; "&gt; 1.3 &lt;/td&gt;
+   &lt;td style="text-align:center;width: 8em; "&gt; 0 &lt;/td&gt;
+   &lt;td style="text-align:center;width: 8em; "&gt; 4 &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+???
+
+Here I'm showing you the summary stats for all countries scores in physint_sum and comparing it to the average scores for Afghanistan.
+
+### What does this comparison help us to see about Afghanistan?
+
+&lt;br&gt;
+
+(The summary stats on ALL of the data gives the reader the context for interpreting your country's average scores)
+
+- e.g. Where does your country fit in the world's scores?
+
+&lt;br&gt;
+
+### Questions on using Tables in data analysis?
+
+
+
+
+---
+
+background-image: url('libs/Images/background-slate_v2.png')
+background-size: 100%
+background-position: center
+class: middle
+
+.size50[.content-box-white[**2. Bar Plots**]]
+
+.pull-left[
+
+&lt;br&gt;
+
+&lt;table class="table table-striped table-hover table-condensed table-responsive" style="font-size: 40px; margin-left: auto; margin-right: auto;"&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:left;"&gt; PTS (State Dept) &lt;/th&gt;
+   &lt;th style="text-align:center;"&gt; Count &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;width: 12em; "&gt; Level 1 &lt;/td&gt;
+   &lt;td style="text-align:center;width: 4em; "&gt; 0 &lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
-   &lt;td style="text-align:center;width: 7em; "&gt; Afghanistan &lt;/td&gt;
-   &lt;td style="text-align:center;width: 7em; "&gt; 2013 &lt;/td&gt;
-   &lt;td style="text-align:center;width: 7em; "&gt; 2 &lt;/td&gt;
+   &lt;td style="text-align:left;width: 12em; "&gt; Level 2 &lt;/td&gt;
+   &lt;td style="text-align:center;width: 4em; "&gt; 0 &lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
-   &lt;td style="text-align:center;width: 7em; "&gt; Afghanistan &lt;/td&gt;
-   &lt;td style="text-align:center;width: 7em; "&gt; 2014 &lt;/td&gt;
-   &lt;td style="text-align:center;width: 7em; "&gt; 3 &lt;/td&gt;
+   &lt;td style="text-align:left;width: 12em; "&gt; Level 3 &lt;/td&gt;
+   &lt;td style="text-align:center;width: 4em; "&gt; 0 &lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
-   &lt;td style="text-align:center;width: 7em; "&gt; Afghanistan &lt;/td&gt;
-   &lt;td style="text-align:center;width: 7em; "&gt; 2015 &lt;/td&gt;
-   &lt;td style="text-align:center;width: 7em; "&gt; 1 &lt;/td&gt;
+   &lt;td style="text-align:left;width: 12em; "&gt; Level 4 &lt;/td&gt;
+   &lt;td style="text-align:center;width: 4em; "&gt; 2 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;width: 12em; "&gt; Level 5 &lt;/td&gt;
+   &lt;td style="text-align:center;width: 4em; "&gt; 3 &lt;/td&gt;
   &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
 ]
 
+.pull-right[
+&lt;img src="06-3-Prepping_Paper_2_files/figure-html/unnamed-chunk-5-1.png" width="100%" style="display: block; margin: auto;" /&gt;
+]
+
 ???
 
-Tables can be a very useful way of conveying specific data to a reader.
+When summarizing a categorical variable you are limited basically to counting its level.
 
-- They ain't fancy but they're easy to include and they get the basic job done!
-
-- Make it in Excel, Word or R
+- These counts can then be presented as either a table or bar plot
 
 &lt;br&gt;
 
-### Any easy conclusions from this table?
+While the PTS scores are presented as numbers in the spreadsheet, each actually represents a distinct category of "political terror"
+
+- It is risky to assume the differences between each category is the same (e.g. moving from level 1 to level 2 may not be as "big" as a move from level 4 to level 5).
 
 &lt;br&gt;
 
-### Questions on this?
+Here I hope you see that a bar plot is much more useful visualization tool than the table.
+
+&lt;br&gt;
+
+### Any obvious conclusions about Afghanistan over this period according to this analysis?
+
 
 
 ---
 
-background-image: url('libs/Images/background-slate.jpg')
+background-image: url('libs/Images/background-slate_v2.png')
 background-size: 100%
 background-position: center
 class: middle
 
-.size50[.content-box-white[**2. Line Plots**]]
+.size50[.content-box-white[**3. Line Plots**]]
 
-&lt;img src="06-3-Prepping_Paper_2_files/figure-html/unnamed-chunk-3-1.png" width="80%" style="display: block; margin: auto;" /&gt;
+&lt;img src="06-3-Prepping_Paper_2_files/figure-html/unnamed-chunk-6-1.png" width="80%" style="display: block; margin: auto;" /&gt;
 
 ???
 
-Useful for showing trends in numeric variables across time!
+Line plots are a a useful technique for visualizing a single variable across time.
 
-- Much better than the table!
+- Preferable if the data is numeric, but not totally  misleading if applied to categories like physint_sum.
 
 - In Excel highlight the column and insert a line-plot chart
 
@@ -271,31 +411,60 @@ Useful for showing trends in numeric variables across time!
 
 ### Any obvious conclusions from this viz?
 
+
+
+
+---
+
+background-image: url('libs/Images/background-slate_v2.png')
+background-size: 100%
+background-position: center
+class: middle
+
+.size50[.content-box-white[**4. Scatter Plots**]]
+
+&lt;img src="06-3-Prepping_Paper_2_files/figure-html/unnamed-chunk-7-1.png" width="55%" style="display: block; margin: auto;" /&gt;
+
+???
+
+The last comonly used tool is a scatter plot and is useful for visualizing the relationship between two numeric variables.
+
+- Each point on a scatter plot corresponds to a single observation in the dataset (country-year has this score on each variable)
+
+- Note: I added "jitter" to the points to deal with overplotting
+
 &lt;br&gt;
 
 ### Questions on this?
 
 
+
 ---
 
-background-image: url('libs/Images/background-slate.jpg')
+background-image: url('libs/Images/background-slate_v2.png')
 background-size: 100%
 background-position: center
 class: middle
 
-.size50[.content-box-white[**3. Bar Plots**]]
+.size40[.center[.content-box-white[**Week 9 (Oct 16th)**]]
 
-&lt;img src="06-3-Prepping_Paper_2_files/figure-html/unnamed-chunk-4-1.png" width="80%" style="display: block; margin: auto;" /&gt;
+.center[**Prepare at least three conclusions about each country's experience of political violence (with visualizations)**]
+
+1. Tables 
+
+2. Bar Plots
+
+3. Line Plots
+
+4. Scatter Plots
+]
 
 ???
 
-Summarize categories across all ten years
+Be ready to present and get feedback on your proposed conclusions for the second paper.
 
-- Use a bar plot to count the levels for your country and represent the counts with bars.
+### Questions on the assignment?
 
-&lt;br&gt;
-
-### Any obvious conclusions from this viz?
 
 
 
@@ -309,7 +478,7 @@ class: middle
 
 .size55[.content-box-white[**For Paper 2**]]
 .size50[
-- Week 9 (Oct 16th): Have your data visualizations completed and ready to present!
+- Week 9 (Oct 16th): Have your data visualizations completed and ready to present
 ]
 
 &lt;br&gt;
