@@ -35,13 +35,16 @@ background-size: 100%
 background-position: center
 class: middle
 
-.size70[**Today's Agenda**]
+.center[.size35[**II. How and why do governments use violence against the people inside their borders?**]]
 
 <br>
 
-.size50[.center[
-Review our cases: How have we tried to stop democracies from using violence against the people inside their borders?
-]]
+.size45[
+
+**Today's Agenda**
+
+- Strategies to Prevent "Political Violence" in Democracies
+]
 
 <br>
 
@@ -52,47 +55,23 @@ Review our cases: How have we tried to stop democracies from using violence agai
 ???
 
 ### Prep for Class
-1. Use the same case sheet from last week for Monday's citations
-    - https://docs.google.com/document/d/1wWfBCAmcSC_mS87kNsIj4MUJi0EuOvTH-eAwhoAc4jE/edit?usp=sharing
+1. Review cases on Canvas
 
-
-
-
----
-
-background-image: url('libs/Images/background-red.png')
-background-size: 100%
-background-position: center
-class: middle, center, inverse
-
-.size60[**What explains the variation in how and why states use violence against their citizens?**]
-
-???
-
-Remember, our big goal for this section of the class is to answer this question.
-
-What explains the variation in how and why states use violence against their citizens?
-
-
-
----
-
-background-image: url('libs/Images/background-green_blue_swirl_side.jpg')
-background-size: 100%
-background-position: center
-class: middle, center
-
-.size60[**Paper 2 Prompt**]
+2. Prep Google spreadsheet for unpacking cases (make sure it is visible on the Modules page)
 
 <br>
 
-.size50[Propose a specific strategy for reducing political violence by state governments. This can be focused at any level of action (e.g. individual, group, states, etc.).]
+Our overarching goal for this section of the class is to answer this question.
 
-???
+- How and why do governments use violence against the people inside their borders?
 
-Remember, our work today (and last Friday) is meant to help you start thinking about the next paper.
+<br>
 
-That paper will ask you to propose a strategy for reducing the use of violence by states against their own citizens.
+My hope is that all of the work we have done thus far has given you the tools you need to explain government violence as a strategy.
+
+<br>
+
+Our next aim is to use all of this material (cases, data, theories) to develop real-world strategies for preventing political violence by governments.
 
 
 
@@ -101,34 +80,186 @@ That paper will ask you to propose a strategy for reducing the use of violence b
 background-image: url('libs/Images/background-blue_triangles.jpg')
 background-size: 100%
 background-position: center
-
 class: middle
 
-.size60[**For Today**]
+.size60[.content-box-white[**For Today**]]
 
-.size40[
-Bring to class a recent example of an individual, group, state or group of states taking a specific action to stop an autocracy from engaging in political violence.
+<br>
 
-Be ready to explain what happened, the strategy being employed and some idea of how effective it appears to have been.
+```{r, echo = FALSE, fig.align = 'center', out.width = '100%'}
+knitr::include_graphics("libs/Images/07_3-Assignment.png")
+```
 
-**Submit APA citation before class.**
+???
+
+### Everybody ready to go with this?
+
+<br>
+
+I'd like to unpack your cases in the same way we have done for other case studies in previous weeks.
+
+- Everybody open the Google Sheet linked through our Canvas Modules for today
+
+- Start by copying your citation and brief case description from the discussion board onto the spreadsheet.
+
+<br>
+
+**SLIDE**: As before, I'll give you short instruments and you'll measure your cases
+
+
+
+
+---
+
+background-image: url('libs/Images/background-red_flipped.png')
+background-size: 100%
+background-position: center
+class: middle
+
+.size45[
+.center[.content-box-white[**Unpacking the Democracy Cases**]]
+
+**The Inciting Incident**
+
+1. Who committed the violent act?
+
+2. Who did they target?
+
+3. What did they do?
+
+4. Why is this "political violence"?
 ]
 
 ???
 
-Let's hear your cases and then use them to build a list of strategies on the board.
+*Add Columns*
 
-As we listen to the cases, let's think about how best to organize them.
+Let's start by focusing on the inciting incident
 
-- By Type of Target?
-- By intiating actor?
+- e.g. what political violence was being done that needed intervention?
 
 <br>
 
-*ON BOARD*
+Fill in these details for your case on the spreadsheet.
 
-### What do we learn from our cases today?
+- Keep your answers concise BUT be specific!
 
-### How difficult is it to influence the behavior of autocratic state governments?
+- I know that feels like contradictory instructions but that's the challenge of measuring a case
+
+
+
+
+
+---
+
+background-image: url('libs/Images/background-red_flipped.png')
+background-size: 100%
+background-position: center
+class: middle
+
+.size45[
+.center[.content-box-white[**Unpacking the Democracy Cases**]]
+
+**The Intervention**
+
+1. Who intervened?
+
+2. Who did they target?
+
+3. What did they do?
+
+4. How successful were they?
+]
+
+???
+
+*Add Columns*
+
+Let's now shift to the intervention
+
+- e.g. The response to the violent act
+
+<br>
+
+Fill in these details for your case on the spreadsheet.
+
+- Keep your answers concise BUT be specific!
+
+<br>
+
+*Split class into GROUPS*
+
+- Go sit with your group!
+
+
+
+---
+
+background-image: url('libs/Images/07_3-Minneapolis_Protest.jpg')
+background-size: 100%
+background-position: center
+class: bottom, center
+
+.textwhite[.size45[**What are the key elements of a successful intervention to change the political violence of a democratic government?**]]
+
+???
+
+GROUPS: Use the data to brainstorm / derive lessons we can take away for how best to design interventions meant to reduce political violence by democracies
+
+- Get ready to pitch us your hypotheses!
+
+<br>
+
+PRESENT and DISCUSS each
+
+
+
+---
+
+background-image: url('libs/Images/background-blue_triangles.jpg')
+background-size: 100%
+background-position: center
+class: middle
+
+.size60[.content-box-white[**For Next Class**]]
+
+<br>
+
+.size45[
+Escriba-Folch, A. (2013). Repression, Political Threats, and Survival under Autocracy. *International Political Science Review* 34(5): 543–60.
+]
+
+???
+
+Next week we shift to theories of political violence by dictatorships!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

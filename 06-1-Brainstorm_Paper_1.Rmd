@@ -136,9 +136,9 @@ class: middle
 
 <br>
 
-.center[.content-box-purple[Therefore, the most useful source of political]]
+.center[.content-box-purple[Therefore, the SINGLE most useful source of]]
 
-.center[.content-box-purple[violence data is ...]]
+.center[.content-box-purple[political violence data is ...]]
 ]
 
 ???
@@ -187,9 +187,18 @@ class: middle
 
 ???
 
-Groups move to the next source on the list (1 to 2, 2 to 3, ..., 5 back to 1).
+*Move Groups to Very Different Approaches*
 
-- ADD a list of weaknesses next to their diagram *ON THE BOARD*
+Groups move to critique a source
+- Group 1 (State) goes to 3 (PTS)
+- Group 2 (AI) goes to 4 (CIRIGHTS)
+- Group 3 (PTS) goes to 5 (V-Dem)
+- Group 4 (CIRIGHTS) goes to (AI)
+- Group 5 (V-Dem) goes to (State)
+
+<br>
+
+ADD a list of weaknesses next to their diagram *ON THE BOARD*
 
 
 
@@ -212,7 +221,7 @@ class: middle
 
 <br>
 
-.center[.content-box-purple[Add a counter-argument premise to your diagram]]
+.center[.content-box-purple[Add counter-argument premise(s) to your diagram]]
 ]
 
 ???
