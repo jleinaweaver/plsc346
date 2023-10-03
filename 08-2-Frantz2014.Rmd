@@ -35,13 +35,16 @@ background-size: 100%
 background-position: center
 class: middle
 
-.size70[**Today's Agenda**]
+.center[.size35[**II. How and why do governments use violence against the people inside their borders?**]]
 
 <br>
 
-.size45[.center[
-Frantz, E., and A. Kendall-Taylor. 2014. "A Dictator’s Toolkit: Understanding How Co-Optation Affects Repression in Autocracies." *Journal of Peace Research*. 51(3): 332–46.
-]]
+.size45[
+
+**Today's Agenda**: Theories of "Political Violence"
+
+- Frantz and Kendall-Taylor (2014) "A Dictator’s Toolkit: Understanding How Co-Optation Affects Repression in Autocracies"
+]
 
 <br>
 
@@ -52,8 +55,64 @@ Frantz, E., and A. Kendall-Taylor. 2014. "A Dictator’s Toolkit: Understanding 
 ???
 
 ### Prep for Class
-1. Use the same case sheet from last week for Monday's citations
-    - https://docs.google.com/document/d/1wWfBCAmcSC_mS87kNsIj4MUJi0EuOvTH-eAwhoAc4jE/edit?usp=sharing
+1. Make sure Canvas discussion forum is ready to collect cases for next class
+
+<br>
+
+Our focus in this section of the class remains on trying to answer the question: How and why do governments use violence against the people inside their borders?
+
+- Specifically, this week we have been exploring the research that tries to answer that question while focusing on the behavior of dictators.
+
+
+
+
+---
+
+background-image: url('libs/Images/07_2-spraying_protestor.webp')
+background-size: 100%
+background-position: center
+class: bottom, center
+
+.size40[.content-box-white[**Escribà-Folch (2013): Dictatorships and Political Violence**]]
+
+???
+
+### What are your takeaways from exploring Escribà-Folch's (2013) research paper?
+
+<br>
+
+### - How does the model help us understand a dictator's behavior?
+
+- Interests: Dictators -> political survival
+
+- Institutions: Dictator may choose from two types of repression: 1) restrictions on civil rights, and/or 2) violation of physical rights
+
+- Interactions: 
+    - Violent repression directly targets and removes a threat to power (but may decrease legitimacy, increase resentment and lead to military defections)
+    - Restricting rights attempts to prevent coordination and collective action (but only works on the public and not the elites)
+    - Dictators should match their type of repression to the type of threat
+
+<br>
+
+### - What were the key findings of the paper? Did the analysis support the model or not?
+
+- Repression DOES work, but "not all forms of repression work in all circumstances"
+
+- "Political terror is a targeted strategy specifically directed against individuals or organized groups capable of acting collectively and so reduces the likelihood of regular and nonviolent exits and coups" (p557). 
+
+- "Restrictions on civil liberties hinder collective action thereby helping to prevent both regular and irregular exits" (p557).
+
+<br>
+
+### - How confident are you in the conclusions? (e.g. logical model, valid and reliable data, plausible analyses?)
+
+
+
+
+
+
+
+
 
 
 

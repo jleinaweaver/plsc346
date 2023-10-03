@@ -70,6 +70,45 @@ Last class we evaluated Davenport and Armstrong's (2004) research article that e
 
 ---
 
+background-image: url('libs/Images/07_2-Peaceful_Protest.jpg')
+background-size: 100%
+background-position: center
+class: bottom, center
+
+.size35[.content-box-white[**Davenport & Armstrong (2004): Democracy & Political Violence**]]
+
+???
+
+### What are your takeaways from exploring Davenport & Armstrong's (2004) research paper?
+
+<br>
+
+### - How does the "Steps of Distinction" model help us understand a government's behavior?
+
+- Interests: 
+    - Citizens want "good" leaders
+    - Leaders want political survival
+
+- Institutions:
+    - Domestic institutions structure behavior
+    - Domestic norms structure behavior
+
+- Interactions: 
+    - Reducing the incentive to repress requires a combination of fully operational and autonomous institutional and behavioral mechanisms
+
+<br>
+
+### - What were the key findings of the paper? Did the analysis support the model or not?
+
+- (**SLIDE**)
+
+
+
+
+
+
+---
+
 background-image: url('libs/Images/background-red_flipped.png')
 background-size: 100%
 background-position: center
@@ -100,17 +139,15 @@ knitr::include_graphics('libs/Images/07_1-Davenport_Fig1.png')
 
 ???
 
-### So, where does that leave us? Does democracy reduce repression? Why or why not?
+### How confident are you in the conclusions? (e.g. logical model, valid and reliable data, plausible analyses?)
 
 <br>
 
-*Split class into five groups*
+And that takes us to our research paper for today!
+
+- *Split class into five groups*
 
 - Go sit with your group!
-
-<br>
-
-**SLIDE**: And that takes us to our assignment for today!
 
 
 
