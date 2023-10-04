@@ -36,13 +36,15 @@ Data, slides and errata for my class at Drury University (PLSC 346: Political Vi
 
 07-2-deMesquita2005.html
 
-07-3-Democracy_Strategies.html
+07-3-Basic_Data_Analyses
 
 08-1-EscribaFolch2013.html
 
 08-2-Frantz2014.html
 
-08-3-Autocracy_Strategies.html
+08-3-Strategies_to_Stop_Violence.html
+
+SAVE-08-3-Autocracy_Strategies.html
 
 09-1-Political_Violence_Case_Study_Work1.html
 

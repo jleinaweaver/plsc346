@@ -266,6 +266,107 @@ background-size: 100%
 background-position: center
 class: middle, inverse
 
+.size30[
+.center[**Bueno de Mesquita, Cherif, Downs & Smith (2005) "Thinking Inside the Box: A Closer Look at Democracy and Human Rights"**]]
+
+.size40[**1) Executive Constraint (XCONST)**]
+
+.size25["Operationally, this variable refers to the extent of institutionalized constraints on the decision-making powers of chief executives, whether individuals or collectivities. Such limitations may be imposed by any "accountability groups." In Western democracies these are usually legislatures. Other kinds of accountability groups are the ruling party in a one-party state; councils of nobles or powerful advisors in monarchies; the military in coup-prone polities; and in many states a strong, independent judiciary. The concern is therefore with the checks and balances between the various parts of the decision-making process" (p24).]
+
+???
+
+Group 1, tell us your theory!
+
+- e.g. the story that connects more of this concept to a reduction in political violence.
+
+
+
+
+---
+
+background-image: url('libs/Images/background-red_flipped.png')
+background-size: 100%
+background-position: center
+class: middle, inverse
+
+.size30[
+.center[**Bueno de Mesquita, Cherif, Downs & Smith (2005) "Thinking Inside the Box: A Closer Look at Democracy and Human Rights"**]]
+
+.size40[**2) Executive Competition (XRCOMP)**]
+
+.size25["Competitiveness refers to the extent that prevailing modes of advancement give subordinates equal opportunities to become superordinates (Gurr 1974, 1483)." For example, selection of chief executives through popular elections matching two or more viable parties or candidates is regarded as competitive" (p21).]
+
+???
+
+
+
+
+---
+
+background-image: url('libs/Images/background-red_flipped.png')
+background-size: 100%
+background-position: center
+class: middle, inverse
+
+.size30[
+.center[**Bueno de Mesquita, Cherif, Downs & Smith (2005) "Thinking Inside the Box: A Closer Look at Democracy and Human Rights"**]]
+
+.size40[**3) Participation Competition (PARCOMP)**]
+
+.size25[""]
+
+???
+
+
+
+
+---
+
+background-image: url('libs/Images/background-red_flipped.png')
+background-size: 100%
+background-position: center
+class: middle, inverse
+
+.size30[
+.center[**Bueno de Mesquita, Cherif, Downs & Smith (2005) "Thinking Inside the Box: A Closer Look at Democracy and Human Rights"**]]
+
+.size40[**4) Regulation of Participation (PARREG)**]
+
+.size25[""]
+
+???
+
+
+
+
+---
+
+background-image: url('libs/Images/background-red_flipped.png')
+background-size: 100%
+background-position: center
+class: middle, inverse
+
+.size30[
+.center[**Bueno de Mesquita, Cherif, Downs & Smith (2005) "Thinking Inside the Box: A Closer Look at Democracy and Human Rights"**]]
+
+.size40[**5) Openness of Recruitment (XROPEN)**]
+
+.size25[""]
+
+???
+
+
+
+
+
+
+---
+
+background-image: url('libs/Images/background-red_flipped.png')
+background-size: 100%
+background-position: center
+class: middle, inverse
+
 .size40[
 .center[**Bueno de Mesquita, Cherif, Downs & Smith (2005) "Thinking Inside the Box: A Closer Look at Democracy and Human Rights"**]]
 

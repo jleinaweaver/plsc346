@@ -43,7 +43,7 @@ class: middle
 
 **Today's Agenda**
 
-- Strategies to Prevent "Political Violence" in Democracies
+- Strategies to Prevent "Political Violence" by Governments
 ]
 
 <br>
@@ -87,7 +87,7 @@ class: middle
 <br>
 
 ```{r, echo = FALSE, fig.align = 'center', out.width = '100%'}
-knitr::include_graphics("libs/Images/07_3-Assignment.png")
+knitr::include_graphics("libs/Images/08_3-Assignment.png")
 ```
 
 ???
@@ -117,7 +117,7 @@ background-position: center
 class: middle
 
 .size45[
-.center[.content-box-white[**Unpacking the Democracy Cases**]]
+.center[.content-box-white[**Unpacking the Cases**]]
 
 **The Inciting Incident**
 
@@ -158,7 +158,7 @@ background-position: center
 class: middle
 
 .size45[
-.center[.content-box-white[**Unpacking the Democracy Cases**]]
+.center[.content-box-white[**Unpacking the Cases**]]
 
 **The Intervention**
 
@@ -200,7 +200,7 @@ background-size: 100%
 background-position: center
 class: bottom, center
 
-.textwhite[.size45[**What are the key elements of a successful intervention to change the political violence of a democratic government?**]]
+.textwhite[.size45[**What are the key elements of a successful intervention to change the use of political violence by governments?**]]
 
 ???
 
@@ -214,26 +214,63 @@ PRESENT and DISCUSS each
 
 
 
+
 ---
 
-background-image: url('libs/Images/background-blue_triangles.jpg')
+background-image: url('libs/Images/background-blue_triangles2.png')
 background-size: 100%
 background-position: center
 class: middle
 
-.size60[.content-box-white[**For Next Class**]]
+.size45[.content-box-purple[**Paper 2**]]
 
-<br>
+.size35[
+Write a report on the **two countries** you have been studying that analyzes their recent experience of political violence
 
-.size45[
-Escriba-Folch, A. (2013). Repression, Political Threats, and Survival under Autocracy. *International Political Science Review* 34(5): 543–60.
+- **Section 1**: **Summarize AND analyze** the last eight years of political violence in your chosen countries (2015-2022) using **ALL FIVE of the data sources** reviewed in your first paper
+
+- **Section 2**: Make an argument about what the **2022 PTS and CIRIGHTS codings** should be for your chosen countries based on the Country Reports on Human Rights Practices from the State Department and the AI country reports.
 ]
 
 ???
 
-Next week we shift to theories of political violence by dictatorships!
+Next week we work on Paper 2.
+
+### Questions on the prompt?
+
+<br>
+
+**SLIDE**: Assignment for Monday
 
 
+
+---
+
+background-image: url('libs/Images/background-blue_triangles2.png')
+background-size: 100%
+background-position: center
+class: middle
+
+.size40[.center[.content-box-purple[**Due Week 9 (Oct 16th)**]]
+
+.center[**Prepare at least three conclusions about each country's experience of political violence (with visualizations)**]
+
+1. Tables 
+
+2. Bar Plots
+
+3. Line Plots
+]
+
+???
+
+Submit your work to Canvas before class Oct 16th
+
+- Submit and briefly explain each of the conclusions you have reached about your two countries (= six visualizations and a brief description of each).
+
+<br>
+
+### Questions on the assignment?
 
 
 
