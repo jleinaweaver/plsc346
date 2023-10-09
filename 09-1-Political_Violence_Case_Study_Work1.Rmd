@@ -35,16 +35,13 @@ background-size: 100%
 background-position: center
 class: middle
 
-.size80[**Today's Agenda**]
+.size70[**Today's Agenda**]
 
 <br>
 
-.size55[
-.center[
-The Political Violence Case Study
-
-(Due Feb 18)
-]]
+.size60[
+Working on Paper 2
+]
 
 <br>
 
@@ -55,381 +52,237 @@ The Political Violence Case Study
 ???
 
 ### Prep for Class
-1. ...
+1. Review Canvas submissions
 
 <br>
 
-I am giving you our class meetings this week to work on your first assignment for the class.
+**SLIDE**: Paper prompt
 
-A political violence case study.
 
 
 
 ---
 
-background-image: url('libs/Images/background-blue_cubes_v2.png')
+background-image: url('libs/Images/background-blue_triangles2.png')
 background-size: 100%
 background-position: center
-class: middle, inverse
+class: middle
 
-.size50[**Political Violence Case Study**]
-
-.size35[(Due Feb 18)
-
-Use all of the data sources from this week to write a report on **one country** that:]
-
-???
-
-You will each prepare a report focused on the experience of political violence in a single country.
-
-You will draw on the reports from the State Department, Amnesty International and the measurements from PTS and CIRIGHTS.
-
---
+.size45[.content-box-white[**Paper 2**]]
 
 .size35[
-- **Summarizes AND analyzes** its recent history of political violence (e.g. over the last ten years), and 
-]
+Write a report on the **two countries** you have been studying that analyzes their recent experience of political violence
 
---
+- **Section 1**: **Summarize AND analyze** the last eight years of political violence in your chosen countries (2015-2022) using **ALL FIVE of the data sources** reviewed in your first paper
 
-.size35[
-- **Makes an argument** about what the current PTS and CIRIGHTS codings should be based on the 2020 Country Reports on Human Rights Practices from the State Department
+- **Section 2**: Make an argument about what the **2022 PTS and CIRIGHTS codings** should be for your chosen countries based on the Country Reports on Human Rights Practices from the State Department and the AI country reports.
 ]
 
 ???
 
 ### Questions on the assignment?
 
-<br>
-
-Remember:
-
-- All the sources means AI, State Dept, PTS and CIRIGHTS!
-
-- You must provide context for your claims. Use those primary source documents!
-
 
 
 
 ---
 
-background-image: url('libs/Images/background-blue_cubes_v2.png')
+background-image: url('libs/Images/background-slate_v2.png')
 background-size: 100%
 background-position: center
-class: middle, inverse
-
-# For Wednesday
-
-.size45[.center[
-Come to class ready to share your conclusions (3 minimum) about your country's experience of political violence over the last ten years]]
-
-.size35[
-1. US State Department Human Rights Country Reports
-2. Amnesty International Country Reports
-3. The PTS datatset
-4. The CIRIGHTS dataset
-]
-
-???
-
-### Questions on what you need for Wednesday?
-
-<br>
-
-SLIDE: Let's talk through merging and cleaning data in Excel
-
-
-
----
-
-background-image: url('libs/Images/04-1-1-process_cirights_1.png')
-background-size: 97%
-background-position: center
-class: middle, slideblue
-
-???
-
-Open the CIRIGHTS data in Excel
-- In the app on your computer OR using the web version through your webmail
-
-
-
----
-
-background-image: url('libs/Images/04-1-2-process_cirights_2.png')
-background-size: 97%
-background-position: center
-class: middle, slideblue
-
-???
-
-Delete all columns we don't need.
-
-- Just keep the key measures (unless you want more for your definition of political violence!)
-
-
-
----
-
-background-image: url('libs/Images/04-1-3-process_cirights_3.png')
-background-size: 90%
-background-position: center
-class: middle, slideblue
-
-???
-
-Observations not always in country-year order.
-
-So, data ribbon, custom sort.
-
-- Check "My data has headers"
-
-- Sort by countryname
-
-- Add a second level, sort by year
-
-- Hit ok
-
-
-
-
----
-
-background-image: url('libs/Images/04-1-4a-process_cirights.png')
-background-size: 96%
-background-position: center
-class: middle, slideblue
-
-???
-
-Results of the sort
-
-SLIDE: Now just keep the country-years you need!
-
-
-
----
-
-background-image: url('libs/Images/04-1-4c-process_cirights.png')
-background-size: 96%
-background-position: center
-class: middle, slideblue
-
-???
-
-### Everybody got this?
-
-SLIDE: Repeat all this on the PTS dataset
-
-
-
----
-
-background-image: url('libs/Images/04-1-4-process_pts_1.png')
-background-size: 96%
-background-position: center
-class: middle, slideblue
-
-???
-
-Now let's open the PTS dataset
-
-
-
----
-
-background-image: url('libs/Images/04-1-5-process_pts_2.png')
-background-size: 96%
-background-position: center
-class: middle, slideblue
-
-???
-
-Delete unneeded columns
-
-Note I'm keeping the columns that try to tell you why you might have missing data in a country year.
-
-The codebook has the details on these codes.
-
-
-
----
-
-background-image: url('libs/Images/04-1-6-process_pts_3.png')
-background-size: 96%
-background-position: center
-class: middle, slideblue
-
-???
-
-Only keep the years you need
-
-
-
-
----
-
-background-image: url('libs/Images/04-1-7-combined_1.png')
-background-size: 96%
-background-position: center
-class: middle, slideblue
-
-???
-
-Copy the data onto a new sheet from both datasets
-
-Now clean it up by removing repeated columns: country and year
-
-
-
----
-
-background-image: url('libs/Images/04-1-8-combined_2.png')
-background-size: 96%
-background-position: center
-class: middle, slideblue
-
-???
-
-### Questions on building your dataset?
-
-<br>
-
-SLIDE: Now for those who wish to use R like we did in DA this is much easier
-
-
-
----
-
-```{r, eval=TRUE}
-## this version works on your system, next omits file locations for students
-# Load packages
-library(tidyverse)
-library(readxl)
-
-# PTS: Load, filter and select variables
-pts <- read_excel("../../Data/PTS/PTS-2020.xlsx", na = "NA") |>
-  filter(Country == "Afghanistan", Year > 2006) |>
-  select(Country, Year, PTS_A, PTS_S, NA_Status_A, NA_Status_S)
-
-# CIRIGHTS: Load, filter and select variables
-cirights <- read_csv("../../Data/CIRIGHTS/CIRIGHTS_2021.01.21.csv") |>
-  filter(countryname == "Afghanistan", year > 2006) |>
-  select(year, physint:tort)
-
-# Merge the datasets
-d <- left_join(pts, cirights, by = c("Year" = "year"))
-```
-
-.code130[
-```{r, echo=TRUE, eval=FALSE}
-# Load packages
-library(tidyverse)
-library(readxl)
-```
-]
-
---
-
-.code130[
-```{r, echo=TRUE, eval=FALSE}
-# PTS: Load, filter and select variables
-pts <- read_excel("PTS-2020.xlsx", na = "NA") |>
-  filter(Country == "Afghanistan", Year > 2006) |>
-  select(Country, Year, PTS_A, PTS_S, NA_Status_A, NA_Status_S)
-```
-]
-
-???
-
-Remember, this code assumes both datasets are in the same folder on your computer as the script file with all this code.
-
---
-
-.code130[
-```{r, echo=TRUE, eval=FALSE}
-# CIRIGHTS: Load, filter and select variables
-cirights <- read_csv("CIRIGHTS_2021.01.21.csv") |>
-  filter(countryname == "Afghanistan", year > 2006) |>
-  select(year, physint:tort)
-```
-]
-
---
-
-.code130[
-```{r, echo=TRUE, eval=FALSE}
-# Merge the datasets
-d <- left_join(pts, cirights, by = c("Year" = "year"))
-```
-]
-
-???
-
-### Ringing any bells?
-
-
-
----
-
 class: middle
 
-.size25[
-```{r}
-# Output data
-d |>
-  select(-NA_Status_A, -NA_Status_S) |>
-  kableExtra::kbl() |>
-  kableExtra::kable_styling(bootstrap_options = c("striped", "hover", "condensed"))
-```
+.size40[.center[.content-box-white[**For Today**]]
+
+.center[**Prepare at least three conclusions about each country's experience of political violence (with visualizations)**]
+
+1. Tables 
+
+2. Bar Plots
+
+3. Line Plots
+
+4. Scatter Plots
 ]
 
 ???
 
-Either way you go we have data that looks like this.
-
-### Questions on cleaning / prepping your dataset?
+### Everybody ready to go with this?
 
 <br>
 
-Back to the assignment for Wednesday!
+**SLIDE**: Before we review your work, let's refresh our criteria of professional visualizations
+
 
 
 
 ---
 
-background-image: url('libs/Images/background-blue_cubes_v2.png')
+background-image: url('libs/Images/background-blue_triangles2.png')
 background-size: 100%
-background-position: center
-class: middle, inverse
+background-class: center
+class: middle
 
-# For Wednesday
+.center[.size50[.content-box-purple[**Professional Visualizations**]]]
 
-.size45[.center[
-Come to class ready to share your conclusions (3 minimum) about your country's experience of political violence over the last ten years]]
+.size40[
+1. Include an informative title
 
-.size35[
-1. US State Department Human Rights Country Reports
-2. Amnesty International Country Reports
-3. The PTS datatset
-4. The CIRIGHTS dataset
+2. Add a figure label and caption
+
+3. Identify the source(s)
+
+4. Ensure the axis labels are clear and readable
+
+5. Maximize the data-to-ink ratio
+
+6. No chart junk!
 ]
 
 ???
 
-So, you should each have data on a single country for ten years worth of time sourced from:
-
-1. US State Department Human Rights Country Reports,
-
-2. Amnesty International Country Reports,
-
-3. The PTS datatset, and
-
-4. The CIRIGHTS dataset.
+### Questions on these?
 
 <br>
 
-Given all of this data and analysis I'm looking forward to hearing your  conclusions on Wednesday!
+**SLIDE**: Example
+
+
+
+
+---
+
+background-image: url('libs/Images/background-slate_v2.png')
+background-size: 100%
+background-position: center
+class: middle
+
+```{r, fig.retina=3, fig.asp=.618, fig.align='center', out.width='75%', fig.width=8}
+# Combined data
+d <- read_excel("../../Data/Combined_PTS_CIRIGHTS_VDem-2011-2020.xlsx", na = "NA")
+
+d |>
+  filter(Country == "Bahrain") |> 
+  ggplot(aes(x = Year, y = physint_sum)) +
+  geom_line(color = "darkblue", linewidth = 2) +
+  theme_bw() +
+  scale_x_continuous(breaks = 2011:2022) +
+  scale_y_continuous(limits = c(0, 8), breaks = 0:8) +
+  labs(x = "", y = "Physical Integrity Rights (0-8)",
+       caption = "Source: CIRIGHTS (2022)",
+       title = "The Bahrani government's use of political violence has been increasing across time")
+```
+
+.size30[Figure 1: The use of political violence in Bahrain appears to be increasing dramatically over time. Higher scores on the CIRIGHTS index of physical integrity rights represents a worsening of government violence.]
+
+???
+
+### Questions on this?
+
+<br>
+
+**SLIDE**: Let's review the submissions!
+
+
+
+---
+
+background-image: url('libs/Images/background-slate_v2.png')
+background-size: 100%
+background-class: center
+class: middle
+
+.size45[
+.content-box-purple[**Peer-Review Time!**]
+1. Is each visualization sufficiently "professional"?
+    - Informative title
+    - Figure label and caption
+    - Source information
+    - Clear axes and labels
+    - No chart junk or wasted space
+
+2. Is each conclusion MORE than simple description?
+]
+
+???
+
+*Split class into pairs*
+
+Pairs, present your six visualizations and conclusions to your partner.
+
+<br>
+
+You have two jobs
+
+- Each conclusion SHOULD describe the visualization, BUT
+
+- You also have to take us deeper than that!
+
+<br>
+
+What do we learn from your chosen visualization?
+
+- We aren't involved in your analysis work and often other people won't see what you see when you show the plot.
+
+- Help us see the bigger or deeper picture.
+
+<br>
+
+### Questions?
+
+- Let's go!
+
+<br>
+
+### Any really great examples to share?
+
+
+
+
+---
+
+background-image: url('libs/Images/background-blue_triangles2.png')
+background-size: 100%
+background-position: center
+class: middle, center
+
+.size65[.content-box-white[**For Next Class**]]
+
+<br>
+
+.size45[
+Summarize the argument you will make in Section 2 of the paper (e.g. what SHOULD the 2022 PTS and CIRIGHTS codings be for your chosen countries based on the 2022 Country Reports on Human Rights Practices from the State Department and the AI country reports?).
+]
+
+???
+
+Your argument MUST include evidence to support it!
+
+- e.g. quantitative and qualitiative results!
+
+<br>
+
+### Questions?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
