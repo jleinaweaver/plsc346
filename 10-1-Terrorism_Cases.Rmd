@@ -35,15 +35,16 @@ background-size: 100%
 background-position: center
 class: middle
 
-.size70[**Today's Agenda**]
+.center[.size40[**III. How and why do non-state actors use political violence?**]]
 
 <br>
 
-.size50[.center[
-Use case studies to define, operationalize and measure the concept of terrorism
-]]
+.size50[
 
-<br>
+**Today's Agenda**
+
+- Defining Terrorism: Case Studies
+]
 
 <br>
 
@@ -54,54 +55,48 @@ Use case studies to define, operationalize and measure the concept of terrorism
 ???
 
 ### Prep for Class
-1. Review submitted cases
-    - https://docs.google.com/document/d/1wKZRrm5JaZAAWbkC14iGfbs6syAMHnyZCEucqvco8Rg/edit?usp=sharing
+1. Review submitted cases on Canvas
+
+2. Prep a Google sheet for unpacking cases and publish on Modules
+    - [LINK](https://docs.google.com/spreadsheets/d/1R63XZ-m1qwXVNRYofDbYQFoqHMANvO5upJXD4RSLZrM/edit?usp=sharing)
+    
+3. Save notes from today for next class (e.g. end of class operationalization elements need to go into slides for next class)
 
 <br>
 
 Today we kick off the third section of our class.
 
-What explains the variation in how and why non-state actors use violence against states and people?
+<br>
+
+What explains the variation in how and why non-state actors use political violence?
 
 - Specifically, we'll focus on terrorism.
 
 
 
+
 ---
 
-background-image: url('libs/Images/background-green_blue_swirl_side.jpg')
+background-image: url('libs/Images/background-blue_triangles2.png')
 background-size: 100%
 background-position: center
 class: middle, center
 
-.size60[**For Today**]
+.size65[.content-box-purple[**For Today**]]
 
 <br>
 
-.size50[
-Bring to class one specific piece of evidence you argue represents an act of terrorism. 
-
-Make sure you are familiar with the actors and environment involved.
-]
+```{r, echo = FALSE, fig.align = 'center', out.width = '100%'}
+knitr::include_graphics("libs/Images/09_2-Assignment.png")
+```
 
 ???
 
 ### Everybody ready for our work today?
 
+<br>
+
 ### All citations in APA format?
-
-<br>
-
-Today I want us to use the case studies to build our intuitions about terrorism and to help us construct a definition and operationalization of the concept.
-
-### Remind me, what is a concept?
-- (The name we give an idea / thing)
-
-<br>
-
-### And what does it mean to operationalize a concept?
-- (Operationalization is "...selecting observable phenomena to represent abstract concepts" (89).)
-    - Brians, Craig Leonard, Lars Willnat, Jarol B. Manheim, and Richard C. Rich. 2011. “From Abstract to Concrete: Operationalization and Measurement.” In Empirical Political Analysis, Boston, MA: Longman, (ONLY p88-110)
 
 
 
@@ -109,77 +104,122 @@ Today I want us to use the case studies to build our intuitions about terrorism 
 
 ---
 
-background-image: url('libs/Images/background-green_blue_swirl_side.jpg')
+background-image: url('libs/Images/10_1-Terrorism_Background_filter75.png')
+background-size: 100%
+background-position: center
+class: middle, inverse
+
+.size50[.textwhite[**"Terrorism"**]]
+
+.size45[
+**1) Concept**
+
+**2) Case studies**
+
+**3) Operationalization**
+
+**4) Instrumentation**
+
+**5) Measurement**
+]
+
+???
+
+For this week we attack "terrorism" using the steps we worked through in Week 2 (and since).
+
+<br>
+
+Our prompt for today focused on the concept of "terrorism"
+
+- Each of you has brought in a case that you argue represents this concept
+
+- Today we review, compare and contrast your cases to unpack our assumptions about the concept AND broaden our familiarity with the real-world debates about it
+
+- Ultimately our goal today is to operationalize the concept
+
+<br>
+
+### Refresh my memory, what does it mean to operationalize a concept and how do I know if my operationalization is useful?
+
+- (Operationalization is "...selecting observable phenomena to represent abstract concepts" (89).)
+
+- ("To be useful...operational definitions must tell us **precisely and explicitly** what to do in order to determine what quantitative value should be associated with a variable in any given case (92).)
+
+<br>
+
+As we did in Week 7 I'd like us to begin by unpacking your cases.
+
+- **SLIDE**: Everybody open up the link to the Google Sheet on Modules: Wk10 - Unpacking the Cases: Terrorism
+
+<br>
+
+#### Notes
+- Brians, Craig Leonard, Lars Willnat, Jarol B. Manheim, and Richard C. Rich. 2011. “From Abstract to Concrete: Operationalization and Measurement.” In Empirical Political Analysis, Boston, MA: Longman, (ONLY p88-110)
+
+
+
+
+
+---
+
+background-image: url('libs/Images/background-red_flipped.png')
 background-size: 100%
 background-position: center
 class: middle
 
-.size60[.center[**Terrorism Case Studies**]]
+.size40[
+.center[.content-box-white[**Unpacking the Cases: Terrorism**]]
 
-<br>
+1. Who did it?
 
-.size50[
-1. What is the specific act you are calling "terrorism"?
+2. Who (or what) was the target?
 
-2. Why is it "terrorism"?
+3. What was the specific act?
+
+4. What was the stated rationale for the act?
+
+5. What was the immediate result?
+
+6. Any other important context for your case?
 ]
 
 ???
 
-I'd like each of you to introduce your case as an answer to these two questions.
-
-1. What is the specific act you are calling "terrorism"?
-    - As you describe your case, focus particularly on the actor and the immediate act.
-    - Support and funding matters but let's start by agreeing and exploring this micro-level dynamic.
-
-2. Why is it "terrorism"?
-
-### Everybody take two minutes to make sure you're ready to present your case in this way.
+### Any questions on these prompts?
 
 <br>
 
-Ok, let's do this!
-
-Everybody take notes!
-- As you listen you should jot down any notes you'll need to define terrorism based on our cases.
-
-*Go around the room to share evidence*
-
-
-
----
-
-background-image: url('libs/Images/background-green_blue_swirl_side.jpg')
-background-size: 100%
-background-position: center
-class: middle, center
-
-.size60[.center[**Defining Terrorism**]]
+That last one gives you space for any other important details that explain why you chose this case that isn't captured in these other questions.
 
 <br>
 
-.size60[
-Make a list of the common characteristics of our cases
-]
-
-???
-
-ON YOUR OWN: Take two minutes to reflect on all the cases in order to make a list of their common characteristics.
+Go!
 
 <br>
 
-PAIRS: 5 minutes to share, consolidate and add to your lists
+*Split class into small groups (4?)*
+
+GROUPS, compare and contrast all of the cases in order to construct a definition of terrorism
+
+- In a sense, ask yourself what is common or most important to the cases unpacked by our class and use that to build a definition.
 
 <br>
 
-CLASS: Let's build a big list of possible characteristics
+### Questions?
 
-*ON BOARD*
-- ?
+- Let's go! Get those definitions up on the board!
 
 <br>
+
+PRESENT and DISCUSS each
+
+<br>
+
+#### Class Notes
 
 *2019 class*
+
+Common Chars
 - one-sided violence
 - Important purpose more important than survival
 - Cause fear
@@ -190,94 +230,13 @@ CLASS: Let's build a big list of possible characteristics
 - Claimed by or affiliated with known terror group
 - Motivated to target a specific group (religion/race/ethnicity)
 
-
----
-
-background-image: url('libs/Images/background-green_blue_swirl_side.jpg')
-background-size: 100%
-background-position: center
-class: middle, center
-
-.size60[.center[**Defining Terrorism**]]
-
-<br>
-
-.size60[
-Make a list of the sub-groups in our cases
-]
-
-???
-
-Clearly our list of cases represent a "group" we call "terrorism."
-
-- The question is, within these cases are their important groupings we should take note of?
-
-- Think of the grocery store as the big group but within it there is a dairy section, meat section, produce section, etc.
-
-### Make sense?
-
-<br>
-
-ON YOUR OWN: Take a few minutes to brainstorm groupings in our cases.
-- Any obvious groupings here?
-- Any cases here you think we should exclude (e.g. not sufficiently "terrorism")
-- Most similar cases that are different from the rest?
-
-<br>
-
-PAIRS: 5 minutes to share, consolidate and add to your lists
-
-<br>
-
-CLASS: Let's build a big list of possible characteristics
-
-*ON BOARD*
-- ?
-
-<br>
-
-*2019 class*
+Groupings
 - Domestic vs international
 - Specific goal vs spur of the moment
 - Unaffiliated vs affiliated with group
 - Violence vs threat
 
-
----
-
-background-image: url('libs/Images/background-green_blue_swirl_side.jpg')
-background-size: 100%
-background-position: center
-class: middle, center
-
-.size60[.center[**Defining Terrorism**]]
-
-<br>
-
-.size60[
-Make a list of key questions
-]
-
-???
-
-ON YOUR OWN: Take two minutes to brainstorm key questions.
-- What questions must any good definition of terrorism address?
-- In other words, if two people are arguing about terrorism what would you demand they agree on to make sure their argument is productive?
-
-<br>
-
-PAIRS: 5 minutes to share, consolidate and add to your lists
-
-<br>
-
-CLASS: Let's build a big list of questions our definitions need to answer
-
-*ON BOARD*
-- ?
-
-<br>
-
-*2019 class*
+Key Questions
 - Fear as the goal?
 - Action done by state, non-state or both?
 - Targets politically motivated or other aims included (e.g. profit?)
@@ -316,9 +275,35 @@ class: middle
 
 ???
 
-I hope everybody has all of this written down!
+Alright, let's combine our efforts.
 
-You'll need it on Wednesday as we take all of this material in order to develop a definition and operationalization of our key concept: Terrorism.
+- Can we operationalize terrorism based on our work today?
+
+- *ON BOARD*
 
 
+
+---
+
+background-image: url('libs/Images/background-blue_triangles.jpg')
+background-size: 100%
+background-position: center
+
+class: middle
+
+.size55[.content-box-white[**For Next Class**]]
+
+<br>
+
+.size45[
+1. Tilly (2004). Terror, Terrorism, Terrorists. *Sociological Theory*
+
+2. Schmid (2023). Defining Terrorism. *International Centre for Counter-Terrorism*.
+]
+
+???
+
+Next class I've assigned you two academic attempts to define terrorism.
+
+- Let's read those and see how they compare with our work!
 
