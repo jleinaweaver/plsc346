@@ -197,11 +197,50 @@ Go!
 
 <br>
 
+Everybody take a few minutes to review the cases
+
+- Try to get a sense of what was submitted and how they might fit together under a single conceptual label.
+
+<br>
+
+### Any questions or need for clarification on the cases?
+
+
+
+
+---
+
+background-image: url('libs/Images/background-red_flipped.png')
+background-size: 100%
+background-position: center
+class: middle
+
+.size40[
+.center[.content-box-white[**Unpacking the Cases: Terrorism**]]
+
+1. Who did it?
+
+2. Who (or what) was the target?
+
+3. What was the specific act?
+
+4. What was the stated rationale for the act?
+
+5. What was the immediate result?
+
+6. Any other important context for your case?
+]
+
+???
+
 *Split class into small groups (4?)*
 
 GROUPS, compare and contrast all of the cases in order to construct a definition of terrorism
 
 - In a sense, ask yourself what is common or most important to the cases unpacked by our class and use that to build a definition.
+
+- You do not have to include elements from all six questions! 
+    - Your group should determine what is important and what isn't in your definition
 
 <br>
 
@@ -212,6 +251,8 @@ GROUPS, compare and contrast all of the cases in order to construct a definition
 <br>
 
 PRESENT and DISCUSS each
+
+### Out of curiosity, as you scrolled through the "data" which variables struck you as most important? Why?
 
 <br>
 

@@ -18,15 +18,16 @@ background-size: 100%
 background-position: center
 class: middle
 
-.size70[**Today's Agenda**]
+.center[.size40[**III. How and why do non-state actors use political violence?**]]
 
 &lt;br&gt;
 
-.size55[.center[
-Explore the Global Terrorism Database (GTD)
+.size50[
 
-https://www.start.umd.edu/gtd/
-]]
+**Today's Agenda:** Measuring "Terrorism"
+
+- The Global Terrorism Database (GTD)
+]
 
 &lt;br&gt;
 
@@ -37,45 +38,28 @@ https://www.start.umd.edu/gtd/
 ???
 
 ### Prep for Class
-1. Post data and an R script file on LMS
-
-&lt;br&gt;
-
-Today we move to our second big project that aims to identify and measure terrorism events around the world.
-
-The full GTD database is 100 MB with 135 variables measuring 201k observations.
-
-- That's functionally impossible to manage easily in Excel
-
-- That's super easy in in R
-    - The data, codebook and an R script to access the RAND data are all on Moodle.
-
-ALSO, the GTD website offers some handy querying and visualization tools we'll explore today.
-
-&lt;br&gt;
-
-
-
-Where to put:
-+ Are the variables valid and reliable?
-  + nperps, nkill, nwound, propvalue, weaptype1_txt, suicide, attacktype1_txt, targettype1_txt
+1. Make sure the data, codebook and links to the project website are all on Canvas
+    - https://www.start.umd.edu/gtd/
 
 
 
 
 ---
 
-class: middle, slideblue
+background-image: url('libs/Images/background-light_grey.jpg')
+background-size: 100%
+background-position: center
+class: middle
 
-.size50[.center[.content-box-grey[**Global Terrorism Database (GTD)**]]]
+.size50[.center[.content-box-grey[**Measuring Terrorism: RDWTI**]]]
 
 &lt;br&gt;
 
 ## Research Questions
 .size35[
-1. Pros and cons of generalizing from this dataset?
+1. What are the pros and cons of using this as our primary database of terrorism?
 
-2. Is the damage caused by terrorism getting worse?
+2. Is the damage caused by terrorism getting worse over time?
 
 3. Where are the terrorism hot spots in the world?
 
@@ -84,53 +68,87 @@ class: middle, slideblue
 
 ???
 
-Just like on Monday I want us to evaluate this project using these four questions.
+On Monday we evaluated the RAND Database of Worldwide Terrorism Incidents (RDWTI) and analyzed its data
+
+&lt;br&gt;
+
+### Refresh my memory, what were our answers to these four questions for the RDWTI?
+
+&lt;br&gt;
+
+Today we move to our second big project that aims to measure terrorism events around the world: the Global Terrorism Database (GTD)
+
+&lt;br&gt;
+
+The full GTD database is 100 MB with 135 variables measuring 201k observations.
+
+- That's functionally impossible to manage easily in Excel BUT  super easy in R
+
+&lt;br&gt;
+
+The data and codebook to access the GTD are on Canvas
+
+- ALSO, the GTD website offers some handy querying and visualization tools we'll explore today.
+
+&lt;br&gt;
+
+There have been updates to this database since 2021 but, unfortunately, the researchers have not responded to my requests for the updates.
+
+- Sorry about that!
 
 &lt;br&gt;
 
 *Split Class into Small Groups*
 
-Make sure you're working with new people!
+- Make sure you're working with new people!
 
-Go sit with your group!
-
-(SLIDE)
+- Go sit with your group!
 
 
 
 ---
 
-class: middle, slideblue
+background-image: url('libs/Images/background-light_grey.jpg')
+background-size: 100%
+background-position: center
+class: middle
 
 .size50[.center[.content-box-grey[**Global Terrorism Database (GTD)**]]]
 
 &lt;br&gt;
 
-.size45[
+.size40[
 1) What are the pros and cons of using this as our primary database of terrorism?
 - Who is the National Consortium for the Study of Terrorism and Responses to Terrorism?
-- How do they define the key concepts?
-- How are they measuring terrorism?
+
+- Are the measures valid?
+
+- Are the measures reliable?
 ]
 
 ???
 
-Groups take 10 minutes to make two lists you can put on the board.
-- Pros vs cons
-
-Think about the project in broad strokes
-- Who is the National Consortium for the Study of Terrorism and Responses to Terrorism, how do they define the key concepts and how are they measuring terrorism?
+Groups take 10 minutes to make two lists you can put on the board: Pros vs cons
 
 &lt;br&gt;
 
-(SLIDE: Who is the National Consortium for the Study of Terrorism and Responses to Terrorism?)
+Think about the project in broad strokes
 
-(SLIDE: Terrorism Defined)
+- Who is the National Consortium for the Study of Terrorism and Responses to Terrorism?
 
-(SLIDE: RAND definition of terrorism to compare)
+- How do they define the key concepts?
 
-(SLIDE: Valid and reliable measures?)
+- How are they measuring terrorism?
 
+&lt;br&gt;
+
+(**SLIDE**: Who is the National Consortium for the Study of Terrorism and Responses to Terrorism?)
+
+(**SLIDE**: Terrorism Defined)
+
+(**SLIDE**: RAND definition of terrorism to compare)
+
+(**SLIDE**: Valid and reliable measures?)
 
 
 
@@ -138,9 +156,14 @@ Think about the project in broad strokes
 
 ---
 
-class: middle, slideblue
+background-image: url('libs/Images/background-light_grey.jpg')
+background-size: 100%
+background-position: center
+class: middle
 
-.size45[.center[**The Global Terrorism Database (GTD)**]]
+.size45[.center[.content-box-white[**The Global Terrorism Database (GTD)**]]]
+
+&lt;br&gt;
 
 .size35[
 + Maintained by the National Consortium for the Study of Terrorism and Responses to Terrorism (START) at the University of Maryland
@@ -179,11 +202,14 @@ class: middle, slideblue
 
 ---
 
-class: middle, slideblue
+background-image: url('libs/Images/background-light_grey.jpg')
+background-size: 100%
+background-position: center
+class: middle
 
-.size40[.center[**GTD Defines Terrorism**]]
+.size35[.center[.content-box-white[**GTD Defines Terrorism**]]]
 
-.size30[
+.size35[
 + The incident must be intentional...
 + The incident must entail some level of violence or immediate threat of violence...
 + The perpetrators of the incidents must be sub-national actors...
@@ -197,15 +223,19 @@ Plus, at least two of the following criteria:
 
 ???
 
-### How does this compare to our class definition?
+### How does this compare to the definitions we've considered in class?
+
+### - The class case study definition?
+
+### - Tilly's (2004) definition / four steps?
+
+### - Schmid's (2003) academic consensus?
+
+### - Jaggar's (2005) definition?
 
 &lt;br&gt;
 
-### How does it compare to Tilly's (2004) definition?
-
-&lt;br&gt;
-
-SLIDE: Let's compare it to the RAND database from Monday.
+**SLIDE**: Let's compare it to the RAND database from Monday.
 
 
 
@@ -213,9 +243,12 @@ SLIDE: Let's compare it to the RAND database from Monday.
 
 ---
 
-class: middle, slideblue
+background-image: url('libs/Images/background-light_grey.jpg')
+background-size: 100%
+background-position: center
+class: middle
 
-.size55[.center[**RAND Defines Terrorism**]]
+.size55[.center[.content-box-white[**RAND Defines Terrorism**]]]
 
 .size40[
 
@@ -231,11 +264,11 @@ Terrorism is defined by the nature of the act, not by the identity of the perpet
 
 ???
 
-### Compare and contrast: Has the GTD made any big or particularly useful changes? or is this basically the same thing?
+### Compare and contrast: Has the GTD made any big or particularly useful changes? Or is this basically the same thing?
 
 &lt;br&gt;
 
-SLIDE: Before we move off the definition, let's talk about this strange 2 out of 3 idea in the extra criteria.
+**SLIDE**: Before we move off the definition, let's talk about this two out of three rule in the extra criteria.
 
 
 
@@ -271,12 +304,18 @@ Here we see the proportion of cases that meet each of the three additional crite
 
 - On the other end, approximately 2,300 cases, or around 1% of the sample, qualify by meeting only criteria 2 and 3 but not 1. 
 
+&lt;br&gt;
+
 ### Everybody clear on how to read this table?
 
-### What conclusions can we draw from this? Does this tell us anything important about their views of terrorism?
+&lt;br&gt;
 
+### What conclusions can we draw from this? Does this tell us anything important about their views of terrorism?
 - (98% of the cases in this dataset include the first two criteria (85+13).)
+
 - So, the researchers are telling us that, essentially, ALL terrorism meets criteria 1 and 2.
+
+&lt;br&gt;
 
 ### The question for us is, what does criteria 3 add to our understanding? Why do they need it?
 
@@ -291,29 +330,47 @@ Here we see the proportion of cases that meet each of the three additional crite
 
 ---
 
-class: middle, slideblue
+background-image: url('libs/Images/background-light_grey.jpg')
+background-size: 100%
+background-position: center
+class: middle
 
-.size50[.center[.content-box-grey[**Operationalizing Terrorism**]]]
+.size60[.center[.content-box-grey[**Measuring Terrorism**]]]
 
-&lt;br&gt;
-
-.size40[
-**Are the key variables valid and reliable?**
+.pull-left[
+.size55[
 - nperps
+
 - nkill
+
 - nwound
+
 - propvalue
+]]
+
+.pull-right[
+.size55[
 - weaptype1_txt
+
 - suicide
+
 - attacktype1_txt
+
 - targettype1_txt
-]
+]]
 
 ???
 
 ### Any validity or reliability concerns with these specific variables in the codebook?
 
-*DISCUSS*
+&lt;br&gt;
+
+### - Least problematic variables?
+
+&lt;br&gt;
+
+### - Most problematic variables?
+
 
 
 
@@ -423,7 +480,7 @@ Go back to the "all events" line plot and use the plot adjustments to examine th
 
 ### Report Back, what did you find?
 
-(SLIDE)
+(**SLIDE**)
 
 
 
@@ -441,7 +498,7 @@ Go back to the "all events" line plot and use the plot adjustments to examine th
 
 ### How does this compare to the totals produced by the Rand database?
 
-(SLIDE)
+(**SLIDE**)
 
 
 
@@ -507,7 +564,7 @@ Dig into the data and report back!
 
 ### What did you find?
 
-(SLIDE)
+(**SLIDE**)
 
 
 
@@ -523,7 +580,7 @@ Dig into the data and report back!
 
 &lt;br&gt;
 
-(SLIDE: Proportional plot to make comparisons easier)
+(**SLIDE**: Proportional plot to make comparisons easier)
 
 
 
@@ -569,7 +626,7 @@ Analyze the data and identify for us the global hotspots for terrorism!
 
 ### Report Back, what did you find?
 
-(SLIDE: For the country level, let's look at some maps!)
+(**SLIDE**: For the country level, let's look at some maps!)
 
 
 

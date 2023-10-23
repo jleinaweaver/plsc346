@@ -51,15 +51,16 @@ background-size: 100%
 background-position: center
 class: middle
 
-.size70[**Today's Agenda**]
+.center[.size40[**III. How and why do non-state actors use political violence?**]]
 
 <br>
 
-.size55[.center[
-Explore the RAND Database of Worldwide Terrorism Incidents
-]]
+.size50[
 
-<br>
+**Today's Agenda:** Measuring "Terrorism"
+
+- The RAND Database of Worldwide Terrorism Incidents (RDWTI)
+]
 
 <br>
 
@@ -70,24 +71,77 @@ Explore the RAND Database of Worldwide Terrorism Incidents
 ???
 
 ### Prep for Class
-1. Post data and an R script file on LMS
+1. Make sure the data, codebook and links to the project website are all on Canvas
 
 <br>
 
-The data, codebook and an R script to access the RAND data are all on Moodle.
+**SLIDE**: Last week's focus on deepening our understanding of the key concept for this section of the class - terrorism.
+
+
 
 
 
 ---
 
-class: middle, slideblue
+background-image: url('libs/Images/10_1-Terrorism_Background_filter75.png')
+background-size: 100%
+background-position: center
+class: middle, inverse
 
-.size50[.center[.content-box-grey[**Operationalizing Terrorism**]]]
+.size50[.textwhite[**"Terrorism"**]]
+
+.size45[
+**1) Concept**
+
+**2) Case studies**
+
+**3) Operationalization**
+
+**4) Instrumentation**
+
+**5) Measurement**
+]
+
+???
+
+### What are your key takeaways so far?
 
 <br>
 
-## Data Projects
-.size45[
+### Were you convinced on Friday by Jaggar's (2005) attempt to map out a morally defensible form of terrorism? Why or why not?
+
+<br>
+
+### Why do we, in this class, care about the morality of this act?
+
+- (Remember, our aim is to expand knowledge by measuring the world)
+
+- If every "use" of terror as a strategy is framed using morality then we better have some familiarity with the language and rationales of it.
+
+<br>
+
+#### Notes
+Schmid (2011): Academic Consensus Definition
+1. “Terrorism refers, on the one hand, to a doctrine about the presumed effectiveness of a special form or tactic of fear-generating, coercive political violence and, on the other hand, to a conspiratorial practice of calculated, demonstrative, direct violent action without legal or moral restraints, targeting mainly civilians and non-combatants, performed for its propagandistic and psychological effects on various audiences and conflict parties;
+
+2. Terrorism as a tactic is employed in three main contexts: (i) illegal state repression; (ii) propagandistic agitation by non-state actors in times of peace or outside zones of conflict; and (iii) as an illicit tactic of irregular warfare employed by state- and non-state actors.”
+
+
+
+
+
+---
+
+background-image: url('libs/Images/background-light_grey.jpg')
+background-size: 100%
+background-position: center
+class: middle
+
+.size55[.content-box-purple[**Sources of Terrorism Data**]]
+
+<br>
+
+.size40[
 + RAND Database of Worldwide Terrorism Incidents (RDWTI)
 
 + Global Terrorism Database (GTD)
@@ -97,7 +151,7 @@ class: middle, slideblue
 
 ???
 
-This week we will explore three major research projects that have been created in order to help us measure terrorism.
+This week we explore three major research projects that have been created in order to "measure" terrorism.
 
 <br>
 
@@ -116,17 +170,20 @@ Our job this week is to explore these projects in order to both:
 
 ---
 
-class: middle, slideblue
+background-image: url('libs/Images/background-light_grey.jpg')
+background-size: 100%
+background-position: center
+class: middle
 
-.size50[.center[.content-box-grey[**Operationalizing Terrorism**]]]
+.size50[.center[.content-box-grey[**Measuring Terrorism**]]]
 
 <br>
 
 ## Research Questions
 .size35[
-1. Pros and cons of generalizing from this dataset?
+1. What are the pros and cons of using this as our primary database of terrorism?
 
-2. Is the damage caused by terrorism getting worse?
+2. Is the damage caused by terrorism getting worse over time?
 
 3. Where are the terrorism hot spots in the world?
 
@@ -137,29 +194,34 @@ class: middle, slideblue
 
 For each of these projects we are going to focus on answering these four questions.
 
+- Remember we'll be using validity and reliability as our approach to answering the first question
+
 <br>
 
 *Split Class into Small Groups (3-4)*
 
-Go sit with your group!
-
-(SLIDE)
+- Go sit with your group!
 
 
 
 ---
 
-class: middle, slideblue
+background-image: url('libs/Images/background-light_grey.jpg')
+background-size: 100%
+background-position: center
+class: middle
 
-.size50[.center[.content-box-grey[**Operationalizing Terrorism**]]]
+.size50[.center[.content-box-grey[**Measuring Terrorism**]]]
 
 <br>
 
 .size45[
 1) What are the pros and cons of using this as our primary database of terrorism?
 - Who is the RAND Corporation?
-- How do they define terrorism?
-- How are they measuring terrorism?
+
+- Are the measures valid?
+
+- Are the measures reliable?
 ]
 
 ???
@@ -172,25 +234,35 @@ Think about the project in broad strokes
 
 <br>
 
-(SLIDE: Who is the RAND Corp?)
+(**SLIDE**: Who is the RAND Corp?)
 
-(SLIDE: Terrorism Defined)
+(**SLIDE**: Terrorism Defined)
 
-(SLIDE: Valid and reliable measures?)
+(**SLIDE**: Valid and reliable measures?)
 
 
 
 
 ---
 
-background-image: url('libs/Images/11_1-RAND_Logo.png')
-background-size: 45%
-background-position: left
+background-image: url('libs/Images/background-light_grey.jpg')
+background-size: 100%
+background-position: center
 class: middle
 
-.pull-right[
+.pull-left[
+```{r, echo = FALSE, fig.align = 'center', out.width = '100%'}
+knitr::include_graphics("libs/Images/11_1-RAND_Logo.png")
+```
+]
 
+.pull-right[
 .size30[
+
+<br>
+
+<br>
+
 .center[
 **The RAND Corporation is a research organization that develops solutions to public policy challenges to help make communities throughout the world safer and more secure, healthier and more prosperous. RAND is nonprofit, nonpartisan, and committed to the public interest.**
 ]]]
@@ -199,6 +271,8 @@ class: middle
 
 ### How familiar are you with the Rand Corporation?
 
+<br>
+
 ### After reading through the website material do you have any concerns about institutional biases?
 
 <br>
@@ -206,8 +280,12 @@ class: middle
 RAND advertises itself as a non-partisan think-tank.
 - Many contracts and much funding through US military and military contractors
 
+<br>
+
 This does tend to influence their problem-framings and perspectives on defense issues.
 - Not a question of misrepresenting data, but asking and answering questions in line with US defense industry perspectives.
+
+<br>
 
 Seems quite evident as we explore the data here.
 
@@ -216,7 +294,10 @@ Seems quite evident as we explore the data here.
 
 ---
 
-class: middle, slideblue
+background-image: url('libs/Images/background-light_grey.jpg')
+background-size: 100%
+background-position: center
+class: middle
 
 .size55[.center[**RAND Defines Terrorism**]]
 
@@ -236,7 +317,7 @@ Terrorism is defined by the nature of the act, not by the identity of the perpet
 
 ### How does this compare to our class definition of terrorism?
 
-### Any concerns from adopting this as our primary approach to measuring and studying terrorism around the world? 
+### - Any concerns from adopting this as our primary approach to measuring and studying terrorism around the world? 
 
 <br>
 
@@ -251,7 +332,10 @@ Terrorism is defined by the nature of the act, not by the identity of the perpet
 
 ---
 
-class: middle, slideblue
+background-image: url('libs/Images/background-light_grey.jpg')
+background-size: 100%
+background-position: center
+class: middle
 
 .size50[.center[.content-box-grey[**Operationalizing Terrorism**]]]
 
@@ -278,7 +362,10 @@ I note that it lists variables that, for some reason, are not included in the da
 
 ---
 
-class: middle, slideblue
+background-image: url('libs/Images/background-light_grey.jpg')
+background-size: 100%
+background-position: center
+class: middle
 
 .center[.size65[.content-box-grey[**Operationalizing Terrorism**]]]
 
@@ -294,21 +381,25 @@ class: middle, slideblue
 
 Groups, take a few minutes to review the data.
 
-Answer this question for us focusing on injuries and fatalities across time.
+- Answer this question for us focusing on injuries and fatalities across time.
 
 <br>
 
-### Report Back, what did you find?
+Report back
 
-### How did you attack this task?
+1. How did you attack this task?
 
-(SLIDE)
+2. What did you find?
+
+<br>
+
+(**SLIDE**)
 
 
 
 ---
 
-```{r, fig.retina=3, fig.align='center', fig.asp=0.618, out.width='100%', fig.width=5}
+```{r, fig.retina=3, fig.align='center', fig.asp=0.618, out.width='100%', fig.width=5, cache=TRUE}
 d2 |>
   group_by(Year2) |>
   summarize(
@@ -340,9 +431,12 @@ d2 |>
 
 ---
 
-class: middle, center, slideblue
+background-image: url('libs/Images/background-light_grey.jpg')
+background-size: 100%
+background-position: center
+class: middle
 
-.size50[.content-box-grey[**Operationalizing Terrorism**]]
+.center[.size60[.content-box-grey[**Operationalizing Terrorism**]]]
 
 <br>
 
@@ -354,28 +448,30 @@ class: middle, center, slideblue
 
 Groups, take a few minutes to review the data.
 
-Analyze the data and identify for us the global hotspots for terrorism!
+- Analyze the data and identify for us the global hotspots for terrorism!
 
 <br>
 
-### Report Back, what did you find?
+Report back
 
-### How did you attack this task?
+1. How did you attack this task?
+
+2. What did you find?
 
 <br>
 
-(SLIDE: map count of attacks overall)
+(**SLIDE**: map count of attacks overall)
 
-(SLIDE: map count of fatalities overall)
+(**SLIDE**: map count of fatalities overall)
 
-(SLIDE: map count of fatalities 2005-2009)
+(**SLIDE**: map count of fatalities 2005-2009)
 
 
 
 
 ---
 
-```{r, fig.retina=3, fig.align='center', out.width='100%', fig.height=5, fig.width=8}
+```{r, fig.retina=3, cache=TRUE, fig.align='center', out.width='100%', fig.height=5, fig.width=8}
 # following packages require installing libudunits2-dev and libgdal-dev in synaptic
 library(sf)
 library(rnaturalearth)
@@ -418,19 +514,27 @@ Just to start, here's a map of overall database attacks
 
 - e.g. I counted the number of attacks per country. 
 
+<br>
+
 ### What conclusions can we draw using this map of the data?
+
+<br>
 
 ### - How confident are we the red countries are the terror hotspots?
 
+<br>
+
 ### - What do the lighter countries in Africa and Central Asia represent? Lack of reliable info or places with fewer attacks?
 
-#### - Does thinking about the sample selection procedures (and what we don't know about them) at rand help us answer this question?
+<br>
+
+### - Does thinking about the sample selection procedures (and what we don't know about them) at RAND help us answer this question?
 
 
 
 ---
 
-```{r, fig.retina=3, fig.align='center', out.width='100%', fig.height=5, fig.width=8}
+```{r, fig.retina=3, cache=TRUE, fig.align='center', out.width='100%', fig.height=5, fig.width=8}
 ###################################################
 ## Map of terror attacks per country since 2005
 d2 |>
@@ -465,7 +569,7 @@ Here's the map updated for the period since 2005, e.g. the most recent five year
 
 ---
 
-```{r, fig.retina=3, fig.align='center', out.width='100%', fig.height=5, fig.width=8}
+```{r, fig.retina=3, cache=TRUE, fig.align='center', out.width='100%', fig.height=5, fig.width=8}
 ## Map of terror fatalities per country last five years of data
 d2 |>
   filter(Year2 >= 2005) |>
@@ -498,7 +602,10 @@ Rather than a count of attacks, here we see a sum of the fatalities.
 
 ---
 
-class: middle, slideblue
+background-image: url('libs/Images/background-light_grey.jpg')
+background-size: 100%
+background-position: center
+class: middle
 
 .size50[.center[.content-box-grey[**Operationalizing Terrorism**]]]
 
@@ -525,7 +632,7 @@ e.g.
 
 class: center, slideblue
 
-.size60[**Most frequent terror groups?**]
+.size60[.content-box-white[**Most frequent terror groups?**]]
 
 .size30[
 ```{r}
@@ -550,7 +657,7 @@ d2 |> filter(Year2 >= 2005) |> count(Perpetrator) |> arrange(desc(n)) |> slice(1
 
 ### What are the most frequent weapon types used in terrorist events?
 
-(SLIDE)
+(**SLIDE**)
 
 
 
@@ -558,7 +665,7 @@ d2 |> filter(Year2 >= 2005) |> count(Perpetrator) |> arrange(desc(n)) |> slice(1
 
 class: center, slideblue
 
-.size55[**Most frequent weapons?**]
+.size55[.content-box-white[**Most frequent weapons?**]]
 
 .size30[
 ```{r}
@@ -613,7 +720,7 @@ Take a few minutes, filter to look at only the US.
 
 class: center, slideblue
 
-.size50[**Terror Groups in the USA**]
+.size50[.content-box-white[**Terror Groups in the USA**]]
 
 .pull-left[
 .size45[**All Observations**]
@@ -644,7 +751,7 @@ d_usa |> filter(Year2 >= 2005) |> count(Perpetrator) |> arrange(desc(n)) |> slic
 
 ### How about most frequent weapons used? Any difference between the overall and just since 1999?
 
-(SLIDE)
+(**SLIDE**)
 
 
 
@@ -652,7 +759,7 @@ d_usa |> filter(Year2 >= 2005) |> count(Perpetrator) |> arrange(desc(n)) |> slic
 
 class: center, slideblue
 
-.size50[**Terror Weapons in the USA**]
+.size50[.content-box-white[**Terror Weapons in the USA**]]
 
 .pull-left[
 .size45[**All Observations**]
@@ -683,13 +790,13 @@ Not much difference in weapon types used.
 
 ### Are the incidents getting bigger over time (injuries and fatalities)?
 
-(SLIDE)
+(**SLIDE**)
 
 
 
 ---
 
-```{r, fig.retina=3, fig.align='center', fig.asp=0.618, out.width='100%', fig.width=5}
+```{r, fig.retina=3, cache=TRUE, fig.align='center', fig.asp=0.618, out.width='100%', fig.width=5}
 d_usa |>
   group_by(Year2) |>
   summarize(
@@ -723,16 +830,25 @@ d_usa |>
 
 ---
 
-class: middle, slideblue, center
+background-image: url('libs/Images/background-light_grey.jpg')
+background-size: 100%
+background-position: center
+class: middle
 
-.size60[.center[**For Wednesday**]]
-
-<br>
+.size60[.center[.content-box-white[**For Next Class**]]]
 
 .size50[
-Explore the Global Terrorism Database (GTD)
+**Explore the data and codebook for the [the Global Terrorism Database (GTD)](https://www.start.umd.edu/gtd/).**
 
-https://www.start.umd.edu/gtd/
+Make sure you understand the observations and variables enough to play with them in class.
 ]
+
+???
+
+For next class we repeat today's work on the PTS data project.
+
+Get ready to work!
+
+
 
 
