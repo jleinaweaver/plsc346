@@ -35,15 +35,16 @@ background-size: 100%
 background-position: center
 class: middle
 
-.size70[**Today's Agenda**]
+.center[.size40[**III. How and why do non-state actors use political violence?**]]
 
 <br>
 
-.size60[.center[
-Case Studies:
+.size50[
 
-Can terrorism succeed?
-]]
+**Today's Agenda**
+
+- Can "terrorism" ever "succeed"?
+]
 
 <br>
 
@@ -54,53 +55,179 @@ Can terrorism succeed?
 ???
 
 ### Prep for Class
-1. Review submitted cases
-    - https://docs.google.com/document/d/1VxpQcFCyLm9UySFbvhUDyl9pe0c-C3P4VeOAjqGGN2U/edit?usp=sharing
+1. Review submitted cases on Canvas
+
+2. Prep (and publish on Canvas) the Google Sheet for unpacking the cases
+    - https://docs.google.com/spreadsheets/d/1vNlcBY2pBTato7NPai09BsJpB9s4kfHk4zYoBOdqGNs/edit?usp=sharing
 
 <br>
 
-We're tackling a big question this week: Does terrorism work?
+**SLIDE**: We're tackling a big question this week
 
 
 
 ---
 
-background-image: url('libs/Images/background-red.png')
+background-image: url('libs/Images/background-red_flipped.png')
 background-size: 100%
 background-position: center
-class: middle, center, inverse, textwhite
+class: middle
 
-.size55[**Bring to class a piece of evidence showing terrorism (e.g. a terrorist group, a terrorist threat or a specific terror attack) changing the behavior of a target audience (e.g. society, community, government) in some specific way.**]
+.center[.size50[.content-box-white[**Can "terrorism" ever "succeed"?**]]]
+
+<br>
+
+.pull-left[
+```{r, echo = FALSE, fig.align = 'center', out.width = '100%'}
+knitr::include_graphics("libs/Images/12_1-Paper_Page1.png")
+```
+]
+
+.pull-right[
+```{r, echo = FALSE, fig.align = 'center', out.width = '100%'}
+knitr::include_graphics("libs/Images/12_1-Abrahms_Page1.png")
+```
+]
 
 ???
+
+The debate about whether terrorism can be effective as a political strategy is far from settled in the literature.
+
+<br>
+
+This week I want us to examine recent case studies and two of the most cited articles in this debate
+
+- Robert Pape's (2003) article has well above 2,400 citations
+
+- Abrahms (2006) response to Pape is compelling and worth considering
+
+<br>
+
+### What does this question assume is true about terrorism?
+
+### - In other words, what are the assumptions implicit in this framing of the question?
+
+- (**SLIDE**)
+
+
+
+
+---
+
+background-image: url('libs/Images/background-red_flipped.png')
+background-size: 100%
+background-position: center
+class: middle
+
+.size50[.center[.content-box-white[**Can "terrorism" ever "succeed"?**]]]
+
+<br>
+
+.size50[
+1. "Terrorists" have "goals" (e.g. are strategic, rational actors)
+
+2. We can evaluate their "acts" in terms of those "goals" (e.g. was it a success or failure?) ]
+
+???
+
+There are a couple of key assumptions I'm making here that we are going to adopt for today
+
+1. I am assuming that "terrorists" are strategic, instrumentally rational actors (e.g they have goals), AND
+
+2. That we can identify and evaluate their actions in terms of those goals (e.g. "success" vs "failure")
+
+<br>
+
+### Do we have any concerns with these assumptions as jumping off points for our work? Why or why not?
+
+
+
+
+---
+
+background-image: url('libs/Images/background-red_flipped.png')
+background-size: 100%
+background-position: center
+class: middle
+
+.size60[.center[.content-box-white[**For Today**]]]
+
+<br>
+
+```{r, echo = FALSE, fig.align = 'center', out.width = '100%'}
+knitr::include_graphics("libs/Images/11_3-Assignment.png")
+```
+
+???
+
+Before we dig into the academic literature I want us to take a shot at answering the question using real-world case studies.
+
+<br>
 
 ### Everybody ready to go on this?
 
 <br>
 
-### All citations in APA format?
+Let's unpack these cases as we have done previously in class.
 
+- Link on Canvas Modules to a Google Sheet (Week 12)
 
+- Everybody unpack their case using that sheet
+    1. APA Citation
+    2. Who is the "terrorist"?	
+    3. What was their "goal"?	
+    4. What was the specific act?	
+    5. Why was this "successful"?	
+    6. Other notes?
+    
+<br>
 
-
+*Split into small groups (3-4)*
+    
+    
+    
 ---
 
-background-image: url('libs/Images/background-red.png')
+background-image: url('libs/Images/background-red_flipped.png')
 background-size: 100%
 background-position: center
-class: middle, center, inverse, textwhite
+class: middle
 
-.size65[**Under what conditions are terrorists more or less likely to succeed in their aims?**]
+.size60[.center[.content-box-white[**Can "terrorism" ever "succeed"?**]]]
+
+<br>
+
+.size60[
+1. Review the cases for clarity, and
+
+2. Rank the cases from "most" to "least" successful]
 
 ???
 
-Our goal for today is to answer this question.
+Groups, take a few minutes to review all the cases
 
-### What does the framing of this question indicate about how I'm setting up our exploration?
+- Use this as a chance to request clarification from the submitter if anything doesn't make sense
+    
+- IMPORTANT: The ranking exercise requires some careful thought about your criteria for success
 
-- Assumes strategic behavior by instrumentally rational actors, e.g. those with goals
-- Assumes we can identify "success" vs "failure"
-- ?
+- Be ready to present your ranking and explain how you approached it
+
+<br>
+
+### Questions?
+
+- Go!
+
+<br>
+
+Groups report back your rankings and explain your logic.
+
+- For ease, give us your 2-3 "most successful" cases and your 2-3 "least successful" cases
+
+<br>
+
+*ON BOARD: Criteria for success?*
+
 
 
 
@@ -113,55 +240,35 @@ class: middle, inverse, textwhite
 
 .size55[.center[**Under what conditions are terrorists more or less likely to succeed in their aims?**]
 
-1. Criteria raising P(Success)?
+1. Conditions raising P(Success)?
 
-2. Criteria lowering P(Success)?
+2. Conditions lowering P(Success)?
 ]
 
 ???
 
-To start, everyone take five minutes to brainstorm these two lists on your own.
+Let's now use your work to generate some testable hypotheses.
 
-- Don't just root this in your case for today, draw on your intuitions and the work we've done over the last few weeks.
+- Groups, take some time to build two lists
 
-- Our cases today will then allow us to test these hypotheses.
+- What are the conditions that raise or lower the probability of a successful terror attack?
 
-<br>
-
-Small groups: Compare and consolidate lists
+- This can be characteristics of the terrorist, the group, the ideology, the goals, the methods, anything.
 
 <br>
 
-Class: Let's build our lists on the board
+### Questions on what I'm asking for?
 
-
-
----
-
-background-image: url('libs/Images/background-red.png')
-background-size: 100%
-background-position: center
-class: middle, inverse, textwhite
-
-.size50[
-1. Describe your case
-    - Who is the "terrorist"?
-    - What was their "goal"?
-    - What did they do?
-    - Was this "change" a "success"?
-
-2. Apply our criteria to your case
-]
-
-???
-
-Now it's time for everyone to introduce their case AND use it as a test of our criteria.
-
-Take a moment to get ready.
+- Go!
 
 <br>
 
-Ok, let's hear our cases and evaluate our criteria!
+Let's report back!
+
+- *ON BOARD* Two Lists
+
+
+
 
 
 
@@ -171,26 +278,15 @@ Ok, let's hear our cases and evaluate our criteria!
 background-image: url('libs/Images/13-1-belfast_mural.png')
 background-size: 100%
 background-position: center
-class: center
+class: top, right
 
-.size45[.content-box-red[**How and when can terrorism succeed?**]]
+.size45[.content-box-red[**The Strategic Logic of Suicide Terrorism**]]
+
+.size45[.content-box-red[**Pape (2003)**]]
 
 ???
 
-<br>
-
-Where do we end up? 
-
-### How and when does terrorism succeed?
-
-<br>
-
-### - Was this a good test of our hypotheses? Why or why not?
-
-### - Are we comfortable saying that impact equals effectiveness? Why or why not?
-
-### - What does our sample selection need to improve this test of our criteria?
-
+For next class!
 
 
 
