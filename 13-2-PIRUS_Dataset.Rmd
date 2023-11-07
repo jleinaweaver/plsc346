@@ -36,14 +36,16 @@ background-size: 100%
 background-position: center
 class: middle
 
-.size70[**Today's Agenda**]
+.center[.size40[**III. How and why do non-state actors use political violence?**]]
 
 <br>
 
-.size60[
-.center[
-Evaluate the Profiles of Individual Radicalization in the United States (PIRUS) Data project
-]]
+.size50[
+
+**Today's Agenda**
+
+- The Profiles of Individual Radicalization in the United States (PIRUS) Data project
+]
 
 <br>
 
@@ -54,58 +56,52 @@ Evaluate the Profiles of Individual Radicalization in the United States (PIRUS) 
 ???
 
 ### Prep for Class
-1. ?
+1. Access the data and search tool
+    - [Main website](https://www.start.umd.edu/data-tools/profiles-individual-radicalization-united-states-pirus)
+    - [Search and Visualization tool](https://www.start.umd.edu/profiles-individual-radicalization-united-states-pirus-keshif)
+    - [FAQ page](https://www.start.umd.edu/pirus-frequently-asked-questions)
 
-<br>
-
-PIRUS Data project
-
-- [Main website](https://www.start.umd.edu/data-tools/profiles-individual-radicalization-united-states-pirus)
-
-- [Search and Visualization tool](https://www.start.umd.edu/profiles-individual-radicalization-united-states-pirus-keshif)
-
----
-
-background-image: url('libs/Images/background-green_blue_swirl_side.jpg')
-background-size: 100%
-background-position: center
-class: middle, center
-
-.size60[**For Today**]
-
-<br>
-
-.size50[
-
-]
-
-???
 
 
 
 ---
 
-background-image: url('libs/Images/02_2-protestors_fire2.png')
+background-image: url('libs/Images/background-red_flipped.png')
 background-size: 100%
 background-position: center
-class: middle
+class: middle, inverse
 
-.size50[**Measuring "Political Violence"**]
-
-.size45[
-**1) Concept**
-
-**2) Operationalization**
-
-**3) Instrumentation**
-
-**4) Measurement**
-]
+.size55[
+.center[**Collins (2021) "A New Wave of Terrorism? A Comparative Analysis of the Rise of Far-Right Terrorism"**]]
 
 ???
 
-Refresh week 2 material from Brians et al (2011): concept -> operationalization ("The process of selecting observable phenomena to represent abstract concepts") -> instrumentation (
-...the specification of steps to take in making observations") -> measurement ("The application of an instrument to assign numerical values to cases")
+Last class we examined Collins (2021) who made the argument Far Right Terrorism (FRT) represents the next "wave" of global terrorism
+
+<br>
+
+### First, what does that mean?
+
+### - What is a "wave" of terrorism?
+
+- David Rapoport’s Modern Waves of Terrorism Theory
+
+- Waves identify "motivations, targets, weapon types, group belongings, ideologies, and reoccurring patterns" that help us understand and, hopefully, address the rise of terrorism
+
+- “The Four Waves of Modern Terrorism” defines a wave as a cycle that takes place over a 40-year time period. Each cycle is dynamic in that it expands and contracts.
+
+- Groups within a particular wave adapt to the exigencies of their time, are aware of the actions of other contemporary terrorist groups in other countries, and are driven by a relentless energy that propels them into violent action. They share a common technological facility, including communications, weaponry, and logistics. Most important, they share a vision that perceives in the ills and abuses of the world the seeds of a revolutionary future.
+
+<br>
+
+### Did Collins convince you that FRT is the next "wave"? Why or why not?
+
+- Used GTD data to select cases
+
+- Mixed-methods case studies: Germany, US, UK and Scandinavia
+
+- FRT groups have common "type", "prompting cause" and a "common predominant energy"
+
 
 
 
@@ -118,53 +114,110 @@ class: middle
 
 .size35[.center[.content-box-white[**Profiles of Individual Radicalization in the United States (PIRUS)**]]]
 
-.pull-left[
-
 <br>
 
-```{r, fig.align='center', out.width='100%'}
+```{r, fig.align='center', out.width='63%'}
 knitr::include_graphics('libs/Images/13_2-PIRUS_Website.png')
 ```
-]
-
-.pull-right[
-.size40[
-<br>
-
-<br>
-
-**Inclusion Criteria**
-
-- p6-10
-]]
 
 ???
 
-PIRUS focus is on a specific set of non-state actors who are caught actively pursuing certain ends.
+Today I want us to explore a new dataset that aims to deepen our understanding of the kinds of radicalization pathways that exist in the US
+
+- PIRUS focus is on a specific set of non-state actors who are caught actively pursuing certain ends.
+
+- Hugely ambitious dataset, so let's dig into it!
 
 
-Take some time to review the inclusion criteria
 
-- diagram and evaluate each of the criteria
 
-- pros and cons?
+---
 
-Keys to consider:
-- why only cases radicalized in the US?
-- Why only these ideologies?
-- Why must the views be "espoused"?
+background-image: url('libs/Images/background-light_grey.jpg')
+background-size: 100%
+background-position: center
+class: middle
 
+.size35[.center[.content-box-white[**PIRUS Sample Selection Process: Website FAQ**]]]
+
+.size35[
+- "How were the data in PIRUS collected and coded?"
+
+- "Is the PIRUS dataset a comprehensive sample of radicalization in the United States?"
+
+- "Is the PIRUS dataset a representative sample of individuals radicalized in the United States?"
+
+- "How much missing data does PIRUS have?"
+
+- "Is PIRUS the definitive source on radicalization in the United States?"
+]
+
+???
+
+Let's start by discussing the data sourcing.
+
+- Take a look at these sections in the [FAQ page](https://www.start.umd.edu/pirus-frequently-asked-questions) on their website (linked through Canvas)
 
 <br>
 
-What does all of this mean for the comprehensiveness of the dataset?
+Groups, discuss and get ready to report back your evaluation of their process.
 
+- How confident should we be in the sample selection?
 
+- How representative is the sample likely to be?
 
-Codebook suggests this is a "selection" of groups? What criteria? What may be missing?
+<br>
 
+Ok groups:
+
+### Where does the data come from and how confident are we in their sample selection process?
+
+<br>
+
+### Based on this selection process are there some research questions we should NOT try to answer with this data? 
+
+<br>
+
+#### NOTES
 - "PIRUS includes a sample of individuals espousing Islamist, far right, far left, or single-issue ideologies who have radicalized within the United States to the point of committing ideologically motivated illegal violent or non-violent acts, joining a designated terrorist organization, or associating with an extremist organization whose leader(s) has/have been indicted of an ideologically motivated violent offense" (p6).
 
+
+
+
+---
+
+background-image: url('libs/Images/background-light_grey.jpg')
+background-size: 100%
+background-position: center
+class: middle
+
+.size35[.center[.content-box-white[**PIRUS Inclusion Criteria: Codebook (p6-10)**]]]
+
+<br>
+
+```{r, fig.align='center', out.width='92%'}
+knitr::include_graphics('libs/Images/13_2-PIRUS_Criteria.png')
+```
+
+???
+
+Groups, now open the codebook and review the inclusion criteria
+
+- Get ready to report back on the strengths and weaknesses of their process to decide who does and does not get included in the dataset
+
+<br>
+
+### Ok, what do we think of their inclusion criteria?
+
+### - Strengths and weaknesses?
+
+<br>
+
+### Based on this inclusion criteria are there some research questions we should NOT try to answer with this data? 
+
+<br>
+
+#### NOTES
 Inclusion Criteria (p8-9)
 
 Summary: In order to be eligible for inclusion, each individual must meet one of the following five criteria:
@@ -180,6 +233,8 @@ In addition, each individual MUST:
 3. show evidence that his or her behaviors are/were linked to the ideological motives he or she espoused/espouses.
 
 
+
+
 ---
 
 background-image: url('libs/Images/background-light_grey.jpg')
@@ -187,7 +242,7 @@ background-size: 100%
 background-position: center
 class: middle
 
-.size35[.center[.content-box-white[**Profiles of Individual Radicalization in the United States (PIRUS)**]]]
+.size35[.center[.content-box-white[**PIRUS Variables: Valid and Reliable?**]]]
 
 .pull-left[
 
@@ -216,21 +271,40 @@ knitr::include_graphics('libs/Images/13_2-PIRUS_Website.png')
 
 ???
 
-Now shift focus to the observations in the dataset.
+Last piece of set-up, groups, shift focus to the observations in the dataset.
 
-- Assuming these are the "right" cases to focus on, any concerns about the validity and reliability of the operationalization, instrumentation, measurement of these variables?
+- *Assign one category per group*
 
-<br>
-
-Split class into groups (one group per category), build strengths and weaknesses lists on the board analyzing the codebook across these three categories: operationalization, instrumentation, measurement
+- Assuming these are the "right" cases to focus on, any concerns about the validity and reliability of the variables in these sections?
 
 <br>
 
-Ok, report back.
+### Groups, any concerns about the validity or reliability of the variables in your section?
 
-### Any concerns with validity?
 
-### Any concerns with reliability?
+
+
+---
+
+background-image: url('libs/Images/13_2-PIRUS_Tool.png')
+background-size: 70%
+background-position: center
+
+???
+
+The search tool on the PIRUS webpage is quite powerful.
+
+- I assume everybody spent some time playing with this before class
+
+<br>
+
+### Find anything cool?
+
+- Show us!
+
+<br>
+
+**SLIDE**: Let's talk about that big map in the middle of the tool
 
 
 
@@ -239,7 +313,7 @@ Ok, report back.
 
 class: slideblue, middle, full
 
-```{r, fig.retina=3, fig.align='center', out.width='95%', fig.height=6, fig.width=10, cache=FALSE}
+```{r, fig.retina=3, fig.align='center', out.width='95%', fig.height=6, fig.width=10, cache=TRUE}
 ## Make a map
 library(spData)
 
@@ -280,7 +354,11 @@ Main search page puts a version of this map on the center of the page.
 
 <br>
 
-**SLIDE**: This map makes the mistake that SO MANY US politics maps make by confusing population with the variable we are interested in.
+I argue that this map MAY be a bad visualization.
+
+### - Why might this map misrepresent the outcome we are interested in?
+
+- (**SLIDE**: This map makes the mistake that SO MANY US politics maps make by confusing population with the variable we are interested in.)
 
 
 
@@ -288,7 +366,7 @@ Main search page puts a version of this map on the center of the page.
 
 class: slideblue, middle, full
 
-```{r, fig.retina=3, fig.align='center', out.width='53%', fig.height=4, fig.width=8, cache=FALSE}
+```{r, fig.retina=3, fig.align='center', out.width='53%', fig.height=4, fig.width=8, cache=TRUE}
 # Map 1
 d10 |>
   mutate(
@@ -309,7 +387,7 @@ d10 |>
   scale_fill_brewer(type = "seq", palette = 8)
 ```
 
-```{r, fig.retina=3, fig.align='center', out.width='53%', fig.height=4, fig.width=8, cache=FALSE}
+```{r, fig.retina=3, fig.align='center', out.width='53%', fig.height=4, fig.width=8, cache=TRUE}
 ## Map 2
 d10 |>
   mutate(
@@ -332,11 +410,25 @@ d10 |>
 
 ???
 
-### What do we learn from the map that controls for population?
+The top map is our usual count but the bottom is scaled by the population in each state.
 
 <br>
 
-As ever, don't confuse geography for population!
+### Compare and contrast the maps for me
+
+### - What do we learn from the remade map (scaling for population)?
+
+<br>
+
+The question of which map is appropriate depends on the research question you are trying to answer OR the model you are trying to test
+
+### For what kinds of research questions do we prefer the first map?
+
+<br>
+
+### For what kinds of research questions do we prefer the second?
+
+<br>
 
 **SLIDE**: Let's continue this exercise (counts) but broken down by the main variable in this project, ideology.
 
@@ -348,13 +440,27 @@ As ever, don't confuse geography for population!
 background-image: url('libs/Images/background-light_grey.jpg')
 background-size: 100%
 background-position: center
-class: middle, center
+class: middle
 
 .size70[
-Is there a regional component to the distribution of groups by the four ideologies tracked in this project?
+**Explore the map tool by ideology**
+
+- Do different extremist ideologies cluster in different regions?
 ]
 
 ???
+
+Use the mapping tool to examine the distribution of ideological extremists around the country.
+
+- For example, are far right groups a southern thing?
+
+<br>
+
+*REPORT BACK*
+
+<br>
+
+**SLIDE**: Maps rescaled by population
 
 
 
@@ -363,7 +469,7 @@ Is there a regional component to the distribution of groups by the four ideologi
 class: slideblue, middle, full
 
 .pull-left[
-```{r, fig.retina=3, fig.align='center', out.width='92%', fig.height=4, fig.width=8, cache=FALSE}
+```{r, fig.retina=3, fig.align='center', out.width='92%', fig.height=4, fig.width=8, cache=TRUE}
 # 4 maps: count of groups by ideology scaled by population
 
 # Islamist
@@ -387,7 +493,7 @@ d |>
   labs(fill = "", title = "US Based Islamic Radicals (per million population)")
 ```
 
-```{r, fig.retina=3, fig.align='center', out.width='92%', fig.height=4, fig.width=8, cache=FALSE}
+```{r, fig.retina=3, fig.align='center', out.width='92%', fig.height=4, fig.width=8, cache=TRUE}
 # Far Left
 d |>
   count(Radicalization_Far_Left, Loc_Habitation_State1, name = "Count") |>
@@ -411,7 +517,7 @@ d |>
 ]
 
 .pull-right[
-```{r, fig.retina=3, fig.align='center', out.width='92%', fig.height=4, fig.width=8, cache=FALSE}
+```{r, fig.retina=3, fig.align='center', out.width='92%', fig.height=4, fig.width=8, cache=TRUE}
 # Far Right
 d |>
   count(Radicalization_Far_Right, Loc_Habitation_State1, name = "Count") |>
@@ -433,7 +539,7 @@ d |>
   labs(fill = "", title = "US Based Far Right Radicals (per million population)")
 ```
 
-```{r, fig.retina=3, fig.align='center', out.width='92%', fig.height=4, fig.width=8, cache=FALSE}
+```{r, fig.retina=3, fig.align='center', out.width='92%', fig.height=4, fig.width=8, cache=TRUE}
 # Single Issue
 d |>
   count(Radicalization_Single_Issue, Loc_Habitation_State1, name = "Count") |>
@@ -458,6 +564,12 @@ d |>
 
 ???
 
+### Do these rescaled maps tell a different story than simple counts?
+
+<br>
+
+### What do we learn about the locations and sizes of ideological extremes in this country?
+
 
 
 ---
@@ -475,6 +587,10 @@ What do we learn about the groups active in Missouri?
 
 Click on Missouri (or filter observations to MO) and tell me about the characteristics of these groups.
 
+<br>
+
+**SLIDE**
+
 
 
 
@@ -486,6 +602,18 @@ class: middle, full, slideblue
 knitr::include_graphics('libs/Images/13_2-MO-Map.png')
 ```
 
+???
+
+*REPORT BACK*
+
+<br>
+
+One of the big fears that gets spread frequently in the media is that of foreign terrorists "infiltrating" the US to do harm
+
+- e.g. the panic at our southern border
+
+- **SLIDE**: Check residency status
+
 
 
 ---
@@ -496,7 +624,7 @@ background-position: center
 class: middle
 
 .size50[
-.center[Compare and contrast observations by 'Residency_Status']
+.center[**Compare and contrast observations by 'Residency_Status'**]
 
 - Do extremists differ in levels of violence pursued?
     - 'Violent'
@@ -505,6 +633,10 @@ class: middle
 ]
 
 ???
+
+*REPORT BACK*
+
+- (**SLIDE**: My figures)
 
 
 
@@ -595,6 +727,219 @@ d2 |>
 
 
 
+
+---
+
+background-image: url('libs/Images/background-light_grey.jpg')
+background-size: 100%
+background-position: center
+class: middle
+
+.size45[
+**Do individuals that pursue violent events have different demographics or socioeconomic statuses from those that do not?**
+
+- Gender
+
+- Education
+
+- Employment Status
+
+- Marital Status
+]
+
+???
+
+
+
+---
+
+background-image: url('libs/Images/background-light_grey.jpg')
+background-size: 100%
+background-position: center
+class: middle
+
+```{r, fig.retina=3, fig.asp=0.618, fig.align='center', out.width='90%'}
+# Gender: 1 female, 2 male, 3 non-binary
+#d |> count(Gender, Violent)
+nums1 <- d |> count(Gender) |> select(n)
+
+d |> 
+  mutate(
+    Gender = case_when(
+      Gender == 1 ~ "Male",
+      Gender == 2 ~ "Female",
+      Gender == 3 ~ "Non-binary"
+    ),
+    Violent = if_else(Violent == 0, "Non-Violent", "Violent")
+  ) |>
+  count(Violent, Gender) |>
+  ggplot(aes(x = Gender, y = n, fill = Violent)) +
+  geom_col(position = "fill") +
+  theme_bw() +
+  labs(x = "", y = "",
+       title = "Female radicals appear to be more likely to take violent actions") +
+  scale_y_continuous(labels = scales::percent_format()) +
+  scale_fill_brewer(type = "qual", palette = 6, direction = -1) +
+  guides(fill = "none") +
+  annotate("text", x = 1:3, y = .05, label = nums1$n[1:3], color = "white", size = 5) +
+  annotate("text", x = 1, y = .3, label = "Violent Acts", srt = 90, color = "white", size = 5) +
+  annotate("text", x = 1, y = .8, label = "Non-Violent", srt = 90, color = "white", size = 5)
+```
+
+
+
+---
+
+background-image: url('libs/Images/background-light_grey.jpg')
+background-size: 100%
+background-position: center
+class: middle
+
+```{r, fig.retina=3, fig.asp=0.618, fig.align='center', out.width='90%'}
+#d |> filter(Education != -99, Education != -88) |> count(Violent, Education)
+
+nums3 <- d |> filter(Education != -99, Education != -88) |> count(Education) |> select(n)
+
+d |> 
+  filter(Education != -99, Education != -88) |>
+  mutate(
+    Education = case_when(
+      Education < 3 ~ "< HS",
+      Education == 3 ~ "HS",
+      Education %in% c(4,6) ~ "Some College",
+      Education == 5 ~ "College",
+      Education %in% c(7:11) ~ "Some Post-Grad"
+    ),
+    Violent = if_else(Violent == 0, "Non-Violent", "Violent")
+  ) |>
+  count(Violent, Education) |>
+  ggplot(aes(x = Education, y = n, fill = Violent)) +
+  geom_col(position = "fill") +
+  theme_bw() +
+  labs(x = "", y = "",
+       title = "Education reduces radical violence") +
+  scale_y_continuous(labels = scales::percent_format()) +
+  scale_fill_brewer(type = "qual", palette = 6, direction = -1) +
+  guides(fill = "none") +
+  annotate("text", x = 1:5, y = .05, label = nums3$n[1:5], color = "white", size = 4.5) +
+  annotate("text", x = 1, y = .35, label = "Violent Acts", srt = 90, color = "white", size = 4) +
+  annotate("text", x = 1, y = .86, label = "Non-Violent", srt = 90, color = "white", size = 4) +
+  scale_x_discrete(limits = c("< HS", "HS", "Some College", "College", "Some Post-Grad"))
+
+```
+
+
+
+---
+
+background-image: url('libs/Images/background-light_grey.jpg')
+background-size: 100%
+background-position: center
+class: middle
+
+```{r, fig.retina=3, fig.asp=0.618, fig.align='center', out.width='90%'}
+#d |> filter(Employment_Status != -99, Employment_Status != -88) |> count(Violent, Employment_Status)
+
+nums4 <- d |> filter(Employment_Status != -99, Employment_Status != -88) |> count(Employment_Status) |> select(n)
+
+d |> 
+  filter(Employment_Status != -99, Employment_Status != -88) |>
+  mutate(
+    Employment_Status = case_when(
+      Employment_Status == 1 ~ "Employed",
+      Employment_Status == 2 ~ "Self-Employed",
+      Employment_Status %in% c(3,4) ~ "Unemployed",
+      Employment_Status == 5 ~ "Student",
+      Employment_Status == 6 ~ "Retired"
+    ),
+    Violent = if_else(Violent == 0, "Non-Violent", "Violent")
+  ) |>
+  count(Violent, Employment_Status) |>
+  ggplot(aes(x = Employment_Status, y = n, fill = Violent)) +
+  geom_col(position = "fill") +
+  theme_bw() +
+  labs(x = "", y = "",
+       title = "Jobs reduce radical violence") +
+  scale_y_continuous(labels = scales::percent_format()) +
+  scale_fill_brewer(type = "qual", palette = 6, direction = -1) +
+  guides(fill = "none") +
+  annotate("text", x = 1:6, y = .05, label = nums3$n[1:6], color = "white", size = 4.5) +
+  annotate("text", x = 1, y = .35, label = "Violent Acts", srt = 90, color = "white", size = 4) +
+  annotate("text", x = 1, y = .86, label = "Non-Violent", srt = 90, color = "white", size = 4) +
+  scale_x_discrete(limits = c("Unemployed", "Student", "Retired", "Employed", "Self-Employed"))
+
+
+```
+
+
+
+---
+
+background-image: url('libs/Images/background-light_grey.jpg')
+background-size: 100%
+background-position: center
+class: middle
+
+```{r, fig.retina=3, fig.asp=0.618, fig.align='center', out.width='90%'}
+#d |> filter(Marital_Status != -99) |> count(Violent, Marital_Status)
+
+nums2 <- d |> filter(Marital_Status != -99) |> count(Marital_Status) |> select(n)
+
+d |> 
+  filter(Marital_Status != -99) |>
+  mutate(
+    Marital_Status = case_when(
+      Marital_Status == 1 ~ "Single",
+      Marital_Status == 2 ~ "Married",
+      Marital_Status == 3 ~ "Divorced",
+      Marital_Status == 4 ~ "Widowed"
+    ),
+    Violent = if_else(Violent == 0, "Non-Violent", "Violent")
+  ) |>
+  count(Violent, Marital_Status) |>
+  ggplot(aes(x = Marital_Status, y = n, fill = Violent)) +
+  geom_col(position = "fill") +
+  theme_bw() +
+  labs(x = "", y = "",
+       title = "Beware unmarried radicals!") +
+  scale_y_continuous(labels = scales::percent_format()) +
+  scale_fill_brewer(type = "qual", palette = 6, direction = -1) +
+  guides(fill = "none") +
+  annotate("text", x = 1:4, y = .05, label = nums2$n[1:4], color = "white", size = 4) +
+  annotate("text", x = 1, y = .35, label = "Violent Acts", srt = 90, color = "white", size = 4.5) +
+  annotate("text", x = 1, y = .83, label = "Non-Violent", srt = 90, color = "white", size = 4.5) +
+  scale_x_discrete(limits = c("Single", "Divorced", "Widowed", "Married"))
+```
+
+
+---
+
+background-image: url('libs/Images/background-blue_triangles.jpg')
+background-size: 100%
+background-position: center
+class: middle
+
+.size60[.content-box-white[**For Next Class**]]
+
+<br>
+
+.size45[
+Jasko, K., LaFree, G., Piazza, J., & Becker, M. H. (2022). A comparison of political violence by left-wing, right-wing, and Islamist extremists in the United States and the world. *Proceedings of the National Academy of Sciences* 119(30)
+]
+
+???
+
+
+
+
+
+---
+
+old slides
+
+
+
+
 ---
 
 background-image: url('libs/Images/background-light_grey.jpg')
@@ -626,60 +971,6 @@ d |> count(Media_Radicalization)
 d |> count(Social_Media)
 d |> count(Social_Media_Frequency)
 ```
-
-???
-
-
-
----
-
-background-image: url('libs/Images/background-light_grey.jpg')
-background-size: 100%
-background-position: center
-class: middle, center
-
-.size70[
-Do individuals that pursue violent acts have different demographics or socioeconomic statuses from those that do not?
-
-- Broad_Ethnicity
-- Gender
-- Education
-- Employment_Status
-]
-
-???
-
-
-
-
----
-
-class: middle, slideblue
-
-```{r, fig.retina=3, fig.asp=0.618, fig.align='center', out.width='100%', fig.width = 6.5}
-# internet and social media
-d |> count(Violent, Broad_Ethnicity)
-d |> count(Violent, Gender)
-d |> count(Violent, Education)
-d |> count(Violent, Employment_Status)
-```
-
-???
-
-
-
----
-
-background-image: url('libs/Images/background-light_grey.jpg')
-background-size: 100%
-background-position: center
-class: middle
-
-.size60[.center[**For Next Class**]]
-
-.size50[
-...
-]
 
 ???
 
