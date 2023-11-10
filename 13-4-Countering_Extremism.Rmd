@@ -35,15 +35,15 @@ background-size: 100%
 background-position: center
 class: middle
 
-.size70[**Today's Agenda**]
+.center[.size40[**III. How and why do non-state actors use political violence?**]]
 
 <br>
 
-.size50[.center[
-Use case studies to define, operationalize and measure the concept of terrorism
-]]
+.center[.size50[**Today's Agenda: Countering Anti-Government Extremism**]]
 
-<br>
+.size45[
+Robinson, Malone & Crenshaw (2023)
+]
 
 <br>
 
@@ -54,271 +54,269 @@ Use case studies to define, operationalize and measure the concept of terrorism
 ???
 
 ### Prep for Class
-1. Review submitted cases
-    - https://docs.google.com/document/d/1wKZRrm5JaZAAWbkC14iGfbs6syAMHnyZCEucqvco8Rg/edit?usp=sharing
+1. Make sure paper 3 assignment is visible on Canvas
 
 <br>
 
-Today we kick off the third section of our class.
-
-What explains the variation in how and why non-state actors use violence against states and people?
-
-- Specifically, we'll focus on terrorism.
+**SLIDE**: Let's talk big picture about our exploration of terrorism
 
 
 
 ---
 
-background-image: url('libs/Images/background-green_blue_swirl_side.jpg')
-background-size: 100%
-background-position: center
-class: middle, center
-
-.size60[**For Today**]
-
-<br>
-
-.size50[
-Bring to class one specific piece of evidence you argue represents an act of terrorism. 
-
-Make sure you are familiar with the actors and environment involved.
-]
-
-???
-
-### Everybody ready for our work today?
-
-### All citations in APA format?
-
-<br>
-
-Today I want us to use the case studies to build our intuitions about terrorism and to help us construct a definition and operationalization of the concept.
-
-### Remind me, what is a concept?
-- (The name we give an idea / thing)
-
-<br>
-
-### And what does it mean to operationalize a concept?
-- (Operationalization is "...selecting observable phenomena to represent abstract concepts" (89).)
-    - Brians, Craig Leonard, Lars Willnat, Jarol B. Manheim, and Richard C. Rich. 2011. “From Abstract to Concrete: Operationalization and Measurement.” In Empirical Political Analysis, Boston, MA: Longman, (ONLY p88-110)
-
-
-
-
-
----
-
-background-image: url('libs/Images/background-green_blue_swirl_side.jpg')
+background-image: url('libs/Images/background-red_flipped.png')
 background-size: 100%
 background-position: center
 class: middle
 
-.size60[.center[**Terrorism Case Studies**]]
+.center[.size40[**III. How and why do non-state actors use political violence?**]]
 
-<br>
+.size40[
+- Wk10 Defining Terrorism
 
-.size50[
-1. What is the specific act you are calling "terrorism"?
+- Wk11 Measuring Terrorism
 
-2. Why is it "terrorism"?
+- Wk12 Can Terrorism be Effective?
+
+- Wk13 Is Right-Wing Terrorism the Next "Wave"?
+
+- Wk13.5 Countering Anti-Government Extremism
+
+- Wk14 Terrorism in the Digital Age
 ]
 
 ???
 
-I'd like each of you to introduce your case as an answer to these two questions.
+In an effort to answer our key question we've been working through an exploration of terrorism
 
-1. What is the specific act you are calling "terrorism"?
-    - As you describe your case, focus particularly on the actor and the immediate act.
-    - Support and funding matters but let's start by agreeing and exploring this micro-level dynamic.
+So far in this section of the class we have:
 
-2. Why is it "terrorism"?
+- Worked to understand the contours of this contested concept, 
 
-### Everybody take two minutes to make sure you're ready to present your case in this way.
+- Explored the competing definitions advocated by area experts and academics,
 
-<br>
+- Evaluated the established datasets that exist to measure the concept,
 
-Ok, let's do this!
+- Identified and utilized models meant to explain terrorism as a strategy, and
 
-Everybody take notes!
-- As you listen you should jot down any notes you'll need to define terrorism based on our cases.
+- Starting last week we've been shifting our focus to the cutting-edge of this research: 
+    - the new dominance of FRT, and 
+    - how the internet has complicated terrorism immensely 
 
-*Go around the room to share evidence*
+<br> 
+
+Pretty good work if I do say so myself!
 
 
 
 ---
 
-background-image: url('libs/Images/background-green_blue_swirl_side.jpg')
+background-image: url('libs/Images/background-red_flipped.png')
 background-size: 100%
 background-position: center
-class: middle, center
+class: middle
 
-.size60[.center[**Defining Terrorism**]]
-
-<br>
-
-.size60[
-Make a list of the common characteristics of our cases
-]
+```{r, echo = FALSE, fig.align = 'center', out.width = '50%'}
+knitr::include_graphics("libs/Images/13_4-Robinson_Page1.png")
+```
 
 ???
 
-ON YOUR OWN: Take two minutes to reflect on all the cases in order to make a list of their common characteristics.
+As I mentioned to you last week, Martha Crenshaw is one of the foremost authorities working on terrorism today.
+
+- A staggering resume of academic contributions in studying terrorism.
 
 <br>
 
-PAIRS: 5 minutes to share, consolidate and add to your lists
+Today I'd like us to extract two key pieces from this article
 
-<br>
+1. Why do the authors argue that Countering Far-Right Anti-Government Extremism in the United States is so difficult?
 
-CLASS: Let's build a big list of possible characteristics
+2. What do the authors suggest is our best way forward?
 
-*ON BOARD*
-- ?
 
-<br>
-
-*2019 class*
-- one-sided violence
-- Important purpose more important than survival
-- Cause fear
-- Political
-- Non-state actor
-- Intend to maximize casualties
-- Strategic
-- Claimed by or affiliated with known terror group
-- Motivated to target a specific group (religion/race/ethnicity)
 
 
 ---
 
-background-image: url('libs/Images/background-green_blue_swirl_side.jpg')
+background-image: url('libs/Images/13_4-jan6_v2.png')
 background-size: 100%
 background-position: center
-class: middle, center
+class: bottom, inverse
 
-.size60[.center[**Defining Terrorism**]]
-
-<br>
-
-.size60[
-Make a list of the sub-groups in our cases
-]
+.center[.size50[.textwhite[**Why is countering far-right extremism in the United States so difficult?**]]]
 
 ???
 
-Clearly our list of cases represent a "group" we call "terrorism."
+Small groups, use the reading to make a list that answers this question
 
-- The question is, within these cases are their important groupings we should take note of?
-
-- Think of the grocery store as the big group but within it there is a dairy section, meat section, produce section, etc.
-
-### Make sense?
+- Get ready to report back!
 
 <br>
-
-ON YOUR OWN: Take a few minutes to brainstorm groupings in our cases.
-- Any obvious groupings here?
-- Any cases here you think we should exclude (e.g. not sufficiently "terrorism")
-- Most similar cases that are different from the rest?
-
-<br>
-
-PAIRS: 5 minutes to share, consolidate and add to your lists
-
-<br>
-
-CLASS: Let's build a big list of possible characteristics
 
 *ON BOARD*
-- ?
+1. deep-seated ideological roots
+    - Though organisationally diverse, these components of the movement are largely motivated by the same three ideological tenets: mistrust of federal authority, fear of foreign influence, and the need for paramilitary self-defence.
+    - Many of the core beliefs of the anti-government far-right are deeply rooted in American history.
+
+2. fluid organisational structure
+    - Three types of organisational structures dominate: self-identified followings, local groups and clusters, and national organisations.
+    - Individual members possess significant autonomy and can belong to multiple movements and organisations at once.
+
+3. mix of violent and nonviolent tactics
+    - Most follower actions are relatively nonviolent. 
+    - For example, some extremists use “paper terrorism”—the filing of frivolous liens, lawsuits, and false financial claims—to overburden the federal government, drain financial resources, and clog court dockets.
+    - Anti-government groups also regularly participate in legal public events, assemblies, and protests, including school board meetings and political elections.
+    - To the extent that anti-government extremist tactics involve the explicit use of force, they typically revolve around acts of political intimidation or low-level violence targeting ideological opponents.
+    - HOWEVER, Anti-government extremist violence has the potential to escalate into a broader and more indiscriminate conflict. Generalised acceptance of the legitimacy of violence can inspire attempts at vigilante justice, such as the 2020 Wolverine Watchmen militia plot to kidnap Michigan Governor Gretchen Witmer.4
 
 <br>
 
-*2019 class*
-- Domestic vs international
-- Specific goal vs spur of the moment
-- Unaffiliated vs affiliated with group
-- Violence vs threat
+#### NOTES
+- Why is this strand of anti-government extremism so dangerous and challenging to combat?
+- We argue that the far-right anti-government movement’s deep-seated ideological roots, fluid organisational structure, and mix of violent and nonviolent tactics make it difficult to proscribe, prosecute, and ultimately eliminate.
+- Ideological roots: Though organisationally diverse, these components of the movement are largely motivated by the same three ideological tenets: mistrust of federal authority, fear of foreign influence, and the need for paramilitary self-defence.
+- Many of the core beliefs of the anti-government far-right are deeply rooted in American history. America’s rebellious origins nurtured a cultural tradition of questioning authority, protecting individual freedoms, and resisting perceived tyranny.
+- While successful in preventing additional mass-causality violence, law enforcement efforts did not root out anti-government extremism entirely. Elements of the movement continued to operate in the United States and engage in actions—such as organising large-scale meetings and paramilitary training sessions—that fell short of criminal activity.
+- Three types of organisational structures dominate: self-identified followings, local groups and clusters, and national organisations.
+- Even among these more structured anti-government groups, organisational identities and ties can be highly fluid.  Individual members possess significant autonomy and can belong to multiple movements and organisations at once. A group member can, on their own initiative, choose to attend public rallies, meetings, and training camps with other like-minded individuals who may or may not share their same organisational identity. This individual autonomy facilitates the formation of “loose ties” among followers and unsystematic relationships between groups. 
+- Most follower actions are relatively nonviolent. For example, some extremists use “paper terrorism”—the filing of frivolous liens, lawsuits, and false financial claims—to overburden the federal government, drain financial resources, and clog court dockets.36 Anti-government groups also regularly participate in legal public events, assemblies, and protests, including school board meetings and political elections.
+- To the extent that anti-government extremist tactics involve the explicit use of force, they typically revolve around acts of political intimidation or low-level violence targeting ideological opponents.
+- Anti-government extremist violence has the potential to escalate into a broader and more indiscriminate conflict. Generalised acceptance of the legitimacy of violence can inspire attempts at vigilante justice, such as the 2020 Wolverine Watchmen militia plot to kidnap Michigan Governor Gretchen Witmer.4
+
+
 
 
 ---
 
-background-image: url('libs/Images/background-green_blue_swirl_side.jpg')
+background-image: url('libs/Images/13_4-Charlottesville_Unite_the_Right_Rally_v2.png')
 background-size: 100%
 background-position: center
-class: middle, center
+class: top, inverse
 
-.size60[.center[**Defining Terrorism**]]
-
-<br>
-
-.size60[
-Make a list of key questions
-]
+.center[.size55[.textwhite[**What do we do about it?**]]]
 
 ???
 
-ON YOUR OWN: Take two minutes to brainstorm key questions.
-- What questions must any good definition of terrorism address?
-- In other words, if two people are arguing about terrorism what would you demand they agree on to make sure their argument is productive?
+Small groups, use the reading to make a list that answers this question
+
+- Get ready to report back!
 
 <br>
-
-PAIRS: 5 minutes to share, consolidate and add to your lists
-
-<br>
-
-CLASS: Let's build a big list of questions our definitions need to answer
 
 *ON BOARD*
-- ?
+- Hope that members "use violence in shockingly reprehensible ways"?
+    - Unsanctioned or morally transgressive violence can undermine the movement’s ability to retain existing members, attract new followers, raise funds, and remain a viable threat.
+    
+- Develop informers!
+    - Informers are a constant risk, even in an environment dominated by anonymous social media. Members can come to suspect each other’s loyalty and render the movement vulnerable to fragmentation, splintering, and infighting. Law enforcement can infiltrate local or national groups or co-opt existing members to become informants
+    
+- Moving forward, US officials should look to the experiences of other democratic states facing similar anti-government threats.
+    - Examples of the UK and Germany banning or proscribing ant-government groups although to mixed effect: The group organizations were eliminated but not the member dynamics or ideological roots. Plus, members just shifted elsewhere.
 
 <br>
 
-*2019 class*
-- Fear as the goal?
-- Action done by state, non-state or both?
-- Targets politically motivated or other aims included (e.g. profit?)
-- Proximity to the violent act (do the bombing vs send someone to do it vs funding groups who act in ways you like?)
+Generally, I think the takeaway here is that we need better ideas!
 
-*2015 class*
-- Civilians or not?
-- attacking people not related to the policy you object to
-- Terror / fear important
-- Connections to other terror actions
-- Attacks on freedom of expression (e.g. specific policy)
-- Ideological objectives too
-- In response to the actions of a government actor
-- Attack on a building, no deaths, symbolic violence
-- Acts meant to intimidate, may or may not be related to a specific policy change
-- Revenge against government overreach
-- Direct opposition to a government
-- Providing support to a violent group as terrorism
-- Groups vs individuals
-- To make a statement
-- To deliver harm to a government
-- Done by a "terror group"
-- Targeting a government vs targeting military
-- nature of the group, non-state
-- Targeting government, act of protest
-- Kidnapping as form of violence, targeting civilians, spreading fear 
+- With that problem in mind I want to do two things
+
+<br>
+
+#### NOTES
+What do the authors suggest is our best way forward?
+- Decentralisation can be a disadvantage as well as an advantage. By advocating a big tent ideology and encouraging individuals to carry out stochastic acts of violence, or inspired individual acts of terrorism, such networks can attract a wide and unvetted range of followers. Lack of control from the top can create a moral hazard if followers use violence in shockingly reprehensible ways.
+
+- Unsanctioned or morally transgressive violence can undermine the movement’s ability to retain existing members, attract new followers, raise funds, and remain a viable threat.
+
+- Another weakness results from the poor cohesion and mistrust among the rank and file. Informers are a constant risk, even in an environment dominated by anonymous social media. Members can come to suspect each other’s loyalty and render the movement vulnerable to fragmentation, splintering, and infighting. Law enforcement can infiltrate local or national groups or co-opt existing members to become informants
+
+- Moving forward, US officials should look to the experiences of other democratic states facing similar anti-government threats. In response to the proliferation of violent far-right groups, several democracies have begun developing tools to proscribe these organisations—a process that the United States currently lacks
+
 
 
 
 ---
 
-background-image: url('libs/Images/10-1-terrorism_word_cloud.jpg')
+background-image: url('libs/Images/background-blue_triangles.jpg')
+background-size: 100%
+background-position: center
+class: middle
+
+.size60[.content-box-white[**For Next Class**]]
+
+<br>
+
+```{r, echo = FALSE, fig.align = 'center', out.width = '100%'}
+knitr::include_graphics("libs/Images/13_4-Assignment.png")
+```
+
+???
+
+**FIRST**, I want to direct your attention to our work for Monday after the break.
+
+- Next week we shift focus to material meant to help us think carefully about how to counter terrorism and terrorists in the digital age
+
+- To kick it off I want everybody to find us a case of the internet changing the appeal, use or mechanisms of terrorism.
+
+<br>
+
+### Questions on the assignment?
+
+<br>
+
+**SLIDE**: SECOND, we need to talk about the final paper.
+
+
+
+
+---
+
+background-image: url('libs/Images/13_4-2024_Violence.jpg')
 background-size: 100%
 background-position: center
 class: middle
 
 ???
 
-I hope everybody has all of this written down!
+I think it is reasonable to worry that next year's presidential election is likely to be very close and, assuming history is our guide, quite contentious. 
 
-You'll need it on Wednesday as we take all of this material in order to develop a definition and operationalization of our key concept: Terrorism.
+<br>
+
+With that in mind, I would like to propose the following as the assignment for your final paper in this class.
+
+- **SLIDE**
+
+
+
+
+---
+
+background-image: url('libs/Images/background-blue_triangles.jpg')
+background-size: 100%
+background-position: center
+class: middle
+
+.size35[
+.center[**Paper 3: How do we reduce the likelihood of political violence this coming election season?**]
+
+Write a report advocating a specific policy recommendation at either the local, state or national level that you argue will help prevent, or minimize, the likelihood of political violence around the election. 
+
+A strong proposal will:
+
+- include the key details needed for a relevant stakeholder in the community to implement your proposal, and
+
+- provide evidence that your proposal is likely to be effective.
+]
+
+???
+
+### Questions on the assignment?
+
+<br>
+
+Ok, we can use the rest of our time today to start working on this paper.
+
+
 
 
 

@@ -292,7 +292,7 @@ background-size: 100%
 background-position: center
 class: middle
 
-.size40[.center["Terrorism involves the use of violence by an organization other than a national government to cause intimidation of fear among a target audience (Department of State 1983-2001, Reich 1990, Scmid and Jongman 1988)."]]
+.size40[.center["Terrorism involves the use of violence by an organization other than a national government to cause intimidation or fear among a target audience (Department of State 1983-2001, Reich 1990, Schmid and Jongman 1988)."]]
 
 <br>
 
