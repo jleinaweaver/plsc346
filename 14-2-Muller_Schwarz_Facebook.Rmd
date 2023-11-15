@@ -35,13 +35,14 @@ background-size: 100%
 background-position: center
 class: middle
 
-.size80[**Today's Agenda**]
+.center[.size40[**III. How and why do non-state actors use political violence?**]]
 
 <br>
 
-.size50[.center[
-Müller, K. & Schwarz, C. (2020, Jun 5). Fanning the Flames of Hate: Social Media and Hate Crime. *Social Science Research Network (SSRN)*.
-]]
+.size50[**Today's Agenda**
+
+Müller & Schwarz (2021). Fanning the Flames of Hate: Social Media and Hate Crime. *Journal of the European Economic Association*
+]
 
 <br>
 
@@ -52,19 +53,20 @@ Müller, K. & Schwarz, C. (2020, Jun 5). Fanning the Flames of Hate: Social Medi
 ???
 
 ### Prep for Class
-1. ...
+1. *For you: this is a paper about how social media can be used to overcome the collective action problem and coming to see your in-group as supportive of violence against the out-group*
+    - Not all collective action problems are bad!!!
 
 <br>
 
-This week I want us to explore some cutting-edge research that is, so far, unpublished but has caused a bit of a stir in the media.
+Last class we used case studies of the internet changing the nature of terrorism to design research proposals.
 
 <br>
 
-The question these articles explore is, how has social media impacted the decision by individuals and groups to use violence to further political ends.
+Today we shift our focus to a recent research paper that executes on a proposal interested in this same interaction
 
-<br>
+- This is SUCH a COOL paper
 
-SLIDE: Quick note, syllabus change this week (announced last week)
+- They are able to design a natural experiment that lets us untangle a big set of claims
 
 
 
@@ -72,48 +74,33 @@ SLIDE: Quick note, syllabus change this week (announced last week)
 
 ---
 
-class: middle, slideblue
+background-image: url('libs/Images/background-red_flipped.png')
+background-size: 100%
+background-position: center
+class: middle, inverse
 
-.size55[
+.size45[
+.center[**Müller & Schwarz (2021) "Fanning the Flames of Hate: Social Media and Hate Crime"**]]
 
-**Syllabus Change for Next Week**
+.size45[
+**Evaluate the Framing**
 
-- **Monday**: Müller & Schwarz (2020)
+1. Research question
 
-- **Wednesday**: Gellman (2021)
+2. Key concepts
 
-- **Friday**: Start the final projects
-
+3. Connections to the literature
 ]
 
 ???
 
-Today we begin with the Müller and Schwarz article titled "Fanning the Flames of Hate: Social Media and Hate Crime."
+Let's start by exploring the framing of the article.
 
-Wednesday, the Gellman paper on the growing political violence in the US
+- GROUPS, take a few minutes and get ready to share your thoughts about the framing of this research paper
 
-Friday we start the final papers
-
-
-
----
-
-background-image: url('libs/Images/background-red.png')
-background-size: 100%
-background-position: center
-class: middle, center, inverse
-
-.size60[**Fanning the Flames of Hate: Social Media and Hate Crime (Müller & Schwarz 2020)**]
+- Think BIG PICTURE, e.g. how the researchers set up their project
 
 <br>
-
-<br>
-
-.size45[**Q1. How does the framing of this project help us evaluate this proposal?**]
-
-???
-
-Let's start our analysis in the same place we always should, the framing.
 
 ### What is the research question and what do we learn from its phrasing?
 - (Does social media "propagate" hate crimes?)
@@ -121,61 +108,137 @@ Let's start our analysis in the same place we always should, the framing.
     
 <br>
 
-### How plausible to you is the underlying mechanism here?
-#### - Is this asking us to assume there exists a large segment of our population that read nonsense on the internet and it actually changes their positions on important topics?
+I want to talk for a second about the implied mechanism here.
 
-*Encourage this discussion with loaded prompts*
-- Does TV advertising work on you? Why or why not?
-- Does advertising at the grocery store work on you?
+### Are the authors arguing that social media changes peoples' positions on important topics?
+
+### - e.g. a regular person going about their day sees a Hitler meme on Facebook and decides to firebomb a synagogue?
+
+- (Not exactly. The idea here is more that we all have predispositions to certain ideas and social media can help spark those preferences into action)
 
 <br>
 
-Key here is this doesn't require us to assume people are stupid.
+Think of it like the effect of advertising on your behavior as a consumer.
+
+- If you're in the market for a car, you'll start to notice and respond to car ads
+
+- If you're not, you probably just ignore them
+
+<br>
+
+I bring this up in our framing discussion to make clear that this paper doesn't require us to assume people are stupid.
+
 - e.g. I read about Jewish space lasers on the internet and now I believe!
 
-*For you: this is a paper about overcoming the collective action problem and coming to see your in-group as supportive of violence against the out-group*
+
 
 
 
 ---
 
-background-image: url('libs/Images/background-red.png')
+background-image: url('libs/Images/08-1-open_book.jpg')
 background-size: 100%
 background-position: center
-class: middle, center, inverse
+class: center, top, inverse
 
-.size60[**Fanning the Flames of Hate: Social Media and Hate Crime (Müller & Schwarz 2020)**]
-
-<br>
-
-<br>
-
-.size45[**Q1. How does the framing of this project help us evaluate this proposal?**]
+.size50[**What literature is the paper connected to?**]
 
 ???
 
 ### What literature is the paper connected to?
-1. ("Previous research has shown that traditional media can play a role in violent outbursts or ethnic hatred (e.g Yanagizawa-Drott, 2014; Adena et al., 2015; DellaVigna et al., 2014).")
 
-2. (social media platforms allow users to easily self-select into niche topics and
-extreme viewpoints, e.g. echo chambers)
-
-3. (Social media has also become a widely-consumed news source, particularly for young people (Hölig and Hasebrink, 2016))
-
-4. (In the US, around half of all adults use social media to get news and two thirds of Facebook users use it as a news source (Pew Research Center, 2018).)
+### - In other words, what has been established in the possible link between social media and real-world outcomes?
 
 <br>
 
-### And, what is the big claim in this paper?
-
-(SLIDE)
+- (**SLIDE**: 1. social media effects and 2. media and violence)
 
 
 
 
 ---
 
-background-image: url('libs/Images/14_1-facebook_dr_evil_v2.png')
+background-image: url('libs/Images/08-1-open_book_v2.png')
+background-size: 100%
+background-position: center
+class: top, inverse
+
+.size50[.center[**What literature is the paper connected to?**]]
+
+.pull-left[
+.size40[
+**Social media effects:**
+- Hate speech and crimes
+
+- Polarization
+
+- Protests
+
+- Happiness
+
+- Political campaigns
+]]
+
+.pull-right[
+.size40[
+**Traditional media effects:**
+- Violence
+
+- Ethnic hatred
+]]
+
+???
+
+Prior research has worked to demonstrate a correlation between social media use and concerning real-world outcomes
+
+- Social media platforms allow users to easily self-select into niche topics and extreme viewpoints, e.g. echo chambers
+
+<br>
+
+Prior research has also shown that "traditional media can play a role in violent outbursts or ethnic hatred (e.g Yanagizawa-Drott, 2014; Adena et al., 2015; DellaVigna et al., 2014)."
+
+- Evidence for the coordination of incidents as a plausible mechanism
+
+<br>
+
+Key here for this paper is the attempt to connect the two
+
+- Social media has become a widely-consumed news source, particularly for young people (Hölig and Hasebrink, 2016)
+
+- In the US, around half of all adults use social media to get news and two thirds of Facebook users use it as a news source (Pew Research Center, 2018).
+
+<br>
+
+So, social media may now be capable of the kinds of violence seen through media channels
+
+<br>
+
+### Put this all together for us, what is the big claim in this paper?
+
+- (**SLIDE**)
+
+<br>
+
+### NOTES from author slides
+- Hate speech: Oksanen, Holkeri, Näsi, Räsänen (2014); Siegel, Tucker (2017)
+- Polarization: Sunstein (2017); Alcott, Gentzkow (2017); Boxell, Gentzkow, Shapiro (2018); Levy (2019)
+- Protests: Enikolopov, Makarin, Petrova (2018) 
+- Happiness: Allcott, Braghieri, Eichmeyer, Gentzkow (2019)
+- Political campaigns: Petrova, Sen, Yildirim (2017); Liberini, Redoano, Russo, A. Cuevas, R. Cuevas (2018);
+- Hate crimes: Müller, Schwarz (2019); Bursztyn, Enikolopov, Makarin, Petrova (2019)
+
+Media and Violence:
+- Anti-minority violence: Yanagizawa-Drott (2014); DellaVigna, Enikolopov, Mironova, Petrova, Zhuravskaya (2014);
+Adena, Enikolopov, Petrova, Santarosa, Zhuravskaya (2015)
+- Other violence: Dahl, DellaVigna (2009); Card, Dahl (2011); Bhuller, Havnes, Leuven, Mogstad (2013);
+
+
+
+
+
+---
+
+background-image: url('libs/Images/14_1-Facebook_Terrorists2_v2.png')
 background-size: 100%
 background-position: center
 class: bottom, inverse, textwhite, center
@@ -191,13 +254,13 @@ Facebook usage leads to violence by non-state actors against refugees.
 <br>
 
 ### Can anybody simplify this down for me and connect it to the work we've been doing in this final section of our class?
-- (SLIDE: Facebook Usage Increases Terrorism)
+- (**SLIDE**: Facebook Usage Increases Terrorism)
 
 
 
 ---
 
-background-image: url('libs/Images/14_1-facebook_dr_evil_v2.png')
+background-image: url('libs/Images/14_1-Facebook_Terrorists2_v2.png')
 background-size: 100%
 background-position: center
 class: bottom, inverse, textwhite
@@ -207,133 +270,340 @@ class: bottom, inverse, textwhite
 
 ???
 
-I know the article doesn't invoke the dreaded T-word, but let's talk about it for a sec.
-
-### How do the "hate crimes" explained in this paper compare to our class definition of terrorism?
-
-### - Can we make this connection OR is it a distraction from the actual point?
-
-*DISCUSS and DEBATE*
+I know the article doesn't invoke the T-word, but let's talk about it for a sec.
 
 <br>
 
-### How do they operationalize hate crimes?
-- (SLIDE: Summary stats table)
+### How do the "hate crimes" explained in this paper compare to our class definitions of terrorism?
+
 
 
 
 
 ---
 
-background-image: url('libs/Images/14_1-Table1.png')
-background-size: 90%
+background-image: url('libs/Images/background-red_flipped.png')
+background-size: 100%
 background-position: center
+class: middle, inverse
+
+.size45[
+.center[**Müller & Schwarz (2021) "Fanning the Flames of Hate: Social Media and Hate Crime"**]]
+
+.size45[
+1. Research question &#8594; Literature
+
+2. Literature + Intuition &#8594; Theory
+
+3. Theory &#8594; Testable implications
+
+4. Testable implications &#8594; Data
+]
 
 ???
 
-Let's talk about the operationalization and measurement of hate crimes here.
+I know the paper dives into the empirics before discussing the model, but I want us to stay on track with our more standard approach
 
-### Talk me through the strengths and weaknesses of the "refugee attacks" variables.
-- *Discuss*
-
-<br>
-
-### What do these descriptive statistics tell us about the sample?
+- We are very much trying to reinforce the process of science and research in your minds
 
 <br>
 
-SLIDE: Before we discuss the social media data, let's diagram the model.
+- Research question leads to a specific literature,
+
+- Literature and intuition produces a theory,
+
+- Theory produces testable implications, and
+
+- Testable implications can be examined with data
+
+<br>
+
+### Any questions on this general process?
+
+<br>
+
+**SLIDE**: We've talked about the question and the literature so now we need to focus in on the theory!
+
+
+
+---
+
+background-image: url('libs/Images/background-red_flipped.png')
+background-size: 100%
+background-position: center
+class: middle, inverse
+
+.size45[
+.center[**Müller & Schwarz (2021) "Fanning the Flames of Hate: Social Media and Hate Crime"**]]
+
+.size45[
+**Potential Mechanisms**
+1. Information Exchange
+
+2. Persuasion
+
+3. Coordination
+
+4. Local Spillovers
+]
+
+???
+
+Section 3.6 proposes four "potential mechanisms" connecting social media and hate crimes
+
+### Explain each one of these to me.
+
+### - Don't focus on what they found in the analysis yet, just clarify each story for us.
+
+<br>
+
+- Information Exchange: People learn about locations of refugees on social media
+
+- Persuasion: People’s opinion about refugees is changed by social media
+
+- Coordination: Attacks against refugees are coordinated on social media
+
+- Local Spillovers: Social media inspire copy-cat attacks
+
+<br>
+
+### Everybody clear on these four mechanisms?
+
+<br>
+
+Alright, lets' translate these into our usual diagram of interests, institutions and interactions
+
+- Go!
+
+<br>
+
+*Report Back!*
+
+<br>
+
+**SIDE**: My version
 
 
 
 
 ---
 
-background-image: url('libs/Images/background-red.png')
+background-image: url('libs/Images/background-red_flipped.png')
+background-size: 100%
+background-position: center
+class: middle
+
+.size30[
+Interests
+- Non-state actors &rarr; To harm the out-group (refugees)
+
+Institutions
+- Domestic law strongly forbids hate crimes and makes these actions costly
+
+Interactions
+- Social media can overcome the collective action problem (willingness to break the law) by:
+    - Providing location **information** for refugees,
+    - **Persuading** these actors that the threat is real, serious and shared
+    - **Coordinating** the group's future actions, and
+    - Demonstrating the in-group is willing to use violence (**local spillovers**)
+]
+
+???
+
+Fundamentally, as discussed at the bottom of p4, this is about:
+
+1. Overcoming collective action problems, and 
+
+2. Learning that your in-group is supportive of violence against the out-group.
+
+<br>
+
+### What do we think of the model? 
+
+### - Logical and persuasive or not?
+
+<br>
+
+I want to return for a sec to our framing discussion at the start
+
+- This model is NOT about social media brainwashing the innocent
+
+- This model is about social media providing the boost that pushes a person who is open to violence across the line
+
+- This is scary and WAY harder to police
+
+<br>
+
+Let's talk data!
+
+### What is the key outcome the paper is trying to explain?
+- (**SLIDE**)
+
+
+
+
+---
+
+background-image: url('libs/Images/background-red_flipped.png')
+background-size: 100%
+background-position: center
+class: middle
+
+.pull-left[
+```{r, echo = FALSE, fig.align = 'center', out.width = '90%'}
+knitr::include_graphics("libs/Images/14_2-Muller2021-Fig1.png")
+```
+]
+
+.pull-right[
+.size40[
+**Anti-Refugee Incidents**
+
+- Source: Amadeu Antonio Foundation and Pro Asyl (pro asylum NGO)
+
+- All incidents geo-coded for location (municipality)
+
+- 3,335 incidents (Jan 2015 - Feb 2017)
+]]
+
+???
+
+The key outcome here is the variation in "incidents" against refugees
+
+- 2,226 incidents of property damage to refugee homes, 
+
+- 534 cases of assault, 
+
+- 339 incidents during anti-refugee protests, and 
+
+- 225 cases of arson
+
+<br>
+
+### Why do the authors argue this is "high quality" data? (2137)
+
+1. Each entry has a clearly indicated source.
+    - Nearly half of the incidents in the dataset are reported by the federal government in response to inquiries by the left-wing party “Die Linke.” 
+    - Other sources include police reports and national or local media outlets. 
+
+2. We hand-checked a random sample of 100 incidents and found their coding accurately reflected the information reported in the respective source.
+
+<br>
+
+### What are the key predictors the paper is using to explain these outcomes?
+- (**SLIDE**)
+
+
+
+---
+
+background-image: url('libs/Images/background-red_flipped.png')
+background-size: 100%
+background-position: center
+class: middle
+
+.pull-left[
+```{r, echo = FALSE, fig.align = 'center', out.width = '100%'}
+knitr::include_graphics("libs/Images/14_1-Muller2021-Facebook_Example.png")
+```
+]
+
+.pull-right[
+.size35[
+**Facebook Data**
+
+- Source: Facebook page for the AfD
+
+- 93k individuals: 176k posts, 290k comments, 510k likes
+
+- Predictor 1: Anti-refugee sentiment
+
+]]
+
+???
+
+- Case: Germany and the right-wing party Alternative für Deutschland (Afd)
+
+- P1: We use the number of posts mentioning refugees as a proxy for anti-refugee
+sentiment
+    - Many posts exhibit clearly negative language towards refugees
+
+<br>
+
+**SLIDE**: Example of an anti-refugee sentiment scraped from Facebook
+
+
+
+---
+
+background-image: url('libs/Images/background-red_flipped.png')
 background-size: 100%
 background-position: center
 class: middle, center, inverse
 
-.size60[**Fanning the Flames of Hate: Social Media and Hate Crime (Müller & Schwarz 2020)**]
+.size70[
+"Maybe there is a plot for .textorange[**German genes**] to be exterminated by the large .textorange[**streams of refugees**]. But what could be the .textorange[**reason**], [revenge for] .textorange[**WW2**]?"
+]
 
-<br>
-
-<br>
-
-.size45[**Q2. How does the model of politics presented in this paper help us evaluate this proposal?**]
 
 ???
 
-Take some time on your own to diagram the model in this paper.
-- Who are the interests, what are the institutions and the complicating interactions that connect social media to hate crimes?
+### Everybody clear on the first predictor?
 
 <br>
 
-Compare to people next to you...
+### Any concerns about the validity and reliability of this kind of sentiment coding?
 
 <br>
 
-Fundamentally, as discussed bottom p4, this is about overcoming collective action problems and coming to see your in-group as supportive of violence against the out-group.
+### - According to the researchers, what problem do they have with flagging all posts that mention refugees (p2139)?
 
-
-
-
-
+- "A potential downside of this approach is that we may inadvertently tag posts that do not express negative sentiments towards refugees. However, a careful content analysis of posts and comments reveals that the overwhelming majority appear to agree with the positions of the AfD. This is perhaps unsurprising given that only people who “like” the AfD Facebook page will be informed about new posts. Critics, on the other hand, have a strong incentive not to indicate publicly that they “like” the party" (2139).
 
 <br>
 
-#### class notes 2019-12-02
+I do wish they had undertaken a broader analysis of their own data to be more certain that "refugee" is always negative in their data
 
-1. Social media exposes people to different views
-2. Social media reinforces those ideas (echo chamber, confirmation bias)
-3. Over time, repeated exposures change identity
-
-Who are the 'people' in this model? Anybody vs those predisposed to violence?
+- Although it really does seem like a very safe bet
 
 
 
 
 ---
 
-background-image: url('libs/Images/14_1-Table1.png')
-background-size: 90%
-background-position: center
-
-???
-
-Let's now talk about how the paper operationalizes the predictor variables.
-
-### Talk me through the strengths and weaknesses of the "social media" variables.
-- *Discuss*
-- (Case: Germany and the right-wing party Alternative für Deutschland (AfD))
-
-<br>
-
-### What do these descriptive statistics tell us about the sample?
-
-
-
-
----
-
-background-image: url('libs/Images/background-red.png')
+background-image: url('libs/Images/background-red_flipped.png')
 background-size: 100%
 background-position: center
-class: middle, center, inverse
+class: middle
 
-.size60[**Fanning the Flames of Hate: Social Media and Hate Crime (Müller & Schwarz 2020)**]
+.pull-left[
+```{r, echo = FALSE, fig.align = 'center', out.width = '100%'}
+knitr::include_graphics("libs/Images/14_1-Muller2021-Facebook_Example.png")
+```
+]
 
-<br>
+.pull-right[
+.size35[
+**Facebook Data**
 
-<br>
+- Source: Facebook page for the AfD
 
-.size45[**Q3. How does the analysis in this project help us evaluate this proposal?**]
+- 93k individuals: 176k posts, 290k comments, 510k likes
+
+- Predictor 1: Anti-refugee sentiment
+
+- Predictor 2: Number of AfD users in municipality
+]]
 
 ???
 
-### How do the authors try to test their model with this data?
+P2: We use the number of AfD users in a municipality as the a proxy for the exposure to anti-refugee content
 
-### - Is it convincing? Why or why not?
+- So, the idea here is that anti-refugee comments on Facebook in municipalities with more AfD members = violence
+
+<br>
+
+### Make sense?
 
 
 
@@ -343,12 +613,90 @@ class: middle, center, inverse
 background-image: url('libs/Images/14_1-Figure2.png')
 background-size: 90%
 background-position: center
+class: middle
 
 ???
 
-### What does Figure 2 help us to see and think about?
+Alright, let's talk about Figure 2!
 
-#### - Is this convincing? Why or why not?
+### What does this line plot show us?
+
+### - x and y axes?
+
+<br>
+
+Figure 2:
+
+- The total number of AfD Facebook page posts about refugees and the number of antirefugee incidents across time
+
+- "Weeks with more refugee posts also tend to have more antirefugee events."
+
+- "Both series clearly spike during salient events related to refugees, such as Angela Merkel’s widely reported statement “Wir schaffen das” (“We can do this”) during a press conference on the challenges of the refugee situation. 
+
+- A simple time series regression of refugee attacks on AfD posts yields a R2 of
+0.34 (unreported).
+
+<br>
+
+### Is this evidence that the model is useful? Why or why not?
+
+- What we have here is a highly suggestive correlation, not evidence of causation
+
+- In addition, this is not a clear test of the specific mechanisms raised in the model (overcoming collective action, in-group sentiments about violence)
+
+<br>
+
+### How do the authors try to establish a causal effect of social media and violence?
+
+- (**SLIDE**: Internet outages as a natural experiment!)
+
+
+
+
+---
+
+background-image: url('libs/Images/background-red_flipped.png')
+background-size: 100%
+background-position: center
+class: middle
+
+.pull-left[
+```{r, echo = FALSE, fig.align = 'center', out.width = '90%'}
+knitr::include_graphics("libs/Images/14_2-Muller2021-Outages.png")
+```
+]
+
+.pull-right[
+
+<br>
+
+.size45[
+**Internet Outages**
+
+1. Internet Outages > 24 hours, wide impact (Source: Heise.de)
+
+2. Facebook Outages: 8 weeks of major Facebook outages
+]]
+
+???
+
+This is pretty darn clever!
+
+- If Facebook is the coordinating mechanism that pushes people over the edge, and
+
+- We have data on AfD users in each municipality, and
+
+- We have data on when the internet wasn't working in a municipality...
+
+<br>
+
+We can try to explain antirefugee incidents in districts with similar numbers of AfD members but compare no internet to with internet.
+
+<br>
+
+### Make sense?
+
+
 
 
 ---
@@ -359,10 +707,29 @@ background-position: center
 
 ???
 
+Figure 4 represents our baseline understanding of the relationship
 
-### What does Figure 4 help us to see and think about?
+- Here we see the relationship between the number of refugee posts in a municipality and the probability of an attack on refugees
 
-#### - Is this convincing? Why or why not?
+- On the left, only the municipalities with lots of AfD members
+
+- On the right, only the municipalities with small numbers of AfD members
+
+<br>
+
+### Is everybody clear on how to read this visualization?
+
+### - What does each point represent?
+
+### - What does the dashed line represent?
+
+<br>
+
+### So, what do we learn from this?
+
+- (The AfD is a violent organization!)
+    - Terrorism anyone?
+
 
 
 ---
@@ -373,17 +740,103 @@ background-position: center
 
 ???
 
-I think Figure 5b is kind of key.
+Figure 5b is the key to establishing a causal relationship.
 
-This is HUGE.
+<br>
 
-### Why is this such an important piece of the analysis?
+### What do we learn from this?
 
-(Causality? To establish causality, we exploit exogenous variation in major internet and Facebook outages, which fully undo the correlation between social media and hate crime.)
+- When you turn off the internet or Facebook, the violence caused by AfD members plummets AND is no longer related to the number of angry facebook posts nationwide!
+
+- "To establish causality, we exploit exogenous variation in major internet and Facebook outages, which fully undo the correlation between social media and hate crime."
+
+<br>
 
 ### Questions on this?
 
-#### - Is this a slam dunk? Why maybe not?
+
+
+
+---
+
+background-image: url('libs/Images/14_2-Muller2021-Conclusions1.png')
+background-size: 90%
+background-position: center
+
+???
+
+The authors argue that their test, and others we didn't have time to get into today, support only some of their proposed mechanisms
+
+<br>
+
+They discard "information exchange" because the posts they reviewed showed that location information was only common in references to politicians and crimes that already happened
+
+- Not used to identify refugee targets
+
+<br>
+
+They discard "persuasion" because it seems wildly unlikely that someones' xenophobia would turn off like a light switch when the internet goes out.
+
+- People’s attitudes do not change on a week-to-week basis
+
+<br>
+
+They find additional support for the coordination mechanism in one of the regressions that examines the number of perpetrators to a crime
+
+- Social media posts tend to produce crimes by groups of AfD members, not lone wolf attacks
+
+<br>
+
+They also find support for spillover attacks using a regression that focuses on crimes in neighboring municipalities
+
+- Just like the research on war being contagious, they find that AfD crimes tend to inspire neighboring municipality crimes
+
+
+
+---
+
+background-image: url('libs/Images/14_1-Facebook_Terrorists2_v2.png')
+background-size: 100%
+background-position: center
+
+???
+
+### Bottom line, does this paper demonstrate a convincing link between facebook usage and terrorist incidents? Why or why not?
+
+
+
+
+---
+
+background-image: url('libs/Images/background-blue_triangles.jpg')
+background-size: 100%
+background-position: center
+class: middle
+
+.size60[.content-box-white[**For Next Class**]]
+
+<br>
+
+.size45[
+1. Sellars (2016). Defining Hate Speech. *Berkman Klein Center for Internet & Society at Harvard University*.
+
+2. Zeiger & Gyte (2021). Chapter 12: Prevention of Radicalization on Social Media and the Internet. *Handbook of Terrorism Prevention and Preparedness*
+]
+
+???
+
+So, we have a digital terrorism problem.
+
+<br>
+
+Friday I want us to discuss what we need to do about it.
+
+
+
+
+---
+
+old slides
 
 
 
@@ -428,4 +881,15 @@ background-position: center
 On Wednesday we examine the other current paper from these authors.
 
 That one focuses on Twitter and the incidences of political violence.
+
+
+
+
+
+
+
+
+
+
+
 
