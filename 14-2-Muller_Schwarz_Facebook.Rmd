@@ -813,23 +813,23 @@ background-size: 100%
 background-position: center
 class: middle
 
-.size60[.content-box-white[**For Next Class**]]
+.size60[.content-box-red[**For Next Class**]]
 
 <br>
 
-.size45[
-1. Sellars (2016). Defining Hate Speech. *Berkman Klein Center for Internet & Society at Harvard University*.
-
-2. Zeiger & Gyte (2021). Chapter 12: Prevention of Radicalization on Social Media and the Internet. *Handbook of Terrorism Prevention and Preparedness*
-]
+```{r, echo = FALSE, fig.align = 'center', out.width = '90%'}
+knitr::include_graphics("libs/Images/14_3-Assignment.png")
+```
 
 ???
 
-So, we have a digital terrorism problem.
+Friday we shift our focus towards the final paper of the class!
+
+- Avoid overlap! Let's make a big list!
 
 <br>
 
-Friday I want us to discuss what we need to do about it.
+### Questions on the assignment?
 
 
 
