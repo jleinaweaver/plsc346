@@ -56,8 +56,6 @@ class: middle
 ### Prep for Class
 1. IDEA Evals Day
 
-2. Make sure paper 3 assignment is visible on Canvas
-
 <br>
 
 
@@ -123,6 +121,12 @@ class: top, center, inverse
 
 ### Overall, how serious is the threat of political violence in the US in 2024?
 
+- *Let this go for a bit*
+
+<br>
+
+### Is the primary threat of political violence in the US from the government or from non-state actors?
+
 
 
 
@@ -137,48 +141,27 @@ class: top, center, inverse
 
 ???
 
-### What are the specific vulnerabilities that make these threats possible?
+The next step for us is to use these threats to identify the vulnerabilities that make them possible.
 
-- *BRAINSTORM on BOARD*
-
-<br>
+- In other words, limiting political violence depends on our ability to find and address the vulnerabilities in our system that allow them to happen.
 
 <br>
 
-**SLIDE**: With all of this in mind, I would like to propose the following as the assignment for your final paper in this class.
+I am encouraging you, for this next step, to adopt a public policy lens on the problem of political violence.
 
-
-
-
----
-
-background-image: url('libs/Images/background-blue_triangles.jpg')
-background-size: 100%
-background-position: center
-class: middle
-
-.size35[
-.center[**Paper 3: How do we reduce the likelihood of political violence this coming election season?**]
-
-Write a report advocating a specific policy recommendation at either the local, state or national level that you argue will help prevent, or minimize, the likelihood of political violence around the election. 
-
-A strong proposal will:
-
-- be specific (e.g. include the kinds of details a relevant stakeholder would need to implement your proposal), and
-
-- provide evidence that your proposal is likely to be effective.
-]
-
-???
-
-### Questions on the assignment?
+- For us this will mean focusing on our domestic institutions (e.g. the rules of the game) as the sources of these vulnerabilities
 
 <br>
 
-**SLIDE**: To get you on track for the paper let's build on our work from today
+Focusing on the institutions as our primary problem gives us much greater leverage on solving that problem
 
+- In the short term, rules can be changed much more easily than people can
 
+- In the long term, rules that become internalized as custom or habit can then transform our behavior more substantially
 
+<br>
+
+**SLIDE**: With this perspective in mind, let me give you the next step toward our final paper
 
 
 ---
@@ -192,11 +175,17 @@ class: middle
 
 <br>
 
-```{r, echo = FALSE, fig.align = 'center', out.width = '90%'}
-knitr::include_graphics("libs/Images/15_1-Assignment.png")
-```
+.size45[
+Reflect on the threats we discussed in class today in order to identify **two specific institutional vulnerabilities** that currently exist in the US. 
+
+Describe each vulnerability and provide evidence to support your analysis.
+]
 
 ???
+
+Try to avoid any overlap!
+
+<br>
 
 ### Questions on the assignment?
 

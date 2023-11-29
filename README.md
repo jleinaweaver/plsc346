@@ -82,8 +82,8 @@ SAVE-08-3-Autocracy_Strategies.html
 
 14-3-US_Threat_Cases.html
 
-15-1-Final_Paper_Data.html
+15-1-US_Vulnerabilities.html
 
-15-2-Final_Paper_Outline.html
+15-2-Policy_Case_Studies.html
 
-15-3-Writing_Workshop.html
+15-3-Paper3_Outline.html

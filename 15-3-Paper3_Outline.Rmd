@@ -1,0 +1,125 @@
+---
+output:
+  xaringan::moon_reader:
+    css: ["default", "extra.css"]
+    lib_dir: libs
+    seal: false
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: '16:9'
+---
+
+```{r, echo = FALSE, warning = FALSE, message = FALSE}
+##xaringan::inf_mr()
+## For offline work: https://bookdown.org/yihui/rmarkdown/some-tips.html#working-offline
+## Images not appearing? Put images folder inside the libs folder as that is the main data directory
+
+library(tidyverse)
+##library(readxl)
+##library(stargazer)
+##library(kableExtra)
+##library(modelr)
+
+knitr::opts_chunk$set(echo = FALSE,
+                      eval = TRUE,
+                      error = FALSE,
+                      message = FALSE,
+                      warning = FALSE,
+                      comment = NA)
+```
+
+background-image: url('libs/Images/00-Leviathan_Cover_55.png')
+background-size: 100%
+background-position: center
+class: middle
+
+.center[.size40[**III. How and why do non-state actors use political violence?**]]
+
+<br>
+
+.size50[**Today's Agenda**
+
+- Review paper outlines
+
+]
+
+<br>
+
+.center[.size40[
+  Justin Leinaweaver (Fall 2023)
+]]
+
+???
+
+### Prep for Class
+1. Review Canvas submissions
+
+
+
+
+---
+
+background-image: url('libs/Images/background-blue_triangles.jpg')
+background-size: 100%
+background-position: center
+class: middle
+
+.size35[
+.center[**Paper 3: How do we reduce the likelihood of political violence this coming election season?**]
+
+Write a report advocating a specific policy recommendation at either the local, state or national level that you argue will help prevent, or minimize, the likelihood of political violence around the election. 
+
+A strong proposal will:
+
+- be specific (e.g. include the kinds of details a relevant stakeholder would need to implement your proposal), and
+
+- provide evidence that your proposal is likely to be effective.
+]
+
+???
+
+Papers are due at end of final exam window
+- Dec 14th, 12:20pm
+
+- NO LATE PAPERS ACCEPTED
+
+<br>
+
+### Questions on the assignment?
+
+<br>
+
+For today everybody submitted their in progress outline on the paper.
+
+- We'll use our time in class to review each other's outlines and give feedback
+
+- This is useful both for the person getting the feedback but also for each of you in seeing how other people are tackling this assignment
+
+<br>
+
+Your job today is to hear and give feedback on EVERYONE else's paper in class today.
+
+- That's a big ask in 50 minutes so best get to work!
+
+- Go!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
