@@ -1,0 +1,398 @@
+---
+output:
+  xaringan::moon_reader:
+    css: ["default", "extra.css"]
+    lib_dir: libs
+    seal: false
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: '16:9'
+---
+
+```{r, echo = FALSE, warning = FALSE, message = FALSE}
+##xaringan::inf_mr()
+## For offline work: https://bookdown.org/yihui/rmarkdown/some-tips.html#working-offline
+## Images not appearing? Put images folder inside the libs folder as that is the main data directory
+
+library(tidyverse)
+##library(readxl)
+##library(stargazer)
+##library(kableExtra)
+##library(modelr)
+
+knitr::opts_chunk$set(echo = FALSE,
+                      eval = TRUE,
+                      error = FALSE,
+                      message = FALSE,
+                      warning = FALSE,
+                      comment = NA)
+```
+
+background-image: url('Images/00-Leviathan_Cover_55.png')
+background-size: 100%
+background-position: center
+class: middle
+
+.size70[**Today's Agenda**]
+
+<br>
+
+.size55[.center[
+Explore Sedgwick's (2004) arguments concerning religious terrorism
+]]
+
+<br>
+
+<br>
+
+.center[.size40[
+  Justin Leinaweaver (Fall 2025)
+]]
+
+::: notes
+
+### Prep for Class
+1. Prep email link to Google Doc to collect cases for Monday
+    - https://docs.google.com/document/d/1VxpQcFCyLm9UySFbvhUDyl9pe0c-C3P4VeOAjqGGN2U/edit?usp=sharing
+
+<br>
+
+Today's Agenda: Explore Sedgwick's (2004) arguments concerning religious terrorism.
+
+- Is it fundamentally different?
+
+- Do we need special strategies to counter it?
+
+
+
+
+---
+
+background-image: url('Images/background-blues_and_greys.jpg')
+background-size: 100%
+background-position: center
+class: middle, inverse, textwhite
+
+.size60[.center[**A non-state actor using violence outside societal norms against people or property, meant to intimidate and connected to a political struggle**]]
+
+::: notes
+
+I tried to adapt to your concerns about failed attempts at violence.
+
+### Is this getting better? Why or why not?
+
+### More tweaks needed?
+
+
+
+---
+
+background-image: url('Images/background-blues_and_greys.jpg')
+background-size: 100%
+background-position: center
+class: middle, center, inverse, textwhite
+
+.size60[**What explains the variation in how and why non-state actors use violence against states and people?**]
+
+<br>
+
+<br>
+
+.size45[**Q1. How does the framing of this project help us answer our question?**]
+
+::: notes
+
+Let's talk about the framing of the paper.
+
+### What is the question and how is it worded?
+- (Is religious terrorism a distinctly different form of terrorism?)
+
+<br>
+
+### What literature is the paper connected to?
+
+- *Force discussion of Rapoport's "waves" of terrorism: What describes the waves? Is this a useful typology?* p796
+
+
+
+<br>
+
+### What are the key concepts and how are they defined?
+
+<br>
+
+Central to this paper and its framing is the role of Al Qaeda as its central case study.
+
+The question is, how much is AQ a "religious" terror group and how much is it simply a terror group.
+
+Or, similarly to our discussion on Monday, is religious terror distinct enough from other forms of terror as to need to be studied separately?
+
+
+
+---
+
+background-image: url('Images/background-blues_and_greys.jpg')
+background-size: 100%
+background-position: center
+class: middle, inverse, textwhite
+
+.size55[.center[**Q1. How does the framing of this project help us answer our question?**]]
+
+<br>
+
+.size60[
+Make two lists:
+
++ AQ is a "religious" terror group
++ AQ is like any other terror group
+]
+
+::: notes
+
+Everybody take a few minutes on their own to brainstorm two lists.
+
+*ON BOARD: "AQ = Islamic Terrorism" vs "AQ = Terrorism"*
+
+Think of these like two arguments:
+
+#### 1. IN WHAT WAYS IS AQ A "RELIGIOUS" TYPE OF TERROR GROUP?
+
+#### 2. IN WHAT WAYS IS AQ LIKE ANY OTHER TERROR GROUP?
+
+<br>
+
+*ON BOARD: Gather items under each header* 
+
+("AQ = Islamic Terrorism")
+
+- Religion is central to the way Al Qaeda defines its ultimate aims, its constituency and the way it motivates its operatives.
+- Ultimate aims are religious
+- Recruits from a specific religious constituency
+- Appeals to a vast "potential constituency"
+- Uses many religious concepts
+- Appropriates ascetic traditions, martyrdom
+- 9/11 "Last Night" document to motivate and keep operatives in line
+- Constituency defined by Islam
+- Adopts the language and stories of Islam to teach its goals
+- "When it comes to mobilizing support from within its constituency, mainstream Islamic concepts of duty, ascetic devotion, and piety may be used to political ends" (806).
+
+("AQ = Terrorism")
+
+- HOWEVER, its immediate aims are essentially political in nature.
+- Check conclusion re: religious roots of secular terrorism (808-809)
+- ?
+
+<br>
+
+### Are we convinced that this is sufficient to define aq as a special type of terrorism?
+
+#### - Why or why not?
+
+
+
+---
+
+background-image: url('Images/12_2-goal.jpg')
+background-size: 100%
+background-position: bottom
+
+<br>
+
+.size45[.center[.textred[**Ultimate Aims vs Immediate Objectives**]]]
+
+::: notes
+
+Key to this analysis is that Sedgwick differentiates between ultimate aims and immediate objectives.
+
+### What is the strongest argument to do this?
+
+<br>
+
+### What is the strongest argument against it?
+
+<br>
+
+### Is this an arbitrary divide in order to support the argument or a separation of two distinctly different things?
+
+*Make sure both sides of debate represented*
+
+<br>
+
+### What sources of evidence does sedgwick draw on to support his argument?
+
+#### - Is it convincing? Why or why not?
+
+- Non-quantitative piece can make it much harder to assess the evidence provided.
+- Very brief historical case studies (797-799) The Thugs, the Assassins and the Zealots
+- "propaganda of the deed": Anarchist Errico Malatesta (1853–1932)
+
+<br>
+
+Let's shift to the 9/11 strategy argument.
+
+### What is Sedgwick's argument as to the strategic purpose of the 9/11 attacks?
+
+(SLIDE)
+
+
+
+---
+
+background-image: url('Images/background-blues_and_greys.jpg')
+background-size: 100%
+background-position: center
+class: middle, inverse, textwhite
+
+.size55[.center[**Q2. How does the model of politics presented in this paper help us answer our big question?**]]
+
+<br>
+
+.size60[
+9/11 as Strategy
+
++ Propaganda to build support
++ Provoke self-defeating actions
+]
+
+::: notes
+
+(9/11 was primarily a propaganda strategy for building support)
+
+and 
+
+(secondarily an attempt to provoke US into actions that would alienate us further.)
+
+<br>
+
+### Is that a convincing argument? Why or why not?
+
+#### - Are the proposed alternatives an exhaustive list?
+
+#### - Are the alternatives presented in their strongest versions? any straw men?
+
+
+
+---
+
+background-image: url('Images/background-blues_and_greys.jpg')
+background-size: 100%
+background-position: center
+class: middle, center, inverse, textwhite
+
+.size60[**What explains the variation in how and why non-state actors use violence against states and people?**]
+
+<br>
+
+<br>
+
+.size45[**Q3. How does the analysis in this project help us answer our big question?**]
+
+::: notes
+
+### Overall, what are the strengths and weaknesses of this research article?
+
+(Strengths)
+
+1. "propaganda of the deed" is closest thing to a coherent theory of terrorist action, but needs to be fleshed out.
+
+<br>
+
+(Weaknesses)
+
+1. Lacks a coherent theory / clearly testable hypotheses.
+    - How do I use this to look at the world and see if you are right?
+    - Is "propaganda of the deed" supposed to be a uniquely religious terror strategy or just something AQ does?
+
+2. Historical analogies are interesting but I'm not sure what they prove?
+    - Ultimately, seems to be that sedgwick argues religious terror is a distinct thing but the three best known examples of it aren't really it...
+
+
+
+---
+
+background-image: url('Images/background-blues_and_greys.jpg')
+background-size: 100%
+background-position: center
+class: middle, inverse, textwhite
+
+.size55[.center[**What explains the variation in how and why non-state actors use violence against states and people?**]]
+
+<br>
+
+.size45[
++ Is religious terrorism fundamentally different from other types?
+
++ Do we need special strategies to counter it?
+]
+
+::: notes
+
+### Ultimately, are we convinced that religious terrorism fundamentally different from other types?
+
+<br>
+
+### If so, do we need special strategies to counter it?
+
+
+
+
+---
+
+background-image: url('Images/12-2-Isis.jpg')
+background-size: 100%
+background-position: center
+class: middle, inverse, textwhite
+
+::: notes
+
+### Thinking about the papers this week, are we convinced that a typology approach to terrorism is a useful strategy for policymakers seeking to reduce the risks?
+
+- Nationalist (ETA, IRA), 
+- Religious (ISIS, AQ), 
+- Ideological leftists (Communists, anarchists), 
+- Ideological right (Nazis, skinheads, Klan)
+
+<br>
+
+### If our aim is to predict the behavior of terrorist groups, in what ways does a typology help? In what ways does it hurt?
+
+<br>
+
+### If our aim is to design strategies to combat terrorist groups, in what ways does a typology help? In what ways does it hurt?
+
+<br>
+
+### Does a typology add something useful to our definition of terrorism or not?
+
+
+
+
+---
+
+background-image: url('Images/background-swirls.jpg')
+background-size: 100%
+background-position: center
+class: middle, center
+
+## For Monday
+
+.size55[
+Bring to class a piece of evidence showing terrorism (e.g. a terrorist group, a terrorist threat or a specific terror attack) changing the behavior of a target audience (e.g. society, community, government) in some specific way.
+]
+
+::: notes
+
+*Send email*
+
+Next week we examine the ongoing debate about whether or not terrorism "works" as a strategy.
+
+We'll kick off by examining case studies you collect for us!
+
+### Any questions on the prompt for Monday?
+
+
+
+
+

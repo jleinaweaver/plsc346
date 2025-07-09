@@ -1,0 +1,209 @@
+---
+format: revealjs
+---
+
+## Today's Agenda {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+```{r}
+library(tidyverse)
+library(readxl)
+library(kableExtra)
+```
+
+<br>
+
+**IV. How do we make political violence less likely?**
+
+<br>
+
+- Reviewing real-world policies designed to reduce political violence
+
+<br>
+
+::: r-stack
+Justin Leinaweaver (Fall 2025)
+:::
+
+::: notes
+
+Prep for Class
+
+1. Review submissions on Canvas
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+**Paper 3: How do we reduce the likelihood of political violence in our society?**
+
+Based on our explorations of political violence this semester, what are the **THREE** strongest pieces of policy advice you could offer to prevent political violence at the city, state or national level? 
+
+A strong proposal will:
+
+- be specific (e.g. include the kinds of details a relevant stakeholder would need to implement your proposal), and
+
+- provide evidence that your proposal is likely to be effective.
+
+::: notes
+
+Papers are due at end of final exam window
+- Dec 14th, 12:20pm
+
+- NO LATE PAPERS ACCEPTED
+
+<br>
+
+### Questions on the assignment?
+
+:::
+
+
+
+
+
+## For Today {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+<br>
+
+::: notes
+
+For today I asked each of you to find us a real-world case study that answers the prompt for our final paper.
+
+<br>
+
+### How did this go?
+
+<br>
+
+*Split class into four groups (5 each?)*
+
+- Go sit with your group!
+
+:::
+
+
+
+## {background-image="Images/15_2-civil-uncrest-stage_v3.png" .center}
+
+**Preventing Political Violence Using Policy**
+
+::: notes
+
+Groups, start by reviewing all the submitted cases
+
+- Does anything need clarification?
+
+:::
+
+
+
+
+## {background-image="Images/15_2-civil-uncrest-stage_v3.png" .center}
+
+**Preventing Political Violence Using Policy**
+
+**Level of Effectiveness**
+
+- Not Effective
+
+- Somewhat Effective
+
+- Very Effective
+
+::: notes
+
+Let's categorize the cases in three lists ON THE BOARD
+
+- *ON BOARD*
+
+:::
+
+
+
+## {background-image="Images/15_2-civil-uncrest-stage_v3.png" .center}
+
+**Identify the design advice from these cases:**
+
+- What characterizes the successfully targeted vulnerabilities?
+
+- What characterizes the more successful policies?
+
+::: notes
+
+Groups, let's use our cases to make some inferences!
+
+- Get ready to report back to the class
+
+<br>
+
+### Per these cases, what characterizes the successfully targeted vulnerabilities?
+
+- *ON BOARD*
+
+<br>
+
+### Per these cases, what characterizes the more successful policies?
+
+- *ON BOARD*
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+**Paper 3: How do we reduce the likelihood of political violence in our society?**
+
+Based on our explorations of political violence this semester, what are the **THREE** strongest pieces of policy advice you could offer to prevent political violence at the city, state or national level? 
+
+A strong proposal will:
+
+- be specific (e.g. include the kinds of details a relevant stakeholder would need to implement your proposal), and
+
+- provide evidence that your proposal is likely to be effective.
+
+::: notes
+
+**Ok, does everybody have a good start to their paper?**
+
+- **Anything we can help with?**
+
+:::
+
+
+
+## For Next Class {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+**Submit a Bullet-Point Outline**
+
+<br>
+
+- Introduction (3 elements),
+
+- At least three premises (with an indication of evidence needed), and
+
+- A conclusion that addresses the feasibility of your proposal
+
+::: notes
+
+The more you can give us the better our feedback in class on Friday
+
+<br>
+
+### Questions on my expectations?
+
+<br>
+
+- Introduction:
+    1. What is the question?
+    2. Why should we care?
+    3. What is your argument?
+
+- A good premise is a complete sentence that presents one of the big ideas that builds crucial support for your conclusion
+
+:::
+
+
+

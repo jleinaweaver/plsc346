@@ -1,0 +1,491 @@
+---
+format: revealjs
+---
+
+## Today's Agenda {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+```{r}
+library(tidyverse)
+library(readxl)
+library(kableExtra)
+
+# Data for today
+library(carData)
+```
+
+<br>
+
+**III. How and why do non-state actors use political violence?**
+
+<br>
+
+- Defining Terrorism: Established Academic Arguments
+
+<br>
+
+::: r-stack
+Justin Leinaweaver (Fall 2025)
+:::
+
+::: notes
+Prep for Class
+
+1. Review submissions on Canvas
+
+<br>
+
+This week we've shifted to our next section of the class focused on the use of political violence by non-state actors.
+
+- Specifically, we are focusing on terrorism
+
+:::
+
+
+
+## {background-image="Images/10_1-Terrorism_Background_darker.png" .center}
+
+:::: {.columns}
+::: {.column width="60%"}
+
+::: {.r-fit-text}
+
+[**"Terrorism"**]{style="color:white;"}
+
+[**1) Concept**]{style="color:white;"}
+
+[**2) Case studies**]{style="color:white;"}
+
+[**3) Operationalization**]{style="color:white;"}
+
+[**4) Instrumentation**]{style="color:white;"}
+
+[**5) Measurement**]{style="color:white;"}
+:::
+
+:::
+
+::: {.column width="40%"}
+
+:::
+::::
+
+::: notes
+
+On Monday we started by exploring a variety of real-world cases in order to bolster our intuitions about terrorism and to help us clarify the concept itself.
+
+<br>
+
+Let's refresh our memories from that work.
+
+### At an intuitive level, what was the clearest act of "terrorism" from the cases we reviewed?
+
+<br>
+
+### - What was it about these cases that made them a "slam dunk"?
+- (*ON BOARD*)
+
+<br>
+
+### What cases caused the most debate about whether or not to include it?
+
+<br>
+
+### - What was it about these cases that made them "iffy"?
+- (*ON BOARD*)
+
+<br>
+
+Putting this all together we ended Monday by working to develop a consensus definition and the beginnings of an operationalization.
+
+### What were the key elements of "terrorism" that we proposed for our operationalization?
+
+- (*ON BOARD*)
+
+<br>
+
+For today I assigned you two academic analyses of terrorism as a concept.
+
+- **SLIDE**: Before we dig into them, let's talk about my thesis statement for our week.
+
+<br>
+
+CLASS NOTES (2023-10)
+
+Group 1: Individuals or groups strategically pursuing ideologies by committing acts intended to cause fear and/or harm to a specific group of people
+
+Group 2: Violent acts intended to harm or cause fear on a group of people with shared identities by non-state actors with specific, shared beliefs in order to change government and/or policy
+
+Group 3: Premeditated violence used to intimidate, harm, or kill members of a specific group to promote preferential political or religious ideologies.
+
+Group 4: Unlawful physical violence associated with an ideological movement with the goal of instilling fear or harm in the populace
+
+:::
+
+
+
+## Defining Terrorism {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+![](Images/10_1-Terrorism-Word-Cloud.jpg){style="display: block; margin: 0 auto"}
+
+::: notes
+
+One of the fundamental challenges in exploring "terrorism" is the contested nature of its definition
+
+- Our goal in this section of the class is **NOT** to end these debates by deriving the ultimate be-all, end-all definition!
+
+- That would probably be impossible and may be a waste of our time (leave it to the philosophers)
+
+<br>
+
+Our goal is to develop **expertise** in the concept which means:
+
+1. We aim to understand the **choices** required for anyone to define the concept of terrorism, AND 
+
+2. We want to be able to take any simple definition and **use it to generate real-world data** for describing and analyzing the world.
+
+<br>
+
+So, our goal is to develop expertise in "terrorism."
+
+- Expertise does not mean you can easily answer the question, "What is terrorism?"
+
+- Expertise means when someone tells you their answer, you understand what they prioritize and what they exclude.
+
+<br>
+
+Being an expert means:
+
+1. Understanding precisely why all of the simple answers are wrong,
+
+2. BUT ALSO, that we have to use wrong, but simple, answers to generate useful data about the world.
+
+<br>
+
+### Does this make sense?
+
+<br>
+
+**SLIDE**: One of the things I really appreciate about the Tilly (2004) chapter is how it shares our goals.
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+::: {.r-fit-text}
+**The Challenge of Defining Terrorism**
+:::
+
+**Tilly (2004, p9)**
+![](Images/10_2-Tilly2004_p9_short.png){style="display: block; margin: 0 auto"}
+
+**Schmid (2023, p2)**
+![](Images/10_2-Schmid2023_p2.png){style="display: block; margin: 0 auto"}
+
+::: notes
+
+Both of our articles for today agree strongly on this one point
+
+- Terrorism is a HEAVILY contested concept and little overlap exists across the various definitions
+
+- And yet, crazily enough, this inability to agree on a common definition has not slowed its use in political discourse or policy-making
+
+- Seems like a problem that we all use the word differently but that it hasn't stopped governments from making domestic and international laws meant to restrict or punish it.
+
+<br>
+
+Before we explore how Tilly and Schmid each propose we address this problem, let's see if Tilly's argument about a lack of overlap is supported by some evidence.
+
+- The Appendix in the Schmid (2023) reading includes a selection of definitions from across time and across a wide variety of sources.
+
+- Take a moment to review the definitions and let me know what jumps out at you.
+
+<br>
+
+### Any definitions come close to our work on Monday?
+
+### - Any strongly recurring themes?
+
+<br>
+
+### Any super problematic definitions? Why?
+
+<br>
+
+### How well does each definition tell you something useful about the person or group proposing it?
+
+### - Examples?
+
+<br>
+
+Tilly (2004) gives us four "steps" to help us think about the boundaries of a useful understanding of terrorism.
+
+- **SLIDE**: Let's step through them and see if we think these are a good way forward.
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+::: {.r-fit-text}
+**The Challenge of Defining Terrorism**
+:::
+
+![](Images/10_2-Tilly2004_p9_slide2.png){style="display: block; margin: 0 auto"}
+
+::: notes
+
+**Talk to me about the first step here. What is Tilly arguing is central to thinking about "terrorism" as a coherent and useful idea?**
+
+- Terror as a "recurrent strategy of intimidation" (NOTE: NOT terrorISM)
+
+- Recurrent: occurring often or repeatedly (Oxford Languages)
+
+- Strategy per Freedman
+    - "...attempts to think about actions in advance, in light of our goals and our capacities" (p.x).
+    - "It's about getting more out of a situation than the starting balance of power would suggest. It's the art of creating power" (p.xii).
+    
+- Intimidation: To make timid or fearful; to compel or deter by or as if by threats (Oxford Languages)
+
+<br>
+
+Putting this all together Tilly (2004) is arguing that the broad arena of "terrorism" may be bounded by three ideas: recurrent, strategy and intimidation.
+
+### What do you think of using those three ideas to create the bounds of the terrorism concept? Pros and cons?
+
+<br>
+
+### - Is this too limiting? Does it exclude any of our cases from Monday that we think are definitely terrorism?
+
+<br>
+
+**SLIDE**: Step 2
+
+:::
+
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+::: {.r-fit-text}
+**The Challenge of Defining Terrorism**
+:::
+
+![](Images/10_2-Tilly2004_p9_slide3.png){style="display: block; margin: 0 auto"}
+
+::: notes
+
+**Why is the second step important? What does this add?**
+
+- (Useful reminder to analysts not to define terror by group or motivation, but instead by action)
+
+- Terrorism is not an identity! It is not exclusively a non-state issue.
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+::: {.r-fit-text}
+**The Challenge of Defining Terrorism**
+:::
+
+![](Images/10_2-Tilly2004_p9_slide4.png){style="display: block; margin: 0 auto"}
+
+::: notes
+
+**Why is the third step important? What does this add?**
+
+1. This seems to suggest that terrorism must be conceived of as an alternative to, and likely interacting with, "other forms of political struggle"
+    - ("...but they generally intersect with other forms of negotiation at international, national, and local levels" 10.)
+
+2. That no specific, single kind of struggle or power dynamic is a precondition to terrorism
+
+3. That can also be seen as a strategy that reinforces other forms of political contestation.
+    - Example: Allied Democratic Forces (ADF) in Uganda doing HORRIBLE things ("terror") to reinforce its control AND to enable it to continue fighting against the government as a military force
+
+<br>
+
+**SLIDE**: Final step...
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+::: {.r-fit-text}
+**The Challenge of Defining Terrorism**
+:::
+
+![](Images/10_2-Tilly2004_p9_slide5.png){style="display: block; margin: 0 auto"}
+
+::: notes
+
+**Why is the fourth step important? What does this add?**
+
+- (We should not group all actors who adopt the terror strategy in the same conceptual "bucket")
+
+- "Terrorism is not a single causally coherent phenomenon. No social scientist can speak responsibly as though it were" (12).
+
+<br>
+
+**SLIDE**: Illustrated by Figure 2
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+::: {.r-fit-text}
+**The Challenge of Defining Terrorism**
+:::
+
+![](Images/10_2-Tilly2004_Fig2.png){style="display: block; margin: 0 auto"}
+
+::: notes
+
+Figure 2 presents a "crude typology" of terrorists
+
+- Y-axis: first between violent specialists and others
+
+- X-axis: actors who deploy terror within their own operating territories and those who direct it elsewhere
+
+<br>
+
+At each end is a "type" of terrorist that is fundamentally unlike the others:
+
+1. Autonomists stand for all those politically active groups whose members sometimes launch terror attacks on authorities, symbolic objects, rivals, or stigmatized populations on their own territories without becoming durably organized specialists in coercion. 
+
+2. Zealots maintain similar connections with each other but commit their violent acts outside of their own base territories; they include long-term exiles who return home to attack their enemies.
+
+3. Governmental, nongovernmental, and antigovernmental militias maintain enduring organizations of coercive specialists and exercise terror within their base territories.
+
+4. Finally, conspirators organize specialized striking forces for operations away from base.
+
+<br>
+
+### Are you persuaded by Tilly (2004) that while we can understand "terror" as a strategy, we cannot generalize about "terrorists" or "terrorism" because of the "wide spectrum of organizations, circumstances, and beliefs" underpinning the groups that use it?
+
+<br>
+
+**SLIDE**: Moving to the Schmid article
+
+<br>
+
+Notes
+
+- "The diagram as a whole summarizes this paper’s main point: A remarkable array of actors sometimes adopt terror as a strategy, and therefore no coherent set of cause-effect propositions can explain terrorism as a whole" (11).
+
+1. Autonomists stand for all those politically active groups whose members sometimes launch terror attacks on authorities, symbolic objects, rivals, or stigmatized populations on their own territories without becoming durably organized specialists in coercion. 
+
+2. Zealots maintain similar connections with each other but commit their violent acts outside of their own base territories; they include long-term exiles who return home to attack their enemies.
+
+3. Governmental, nongovernmental, and antigovernmental militias maintain enduring organizations of coercive specialists and exercise terror within their base territories.
+
+4. Finally, conspirators organize specialized striking forces for operations away from base.
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+::: {.r-fit-text}
+**The Challenge of Defining Terrorism**
+:::
+
+:::: {.columns}
+::: {.column width="50%"}
+![](Images/10_2-Schmid2023_Cover.png){style="display: block; margin: 0 auto"}
+:::
+
+::: {.column width="50%"}
+**"Definition Power"**
+
+1. Terrorists
+2. Mass and Social Media
+3. National Governments
+4. The United Nations
+5. Academics
+:::
+::::
+
+::: notes
+
+I really appreciate how the Schmid (2023) article approaches terrorism by stepping through the history and psychology of terrorism, the nature of political violence separate from terrorism and by focusing on the acts and actors involved.
+
+- However, I'd like us to focus on the section beginning on p15 all about "definition power."
+
+<br>
+
+### What is "definition power" in this context?
+
+- ("A crucial question in the definition debate is therefore: Who should have “definition power” that is, the authority to frame and steer the public discourse by labelling some manifestation of politically motivated violence ‘terrorist’ and implicitly, excluding other forms of political militancy from being assigned with such a pejorative term?")
+
+<br>
+
+### What do we learn from Schmid's review of these actors and their preferred definitions?
+
+### - How does this help us to explore terrorism?
+
+<br>
+
+**SLIDE**: Schmid's (2011) consensus definition
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center .smaller}
+
+::: {.r-fit-text}
+**Schmid (2011): Academic Consensus Definition**
+:::
+
+1. “Terrorism refers, on the one hand, to a doctrine about the presumed effectiveness of a special form or tactic of fear-generating, coercive political violence and, on the other hand, to a conspiratorial practice of calculated, demonstrative, direct violent action without legal or moral restraints, targeting mainly civilians and non-combatants, performed for its propagandistic and psychological effects on various audiences and conflict parties;
+
+2. Terrorism as a tactic is employed in three main contexts: (i) illegal state repression; (ii) propagandistic agitation by non-state actors in times of peace or outside zones of conflict; and (iii) as an illicit tactic of irregular warfare employed by state- and non-state actors.”
+
+::: notes
+
+25 years of surveying experts in the field produces this definition.
+
+### What do you think? Pros and cons?
+
+### - Leaving anything important out?
+
+<br>
+
+### Would Tilly accept this definition? Why or why not?
+
+<br>
+
+### Bottom line, how are we feeling about the concept of "terrorism"?
+
+### - Are you getting a better sense of what any specific definition of it tells you about the person arguing for it?
+
+:::
+
+
+
+
+## For Next Class {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+<br>
+
+Jaggar (2005). What Is Terrorism, Why Is It Wrong, and Could It Ever Be Morally Permissible? *Journal of Social Philosophy*
+
+- Reflections on Canvas
+
+::: notes
+
+**Questions on the assignment?**
+
+:::
+

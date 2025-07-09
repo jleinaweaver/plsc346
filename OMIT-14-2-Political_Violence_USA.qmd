@@ -1,0 +1,373 @@
+---
+output:
+  xaringan::moon_reader:
+    css: ["default", "extra.css"]
+    lib_dir: libs
+    seal: false
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: '16:9'
+---
+
+```{r, echo = FALSE, warning = FALSE, message = FALSE}
+##xaringan::inf_mr()
+## For offline work: https://bookdown.org/yihui/rmarkdown/some-tips.html#working-offline
+## Images not appearing? Put images folder inside the libs folder as that is the main data directory
+
+library(tidyverse)
+##library(readxl)
+##library(stargazer)
+##library(kableExtra)
+##library(modelr)
+
+knitr::opts_chunk$set(echo = FALSE,
+                      eval = TRUE,
+                      error = FALSE,
+                      message = FALSE,
+                      warning = FALSE,
+                      comment = NA)
+```
+
+background-image: url('Images/00-Leviathan_Cover_55.png')
+background-size: 100%
+background-position: center
+class: middle
+
+.size80[**Today's Agenda**]
+
+<br>
+
+.size60[.center[
+Gellman, Barton. (2021, Dec 6). Trump’s Next Coup Has Already Begun. *The Atlantic*.
+]]
+
+<br>
+
+.center[.size40[
+  Justin Leinaweaver (Fall 2025)
+]]
+
+::: notes
+
+1. Prep email with link to collect cases
+    - https://docs.google.com/document/d/1iNYRC6BRI8WDdXoAETCy3OTeaBFQ6w2cBV9CZ0Xl6JU/edit?usp=sharing
+
+<br>
+
+*Save time for final report prompt and assignment for Monday*
+
+
+
+
+---
+
+background-image: url('Images/14_2-Jan6th_Riot_v2.png')
+background-size: 100%
+background-position: center
+class: bottom, center
+
+::: notes
+
+For today I assigned you an intriguing argument that I think holds and connects MANY of the political violence arguments from our class into one.
+
+<br>
+
+Arguments like:
+
+- Tilly's work on politics and varieties of collective violence,
+
+- Freedman's work on violence as a strategic act,
+
+- The debate between Weber and Olson over the nature and use of violence by states against their citizens,
+
+- The constraints against violence that vary by regime type and institutions,
+
+- The capacity of small groups to use threats and violence to influence wider populations, and
+
+- The power of information and the internet to forge identities and overcome collective action problems.
+
+<br>
+
+All of this and more is here in this single article!
+
+- Pretty good, right?
+
+
+
+
+---
+
+background-image: url('Images/14_2-Jan6th_Riot_v3.png')
+background-size: 100%
+background-position: center
+class: middle, center, textwhite, inverse
+
+.size30[
+Donald Trump came closer than anyone thought he could to toppling a free election a year ago. He is preparing in plain view to do it again, and his position is growing stronger. Republican acolytes have identified the weak points in our electoral apparatus and are methodically exploiting them. They have set loose and now are driven by the animus of tens of millions of aggrieved Trump supporters who are prone to conspiracy thinking, embrace violence, and reject democratic defeat. Those supporters, Robert Pape’s “committed insurrectionists,” are armed and single-minded and will know what to do the next time Trump calls upon them to act.
+
+Democracy will be on trial in 2024. A strong and clear-eyed president, faced with such a test, would devote his presidency to meeting it. Biden knows better than I do what it looks like when a president fully marshals his power and resources to face a challenge. It doesn’t look like this.
+]
+
+::: notes
+
+I want us to organize our discussion around the arguments Gellman nicely summarizes at the very end of his article.
+
+Everybody go to the end of the piece and find these two paragraphs
+
+- Arguably the conclusion of the paper is the final four mini paragraphs, but we're going to focus on these two.
+
+<br>
+
+These two paragraphs hold the four big conclusions Gellman is working hard to convince you are correct.
+
+<br>
+
+SLIDE: Let's step through and evaluate each of them.
+
+
+
+
+---
+
+background-image: url('Images/14_2-Jan6th_Riot_v3.png')
+background-size: 100%
+background-position: center
+class: middle, center, textwhite, inverse
+
+# Conclusion 1
+
+<br>
+
+.size45[**Donald Trump came closer than anyone thought he could to toppling a free election a year ago.**]
+
+::: notes
+
+### Is this a convincing argument? Why or why not?
+
+### - Strongest pieces of evidence from the article?
+
+### - Any important evidence of this since the article was written last December?
+
+
+
+---
+
+background-image: url('Images/14_2-Jan6th_Riot_v3.png')
+background-size: 100%
+background-position: center
+class: middle, center, textwhite, inverse
+
+# Conclusion 2
+
+<br>
+
+.size45[**He is preparing in plain view to do it again, and his position is growing stronger. Republican acolytes have identified the weak points in our electoral apparatus and are methodically exploiting them.**]
+
+::: notes
+
+### Is this a convincing argument? Why or why not?
+
+### - Strongest pieces of evidence from the article?
+
+### - Any important evidence of this since the article was written last December?
+
+
+
+
+---
+
+background-image: url('Images/14_2-Jan6th_Riot_v3.png')
+background-size: 100%
+background-position: center
+class: middle, center, textwhite, inverse
+
+# Conclusion 3
+
+<br>
+
+.size40[**They have set loose and now are driven by the animus of tens of millions of aggrieved Trump supporters who are prone to conspiracy thinking, embrace violence, and reject democratic defeat. Those supporters, Robert Pape’s “committed insurrectionists,” are armed and single-minded and will know what to do the next time Trump calls upon them to act.**]
+
+::: notes
+
+### Is this a convincing argument? Why or why not?
+
+### - Strongest pieces of evidence from the article?
+
+### - Any important evidence of this since the article was written last December?
+
+
+
+
+---
+
+background-image: url('Images/14_2-Jan6th_Riot_v3.png')
+background-size: 100%
+background-position: center
+class: middle, center, textwhite, inverse
+
+# Conclusion 4
+
+<br>
+
+.size40[**Democracy will be on trial in 2024. A strong and clear-eyed president, faced with such a test, would devote his presidency to meeting it. Biden knows better than I do what it looks like when a president fully marshals his power and resources to face a challenge. It doesn’t look like this.**]
+
+::: notes
+
+### Is this a convincing argument? Why or why not?
+
+### - Strongest pieces of evidence from the article?
+
+### - Any important evidence of this since the article was written last December?
+
+<br>
+
+### What should we be doing right now?
+
+<br>
+
+*Save time for final report prompt*
+
+Alright, let's end today talking about your final papers!
+
+SLIDE: Prompt part 1 of 3
+
+
+
+---
+
+class: middle, center, slideblue
+
+.size65[**Final Paper Prompt (1/3)**]
+
+<br>
+
+.size50[Write a report analyzing a specific policy action taken by a state or a non-state actor meant to reduce the occurrence or severity of terrorism in a single country.]
+
+::: notes
+
+The main prompt is focused on analyzing a strategy to reduce terrorism.
+
+<br>
+
+### Questions on the first part?
+
+
+
+
+---
+
+class: middle, slideblue
+
+.center[.size65[**Final Paper Prompt (2/3)**]]
+
+<br>
+
+.size40[Your report must include an analysis of the data produced by:
+
+- the GTD and EDTG projects on the experiences of terrorism in the target country, AND 
+
+- the CIRIGHTS and PTS projects on the experience of political violence in that country.
+]
+
+::: notes
+
+A big part of your project will require you to go back into the data projects we've been exploring all semester.
+
+- We used CIRIGHTS and PTS to help us analyze the experience of violence in specific states across time.
+
+- We used GTD and EDTG to analyze the experience of terrorism in specific states across time.
+
+<br>
+
+### Questions on the second part?
+
+
+
+
+---
+
+class: middle, center, slideblue
+
+.size65[**Final Paper Prompt (3/3)**]
+
+<br>
+
+.size50[Does the evidence indicate that these interventions have reduced the frequency or scale of attacks? Have these interventions impacted citizens' experiences of political violence in the state?]
+
+::: notes
+
+Part 3 is meant to clarify a bit of how you connect the policy you are analyzing to the data you have.
+
+<br>
+
+### Questions on the third part?
+
+<br>
+
+SLIDE: Putting it all together
+
+
+
+
+---
+
+class: middle, slideblue
+
+.center[.size50[**Final Paper Prompt**]]
+
+.size35[Write a report analyzing a specific policy action taken by a state or a non-state actor meant to reduce the occurrence or severity of terrorism in a single country.
+
+- Analyze Terrorism Data (GTD and EDTG)
+- Analyze Political Violence Data (CIRIGHTS and PTS)
+
+Does the evidence indicate that these interventions have reduced the frequency or scale of attacks? Have these interventions impacted citizens' experiences of political violence in the state?]
+
+::: notes
+
+### Questions on the final paper?
+
+
+
+---
+
+class: middle, slideblue
+
+.size70[**For Friday**]
+
+.size45[
+Bring to class an example of a specific policy action taken by a state or a non-state actor meant to reduce the occurrence or severity of terrorism in a single country.
+
+- CIRIGHTS (1981-2017)
+- PTS (1976-2020)
+- GTD (1970-2019)
+- EDTG (1970-2016)
+]
+
+::: notes
+
+*Send email*
+
+Let's gather some prospective cases!
+
+- For Friday go find a policy you could organize your paper around and bring it to class so we can share what you've found and where you may take it.
+
+- Aim for timings of the policy that would allow it to be evaluated using our four data projects.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

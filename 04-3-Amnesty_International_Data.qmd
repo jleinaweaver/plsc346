@@ -1,0 +1,362 @@
+---
+format: revealjs
+---
+
+## Today's Agenda {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+```{r}
+library(tidyverse)
+library(readxl)
+library(kableExtra)
+```
+
+<br>
+
+**II. How and why do governments use violence against the people inside their borders?**
+
+::: {.r-fit-text}
+
+- The Annual Country Reports from Amnesty International
+
+:::
+
+<br>
+
+::: r-stack
+Justin Leinaweaver (Fall 2025)
+:::
+
+::: notes
+Prep for Class
+
+1. Review Canvas submissions
+
+<br>
+
+**SLIDE**: Today we continue our work on the first paper...
+
+:::
+
+
+
+## Paper 1 {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+<br>
+
+Which **SINGLE** data source would you recommend to someone interested in better understanding the use of political violence by governments around the world?
+
+- Your thesis should be a clear recommendation for **ONE** of the sources and should be supported by **AT LEAST THREE distinct reasons** for your recommendation
+
+- **A high quality recommendation** will also make clear **why** you are not recommending the other sources
+
+::: notes
+
+**Questions on the prompt?**
+
+:::
+
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+::: {.r-fit-text}
+**Sources of Political Violence Data**
+:::
+
+- The US State Department's "Country Reports on Human Rights Practices"
+
+- Amnesty International's "Annual Country Reports"
+
+- The Political Terror Scale (PTS)
+
+- The CIRIGHTS data project's "Physical Integrity Rights"
+
+- Varieties of Democracy's (V-Dem) "Personal Integrity Rights"
+
+::: notes
+
+Next week we'll be examining three quantitative data projects: PTS, CIRIGHTS and the V-Dem data
+
+- This will mean lots of Excel (or R for the brave!)
+
+<br>
+
+### Are we ok working in this room or do you want to meet in Springfield Hall's Computer Lab A for next week's classes?
+
+- I like this room for the work it lets us do, but I completely understand if you need a computer station.
+
+:::
+
+
+
+## {background-image="Images/background-light_grey.jpg" .center}
+
+::: {.r-fit-text}
+**"Human Rights Practices" (US State Department)**
+:::
+
+:::: {.columns}
+::: {.column width="60%"}
+::: {.r-fit-text}
+**1) Operationalization**
+
+**2) Instrumentation**
+
+**3) Measurement**
+:::
+:::
+::: {.column width="40%"}
+![](Images/02_3-reliable_valid.png)
+:::
+::::
+
+::: notes
+
+Last class we dug deep into the most widely used sources of data for human rights practices around the world, the US State Department's Country Reports.
+
+- We evaluated the operationalization, instrumentation and measurements produced in these reports in order to draw conclusions about their validity and reliability as data
+
+<br>
+
+### First, does anybody have questions or want to clarify the concepts themselves?
+
+- Operationalization: "...selecting observable phenomena to represent abstract concepts" (89).
+    - To be useful must be precise and explicit
+
+- Instrumentation: Convert your operationalization (definition) into a series of steps you can use to measure the concept in question
+
+- Measurement: Applying the instrument to the cases to generate values/data/numbers
+
+<br>
+
+This is essentially how any quantitative research project is designed, implemented and evaluated.
+
+1. How did they operationalize the concept?
+    - Is the definition precise and explicit?
+
+2. What instrument(s) did they design?
+    - Are they likely to produce valid and reliable data?
+
+3. How was the instrument applied to the cases?
+
+<br>
+
+### What were your big takeaways from evaluating the US State Dept Reports as measures of "human rights practices"?
+
+- *This is directly working on the paper so you don't offer ANYTHING!*
+
+:::
+
+
+
+## For Today {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+<br>
+
+![](Images/04_2-Assign_for_Fri.png){style="display: block; margin: 0 auto"}
+
+::: notes
+
+Today we shift to our second source of data on governments using political violence: Amnesty International's "Annual Country Reports"
+
+### Everybody ready to go with these?
+
+<br>
+
+### In broad terms, what did you think of the form and format of the country reports?
+
+- *Save discussion comparing to State Dept reports for end of class*
+
+<br>
+
+Let's start our evaluation of the data with this:
+
+### What is the key concept being measured in these reports?
+
+- (**SLIDE**: Human Rights Practices)
+
+:::
+
+
+
+## {background-image="Images/background-light_grey.jpg" .center}
+
+::: {.r-fit-text}
+**"Human Rights Practices" (Amnesty International)**
+:::
+
+:::: {.columns}
+::: {.column width="60%"}
+::: {.r-fit-text}
+**1) Operationalization**
+
+**2) Instrumentation**
+
+**3) Measurement**
+:::
+:::
+::: {.column width="40%"}
+![](Images/02_3-reliable_valid.png)
+:::
+::::
+
+::: notes
+
+*Split class into groups (4 groups of 5?)*
+
+- Go sit with your groups
+
+<br>
+
+Groups, I want you to use the readings for today to evaluate the measurements produced in the Amnesty Reports
+
+- e.g. the AI FAQ and Clark and Sikkink (2013) 
+
+<br>
+
+Focus on HOW the measures are constructed using this process.
+
+- Work directly on the board and keep track of the strengths and weaknesses you identify along the way
+
+<br>
+
+### Questions on the exercise?
+
+- Get to it!
+
+*Save notes from class*
+- ?
+
+<br>
+
+Notes
+
+Clark and Sikkink (2013) p545-547
+
+- "AI draws on material collected by AI researchers from domestic human rights organizations, other observers, and sometimes on-site missions" (p545).
+- "The State Department draws on in-country embassy staff reports in addition to information generated by NGOs and other observers."
+- Important caveats for all human rights data:
+    - During major episodes it can be hard to know what is going on and how many have been injured
+    - Repressive govts often try to hinder NGOs or hide these activities
+- Neither source aims to produce data for academic indices so be careful using them as such
+- Serious over time differences in each orgs approach: formulas have changed, definitions have changed, level of detail has changed, scope of countries covered has changed, levels of staffing/expertise in a given country also changes over time
+- Early AI reports were a brief summary of activities by the group for its members so focused only on places with ongoing problems
+- Early State reports were focused on US aid recipients only and some early reports show political biases (see Guatemala reports in early 1980s)
+- Information quality has improved for both across time
+- Different motivational perspectives: State department tends to focus on the organizational level whereas AI places high value on the life of every individual harmed
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+![](Images/03-3-amnesty_international.jpg){style="display: block; margin: 0 auto"}
+
+::: notes
+
+Ok, given all of these strengths and weaknesses, what are our takeaways?
+
+### What is our best advice for using these reports to analyze political violence by governments around the world?
+
+### - In other words, how do we access the signal in the AI Reports while minimizing the noise?
+
+<br>
+
+Ok, now each of you take your own best advice.
+
+### What are examples of conclusions in the reports you read for today that you believe are most likely valid and reliable? Why?
+
+- Everybody give me one example from there country cases
+
+<br>
+
+### What are examples of conclusions you might consider lower validity or lower reliability? Why?
+
+- Everybody give me one example from there country cases
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+:::: {.columns}
+::: {.column width="50%"}
+![](Images/03-3-amnesty_international.jpg)
+:::
+
+::: {.column width="50%"}
+![](Images/03-3-USDeptState.png)
+:::
+::::
+
+::: notes
+
+Let's end today by comparing the sources.
+
+### Did you prefer reading the AI reports or the State Department reports? Why?
+
+### - Which version was more informative? Why?
+
+<br>
+
+### How consistent are these two sources on each country? How much overlap?
+
+<br>
+
+### How independent are the two sources?
+
+### - In other words, does including both in your analysis increase your confidence or do you get the feeling they read and are influenced by each others' reports?
+
+<br>
+
+### Did anybody learn anything about their countries that surprised them? Challenged a preconceived notion?
+
+<br>
+
+### Did anybody have a country case that changed a great deal between 2020 and 2021?
+
+:::
+
+
+
+## For Next Class {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+<br>
+
+::: {.r-fit-text}
+
+**Exploring the Political Terror Scale (PTS)**
+
+1. Evaluate the codebook
+
+2. Evaluate the data
+
+:::
+::: notes
+
+Details on Canvas
+
+<br>
+
+Canvas Assignment: Explore the Political Terror Scale (PTS)
+
+1. Read the Political Terror Scale (PTS) Codebook (PTS-Codebook-V220.pdf) and submit AT LEAST ONE strength and AT LEAST ONE weakness of the methodology
+
+2. Audit the data (PTS-2024.xlsx) for your two country cases. Do you agree with the PTS scores for your two country cases? Why or why not?
+*If Needed:*
+
+<br>
+
+Excel Basics on [Sorting](https://www.excel-easy.com/data-analysis/sort.html) and [Filtering](https://www.excel-easy.com/data-analysis/filter.html) data
+
+
+:::
+
+
+
+
+
+

@@ -1,0 +1,134 @@
+---
+output:
+  xaringan::moon_reader:
+    css: ["default", "extra.css"]
+    lib_dir: libs
+    seal: false
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: '16:9'
+---
+
+```{r, echo = FALSE, warning = FALSE, message = FALSE}
+##xaringan::inf_mr()
+## For offline work: https://bookdown.org/yihui/rmarkdown/some-tips.html#working-offline
+## Images not appearing? Put images folder inside the libs folder as that is the main data directory
+
+library(tidyverse)
+##library(readxl)
+##library(stargazer)
+##library(kableExtra)
+##library(modelr)
+
+knitr::opts_chunk$set(echo = FALSE,
+                      eval = TRUE,
+                      error = FALSE,
+                      message = FALSE,
+                      warning = FALSE,
+                      comment = NA)
+```
+
+background-image: url('Images/00-Leviathan_Cover_55.png')
+background-size: 100%
+background-position: center
+class: middle
+
+.size70[**Today's Agenda**]
+
+<br>
+
+.size50[.center[
+Review our cases: How have we tried to stop autocracies from using violence against the people inside their borders?
+]]
+
+<br>
+
+.center[.size40[
+  Justin Leinaweaver (Fall 2025)
+]]
+
+::: notes
+
+### Prep for Class
+1. Use the same case sheet from last week for Monday's citations
+    - https://docs.google.com/document/d/1wWfBCAmcSC_mS87kNsIj4MUJi0EuOvTH-eAwhoAc4jE/edit?usp=sharing
+
+
+
+
+---
+
+background-image: url('Images/background-red.png')
+background-size: 100%
+background-position: center
+class: middle, center, inverse
+
+.size60[**What explains the variation in how and why states use violence against their citizens?**]
+
+::: notes
+
+Remember, our big goal for this section of the class is to answer this question.
+
+What explains the variation in how and why states use violence against their citizens?
+
+
+
+---
+
+background-image: url('Images/background-green_blue_swirl_side.jpg')
+background-size: 100%
+background-position: center
+class: middle, center
+
+.size60[**Paper 2 Prompt**]
+
+<br>
+
+.size50[Propose a specific strategy for reducing political violence by state governments. This can be focused at any level of action (e.g. individual, group, states, etc.).]
+
+::: notes
+
+Remember, our work today (and last Friday) is meant to help you start thinking about the next paper.
+
+That paper will ask you to propose a strategy for reducing the use of violence by states against their own citizens.
+
+
+
+---
+
+background-image: url('Images/background-blue_triangles.jpg')
+background-size: 100%
+background-position: center
+
+class: middle
+
+.size60[**For Today**]
+
+.size40[
+Bring to class a recent example of an individual, group, state or group of states taking a specific action to stop an autocracy from engaging in political violence.
+
+Be ready to explain what happened, the strategy being employed and some idea of how effective it appears to have been.
+
+**Submit APA citation before class.**
+]
+
+::: notes
+
+Let's hear your cases and then use them to build a list of strategies on the board.
+
+As we listen to the cases, let's think about how best to organize them.
+
+- By Type of Target?
+- By intiating actor?
+
+<br>
+
+*ON BOARD*
+
+### What do we learn from our cases today?
+
+### How difficult is it to influence the behavior of autocratic state governments?
+
+

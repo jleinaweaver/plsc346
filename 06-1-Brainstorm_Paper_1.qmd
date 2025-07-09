@@ -1,0 +1,189 @@
+---
+format: revealjs
+---
+
+## Today's Agenda {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+<br>
+
+**II. How and why do governments use violence against the people inside their borders?**
+
+::: {.r-fit-text}
+
+- Brainstorming Paper 1
+
+:::
+
+<br>
+
+::: r-stack
+Justin Leinaweaver (Fall 2025)
+:::
+
+::: notes
+Prep for Class
+
+1. Make sure you have five dry erase markers for class
+
+<br>
+
+This week we work on your first paper and set the table for Paper 2.
+
+<br>
+
+**SLIDE**: Paper 1 prompt
+
+:::
+
+
+
+## Paper 1 {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+<br>
+
+Which **SINGLE** data source would you recommend to someone interested in better understanding the use of political violence by governments around the world?
+
+- Your thesis should be a clear recommendation for **ONE** of the sources and should be supported by **AT LEAST THREE distinct reasons** for your recommendation
+
+- **A high quality recommendation** will also make clear **why** you are not recommending the other sources
+
+::: notes
+
+**Questions on the prompt?**
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+::: {.r-fit-text}
+**Sources of Political Violence Data**
+:::
+
+- The US State Department's "Country Reports on Human Rights Practices"
+
+- Amnesty International's "Annual Country Reports"
+
+- The Political Terror Scale (PTS)
+
+- The CIRIGHTS data project's "Physical Integrity Rights"
+
+- Varieties of Democracy's (V-Dem) "Personal Integrity Rights"
+
+::: notes
+
+*Split class into five GROUPS: One per source*
+
+- Go sit with your group and claim a section of board
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+1. The US State Department's "Country Reports on Human Rights Practices"
+2. Amnesty International's "Annual Country Reports"
+3. The Political Terror Scale (PTS)
+4. The CIRIGHTS data project's "Physical Integrity Rights"
+5. Varieties of Democracy's (V-Dem) "Personal Integrity Rights"
+
+<br>
+
+### Therefore, the SINGLE most useful source of political violence data is ...
+
+::: notes
+
+Groups, pretend you HAD to select ONLY your assigned source for the paper
+
+- Thesis: Therefore, the single most useful source of political violence data is X. 
+
+- Work directly *ON THE BOARD*
+
+- Diagram the argument you would make to support this conclusion
+
+<br>
+
+### Questions?
+
+- Get to work!
+
+<br>
+
+### PRESENT each, any other strengths to add to each list?
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+1. The US State Department's "Country Reports on Human Rights Practices"
+2. Amnesty International's "Annual Country Reports"
+3. The Political Terror Scale (PTS)
+4. The CIRIGHTS data project's "Physical Integrity Rights"
+5. Varieties of Democracy's (V-Dem) "Personal Integrity Rights"
+
+<br>
+
+### Rotate arguments and add weaknesses lists
+
+::: notes
+
+*Move Groups to Very Different Approaches*
+
+Groups move to critique a source
+
+- Group 1 (State) goes to 3 (PTS)
+- Group 2 (AI) goes to 4 (CIRIGHTS)
+- Group 3 (PTS) goes to 5 (V-Dem)
+- Group 4 (CIRIGHTS) goes to (AI)
+- Group 5 (V-Dem) goes to (State)
+
+<br>
+
+ADD a list of weaknesses next to their diagram *ON THE BOARD*
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+1. The US State Department's "Country Reports on Human Rights Practices"
+2. Amnesty International's "Annual Country Reports"
+3. The Political Terror Scale (PTS)
+4. The CIRIGHTS data project's "Physical Integrity Rights"
+5. Varieties of Democracy's (V-Dem) "Personal Integrity Rights"
+
+<br>
+
+### Add counter-argument premise(s) to your diagram
+
+::: notes
+
+GROUPS, go back to your argument and take some time to reflect on the weaknesses list
+
+- THEN add a single premise to your argument diagram that addresses the biggest weaknesses from the list
+
+<br>
+
+### PRESENT each and DISCUSS
+
+:::
+
+
+
+## For Next Class {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+<br>
+
+::: {.r-fit-text}
+Writing Workshop
+:::
+
+::: notes
+
+
+:::

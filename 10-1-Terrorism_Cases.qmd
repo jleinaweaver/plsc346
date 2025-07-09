@@ -1,0 +1,319 @@
+---
+format: revealjs
+---
+
+## Today's Agenda {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+```{r}
+library(tidyverse)
+library(readxl)
+library(kableExtra)
+
+# Data for today
+library(carData)
+```
+
+<br>
+
+**III. How and why do non-state actors use political violence?**
+
+<br>
+
+- Defining Terrorism: Case Studies
+
+<br>
+
+::: r-stack
+Justin Leinaweaver (Fall 2025)
+:::
+
+::: notes
+Prep for Class
+
+1. Review submissions on Canvas
+
+2. Prep a Google sheet for unpacking cases and publish on Modules
+    - [LINK]
+    
+3. Save notes from today for next class (e.g. end of class operationalization elements need to go into slides for next class)
+
+<br>
+
+Today we kick off the third section of our class.
+
+<br>
+
+What explains the variation in how and why non-state actors use political violence?
+
+- Specifically, we'll focus on terrorism.
+
+:::
+
+
+
+## Terrorism Case Studies {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+![](Images/10_1-Terrorism-Word-Cloud.jpg){style="display: block; margin: 0 auto"}
+
+::: notes
+
+**Everybody ready for our work today?**
+
+<br>
+
+**All citations in APA format?**
+
+:::
+
+
+
+## {background-image="Images/10_1-Terrorism_Background_darker.png" .center}
+
+:::: {.columns}
+::: {.column width="60%"}
+
+::: {.r-fit-text}
+
+[**"Terrorism"**]{style="color:white;"}
+
+[**1) Concept**]{style="color:white;"}
+
+[**2) Case studies**]{style="color:white;"}
+
+[**3) Operationalization**]{style="color:white;"}
+
+[**4) Instrumentation**]{style="color:white;"}
+
+[**5) Measurement**]{style="color:white;"}
+:::
+
+:::
+
+::: {.column width="40%"}
+
+:::
+::::
+
+::: notes
+
+For this week we attack "terrorism" using the steps we worked through in Week 2 (and since).
+
+<br>
+
+Our prompt for today focused on the concept of "terrorism"
+
+- Each of you has brought in a case that you argue represents this concept
+
+- Today we review, compare and contrast your cases to unpack our assumptions about the concept AND broaden our familiarity with the real-world debates about it
+
+- Ultimately our goal today is to operationalize the concept
+
+<br>
+
+### Refresh my memory, what does it mean to operationalize a concept and how do I know if my operationalization is useful?
+
+- (Operationalization is "...selecting observable phenomena to represent abstract concepts" (89).)
+
+- ("To be useful...operational definitions must tell us **precisely and explicitly** what to do in order to determine what quantitative value should be associated with a variable in any given case (92).)
+
+<br>
+
+As we did in Week 7 I'd like us to begin by unpacking your cases.
+
+- **SLIDE**: Everybody open up the link to the Google Sheet on Modules: Wk10 - Unpacking the Cases: Terrorism
+
+<br>
+
+Notes
+
+- Brians, Craig Leonard, Lars Willnat, Jarol B. Manheim, and Richard C. Rich. 2011. “From Abstract to Concrete: Operationalization and Measurement.” In Empirical Political Analysis, Boston, MA: Longman, (ONLY p88-110)
+
+:::
+
+
+
+## {background-image="Images/10_1-Terrorism_Background_darker.png" .center}
+
+::: {.r-fit-text}
+[**Unpacking the Cases**]{style="color:white;"}
+
+[1. Who did it?]{style="color:white;"}
+
+[2. Who (or what) was the target?]{style="color:white;"}
+
+[3. What was the specific act?]{style="color:white;"}
+
+[4. What was the stated rationale for the act?]{style="color:white;"}
+
+[5. What was the immediate result?]{style="color:white;"}
+
+[6. Any other important context for your case?]{style="color:white;"}
+
+:::
+
+::: notes
+
+**Any questions on these prompts?**
+
+<br>
+
+That last one gives you space for any other important details that explain why you chose this case that isn't captured in these other questions.
+
+<br>
+
+Go!
+
+<br>
+
+Everybody take a few minutes to review the cases
+
+- Try to get a sense of what was submitted and how they might fit together under a single conceptual label.
+
+<br>
+
+**Any questions or need for clarification on the cases?**
+
+:::
+
+
+
+## {background-image="Images/10_1-Terrorism_Background_darker.png" .center}
+
+::: {.r-fit-text}
+[**Unpacking the Cases**]{style="color:white;"}
+
+[1. Who did it?]{style="color:white;"}
+
+[2. Who (or what) was the target?]{style="color:white;"}
+
+[3. What was the specific act?]{style="color:white;"}
+
+[4. What was the stated rationale for the act?]{style="color:white;"}
+
+[5. What was the immediate result?]{style="color:white;"}
+
+[6. Any other important context for your case?]{style="color:white;"}
+
+:::
+
+::: notes
+
+*Split class into small groups (4?)*
+
+<br>
+
+GROUPS, compare and contrast all of the cases in order to construct a definition of terrorism
+
+- In a sense, ask yourself what is common or most important to the cases unpacked by our class and use that to build a definition.
+
+- You do not have to include elements from all six questions! 
+    - Your group should determine what is important and what isn't in your definition
+
+<br>
+
+### Questions?
+
+- Let's go! Get those definitions up on the board!
+
+<br>
+
+PRESENT and DISCUSS each
+
+### Out of curiosity, as you scrolled through the "data" which variables struck you as most important? Why?
+
+<br>
+
+Class Notes
+
+*2019 class*
+
+Common Chars
+
+- one-sided violence
+- Important purpose more important than survival
+- Cause fear
+- Political
+- Non-state actor
+- Intend to maximize casualties
+- Strategic
+- Claimed by or affiliated with known terror group
+- Motivated to target a specific group (religion/race/ethnicity)
+
+Groupings
+
+- Domestic vs international
+- Specific goal vs spur of the moment
+- Unaffiliated vs affiliated with group
+- Violence vs threat
+
+Key Questions
+
+- Fear as the goal?
+- Action done by state, non-state or both?
+- Targets politically motivated or other aims included (e.g. profit?)
+- Proximity to the violent act (do the bombing vs send someone to do it vs funding groups who act in ways you like?)
+
+*2015 class*
+
+- Civilians or not?
+- attacking people not related to the policy you object to
+- Terror / fear important
+- Connections to other terror actions
+- Attacks on freedom of expression (e.g. specific policy)
+- Ideological objectives too
+- In response to the actions of a government actor
+- Attack on a building, no deaths, symbolic violence
+- Acts meant to intimidate, may or may not be related to a specific policy change
+- Revenge against government overreach
+- Direct opposition to a government
+- Providing support to a violent group as terrorism
+- Groups vs individuals
+- To make a statement
+- To deliver harm to a government
+- Done by a "terror group"
+- Targeting a government vs targeting military
+- nature of the group, non-state
+- Targeting government, act of protest
+- Kidnapping as form of violence, targeting civilians, spreading fear 
+
+:::
+
+
+
+## Defining Terrorism {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+![](Images/10_1-Terrorism-Word-Cloud.jpg){style="display: block; margin: 0 auto"}
+
+::: notes
+
+Alright, let's combine our efforts.
+
+- Can we operationalize terrorism based on our work today?
+
+- *ON BOARD*
+
+:::
+
+
+
+## For Next Class {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+<br>
+
+Submit reflections on Canvas:
+
+1. Tilly (2004). Terror, Terrorism, Terrorists.
+
+2. Schmid (2023). Defining Terrorism.
+
+::: notes
+
+Next class I've assigned you two academic attempts to define terrorism.
+
+- Let's read those and see how they compare with our work!
+
+<br>
+
+Reflections due on Canvas before class
+
+:::

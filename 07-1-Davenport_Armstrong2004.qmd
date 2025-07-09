@@ -1,0 +1,692 @@
+---
+format: revealjs
+---
+
+## Today's Agenda {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+```{r}
+library(tidyverse)
+library(readxl)
+library(kableExtra)
+```
+
+<br>
+
+**II. How and why do governments use violence against the people inside their borders?**
+
+<br>
+
+Theories of "Political Violence"
+
+- Davenport & Armstrong (2004) "Democracy and the Violation of Human Rights: A Statistical Analysis from 1976 to 1996"
+
+<br>
+
+::: r-stack
+Justin Leinaweaver (Fall 2025)
+:::
+
+::: notes
+Prep for Class
+
+1. Review Canvas submissions
+
+2. Davenport & Armstrong (2004) "Democracy and the Violation of Human Rights: A Statistical Analysis from 1976 to 1996"
+
+<br>
+
+Remember, our big goal for this section of the class is to answer this question.
+
+- How and why do governments use violence against the people inside their borders?
+
+<br>
+
+For the next two weeks we shift our attempts to answer this question from evaluating data to evaluating models
+
+- e.g. theoretical explanations for the violence we seen states using
+
+<br>
+
+This week we will focus on models of violence by "democratic" states
+
+- Next week we will shift our focus to violence by "autocratic" states
+
+:::
+
+
+
+## {background-image="Images/07_1-Castle_Neuschwanstein.jpg"}
+
+::: {.r-fit-text}
+[**How do D&A (2004) frame their research project?**]{style="color:white;"}
+:::
+
+::: notes
+
+Let's start by talking about the framing of the article.
+
+<br>
+
+### Has anybody come across the framing concept before in other classes? What does framing in those contexts refer to?
+
+(In political communications and psychology framing often refers to a way of presenting an issue to elicit a desired response)
+
++ No one drills for oil, they explore!
+
++ No one identifies as wanting to kill babies, they are pro-choice
+
++ No one identifies as being anti-woman, they are pro-life
+
+<br>
+
+### Make sense?
+
+<br>
+
+Framing is also a useful way to think about a research contribution.
+
+- Every research paper represents a set of conclusions about the world.
+
+- e.g. Here's what we know now that we didn't before.
+
+<br>
+
+In other words, here's my castle, isn't it stunning?
+
+- This is what the title, the abstract, the introduction and the conclusion of a research paper are trying to sell you.
+
+:::
+
+
+
+## {background-image="Images/07_1-house_framing.jpg"}
+
+::: notes
+
+The rest of the paper presents a careful discussion of how you built your castle.
+
+- Every choice you make along the way has a MASSIVE impact on the end product.
+
+- What makes our work "science" is that we are completely transparent about all of these choices.
+
+### Still with me?
+
+<br>
+
+### What are the kinds of choices in any research article that relate to the most basic framing of the project?
+
+1. (What is the question and how is it worded? By asking the question in this way, whose interests are you prioritizing? Who might you be leaving out?)
+
+2. (How are you defining the big concepts?)
+
+3. (What literature are you connected to? Which disciplines are you focusing on?)
+
+<br>
+
+### Does this make sense?
+
+- The framing of the article represents HUGE choices made by the researchers before we get to any of what we might consider the analyses to be.
+
+<br>
+
+*SPLIT class into 3 GROUPS*
+
+- Go sit with your group!
+
+:::
+
+
+
+## Davenport & Armstrong (2004) {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+<br>
+
+::: {.r-fit-text}
+**Evaluate the Framing**
+
+1. Research question
+
+2. Key concepts
+
+3. Connections to the literature
+:::
+
+::: notes
+
+Let's start by exploring the framing of the article.
+
+- GROUPS, take a few minutes and get ready to share your thoughts about the framing of this research paper
+
+- Think BIG PICTURE, e.g. how the researchers set up their project
+
+<br>
+
+REPORT BACK and DISCUSS
+
+<br>
+
+Notes
+
+- Research Q: "What is the influence, if any, of democracy on repression?" 539
+
+:::
+
+
+## Davenport & Armstrong (2004) {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+<br>
+
+::: {.r-fit-text}
+**Evaluate the Models**
+
+1. All Steps Lead to Peace (p540)
+
+2. Some Steps are Better than Others (p541)
+
+3. Steps of Distinction (p542)
+:::
+
+::: notes
+
+Our next task is to dig into the models of political violence explored in this paper.
+
+<br>
+
+This paper proposes, and then tests, three conceivable models of political violence in a democracy (p538-543).
+
+- Assign each GROUP to one MODEL
+
+<br>
+
+GROUPS, I want you to diagram the interests, institutions and interactions in your model ON THE BOARD
+
+- Go!
+
+<br>
+
+**SLIDE**: Before we present your diagrams I want you to add one more thing.
+
+:::
+
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+```{r, fig.retina=3, fig.align='center', fig.asp=0.7, fig.width=4.5, out.width='85%', cache=TRUE}
+# Set up plot (empty)
+tibble(
+  x = 1:21,
+  y = 21:1
+) |>
+  ggplot(aes(x = x, y = y)) +
+  theme_classic() +
+  labs(x = "Level of Democracy", y = "Willingness to Use Violence") +
+  scale_x_continuous(labels = NULL)  +
+  scale_y_continuous(labels = NULL)
+```
+
+::: notes
+
+I want each group to visualize the predictions of their model.
+
+- The Outcome: Government willingness to use violence
+
+- The Predictor: level of democratization
+
+<br>
+
+Here we see an empty plot
+
+- y-axis: willingness to use violence
+
+- x-axis: level of democratization
+
+- Remember we always put the outcome of interest on the y-axis.
+
+<br>
+
+Based on your model, draw us a line that represents the model's prediction for violence as we increase the level of democracy in a country.
+
+### Questions on this?
+
+- Go!
+
+<br>
+
+PRESENT and DISCUSS each
+
+- **SLIDE** x 3: My version of each
+
+:::
+
+
+
+## All Steps Lead to Peace {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+:::: {.columns}
+::: {.column width="50%"}
+
+<br>
+
+```{r, fig.retina=3, fig.align='center', fig.asp=.9, fig.width=4.5, out.width='100%', cache=TRUE}
+# All Steps Lead to Peace (p540)
+tibble(
+  x = 1:21,
+  y = 21:1
+) |>
+  ggplot(aes(x = x, y = y)) +
+  geom_line(linewidth = 1.3) +
+  theme_classic() +
+  labs(x = "Level of Democracy", y = "Willingness to Use Violence") +
+  ggtitle("All Steps Lead to Peace (p540)") +
+  scale_x_continuous(labels = NULL)  +
+  scale_y_continuous(labels = NULL)
+```
+:::
+
+::: {.column width="50%"}
+**Interests**
+
+- Citizens want "good" leaders
+- Leaders want political survival
+
+**Institutions**
+
+- Democratic regimes include more checks and balances on the leader
+
+**Interactions**
+
+More democracy = 
+
+- Easier to remove "bad" leaders
+- Other branches block "bad" behavior
+- Stronger norms of non-violent leadership
+:::
+::::
+
+::: notes
+
+I'm thinking of "good" leadership here as a broad concept
+- Respect for rights, public goods provision, non-violence
+
+<br>
+
+Bottom line
+1. Democratization increases checks and balances on the leader
+
+2. Those checks and balances make repression expensive, inappropriate and unnecessary
+
+<br>
+
+Notes from class: 2/28/22
+
+Interests
+
+- Citizens want rights (rights lead to growth?)
+- Leaders want political survival
+
+Institutions
+
+- Regime type matters (rules of operation)
+- Democracies include greater checks and balances than dictatorships
+
+Interactions
+
+- As countries get more democratic (more rights) the costs of repression increase 
+:::
+
+
+
+
+## Some Steps are Better Than Others {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+:::: {.columns}
+::: {.column width="50%"}
+
+<br>
+
+```{r, fig.retina=3, fig.align='center', fig.asp=.9, fig.width=4.5, out.width='100%', cache=TRUE}
+# Some Steps are Better Than Others
+tibble(
+  x = -10:10,
+  y = -2*x^2 + 10
+  ) |>
+  ggplot(aes(x = x, y = y)) +
+  geom_line(linewidth = 1.3) +
+  theme_classic() +
+  labs(x = "Level of Democracy", y = "Willingness to Use Violence",
+       title = "Some Steps are Better Than Others",
+       subtitle = "More Murder in the Middle (MMM)") +
+  scale_x_continuous(labels = NULL)  +
+  scale_y_continuous(labels = NULL)
+```
+:::
+
+::: {.column width="50%"}
+**Interests**
+
+- Citizens want "good" leaders
+- Leaders want political survival
+
+**Institutions**
+
+- Regime coherence structures domestic behavior
+
+**Interactions**
+
+- "Open" regimes can punish "bad" leadership (less repression)
+- "Closed" regimes bargain for power (less repression)
+- "Mixed" regimes have higher uncertainty (more repression)
+:::
+::::
+
+::: notes
+
+Regimes can be classified in three levels in terms of coherence:
+
+- Fully open or fully closed regimes are coherent meaning the leader knows what the repercussions for their actions will be
+
+1. "Open" regimes: Vote is allowed and legislature can overrule the executive
+    - Fully open: Authorities know they can't "generally" apply repression without consequence
+
+2. "Closed" regimes: No vote, legislature cannot interfere
+    - Fully closed: Authorities typically want to avoid repression bc lack of repression is often the bargain being made for maintaining total power (harm the people and they will rethink this deal that trades rights for other "goods" e.g. growth, safety, etc.)
+
+3. Incoherent systems: e.g. elections are allowed but legislature cannot overrule the executive 
+    - Where violence happens
+    - Voting allowed but no chance to overrule citizens have no real idea of how they can influence government and leaders have much space to use repression to maintain control and with few serious costs
+
+<br>
+
+Notes from class: 2/28/22
+
+Interests
+
+- Citizens want rights (rights lead to growth?)
+- Leaders want political survival
+
+Institutions
+
+- Regime type matters...
+    - Focuses on two mechanisms: 1) Voting, and 2) Ability of legislature to constrain or overrule executive
+    - Full democracies (Fully open) and full dictatorships (fully closed) see little incentive for violence
+    - Fully Open systems: Vote is allowed and legislature can overrule the executive
+    - Fully closed: No vote, legislature cannot interfere
+
+Interactions
+
+- The muddled middle (incoherent systems with some of each) is where violence happens
+    - Voting allowed but no chance to overrule citizens have no real idea of how they can influence government and leaders have much space to use repression to maintain control and with few serious costs
+
+:::
+
+
+
+
+## Steps of Distinction {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+:::: {.columns}
+::: {.column width="50%"}
+
+<br>
+
+```{r, fig.retina=3, fig.align='center', fig.asp=.9, fig.width=4.5, out.width='100%', cache=TRUE}
+# Steps of Distinction (p542)
+tibble(
+  x = 1:21,
+  y = c(rep(7,16), rep(0, 5))
+  ) |>
+  ggplot(aes(x = x, y = y)) +
+  geom_line(linewidth = 1.3) +
+  theme_classic() +
+  labs(x = "Level of Democracy", y = "Willingness to Use Violence",
+       title = "Steps of Distinction") +
+  scale_x_continuous(labels = NULL)  +
+  scale_y_continuous(labels = NULL)
+```
+:::
+
+::: {.column width="50%"}
+**Interests**
+
+- Citizens want "good" leaders
+- Leaders want political survival
+
+**Institutions**
+
+- Domestic institutions structure behavior
+- Domestic norms structure behavior
+
+**Interactions**
+
+- Reducing the incentive to repress requires a combination of fully operational and autonomous institutional and behavioral mechanisms
+:::
+::::
+
+::: notes
+
+The incentive to use repression depends on both institutional and behavioral factors 
+
+- Only when a sufficient number of the mechanisms are fully operational and autonomous is the leader's incentive to repress reduced/eliminated
+
+- Institutional: 
+    - Elections, 
+    - Legalized peaceful party opposition,
+    - checks and balances, 
+
+- Behavioral: 
+    - "costs of coercion rise ... whenever elites and the general population of a country develop a sense of nationahood that includes the opposition; a distaste for violence; or, a commitment to a liberal ideology" (Dahl 1966).
+
+<br>
+
+Notes from class: 2/28/22
+
+Interests
+
+- Citizens want rights (rights lead to growth?)
+- Leaders want political survival
+
+Institutions
+
+- Regime type matters...
+- Democracy requires many separate checks and balances be enshrined and respected
+
+Interactions
+
+- Only when a sufficient number of the mechanisms are fully operational and autonomous is the leader's incentive to repress reduced/eliminated
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+:::: {.columns}
+::: {.column width="50%"}
+```{r, fig.retina=3, fig.align='center', fig.asp=0.618, out.width='95%', fig.width=4}
+# All Steps Lead to Peace (p540)
+tibble(
+  x = 1:21,
+  y = 21:1
+) |>
+  ggplot(aes(x = x, y = y)) +
+  geom_line(linewidth = 1.3) +
+  theme_classic() +
+  labs(x = "Level of Democracy", y = "Willingness to Use Violence") +
+  ggtitle("All Steps Lead to Peace (p540)") +
+  scale_x_continuous(breaks = NULL)  +
+  scale_y_continuous(breaks = NULL)
+```
+:::
+
+::: {.column width="50%"}
+```{r, fig.retina=3, fig.align='center', fig.asp=0.618, out.width='95%', fig.width=4}
+# Some Steps are Better Than Others
+tibble(
+  x = -10:10,
+  y = -2*x^2 + 10
+  ) |>
+  ggplot(aes(x = x, y = y)) +
+  geom_line(linewidth = 1.3) +
+  theme_classic() +
+  labs(x = "Level of Democracy", y = "Willingness to Use Violence",
+       title = "Some Steps are Better Than Others",
+       subtitle = "More Murder in the Middle (MMM)") +
+  scale_x_continuous(breaks = NULL)  +
+  scale_y_continuous(breaks = NULL)
+```
+:::
+::::
+
+```{r, fig.retina=3, fig.align='center', fig.asp=0.618, out.width='48%', fig.width=4}
+# Steps of Distinction (p542)
+tibble(
+  x = 1:21,
+  y = c(rep(7,16), rep(0, 5))
+  ) |>
+  ggplot(aes(x = x, y = y)) +
+  geom_line(linewidth = 1.3) +
+  theme_classic() +
+  labs(x = "Level of Democracy", y = "Willingness to Use Violence",
+       title = "Steps of Distinction") +
+  scale_x_continuous(breaks = NULL)  +
+  scale_y_continuous(breaks = NULL)
+```
+
+::: notes
+
+Consider all three models now.
+
+### Where would Weber (1946) come down on these? Does one of these reflect his view of state violence?
+
+<br>
+
+### How about Olson (1993)? Is one of these closer to "the state uses violence in productive ways" argument?
+
+<br>
+
+Let's now talk about the real-world implications of these competing models.
+
+*Super fun conversation last time*
+
+### What does each model tell us about the ability to use regime change as a foreign policy tool to establish democracies and reduce political violence?
+
++ (Model 1 implies a roller-coaster effect possible. Push them down the slope and it may be self-reinforcing)
+
++ (Model 2 implies meaningful democratization takes pushing them past the inflection point in the middle of the inverted curve; hard to do but still possible?)
+
++ (Model 3 implies it may be impossible; depending on what is involved in the critical inflection point) 
+
+<br>
+
+**SLIDE**: Let's take all this theory material into the empirical world
+
+:::
+
+
+
+## Davenport & Armstrong (2004) {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+<br>
+
+::: {.r-fit-text}
+**Evaluate the Measurements**
+
+- **Outcome**: State Repressive Activity (p544-545)
+
+- **Predictor**: Political Democracy (p545-546)
+:::
+
+::: notes
+
+GROUPS, take a moment and get ready to discuss if you are convinced that these are VALID and RELIABLE measures.
+
+- DISCUSS
+
+<br>
+
+### And which of the three models is best supported by their analyses?
+
+- (**SLIDE**)
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+![](Images/07_1-Davenport_Fig1.png){style="display: block; margin: 0 auto"}
+
+::: notes
+
+Figure 1 is a nice visual representation of their findings.
+
+### So, which model is this?
+
+- (**SLIDE**)
+
+:::
+
+
+
+## Davenport & Armstrong (2004) {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+:::: {.columns}
+::: {.column width="50%"}
+![](Images/07_1-Davenport_Fig1.png)
+:::
+
+::: {.column width="50%"}
+
+<br>
+
+```{r, fig.retina=3, fig.align='center', fig.asp=0.8, out.width='98%', fig.width=4}
+# Steps of Distinction (p542)
+tibble(
+  x = 1:21,
+  y = c(rep(7,16), rep(0, 5))
+  ) |>
+  ggplot(aes(x = x, y = y)) +
+  geom_line(linewidth = 1.3) +
+  theme_classic() +
+  labs(x = "Level of Democracy", y = "Willingness to Use Violence",
+       title = "Steps of Distinction") +
+  scale_x_continuous(labels = NULL)  +
+  scale_y_continuous(labels = NULL)
+```
+:::
+::::
+
+::: notes
+
+Ok, where do we end up?
+
+### Are we convinced this model, the steps of distinction, is the most useful way to think about government violence? Why or why not?
+
+<br>
+
+### What does this model tell us about promoting democracy as a strategy for reducing political violence around the world?
+
+:::
+
+
+
+## For Next Class {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+<br>
+
+Piazza (2023)
+
+- Submit analysis to Canvas
+
+::: notes
+
+
+
+<br>
+
+**Questions on the assignment?**
+
+:::
+

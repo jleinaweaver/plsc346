@@ -1,0 +1,578 @@
+---
+format: revealjs
+---
+
+## Today's Agenda {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+```{r}
+library(tidyverse)
+library(readxl)
+library(kableExtra)
+```
+
+<br>
+
+**III. How and why do non-state actors use political violence?**
+
+<br>
+
+- Jasko, LaFree, Piazza & Becker (2022). A comparison of political violence by left-wing, right-wing, and Islamist extremists in the United States and the world.
+
+<br>
+
+::: r-stack
+Justin Leinaweaver (Fall 2025)
+:::
+
+::: notes
+Prep for Class
+
+1. Review submissions on Canvas
+
+<br>
+
+Today I gave you a recent research article that uses the data we've been exploring over the last two weeks to answer some important questions about the connections between radical ideologies and the use of violence
+
+- For our purposes, I want us to continue our exploration of whether or not FRT is sufficiently distinct from other kinds as to be considered a new "wave" or not.
+
+<br>
+
+**SLIDE**: But first, refresh my memory!
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+::: {.r-fit-text}
+**Collins (2021) "A New Wave of Terrorism?"**
+:::
+
+:::: {.columns}
+::: {.column width="50%"}
+![](Images/13_1-Collins_Figure7.png){style="display: block; margin: 0 auto"}
+:::
+
+::: {.column width="50%"}
+![](Images/13_1-Collins_Figure8.png){style="display: block; margin: 0 auto"}
+:::
+::::
+
+::: notes
+
+**What was Collins (2021) argument about Far Right Terrorism (FRT)?**
+
+- **Is it the fifth wave of global terrorism? Why or why not?**
+
+<br>
+
+1. Methods used:
+    - Used GTD data to select cases
+    - Mixed-methods case studies: Germany, US, UK and Scandinavia
+
+2. Empirical argument: FRT groups have common "type", "prompting cause" and a "common predominant energy"
+
+<br>
+
+Notes
+
+- David Rapoport’s Modern Waves of Terrorism Theory
+- Waves identify "motivations, targets, weapon types, group belongings, ideologies, and reoccurring patterns" that help us understand and, hopefully, address the rise of terrorism
+- “The Four Waves of Modern Terrorism” defines a wave as a cycle that takes place over a 40-year time period. Each cycle is dynamic in that it expands and contracts.
+- Groups within a particular wave adapt to the exigencies of their time, are aware of the actions of other contemporary terrorist groups in other countries, and are driven by a relentless energy that propels them into violent action. They share a common technological facility, including communications, weaponry, and logistics. Most important, they share a vision that perceives in the ills and abuses of the world the seeds of a revolutionary future.
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+::: {.r-fit-text}
+**PIRUS Dataset: "A New Wave of Terrorism?"**
+:::
+
+```{r, fig.retina=3, fig.align='center', out.width='77%', fig.asp = 0.618, cache=FALSE}
+library(readxl)
+
+d <- read_excel("../../Data/PIRUS/PIRUS_February_2025/PIRUS V5.xlsx", guess_max = 10000)
+
+d |>
+  select(Subject_ID, Year_Exposure, Radicalization_Islamist, Radicalization_Far_Right, Radicalization_Far_Left, Radicalization_Single_Issue) |>
+  pivot_longer(cols = Radicalization_Islamist:Radicalization_Single_Issue, names_to = "Ideology", values_to = "Value") |>
+  filter(Value == 1) |>
+  mutate(
+    Ideology = case_when(
+      Ideology == "Radicalization_Islamist" ~ "Islamist",
+      Ideology == "Radicalization_Single_Issue" ~ "Single Issue",
+      Ideology == "Radicalization_Far_Right" ~ "Far-Right",
+      Ideology == "Radicalization_Far_Left" ~ "Far-Left"
+    )
+  ) |>
+  group_by(Year_Exposure) |>
+  count(Ideology) |>
+  ggplot(aes(x = Year_Exposure, y = n, color = Ideology)) +
+  geom_line(linewidth = 1.1) +
+  theme_bw() +
+  labs(x = "", y = "", title = "Count of US radicals by ideology and year of exposure") +
+  theme(legend.position = c(.2, .8), legend.background = element_rect(fill = "white", colour = "black")) +
+  #scale_color_brewer(type = "qual", palette = 3)
+  scale_color_viridis_d() +
+  scale_x_continuous(breaks = seq(1940, 2025, 5), labels = seq(1940, 2025, 5))
+```
+
+::: notes
+
+Last class we explored the PIRUS dataset
+
+**What were out takeaways from exploring that data?**
+
+- **Does the US have a serious and growing problem with FRT? Why or why not?**
+
+<br>
+
+**SLIDE**: Today's research article
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+![](Images/13_3-PNAS_Cover.png){style="display: block; margin: 0 auto"}
+
+::: {.r-fit-text}
+- Study 1: US Data (PIRUS)
+
+- Study 2: Global Data (GTD)
+:::
+
+::: notes
+
+That all brings us to a recent research article that uses the data we've been exploring over the last two weeks to answer some important questions about the connections between radical ideologies and the use of violence
+
+- These authors perform two studies: one in the US using PIRUS and the other using global data from the GTD
+
+<br>
+
+I want us to begin with Study 1 but first I want to go back to our PIRUS data from last class.
+
+- Simple tables and visualizations are very powerful BUT almost certainly show associations and NOT causation
+
+<br>
+
+**SLIDE**: Simple counts
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+:::: {.columns}
+::: {.column width="50%"}
+```{r, fig.retina=3, fig.asp=0.618, fig.align='center', out.width='100%', fig.width = 6.5}
+# Acts by ideology: Which more violent?
+d2 <- d |>
+  select(Subject_ID, Violent, Radicalization_Islamist, Radicalization_Far_Right, Radicalization_Far_Left, Radicalization_Single_Issue) |>
+  pivot_longer(cols = Radicalization_Islamist:Radicalization_Single_Issue, names_to = "Ideology", values_to = "Value") |>
+  filter(Value == 1) |>
+  mutate(
+    Ideology = case_when(
+      Ideology == "Radicalization_Islamist" ~ "Islamist",
+      Ideology == "Radicalization_Single_Issue" ~ "Single Issue",
+      Ideology == "Radicalization_Far_Right" ~ "Far-Right",
+      Ideology == "Radicalization_Far_Left" ~ "Far-Left"
+    )
+  ) |>
+  group_by(Ideology) |>
+  count(Violent)
+
+
+# Violent Act
+# Table
+d2 |>
+  pivot_wider(names_from = Violent, values_from = n) |>
+  rename("Not" = `0`, "Violent Act" = `1`) |>
+  kbl(align = 'c') |>
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed"), font_size = 24)
+
+# Bar plot
+d2 |>
+  mutate(
+    Violent = if_else(Violent == 1, "Violent Act", "Not")
+  ) |>
+  ggplot(aes(x = Ideology, y = n, fill = Violent)) +
+  geom_col(position = "fill", width = .7) +
+  #geom_hline(yintercept = .5, color = "red") +
+  labs(x = "", y = "Proportion of Observations", fill = "") +
+  scale_y_continuous(labels = scales::percent_format()) +
+  scale_fill_brewer(type = "qual", palette = 6, direction = -1) +
+  guides(fill = "none") +
+  theme_bw() +
+  annotate("text", x = 1, y = c(.4, .87), label = c("Violent Acts", "Not\nViolent"), size = 4.5, color = "white", srt = 90) +
+  scale_x_discrete(limits = c("Islamist", "Far-Right", "Single Issue", "Far-Left"))
+```
+:::
+
+::: {.column width="50%"}
+```{r, fig.retina=3, fig.asp=0.618, fig.align='center', out.width='100%', fig.width = 6.5}
+# Aimed for mass causalty? four or more people being killed or injured
+# Acts by ideology: Which more violent?
+d3 <- d |>
+  select(Subject_ID, Primary_Event_Mass_Casualty_Incident, Radicalization_Islamist, Radicalization_Far_Right, Radicalization_Far_Left, Radicalization_Single_Issue) |>
+  pivot_longer(cols = Radicalization_Islamist:Radicalization_Single_Issue, names_to = "Ideology", values_to = "Value") |>
+  filter(Value == 1) |>
+  mutate(
+    Ideology = case_when(
+      Ideology == "Radicalization_Islamist" ~ "Islamist",
+      Ideology == "Radicalization_Single_Issue" ~ "Single Issue",
+      Ideology == "Radicalization_Far_Right" ~ "Far-Right",
+      Ideology == "Radicalization_Far_Left" ~ "Far-Left"
+    )
+  ) |>
+  group_by(Ideology) |>
+  count(Primary_Event_Mass_Casualty_Incident)
+
+
+# Violent Act
+# Table
+d3 |>
+  filter(Primary_Event_Mass_Casualty_Incident != -88) |>
+  pivot_wider(names_from = Primary_Event_Mass_Casualty_Incident, values_from = n) |>
+  rename("Not" = `0`, "Mass Casualty" = `1`) |>
+  kbl(align = 'c') |>
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed"), font_size = 24)
+
+# Bar plot
+d3 |>
+  filter(Primary_Event_Mass_Casualty_Incident != -88) |>
+  mutate(
+    Mass_Casualty = if_else(Primary_Event_Mass_Casualty_Incident == 1, "1 Mass Casualty", "0 Not")
+  ) |>
+  ggplot(aes(x = Ideology, y = n, fill = Mass_Casualty)) +
+  geom_col(position = "fill", width = .7) +
+  labs(x = "", y = "Proportion of Observations", fill = "") +
+  scale_y_continuous(labels = scales::percent_format()) +
+  scale_fill_brewer(type = "qual", palette = 6, direction = -1) +
+  guides(fill = "none") +
+  theme_bw() +
+  annotate("text", x = 1, y = c(.45, .94), label = c("Mass Casualty", "Not"), size = 4.5, color = "white", srt = 90) +
+  scale_x_discrete(limits = c("Islamist", "Far-Left", "Far-Right", "Single Issue"))
+```
+:::
+::::
+
+::: notes
+
+**What do we learn from these bar plots that count violent or mass casualty actions by ideological extremists?**
+
+<br>
+
+Pretty staggering association between violence and Islamist ideology
+
+- BUT this is a correlation, NOT evidence of causation
+
+- We should NOT conclude that Islamism leads to violence
+
+<br>
+
+### Reaching back to Data Analysis, how do we move from association to causation?
+
+- (**SLIDE**)
+
+:::
+
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+::: {.r-fit-text}
+
+**Making a Causal Argument**
+
+1. Theory
+
+2. Representative sample
+
+3. Observational Data: Control for confounders
+
+:::
+
+::: notes
+
+First, you MUST have a logical explanation tying the two variables together in a specific direction of causality
+
+- A causal mechanism is a story that connects changes in the predictor variable to changes in the outcome
+
+<br>
+
+### So, do we have a theoretical reason that would link the ideology of a radical with a propensity to commit violent acts?
+
+<br>
+
+Second, you have to be confident that your data represents the population you are interested in
+
+- If we're missing data on the most violent far-left groups then our data will lead us astray
+
+<br>
+
+### So, do we have a representative sample of all radicals in the US?
+
+- (Not clearly according to the PIRUS FAQ and codebook)
+
+<br>
+
+Finally, if your data is observational (e.g. not produced by a well designed experiment) then you have to adjust for all confounders
+
+- In short, remember that confounders are variables that change both the predictor and the outcome in your research design.
+
+<br>
+
+**SLIDE**: Example
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+::: {.r-fit-text}
+**Do ice cream sales create arsonists?**
+:::
+
+:::: {.columns}
+::: {.column width="50%"}
+![](Images/12_1-ice_cream_truck.jpg){width="400"}
+:::
+
+::: {.column width="50%"}
+![](Images/12_1-forest_fire.png){width="400"}
+:::
+::::
+
+```{r, fig.retina = 3, fig.align = 'center', fig.width = 6, fig.height=1, out.width='95%'}
+## Manual DAG
+d1 <- tibble(
+  x = c(-3, 3),
+  y = c(1, 1),
+  labels = c("Ice Cream\n Sales", "Forest\n Fires")
+)
+
+ggplot(data = d1, aes(x = x, y = y)) +
+  geom_point(size = 8) +
+  theme_void() +
+  coord_cartesian(xlim = c(-4, 4)) +
+  geom_label(aes(label = labels), size = 7) +
+  annotate("segment", x = -1.9, xend = 2.2, y = 1, yend = 1, arrow = arrow())
+```
+
+::: notes
+
+So, it turns out that there is a rather high correlation between ice cream sales and the number of forest fires in a given area.
+
+- I assume everybody senses that this is a case of correlation, not causation, right?
+
+- We don't actually think that buying ice cream leads someone to want to start a fire.
+
+<br>
+
+**So, what's likely going on here?**
+
+- **What may be confounding this relationship?**
+
+- (**SLIDE**)
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+```{r, fig.retina = 3, fig.align = 'center', out.width='85%', fig.asp=.65}
+## Manual DAG
+d1 <- tibble(
+  x = c(1, 2, 3),
+  y = c(1, 2, 1),
+  labels = c("Ice Cream\n Sales", "Summer!", "Forest\n Fires")
+)
+
+ggplot(data = d1, aes(x = x, y = y)) +
+  geom_point(size = 8) +
+  theme_void() +
+  coord_cartesian(xlim = c(0, 4), ylim = c(.75, 2.25)) +
+  geom_label(aes(label = labels), size = 7) +
+  annotate("segment", x = 1.5, xend = 2.5, y = 1, yend = 1, arrow = arrow()) +
+  annotate("segment", x = 1.7, xend = 1, y = 1.85, yend = 1.15, arrow = arrow()) +
+  annotate("segment", x = 2.3, xend = 3, y = 1.85, yend = 1.15, arrow = arrow())
+```
+
+::: notes
+
+Ice cream sales and forest fires are correlated because they both spike in the summertime!
+
+- Summer is confounding this mechanism.
+
+- If you adjust your analyses to this confounder, e.g. cities in summer vs other cities in summer, the correlation is greatly reduced.
+
+<br>
+
+This is what we call a spurious correlation, e.g. a fake relationship
+
+- This is also what people mean when they warn that correlation does not imply causation. 
+
+- Confounding effects can make two unrelated variables look related!
+
+<br>
+
+### Does this make sense?
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+::: {.r-fit-text}
+
+**Making a Causal Argument**
+
+1. Theory
+
+2. Representative sample
+
+3. Observational Data: Control for confounders
+
+:::
+
+::: notes
+
+**Questions on the basic elements to make a causal argument?**
+
+<br>
+
+**SLIDE**: This final issue of confounding is why the researchers in this paper used a regression
+
+:::
+
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+![](Images/13_3-Jasko_Table2_v2.png){style="display: block; margin: 0 auto"}
+
+::: notes
+
+Regression is a technique that allows you to adjust your estimates of the effects of interest for a series of confounders.
+
+- I've drawn a red box around the main predictors, e.g. ideology
+
+- In this case the intercept represents the right-wing groups
+
+<br>
+
+All the variables on Table 2 that aren't the main predictors are what the researchers believe to be confounders.
+
+<br>
+
+**Are we convinced each of these confounds the relationship of interest? Why or why not?**
+
+- **In other words, are we convinced each of these predicts BOTH the radicals' ideology AND their likelihood to do violence?**
+
+- *Force them to brainstorm causal mechanisms for each*
+
+<br>
+
+**So, assuming these are the "right" confounders, what do the authors conclude from Study 1?**
+
+- **Are different ideological extremists more likely to use violence than others?**
+
+<br>
+
+- Left-wing radicals 68% lower odds of engaging in violent actions than right-wing radicals
+
+- Almost no difference between Islamist and Far-Right radicals
+    - Both WAY more likely to use violence than left-wing
+
+:::
+
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+![](Images/13_3-Jasko_Table4.png){style="display: block; margin: 0 auto"}
+
+::: notes
+
+In Study 2 the authors move to the GTD database to test for differences in violence by ideology at the global level.
+
+### What do they conclude from this?
+
+- ...ideology was significantly related to the odds that the attack would result in fatalities. 
+
+- In comparison to terrorist attacks committed by right-wing perpetrators, terrorist attacks by Islamist perpetrators had 131% higher odds of resulting in fatalities
+
+- Attacks by left-wing extremists had 45% lower odds of resulting in fatalities
+
+- Expressed in terms of predicted probabilities, the probability of left-wing
+attacks resulting in fatalities was 0.23, that of right-wing attacks
+was 0.35, and that of Islamist attacks was 0.55.
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+![](Images/13_3-Jasko_Table4_v2.png){style="display: block; margin: 0 auto"}
+
+::: notes
+
+**What do we think of this collection of confounders for the global level?**
+
+- **Does each confounder increase the likelihood of fatalities AND the likelihood of there being a specific ideological group in a given state?**
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+![](Images/13_3-PNAS_Cover.png){style="display: block; margin: 0 auto"}
+
+::: {.r-fit-text}
+- Study 1: US Data (PIRUS)
+
+- Study 2: Global Data (GTD)
+:::
+
+::: notes
+
+**So, bottom line, based on these analyses are we confident that certain ideologies lead to greater levels of terrorist violence? Why or why not?**
+
+:::
+
+
+
+## For Next Class {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+<br>
+
+### Has the internet transformed terrorism as a strategy of political violence?
+
+::: notes
+
+Canvas Assignment: Bring to class an example of the internet changing the appeal, use or mechanisms of terrorism as a political strategy. 
+
+In other words, how has the internet changed terrorism as a political strategy?
+
+1. Submit an APA citation to your evidence,
+2. An explanation of your example (why did you pick this? How specifically is this an example of the intersection between terrorism and the internet?)
+3. Do we need to modify our definition of terrorism to adapt to a digital world? If so, how specifically should our definitions change? If not, make the argument why not.
+
+
+:::
+

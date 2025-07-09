@@ -1,0 +1,76 @@
+---
+format: revealjs
+---
+
+## Today's Agenda {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+```{r}
+library(tidyverse)
+library(readxl)
+library(kableExtra)
+```
+
+<br>
+
+**IV. How do we make political violence less likely?**
+
+<br>
+
+- Reviewing paper outlines
+
+<br>
+
+::: r-stack
+Justin Leinaweaver (Fall 2025)
+:::
+
+::: notes
+
+Prep for Class
+
+1. Review submissions on Canvas
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+**Paper 3: How do we reduce the likelihood of political violence in our society?**
+
+Based on our explorations of political violence this semester, what are the **THREE** strongest pieces of policy advice you could offer to prevent political violence at the city, state or national level? 
+
+A strong proposal will:
+
+- be specific (e.g. include the kinds of details a relevant stakeholder would need to implement your proposal), and
+
+- provide evidence that your proposal is likely to be effective.
+
+::: notes
+
+Papers are due at end of final exam window
+- Dec 14th, 12:20pm
+
+- NO LATE PAPERS ACCEPTED
+
+<br>
+
+### Questions on the assignment?
+
+<br>
+
+For today everybody submitted their in progress outline on the paper.
+
+- We'll use our time in class to review each other's outlines and give feedback
+
+- This is useful both for the person getting the feedback but also for each of you in seeing how other people are tackling this assignment
+
+<br>
+
+Your job today is to hear and give feedback on EVERYONE else's paper in class today.
+
+- That's a big ask in 50 minutes so best get to work!
+
+- Go!
+
+:::

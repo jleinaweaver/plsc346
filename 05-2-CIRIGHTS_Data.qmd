@@ -1,0 +1,1089 @@
+---
+format: revealjs
+---
+
+## Today's Agenda {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+```{r}
+library(tidyverse)
+library(readxl)
+library(kableExtra)
+library(sf)
+library(rnaturalearth)
+library(rnaturalearthdata)
+library(countrycode)
+
+```
+
+<br>
+
+**II. How and why do governments use violence against the people inside their borders?**
+
+::: {.r-fit-text}
+
+- The CIRIGHTS Data project
+
+:::
+
+<br>
+
+::: r-stack
+Justin Leinaweaver (Fall 2025)
+:::
+
+::: notes
+Prep for Class
+
+1. Review Canvas submissions
+
+<br>
+
+**SLIDE**: Today we continue our work on the first paper...
+
+:::
+
+
+## Paper 1 {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+<br>
+
+Which **SINGLE** data source would you recommend to someone interested in better understanding the use of political violence by governments around the world?
+
+- Your thesis should be a clear recommendation for **ONE** of the sources and should be supported by **AT LEAST THREE distinct reasons** for your recommendation
+
+- **A high quality recommendation** will also make clear **why** you are not recommending the other sources
+
+::: notes
+
+**Questions on the prompt?**
+
+:::
+
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+::: {.r-fit-text}
+**Sources of Political Violence Data**
+:::
+
+- The US State Department's "Country Reports on Human Rights Practices"
+
+- Amnesty International's "Annual Country Reports"
+
+- **The Political Terror Scale (PTS)**
+
+- The CIRIGHTS data project's "Physical Integrity Rights"
+
+- Varieties of Democracy's (V-Dem) "Personal Integrity Rights"
+
+::: notes
+
+Last class we explored the Political Terror Scale (PTS)
+
+### Key takeaways? 
+
+### - e.g. elements of validity and reliability arguments that stood out for you?
+
+### - How do the PTS scores supplement your reading/analysis of the source docs?
+
+<br>
+
++ PTS represents expert codings by area experts (right?) with reliability checks built-in. Using these measures backs up YOUR analysis of the source docs. It's not just you interpreting them this way but backed by experts!
+
++ PTS enables and facilitates comparisons, but not just across countries. Your reports analyze a single country across time which is a comparison exercise. You are comparing your country to itself each year through time!
+
++ BUT as we noted PTS is limited. 
+    + Five point scale but is it safe to assume that holds for all people in the country? White dude watching TV vs LGBTQ+ person in a protest against the government?
+    + PTS focuses pretty narrowly on government violence of a particular type. Leaves out much we might argue is important to measuring political violence.
+    
+:::
+
+
+
+## For Today {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+<br>
+
+::: {.r-fit-text}
+
+**Exploring the CIRIGHTS Data Project**
+
+1. Evaluate the codebook
+
+2. Evaluate the data
+
+:::
+
+::: notes
+
+**Everybody ready for today's work?**
+
+<br>
+
+Before we dive into the data we have to evaluate its validity and reliability.
+
+### So, let's begin in this same place we've begun with the other sources, what is the concept the CIRIGHTS project is trying to measure?
+
+- (**SLIDE**)
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+::: {.r-fit-text}
+**"...government respect for human rights (p2)"**
+:::
+
+![](Images/05-2-CIRIGHTS_Logo.png)
+
+::: notes
+
+**And why is this their focus? What is their primary data source?**
+
+- (The US State Department Country Reports on Human Rights Practices!)
+    - Although, note on p1 that they also use AI reports for the "Personal Integrity Rights" scores
+
+<br>
+
+Everybody open up the ToC in the CIRIGHTS codebook.
+
+<br>
+
+As you can see in the codebook's ToC the CIRIGHTS project divides "respect for human rights" into four broad categories
+
+- Moving forward we'll be focusing on the "Physical integrity rights" index which I think makes the most sense given our work on Monday's cases.
+
+- However, in thinking about your group definitions of political violence...
+
+### Are there other measures listed here that might be useful measures of political violence? Why or why not?
+
+### - Maybe an element from the Empowerment Rights Index?
+
+- Foreign Movement, 
+- Domestic Movement, 
+- Freedom of Speech, 
+- Freedom of Assembly & Association, Workers’ Rights, Electoral Self-Determination, and Freedom of Religion indicators
+
+<br>
+
+**SLIDE**: Ok, let's unpack the "Physical integrity rights"
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+::: {.r-fit-text}
+**Measuring "Physical Integrity Rights" (CIRIGHTS)**
+:::
+
+:::: {.columns}
+::: {.column width="50%"}
+**Operationalization**
+
+&#8595;
+
+**Instrumentation**
+
+&#8595;
+
+**Measurement**
+:::
+
+::: {.column width="50%"}
+1. Disappearance
+
+2. Extrajudicial Killing
+
+3. Political Imprisonment
+
+4. Torture
+:::
+::::
+
+::: notes
+
+*Split class into 4 groups: One group per measure*
+
+GROUPS: Make an argument about the validity and reliability of your assigned measure based on the operationalization, instrumentation and measurement described in the codebook.
+
+- Build strengths and weaknesses lists directly on the board
+
+<br>
+
+### Questions on the assignment?
+
+- Get to it!
+
+<br>
+
+**SLIDES** for each
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+::: {.r-fit-text}
+**Measuring "Physical Integrity Rights" (CIRIGHTS)**
+:::
+
+<br>
+
+"**Disappearances** are cases in which people have disappeared, agents of the state are likely responsible, and political motivation may be likely" (p8).
+
+- (0) Have occurred frequently
+
+- (1) Have occurred occasionally
+
+- (2) Have not occurred / Unreported
+
+::: notes
+
+Validity and Reliability
+
+FA23 Class Notes
+
+Strengths
+- Instrument makes clear what NOT to count
+
+Weaknesses
+- Instrument is less specific on what DOES count
+- Doesn't account for scale of the crimes
+- Each year appears to start fresh (last year's disappearances don't seem to count)
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+::: {.r-fit-text}
+**Measuring "Physical Integrity Rights" (CIRIGHTS)**
+:::
+
+<br>
+
+"**Extrajudicial killings** are killings by government officials without due process of law" (p6).
+
+- (0) Practiced frequently
+
+- (1) Practiced occasionally
+
+- (2) Have not occurred / Unreported
+
+::: notes
+
+Validity and Reliability
+
+FA23 Class Notes
+
+Strengths
+- Clarification of exceptions
+- Clear definition
+
+Weaknesses
+- Lack of nuance
+- Unreported treated as 0
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+::: {.r-fit-text}
+**Measuring "Physical Integrity Rights" (CIRIGHTS)**
+:::
+
+<br>
+
+"**Political imprisonment** refers to the incarceration of people by government officials because of their speech; their non-violent opposition to government policies or leaders; their religious beliefs; their non-violent religious practices including proselytizing; or their membership in a group, including an ethnic or racial group" (p13).]
+
+- (0) Yes, and many
+
+- (1) Yes, but few
+
+- (2) None / None Reported
+
+::: notes
+
+Validity and Reliability
+
+FA23 Class Notes
+
+Strengths
+- No grey area
+- They DO carry over preceding year crimes
+
+Weaknesses
+- Don't like the verbiage used in the instrument
+- Not adjusted for size of country
+- Does not include people in jail awaiting trial
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+::: {.r-fit-text}
+**Measuring "Physical Integrity Rights" (CIRIGHTS)**
+:::
+
+<br>
+
+"**Torture** refers to the purposeful inflicting of extreme pain, whether mental or physical, by government officials or by private individuals at the instigation of government officials" (p11).]
+
+- (0) Practiced frequently
+
+- (1) Practiced occasionally
+
+- (2) Not practiced / Unreported
+
+::: notes
+
+Validity and Reliability
+
+FA23 Class Notes
+
+Strengths
+- Language prioritized over numbers (e.g. "widespread" > "X number")
+
+Weaknesses
+- Missing data
+- Uneven gaps between levels
+- Definition seems different by country
+- Negligence counts BUT NOT general prison conditions
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+::: {.r-fit-text}
+**Measuring "Physical Integrity Rights" (CIRIGHTS)**
+:::
+
+:::: {.columns}
+::: {.column width="50%"}
+![](Images/05-2-CIRIGHTS_Logo.png)
+:::
+
+::: {.column width="50%"}
+- Disappearance
+
+- Extrajudicial Killing
+
+- Political Imprisonment
+
+- Torture
+:::
+::::
+
+::: notes
+
+Let's now audit the data.
+
+- Everybody focus on the two countries you've been analyzing this week and last.
+
+### Would you have coded these the same way? Why or why not?
+
+<br>
+
+### Findings? Takeaways?
+
+#### - Which variables seem the easiest to code / we have the most confidence in?
+
+#### - Which the least?
+
+<br>
+
+### Open it up to the class: What did you find or notice when exploring the dataset?
+
+### - Show us something cool!
+
+- *Let them lead this and after a while feel free to segue to your slides*
+
+<br>
+
+**SLIDE**: Let's continue to audit the data
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+### Any missing data issues in the 2022 "Physical Integrity Rights Index"?]
+
+- e.g. selection bias
+
+::: notes
+
+Let's dig into the data.
+
+- REMEMBER, our key exercise here is to analyze the validity and reliability of the measures SO THAT later we can use them to analyze country behavior.
+
+<br>
+
+Use the autofilter to zoom in on 2022 only
+
+- Then scroll through and talk to me about the kinds of countries with missing data in any of the three measures.
+
+:::
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+```{r}
+d <- read_excel("../../Data/CIRIGHTS/cirights_v3.12.10.24.xlsx", na = "NA")
+
+d2022 <- d |>
+  filter(year == 2022)
+
+#View(d2022 |> select(country, disap, kill, polpris, tort))
+
+# Descriptive Stats Table
+x1 <- d2022 |> 
+  pivot_longer(cols = c(Disappearances, `Extrajudicial Killings`, `Political Imprisonment`, Torture), names_to = "Source", values_to = "Value") |>
+  group_by(Source) |>
+  summarize(
+    N = n(),
+    NAs = sum(is.na(Value)),
+    Prop = str_c(round(NAs/N, 2)*100, '%'),
+    #Mean = round(mean(Value, na.rm = TRUE), 1),
+    #StdDev = round(sd(Value, na.rm = TRUE), 1),
+    #Min = round(min(Value, na.rm = TRUE), 0),
+    #Max = round(max(Value, na.rm = TRUE), 0)
+  ) 
+
+x1 |>
+  kableExtra::kbl(align = c('l', rep('c', 3)), col.names = c("Source", "N", "Missing", "Missing (%)")) |>
+  kableExtra::kable_styling(bootstrap_options = c("striped", "hover"), font_size = 22) |>
+  column_spec(column = 1:4, width = "12em")
+```
+
+```{r, fig.retina=3, fig.align='center', out.width='80%', fig.height=4.5, fig.width=9.5, eval=TRUE, cache=FALSE}
+## Make a map
+## Use rnaturalearth to define world map data
+worldmap <- ne_countries(scale = 'medium', type = 'countries', returnclass = 'sf')
+
+# # Identify merging country label
+# library(countrycode)
+# guess_field(d2022$country)
+# guess_field(d2022$ciri)
+# guess_field(d2022$cow) # 99.5% cown
+# guess_field(d2022$unctry) # 98% iso3n
+
+d2022$newcode1 <- countrycode(d2022$unctry, origin = "iso3n", destination = "iso3c")
+
+# guess_field(worldmap$adm0_a3) #95.8% iso3c
+# 
+# # Add newcodes
+# d2022$newcode1 <- countrycode(d2022$iso_a3, origin = "iso3c", destination = "iso3c")
+# 
+# worldmap$newcode1 <- countrycode(worldmap$adm0_a3, origin = "iso3c", destination = "iso3c")
+#d10 <- left_join(worldmap, d2022, by = "newcode1")
+
+# Merge
+d2022_1 <- d2022 |>
+  select(country, newcode1, `Physical Integrity Rights Index`, Disappearances, `Extrajudicial Killings`, `Political Imprisonment`, Torture) |>
+  mutate(
+    Missing = 0
+  )
+
+d10 <- left_join(worldmap, d2022_1, by = c("adm0_a3" = "newcode1"))
+
+# # Audit missing data
+# d2022_1 |>
+#   select(country, newcode1, `Physical Integrity Rights Index`, Disappearances, `Extrajudicial Killings`, `Political Imprisonment`, Torture, Missing) |>
+#   View()
+# 
+# tibble(d10) |>
+#   select(country, newcode1, `Physical Integrity Rights Index`, Disappearances, `Extrajudicial Killings`, `Political Imprisonment`, Torture, Missing) |>
+#   filter(is.na(Missing)) |>
+#   print(n = 100)
+# 
+# tibble(d10)
+# tibble(d10) |> count(Missing)
+
+
+d10$Missing[d10$name == "Kosovo"] <- 0
+d10$Missing[d10$name == "Angola"] <- 0
+d10$Missing[d10$name == "S. Sudan"] <- 0
+d10$Missing[d10$name == "Sudan"] <- 0
+d10$Missing[d10$name == "Serbia"] <- 0
+
+
+d10 |>
+  mutate(
+    Missing = if_else(is.na(Missing), "Missing Data", "Data Collected")
+  ) |>
+  ggplot() +
+  geom_sf(aes(fill = factor(Missing))) +
+  labs(fill = "", title = "CIRIGHTS Missing Data (2022)") +
+  theme(legend.position = "bottom") +
+  scale_fill_brewer(type = "div", palette = 2, direction = -1)
+```
+
+::: notes
+
+**Why is there no missing data here?**
+
+- (Source is the State Dept Reports which now cover all the UN member states+)
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+### How much do the measures overlap in 2022? 
+
+- Do we need all four sub-measures or is the index sufficient? 
+
+::: notes
+
+**Scroll through the 2022 scores, do states that score badly on one measure score badly on all of them?**
+
+- **Any pairings of measures that move together? e.g. states that disappear people also torture?**
+
+<br>
+
+*Give them time to review the data and answer*
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+::: {.r-fit-text}
+**Correlations Across the Measures**
+:::
+
+<br>
+
+```{r, fig.align='center'}
+d2022 |>
+  select(Disappearances, `Extrajudicial Killings`, `Political Imprisonment`, Torture) |>
+  cor() |>
+  kbl(digits = 2, align = c(rep('c', 5))) |>
+  column_spec(column = 1:5, width = "5em") |>
+  kable_styling(font_size = 40)
+```
+
+::: notes
+
+Let's use some more of our Data Analysis tools! 
+
+<br>
+
+### Remind me, what does correlation measure?
+- (a measure of linear association)
+
+<br>
+
+### And how do we interpret a correlation coefficient?
+
+<br>
+
+### So, are these four measures associated with each other?
+
+### Which pairings "most" and which "least" correlated?
+
+<br>
+
+**SLIDE**: Let's use the data to describe the world.
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+### Which of the four types of "Physical Integrity Rights" were most commonly violated in 2022?
+
+::: notes
+
+*Give them time to review the data and answer*
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+```{r, fig.align='center', fig.retina=3, fig.asp=0.6, out.width='100%', fig.width=9, cache=FALSE}
+# Table data (counts and proportions)
+tab1 <- d2022 |>
+  select(Disappearances, `Extrajudicial Killings`, `Political Imprisonment`, Torture) |>
+  pivot_longer(cols = c(Disappearances, `Extrajudicial Killings`, `Political Imprisonment`, Torture), names_to = "Measure", values_to = "Values") |>
+  group_by(Measure) |>
+  count(Values)
+
+tab2 <- tab1 |>
+  mutate(
+    total = sum(n),
+    prop = n/total
+  ) |>
+  select(Measure, Values, prop) |>
+  pivot_wider(names_from = Values, values_from = prop, names_prefix = "Score ") 
+
+# Bar plot
+d2022 |>
+  select(Disappearances, `Extrajudicial Killings`, `Political Imprisonment`, Torture) |>
+  pivot_longer(cols = c(Disappearances, `Extrajudicial Killings`, `Political Imprisonment`, Torture), names_to = "Measure", values_to = "Values") |>
+  group_by(Measure) |>
+  count(Values) |>
+  mutate(
+    Values = case_when(
+      Values == 0 ~ "Score 0",
+      Values == 1 ~ "Score 1",
+      Values == 2 ~ "Score 2"
+    )
+  ) |>
+  ggplot(aes(x = Measure, y = n, fill = Values)) +
+  #geom_col(color = "grey", width = .6, position = position_fill(reverse = TRUE)) +
+  geom_col(position = "dodge", color = "grey", width = .6) +
+  #geom_hline(yintercept = c(25, 50, 75, 100), color = "white") +
+  theme_bw() +
+  #scale_fill_manual(values = c("red", "orange", "green3"))
+  scale_fill_brewer(type = "div", palette = 5) +
+  labs(x = "", y = "", fill = "",
+       title = "Physical Integrity Rights by Country",
+       caption = "Source: CIRIGHTS 2022") +
+  #scale_x_discrete(limits = c(Disappearances, `Extrajudicial Killings`, `Political Imprisonment`, Torture), labels = c("Disappearances", "Political Prisoners", "Killings", "Torture")) +
+  theme(legend.position = "bottom")
+```
+
+::: notes
+
+Here's a simple bar plot of state scores on the four measures in 2022.
+
+### Interpret this simple bar plot for me. What does this show us about states' preferred tools of violence in 2022?
+
+<br>
+
+**SLIDE**: One other way to visualize this data
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+```{r, fig.align='center', fig.retina=3, fig.asp=0.6, out.width='100%', fig.width=9, cache=FALSE}
+# Bar plot
+d2022 |>
+  select(Disappearances, `Extrajudicial Killings`, `Political Imprisonment`, Torture) |>
+  pivot_longer(cols = c(Disappearances, `Extrajudicial Killings`, `Political Imprisonment`, Torture), names_to = "Measure", values_to = "Values") |>
+  group_by(Measure) |>
+  count(Values) |>
+  mutate(
+    Values = case_when(
+      Values == 0 ~ "Score 0",
+      Values == 1 ~ "Score 1",
+      Values == 2 ~ "Score 2"
+    )
+  ) |>
+  ggplot(aes(x = Measure, y = n, fill = Values)) +
+  geom_col(color = "grey", width = .6, position = position_fill(reverse = TRUE)) +
+  #geom_col(position = "dodge", color = "grey", width = .6) +
+  #geom_hline(yintercept = c(25, 50, 75, 100), color = "white") +
+  theme_bw() +
+  #scale_fill_manual(values = c("red", "orange", "green3"))
+  scale_fill_brewer(type = "div", palette = 5) +
+  labs(x = "", y = "", fill = "",
+       title = "Physical Integrity Rights by Country",
+       caption = "Source: CIRIGHTS 2022") +
+  # scale_x_discrete(limits = c('disap', 'polpris', 'kill', 'tort'),
+  #                  labels = c("Disappearances", "Political Prisoners", "Killings", "Torture")) +
+  scale_y_continuous(labels = scales::percent_format()) +
+  theme(legend.position = "bottom") +
+  annotate("text", x = 1:4, y = .05, label = str_c(round(tab2$`Score 0`, 2)*100, '%'))
+```
+
+::: notes
+
+This stacked bar plot represents country scores as a proportion out of 100%
+
+- Here we see the breakdown of scores per violence tool
+
+<br>
+
+This is a staggering result for torture!
+
+- `r tab1$n[tab1$Measure == "Torture" & tab1$Values == 0]` countries torture frequently (out of `r nrow(d2022)`)
+
+- `r sum(tab1$n[tab1$Measure == "Torture" & tab1$Values %in% c(0,1)])` countries torture 'frequently' or 'occasionally'!
+
+- That's `r sum(tab1$n[tab1$Measure == "Torture" & tab1$Values %in% c(0,1)])/nrow(d2022)*100`%!
+
+<br>
+
+### Any hypotheses as to why torture is the most common form of government violence?
+
+<br>
+
+### Any idea why disappearances appear to be the most rare form of government violence?
+
+<br>
+
+```{r}
+tab1 |>
+  pivot_wider(names_from = Values, values_from = n, names_prefix = "Score ") |>
+  kbl(align = 'c') |>
+  column_spec(column = 1:4, width = "3em")
+
+tab2 |>
+  kbl(align = 'c', digits = 2) |>
+  column_spec(column = 1:4, width = "3em")
+```
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+### Any countries with a total index score that challenges your intuitions? 
+
+::: notes
+
+*Give them time to review the data and answer*
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+```{r, fig.retina=3, fig.align='center', out.width='100%', fig.height=5, fig.width=9.5, eval=TRUE, cache=FALSE}
+## Make a map
+# Merge
+d10 <- left_join(worldmap, d2022, by = c("adm0_a3" = "newcode1"))
+
+# Audit missing data
+# d2022 |>
+#   select(country, `Physical Integrity Rights Index`, Disappearances, `Extrajudicial Killings`, `Political Imprisonment`, Torture) |>
+#   View()
+# 
+# tibble(d10) |>
+#   select(name, physint_sum, polpris:kill) |>
+#   filter(is.na(physint_sum)) |>
+#   print(n = 100)
+
+d10$`Physical Integrity Rights Index`[d10$name == "Kosovo"] <- 8
+d10$`Physical Integrity Rights Index`[d10$name == "S. Sudan"] <- 1
+d10$`Physical Integrity Rights Index`[d10$name == "Serbia"] <- 7
+
+d10 |>
+  ggplot() +
+  geom_sf(aes(fill = factor(`Physical Integrity Rights Index`))) +
+  labs(fill = "", title = "Physical Integrity Rights Index (2022)") +
+  #theme(legend.position = "bottom") +
+  scale_fill_brewer(type = "div", palette = 5, na.value="darkgrey")
+```
+
+::: notes
+
+**Any surprises here?**
+
+<br>
+
+**SLIDE**: Let's compare PTS and CIRIGHTS
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+```{r, fig.retina=3, fig.align='center', out.width='61%', fig.asp=.45, fig.width = 9, cache=FALSE}
+pts <- read_excel("../../Data/PTS/2024-08/PTS-2024.xlsx", na = "NA") |>
+  filter(Year == 2022)
+
+## Use rnaturalearth to define world map data
+worldmap <- ne_countries(scale = 'medium', type = 'countries', returnclass = 'sf')
+
+pts$newcode1 <- countrycode::countrycode(pts$COW_Code_A, origin = "cowc", destination = "iso3c")
+worldmap$newcode1 <- countrycode::countrycode(worldmap$adm0_a3, origin = "iso3c", destination = "iso3c")
+
+# Merge data onto worldmap
+d100 <- left_join(worldmap, pts, by = "newcode1")
+
+d100 |>
+  mutate(
+    pts_s_cat = factor(PTS_S, levels = c("1", "2", "3", "4", "5"))
+  ) |>
+  #filter(!is.na(pts_s_cat)) |>
+  ggplot() +
+  geom_sf(aes(fill = pts_s_cat)) +
+  labs(fill = "", title = "PTS_S (2022)") +
+  #theme(legend.position = "right") +
+  scale_fill_manual(values = c("royalblue", "skyblue", "lemonchiffon1", "sandybrown", "red3"))
+```
+
+```{r, fig.retina=3, fig.align='center', out.width='61%', fig.asp=.45, fig.width = 9, cache=FALSE}
+d10 |>
+  ggplot() +
+  geom_sf(aes(fill = factor(`Physical Integrity Rights Index`))) +
+  labs(fill = "", title = "Physical Integrity Rights Index (2022)") +
+  #theme(legend.position = "bottom") +
+  scale_fill_brewer(type = "div", palette = 5, na.value="darkgrey")
+```
+
+::: notes
+
+Annoying that CIRIGHTS scores work on the inverse to PTS.
+
+- I prefer measures to increase with "more" of the name of the variable
+    - e.g. higher torture score should mean more torture
+    
+- But they didn't ask us so this is what we have (unless we recode it!)
+
+<br>
+
+### What do we learn from comparing and contrasting these global scores?
+
+<br>
+
+### - Any surprises?
+
+### - Lessons for us re reliability / validity?
+
+:::
+
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+### How has the US experience of political violence changed across time?
+
+::: notes
+
+Everybody zoom in on the US observations across time and get ready to describe our experience of political violence.
+
+<br>
+
+*Give them time to review the data and answer*
+
+:::
+
+
+
+
+## USA in CIRIGHTS{background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+:::: {.columns}
+::: {.column width="50%"}
+
+<br>
+
+```{r, fig.retina=3, out.width='100%', fig.width=5.5, fig.align='center', fig.asp=.8, cache=FALSE}
+d |>
+  filter(country == "United States of America") |> 
+  ggplot(aes(x = year, y = `Physical Integrity Rights Index`)) +
+  geom_line(size = .4) +
+  geom_point() +
+  theme_bw() +
+  labs(x = "", y = "Physical Integrity Rights") +
+  scale_y_continuous(breaks = 0:8, labels = 0:8, limits = c(0,8))
+```
+
+:::
+
+::: {.column width="50%"}
+```{r, fig.retina=3, out.width='80%', fig.width=7, fig.align='center', fig.asp=1.5, cache=FALSE}
+## You make a line plot of averages across time for each measure
+d |>
+  filter(country == "United States of America") |>
+  pivot_longer(cols = c(Disappearances, `Extrajudicial Killings`, `Political Imprisonment`, Torture), names_to = "Variables", values_to = "Values") |>
+  # mutate(
+  #   Variables = case_when(
+  #     Variables == "disap" ~ "Disappearances",
+  #     Variables == "kill" ~ "Killings",
+  #     Variables == "tort" ~ "Torture",
+  #     Variables == "polpris" ~ "Political Prisoners"
+  #   )
+  # ) |>
+  ggplot(aes(x = year, y = Values, color = Variables)) +
+  geom_line(size = .4) +
+  geom_point() +
+  theme_bw() +
+  facet_wrap(~ Variables, ncol = 1) +
+  guides(color = "none") +
+  scale_y_continuous(breaks = 0:2, labels = 0:2) +
+  scale_x_continuous(breaks = seq(1980, 2022, 4)) +
+  labs(x = "") +
+  scale_color_brewer(type = "qual", palette = 2)
+```
+:::
+::::
+
+::: notes
+
+**What do we think of the scores for the US over time?**
+
+<br>
+
+### Any idea where this data comes from if not from the State Department?
+
+- Must be AI?
+
+:::
+
+
+
+## For Next Class {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+<br>
+
+::: {.r-fit-text}
+
+**Exploring the V-Dem "Personal Integrity Rights" Scores**
+
+1. Evaluate the methodology / codebook
+
+2. Evaluate the data
+
+:::
+
+::: notes
+
+For Friday we repeat today's work on the CIRIGHTS data project.
+
+Get ready to work!
+
+The V-Dem Varieties of Democracy "Personal Integrity Rights"
+- FILE 1: V-Dem/V-Dem-CY-Core_csv_v13/codebook_v13.pdf
+- FILE 2: V-Dem/V-Dem-CY-Core_csv_v13/V_Dem_Personal_Integrity_Rights-2022.xlsx
+
+Syllabus Tasks
+1. Review the V-Dem Varieties of Democracy Codebook *ONLY p30, 32-34, 40-42, 176-178*
+
+2. Audit the "Personal Integrity Rights" scores for your country cases from last week
+
+3. Spend some time exploring the dataset and find us something interesting to discuss
+
+:::
+
+
+
+##
+
+OLD SLIDES
+
+
+
+
+##
+
+Have the average rates for the types of violations varied across time?
+
+::: notes
+
+:::
+
+
+
+##
+
+```{r, fig.retina=3, out.width='97%', fig.width=6, fig.align='center', fig.asp=0.618}
+## You make a line plot of averages across time for each measure
+d |>
+  pivot_longer(cols = c(Disappearances, `Extrajudicial Killings`, `Political Imprisonment`, Torture), names_to = "Variables", values_to = "Values") |>
+  group_by(year, Variables) |>
+  summarize(
+    Mean = mean(Values, na.rm = TRUE)
+  ) |>
+  ungroup() |>
+  ggplot(aes(x = year, y = Mean, color = Variables)) +
+  geom_line(size = 1.2) +
+  theme_bw() +
+  labs(x = "", y = "Mean Values",
+       title = "Tracking Political Violence Averages Across Time") +
+  coord_cartesian(ylim = c(0,2), xlim = c(1980, 2021)) +
+  scale_y_continuous(breaks = 0:2, labels = 0:2)  +
+  guides(color = "none") +
+  scale_color_brewer(type = "qual", palette = 2) +
+  annotate("text", x = 2021, y = c(1.73, 1.2, 1.45, .65), label = c("Disap", "Kill", "Prison", "Torture"), color = RColorBrewer::brewer.pal(4, name = "Dark2"))
+
+```
+
+::: notes
+
+Remember, lower values are bad!
+
+:::
+
+
+
+##
+
+Focus on the scores for total index score in the years since 2001 and find us other examples of countries that have:
+
+  + Improved the most, and
+  
+  + Regressed the most across the years in the sample
+
+::: notes
+
+:::
+
+
+##
+
+```{r, fig.retina=3, fig.align='center', out.width='100%', fig.height=5, fig.width=9.5, eval=TRUE, cache=FALSE}
+## Make a map
+
+# Summarize data
+d$newcode1 <- countrycode(d$unctry, origin = "iso3n", destination = "iso3c")
+
+d_diff <- d |>
+  filter(year %in% c(2001, 2022)) |>
+  select(country, newcode1, year, `Physical Integrity Rights Index`) |>
+  pivot_wider(names_from = year, values_from = `Physical Integrity Rights Index`, names_prefix = "physint_") |>
+  mutate(
+    Difference = physint_2022 - physint_2001
+  )
+
+# Merge
+d11 <- left_join(worldmap, d_diff, by = c("adm0_a3" = "newcode1"))
+
+# Audit missing data
+# d_diff |>
+#   select(country, Difference) |>
+#   View()
+# 
+# tibble(d10) |>
+#   select(name, Difference) |>
+#   filter(is.na(Difference)) |>
+#   print(n = 100)
+
+# d10$Difference[d10$name == "Kosovo"] <- 7
+# d10$Difference[d10$name == "S. Sudan"] <- 0
+# d10$Difference[d10$name == "Serbia"] <- 6
+
+d11 |>
+  ggplot() +
+  geom_sf(aes(fill = Difference)) +
+  labs(fill = "", title = "Changes in the Physical Integrity Index (2001 to 2022)") +
+  #theme(legend.position = "bottom") +
+  #scale_fill_gradient(low = "red", high = "blue")
+  scale_fill_gradient2()
+```
+
+::: notes
+
+:::

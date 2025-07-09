@@ -1,0 +1,1066 @@
+---
+format: revealjs
+---
+
+## Today's Agenda {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+```{r}
+library(tidyverse)
+library(readxl)
+library(kableExtra)
+
+# Input Data
+d <- read_excel("../../Data/PIRUS/PIRUS_February_2025/PIRUS V5.xlsx", na = "NA", guess_max = 10000)
+```
+
+<br>
+
+**III. How and why do non-state actors use political violence?**
+
+<br>
+
+**The Future of Terrorism?**
+
+- The Profiles of Individual Radicalization in the United States (PIRUS) Data project
+
+<br>
+
+::: r-stack
+Justin Leinaweaver (Fall 2025)
+:::
+
+::: notes
+Prep for Class
+
+1. Review submissions on Canvas
+
+2. Access the data and search tool
+    - [Main website](https://www.start.umd.edu/data-tools/profiles-individual-radicalization-united-states-pirus)
+    - [Search and Visualization tool](https://www.start.umd.edu/profiles-individual-radicalization-united-states-pirus-keshif)
+    - [FAQ page](https://www.start.umd.edu/pirus-frequently-asked-questions)
+
+<br>
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+**Collins (2021) "A New Wave of Terrorism? A Comparative Analysis of the Rise of Far-Right Terrorism"**
+
+::: notes
+
+Last class we examined Collins (2021) who made the argument Far Right Terrorism (FRT) represents the next "wave" of global terrorism
+
+<br>
+
+### First, what does that mean?
+
+### - What is a "wave" of terrorism?
+
+- David Rapoport’s Modern Waves of Terrorism Theory
+
+- Waves identify "motivations, targets, weapon types, group belongings, ideologies, and reoccurring patterns" that help us understand and, hopefully, address the rise of terrorism
+
+- “The Four Waves of Modern Terrorism” defines a wave as a cycle that takes place over a 40-year time period. Each cycle is dynamic in that it expands and contracts.
+
+- Groups within a particular wave adapt to the exigencies of their time, are aware of the actions of other contemporary terrorist groups in other countries, and are driven by a relentless energy that propels them into violent action. They share a common technological facility, including communications, weaponry, and logistics. Most important, they share a vision that perceives in the ills and abuses of the world the seeds of a revolutionary future.
+
+<br>
+
+### Second, did Collins convince you that FRT is the next "wave"? Why or why not?
+
+1. Methods used:
+    - Used GTD data to select cases
+    - Mixed-methods case studies: Germany, US, UK and Scandinavia
+
+2. Empirical argument: FRT groups have common "type", "prompting cause" and a "common predominant energy"
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+::: {.r-fit-text}
+**Profiles of Individual Radicalization in the United States (PIRUS)**
+:::
+
+![](Images/13_2-PIRUS_Website.png){style="display: block; margin: 0 auto"}
+
+::: notes
+
+Today I want us to explore a new dataset that aims to deepen our understanding of the kinds of radicalization pathways that exist in the US
+
+- PIRUS focus is on a specific set of non-state actors who are caught actively pursuing certain ends.
+
+- Hugely ambitious dataset, so let's dig into it!
+
+<br>
+
+My hope is that this exploration will deepen our understanding of the terror threat in the US and allow us to keep exploring this question about FRT being the next "wave."
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+::: {.r-fit-text}
+**PIRUS Sample Selection Process: Website FAQ**
+:::
+
+- "How were the data in PIRUS collected and coded?"
+
+- "Is the PIRUS dataset a comprehensive sample of radicalization in the United States?"
+
+- "Is the PIRUS dataset a representative sample of individuals radicalized in the United States?"
+
+- "How much missing data does PIRUS have?"
+
+- "Is PIRUS the definitive source on radicalization in the United States?"
+
+::: notes
+
+Let's start by discussing the data sourcing.
+
+- Take a look at these sections in the [FAQ page](https://www.start.umd.edu/pirus-frequently-asked-questions) on their website (linked through Canvas)
+
+<br>
+
+Groups, discuss and get ready to report back your evaluation of their process.
+
+- How confident should we be in the sample selection?
+
+- How representative is the sample likely to be?
+
+<br>
+
+Ok groups:
+
+### Where does the data come from and how confident are we in their sample selection process?
+
+<br>
+
+Based on all these concerns, Groups, get ready to give me two research questions:
+
+1. A research question we could answer with this data, and
+
+2. A research question we couldn't answer
+
+<br>
+
+Report Back
+
+<br>
+
+NOTES
+
+- "PIRUS includes a sample of individuals espousing Islamist, far right, far left, or single-issue ideologies who have radicalized within the United States to the point of committing ideologically motivated illegal violent or non-violent acts, joining a designated terrorist organization, or associating with an extremist organization whose leader(s) has/have been indicted of an ideologically motivated violent offense" (p6).
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+::: {.r-fit-text}
+**PIRUS Inclusion Criteria: Codebook (p6-10)**
+:::
+
+![](Images/13_2-PIRUS_Criteria.png){style="display: block; margin: 0 auto"}
+
+::: notes
+
+Groups, now open the codebook and review the inclusion criteria
+
+- Get ready to report back on the strengths and weaknesses of their process to decide who does and does not get included in the dataset
+
+<br>
+
+**Ok, what do we think of their inclusion criteria?**
+
+- **Strengths and weaknesses?**
+
+<br>
+
+**Based on this inclusion criteria are there some research questions we should NOT try to answer with this data?**
+
+<br>
+
+NOTES
+
+Inclusion Criteria (p8-9)
+
+Summary: In order to be eligible for inclusion, each individual must meet one of the following five criteria:
+
+1. the individual was arrested;
+2. the individual was indicted of a crime;
+3. the individual was killed as a result of his or her ideological activities;
+4. the individual is/was a member of a designated terrorist organization; or
+5. the individual was associated with an extremist organization whose leader(s) or founder(s) has/have been indicted of an ideologically motivated violent offense.
+
+In addition, each individual MUST:
+
+1. have been radicalized in the United States,
+2. have espoused or currently espouse ideological motives, and
+3. show evidence that his or her behaviors are/were linked to the ideological motives he or she espoused/espouses.
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+::: {.r-fit-text}
+**PIRUS Variables: Valid and Reliable?**
+:::
+
+:::: {.columns}
+::: {.column width="50%"}
+![](Images/13_2-PIRUS_Website.png){style="display: block; margin: 0 auto"}
+:::
+
+::: {.column width="50%"}
+**Groups of Variables**
+
+- Plot and Consequences
+
+- Group Nature
+
+- Radicalization
+
+- Demographics
+
+- Socioeconomic Status
+
+- Personal
+:::
+::::
+
+::: notes
+
+Last piece of set-up, groups, shift focus to the observations in the dataset.
+
+- *Assign one category per group*
+
+- Assuming these are the "right" cases to focus on, any concerns about the validity and reliability of the variables in these sections?
+
+<br>
+
+### Groups, any concerns about the validity or reliability of the variables in your section?
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+![](Images/13_2-PIRUS_Tool.png){style="display: block; margin: 0 auto"}
+
+::: notes
+
+The search tool on the PIRUS webpage is quite powerful.
+
+- I assume everybody spent some time playing with this before class
+
+<br>
+
+Let's start our exploration with our question about "waves" of terrorism.
+
+### What can use here to help us answer Collins' question about the rise of FRT?
+
+- (Pretty clearly by the Ideology bar plot, the super-majority of radicals in PIRUS are categorized as "Far-Right")
+
+<br>
+
+### Given everything we discussed about the design of this data project, how confident are we in using this to draw inferences about radicalization in the US as a whole?
+
+### - In other words, is this convincing evidence that the biggest domestic terror threat we face is from the far-right? Why or why not?
+
+<br>
+
+So, we see the US has a lot more Far-Right radicals than other groups, but is that changing across time?
+
+- **SLIDE**: Unfortunately, I don't see an easy way to control for time in the web search tool
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+```{r, fig.retina=3, fig.align='center', out.width='95%', fig.height=6, fig.width=10, cache=FALSE}
+d |>
+  select(Subject_ID, Year_Exposure, Radicalization_Islamist, Radicalization_Far_Right, Radicalization_Far_Left, Radicalization_Single_Issue) |>
+  pivot_longer(cols = Radicalization_Islamist:Radicalization_Single_Issue, names_to = "Ideology", values_to = "Value") |>
+  filter(Value == 1) |>
+  mutate(
+    Ideology = case_when(
+      Ideology == "Radicalization_Islamist" ~ "Islamist",
+      Ideology == "Radicalization_Single_Issue" ~ "Single Issue",
+      Ideology == "Radicalization_Far_Right" ~ "Far-Right",
+      Ideology == "Radicalization_Far_Left" ~ "Far-Left"
+    )
+  ) |>
+  group_by(Year_Exposure) |>
+  count(Ideology) |>
+  ggplot(aes(x = Year_Exposure, y = n, color = Ideology)) +
+  geom_line(linewidth = 1.1) +
+  theme_bw() +
+  labs(x = "", y = "", title = "Count of US radicals by ideology and year of exposure") +
+  theme(legend.position.inside = c(.2, .8), legend.background = element_rect(fill = "white", colour = "black")) +
+  #scale_color_brewer(type = "qual", palette = 3)
+  scale_color_viridis_d() +
+  scale_x_continuous(breaks = seq(1940, 2025, 5), labels = seq(1940, 2025, 5))
+```
+
+::: notes
+
+Here is a line plot that counts radicals in the dataset by their ideology and year of exposure
+
+- This is the "year (YYYY) in which the individual’s activity/plot first came to public attention. This is usually time of incident or arrest, or earliest mention of individual in sources, so long as these are related to the plot/radicalization of the individual" (p11).
+
+<br>
+
+### What do we see here in terms of trands across time?
+
+<br>
+
+### Again, given all the caveats in the dataset's design are we confident saying that the US shows evidence of a "wave" in FRT? Why or why not?
+
+<br>
+
+Let's dive back into the web tool and see what else we can learn about radicalization in the US using the PIRUS dataset.
+
+- **SLIDE**: Let's talk about that big map in the middle of the tool
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+```{r, fig.retina=3, fig.align='center', out.width='95%', fig.height=6, fig.width=10, cache=FALSE}
+## Make a map
+library(sf)
+library(spData)
+
+# Summarize data
+d_sum <- d |>
+  count(Loc_Habitation_State1, name = "Count") |>
+  filter(Loc_Habitation_State1 != "-99")
+
+# Merge data
+d10 <- left_join(us_states, d_sum, by = c("NAME" = "Loc_Habitation_State1"))
+
+#summary(d_sum$Count)
+
+d10 |>
+  mutate(
+    Count_cat = case_when(
+      Count <= 25 ~ "0 - 25",
+      Count <= 50 ~ "26 - 50",
+      Count <= 75 ~ "51 - 75",
+      Count <= 100 ~ "76 - 100",
+      Count <= 200 ~ "101 - 200",
+      Count > 200 ~ "200+"
+    ),
+    Count_cat = factor(Count_cat, levels = c("0 - 25", "26 - 50", "51 - 75", "76 - 100", "101 - 200", "200+"))
+  ) |>
+  ggplot() +
+  geom_sf(aes(fill = Count_cat)) +
+  labs(fill = "", title = "Count of Extremist Group Locations") +
+  #theme(legend.position = "bottom") +
+  scale_fill_brewer(type = "seq", palette = 8)
+```
+
+::: notes
+
+Main search page puts a version of this map on the center of the page.
+
+### What do we learn from this?
+
+<br>
+
+**SLIDE**: Practice making maps!
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+**Explore the map tool by ideology**
+
+- Do different extremist ideologies cluster in different regions?
+
+::: notes
+
+Use the mapping tool to examine the distribution of ideological extremists around the country.
+
+- For example, are Far-Right groups a "Southern" thing?
+
+<br>
+
+*REPORT BACK*
+
+<br>
+
+- **SLIDE**: My results
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+:::: {.columns}
+::: {.column width="50%"}
+```{r, fig.retina=3, fig.align='center', out.width='92%', fig.height=4, fig.width=8, cache=FALSE}
+# 4 maps: count of groups by ideology scaled by population
+
+# Islamist
+d |>
+  count(Radicalization_Islamist, Loc_Habitation_State1, name = "Count") |>
+  filter(Loc_Habitation_State1 != "-99") |>
+  filter(Radicalization_Islamist == 1) %>%
+  left_join(us_states, ., , by = c("NAME" = "Loc_Habitation_State1")) |>
+  mutate(
+    Count_cat = case_when(
+      Count <= 25 ~ "0 - 25",
+      Count <= 50 ~ "26 - 50",
+      Count <= 75 ~ "51 - 75",
+      Count <= 100 ~ "76 - 100",
+      Count <= 200 ~ "101 - 200",
+      Count > 200 ~ "200+"
+    ),
+    Count_cat = factor(Count_cat, levels = c("0 - 25", "26 - 50", "51 - 75", "76 - 100", "101 - 200", "200+"))
+  ) |>
+  ggplot() +
+  geom_sf(aes(fill = Count_cat)) +
+  scale_fill_brewer(type = "seq", palette = 8) +
+  labs(fill = "", title = "US Based Islamic Radicals")
+```
+
+```{r, fig.retina=3, fig.align='center', out.width='92%', fig.height=4, fig.width=8, cache=FALSE}
+# Far Left
+d |>
+  count(Radicalization_Far_Left, Loc_Habitation_State1, name = "Count") |>
+  filter(Loc_Habitation_State1 != "-99") |>
+  filter(Radicalization_Far_Left == 1) %>%
+  left_join(us_states, ., , by = c("NAME" = "Loc_Habitation_State1")) |>
+  mutate(
+    Count_cat = case_when(
+      Count <= 25 ~ "0 - 25",
+      Count <= 50 ~ "26 - 50",
+      Count <= 75 ~ "51 - 75",
+      Count <= 100 ~ "76 - 100",
+      Count <= 200 ~ "101 - 200",
+      Count > 200 ~ "200+"
+    ),
+    Count_cat = factor(Count_cat, levels = c("0 - 25", "26 - 50", "51 - 75", "76 - 100", "101 - 200", "200+"))
+  ) |>
+  ggplot() +
+  geom_sf(aes(fill = Count_cat)) +
+  scale_fill_brewer(type = "seq", palette = 8) +
+  labs(fill = "", title = "US Based Far Left Radicals (per million population)")
+```
+:::
+
+::: {.column width="50%"}
+```{r, fig.retina=3, fig.align='center', out.width='92%', fig.height=4, fig.width=8, cache=FALSE}
+# Far Right
+d |>
+  count(Radicalization_Far_Right, Loc_Habitation_State1, name = "Count") |>
+  filter(Loc_Habitation_State1 != "-99") |>
+  filter(Radicalization_Far_Right == 1) %>%
+  left_join(us_states, ., , by = c("NAME" = "Loc_Habitation_State1")) |>
+  mutate(
+    Count_cat = case_when(
+      Count <= 25 ~ "0 - 25",
+      Count <= 50 ~ "26 - 50",
+      Count <= 75 ~ "51 - 75",
+      Count <= 100 ~ "76 - 100",
+      Count <= 200 ~ "101 - 200",
+      Count > 200 ~ "200+"
+    ),
+    Count_cat = factor(Count_cat, levels = c("0 - 25", "26 - 50", "51 - 75", "76 - 100", "101 - 200", "200+"))
+  ) |>
+  ggplot() +
+  geom_sf(aes(fill = Count_cat)) +
+  scale_fill_brewer(type = "seq", palette = 8) +
+  labs(fill = "", title = "US Based Far Right Radicals (per million population)")
+```
+
+```{r, fig.retina=3, fig.align='center', out.width='92%', fig.height=4, fig.width=8, cache=FALSE}
+# Single Issue
+d |>
+  count(Radicalization_Single_Issue, Loc_Habitation_State1, name = "Count") |>
+  filter(Loc_Habitation_State1 != "-99") |>
+  filter(Radicalization_Single_Issue == 1) %>%
+  left_join(us_states, ., , by = c("NAME" = "Loc_Habitation_State1")) |>
+  mutate(
+    Count_cat = case_when(
+      Count <= 25 ~ "0 - 25",
+      Count <= 50 ~ "26 - 50",
+      Count <= 75 ~ "51 - 75",
+      Count <= 100 ~ "76 - 100",
+      Count <= 200 ~ "101 - 200",
+      Count > 200 ~ "200+"
+    ),
+    Count_cat = factor(Count_cat, levels = c("0 - 25", "26 - 50", "51 - 75", "76 - 100", "101 - 200", "200+"))
+  ) |>
+  ggplot() +
+  geom_sf(aes(fill = Count_cat)) +
+  scale_fill_brewer(type = "seq", palette = 8) +
+  labs(fill = "", title = "US Based Single Issue Radicals (per million population)")
+```
+:::
+::::
+
+::: notes
+
+**What do we learn from these maps?**
+
+<br>
+
+**What kinds of research questions could we answer with these maps as evidence?**
+
+<br>
+
+Let's talk for a second about the power of data visualization choices on an argument.
+
+**Why might these maps misrepresent or distort the outcome we are interested in?**
+
+(I argue that these maps MAY be a bad series of visualizations.)
+
+- (**SLIDE**: This map makes the mistake that SO MANY US politics maps make by confusing population with the variable we are interested in.)
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+```{r, fig.retina=3, fig.align='center', out.width='53%', fig.height=4, fig.width=8, cache=FALSE}
+# Map 1
+d10 |>
+  mutate(
+    Count_cat = case_when(
+      Count <= 25 ~ "0 - 25",
+      Count <= 50 ~ "26 - 50",
+      Count <= 75 ~ "51 - 75",
+      Count <= 100 ~ "76 - 100",
+      Count <= 200 ~ "101 - 200",
+      Count > 200 ~ "200+"
+    ),
+    Count_cat = factor(Count_cat, levels = c("0 - 25", "26 - 50", "51 - 75", "76 - 100", "101 - 200", "200+"))
+  ) |>
+  ggplot() +
+  geom_sf(aes(fill = Count_cat)) +
+  labs(fill = "", title = "Count of Extremist Group Locations") +
+  #theme(legend.position = "bottom") +
+  scale_fill_brewer(type = "seq", palette = 8)
+```
+
+```{r, fig.retina=3, fig.align='center', out.width='53%', fig.height=4, fig.width=8, cache=FALSE}
+## Map 2
+d10 |>
+  mutate(
+    scaled_per_million = Count / (total_pop_15 / 1e6),
+    scaled_cat = case_when(
+      scaled_per_million <= 5 ~ "0 - 5",
+      scaled_per_million <= 10 ~ "6 - 10",
+      scaled_per_million <= 15 ~ "11 - 15",
+      scaled_per_million <= 20 ~ "16 - 20",
+      scaled_per_million > 20 ~ "20+"
+    ),
+    scaled_cat = factor(scaled_cat, levels = c("0 - 5", "6 - 10", "11 - 15", "16 - 20", "20+"))
+  ) |>
+  ggplot() +
+  geom_sf(aes(fill = scaled_cat)) +
+  labs(fill = "", title = "Count of Extremist Group Locations (per million population)") +
+  #theme(legend.position = "bottom") +
+  scale_fill_brewer(type = "seq", palette = 8)
+```
+
+::: notes
+
+The top map is our usual count but the bottom is scaled by the population in each state.
+
+<br>
+
+### Compare and contrast the maps for me
+
+### - What do we learn from the remade map (scaling for population)?
+
+<br>
+
+The danger here is that simple counts essentially come to represent population
+
+- e.g. bigger states have more radicals because they have more people
+
+- The problem isn't necessarily that CA has a problem with radicals but more that because CA is HUGE it has some of every kind of people.
+
+<br>
+
+The question of which map is appropriate depends on the research question you are trying to answer OR the model you are trying to test
+
+### For what kinds of research questions do we prefer the first map?
+
+<br>
+
+### For what kinds of research questions do we prefer the second?
+
+<br>
+
+**SLIDE**: Ideology maps rescaled by population
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+:::: {.columns}
+::: {.column width="50%"}
+```{r, fig.retina=3, fig.align='center', out.width='92%', fig.height=4, fig.width=8, cache=FALSE}
+# 4 maps: count of groups by ideology scaled by population
+
+# Islamist
+d |>
+  count(Radicalization_Islamist, Loc_Habitation_State1, name = "Count") |>
+  filter(Loc_Habitation_State1 != "-99") |>
+  filter(Radicalization_Islamist == 1) %>%
+  left_join(us_states, ., , by = c("NAME" = "Loc_Habitation_State1")) |>
+  mutate(
+    scaled_per_million = Count / (total_pop_15 / 1e6),
+    scaled_cat = case_when(
+      scaled_per_million <= 5 ~ "0 - 5",
+      scaled_per_million <= 10 ~ "6 - 10",
+      scaled_per_million > 10 ~ "10+"
+    ),
+    scaled_cat = factor(scaled_cat, levels = c("0 - 5", "6 - 10", "10+"))
+  ) |>
+  ggplot() +
+  geom_sf(aes(fill = scaled_cat)) +
+  scale_fill_manual(values = c("mistyrose", "lightsalmon1", "red2"), drop = FALSE) +
+  labs(fill = "", title = "US Based Islamic Radicals (per million population)")
+```
+
+```{r, fig.retina=3, fig.align='center', out.width='92%', fig.height=4, fig.width=8, cache=FALSE}
+# Far Left
+d |>
+  count(Radicalization_Far_Left, Loc_Habitation_State1, name = "Count") |>
+  filter(Loc_Habitation_State1 != "-99") |>
+  filter(Radicalization_Far_Left == 1) %>%
+  left_join(us_states, ., , by = c("NAME" = "Loc_Habitation_State1")) |>
+  mutate(
+    scaled_per_million = Count / (total_pop_15 / 1e6),
+    scaled_cat = case_when(
+      scaled_per_million <= 5 ~ "0 - 5",
+      scaled_per_million <= 10 ~ "6 - 10",
+      scaled_per_million > 10 ~ "10+"
+    ),
+    scaled_cat = factor(scaled_cat, levels = c("0 - 5", "6 - 10", "10+"))
+  ) |>
+  ggplot() +
+  geom_sf(aes(fill = scaled_cat)) +
+  scale_fill_manual(values = c("mistyrose", "lightsalmon1", "red2"), drop = FALSE) +
+  labs(fill = "", title = "US Based Far Left Radicals (per million population)")
+```
+:::
+
+::: {.column width="50%"}
+```{r, fig.retina=3, fig.align='center', out.width='92%', fig.height=4, fig.width=8, cache=FALSE}
+# Far Right
+d |>
+  count(Radicalization_Far_Right, Loc_Habitation_State1, name = "Count") |>
+  filter(Loc_Habitation_State1 != "-99") |>
+  filter(Radicalization_Far_Right == 1) %>%
+  left_join(us_states, ., , by = c("NAME" = "Loc_Habitation_State1")) |>
+  mutate(
+    scaled_per_million = Count / (total_pop_15 / 1e6),
+    scaled_cat = case_when(
+      scaled_per_million <= 5 ~ "0 - 5",
+      scaled_per_million <= 10 ~ "6 - 10",
+      scaled_per_million > 10 ~ "10+"
+    ),
+    scaled_cat = factor(scaled_cat, levels = c("0 - 5", "6 - 10", "10+"))
+  ) |>
+  ggplot() +
+  geom_sf(aes(fill = scaled_cat)) +
+  scale_fill_manual(values = c("mistyrose", "lightsalmon1", "red2"), drop = FALSE) +
+  labs(fill = "", title = "US Based Far Right Radicals (per million population)")
+```
+
+```{r, fig.retina=3, fig.align='center', out.width='92%', fig.height=4, fig.width=8, cache=FALSE}
+# Single Issue
+d |>
+  count(Radicalization_Single_Issue, Loc_Habitation_State1, name = "Count") |>
+  filter(Loc_Habitation_State1 != "-99") |>
+  filter(Radicalization_Single_Issue == 1) %>%
+  left_join(us_states, ., , by = c("NAME" = "Loc_Habitation_State1")) |>
+  mutate(
+    scaled_per_million = Count / (total_pop_15 / 1e6),
+    scaled_cat = case_when(
+      scaled_per_million <= 5 ~ "0 - 5",
+      scaled_per_million <= 10 ~ "6 - 10",
+      scaled_per_million > 10 ~ "10+"
+    ),
+    scaled_cat = factor(scaled_cat, levels = c("0 - 5", "6 - 10", "10+"))
+  ) |>
+  ggplot() +
+  geom_sf(aes(fill = scaled_cat)) +
+  scale_fill_manual(values = c("mistyrose", "lightsalmon1", "red2"), drop = FALSE) +
+  labs(fill = "", title = "US Based Single Issue Radicals (per million population)")
+```
+:::
+::::
+
+::: notes
+
+**Do these rescaled maps tell a different story than simple counts?**
+
+<br>
+
+**What do we learn about the locations and sizes of ideological extremes in this country?**
+
+<br>
+
+Unfortunately, it doesn't look like the web tool allows you to make these adjustments and that is incredibly disappointing.
+
+- This is one of the BIG reasons your ability to do useful data science depends on building your own visualizations, ideally using a real statistical tool
+
+- If all you have is the web tool then you are stuck making the pictures they pre-designed for you and you may not even realize they misrepresent what you are trying to do.
+
+<br>
+
+### Questions on this?
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+### What do we learn about the groups active in Missouri?
+
+::: notes
+
+Click on Missouri (or filter observations to MO) and tell me about the characteristics of these groups.
+
+<br>
+
+**SLIDE**
+
+:::
+
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+![](Images/13_2-MO-Map.png){style="display: block; margin: 0 auto"}
+
+::: notes
+
+*REPORT BACK*
+
+<br>
+
+One of the big fears that gets spread frequently in the media is that of foreign terrorists "infiltrating" the US to do harm
+
+- e.g. the panic at our southern border
+
+- **SLIDE**: Check residency status
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+### **Compare and contrast observations by 'Residency_Status'**
+
+<br>
+
+Do extremists differ in levels of violence pursued?
+
+- 'Violent'
+    
+- 'Primary_Event_Mass_Casualty_Incident'
+
+::: notes
+
+*REPORT BACK*
+
+- (**SLIDE**: My figures)
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+:::: {.columns}
+::: {.column width="50%"}
+```{r, fig.retina=3, fig.asp=0.618, fig.align='center', out.width='100%', fig.width = 6.5}
+# Acts by citizens vs non-citizens? Which more violent?
+d2 <- d |> 
+  mutate(
+    residency = case_when(
+      Residency_Status == 1 ~ "Born Citizen",
+      Residency_Status == 2 ~ "Naturalized Citizen",
+      Residency_Status == 3 ~ "Legal Perm Resident",
+      Residency_Status == 4 ~ "Temporary",
+      Residency_Status == 5 ~ "Undocumented",
+      TRUE ~ NA_character_
+    )
+  )
+
+# Violent Act
+# Table
+d2 |>
+  group_by(residency) |>
+  count(Violent) |>
+  filter(!is.na(residency)) |>
+  pivot_wider(names_from = Violent, values_from = n) |>
+  rename("Residency" = residency, "Not" = `0`, "Violent Act" = `1`) |>
+  kbl(align = 'c') |>
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed"), font_size = 24)
+
+# Bar plot
+d2 |>
+  group_by(residency) |>
+  count(Violent) |>
+  filter(!is.na(residency)) |>
+  mutate(
+    Violent = if_else(Violent == 1, "Violent Act", "Not")
+  ) |>
+  ggplot(aes(x = residency, y = n, fill = Violent)) +
+  geom_col(position = "fill", width = .7) +
+  geom_hline(yintercept = .5, color = "red") +
+  labs(x = "", y = "Proportion of Observations", fill = "") +
+  scale_y_continuous(labels = scales::percent_format()) +
+  scale_fill_brewer(type = "qual", palette = 7) +
+  guides(fill = "none") +
+  theme_bw() +
+  annotate("text", x = 1, y = c(.25, .8), label = c("Violent\nActs", "Not"), size = 5)
+```
+:::
+
+::: {.column width="50%"}
+```{r, fig.retina=3, fig.asp=0.618, fig.align='center', out.width='100%', fig.width = 6.5}
+# Aimed for mass causalty? four or more people being killed or injured
+d2 |>
+  group_by(residency) |>
+  count(Primary_Event_Mass_Casualty_Incident) |>
+  filter(!is.na(residency)) |>
+  pivot_wider(names_from = Primary_Event_Mass_Casualty_Incident, values_from = n) |>
+  select(-`-88`, -`NA`) |>
+  rename("Residency" = residency, "Not" = `0`, "Mass Casualty" = `1`) |>
+  kbl(align = 'c') |>
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed"), font_size = 24)
+
+d2 |>
+  group_by(residency) |>
+  count(Primary_Event_Mass_Casualty_Incident) |>
+  filter(!is.na(residency)) |>
+  filter(Primary_Event_Mass_Casualty_Incident %in% c(0,1)) |>
+  mutate(
+    Primary_Event_Mass_Casualty_Incident = if_else(Primary_Event_Mass_Casualty_Incident == 1, "Aims for Mass Casualty", "Not")
+  ) |>
+  ggplot(aes(x = residency, y = n, fill = Primary_Event_Mass_Casualty_Incident)) +
+  geom_col(position = "fill", width = .7) +
+  geom_hline(yintercept = .5, color = "red") +
+  labs(x = "", y = "Proportion of Observations", fill = "") +
+  scale_y_continuous(labels = scales::percent_format()) +
+  scale_fill_brewer(type = "qual", palette = 7) +
+  guides(fill = "none") +
+  theme_bw() +
+  annotate("text", x = 1, y = c(.8, .25), label = c("Not", "Aim:\nMass\nCasualty"), size = 5)
+```
+:::
+::::
+
+::: notes
+
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+### **Do individuals that pursue violent events have different demographics or socioeconomic statuses from those that do not?**
+
+- Gender
+
+- Education
+
+- Employment Status
+
+- Marital Status
+
+::: notes
+
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+```{r, fig.retina=3, fig.asp=0.618, fig.align='center', out.width='90%'}
+# Gender: 1 female, 2 male, 3 non-binary
+#d |> count(Gender, Violent)
+nums1 <- d |> count(Sex) |> select(n)
+
+#d |> count(Gender, Violent)
+
+d |> 
+  mutate(
+    Gender = case_when(
+      Sex == 1 ~ "Female",
+      Sex == 2 ~ "Male",
+      Sex == 3 ~ "Non-binary"
+    ),
+    Violent = if_else(Violent == 0, "Non-Violent", "Violent")
+  ) |>
+  count(Violent, Gender) |>
+  ggplot(aes(x = Gender, y = n, fill = Violent)) +
+  geom_col(position = "fill") +
+  theme_bw() +
+  labs(x = "", y = "") +
+  scale_y_continuous(labels = scales::percent_format()) +
+  scale_fill_brewer(type = "qual", palette = 6, direction = -1) +
+  scale_x_discrete(limits = c("Male", "Female", "Non-binary")) +
+  guides(fill = "none") +
+  annotate("text", x = c(2,1,3), y = .05, label = nums1$n[c(2,1,3)], color = "white", size = 5) +
+  annotate("text", x = 1, y = .3, label = "Violent Acts", srt = 90, color = "white", size = 5) +
+  annotate("text", x = 1, y = .8, label = "Non-Violent", srt = 90, color = "white", size = 5)
+```
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+```{r, fig.retina=3, fig.asp=0.618, fig.align='center', out.width='90%'}
+#d |> filter(Education != -99, Education != -88) |> count(Violent, Education)
+
+nums3 <- d |> filter(Education != -99, Education != -88) |> count(Education) |> select(n)
+
+d |> 
+  filter(Education != -99, Education != -88) |>
+  mutate(
+    Education = case_when(
+      Education < 3 ~ "< HS",
+      Education == 3 ~ "HS",
+      Education %in% c(4,6) ~ "Some College",
+      Education == 5 ~ "College",
+      Education %in% c(7:11) ~ "Some Post-Grad"
+    ),
+    Violent = if_else(Violent == 0, "Non-Violent", "Violent")
+  ) |>
+  count(Violent, Education) |>
+  ggplot(aes(x = Education, y = n, fill = Violent)) +
+  geom_col(position = "fill") +
+  theme_bw() +
+  labs(x = "", y = "",
+       title = "Education reduces radical violence") +
+  scale_y_continuous(labels = scales::percent_format()) +
+  scale_fill_brewer(type = "qual", palette = 6, direction = -1) +
+  guides(fill = "none") +
+  annotate("text", x = 1:5, y = .05, label = nums3$n[1:5], color = "white", size = 4.5) +
+  annotate("text", x = 1, y = .35, label = "Violent Acts", srt = 90, color = "white", size = 4) +
+  annotate("text", x = 1, y = .86, label = "Non-Violent", srt = 90, color = "white", size = 4) +
+  scale_x_discrete(limits = c("< HS", "HS", "Some College", "College", "Some Post-Grad"))
+
+```
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+```{r, fig.retina=3, fig.asp=0.618, fig.align='center', out.width='90%'}
+#d |> filter(Employment_Status != -99, Employment_Status != -88) |> count(Violent, Employment_Status)
+
+nums4 <- d |> filter(Employment_Status != -99, Employment_Status != -88) |> count(Employment_Status) |> select(n)
+
+d |> 
+  filter(Employment_Status != -99, Employment_Status != -88) |>
+  mutate(
+    Employment_Status = case_when(
+      Employment_Status == 1 ~ "Employed",
+      Employment_Status == 2 ~ "Self-Employed",
+      Employment_Status %in% c(3,4) ~ "Unemployed",
+      Employment_Status == 5 ~ "Student",
+      Employment_Status == 6 ~ "Retired"
+    ),
+    Violent = if_else(Violent == 0, "Non-Violent", "Violent")
+  ) |>
+  count(Violent, Employment_Status) |>
+  ggplot(aes(x = Employment_Status, y = n, fill = Violent)) +
+  geom_col(position = "fill") +
+  theme_bw() +
+  labs(x = "", y = "",
+       title = "Jobs reduce radical violence") +
+  scale_y_continuous(labels = scales::percent_format()) +
+  scale_fill_brewer(type = "qual", palette = 6, direction = -1) +
+  guides(fill = "none") +
+  annotate("text", x = 1:6, y = .05, label = nums3$n[1:6], color = "white", size = 4.5) +
+  annotate("text", x = 1, y = .35, label = "Violent Acts", srt = 90, color = "white", size = 4) +
+  annotate("text", x = 1, y = .86, label = "Non-Violent", srt = 90, color = "white", size = 4) +
+  scale_x_discrete(limits = c("Unemployed", "Student", "Retired", "Employed", "Self-Employed"))
+```
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+```{r, fig.retina=3, fig.asp=0.618, fig.align='center', out.width='90%'}
+#d |> filter(Marital_Status != -99) |> count(Violent, Marital_Status)
+
+nums2 <- d |> filter(Marital_Status != -99) |> count(Marital_Status) |> select(n)
+
+d |> 
+  filter(Marital_Status != -99) |>
+  mutate(
+    Marital_Status = case_when(
+      Marital_Status == 1 ~ "Single",
+      Marital_Status == 2 ~ "Married",
+      Marital_Status == 3 ~ "Divorced",
+      Marital_Status == 4 ~ "Widowed"
+    ),
+    Violent = if_else(Violent == 0, "Non-Violent", "Violent")
+  ) |>
+  count(Violent, Marital_Status) |>
+  ggplot(aes(x = Marital_Status, y = n, fill = Violent)) +
+  geom_col(position = "fill") +
+  theme_bw() +
+  labs(x = "", y = "",
+       title = "Beware unmarried radicals!") +
+  scale_y_continuous(labels = scales::percent_format()) +
+  scale_fill_brewer(type = "qual", palette = 6, direction = -1) +
+  guides(fill = "none") +
+  annotate("text", x = 1:4, y = .05, label = nums2$n[1:4], color = "white", size = 4) +
+  annotate("text", x = 1, y = .35, label = "Violent Acts", srt = 90, color = "white", size = 4.5) +
+  annotate("text", x = 1, y = .83, label = "Non-Violent", srt = 90, color = "white", size = 4.5) +
+  scale_x_discrete(limits = c("Single", "Divorced", "Widowed", "Married"))
+```
+
+
+## For Next Class {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+Jasko, K., LaFree, G., Piazza, J., & Becker, M. H. (2022). A comparison of political violence by left-wing, right-wing, and Islamist extremists in the United States and the world. *Proceedings of the National Academy of Sciences* 119(30)
+
+- Submit reflections to Canvas
+
+::: notes
+
+
+:::
+

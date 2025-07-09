@@ -1,0 +1,176 @@
+---
+format: revealjs
+---
+
+## Today's Agenda {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+```{r}
+library(tidyverse)
+library(readxl)
+library(kableExtra)
+```
+
+<br>
+
+**IV. How do we make political violence less likely?**
+
+<br>
+
+- Identifying institutional vulnerabilities in the US
+
+<br>
+
+::: r-stack
+Justin Leinaweaver (Fall 2025)
+:::
+
+::: notes
+
+Prep for Class
+
+1. Review submissions on Canvas
+
+:::
+
+
+
+## For Today {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+<br>
+
+What are the institutional vulnerabilities that currently exist in the US that make us vulnerable to political violence? 
+
+In other words, what are the aspects of our community that create or allow for acts of political violence to occur?
+
+- These can be formal institutions (laws, policies, etc) or informal ones (norms, customs, etc).
+
+::: notes
+
+Canvas Assignment: Identifying Vulnerabilities
+
+What are the institutional vulnerabilities that currently exist in the US that make us vulnerable to political violence? In other words, what are the aspects of our community that create or allow for acts of political violence to occur? These can be formal institutions (laws, policies, etc) or informal ones (norms, customs, etc).
+
+1. Describe and explain the vulnerability you have selected
+2. Submit a piece of evidence that illustrates this vulnerability in action (APA citation and explanation of the evidence)
+
+<br>
+
+For today I asked each of you to reflect on our threats in order to diagnose the institutional vulnerabilities that allows them to happen.
+
+<br>
+
+### How did this go?
+
+<br>
+
+*Split class into four groups (5 each?)*
+
+- Go sit with your group!
+
+:::
+
+
+
+## {background-image="Images/14_3-Capitol_Building_v3.png" .center}
+
+[**Evaluating Institutional Vulnerabilities**]{style="color:white;"}
+
+[1. The five most serious vulnerabilities]{style="color:white;"}
+
+[2. The five easiest to address]{style="color:white;"}
+
+[3. The five hardest to address]{style="color:white;"}
+
+
+::: notes
+
+GROUPS: Review the submissions and make us three lists on the board.
+
+- Identify the five most serious vulnerabilities
+- Identify the five vulnerabilities that would be easiest to address
+- Identify the five vulnerabilities that would be hardest to address
+
+<br>
+
+*PRESENT and DISCUSS each*
+
+:::
+
+
+
+## {background-image="Images/14_3-Capitol_Building_v3.png"}
+
+[**What are the specific vulnerabilities that make these threats possible?**]{style="color:white;"}
+
+::: notes
+
+Let's talk big picture takeaways.
+
+### How vulnerable are we in the US to political violence?
+
+<br>
+
+### Are we convinced that we could eliminate this vulnerability using purely institutional fixes? Why or why not?
+
+<br>
+
+### What are the drawbacks to using institutional rules to reduce the vulnerabilities we face? 
+
+### - Are they worth the reductions in "freedom" they might require? Why or why not?
+
+<br>
+
+**SLIDE**: With all of this in mind, here's the prompt for your final paper
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+**Paper 3: How do we reduce the likelihood of political violence in our society?**
+
+Based on our explorations of political violence this semester, what are the **THREE** strongest pieces of policy advice you could offer to prevent political violence at the city, state or national level? 
+
+A strong proposal will:
+
+- be specific (e.g. include the kinds of details a relevant stakeholder would need to implement your proposal), and
+
+- provide evidence that your proposal is likely to be effective.
+
+::: notes
+
+Papers are due at end of final exam window
+- Dec 14th, 12:20pm
+
+- NO LATE PAPERS ACCEPTED
+
+<br>
+
+### Questions on the assignment?
+
+<br>
+
+**SLIDE**: To keep you moving forward on the paper, let's build on our work from today
+
+:::
+
+
+
+## For Next Class {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+<br>
+
+
+::: notes
+
+My aim is that this exercise helps expose you to a bunch of intriguing ideas.
+
+- We're essentially crowd-sourcing your topic selection.
+
+<br>
+
+### Questions on the assignment?
+
+:::
+

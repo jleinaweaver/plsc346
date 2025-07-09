@@ -1,0 +1,456 @@
+---
+format: revealjs
+---
+
+## Today's Agenda {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+```{r}
+library(tidyverse)
+library(readxl)
+library(kableExtra)
+
+# Data for today
+library(carData)
+```
+
+<br>
+
+**III. How and why do non-state actors use political violence?**
+
+<br>
+
+- Does considering the morality help us understand terrorism?
+
+<br>
+
+::: r-stack
+Justin Leinaweaver (Fall 2025)
+:::
+
+::: notes
+Prep for Class
+
+1. Review submissions on Canvas
+
+<br>
+
+:::
+
+
+
+## {background-image="Images/10_1-Terrorism_Background_darker.png" .center}
+
+:::: {.columns}
+::: {.column width="60%"}
+
+::: {.r-fit-text}
+
+[**"Terrorism"**]{style="color:white;"}
+
+[**1) Concept**]{style="color:white;"}
+
+[**2) Case studies**]{style="color:white;"}
+
+[**3) Operationalization**]{style="color:white;"}
+
+[**4) Instrumentation**]{style="color:white;"}
+
+[**5) Measurement**]{style="color:white;"}
+:::
+
+:::
+
+::: {.column width="40%"}
+
+:::
+::::
+
+::: notes
+
+This week we have been working to deepen our understanding of the "terrorism" concept.
+
+- Specifically, we have been systematically collecting cases, arguments and definitions meant to help us evaluate measurements of terrorism (our work next week).
+
+<br>
+
+As a warm-up, let's talk about what has stood out for you so far
+
+### What are the key elements of "terrorism" as you see it now?
+
+- I appreciate Tilly's (2004) discussion of "terror" as a "recurrent strategy of intimidation"
+
+- I apppreciate Schmid's (2003) attempt to generate academic consensus around a definition (and I like his definition even if it is rather unwieldy in practice and I'm not sure the "contexts" piece is necessary)
+
+
+<br>
+
+### Big substantive debates about terrorism?
+
+- Tilly (2004) "crude typology": Can we actually generalize about terrorism if the actors who employ the terror strategy are so incredibly diverse in motivation, aims and tactics?
+
+<br>
+
+**SLIDE**: Let's apply your expertise to Jaggar's definition of terrorism.
+
+<br>
+
+Notes
+
+Schmid (2011): Academic Consensus Definition
+
+1. “Terrorism refers, on the one hand, to a doctrine about the presumed effectiveness of a special form or tactic of fear-generating, coercive political violence and, on the other hand, to a conspiratorial practice of calculated, demonstrative, direct violent action without legal or moral restraints, targeting mainly civilians and non-combatants, performed for its propagandistic and psychological effects on various audiences and conflict parties;
+
+2. Terrorism as a tactic is employed in three main contexts: (i) illegal state repression; (ii) propagandistic agitation by non-state actors in times of peace or outside zones of conflict; and (iii) as an illicit tactic of irregular warfare employed by state- and non-state actors.”
+
+:::
+
+
+
+## {background-image="Images/10_1-Terrorism_Background_filter75.png" .center}
+
+::: {.r-fit-text}
+**Jaggar (2005) Defines Terrorism**
+:::
+
+<br>
+
+![](Images/10_3-Jaggar_Definition_Terrorism.png){style="display: block; margin: 0 auto"}
+
+::: notes
+
+As our segue into the Jaggar (2005) article let's start by analyzing her definition of "terrorism."
+
+### Based on the work you've done this week, talk to me about what you learn about Jaggar's perspective on terrorism from this definition.
+
+- *Talk in groups first then report back*
+
+- Jaggar argues this definition has three primary benefits
+    1. Terrorism Is Not a Specific Type of Conflict; Instead It Is a Tactic That May Be Employed in Various Types of Conflict and in Combination with Other Strategies of Making Claims
+    2. Terrorism Should Not Be Equated with Any Particular Method of Intimidation. Terrorists Use a Variety of Methods, All of Which May Also Be Used in Contexts That Are Not Terrorist
+    3. This Account Facilitates Moral Assessment
+
+<br>
+
+### Overall, do you "like" this definition? Does it compare favorably to the consensus definition in Schmid (2023)? Or to Tilly's (2004) four steps?
+
+- Q: Does "subjugation" add anything new?
+
+- "good, bad or indifferent" vs Tilly's connection to political struggle
+
+<br>
+
+**SLIDE**: Before we talk morality, let's talk about the challenge of perspective.
+
+<br>
+
+Notes
+
+Schmid (2011): Academic Consensus Definition
+
+1. “Terrorism refers, on the one hand, to a doctrine about the presumed effectiveness of a special form or tactic of fear-generating, coercive political violence and, on the other hand, to a conspiratorial practice of calculated, demonstrative, direct violent action without legal or moral restraints, targeting mainly civilians and non-combatants, performed for its propagandistic and psychological effects on various audiences and conflict parties;
+
+2. Terrorism as a tactic is employed in three main contexts: (i) illegal state repression; (ii) propagandistic agitation by non-state actors in times of peace or outside zones of conflict; and (iii) as an illicit tactic of irregular warfare employed by state- and non-state actors.”
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+![](Images/10-3-jaggar_header.png){style="display: block; margin: 0 auto"}
+
+::: notes
+
+Jaggar kicks things off with a quote worth reflecting on.
+
+<br>
+
+### Why do we think this paper kicks off with this quote?
+
+### - What kind of perspective does this offer us about terrorism?
+
+<br>
+
+### - Who is Pilger criticizing here?
+
+<br>
+
+### - Is this a fair critique? Why or why not?
+
+<br>
+
+One of the real values of Jaggar's article is in how seriously it asks us to take perspective and context when thinking about terrorism.
+
+- I'm not usually keen to dive into philosophical waters, but I think questions of moral perspective and justification are inseparable from questions about terrorism. 
+
+<br>
+
+**SLIDE**: Let's discuss some of these alternative perspectives
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+![](Images/10_3-terrorist_or_freedom_fighter.png){style="display: block; margin: 0 auto"}
+ 
+::: notes
+
+Here we see a meme that has often made the rounds over the last 20 years.
+
+### What is the context behind this picture? What does this refer to?
+- (US view of the Taliban in Afghanistan)
+    - 1985 fighting the soviets = Good guys!
+    - 2005 fighting the US = bad guys!
+
+<br>
+
+### What does this dichotomy ask us to remember when discussing "terrorism"?
+
+"One person’s terrorist is another person’s freedom fighter"
+
+<br>
+
+I think of this as a reminder to never forget the subjective nature of the act.
+
+- No one thinks of themselves as the bad guy in their own story.
+
+<br>
+
+This matters for thinking about terrorism as a strategy to achieve some specific end
+
+- Every person, even those using terror as a strategy, has lines they will not cross,
+
+- Every person, even a "terrorist", has some justification or rationalization for their behavior.
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+"Now suppose there is a desperate bandit lurking in the fields and one thousand men set out in pursuit of him. The reason all look for him as they would a wolf is that each one fears that he will arise and harm him. This is the reason one man willing to throw away his life is enough to terrorize a thousand."
+
+— Chinese military philosopher Wu Ch’i
+
+::: notes
+
+*Read the quote*
+
+<br>
+
+Ok, talk to me about the message here.
+
+### What does this tell us about terror as a strategy?
+1. Even weak groups can achieve terrifying ends if they are sufficiently committed to their cause.
+    - Small groups with "correct timing, surgical precision and an unambiguous purpose" can represent "an invaluable weapon of war" (Martin 2016 p33).
+
+2. Because "terror" violates norms, it carries more weight than other acts of violence
+
+<br>
+
+In this sense, terrorism is not crazy and it is not definitionally "crazy."
+
+- Terrorists are "terrorists" at least in part because they are violating the norms in a society AND this willingness to violate those norms gives the actions greater substantive weight
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+![](Images/10_3-Goldwater_quote.png){style="display: block; margin: 0 auto"}
+
+::: notes
+
+*Read quote: Quote from Sen. Barry Goldwater during his run for the presidency in 1964: Extremism in defense of liberty is no vice.*
+
+<br>
+
+Ok, talk to me about the message here.
+
+### What does this tell us about terror as a strategy?
+- (Swap out "liberty" for any other cause and one can understand the kind of single-minded devotion that leads to terrorist actions.)
+    - Frames the cause in terms of good vs evil.
+
+<br>
+
+This perspective on terrorism pervades many modern debates in the US and around the world
+
+- A defense of "liberty" has been used to justify some truly messed up acts.
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+![](Images/10_3-life_magazine_quote.png){style="display: block; margin: 0 auto"}
+
+::: notes
+
+*Read quote*
+
+We must destroy the town to save it.
+- A notorious quote from a US Army officer explaining why a Vietnamese town overrun by Viet Cong soldiers had been destroyed by aerial bombing.
+
+I am NOT asserting this is or isn't terrorism.
+- Just interested in the perspective on a controversial act of violence.
+
+<br>
+
+Ok, talk to me about the message here.
+
+### What does this tell us about terror as a strategy?
+
+- (Symbolic argument: There is nothing worse than being occupied by the enemy so bombing the town prevented that outcome.)
+    - The "village" can be replaced by any symbolic value.
+
+- Terrorists often use this kind of logic to justify imposing hardships on even their own supporters.
+
+- History is written by the powerful. 
+    - States can convey legitimacy on horrible acts (or at least can try to...)
+
+:::
+
+
+
+## {background-image="Images/10_1-Terrorism_Background_filter75.png" .center}
+
+**Jaggar (2005): A Moral Terrorism?**
+
+:::: {.columns}
+::: {.column width="50%"}
+1. Just cause 
+
+2. Competent authority 
+
+3. Right intention 
+
+4. Proportionality 
+
+5. Last resort 
+
+6. Reasonable hope of success 
+
+7. Aim of peace
+:::
+
+::: {.column width="50%"}
+
+<br>
+
+![](Images/10_3-venn_diagram.png)
+:::
+::::
+
+::: notes
+
+All of this concern about context, perspective and the subjectivity of "terrorism" leads us up to Jagger's criteria for a morally permissible form of terror.
+
+<br>
+
+### Are we clear on these? Any that need clarification?
+
+1. Just cause. For terrorism to be morally permissible, a necessary though certainly not sufficient condition is that it must be intended to secure people’s most basic rights.
+
+2. Competent authority. Early versions of just war theory limited permissible uses of force to those authorized by public authorities, a statist bias that made it impossible to justify uprisings against those authorities. Current international law recognizes rebel movements as having “belligerent status” if they control their territory but even this might-makes-right criterion may be too stringent since many rebel movements, especially in their early stages, are
+too weak to control the territory in which they operate, at least by day (Lackey 1989, 29–31). The question of when terrorists may legitimately claim to represent some oppressed population is difficult to answer, both in principle and in practice, although some indication may be provided by the extent of popular protest or rejoicing over terrorist acts.
+
+3. Right intention. For their conduct to have a chance of being justified, terrorists must be convinced that all of the conditions necessary to justifying a war must be met. If terrorists are able to choose whether or not to participate in terrorist activity while military personnel are conscripted, then their subjective beliefs are even more important to assessing the conduct of terrorists than to assessing the conduct of official military personnel.
+
+4. Proportionality. The use of force is justified in traditional just war theory only if the overall good it achieves is greater than the harm it causes. Since terrorism is even more atrocious than war, for reasons given above, the cause of the terrorist must be overwhelming in its righteousness. Only massive and systematic violations of human rights, not small injustices, could ever begin to justify the adoption of terrorist tactics and use of these tactics must be kept to a minimum, in terms of both quantity and quality.
+
+5. Last resort. Terrorist tactics must be a last resort. All other means of remedying the perceived injustice, including conventional warfare, must be unavailable or have failed.
+
+6. Reasonable hope of success. Those waging a just war must have a reasonable hope of success in achieving their ends. Because terrorism is so reprehensible, it seems plausible to insist that terrorism can be justified only when the hope of success is much more certain than required to justify war.
+
+7. The aim of peace. Like a just war, any justified terrorism should aim at a just peace.
+
+:::
+
+
+
+## {background-image="Images/10_1-Terrorism_Background_filter75.png" .center}
+
+**Jaggar (2005): A Moral Terrorism?**
+
+:::: {.columns}
+::: {.column width="50%"}
+1. Just cause 
+
+2. Competent authority 
+
+3. Right intention 
+
+4. Proportionality 
+
+5. Last resort 
+
+6. Reasonable hope of success 
+
+7. Aim of peace
+:::
+
+::: {.column width="50%"}
+
+<br>
+
+![](Images/10_3-venn_diagram.png)
+:::
+::::
+
+::: notes
+
+Let's evaluate the list
+
+**Are all seven mutually exclusive criteria?**
+
+- **Any problematic / vague inclusions?**
+
+<br>
+
+Take a minute, evaluate your case study from Monday using this list.
+
+### Does anybody have a case that hits many of these elements?
+
+### - Who hits the most?
+
+### - Who hits the fewest?
+
+<br>
+
+### Overall, are you persuaded that any act of "terrorism" could be morally justified? Why or why not?
+
+<br>
+
+Even Jaggar (2005) argues that her definition makes clear terrorism is morally repugnant (p212)
+
+1. First, terrorism is morally repugnant because terrorists engage in coercion and intimidation, which are regarded ordinarily as morally wrong.
+
+2. Second, terrorism is morally repugnant because terrorists harm or threaten those who have not harmed them and do not threaten them, people who can in no way be said to deserve the harm.
+
+:::
+
+
+
+## For Next Class {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+<br>
+
+**Explore the data and codebook for the RAND Database of Worldwide Terrorism Incidents**
+
+- Make sure you understand the observations and variables enough to play with them in class.
+
+::: notes
+
+Next week we explore three data projects used by terrorism researchers to study the concept around the world.
+
+- Monday we start with the RAND database
+
+<br>
+
+### Do we want to meet in the computer lab?
+
+:::

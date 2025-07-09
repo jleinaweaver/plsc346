@@ -1,0 +1,1108 @@
+---
+format: revealjs
+---
+
+## Today's Agenda {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+```{r}
+library(tidyverse)
+library(readxl)
+library(kableExtra)
+library(sf)
+library(rnaturalearth)
+library(rnaturalearthdata)
+library(countrycode)
+
+# Input V-Dem data
+
+d <- read_excel("../../Data/V-Dem/2025-Fall-Class/V_Dem_Personal_Integrity_Rights-1789-2024.xlsx", na = "NA")
+```
+
+<br>
+
+**II. How and why do governments use violence against the people inside their borders?**
+
+::: {.r-fit-text}
+
+- The V-Dem project on "Personal Integrity Rights" 
+
+:::
+
+<br>
+
+::: r-stack
+Justin Leinaweaver (Fall 2025)
+:::
+
+::: notes
+Prep for Class
+
+1. Review Canvas submissions
+
+<br>
+
+Alright everybody, today we evaluate and explore our last dataset focused on measuring the use of political violence by governments acting domestically.
+
+<br>
+
+**SLIDE**: But first...
+
+:::
+
+
+
+## Paper 1 {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+<br>
+
+Which **SINGLE** data source would you recommend to someone interested in better understanding the use of political violence by governments around the world?
+
+- Your thesis should be a clear recommendation for **ONE** of the sources and should be supported by **AT LEAST THREE distinct reasons** for your recommendation
+
+- **A high quality recommendation** will also make clear **why** you are not recommending the other sources
+
+::: notes
+
+**Questions on the prompt?**
+
+:::
+
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+::: {.r-fit-text}
+**Sources of Political Violence Data**
+:::
+
+- The US State Department's "Country Reports on Human Rights Practices"
+
+- Amnesty International's "Annual Country Reports"
+
+- The Political Terror Scale (PTS)
+
+- **The CIRIGHTS data project's "Physical Integrity Rights"**
+
+- Varieties of Democracy's (V-Dem) "Personal Integrity Rights"
+
+::: notes
+
+Last class we explored the CIRIGHTS data project's "Physical Integrity Rights" that is built using four separate measures
+
+1. Torture
+2. Extrajudicial killing
+3. Disappearances
+4. Political imprisonment
+
+<br>
+
+**Key takeaways?**
+
+- e.g. elements of validity and reliability arguments that stood out for you?
+
+- What do you need to keep in mind in order to use CIRIGHTS scores appropriately?
+
+:::
+
+
+
+
+## For Today {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+<br>
+
+::: {.r-fit-text}
+
+**Exploring the V-Dem "Personal Integrity Rights" Scores**
+
+1. Evaluate the methodology / codebook
+
+2. Evaluate the data
+
+:::
+
+::: notes
+
+**Everybody ready for today's work?**
+
+<br>
+
+The V-Dem project takes a VERY different approach to measuring state behavior than what we've focused on so far.
+
+- This represents our first big move away from the State Department and AI as our primary sources of data about the world.
+
+- It's not the easiest process to understand at a granular level, but the general intuition isn't too bad.
+
+<br>
+
+**SLIDE**: Let's start big picture
+
+:::
+
+
+
+## "Political Violence" {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+<br>
+
+**II. How and why do governments use violence against the people inside their borders?**
+
+1. **"Human Rights Practices" (State Dept and AI)**
+
+2. **"Political Terror" (PTS)**
+
+3. **"Personal Integrity Rights" (V-Dem)**
+
+::: notes
+
+Remember, the overarching aim of our class is to describe and explain "political violence"
+
+The aim of the second section of the class is focused on this big question about governments using violence within their borders
+
+<br>
+
+### At a purely conceptual level, are we comfortable adding "Personal Integrity Rights" to this list of "similar enough" measures? Why or why not?
+
+<br>
+
+### What are the concepts V-Dem includes under this umbrella term?
+- (Four Items: Freedom from torture, Freedom from political killings, Freedom from forced labor for men, Freedom from forced labor for women)
+
+<br>
+
+### How does this compare to the four measures used by the CIRIGHTS Project? Disappearance, Extrajudicial Killing, Political Imprisonment and Torture
+
+<br>
+
+**SLIDE**: Let's dive into the evaluation!
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+::: {.r-fit-text}
+**Measuring "Personal Integrity Rights" (V-Dem)**
+:::
+
+:::: {.columns}
+::: {.column width="50%"}
+**Operationalization**
+
+&#8595;
+
+**Instrumentation**
+
+&#8595;
+
+**Measurement**
+:::
+
+::: {.column width="50%"}
+1. Freedom from torture
+
+2. Freedom from political killings
+
+3. Freedom from forced labor for men
+
+4. Freedom from forced labor for women
+:::
+::::
+
+::: notes
+
+*Split class into 4 groups: One group per measure*
+
+GROUPS: Make an argument about the validity and reliability of your assigned measure based on the operationalization, instrumentation and measurement described in the codebook.
+
+- Build strengths and weaknesses lists directly on the board
+
+<br>
+
+### Questions on the assignment?
+
+- Get to it!
+
+<br>
+
+**SLIDES** for each
+
+<br>
+
+Notes
+
+Civil Liberties coding advice: "The following questions are focused on actual practices (de facto) rather than formal legal or constitutional rights (de jure). Note that if there is significant variation in the respect for a particular civil liberty across the territory, the score should reflect the "average situation" across the territorial scope of the country unit (for each period) as defined in the coder instructions" (p176).
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+::: {.r-fit-text}
+**Measuring "Personal Integrity Rights" (V-Dem)**
+:::
+
+![](Images/05_3-VDem_Torture_Instrument.png)
+
+::: notes
+
+Validity and Reliability
+
+Strengths
+
+- ?
+
+Weaknesses
+
+- ?
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+::: {.r-fit-text}
+**Measuring "Personal Integrity Rights" (V-Dem)**
+:::
+
+![](Images/05_3-VDem_Killings1_Instrument.png)
+
+![](Images/05_3-VDem_Killings2_Instrument.png)
+
+::: notes
+
+Validity and Reliability
+
+Strengths
+
+- ?
+
+Weaknesses
+
+- ?
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+::: {.r-fit-text}
+**Measuring "Personal Integrity Rights" (V-Dem)**
+:::
+
+![](Images/05_3-VDem_MensLabor_Instrument.png)
+
+::: notes
+
+Validity and Reliability
+
+Strengths
+
+- ?
+
+Weaknesses
+
+- ?
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+::: {.r-fit-text}
+**Measuring "Personal Integrity Rights" (V-Dem)**
+:::
+
+![](Images/05_3-VDem_WomensLabor1_Instrument.png)
+
+![](Images/05_3-VDem_WomensLabor2_Instrument.png)
+
+::: notes
+
+Validity and Reliability
+
+Strengths
+
+- ?
+
+Weaknesses
+
+- ?
+
+<br>
+
+**SLIDE**: Let's now talk about how V-Dem does post-measurement data processing!
+
+:::
+
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+::: {.r-fit-text}
+**Every Country-Year is Coded by Multiple Experts**
+:::
+
+![](Images/05_3-Marquardt2018-Fig2ab.png)
+
+::: notes
+
+The team behind V-Dem has published a bunch of research on their methods.
+
+- I'll pull some highlights from a 2018 article in Political Analysis to give you the intuition behind their work.
+
+- Marquardt & Pemstein (2018). IRT Models for Expert-Coded Panel Data. Political Analysis, 26(4), 431–456. 
+
+<br>
+
+Step 1 of their process is to get multiple country experts to use the instruments for a single country-year
+
+<br>
+
+Here I'm showing you histograms on the number of experts per country-year and the number of experts per observation in the dataset.
+
+- The project's goal is a minimum of five experts per country
+
+- Panel (a) shows
+    - The average is 12 experts/country
+    - Only 27 countries had fewer than the target
+
+- Panel (b) shows the number of expert ratings per variable
+    - Average is 6
+    - Each expert is allowed to skip measurements they don't feel confident in rating
+
+<br>
+
+### Everybody understand these histograms?
+
+### Per the methodology document on the V-Dem website, why do they use experts for this work?
+- ("We use experts because many key features of democracy are not directly observable. For example, it is easy to observe whether or not a legislature has the legal right to investigate an executive. However, assessing the extent to which the legislature actually does so requires evaluation by experts with extensive conceptual and case knowledge.")
+
+<br>
+
+### What does that imply for the reliability of the data they produce?
+
+<br>
+
+**SLIDE**: Their next challenge is to combine all these ratings to produce a single score
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+::: {.r-fit-text}
+**What do we do when the experts disagree?**
+:::
+
+:::: {.columns}
+::: {.column width="50%"}
+![](Images/05_3-V-Dem_Coding_Disagreements-Canada.png)
+:::
+
+::: {.column width="50%"}
+```{r}
+# d_full |>
+#   filter(country_text_id == "CAN", year >= 1900) |>
+#   select(country_name, year, v2clkill:v2clkill_nr) |>
+#   View()
+
+# Canada data transformed model results back onto five point scale with 70% CI
+d |>
+  filter(country_text_id == "CAN", year %in% c(2015, 2005, 1995, 1985, 1975, 1965, 1955, 1945, 1935, 1925, 1915, 1905)) |>
+  select(year, v2clkill_nr, v2clkill_ord_codelow, v2clkill_ord, v2clkill_ord_codehigh) |>
+  kbl(align = 'c') %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"), font_size = 16)
+```
+:::
+::::
+
+::: notes
+
+Let's use Canada as an example of the challenge facing the researchers.
+
+<br>
+
+On the left is a line plot of different coder ratings for the "Freedom from political killings" variable from 1900 to 2015.
+
+- The y-axis is the four point scale for "Freedom from political killings"
+    - Note they've take the 0-4 scale and made it 1-5 here
+
+- The x-axis is time in years
+
+<br>
+
+On the right is our tabular data with snapshots every ten years since 1905
+
+- This shows the number of experts who coded this variable in that year, the consensus result and a 70% confidence interval
+
+<br>
+
+In essence, the second step of the process is when all the expert ratings are fed into a model that uses the logic of Item Response Theory (IRT) to identify a consensus value (with CIs)
+
+- Essentially, IRT is an attempt to use observed outcomes to learn something about the underlying dynamics that produced them
+
+- In other words, V-Dem assumes each expert's coding tells us something about the natural world and combining them together gets us a better estimate of it.
+
+<br>
+
+Confusingly, the plot on the left shows the scale as 1-5 and our tabular data on the original 0-4.
+
+- So, keep in mind that the fours in the table are fives on the plot
+
+<br>
+
+### What do we notice here? Talk to me about the expert ratings of Canada.
+
+- Almost total consensus on top score with one outlier consistently rating across time
+
+- The one outlier doesn't move the final rating or the CI
+
+- The researchers note that this outlier speaks to the reliability, or lack thereof, of the experts they recruit
+
+<br>
+
+**SLIDE**: Let's look at another case!
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+::: {.r-fit-text}
+**What do we do when the experts disagree?**
+:::
+
+:::: {.columns}
+::: {.column width="50%"}
+![](Images/05_3-V-Dem_Coding_Disagreements-Germany.png)
+:::
+
+::: {.column width="50%"}
+```{r}
+# d_full |>
+#   filter(country_text_id == "CAN", year >= 1900) |>
+#   select(country_name, year, v2clkill:v2clkill_nr) |>
+#   View()
+
+# Canada data transformed model results back onto five point scale with 70% CI
+d |>
+  filter(country_text_id == "DEU", year %in% c(2015, 2005, 1995, 1985, 1975, 1965, 1955, 1945, 1935, 1925, 1915, 1905)) |>
+  select(year, v2clkill_nr, v2clkill_ord_codelow, v2clkill_ord, v2clkill_ord_codehigh) |>
+  kbl(align = 'c') %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"), font_size = 16)
+```
+:::
+::::
+
+::: notes
+
+Again, remember you have to add '1' to the scores in the table to match their line plot.
+
+### What do we notice here? Talk to me about the expert ratings of Germany.
+
+- Compellingly, while the coders differ the trends they identify are very consistent
+    - Things get worse during the world wars and improve afterwards
+
+<br>
+
+### Per the FAQ on the V-Dem website, why do the researchers believe their instruments and approach helps minimize the role of expert bias in messing up the scores?
+
+- (1. Experts are asked to code specific, low-level concepts not high level aggregates)
+
+- (2. Instruments are designed with specific levels for coding)
+
+- (3. The V-Dem Measurement Model (MM) already tries to adapt for experts to vary in terms of whether they tend to swing high or low vs others)
+
+- (4. Experts are trained and practice on hypothetical cases which helps tweak the model)
+
+- (5. Over time each expert leaves a tack record that can be evaluated and compared to others for future model tweaks)
+
+<br>
+
+Certainly doesn't end the problem but they are working on it!
+
+<br>
+
+### Questions on this?
+
+<br>
+
+**SLIDE**: Let's look at a tougher case!
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+::: {.r-fit-text}
+**What do we do when the experts disagree?**
+:::
+
+:::: {.columns}
+::: {.column width="50%"}
+![](Images/05_3-V-Dem_Coding_Disagreements-Russia.png)
+:::
+
+::: {.column width="50%"}
+```{r}
+# d_full |>
+#   filter(country_text_id == "CAN", year >= 1900) |>
+#   select(country_name, year, v2clkill:v2clkill_nr) |>
+#   View()
+
+# Canada data transformed model results back onto five point scale with 70% CI
+d |>
+  filter(country_text_id == "RUS", year %in% c(2015, 2005, 1995, 1985, 1975, 1965, 1955, 1945, 1935, 1925, 1915, 1905)) |>
+  select(year, v2clkill_nr, v2clkill_ord_codelow, v2clkill_ord, v2clkill_ord_codehigh) |>
+  kbl(align = 'c') %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"), font_size = 16)
+```
+:::
+::::
+
+::: notes
+
+Russia is a particularly hard case for this variable, "freedom from political killing", but even here there are detectable trends in the data.
+
+### Talk to me about the line plot and the consensus scores in the table. How confident are we in these consensus scores?
+
+<br>
+
+### Ok, what does this mean for us in terms of validity and reliability of the V-Dem measures?
+
+1. Be careful using any country-year with small number of coders
+
+2. Definitely consider the CI when interpreting changes in a score
+
+:::
+
+
+
+## Audit the Data {background-image="Images/00-Leviathan_Cover_55.png"}
+
+<br>
+
+![](Images/05_3-VDem_Logo.png){width="350"}
+
+**Personal Integrity Rights**
+
+- Freedom from Torture
+- Freedom from Political Killings
+- Freedom from Forced Labor (men)
+- Freedom from Forced Labor (women)
+
+::: notes
+
+Let's now audit the data.
+
+- Everybody focus on the two countries you've been studying for two weeks.
+
+- Consider the number of coders assigned to your country-year and the range of codings provided
+
+<br>
+
+### Would you have coded these the same way? Why or why not?
+
+<br>
+
+### Overarching takeaways on the V-Dem operationalizations, instrumentation and measurements?
+
+#### - Which variables seem the easiest to code / we have the most confidence in?
+
+#### - Which the least?
+
+<br>
+
+**SLIDE**: With time remaining let's look at the data!
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+### Is there any evidence of selection bias in the V-Dem "Personal Integrity Rights" measures in 2024 (most recent year coded)? 
+
+::: notes
+
+Use the autofilter to zoom in on 2024 only
+
+Then scroll through and talk to me about the kinds of countries with missing data in the three measures.
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+```{r, fig.retina=3, fig.align='center', out.width='95%', fig.height=6, fig.width=10, cache=FALSE}
+## Make a map
+## Use rnaturalearth to define world map data
+worldmap <- ne_countries(scale = 'medium', type = 'countries', returnclass = 'sf')
+
+# Subset data
+d2024 <- d |>
+  filter(year == 2024)
+
+# Identify merging country label
+# guess_field(d2024$country_name) # vdem.name 98.9%
+# guess_field(d2024$country_text_id) # wb 98%, iso3c 97.8%
+# guess_field(d2024$COWcode) # cown 100%
+# guess_field(worldmap$adm0_a3) #95.8% iso3c
+
+d2024$newcode1 <- countrycode(d2024$COWcode, origin = "cown", destination = "iso3c")
+
+# Summarize data
+d24_NA <- d2024 |>
+  select(newcode1, country_name, v2cltort_ord, v2clkill_ord, v2clslavem_ord, v2clslavef_ord) |>
+  mutate(
+    Missing = if_else(is.na(v2cltort_ord) | is.na(v2clkill_ord) | is.na(v2clslavem_ord) | is.na(v2clslavef_ord), 1, 0)
+  )
+
+# Merge data
+d10 <- left_join(worldmap, d24_NA, by = c("adm0_a3" = "newcode1"))
+
+# Audit missing data
+# d24_NA |>
+#   select(country_name, v2cltort_ord, v2clkill_ord, v2clslavem_ord, v2clslavef_ord, Missing) |>
+#   View()
+# 
+# tibble(d10) |>
+#   select(name, Missing) |>
+#   filter(is.na(Missing)) |>
+#   print(n = 100)
+# 
+# tibble(d10) |> count(Missing)
+
+d10$Missing[d10$name == "Kosovo"] <- 0
+d10$Missing[d10$name == "S. Sudan"] <- 0
+d10$Missing[d10$name == "Serbia"] <- 0
+
+d10 |>
+  mutate(
+    Missing = if_else(is.na(Missing), "Missing Data", "Data Collected")
+  ) |>
+  ggplot() +
+  geom_sf(aes(fill = factor(Missing))) +
+  labs(fill = "", title = "V-Dem Missing Data (2024)") +
+  theme(legend.position = "bottom") +
+  scale_fill_brewer(type = "div", palette = 2, direction = -1)
+```
+
+::: notes
+
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+### How much do the measures overlap in 2024? 
+
+- Do we need all four sub-measures to accurately reflect government violence against individuals? 
+
+::: notes
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+::: {.r-fit-text}
+**Correlations Across the Measures**
+:::
+
+<br>
+
+```{r, fig.align='center'}
+d2024 |>
+  select(v2cltort_ord, v2clkill_ord, v2clslavem_ord, v2clslavef_ord) |>
+  cor() |>
+  kbl(digits = 2, align = c(rep('c', 5))) |>
+  column_spec(column = 1:5, width = "5em") |>
+  kable_styling(font_size = 32)
+```
+
+::: notes
+
+Measure of linear association
+
+- Torture and killing correlate VERY highly
+
+- Forced labor for men and women also correlate very highly
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+### What are the most common scores across the four sub-measures?
+
+::: notes
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+```{r, fig.align='center', fig.retina=3, fig.asp=0.618, out.width='98%', fig.width=8, cache=FALSE}
+d2024 |>
+  select(v2cltort_ord, v2clkill_ord, v2clslavem_ord, v2clslavef_ord) |>
+  pivot_longer(cols = v2cltort_ord:v2clslavef_ord, names_to = "Measure", values_to = "Values") |>
+  group_by(Measure) |>
+  count(Values) |>
+  mutate(
+    Values = case_when(
+      Values == 0 ~ "Score 0",
+      Values == 1 ~ "Score 1",
+      Values == 2 ~ "Score 2",
+      Values == 3 ~ "Score 3",
+      Values == 4 ~ "Score 4"
+    )
+  ) |>
+  ggplot(aes(x = Measure, y = n, fill = Values)) +
+  geom_col(position = "dodge", color = "grey", width = .6) +
+  theme_bw() +
+  #scale_fill_manual(values = c("red", "orange", "green3"))
+  scale_fill_brewer(type = "div", palette = 5) +
+  scale_x_discrete(limits = c("v2cltort_ord", "v2clkill_ord", "v2clslavem_ord", "v2clslavef_ord"), labels = c("Torture", "Killings", "Forced Labor (M)", "Forced Labor (W)")) +
+  labs(x = "", y = "Count", fill = "",
+       title = "Personal Integrity Rights",
+       caption = "Source: V-Dem 2024")
+```
+
+::: notes
+
+```{r}
+d2024 |>
+  select(v2cltort_ord, v2clkill_ord, v2clslavem_ord, v2clslavef_ord) |>
+  pivot_longer(cols = v2cltort_ord:v2clslavef_ord, names_to = "Measure", values_to = "Values") |>
+  group_by(Measure) |>
+  count(Values) |>
+  pivot_wider(names_from = Values, values_from = n, names_prefix = "Score ") |>
+  kbl(align = 'c') |>
+  column_spec(column = 1:4, width = "3em")
+```
+
+:::
+
+
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+### Any countries with a current torture score ('v2cltort_ord') that challenges your intuitions? 
+
+::: notes
+
+Given the high correlation between torture and killing this should represent both fairly well.
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+```{r, fig.retina=3, fig.align='center', out.width='95%', fig.height=6, fig.width=10, cache=FALSE}
+## Make a map
+
+d2024$newcode1 <- countrycode(d2024$COWcode, origin = "cown", destination = "iso3c")
+
+# # Summarize data
+# d24_NA <- d2024 |>
+#   select(newcode1, country_name, v2cltort_ord, v2clkill_ord, v2clslavem_ord, v2clslavef_ord) |>
+#   mutate(
+#     Missing = if_else(is.na(v2cltort_ord) | is.na(v2clkill_ord) | is.na(v2clslavem_ord) | is.na(v2clslavef_ord), 1, 0)
+#   )
+
+# Merge data
+d11 <- left_join(worldmap, d2024, by = c("adm0_a3" = "newcode1"))
+
+# Audit missing data
+# d2024 |>
+#   select(country_name, v2cltort_ord) |>
+#   View()
+# 
+# tibble(d11) |>
+#   select(name, v2cltort_ord) |>
+#   filter(is.na(v2cltort_ord)) |>
+#   print(n = 100)
+
+# d11$v2cltort_ord[d11$name == "Kosovo"] <- 3
+# d11$v2cltort_ord[d11$name == "S. Sudan"] <- 1
+# d11$v2cltort_ord[d11$name == "Serbia"] <- 3
+
+d11 |>
+  ggplot() +
+  geom_sf(aes(fill = factor(v2cltort_ord))) +
+  labs(fill = "", title = "Freedom from Torture (V-Dem 2024)") +
+  theme(legend.position = "right") +
+  scale_fill_brewer(type = "div", palette = 5, na.value="darkgrey")
+```
+
+::: notes
+
+:::
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+### Any countries with a current Freedom from Forced Labor (women) score ('v2clslavef_ord') that challenges your intuitions? 
+
+::: notes
+
+Given the high correlation between the male and female scores this should represent both fairly well.
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+```{r, fig.retina=3, fig.align='center', out.width='95%', fig.height=6, fig.width=10, cache=FALSE}
+## Make a map
+
+# Audit missing data
+# d2024 |>
+#   select(country_name, v2clslavef_ord) |>
+#   View()
+# 
+# tibble(d11) |>
+#   select(name, v2clslavef_ord) |>
+#   filter(is.na(v2clslavef_ord)) |>
+#   print(n = 100)
+
+# d11$v2clslavef_ord[d11$name == "Kosovo"] <- 3
+# d11$v2clslavef_ord[d11$name == "S. Sudan"] <- 1
+# d11$v2clslavef_ord[d11$name == "Serbia"] <- 3
+
+d11 |>
+  ggplot() +
+  geom_sf(aes(fill = factor(v2clslavef_ord))) +
+  labs(fill = "", title = "Freedom from Forced Labor (women) (V-Dem 2024)") +
+  theme(legend.position = "right") +
+  scale_fill_brewer(type = "div", palette = 5, na.value="darkgrey")
+```
+
+::: notes
+
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+```{r, fig.retina=3, fig.align='center', out.width='95%', fig.height=6, fig.width=10, cache=FALSE}
+## Make a map
+
+# Summarize data
+d_diffs2 <- d |>
+  filter(year %in% c(2001, 2024)) |>
+  select(country_name, COWcode, year, v2clslavef_ord) |>
+  pivot_wider(names_from = year, values_from = v2clslavef_ord, names_prefix = "forced_") |>
+  mutate(
+    Difference = forced_2024 - forced_2001
+  )
+
+d_diffs2$newcode1 <- countrycode(d_diffs2$COWcode, origin = "cown", destination = "iso3c")
+
+# Merge data
+d13 <- left_join(worldmap, d_diffs2, by = c("adm0_a3" = "newcode1"))
+
+# Audit missing data
+# d_diffs2 |>
+#   select(country_name, Difference) |>
+#   View()
+# 
+# tibble(d13) |>
+#   select(name, Difference) |>
+#   filter(is.na(Difference)) |>
+#   print(n = 100)
+
+# d13$Difference[d13$name == "Kosovo"] <- 0
+# #d13$Difference[d13$name == "S. Sudan"] <- xxx
+# d13$Difference[d13$name == "Serbia"] <- -1
+
+d13 |>
+  ggplot() +
+  geom_sf(aes(fill = factor(Difference))) +
+  labs(fill = "", title = "Changes in Freedom from Forced Labor (women) (V-Dem 2001 to 2024)") +
+  theme(legend.position = "right") +
+  scale_fill_brewer(type = "div", palette = 5, na.value="darkgrey")
+```
+
+::: notes
+
+:::
+
+
+
+## Paper 1 {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+<br>
+
+If someone came to you with the goal of better understanding the use of political violence by governments around the world, which of the data sources that we explored in class would you recommend and why? 
+
+Your report should introduce each source to the reader with your analysis of its strengths and weaknesses. 
+
+Ultimately, your central argument should be a clear recommendation of which source(s) they should focus on.
+
+::: notes
+
+We've now covered all the sources for the first paper.
+
+### Any questions on the prompt?
+
+:::
+
+
+
+
+## For Next Class {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+<br>
+
+Review your notes on the five sources we have explored in class and be ready to make an argument for and against EACH of them.
+
+::: notes
+
+:::
+
+
+
+
+
+
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+old slides
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+### Have the utilization rates for the types of violations varied across time?
+
+::: notes
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+```{r, fig.retina=3, out.width='97%', fig.width=7.5, fig.align='center', fig.asp=0.618}
+## You make a line plot of averages across time for each measure
+d |>
+  select(country_name, country_text_id, year, "Torture" = v2cltort_ord, "Killings" = v2clkill_ord, "Forced_male" = v2clslavem_ord, "Forced_fem" = v2clslavef_ord) |>
+  filter(year >= 1980) |>
+  pivot_longer(cols = Torture:Forced_fem, names_to = "Variables", values_to = "Values") |>
+  group_by(year, Variables) |>
+  summarize(
+    Mean = mean(Values, na.rm = TRUE)
+  ) |>
+  ungroup() |>
+  ggplot(aes(x = year, y = Mean, color = Variables)) +
+  geom_line(size = 1.2) +
+  theme_bw() +
+  labs(x = "", y = "Mean Values",
+       title = "Tracking Personal Integrity Rights Averages Across Time",
+       caption = "Source: V-Dem",
+       color = "") +
+  coord_cartesian(ylim = c(0,4), xlim = c(1980, 2024)) +
+  scale_y_continuous(breaks = 0:4, labels = 0:4)  +
+  theme(legend.position = "bottom") +
+  #guides(color = "none") +
+  scale_color_brewer(type = "qual", palette = 2)
+
+## Box plots across time
+d |>
+  filter(year >= 1980) |>
+  ggplot(aes(x = factor(year), y = v2cltort_ord)) +
+  geom_boxplot()
+```
+
+::: notes
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+### Focus on the years since 2001 and find us examples of countries that have:
+
++ Improved the most, and
+  
++ Regressed the most across the years in the sample
+
+::: notes
+
+:::
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+```{r, fig.retina=3, fig.align='center', out.width='95%', fig.height=6, fig.width=10, cache=FALSE}
+## Make a map
+
+# Summarize data
+d_diffs <- d |>
+  filter(year %in% c(2001, 2024)) |>
+  select(country_name, COWcode, year, v2cltort_ord) |>
+  pivot_wider(names_from = year, values_from = v2cltort_ord, names_prefix = "torture_") |>
+  mutate(
+    Difference = torture_2024 - torture_2001
+  )
+
+d_diffs$newcode1 <- countrycode(d_diffs$COWcode, origin = "cown", destination = "iso3c")
+
+# Merge data
+d12 <- left_join(worldmap, d_diffs, by = c("adm0_a3" = "newcode1"))
+
+# Audit missing data
+# d_diffs |>
+#   select(country_name, Difference) |>
+#   View()
+# 
+# tibble(d12) |>
+#   select(name, Difference) |>
+#   filter(is.na(Difference)) |>
+#   print(n = 100)
+
+# d12$Difference[d12$name == "Kosovo"] <- 0
+# d12$Difference[d12$name == "S. Sudan"] <- xxx
+# d12$Difference[d12$name == "Serbia"] <- -1
+
+d12 |>
+  ggplot() +
+  geom_sf(aes(fill = factor(Difference))) +
+  labs(fill = "", title = "Changes in Freedom from Torture (V-Dem 2001 to 2024)") +
+  theme(legend.position = "right") +
+  scale_fill_brewer(type = "div", palette = 5, na.value="darkgrey")
+```
+
+::: notes
+
+
+:::

@@ -1,0 +1,517 @@
+---
+format: revealjs
+---
+
+## Today's Agenda {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+```{r}
+library(tidyverse)
+library(readxl)
+library(kableExtra)
+```
+
+<br>
+
+::: {.r-fit-text}
+
+**Section 1: Introducing the Challenge**
+
+- Operationalizing "Political Violence"
+
+:::
+
+<br>
+
+::: r-stack
+Justin Leinaweaver (Fall 2025)
+:::
+
+::: notes
+Prep for Class
+
+1. Think about timing for each phase of the group work as I'm not sure I want them sharing definitions in class
+    - Say, 12 minutes each (time for group to work and collecting answers on boards)
+
+<br>
+
+Tilly, Charles. 2003. “Varieties of Violence.” In The Politics of Collective Violence, Cambridge, UK: Cambridge University Press, 1–25. ONLY p1-20
+
+<br>
+
+Welcome back all
+
+- Today we continue our work gathering and analyzing real world cases in an effort to give us a solid foundation for studying "political violence."
+
+<br>
+
+**SLIDE**: Let's start with a quick refresh from last class.
+
+:::
+
+
+
+## {background-image="Images/02_1-protestor_gas.jpg"}
+
+### [**How do we explore political violence "scientifically"?**]{style="color:red;"}
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+```{r, fig.retina = 3, fig.align = 'center', fig.width = 8, fig.height=1, out.width='100%'}
+d1a <- tibble(
+  x = c(-3, 0, 3),
+  y = c(1, 1, 1),
+  labels = c("Nature", "Measurement", "Data")
+)
+
+ggplot(data = d1a, aes(x = x, y = y)) +
+  geom_point(size = 8) +
+  theme_void() +
+  coord_cartesian(xlim = c(-4, 4)) +
+  geom_label(aes(label = labels), size = 7) +
+  annotate("segment", x = -2.3, xend = -1.2, y = 1, yend = 1, arrow = arrow()) +
+  annotate("segment", x = 1.2, xend = 2.5, y = 1, yend = 1, arrow = arrow())
+```
+
+::: notes
+
+Last class we began to situate ourselves in the processes we need to explore "political violence" in a "scientific" manner.
+
+### Remind me, what are the keys elements of a "scientific method"?
+
+- Goal is inference
+- Procedures are public 
+- Uncertain conclusions
+- Content is method
+
+<br>
+
+### What does this diagram leading from nature to measurement to data help us understand?
+1. (Our BIG goal is to develop models of nature / the world)
+    - Models, simplifications of reality, allow us to explain causality and make predictions
+
+2. (We use data and reasoning to learn about the world, BUT all data is measured)
+    - Measurement requires choices and those choices produce uncertainty
+    
+3. (The more data we have and the better we understand our measurements the closer we come to being able to create useful models of nature!)
+
+<br>
+
+### Any questions on these big ideas?
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+::: {.r-fit-text}
+
+**Prepare the Case Studies for Analysis**
+
+1. What is the specific act in your case?
+
+2. Why is this specific act an example of "politics"?
+
+3. Why is this specific act an example of "violence"?
+
+:::
+
+::: notes
+
+On Monday we gathered a number of political violence case studies.
+
+- These cases represent different perspectives on the political violence concept.
+
+- We worked on Monday to prepare these cases for analysis by focusing them on certain aspects I think we'll be most useful to us
+
+<br>
+
+Today we take the next step in this case study analysis.
+- We need a definition!
+
+<br>
+
+*Split class into 5 groups (this represents the number of different instruments designed in class Friday so keep it manageable on spreadsheet)*
+
+- PLEASE try to work with people you haven't worked with as much in the past
+
+<br>
+
+Go sit with your group
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+::: {.r-fit-text}
+**Using Case Studies to Define "Political Violence"**
+
+<br>
+
+### 1) Common Characteristics
+
+:::
+
+::: notes
+
+Groups, first job, make a list of the characteristics common to all of the cases presented on Monday.
+
+- Keep this list as objective as possible, e.g. clear characteristics
+
+- Avoid using the words "political" or "violence" because that's what we're trying to define.
+
+<br>
+
+### Any questions? 
+
+Get to it!
+
+<br>
+
+*ON BOARD* (column 1 of 3): "Common Characteristics"
+
+- ADD to list and DISCUSS each
+
+<br>
+
+Notes from Fall 2025
+
+- Murder/Attempted murder
+- Direct challenge to security / status quo
+- Targets the government
+- Uses threats / intimidation
+- US vs Them mentality
+- Contempt for the perpetrators by the recipients
+- Targets groups not individuals
+
+Notes from Spring 2022
+
+- Had goals / aims
+- Aimed to change or maintain SQ
+- Overt acts
+- Ideological contentious
+- Done by groups / individuals
+- Meant to draw attention
+- Aggressive acts
+- Targeted "the system"
+- Disruptive
+- Cause physical / emotional pain
+
+Notes from Fall 2019
+
+- Victim: Person or object
+- Person(s) impeded physically or harmed
+- Oppositional use of force
+- Pre-meditated
+- The act itself is about power (projection, taking)
+- Acts to defend or alter the SQ
+- Pre-existing conflicts
+- Sends a message
+
+Notes from Fall 2014
+
+- Groups or individuals involved
+- Pre-planned
+- Targeted
+- Harm to people or property
+- Political motivation
+- Effort to achieve control
+- Making a "political" statement
+
+:::
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+::: {.r-fit-text}
+**Using Case Studies to Define "Political Violence"**
+
+<br>
+
+### 1) Common Characteristics
+
+### 2) Types of Cases
+
+:::
+
+::: notes
+
+Let's now look for ways we could group the cases in terms of their shared similarities
+
+- Groups make a list of the different ways we can organize the cases in most-similar groups.
+
+<br>
+
+Think of this like going to the grocery store
+- Different items are usually organized by if they need to be refrigerated, frozen or not
+
+- Within those sections they are even more subdivided
+    - Refrigerator: Meat vs Seafood vs Dairy 
+
+- Shelf space is typically organized by item cost (highest = most expensive)
+
+- etc
+
+### Make sense?
+
+<br>
+
+*ON BOARD* (column 2 of 3): "Types"
+
+- ADD to list and DISCUSS each
+
+<br>
+
+Notes from FA 23
+
+- Intimidation vs other
+- Protecting everyone vs some people
+- Success vs failure
+- Attempted vs executed
+- In the US vs outside the US
+- Violence by government vs non-govt
+- Targeting groups vs targeting individuals
+- Type of weapon
+
+Notes from Spring 2022
+
+- Direct actions vs support
+- Coups vs not
+- National vs International
+- State sponsored vs not
+- Individual vs Group
+- Politics attempted prior to attack or not
+- Religious motive?
+- Religious target?
+- Territory/Resources
+- Physical vs emotional pressure
+- action vs potentiality
+- Support / Oppose SQ
+
+Notes from Fall 2019
+
+- Revolution vs "other"
+- Physical vs non-physical
+- Government vs Group vs Indiv
+- Beatings vs denying access to needs
+- SQ survives vs SQ changes
+- Goals met vs not
+- Preventing vs escalating
+- Developed world vs non-developed
+- pre-existing vs novel 
+
+Notes from Fall 2014
+
+- Leaders or opposition
+- People vs party
+- 1 dead vs more than one?
+- Lethal actions vs non-lethal
+- Old or new grievances
+- Government vs non-government violence
+- Targeting people or property
+- Terrorism or not
+- Individual perpetrator or group
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+::: {.r-fit-text}
+**Using Case Studies to Define "Political Violence"**
+
+<br>
+
+1) Common Characteristics
+
+2) Types of Cases
+
+3) Key Questions
+    - Is it "political violence"?
+    - How much "political violence"?
+
+:::
+
+::: notes
+
+Ok, now let's work as a class.
+
+### How do we translate the work from these first two exercises into key questions?
+
+### - Think of these as a set of questions that you will use to decide BOTH if something is "political violence" and how much "political violence" it represents.
+
+<br>
+
+*ON BOARD* (column 3 of 3): "Key Questions"
+
+<br>
+
+Notes from FA23
+
+- Who was harmed?
+- Who commited the act?
+- What motivated the act?
+- What did they use?
+- What was the goal? Was it met?
+- Where did it happen?
+- Consequences for the perpetrator?
+- Consequences for society?
+- Type of harm done?
+- What happened?
+- # killed / injured
+- Scope of attack?
+- Economic damage done?
+
+Notes from Spring 2022
+
+- Does it impact the SQ?
+- Who did it?
+- What was the goal?
+- What was the motivation?
+- Did it succeed?
+- Was harm intended?
+- How was it justified?
+- Who were the victims?
+- How much damage?
+- Does it connect to prior actions? (Tilly's episodic nature)
+- What was the action?
+
+Fall 2019
+
+- What damage was done?
+- What methods of oppression?
+- How did levels of violence change?
+- What is there to gain for the actor?
+- Did the actor meet their goals?
+- What motivated the actor?
+- Did the SQ change?
+- Who acted?
+- Who were the victims?
+- Who were the aggressors?
+- Did the balance of power change?
+- Is the act sufficiently clear?
+
+Fall 2014
+
+- Who acted? Leaders or opposition
+- What was harmed? People or Property
+- How many died? 1 or more
+- Did people have to die? Lethal action or non-lethal
+- Does it seek to change policy? The status quo?
+- Must government be involved as a perpetrator or target?
+- Must actual harm to property or life be done?
+- How much harm is needed?
+- Does motivation matter? Pre-meditated actions?
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+::: {.r-fit-text}
+**Tilly (2003) on Collective Violence**
+:::
+
+![](Images/02_2-protestors_fire.jpg)
+
+::: notes
+
+I wanted to expose you to some academic writing on violence and this seemed the best of the lot.
+
++ The Tilly reading is not meant to replace your good judgement in this exercise.
+
++ Also, Tilly is defining a slightly different concept than we are.
+
+<br>
+
+### How does our work this week compare to Tilly's definition of "collective violence"?
+
++ (Tilly's definition of politics is SUPER NARROW, e.g. involving government)
+
+<br>
+
+### What are the key characteristics of Tilly's definition of "collective violence"?
+
++ (Collective violence as contentious politics)
++ (Episodic)
++ (Social interaction e.g. at least two people)
++ (Immediate physical damage to persons and/or objects)
+
+<br>
+
+Back to your groups!
+
+:::
+
+
+
+## {background-image="Images/02-2-portland-federal-police-protest-violence.webp" .center}
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+::: {.r-fit-text}
+[**Define "Political Violence"**]{style="color:white;"}
+:::
+
+::: notes
+
+Groups take everything we've worked on today and construct a definition of "political violence."
+
+### Questions on what I'm asking you to do?
+
+- Go!
+
+<br>
+
+*You go around and give feedback, help facilitate discussion in the groups*
+
+:::
+
+
+
+## For Next Class {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+1. Submit your group's working definition of political violence
+
+2. Read "From Abstract to Concrete: Operationalization and Measurement" (Brians, Willnat, Manheim & Rich 2011) (**ONLY p88-110**)
+
+::: notes
+
+Friday we move to instrumentation and measurement so we can quantify the "political violence" in our cases. 
+
+- Take some time to make sure you're happy with your working definition and then email it to me.
+
+:::
+
+
+
+
+

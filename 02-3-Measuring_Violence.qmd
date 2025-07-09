@@ -1,0 +1,700 @@
+---
+format: revealjs
+---
+
+## Today's Agenda {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+```{r}
+library(tidyverse)
+library(readxl)
+library(kableExtra)
+```
+
+<br>
+
+::: {.r-fit-text}
+
+**Section 1: Introducing the Challenge**
+
+- Measuring "Political Violence"
+
+- *Sit with your group!*
+
+:::
+
+<br>
+
+::: r-stack
+Justin Leinaweaver (Fall 2025)
+:::
+
+::: notes
+Prep for Class
+
+1. Canvas link to Google Sheet  for collecting definitions and measurements today
+    - You should add group member names and definitions they emailed you to it
+    - Group members, Definition and leave space for both Instrumentations
+
+<br>
+
+*Brians, Craig Leonard, Lars Willnat, Jarol B. Manheim, and Richard C. Rich. 2011. “From Abstract to Concrete: Operationalization and Measurement.” In Empirical Political Analysis, Boston, MA: Longman, (ONLY p88-110)]*
+
+<br>
+
+This week we have been working on the central concept of our class, "political violence."
+
+- I want our work this week to help all of us deepen our thinking about the contested nature of this concept
+    - Contested: Not everyone defines it the same way
+    
+<br>
+
+Remember, the goal is NOT to design THE "correct" or "perfect" definition of "political violence"
+- ALL measurement is uncertain
+
+<br>
+    
+The goal is to have a more thorough understanding of the many key elements related to this concept across possible definitions
+- Expertise means understanding WHY the definitions are contested and being able to explain the differences between them
+
+<br>
+
+### Make sense?
+
+:::
+
+
+
+## Political Violence {background-image="Images/02_3-protestor_fire.png" .center}
+
+:::: {.columns}
+::: {.column width="60%"}
+
+::: {.r-fit-text}
+**1) Concept**
+
+**2) Case studies**
+
+**3) Operationalization**
+
+**4) Instrumentation**
+
+**5) Measurement**
+:::
+
+:::
+
+::: {.column width="40%"}
+
+:::
+::::
+
+::: notes
+
+In your reading for today Brians et al (2011) discuss the intricacies of the research process.
+
+- I do NOT mean to imply that there is only one possible path or that it is always a linear one
+
+- This is simply one useful way to consider a series of valuable steps
+
+<br>
+
+Our class is focused on exploring and hopefully explaining "political violence" so we have step 1 done.
+
+- On Monday we gathered and prepared case studies for analysis
+
+- On Wednesday we worked on building a definition rooted in these cases
+
+<br>
+
+### Where does that put us in this process?
+- (**SLIDE**: We're now working on operationalization and moving towards instrumentation.)
+
+:::
+
+
+
+## Political Violence {background-image="Images/02_3-protestor_fire.png" .center}
+
+:::: {.columns}
+::: {.column width="60%"}
+::: {.r-fit-text}
+**1) Concept**
+
+**2) Case studies**
+
+[**3) Operationalization**]{style="color:blue;"}
+
+**4) Instrumentation**
+
+**5) Measurement**
+:::
+:::
+
+::: {.column width="40%"}
+
+:::
+::::
+
+::: notes
+
+**What is involved in the operationalization step?**
+
+- ("...selecting observable phenomena to represent abstract concepts" (89).)
+
+- ("To be useful...operational definitions must tell us precisely and explicitly what to do in order to determine what quantitative value should be associated with a variable in any given case (92).)
+
+<br>
+
+Let's take a look at the group definitions so far.
+
+- See the spreadsheet linked in today's Canvas Module
+
+### How well does each proposed definition operationalization the concept?
+
+### - Areas that need to be more precise?
+
+### - Areas that need to be more explicit?
+
+<br>
+
+GROUPS: Take the feedback and refine your definitions to make it "precise" and "explicit".
+
+:::
+
+
+
+## Political Violence {background-image="Images/02_3-protestor_fire.png" .center}
+
+:::: {.columns}
+::: {.column width="60%"}
+::: {.r-fit-text}
+**1) Concept**
+
+**2) Case studies**
+
+**3) Operationalization**
+
+[**4) Instrumentation**]{style="color:blue;"}
+
+**5) Measurement**
+:::
+:::
+::: {.column width="40%"}
+
+:::
+::::
+
+::: notes
+
+Now we move to the next step of the process.
+
+### Per the reading, what happens during the instrumentation stage?
++ (Convert your operationalization (definition) into a series of steps you can use to measure the concept in question)
+
+<br>
+
+Instrumentation is when you decide HOW you are going to measure the concept.
+
+- Your instrument should be determined by your operationalization, and 
+
+- A STRONG concern about **validity** and **reliability**.
+
+<br>
+
+### What does it mean to say an instrument is "valid"?
+- ("...the extent to which our measures correspond to the concepts they are intended to reflect" (105).)
+
+<br>
+
+### What does it mean to say an instrument is "reliable"?
+- (How stable are the results of our instrument?)
+- Would different coders produce the same result using your instrument to measure the same case?
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+![](Images/02_3-reliable_valid.png){style="display: block; margin: 0 auto"}
+
+::: notes
+
+**Has anybody seen a diagram like this before?**
+
+<br>
+
+### If you were choosing a measure, how would you rank these from best to worst? Why?
+
+- Left column is BAD
+    - Validity is key. 
+    - If you aren't measuring the idea you are targeting the results are meaningless.
+
+- So, aim for the right column and work hard to move from top-right to bottom-right!
+    - Assuming you have two valid measures, reliability helps you choose between them!
+
+<br>
+
+### Did the readings make sense on these points?
+
+<br>
+
+I know there's a ton of complexity in this chapter but you learn research design only by doing research.
+
+- The dense parts will make much more sense as you encounter the specific problems they refer to.
+
+:::
+
+
+
+## Instrumentation {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+<br>
+
+:::: {.columns}
+::: {.column width="40%"}
+![](Images/02_3-reliable_valid.png)
+:::
+
+::: {.column width="60%"}
+
+<br>
+
+### 1. A Nominal Instrument
+
+<br>
+
+### 2. An Ordinal Instrument
+
+:::
+::::
+
+::: notes
+
+Groups your job now is to develop TWO instruments for your operationalization
+
+1. A nominal measure of your operationalization of "political violence", and 
+2. An ordinal measure of your operationalization of "political violence"
+
+<br>
+
+### Per the reading, what is a nominal measure?
+- ("...provides the least information about phenomena; it gives only a set of discrete categories to use in distinguishing between cases" (95).)
+
+- ("Using nominal measurement is simply a way of sorting cases into groups designated by the names used in a classificatory scheme" (95).)
+
+- e.g. nationality
+
+<br>
+
+**SLIDE**: So, the first instrument should simply be a "yes"/"no" type question.
+
+:::
+
+
+
+## Instrumentation {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+<br>
+
+:::: {.columns}
+::: {.column width="40%"}
+![](Images/02_3-reliable_valid.png)
+:::
+
+::: {.column width="60%"}
+
+<br>
+
+### 1. A Nominal Instrument
+
+- Responses: "Yes" vs "No"
+
+<br>
+
+### 2. An Ordinal Instrument
+
+:::
+::::
+
+::: notes
+
+**Per the reading, what is an ordinal measure?**
+
+- ("...allows us to both categorize and to order, or rank, phenomena. ... With ordinal measurement we can say which cases have more (or less) of the measured quality than other cases, and we can rank cases in the order of how much of the quality they exhibit" (95).)
+
+- e.g. social class: lower, middle or upper class
+
+<br>
+
+**SLIDE**: So, the second instrument should produce ordinal responses
+
+:::
+
+
+
+## Instrumentation {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+<br>
+
+:::: {.columns}
+::: {.column width="40%"}
+![](Images/02_3-reliable_valid.png)
+:::
+
+::: {.column width="60%"}
+
+### 1. A Nominal Instrument
+
+- Responses: "Yes" vs "No"
+
+<br>
+
+### 2. An Ordinal Instrument
+
+- Responses: "None", "Low", "Medium" and "High"
+
+:::
+::::
+
+::: notes
+
+Ok, groups, time for the instrumentation stage.
+
+- Take some time to instrument your operationalization of "political violence."
+
+- In a few minutes we will test your instruments out!
+
+<br>
+
+### Questions?
+
+- Upload your instruments on on the spreadsheet
+
+<br>
+
+### Groups, talk us through your instruments.
+
+### - What are the biggest sources of error in your instruments?
+
+<br>
+
+Ok, let's test out what you've built.
+
++ I'm going to present you with a series of cases.
+
++ I want you to measure each case using your instruments.
+
++ You will add your measurement to our spreadsheet.
+
+### Any questions before we start?
+
+<br>
+
+**Save discussion for the end, just focus on coding cases to let the groups find their groove**
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+::: {.r-fit-text}
+**1) Government agents disperse protestors**
+:::
+
+![](Images/02_3-soldiers_fire_protestors.jpg){style="display: block; margin: 0 auto"}
+
+::: notes
+
+Case 1: A peaceful protest is dispersed by soldiers ordered by the government to clear the streets.
+
+- Rubber bullets and tear gas are used.
+- No deaths reported, scattered reports of injuries.
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+![](Images/02_3-wto_protestors.jpg){style="display: block; margin: 0 auto"}
+
+::: {.r-fit-text}
+**2) WTO protestors destroy a Starbucks**
+:::
+
+::: notes
+
+Case 2: Protestors at a WTO meeting begin to riot after dark and destroy a Starbucks
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+::: {.r-fit-text}
+**3) Totalitarian control of the state and its people**
+:::
+
+![](Images/02_3-kim_jong_un.jpg){style="display: block; margin: 0 auto"}
+
+::: notes
+
+Case 3: Kim Jong Un wields complete and total control over his state and people.
+
+- The state exists to enrich and protect him, first and foremost.
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+![](Images/02_3-river_pollution.jpg){style="display: block; margin: 0 auto"}
+
+::: {.r-fit-text}
+**4) Industrial pollution destroys a fishery**
+:::
+
+::: notes
+
+Case 4: Industrial pollution destroys a fishery that a village depends on to survive.
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+::: {.r-fit-text}
+**5) Government relaxes pollution standards**
+:::
+
+![](Images/02_3-Trump_Coal.jpg){style="display: block; margin: 0 auto"}
+
+::: notes
+
+Case 5: Government relaxes pollution standards on where and how much pollution is acceptable to promote economic growth.
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+::: {.r-fit-text}
+**6) The government's use of the death penalty**
+:::
+
+![](Images/02_3-death_row.jpg){style="display: block; margin: 0 auto"}
+
+::: notes
+
+Case 6: Government's use of the death penalty for some crimes
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+::: {.r-fit-text}
+**7) The government's use of an income tax**
+:::
+
+![](Images/02_3-income_tax.jpg){style="display: block; margin: 0 auto"}
+
+::: notes
+
+Case 7: The government's use of an income tax
+
+:::
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+::: {.r-fit-text}
+**8) Disruptive but peaceful protests**
+:::
+
+![](Images/02_3-segregated_diner.jpg){style="display: block; margin: 0 auto"}
+
+::: notes
+
+Case 8: Disruptive but explicitly non-violent protests, e.g. a sit-in, that prevent a business from operating
+
+:::
+
+
+
+## Measuring "Political Violence" {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+:::: {.columns}
+::: {.column width="40%"}
+
+<br>
+
+<br>
+
+**1) Concept**
+
+**2) Case studies**
+
+**3) Operationalization**
+
+**4) Instrumentation**
+
+**5) Measurement**
+:::
+
+::: {.column width="50%"}
+**Cases**
+
+1. Soldiers end a protest
+2. Protestors riot
+3. Dictatorial control
+4. Industrial pollution
+5. Environmental standards
+6. The death penalty
+7. The income tax
+8. Disruptive, peaceful protests
+:::
+::::
+
+::: notes
+
+**Ok, how did that go? Any big picture thoughts before we talk?**
+
+<br>
+
+First, let's talk about your instruments.
+
+### Groups: Focusing just on your measures, are you convinced your instrument is valid? Why or why not?
+
+<br>
+
+### Groups: Focusing just on your measures, are you convinced your instrument is reliable? Why or why not?
+
+<br>
+
+### Given this work, would any group like to refine either their operationalization or instrumentation? Why or why not?
+
+<br>
+
+Now let's talk about the cases.
+
+### A priori, do you believe all of these things are forms of political violence? Why or why not?
+
+#### - Which cases had the most consistent measures? Does that make sense?
+
+#### - Which cases led to the most conflicted measures? Make sense?
+
+:::
+
+
+
+## Measuring "Political Violence" {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+:::: {.columns}
+::: {.column width="40%"}
+
+<br>
+
+<br>
+
+**1) Concept**
+
+**2) Case studies**
+
+**3) Operationalization**
+
+**4) Instrumentation**
+
+**5) Measurement**
+:::
+
+::: {.column width="50%"}
+**Cases**
+
+1. Soldiers end a protest
+2. Protestors riot
+3. Dictatorial control
+4. Industrial pollution
+5. Environmental standards
+6. The death penalty
+7. The income tax
+8. Disruptive, peaceful protests
+:::
+::::
+
+::: notes
+
+Ok, big question.
+
+### Based on your work this week, is it possible to measure "political violence" without including error (uncertainty) in your conclusions?
+- (Nope, but we hope it can be minimized!)
+
+<br>
+
+We cannot study any concept without introducing error.
+- It is a huge leap moving from concept to operationalization
+    - Forces you to make many assumptions.
+
+- It is a huge leap from operationalization to measurement.
+    - Many more assumptions and trade-offs in the process of designing an instrument.
+
+<br>
+
+This means that the only way to learn something from someone else's work is think carefully about their process.
+- This is why peer-reviewed research is so valuable.
+
+- If the choices aren't transparent, the results are basically meaningless.
+
+### Make sense?
+
+<br>
+
+To me this means that anytime we hear someone making an argument about political violence they could almost certainly be operating from a different understanding of the concept than me.
+
+- We'd better get good at identifying assumptions, AND Recognizing how those assumptions impact their conclusions.
+
+- Being a credible expert means identifying the assumptions and understanding the costs and benefits of each choice.
+
+### Make sense?
+
+<br>
+
+### Bottom line, what have you learned about the concept "political violence" from our work this week? What are the key takeaways so far?
+
+
+:::
+
+
+
+## For Next Class {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+<br>
+
+Weber, M. (1946). Politics as Vocation. In H. H. Gerth & C. W. Mills (Eds.), *Max Weber: Essays in Sociology* (pp. 77–128). New York: Oxford University Press.
+
+- Submit analysis to Canvas
+
+::: notes
+
+Reading and Canvas submission
+
+<br>
+
+### Questions?
+
+:::
+
+
+
+
+
+
+
+

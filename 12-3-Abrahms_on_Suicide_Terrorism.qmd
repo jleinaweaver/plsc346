@@ -1,0 +1,715 @@
+---
+format: revealjs
+---
+
+## Today's Agenda {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+```{r}
+library(tidyverse)
+library(readxl)
+library(kableExtra)
+```
+
+<br>
+
+**III. How and why do non-state actors use political violence?**
+
+<br>
+
+- Abrahms (2006): "Terrorism" does not work
+
+<br>
+
+::: r-stack
+Justin Leinaweaver (Fall 2025)
+:::
+
+::: notes
+Prep for Class
+
+1. Review submissions on Canvas
+
+<br>
+
+Today we continue our exploration of the literature that aims to evaluate the effectiveness of terrorism.
+
+- I think this is an excellent article.
+    - Really well-written with a clear and compelling analysis.
+    
+- However, I do find the organization a little confusing.
+    - He jumps around quite a bit from data to theory and back again
+
+<br>
+
+Last class we explored Pape's (2003) paper on the logic of suicide terrorism.
+
+### According to Pape's model, why would a terrorist choose suicide as their preferred method of attack?
+
+- (**SLIDE:** Model diagram)
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center .smaller}
+
+**Interests**
+
+- Non-state actors &rarr; Change in government policy
+
+**Institutions**
+
+- If weaker than the target non-state actors may employ a strategy of terrorism: Demonstrative, Destructive or Suicide
+
+**Interactions**
+
+- Terrorists aim to inflict "pain" on society to force the government to concede or the people to revolt against the government
+- Perceived leverage over the target increases with expectations of future damage
+- Suicide terrorism maximizes this expectation because it is the most destructive strategy, it is more likely to succeed (simpler, no escape plan needed), and signals that norms do not matter, more is coming and any possible retaliation is not a deterrent
+
+::: notes
+
+Fundamentally this model presents suicide terrorism as a strategic act
+
+- Specifically, as an act of coercion built on Schelling's (1966) "the rationality of irrationality" (344)
+
+- irrational act that demonstrates credibility to democratic audience of worse to come.
+
+<br>
+
+### Do you find this a convincing model of terrorism? Why or why not?
+
+<br>
+
+### What were the takeaways of Pape's article? 
+
+### - How did the empirical test support the model?
+
+- (**SLIDE**: The five principle conclusions...)
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+::: {.r-fit-text}
+**"Five Principal Findings" (Pape 2003)**
+:::
+
+1. Suicide terrorism is strategic 
+
+2. Designed to coerce modern democracies 
+
+3. Suicide terror works...
+
+4. ...but only in moderation 
+
+5. Stopping suicide terror requires better homeland security, not offensive military actions or concessions
+
+::: notes
+
+Pape's article appears to provide us with:
+
+- a map for understanding suicide terrorism as a strategy, AND
+
+- Some solid evidence of terror groups behaving in line with its primary predictions.
+
+<br>
+
+However, as you saw in the reading for today, Max Abrahms has some concerns!
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+::: {.r-fit-text}
+
+**Abrahms (2006) "Why Terrorism Does Not Work"**
+
+<br>
+
+**Evaluate the Framing**
+
+1. Research question
+
+2. Key concepts
+
+3. Connections to the literature
+
+:::
+
+::: notes
+
+Let's start by exploring the framing of the article.
+
+- GROUPS, take a few minutes and get ready to share your thoughts about the framing of this research paper
+
+- Think BIG PICTURE, e.g. how the researchers set up their project
+
+<br>
+
+REPORT BACK and DISCUSS
+
+<br>
+
+### What is the question and how is it worded?
+- (Research Question: Is terrorism REALLY an effective strategy?)
+
+- Does this type of coercion work as often as is asserted in the literature / media?
+
+<br>
+
+### What literature is the paper connected to? 
+
+### - In other words, who is Abrahms directly writing to? Anybody we know?
+
+:::
+
+
+
+## Pape (2003) vs Abrahms (2006) {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+![](Images/13_3-no_no_no.gif){style="display: block; margin: 0 auto"}
+
+::: notes
+
+Abrahms goes directly after Pape's work when he argues that too little empirical research exists to support idea that terrorism is an effective coercion strategy.
+
+:::
+
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+![](Images/13_2-Pape_Table1.png){style="display: block; margin: 0 auto"}
+
+::: notes
+
+Just to refresh our memories, here's Table 1 from the Pape paper.
+
+<br>
+
+Groups, review Abrahms' critique of the Pape (2003) article on p45-46.
+
+### How convinced are you by these critiques of the Pape article?
+
+<br>
+
+Critiques
+
+- The notion that terrorism is an effective coercive instrument is sustained by either single case studies or a few well-known terrorist victories, namely, by Hezbollah, the Tamil Tigers, and Palestinian terrorist groups.
+
+- Only studies a "modest" sample of terrorist campaigns
+
+- Only studies a "handful of countries: ten of the eleven campaigns analyzed were directed against the same three countries (Israel, Sri Lanka, and Turkey), with six of the campaigns directed against the same country (Israel)."
+
+- More important, Pape does not examine whether the terrorist campaigns achieved their core policy objectives
+    - Ex: IDF pulling out of Gaza and West Bank in 1994 as two victories but ignores 167% increase in Israeli settlers
+    
+    - Ex: Israel releases Hamas leader in 1997 as a victory but only if you ignore "the hundreds of imprisonments and targeted assassinations of Palestinian terrorists throughout the Oslo 'peace process.'"
+    
+<br>
+
+Bottom line, Pape's data shows "select terrorist campaigns have occasionally scored tactical victories, not that terrorism is an effective strategy for groups to achieve their policy objectives" (46).
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+"Terrorism involves the use of violence by an organization other than a national government to cause intimidation or fear among a target audience (Department of State 1983-2001, Reich 1990, Scmid and Jongman 1988)."
+
+```{r, fig.retina=3, fig.height=1.5, fig.width=10, fig.align='center', out.width='100%'}
+tibble(
+  label1 = c("Gain Supporters", "Coerce Opponents"),
+  x1 = c(2, 8),
+  y1 = c(1, 1)
+) |>
+  ggplot(aes(x = x1, y = y1)) +
+  geom_line(arrow = arrow(length=unit(0.50,"cm"), ends="both", type = "closed")) +
+  theme_void()+
+  xlim(1, 9) +
+  ylim(0.75, 2) +
+  annotate("text", x = 2, y = 1.6, label = "Gain\nSupporters", size = 6) +
+  annotate("text", x = 8, y = 1.6, label = "Coerce\nOpponents", size = 6)
+```
+
+1. Demonstrative Terrorism
+2. Destructive Terrorism
+3. Suicide Terrorism
+
+::: notes
+
+Here we see the way Pape conceptualized terrorism and how his model produced a typology of terrorism.
+
+### Refresh my memory, what does this argue terrorism is and how should it be organized?
+
+- (Purposes along a single dimension: Gain supporters vs coerce opponents)
+
+- Point of emphasis along this line corresponds to a type of terrorism
+
+<br>
+
+### How does Abrahms change this typology? What is his preferred breakdown?
+
+- (**SLIDE**)
+
+:::
+
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+"Terrorism involves the use of violence by an organization other than a national government to cause intimidation or fear among a target audience (Department of State 1983-2001, Reich 1990, Scmid and Jongman 1988)."
+
+```{r, fig.retina=3, fig.height=1.5, fig.width=10, fig.align='center', out.width='100%'}
+tibble(
+  label1 = c("Gain Supporters", "Coerce Opponents"),
+  x1 = c(2, 8),
+  y1 = c(1, 1)
+) |>
+  ggplot(aes(x = x1, y = y1)) +
+  geom_line(arrow = arrow(length=unit(0.50,"cm"), ends="both", type = "closed")) +
+  theme_void()+
+  xlim(1, 9) +
+  ylim(0.75, 2) +
+  annotate("text", x = 2, y = 1.6, label = "Gain\nSupporters", size = 6) +
+  annotate("text", x = 8, y = 1.6, label = "Coerce\nOpponents", size = 6)
+```
+
+:::: {.columns}
+::: {.column width="50%"}
+1. Demonstrative Terrorism
+2. Destructive Terrorism
+3. Suicide Terrorism
+:::
+
+::: {.column width="50%"}
+1. Strategic Terrorism
+2. Redemptive Terrorism
+:::
+::::
+
+::: notes
+
+strategic vs redemptive, p46-7
+
+- strategic terrorism aims to coerce a government into changing its policies
+
+- redemptive terrorism is intended solely to attain specific human or material resources such as prisoners or money
+
+<br>
+
+### How different are these typologies?
+
+<br>
+
+Am I crazy or are these basically the same thing?
+
+- "Strategic" is "Coerce opponents"
+
+- "Redemptive" is build resource, aka "gain supporters"
+
+<br>
+
+Maybe these labels are a bit broader (supporters -> supporters, money, etc) but that doesn't seem like a total reinvention to me.
+
+:::
+
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+**Abrahms (2006): "Why Terrorism Does Not Work"**
+
+<br>
+
+**Evaluate the Model**
+
+- Identify the interests, institutions and interactions
+
+::: notes
+
+Groups, jump to pages 56-60 and develop a diagram of this model
+
+### - What is correspondent inference theory and why does it suggest that "Attacking Civilians Is Strategically Ineffective"?
+
+<br>
+
+**SLIDE**: My version...
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center .smaller}
+
+**Interests**
+
+- Civilian-centric terrorist groups (CCTGs) &rarr; Achieving policy objectives
+
+**Institutions**
+
+- Terrorist groups may choose to target citizens / businesses or the military
+
+**Interactions**
+
+- Governments infer what terrorist groups want based on the consequences of their actions (correspondent inference theory)
+- The consequences of civilian-centric terrorism (death, fear, economic contraction, anger at government) imply that the terror group has maximalist objectives (to destroy the state)
+- Governments are unlikely to enter compromises with maximalist groups
+
+::: notes
+
+THEREFORE, CCTGs are unable to coerce target countries into entering a political compromise, even when their stated goals are not maximalist.
+
+- "The basic contention is that civilian-centric terrorist groups fail to coerce because they miscommunicate their policy objectives" (56).
+
+- Even when these groups want to achieve limited aims, killing civilians signals to target country group has maximalist aims and appeasement is taken off the table.
+
+<br>
+
+So, the model proposes a new typology and uses correspondent inference theory to link those types to the probability of success.
+
+### Is the model logical (e.g. does it make sense)?
+
+<br>
+
+Let's compare and contrast the models by Abrahms and Pape.
+
+### 1) Which one do you find more convincing? Why?
+
+<br>
+
+### 2) Are they mutually exclusive? Why or why not?
+
+- I suspect a lot of this possible conflict hinges on the final piece of Abrahms' model: 
+    - Is "unlikely" a high bar? Is it influenced by big acts of suicide terror?
+    
+    - Can a group do so much destruction / cause so much pain that a government is coerced into compromising with a seemingly maximalist opponent?
+
+<br>
+
+Pape Model
+
+Interests
+
+- Non-state actors &rarr; Change in government policy
+
+Institutions
+
+- If weaker than the target non-state actors may employ a strategy of terrorism: Demonstrative, Destructive or Suicide
+
+Interactions
+
+- Terrorists aim to inflict "pain" on society to force the government to concede or the people to revolt against the government
+- Perceived leverage over the target increases with expectations of future damage
+- Suicide terrorism maximizes this expectation because it is the most destructive strategy, it is more likely to succeed (simpler, no escape plan needed), and signals that norms do not matter, more is coming and any possible retaliation is not a deterrent
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+**Abrahms (2006): "Why Terrorism Does Not Work"**
+
+<br>
+
+**Evaluate the Analyses**
+
+- Case selection
+
+- Data validity and reliability
+
+- Methods of analysis
+
+::: notes
+
+Groups, take a few minutes to review and evaluate Abrahms' approach to the data
+
+- What are the cases he selects?
+
+- How does he measure them? Are the measurements valid and reliable?
+
+- How does he analyze the data itself?
+
+:::
+
+
+
+## {background-image="Images/13-3-cases.jpeg"}
+
+:::: {.fragment}
+
+[**How sensitive are these conclusions to removing redemptive terrorism cases from the sample?**]{style="color:white;"}
+
+::::
+
+::: notes
+
+Let's talk case selection first.
+
+### How does Abrahms choose his cases?
+- (State Dept data on FTOs that have existed for quite a while)
+
+- Approach: Examine the "plight" of 28 terror groups taken from State Dept list of FTOs (foreign Terrorist Orgs)
+
+<br>
+
+### Strengths and weaknesses of this data source?
+Strengths: 
+- ?
+
+Weaknesses: 
+- ?
+
+<br>
+
+Remember, Abrahms' big conclusion is that terrorism is not effective.
+
+- **REVEAL**: With that in mind, let's grapple with a big case selection question.
+
+<br>
+
+*Read question*
+
+I understand why Abrahms wants to make this choice.
+
+- His model focuses on the coercion of the government so acts intended to do something else would not be explained well by it.
+
+- In other words, a set of cases not focused on coercion would make for a bad test of the model
+
+- BUT, removing marginal cases on these grounds are likely to sway the findings considerably
+    - e.g. easy to imagine terror acts that boosts fundraising AND are meant to coerce the government
+
+<br>
+
+### So the question is, can we easily or reliably distinguish between strategic and redemptive terrorism?
+
+### - And if clearly separable, should they be removed or not?
+
+- *DISCUSS*
+
+<br>
+
+### What is the dependent variable in this paper?
+
+### - What is Abrahms trying to explain?
+
+- (**SLIDE**: Terrorist group effectiveness in coercing the government to change policy)
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+![](Images/13_3-Abrahms_Table1.png){style="display: block; margin: 0 auto"}
+
+::: notes
+
+**How is "effectiveness" operationalized and measured?**
+
+- (Effectiveness: Compare each group's stated objectives with the policy outcomes.)
+
+- Objectives collected from sources like RAND's MIPT Terrorism Knowledge Base and the Federation of American Scientists' Directory of Terrorist Organizations
+
+- 28 groups, 42 objectives
+
+- Four tiered scale of effectiveness: Total success, partial success, limited success, no success
+
+- Groups can be counted more than once to reflect multiple policy objectives
+
+<br>
+
+**Strengths and weaknesses of this data source and measurement decision?**
+
+Strengths:
+
+- Abrahms constructs a "hard test" for his model by treating Total and partial as successes and limited as neither.
+    1. "total" and "partial" count as success, only "no success" counts as a failure. "Limited" is ignored.
+    2. Successes count even if prior to 2001 (when FTO list compiled)
+    3. All success attributed to terrorism, intervening vars ignored
+    4. Terror groups not punished in analysis for provoking counter-productive responses from target country
+    5. Al Qaeda limited to nationalist goals, not harder to achieve pie-in-the-sky wants like the severing of all ties between US and Israel.
+    
+Weaknesses:
+
+- Reliability problems in the middle two categories?
+    
+<br>
+    
+### To what degree do these choices increase your confidence in the analysis?
+
+<br>
+
+As an aside, Abrahms asserts that terrorism looks ineffective even when compared to economic sanctions as a method of coercion.
+
+### Is this a fair comparison? Why or why not?
+- (p52, terrorism looks bad even against economic sanctions HOWEVER, that is an option only available to states.)
+
+- Wouldn't a more productive comparison be to other forms of non-state coercion.
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+![](Images/13_3-Abrahms-Fig1.png){style="display: block; margin: 0 auto"}
+
+::: notes
+
+**Evaluate Figure 1 for me.**
+
+- **What do we learn from this?**
+
+<br>
+
+One of my concerns with the analysis relates directly to these figures.
+
+I'm not sure this is a fair comparison.
+
+- Of course they don't achieve huge goals, they are huge.
+
+- Also, the degrees of effectiveness make much more sense for small, concrete demands but do the intermediate degrees apply to ideological goals or systemic transformations?
+
+:::
+
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+![](Images/13_3-Abrahms-Fig2.png){style="display: block; margin: 0 auto"}
+
+::: notes
+
+**Evaluate Figure 2 for me.**
+
+- **What do we learn from this?**
+
+<br>
+
+There's another big design assumption we need to discuss.
+
+Go read the first complete sentence on page 47 and the footnote it points to and let's discuss it.
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+**How sensitive are Abrahms' conclusions to this design choice (p47)?**
+
+![](Images/13-3-Footnote25.png){style="display: block; margin: 0 auto"}
+
+::: notes
+
+*"Finally, because this study is concerned with terrorism's effect on the target country, intermediate objectives-namely, the ability of terrorist groups to gain international attention and support-are outside the scope of analysis" (p47).*
+
+<br>
+
+Talk to the person next to you about this for a sec and then we can talk as a group.
+
+*This should take some thought / discussion*
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+**Abrahms (2006): "Why Terrorism Does Not Work"**
+
+<br>
+
+**Evaluate the Case Studies**
+
+- Russia's response to the 1999 Apartment Bombing
+
+- U.S. Response to the September 11 Terrorist Attack; 
+
+- Israel's Response to the First Intifada
+
+::: notes
+
+Let's shift our focus to the case studies Abrahms uses to illustrate his central findings.
+
+### What are the criteria Abrahms uses for selecting his case studies? (p59-60)
+
+"To highlight the effect of the independent variable-terrorist attacks-on the proclivity of target states to bargain, a supporting case must conform to five empirical criteria:(1) the coercing party is not motivated by a maximalist objective, that is, the desire to destroy the target state's values or society;(2) the coercing party either uses terrorism or is suspected of doing so to further its policy objectives;(3) the target country fixates on the short-term effects of the terrorist acts, rather than the coercing party's policy demands; (4) the target country infers from the effects of the terrorist acts that the coercing party has maximalist objectives;and (5) the target country's inference that the coercing party wants to destroy its society,values, or both impedes it from making political concessions
+
+<br>
+
+### Evaluate them
+- (Make sense to me.)
+
+<br>
+
+### What do we think of the case studies themselves? Convincing or not?
+
+<br>
+
+Really nicely written.
+
+<br>
+
+### What are the policy implications of this research according to Abrahms?
+
+(**SLIDE**)
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+**Abrahms (2006) Policy Implications**
+
+1. Terrorists very unlikely to transform / annihilate a country's political system
+
+2. Jihadists stand to gain from restricting their violence to military targets
+
+3. Terrorism is a self-defeating policy that dissuades supporters
+
+4. We must spread awareness that terrorism is NOT effective.
+
+::: notes
+
+**Evaluate each. are they convincing? Why or why not?**
+
+<br>
+
+**Are these consistent with Pape's arguments re: modest goals and policy suggestions? Why or why not?**
+
+<br>
+
+**Bottom line, where do we end up this week?**
+
+- **Are you convinced terrorism can be effective or not?**
+
+:::
+
+
+
+## For Next Class {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+<br>
+
+Collins, J. (2021). A New Wave of Terrorism? A Comparative Analysis of the Rise of Far-Right Terrorism
+
+- Submit reflections on Canvas
+
+::: notes
+
+
+:::

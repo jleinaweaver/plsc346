@@ -1,0 +1,235 @@
+---
+format: revealjs
+---
+
+## Today's Agenda {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+```{r}
+library(tidyverse)
+library(readxl)
+library(kableExtra)
+```
+
+<br>
+
+**II. How and why do governments use violence against the people inside their borders?**
+
+<br>
+
+Theories of "Political Violence"
+
+- Strategies to prevent "political violence" by autocratic governments
+
+<br>
+
+::: r-stack
+Justin Leinaweaver (Fall 2025)
+:::
+
+::: notes
+Prep for Class
+
+1. Review submissions on Canvas
+
+2. Prep Google spreadsheet for unpacking cases (make sure it is visible on the Modules page)
+
+<br>
+
+Our overarching goal for this section of the class is to answer this question.
+
+- How and why do governments use violence against the people inside their borders?
+
+<br>
+
+My hope is that all of the work we have done thus far has given you the tools you need to explain government violence as a strategy.
+
+<br>
+
+Our next aim is to use all of this material (cases, data, theories) to develop real-world strategies for preventing political violence by governments.
+
+:::
+
+
+
+## For Today {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+<br>
+
+**Case Studies of Groups Reducing Political Violence in Autocracies**
+
+::: notes
+
+**Everybody ready to go with this?**
+
+<br>
+
+I'd like to unpack your cases in the same way we have done for other case studies in previous weeks.
+
+- Everybody open the Google Sheet linked through our Canvas Modules for today
+
+- Start by copying your citation and brief case description from the discussion board onto the spreadsheet.
+
+<br>
+
+**SLIDE**: As before, I'll give you short instruments and you'll measure your cases
+:::
+
+
+
+## Unpacking the Cases {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+<br>
+
+### **The Inciting Incident**
+
+1. Who committed the violent act?
+
+2. Who did they target?
+
+3. What did they do?
+
+4. Why is this "political violence"?
+
+::: notes
+
+*Add Columns*
+
+Let's start by focusing on the inciting incident
+
+- e.g. what political violence was being done that needed intervention?
+
+<br>
+
+Fill in these details for your case on the spreadsheet.
+
+- Keep your answers concise BUT be specific!
+
+- I know that feels like contradictory instructions but that's the challenge of measuring a case
+
+:::
+
+
+
+## Unpacking the Cases {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+<br>
+
+### **The Intervention**
+
+1. Who intervened?
+
+2. Who did they target?
+
+3. What did they do?
+
+4. How successful were they?
+
+::: notes
+
+*Add Columns*
+
+Let's now shift to the intervention
+
+- e.g. The response to the violent act
+
+<br>
+
+Fill in these details for your case on the spreadsheet.
+
+- Keep your answers concise BUT be specific!
+
+<br>
+
+*Split class into GROUPS*
+
+- Go sit with your group!
+
+:::
+
+
+
+
+## {background-image="Images/08_2-Argentina_protest.webp" .center}
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+[**What are the key elements of a successful intervention to change the use of political violence by autocratic governments?**]{style="color:white;"}
+
+::: notes
+
+GROUPS: Use the data to brainstorm / derive lessons we can take away for how best to design interventions meant to reduce political violence by democracies
+
+- Get ready to pitch us your hypotheses!
+
+<br>
+
+PRESENT and DISCUSS each
+
+:::
+
+
+
+
+## Paper 2 {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+Political Violence Country Briefings
+
+Select **two countries** (no overlapping cases in class) and analyze their recent experience of political violence using **ALL FIVE** of the data sources we explored in class
+
+For **EACH** country you must produce a **TWO PAGE** country briefing report that summarizes and visualizes the findings of your analyses
+
+- 2 countries x 2 pages = 4 pages total
+
+- You should aim to analyze at least the last five years of available data for each country.
+
+::: notes
+
+Next week we work on Paper 2.
+
+### Questions on the prompt?
+
+<br>
+
+**SLIDE**: Assignment for Monday
+
+:::
+
+
+
+## Monday, Oct 13th (Week 9) {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+<br>
+
+### **Prepare at least three conclusions about EACH country's experience of political violence (with visualizations)**
+
+1. Tables 
+
+2. Bar Plots
+
+3. Line Plots
+
+4. Scatter Plots
+
+::: notes
+
+Submit your work to Canvas before class Oct 16th
+
+- Submit and briefly explain each of the conclusions you have reached about your two countries (= six visualizations and a brief description of each).
+
+<br>
+
+### Questions on the assignment?
+
+:::

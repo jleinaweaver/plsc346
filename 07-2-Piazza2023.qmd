@@ -1,0 +1,489 @@
+---
+format: revealjs
+---
+
+## Today's Agenda {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+```{r}
+library(tidyverse)
+library(readxl)
+library(kableExtra)
+```
+
+<br>
+
+**II. How and why do governments use violence against the people inside their borders?**
+
+<br>
+
+Theories of "Political Violence"
+
+- Piazza (2023) "Political Polarization and Political Violence"
+
+<br>
+
+::: r-stack
+Justin Leinaweaver (Fall 2025)
+:::
+
+::: notes
+Prep for Class
+
+1. Review Canvas submissions
+
+<br>
+
+Remember, our big goal for this section of the class is to answer this question.
+
+- How and why do governments use violence against the people inside their borders?
+
+<br>
+
+This week we've begun exploring models of of violence by "democratic" states
+
+- **SLIDE**: Davenport and Armstrong
+
+:::
+
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+### Davenport, C., & Armstrong, D. A. (2004). Democracy and the Violation of Human Rights: A Statistical Analysis from 1976 to 1996. American Journal of Political Science, 48(3), 538–554.
+
+::: notes
+
+Ok, quick refresher on our work from last class!
+
+<br>
+
+**What is the research question in this paper?**
+
+- ("What is the influence, if any, of democracy on repression?" 539)
+
+<br>
+
+**What are the three mechanisms linking democracy and repression that these authors propose?**
+
+1. All Steps Lead to Peace (p540)
+
+2. Some Steps are Better than Others (p541)
+
+3. Steps of Distinction (p542)
+
+<br>
+
+**And which one of these is most consistent with the data?**
+
+- (**SLIDE**)
+
+:::
+
+
+
+## Davenport & Armstrong (2004) {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+:::: {.columns}
+::: {.column width="50%"}
+![](Images/07_1-Davenport_Fig1.png)
+:::
+
+::: {.column width="50%"}
+
+<br>
+
+```{r, fig.retina=3, fig.align='center', fig.asp=0.8, out.width='98%', fig.width=4}
+# Steps of Distinction (p542)
+tibble(
+  x = 1:21,
+  y = c(rep(7,16), rep(0, 5))
+  ) |>
+  ggplot(aes(x = x, y = y)) +
+  geom_line(linewidth = 1.3) +
+  theme_classic() +
+  labs(x = "Level of Democracy", y = "Willingness to Use Violence",
+       title = "Steps of Distinction") +
+  scale_x_continuous(labels = NULL)  +
+  scale_y_continuous(labels = NULL)
+```
+:::
+::::
+
+::: notes
+
+### Are we convinced this model, the steps of distinction, is the most useful way to think about the relationship between democracy and government violence? Why or why not?
+
+<br>
+
+### What does this model tell us about promoting democracy as a strategy for reducing political violence around the world?
+
+<br>
+
+*SPLIT class into 3 GROUPS*
+
+- Go sit with your group!
+
+<br>
+
+**SLIDE**: Today we examine a different set of mechanisms in a democracy that may be relevant for understanding political violence.
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+::: {.r-fit-text}
+**How does Piazza (2023) frame his research project?**
+:::
+
+![](Images/07_1-house_framing.jpg)
+
+::: notes
+
+**Remind me, what does it mean to ask about the "framing" of a research paper?**
+
+<br>
+
+Every research paper represents a set of conclusions about the world.
+
+- e.g. Here's what we know now that we didn't before.
+
+<br>
+
+Every choice you make along the way has a MASSIVE impact on the end product.
+
+- What makes our work "science" is that we are completely transparent about all of these choices.
+
+<br>
+
+**SLIDE**: Let's talk framing of the Piazza paper
+
+:::
+
+
+
+
+## Piazza (2023) {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+<br>
+
+::: {.r-fit-text}
+**Evaluate the Framing**
+
+1. Research question
+
+2. Key concepts
+
+3. Connections to the literature
+:::
+
+::: notes
+
+Let's start by exploring the framing of the article.
+
+- GROUPS, take a few minutes and get ready to share your thoughts about the framing of this research paper
+
+- Think BIG PICTURE, e.g. how the researchers set up their project
+
+<br>
+
+REPORT BACK and DISCUSS
+
+<br>
+
+Notes
+
+- Research Q: ???
+
+<br>
+
+**SLIDE**: The models
+
+:::
+
+
+
+
+## Piazza (2023) {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+<br>
+
+::: {.r-fit-text}
+**Evaluate the Models**
+
+1. Polarization and Dehumanization (p482)
+
+2. Moral Polarization (p486)
+
+3. Polarization and Group Mobilization (p489)
+:::
+
+::: notes
+
+Our next task is to dig into the models of political violence explored in this paper.
+
+<br>
+
+This paper proposes, and then tests, three conceivable models of political violence in a democracy.
+
+- Assign each GROUP to one MODEL
+
+<br>
+
+GROUPS, I want you to do two things:
+
+1. Explain how the mechanism works
+
+    - e.g. diagram the interests, institutions and interactions in your model ON THE BOARD
+
+2. Evaluate the model
+
+    - How convincing do you find it as a theoretical explanation of violence in a democracy?
+
+- Go!
+
+<br>
+
+**SLIDE**: Let's step through each
+
+:::
+
+
+
+
+## Polarization and Dehumanization {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+![](Images/07_2-Brazil_protest.webp){style="display: block; margin: 0 auto"}
+
+::: notes
+
+The article uses Brazil as a case study to illustrate this mechanism in action
+
+:::
+
+
+
+
+## Moral Polarization {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+![](Images/07_2-Turkey_Secular_Protest.jpg){style="display: block; margin: 0 auto"}
+
+::: notes
+
+The article uses Turkey as a case study to illustrate this mechanism in action
+
+- This protest was in favor of protecting Turkey's secular nature of the government
+
+:::
+
+
+
+
+## Polarization and Group Mobilization {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+![](Images/07_2-Bangladesh-demonstration-flou.jpg){style="display: block; margin: 0 auto"}
+
+::: notes
+
+The article uses Bangladesh as a case study to illustrate this mechanism in action
+
+:::
+
+
+
+## Piazza (2023) {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+<br>
+
+::: {.r-fit-text}
+**Evaluate the Models**
+
+1. Polarization and Dehumanization (p482)
+
+2. Moral Polarization (p486)
+
+3. Polarization and Group Mobilization (p489)
+:::
+
+::: notes
+
+**Ok, where do we end up with these?**
+
+- **Are these distinct and separate models or are they all one model?**
+
+<br>
+
+**Do these models speak to the debate between Weber and Olson about the nature of the state and violence?**
+
+- e.g. the state is violence vs the state uses violence?
+
+<br>
+
+**What do we see from applying these models to the United States today?**
+
+- **Any specific concerns?**
+
+<br>
+
+**SLIDE**: Let's take all this theory material into the empirical world
+
+:::
+
+
+
+## Piazza (2023) {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+<br>
+
+::: {.r-fit-text}
+**Evaluate the Analyses: US Survey**
+
+- Main Discussion (p492)
+
+- Online Appendix
+:::
+
+::: notes
+
+GROUPS, let's first evaluate the US survey analyses in the paper
+
+- Get ready to report back your analyses
+
+<br>
+
+1. What did Piazza do?
+
+2. Are you convinced by the quality of the survey?
+
+3. Are you persuaded by the findings?
+
+<br>
+
+**SLIDE**: Figure 1 p497
+
+- Table 1 p496
+
+:::
+
+
+
+## Piazza (2023) {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+![](Images/07_2-Piazza2023-Figure1.png){style="display: block; margin: 0 auto"}
+
+::: notes
+
+The marginal effects
+
+
+
+:::
+
+
+
+## Piazza (2023) {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+<br>
+
+::: {.r-fit-text}
+**Evaluate the Analyses: Cross-National Time-Series Data**
+
+- Main Discussion (p498)
+
+- Online Appendix
+:::
+
+::: notes
+
+GROUPS, let's now evaluate the Cross-National Time-Series data of democracies around the world
+
+- Get ready to report back your analyses
+
+<br>
+
+1. What did Piazza do?
+
+2. Are you convinced by the quality of the data?
+
+3. Are you persuaded by the findings?
+
+<br>
+
+**SLIDE**: Figure 2
+
+:::
+
+
+
+
+## Piazza (2023) {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+![](Images/07_2-Piazza2023-Figure2.png){style="display: block; margin: 0 auto"}
+
+::: notes
+
+The marginal effects
+
+<br>
+
+:::
+
+
+
+
+## Piazza (2023) {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+:::: {.columns}
+::: {.column width="50%"}
+![](Images/07_2-Piazza2023-Figure1.png){style="display: block; margin: 0 auto"}
+:::
+
+::: {.column width="50%"}
+![](Images/07_2-Piazza2023-Figure2.png){style="display: block; margin: 0 auto"}
+:::
+::::
+
+::: notes
+
+Ok, where do we end up?
+
+**Are we convinced by these models and these analyses? Why or why not?**
+
+<br>
+
+### What does this model tell us about promoting democracy as a strategy for reducing political violence around the world?
+
+<br>
+
+**Do these results conflict with the findings of the article last class by Davenport and Armstrong? Why or why not?**
+
+:::
+
+
+
+## For Next Class {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+<br>
+
+**Case Studies of Groups Reducing Political Violence in Democracies**
+
+::: notes
+
+Canvas Assignment: Case Studies of Groups Reducing Political Violence in Democracies
+
+Submit to Canvas a recent example of an individual, group, country or group of countries taking a specific action to stop a democracy from engaging in political violence. 
+
+1. APA citation to the case
+2. Who specifically acted in this case?
+3. What specifically did they do? (e.g. actions taken, policies adopted, etc)
+4. Why do you believe it was effective? 
+5. What lessons can we take from this case for preventing political violence in America today?
+
+<br>
+
+**Questions on the assignment?**
+
+:::
+

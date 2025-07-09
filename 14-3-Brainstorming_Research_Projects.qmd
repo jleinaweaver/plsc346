@@ -1,0 +1,249 @@
+---
+format: revealjs
+---
+
+## Today's Agenda {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+```{r}
+library(tidyverse)
+library(readxl)
+library(kableExtra)
+```
+
+<br>
+
+**III. How and why do non-state actors use political violence?**
+
+<br>
+
+- Brainstorming a political violence research project
+
+<br>
+
+::: r-stack
+Justin Leinaweaver (Fall 2025)
+:::
+
+::: notes
+Prep for Class
+
+1. Review submissions on Canvas
+
+<br>
+
+...
+
+:::
+
+
+
+## For Today {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+<br>
+
+### Brainstorming a research question that explores the intersection between terrorism and the internet
+
+::: notes
+
+For today I asked everybody to submit a case we could use to develop our intuitions about this complicated interaction.
+
+<br>
+
+**Everybody ready to go with this?**
+
+<br>
+
+*Split class into four groups, new people!*
+
+- Go sit with your new group!
+
+:::
+
+
+
+## {background-image="Images/14_1-CyberTerrorism_v2.png" .center}
+
+::: notes
+
+Today we are going to use your submitted cases, and your own intuitions, to help us brainstorm a research project
+
+- This means we need a 1) research question, 2) a theory, and 3) a clear idea of the kinds of data we would need to test it
+
+<br>
+
+**SLIDE**: Let's start with a research question!
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+**Propose a research question examining the interaction between the internet and terrorism**
+
+![](Images/14_1-CyberTerrorism_v3.png){style="display: block; margin: 0 auto"}
+
+::: notes
+
+Groups, spit-ball some ideas for a question about the interaction between the internet and terrorism
+
+- Report back your favorites!
+
+<br>
+
+*ON BOARD*
+
+- ?
+
+<br>
+
+- How has the internet changed the appeal of terrorism?
+- How has the internet changed the effectiveness of terrorism?
+- How has the internet changed the ability of groups to commit acts of terrorism?
+- How has the internet changed the utility of terrorism?
+
+<br>
+
+**SLIDE**: Ok, the question is in place so now we need a theory.
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+**Therefore, the internet increases...**
+
+![](Images/14_1-CyberTerrorism_v3.png){style="display: block; margin: 0 auto"}
+
+::: notes
+
+We're going to develop a theory that proposes specific ways in which the internet changes terrorism.
+
+- *ON BOARD*: Therefore, the internet increases the appeal/effectiveness/ease/utility of terrorism.
+
+<br>
+
+Groups, your job is to propose a model that supports this conclusion
+
+<br>
+
+Take some time to familiarize yourself with the submitted cases and use them to help you brainstorm causal mechanisms
+
+- Does a case need clarification? Ask the submitter!
+
+- Does a case sound particularly intriguing? Open the link!
+
+<br>
+
+Work directly on the board
+
+- Write down your premises on the board so you can road test them (e.g. make sure they are a complete and clear idea)
+
+- Plus, you need to see how they sequence together (e.g. the flow must be logical)
+
+<br>
+
+### Questions?
+
+- Get to it!
+
+<br>
+
+*PRESENT and DISCUSS each*
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+**What are the testable implications of your model?**
+
+![](Images/14_1-CyberTerrorism_v3.png){style="display: block; margin: 0 auto"}
+
+::: notes
+
+Groups, your next job is to specify the testable implications of your model
+
+<br>
+
+Remember, every theory is built on assumptions that are neither true nor false.
+
+- The sum of those assumptions should lead to certain expectations we can see in the world
+
+- e.g. your hypotheses
+
+<br>
+
+### Questions?
+
+- Identify a couple of hypotheses and get them up on the board!
+
+<br>
+
+*PRESENT and DISCUSS each*
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+**What data would we need to evaluate the testable implications of your model?**
+
+![](Images/14_1-CyberTerrorism_v3.png){style="display: block; margin: 0 auto"}
+
+::: notes
+
+Finally, let's talk data.
+
+- Groups, think about what you need to identify in the world thanks to your hypotheses.
+
+- What kinds of data would you need to test them?
+
+- e.g. observations of who? at what level? where?
+
+<br>
+
+### Questions?
+
+- Get to it!
+
+<br>
+
+*PRESENT and DISCUSS each*
+
+:::
+
+
+
+## For Next Class {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+<br>
+
+What are the institutional vulnerabilities that currently exist in the US that make us vulnerable to political violence? 
+
+In other words, what are the aspects of our community that create or allow for acts of political violence to occur?
+
+- These can be formal institutions (laws, policies, etc) or informal ones (norms, customs, etc).
+
+::: notes
+
+Canvas Assignment: Identifying Vulnerabilities
+
+What are the institutional vulnerabilities that currently exist in the US that make us vulnerable to political violence? In other words, what are the aspects of our community that create or allow for acts of political violence to occur? These can be formal institutions (laws, policies, etc) or informal ones (norms, customs, etc).
+
+1. Describe and explain the vulnerability you have selected
+2. Submit a piece of evidence that illustrates this vulnerability in action (APA citation and explanation of the evidence)
+
+<br>
+
+**Questions on the assignment?**
+
+:::
+
+
+
+
+

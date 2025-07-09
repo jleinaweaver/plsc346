@@ -1,0 +1,660 @@
+---
+output:
+  xaringan::moon_reader:
+    css: ["default", "extra.css"]
+    lib_dir: libs
+    seal: false
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: '16:9'
+---
+
+```{r, echo = FALSE, warning = FALSE, message = FALSE}
+##xaringan::inf_mr()
+## For offline work: https://bookdown.org/yihui/rmarkdown/some-tips.html#working-offline
+## Images not appearing? Put images folder inside the libs folder as that is the main data directory
+
+library(tidyverse)
+library(readxl)
+library(stargazer)
+##library(kableExtra)
+##library(modelr)
+
+knitr::opts_chunk$set(echo = FALSE,
+                      eval = TRUE,
+                      error = FALSE,
+                      message = FALSE,
+                      warning = FALSE,
+                      comment = NA)
+```
+
+background-image: url('Images/00-Leviathan_Cover_55.png')
+background-size: 100%
+background-position: center
+class: middle
+
+.size70[**Today's Agenda**]
+
+<br>
+
+.size50[.center[
+Explore the Polity5 Project
+
+*Political Regime Characteristics and Transitions, 1800-2018*
+]]
+
+<br>
+
+.center[.size40[
+  Justin Leinaweaver (Fall 2025)
+]]
+
+::: notes
+
+### Prep for Class
+1. Prep email with link to Google Doc to claim cases for Wednesday
+- https://docs.google.com/document/d/1PYAu5qFjaMK9Nw3V9dn1_8XH8OLXPho3Ohh-Ay3YRxI/edit?usp=sharing
+
+<br>
+
+Get organized as you come in!
+
+Make sure you have the data and codebook open and are ready to work with them.
+
+
+
+---
+
+background-image: url('Images/background-red.png')
+background-size: 100%
+background-position: center
+class: middle, center, inverse
+
+.size60[**What explains the variation in how and why states use violence against their citizens?**]
+
+::: notes
+
+In this section of the course we've begun building out the tools we need to answer this question.
+
+--
+
+<br>
+
+.size45[
+The state IS violence (Weber)
+
+vs
+
+We NEED the state to use violence (Olson)
+
+]
+
+::: notes
+
+<br>
+
+#### Last week 
+
+We examined two theoretical frameworks that each aimed to help us understand the relationship between "the state" and "violence."
+
+### What stuck with you from last week? Important elements for how you prefer to model political violence by states?
+
+<br>
+
+Clearly our investigation of violence by states will require us to spend some time digging into the institutions that make up states.
+
+
+
+---
+
+background-image: url('Images/06_1-polity5.png')
+background-size: 40%
+background-position: center
+class: slideblue
+
+::: notes
+
+Let's start big picture. 
+
+The polity variable is probably the most used measure of regime type in the academic literature.
+
++ By the end of today you'll have a better sense of what that means for our understanding of state behavior.
+
+<br>
+
+### Ok, per page 1 of the codebook, what is a 'polity' according to this project and why do they prefer that concept to 'the state'?
+
+(SLIDE)
+
+
+
+
+---
+
+class: middle, slideblue
+
+# What is a polity?
+.size35[
++ All 'Polities' (or governments) are examples of 'authority patterns'.
+
++ 'Authority patterns' are "a set of asymmetric relations among hierarchically ordered members of a social unit that involves the  direction of the unit.'
+
++ 'Direction of the unit' involves defining its goals, regulating the conduct of its members and allocating / coordinating the roles within it.
+]
+
+::: notes
+
+### Can anybody translate this into english for us?
+
+(This sounds a lot like a super fancy way of explaining what a government does.)
+
+- Hierarchy: It is above the people
+- Asymmetric relations: It has powers over you that you don't have over it
+- Defines goals, makes rules and appoints officers
+
+<br>
+
+### So, why don't they just refer to their project as analyzing states?
+
+#### - Isn't each row of their data named for a country anyway?
+
+1. (It avoids the problem of having to settle disputes over recognized vs unrecognized states.)
+
+2. (It makes coding easier in cases with disputed authority/fragmentation. Focus on a specific pattern of authority)
+
+
+*Notes*
+
++ Areas within a state's "territorial space may be removed and secured from central state control by organized rebel and/or foreign forces or through the benign or malignant neglect of central authorities.
+
++ These separate areas may be  effectively  administered  by  traditional,  separatist,  or  revolutionary  authorities  and,  thus, constitute separate polities that operate outside the legally recognized polity of the state (non-state or  anti-state  actors).
+
+
+
+---
+
+class: slideblue
+
+.pull-left[
+```{r, out.width='90%', fig.align='center'}
+knitr::include_graphics("Images/06_1-polity5.png")
+```
+]
+
+
+.pull-right[
+
+<br>
+
+<br>
+
+<br>
+
+.size40[
+**Key Concepts** (p14-16)
+
++ "Institutionalized Democracy"
+
++ "Institutionalized Autocracy"
+]]
+
+::: notes
+
+Ok, this will all get clearer as we dig into the regime type classifications.
+
+<br>
+
+The first paragraph under each subsection (democracy and autocracy) defines the two regime types.
+
+- Everybody read these so we can discuss them.
+
+- Don't worry about the component measures yet. 
+
+### What are the pros and cons of defining democracy and dictatorship these ways? Anything important you would argue is missing? 
+
+*DISCUSS*
+
+(e.g. civil liberties? Or does the guarantee of meaningful participation include these things automatically)
+
+<br>
+
+*Notes*
+
++ Institutionalized Democracy: Democracy is conceived as three essential, interdependent elements. One is the presence of institutions and procedures through which citizens can express effective preferences about alternative policies and leaders. Second is the existence of institutionalized constraints on the exercise of power by the executive. Third is the guarantee of civil liberties to all citizens in their daily lives and in acts of political participation. Other aspects of plural democracy, such as the rule of law, systems of checks and balances, freedom of the press, and so on are means to, or specific manifestations of, these general  principles. We do not include coded data on civil liberties (p14).
+
++ Institutionalized Autocracy: "Authoritarian regime" in Western political discourse is a pejorative term for some very diverse kinds of political systems whose common properties are a lack of regularized political competition and concern for political freedoms. We use the more neutral term Autocracy and define it operationally in terms of the presence of a distinctive set of political characteristics. In mature form, autocracies sharply restrict or suppress competitive political participation. Their chief executives are chosen in a regularized process of selection within the political elite, and once in office they exercise power with few institutional constraints. Most modern autocracies also exercise a high degree of directiveness over social and economic activity, but we regard this as a function of political ideology and choice, not a defining property of autocracy. Social democracies also exercise relatively high degrees of directiveness. We prefer to leave open for empirical investigation the question of how Autocracy, Democracy, and Directiveness (performance) have covaried over time (15-16).
+
+
+
+
+---
+
+class: middle, slideblue
+
+.pull-left[
+.size70[.center[**Democ**]]
+
+<br>
+
+```{r, out.width='100%', fig.align='center'}
+knitr::include_graphics("Images/06_1-Democ.png")
+```
+]
+
+.pull-right[
+.size70[.center[**Autoc**]]
+
+<br>
+
+```{r, out.width='100%', fig.align='center'}
+knitr::include_graphics("Images/06_1-autoc.png")
+```
+]
+
+::: notes
+
+Now let's talk about the component measures (p20-29).
+
+- These two sets of coding rules represent the operationalizations for each concept.
+
+### Think back to week 2 and remind me, what does operationalization refer to?
+- ("...selecting observable phenomena to represent abstract concepts" (Brians et al 2011, 89).)
+
+<br>
+
+In Pairs: Everybody take a few minutes to evaluate these.
+
+### How well do these observable phenomena represent the definitions we just discussed?
+
+#### - In other words, do these variables well represent the conceptual definitions?
+
+Don't worry about the levels yet, just the component measures themselves.
+
+*DISCUSS*
+
+
+
+
+---
+
+class: middle, slideblue
+
+.pull-left[
+.size70[.center[**Democ**]]
+
+<br>
+
+```{r, out.width='100%', fig.align='center'}
+knitr::include_graphics("Images/06_1-Democ.png")
+```
+]
+
+.pull-right[
+.size70[.center[**Autoc**]]
+
+<br>
+
+```{r, out.width='100%', fig.align='center'}
+knitr::include_graphics("Images/06_1-autoc.png")
+```
+]
+
+::: notes
+
+After operationalization comes instrumentation.
+
+### Think back to week 2 and remind me, what does instrumentation refer to?
+
+- (Convert your operationalization (definition) into a series of steps you can use to measure the concept in question)
+
+<br>
+
+PAIRS: Now examine the levels under each variable.
+
+### If you were being asked to code these variables, how difficult would you find applying these levels to real polities in the world?
+
+#### - In other words, do you have any validity or reliability concerns for these component measures?
+
+*DISCUSS*
+
+<br>
+
+#### - Which components do you believe will be easiest to code?
+
+#### - Which the hardest? Why?
+
+
+---
+
+background-image: url('Images/06_1-polity_formula.png')
+background-size: 100%
+background-position: center
+
+::: notes
+
+As I noted before, the polity score (polity2 specifically) is probably the most used measure of regime type in the academic literature.
+
+- It is calculated by subtracting the Autoc score from the Democ score for each state in each year.
+
+### How are we doing, everybody following the logic of their approach here?
+
+<br>
+
+Before we dig into the data, one important note to discuss.
+
+### Everybody read the entry on p16-17 '2.4 polity' and explain to me their huge and frequently overlooked note of caution.
+
+### What are they trying to warn us about?
+
+(SLIDE)
+
+
+
+---
+
+class: middle, center, slideblue
+
+.size50[
+"The original theory posits that autocratic and democratic authority are **distinct patterns of authority**, elements of which may **co-exist in any particular regime context**."
+]
+
+::: notes
+
+In English...
+
+The "polity score" only exists because other researchers kept taking this data and making their own.
+
+- HOWEVER, these researchers strongly argue that autocracy and democracy are NOT the opposite ends of a linear dimension.
+
+- They cover overlapping institutional designs especially in the middle of the polity2 scale.
+
+<br>
+
+**BOTTOM LINE:** Combining AUTOC and DEMOC creates a muddled mess in the middle values of the Polity score.
+
+### Does this make sense?
+
+<br>
+
+### Are they convincing you to use Autoc and Democ instead of Polity? Why or why not?
+
+<br>
+
+**Notes**
+
++ "Note: The POLITY score was added to the Polity IV data series in **recognition of its common usage by users in quantitative research** and in the overriding interest of maintaining uniformity among users in this application. The simple combination of the original DEMOC and AUTOC index values in a unitary POLITY scale, in many ways, **runs contrary to the original theory** stated by Eckstein and Gurr in Patterns of Authority (1975) and, so, should be treated and interpreted with due caution Its primary utility is in investigative research which should be augmented by more detailed analysis. **The original theory posits that autocratic and democratic authority are distinct patterns of authority, elements of which may co-exist in any particular regime context**. The inclusion of this variable in the data series should not be seen as an acceptance of the counter-proposal that autocracy and democracy are alternatives or opposites in a unified authority spectrum, even though elements of this perspective may be implied in the original theory. The POLITY variable provides a convenient avenue for examining general regime effects in analyses but **researchers should note that the middle of the implied POLITY “spectrum” is somewhat muddled in terms of the original theory, masking various combinations of DEMOC and AUTOC scores with the same POLITY score**. Investigations involving hypotheses of varying effects of democracy and/or autocracy should employ the original Polity scheme and test DEMOC and AUTOC separately."
+
+
+
+---
+
+background-image: url('Images/06_1-statue_liberty.webp')
+background-size: 100%
+background-position: center
+
+::: notes
+
+Alright, let's examine the US experience with these measures and see what we can learn.
+
+- Everybody filter the data to focus on the US scores and let's start with just the big, over-arching number: polity2
+
+- Note: Polity2 recodes the regular polity score to help smooth out bumps due to civil wars and data problems.
+
+<br>
+
+Talk to me about JUST our Polity2 score across time.
+
+### What do you notice here?
+
+#### - What kind of story does polity tell about the American experience over time?
+
+(SLIDE)
+
+
+
+---
+
+```{r, fig.retina=3, fig.align='center', out.width='97%', fig.asp=0.618, fig.width=6}
+##input the data
+d <- readxl::read_excel("../../Data/Polity/p5v2018.xls", na = ".")
+
+## Focus on US
+d_usa <- d |> 
+  filter(scode == "USA", year > 1788) |>
+  select(country, year, democ, autoc, polity2, xrcomp, xropen, xconst, parcomp, parreg)
+
+## Visualize polity
+ggplot(d_usa, aes(x = year, y = polity2)) +
+  geom_line() +
+  theme_bw() +
+  labs(x = "", y = "Polity Scores", title = "The United States") +
+  scale_x_continuous(breaks = seq(1780, 2020, 20)) +
+  scale_y_continuous(breaks = 0:10) +
+  geom_hline(yintercept = 7, linetype = "dashed", color = "red")
+```
+
+::: notes
+
+I would note that many researchers treat polity scores of 7 or greater as democracies.
+
+### So, at what points were we not a democracy?
+
++ (pre 1825)
++ (1860s)
++ (2020)
+
+This example helps highlight the problem in polity ignoring civil liberties.
+
+### When did women get the vote? (1921)
+
+#### - Why doesn't that appear to influence the us as a democracy according to polity pre-1921?
+
+<br>
+
+### When did the right to vote get enforced across the country for African Americans? (1964 civil rights act)
+
+#### - Why doesn't that hurt our democracy score pre-1964?
+
+
+
+---
+
+```{r, fig.retina=3, fig.align='center', out.width='97%', fig.asp=0.618, fig.width=6}
+## Visualize polity
+ggplot(d_usa, aes(x = year, y = polity2)) +
+  geom_line() +
+  theme_bw() +
+  labs(x = "", y = "Polity Scores", title = "The United States") +
+  scale_x_continuous(breaks = seq(1780, 2020, 20)) +
+  scale_y_continuous(breaks = 0:10) +
+  geom_hline(yintercept = 7, linetype = "dashed", color = "red")
+```
+
+::: notes
+
+### All that said, how do we feel about this coding saying we are not currently a democracy?
+
+*DISCUSS*
+
+<br>
+
+### If you were designing your own measure of regime type, what period would you classify America as a democracy?
+
+*DISCUSS*
+
+
+
+
+
+---
+
+```{r, fig.retina=3, fig.align='center', out.width='100%', fig.asp=.618, fig.width=6}
+## Visualize autoc and democ
+d_usa |>
+  select(year, democ, autoc) |>
+  pivot_longer(cols = democ:autoc, names_to = "Component", values_to = "Values") |>
+  mutate(
+    Values = if_else(Values %in% c(-77, -88), NA_real_, Values),
+    Component = if_else(Component == "autoc", "Autocracy", "Democracy")
+  ) |>
+  ggplot(aes(x = year, y = Values, color = Component)) +
+  geom_line(size = 1.15) +
+  coord_cartesian(ylim = c(0, 10)) +
+  theme_bw() +
+  labs(x = "", y = "", title = "The United States") +
+  scale_x_continuous(breaks = seq(1780, 2020, 20)) +
+  scale_y_continuous(breaks = 0:10) +
+  scale_color_manual(values = c("red", "blue")) +
+  guides(color = "none") +
+  annotate("text", x = 1997, y = 1, label = "Autocracy", color = "red") +
+  annotate("text", x = 1997, y = 7, label = "Democcracy", color = "blue")
+```
+
+::: notes
+
+Ok, let's go deeper one level.
+
+### Does focusing on the separate indices give us a better understanding of the American experience over time? WHY OR WHY NOT?
+
++ (Interesting that we do not register almost at all on the autoc index across time)
+
++ (Per Polity, ours is a story of democratic consolidation and retrenchment over time.)
+
+<br>
+
+### Based on this data, how would you describe America as a democracy across our history?
+
++ (A struggling one, no?)
+
+<br>
+
+Alright, go deeper again!
+
+### IN PAIRS: Focus on the component measures and tell me how specifically America has struggled with its democracy over time.
+
+(SLIDE)
+
+
+
+---
+
+```{r, fig.retina=3, fig.align='center', out.width='100%', fig.asp=.618, fig.width=6}
+## Visualize the components
+d_usa |>
+  select(year, xrcomp:parreg) |>
+  pivot_longer(cols = xrcomp:parreg, names_to = "Component", values_to = "Values") |>
+  mutate(
+    Values = if_else(Values %in% c(-77, -88), NA_real_, Values)
+  ) |>
+  ggplot(aes(x = year, y = Values)) +
+  geom_line() +
+  facet_wrap(~ Component) +
+  theme_bw() +
+  labs(x = "", y = "", title = "The United States") +
+  scale_y_continuous(breaks = 0:7)
+```
+
+::: notes
+
+### So, what specific things have changed in the us experience over time?
+
+1) Over our history it has been variation in parreg and parcomp
+
++ parreg: "Regulation of Participation: Participation is regulated to the extent  that there are binding rules on when, whether, and how political preferences are expressed."
+
++ parcomp: "The Competitiveness of Participation: The competitiveness of participation refers to the extent to which alternative preferences for policy and leadership can be pursued in the political arena."
+
+2) Since Trump's election we've introduced almost brand new variation in xconst
+
++ xconst: "Operationally, this variable refers to the extent of institutionalized constraints on the decision-making powers of chief executives, whether individuals or collectivities. Such limitations may be imposed by any "accountability groups." In Western democracies these are usually legislatures."
+
+<br>
+
+### What do we think of these measures? 
+
+#### - Any disagreement here? Why or why not?
+
+
+
+---
+
+class: middle, slideblue
+
+.size60[.center[**Update the Dataset for 2021**]]
+
+<br>
+
+.size40[
+1) Estimate the US scores for this year (2021)
+
++ xrcomp, xropen, xconst, parcomp and parreg
+
+2) Use those scores to calculate our AUTOC, DEMOC and POLITY scores in 2021
+
+]
+
+::: notes
+
+Let's now help the Polity researchers out!
+
+Work in small groups for a few minutes and then report back
+
+<br>
+
+*Report back and discuss*
+
+
+
+---
+
+class: middle, slideblue
+
+.size60[.center[**Make a Projection!**]]
+
+<br>
+
+.size40[
+1) Project the US scores for ten years from now (2031)
+
++ xrcomp, xropen, xconst, parcomp and parreg
+
+2) Use those scores to calculate our AUTOC, DEMOC and POLITY scores in 2031
+
+]
+
+::: notes
+
+Let's now get crazy!
+
+Redo the exercise but for ten years from now.
+
+### Where will the US be on these measures in 2031?
+
+<br>
+
+*Report back and discuss*
+
+
+
+
+---
+
+class: middle, slideblue
+
+.size60[.center[**For Wednesday**]]
+
+.size40[
+Bring to class a **real-world case** that provides an example of an **autocracy** using **violence against its own citizens**.
+
++ Submit your case to our shared doc in APA format (no overlap; first-come, first-served)
+]
+
+::: notes
+
+Let the polity scores guide you in choosing case studies this week. 
+
+For Wednesday use the Autoc index
+
+*Send email link*

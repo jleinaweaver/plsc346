@@ -1,0 +1,191 @@
+---
+format: revealjs
+---
+
+## Today's Agenda {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+```{r}
+library(tidyverse)
+library(readxl)
+library(kableExtra)
+
+# Data for today
+library(carData)
+```
+
+<br>
+
+**II. How and why do governments use violence against the people inside their borders?**
+
+<br>
+
+- Polishing the Country Briefings
+
+<br>
+
+::: r-stack
+Justin Leinaweaver (Fall 2025)
+:::
+
+::: notes
+Prep for Class
+
+1. Review submissions on Canvas
+
+<br>
+
+**SLIDE**: Paper prompt
+
+:::
+
+
+
+
+## Paper 2 {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+Political Violence Country Briefings
+
+Select **two countries** (no overlapping cases in class) and analyze their recent experience of political violence using **ALL FIVE** of the data sources we explored in class
+
+For **EACH** country you must produce a **TWO PAGE** country briefing report that summarizes and visualizes the findings of your analyses
+
+- 2 countries x 2 pages = 4 pages total
+
+- You should aim to analyze at least the last five years of available data for each country.
+
+::: notes
+
+**Questions on the assignment?**
+
+<br>
+
+For today I asked everyone to revise and resubmit their outlines with polished visualizations
+
+- **SLIDE**: what is a polished visualization?
+
+:::
+
+
+## Visualizations MUST include {background-image="Images/background-data_blue_v4.png" .center .smaller}
+
+:::: {.columns}
+::: {.column width="50%"}
+```{r, fig.align='center', fig.asp=1.1, fig.width=6, fig.cap="Figure 1. A count of countries by regional grouping from the United Nations (2009-2011) that shows the great majority of countries in the UN are located in Africa and Asia."}
+# The labs() function
+library(carData)
+
+ggplot(data = UN, aes(y = region)) +
+  geom_bar() +
+  labs(x = "x Axis Label", y = "y Axis Label", 
+       title = "A title like a thesis statement for the visualization")
+
+# caption = "Source: Where did the data come from?"
+```
+
+:::
+
+::: {.column width="50%"}
+
+::: {.r-fit-text}
+1. Informative titles,
+
+2. Clear axis labels, and
+
+3. A figure caption with
+
+    - Data sources
+    
+    - Description, and
+    
+    - Conclusions
+:::
+:::
+::::
+
+::: notes
+
+**Questions on these?**
+
+<br>
+
+**SLIDE**: Let's review the submissions!
+
+:::
+
+
+
+## Peer-Review Time! {background-image="Images/background-data_blue_v4.png" .center}
+
+<br>
+
+1. Is the argument well supported by evidence?
+
+2. Is the evidence visualized "professionally"?
+    - Informative title
+    - Figure label and caption
+    - Source information
+    - Clear axes and labels
+    - No chart junk or wasted space
+
+3. Are you convinced by the argument?
+
+::: notes
+
+*Split class into pairs*
+
+Pairs, present your argument to your partner.
+
+- Partners you have three jobs
+
+<br>
+
+### Questions?
+
+- Let's go!
+
+<br>
+
+### Any really great examples to share?
+
+:::
+
+
+
+
+## For Next Class {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+::: {.r-fit-text}
+1. Country Briefings due Oct 17th
+
+2. Next Week: Let's find some acts of terrorism!
+:::
+
+::: notes
+
+Canvas Assignment: Terrorism Case Studies 
+
+Submit to Canvas a recent example of an individual committing what you believe should be classified as an act of terrorism.
+
+1. Submit an APA citation to evidence/background of your selected act
+2. Describe the specifics of the case (actor, action, date, impact),
+3. Make an argument as to why you believe this is an act of terrorism (3+ sentences)
+
+<br>
+
+**Questions on the assignment?**
+
+:::
+
+
+
+
+
+
+
+
+
+
+
+
+
+

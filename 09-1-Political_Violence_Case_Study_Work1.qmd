@@ -1,0 +1,168 @@
+---
+format: revealjs
+---
+
+## Today's Agenda {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+```{r}
+library(tidyverse)
+library(readxl)
+library(kableExtra)
+
+# Data for today
+library(carData)
+```
+
+<br>
+
+**II. How and why do governments use violence against the people inside their borders?**
+
+<br>
+
+Working on the Country Briefings
+
+<br>
+
+::: r-stack
+Justin Leinaweaver (Fall 2025)
+:::
+
+::: notes
+Prep for Class
+
+1. Review submissions on Canvas
+
+<br>
+
+**SLIDE**: Paper prompt
+
+:::
+
+
+
+
+## Paper 2 {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+Political Violence Country Briefings
+
+Select **two countries** (no overlapping cases in class) and analyze their recent experience of political violence using **ALL FIVE** of the data sources we explored in class
+
+For **EACH** country you must produce a **TWO PAGE** country briefing report that summarizes and visualizes the findings of your analyses
+
+- 2 countries x 2 pages = 4 pages total
+
+- You should aim to analyze at least the last five years of available data for each country.
+
+::: notes
+
+**Questions on the assignment?**
+
+:::
+
+
+
+## For Today {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+<br>
+
+### **Prepare at least three conclusions about EACH country's experience of political violence (with visualizations)**
+
+1. Tables 
+
+2. Bar Plots
+
+3. Line Plots
+
+4. Scatter Plots
+
+::: notes
+
+**Everybody ready to go with this?**
+
+<br>
+
+**SLIDE**: Before we review your work, let's refresh our criteria of professional visualizations
+
+:::
+
+
+
+## Visualizations MUST include {background-image="Images/background-data_blue_v4.png" .center .smaller}
+
+:::: {.columns}
+::: {.column width="50%"}
+```{r, fig.align='center', fig.asp=1.1, fig.width=6, fig.cap="Figure 1. A count of countries by regional grouping from the United Nations (2009-2011) that shows the great majority of countries in the UN are located in Africa and Asia."}
+# The labs() function
+library(carData)
+
+ggplot(data = UN, aes(y = region)) +
+  geom_bar() +
+  labs(x = "x Axis Label", y = "y Axis Label", 
+       title = "A title like a thesis statement for the visualization")
+
+# caption = "Source: Where did the data come from?"
+```
+
+:::
+
+::: {.column width="50%"}
+
+::: {.r-fit-text}
+1. Informative titles,
+
+2. Clear axis labels, and
+
+3. A figure caption with
+
+    - Data sources
+    
+    - Description, and
+    
+    - Conclusions
+:::
+:::
+::::
+
+::: notes
+
+**Questions on these?**
+
+<br>
+
+**SLIDE**: Let's review the submissions!
+
+:::
+
+
+
+## Peer-Review Time! {background-image="Images/background-data_blue_v4.png" .center}
+
+<br>
+
+1. Is each conclusion MORE than a simple description?
+
+2. Is the proposed data visualization sufficient for supporting this conclusion?
+
+::: notes
+
+
+:::
+
+
+
+
+## For Next Class {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+::: {.r-fit-text}
+**Revise and Resubmit with POLISHED visualizations**
+:::
+
+::: notes
+
+
+
+<br>
+
+**Questions on the assignment?**
+
+:::

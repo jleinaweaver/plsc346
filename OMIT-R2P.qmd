@@ -1,0 +1,270 @@
+---
+output:
+  xaringan::moon_reader:
+    css: ["default", "extra.css"]
+    lib_dir: libs
+    seal: false
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: '16:9'
+---
+
+```{r, echo = FALSE, warning = FALSE, message = FALSE}
+##xaringan::inf_mr()
+## For offline work: https://bookdown.org/yihui/rmarkdown/some-tips.html#working-offline
+## Images not appearing? Put images folder inside the libs folder as that is the main data directory
+
+library(tidyverse)
+##library(readxl)
+##library(stargazer)
+##library(kableExtra)
+##library(modelr)
+
+knitr::opts_chunk$set(echo = FALSE,
+                      eval = TRUE,
+                      error = FALSE,
+                      message = FALSE,
+                      warning = FALSE,
+                      comment = NA)
+```
+
+background-image: url('Images/00-Leviathan_Cover_55.png')
+background-size: 100%
+background-position: center
+class: middle
+
+.size70[**Today's Agenda**]
+
+<br>
+
+.size45[.center[
+Evaluate Responsibility to Protect (R2P) as a strategy for reducing government violence against its citizens
+]]
+
+<br>
+
+.center[.size40[
+  Justin Leinaweaver (Fall 2025)
+]]
+
+::: notes
+
+### Prep for Class
+1. ...
+
+<br>
+
+
+
+---
+
+background-image: url('Images/background-green_blue_swirl_side.jpg')
+background-size: 100%
+background-position: center
+class: middle, center
+
+.size60[**Paper 2 Prompt**]
+
+<br>
+
+.size50[Propose a specific strategy for reducing political violence by state governments. This can be focused at any level of action (e.g. individual, group, states, etc.).]
+
+::: notes
+
+Today we continue our exploration of some of the big options being pushed at the international level.
+
+### Any questions on the assignment?
+
+
+
+---
+
+background-image: url('Images/09_1-UJ.jpg')
+background-size: 90%
+background-position: center
+
+::: notes
+
+Now that you've had time to reflect on our debate I'd like you to talk to me about it for a moment.
+
+<br>
+
+First, let's talk costs and benefits
+
+### What are the biggest possible benefits of embracing universal jursidiction?
+
+### What are the most likely costs of doing so?
+
+<br>
+
+Second, does perspective matter for your recommendation?
+
+### In other words, do the costs and benefits balance differently depending on where you stand in the international system?
+
+### - Big states vs small states vs ngos vs people living under a dictatorship?
+
+
+
+
+---
+
+background-image: url('Images/09_2-R2P.jpg')
+background-size: 100%
+background-position: center
+
+::: notes
+
+Today we'll explore the idea of a Responsibility to Protect (R2P) as a strategy for reducing government violence against its citizens
+
+### Somebody define R2P for us.
+
+*Solicit multiple definitions, discuss*
+
+
+
+---
+
+background-image: url('Images/09_2-R2P_Text.png')
+background-size: 95%
+background-position: center
+
+::: notes
+
+R2P gets "enshrined" during the World Summit at the UN in 2005.
+
+- Here's the most relevant section from the "Resolution adopted by the General Assembly on 16 September 2005."
+
+Everybody take a moment to read and reflect on what this says.
+
+### Based on this statement, what version of R2P has any consensus on the world stage.
+
+(SLIDE: Discussion notes on next slide)
+
+
+
+---
+
+background-image: url('Images/09_2-R2P_Text.png')
+background-size: 95%
+background-position: center
+
+::: notes
+
+*DISCUSSION NOTES*
+
+<br>
+
+Big caveats!
+- Responsibility MUST be channeled through the UN
+- Actions must be consistent with UN Charter and international law.
+- Diplomatic, humanitarian and peaceful means required as first try
+- "Collective action" only on case-by-case basis when the peaceful stuff has failed and through the powers of the UN SC (which already has this power)
+- Final sentence indicates in favor of capacity building and trying to head off crises before they begin.
+- R2P only appears in preceding section focused on how each state has an R2P for its own people only.
+
+HOWEVER, don't assume this adds up to nothing.
+- States here acknowledging the principal
+- States accepting R2P binds on every state
+- Opens path for UNSC to interfere in domestic politics!
+
+### Any questions on all this?
+
+
+
+---
+
+class: middle, slideblue
+
+.size60[.center[**Responsibility to Protect (R2P)**]]
+
+.size40[
+Under what specific criteria, or in response to what specific situations, do you believe an absolute R2P binds the US to act? 
+
+By "act" I mean:
+
++ Even if we have to act alone, and
+
++ That action requires the sacrifice of blood and treasure.
+]
+
+::: notes
+
+I want to attack this a little differently than UJ.
+
+Everybody take 10 minutes on your own to describe the kind of situation or crisis or act of violence that you believe requires us to act.
+
+*PRESENT and DISCUSS each*
+
+<br>
+
+## Notes from class 2019-10-11
+
+- acts of genocide vs genocide
+- duration of the conflict matters
+- Pattern of abuse required
+- breaking int'l law
+- US regional allies impacted
+- US citizens threatened
+- Never alone
+- High likelihood of success required
+
+
+
+---
+
+class: middle, slideblue
+
+.size60[.center[**Responsibility to Protect (R2P)**]]
+
+<br>
+
+.size45[
+1. We are never obligated to act (always a choice)
+
+2. We are obligated to act only for the absolute worst cases
+
+3. We are obligated by R2P on our own when the UN fails to act
+]
+
+::: notes
+
+Ideally, I'd like to make sure we hear a version of at least three different positions today.
+
+Key here is that we mean a significant, legal version of "obligation."
+
+- e.g. your family is the victim of a genocide and the US failed to act which gives you the right to press for significant monetary damages in US courts.
+
+<br>
+
+### Which of these comes closest to your personal position? Why?
+
+<br>
+
+### Is there a position I didn't anticipate that needs to be added?
+
+
+
+---
+
+class: middle, slideblue
+
+.size60[.center[**For Friday: Writing Workshop**]]
+
+<br>
+
+.size50[Propose a specific strategy for reducing political violence by state governments. This can be focused at any level of action (e.g. individual, group, states, etc.).]
+
+::: notes
+
+Friday we'll have a writing workshop day.
+
+At the least, please come to class with your strategy chosen and the paper outlined.
+
+### Questions?
+
+
+
+
+

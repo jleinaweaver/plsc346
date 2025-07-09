@@ -1,0 +1,132 @@
+---
+format: revealjs
+---
+
+## Today's Agenda {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+```{r}
+library(tidyverse)
+library(readxl)
+library(kableExtra)
+```
+
+<br>
+
+**III. How and why do non-state actors use political violence?**
+
+<br>
+
+The Future of Terrorism?
+
+- Examining the interaction between the internet and terrorism
+
+<br>
+
+::: r-stack
+Justin Leinaweaver (Fall 2025)
+:::
+
+::: notes
+Prep for Class
+
+1. Review submissions on Canvas
+
+<br>
+
+In this final section of our work on terrorism we have been exploring the cutting-edge of terrorism research
+
+- Last week we examined the literature on the rise of far-right terrorism (FRT), radicalization in the United States and whether or not there are significant differences in the kinds of terror used by different ideological groups.
+
+<br>
+
+This week we shift to examining the interaction between terrorism and the internet
+
+1. How is the terror strategy adapting to a digital world?
+
+2. Does the literature find evidence of these mechanisms in action?
+
+3. How could we contribute to this new area of research?
+
+:::
+
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+<br>
+
+### Has the internet transformed terrorism as a strategy of political violence?
+
+1. Describe the case (Actor? Action? Target?)
+
+2. How does this show us the internet has changed terrorism?
+
+::: notes
+
+For today I asked everybody to submit a case we could use to develop our intuitions about this complicated interaction.
+
+<br>
+
+**Everybody ready to go with this?**
+
+<br>
+
+*Go around the room and hear what everyone brought and why they selected it*
+
+- Let's review the submitted cases and get any clarifications we may need
+
+<br>
+
+*Split class into small groups (4-ish)*
+
+- Go sit with your group and claim space on the board
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+<br>
+
+### Therefore, cyber terrorism (the intersection between terrorism and the internet) requires us to alter our definitions of terrorism
+
+
+::: notes
+
+GROUPS I want you to build this argument on the board
+
+- What are the strongest reasons we can come up with to make the case that terrorism has been fundamentally changed by the internet
+
+<br>
+
+*PRESENT and DISCUSS each*
+
+<br>
+
+**SLIDE**: For next class
+
+:::
+
+
+
+## For Next Class {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+<br>
+
+Müller & Schwarz (2021). Fanning the Flames of Hate: Social Media and Hate Crime. *Journal of the European Economic Association*
+
+- Submit reflections on Canvas
+
+::: notes
+
+
+:::
+
+
+
+
+
+
+

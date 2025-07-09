@@ -1,0 +1,452 @@
+---
+format: revealjs
+---
+
+## Today's Agenda {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+```{r}
+library(tidyverse)
+library(readxl)
+library(kableExtra)
+```
+
+<br>
+
+**III. How and why do non-state actors use political violence?**
+
+<br>
+
+**The Future of Terrorism?**
+
+- Collins (2021) on the next "wave" of terrorism
+
+<br>
+
+::: r-stack
+Justin Leinaweaver (Fall 2025)
+:::
+
+::: notes
+Prep for Class
+
+1. Review submissions on Canvas
+
+<br>
+
+After 9/11, terrorism researcher David Rapoport wrote a hugely cited book, Modern Waves of Terrorism, that proposed a framework for helping us understand and analyze terrorism across time
+
+- In essence, he identified "distinct patterns" of terrorism across time that seemed to crash into the world like waves
+
+- During each wave a particular confluence of political and ideological pressures combined to produce terror groups that could be organized in certain themes
+
+- Anarchists, Nationalists, New Left Extremists and then Religious Extremism
+
+- Since that time many researchers have sought to extend the wave theory up to today and the most commonly asserted new wave focuses on right-wing terror.
+
+<br>
+
+This week I want us to explore this possible new wave
+
+- Is it sufficiently distinct to describe as a "wave"?
+
+- What do the groups involved in this "wave" look like?
+
+- And finally, are the kinds of violence pursued by these groups distinct from others?
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+**Collins (2021) "A New Wave of Terrorism? A Comparative Analysis of the Rise of Far-Right Terrorism"**
+
+<br>
+
+**Evaluate the Framing of the Article**
+
+1. Research question
+
+2. Key concepts
+
+3. Connections to the literature
+
+::: notes
+
+Let's start by exploring the framing of the article for today.
+
+- GROUPS, take a few minutes and get ready to share your thoughts about the framing of this research paper
+
+- Think BIG PICTURE, e.g. how the researchers set up their project
+
+<br>
+
+*REPORT BACK* and *DISCUSS*
+
+<br>
+
+### What is the research question?
+- (Overall Research Question: Is far-right terrorism (FRT) the next "wave"?)
+
+- "RQ1: What is the principal arrangement of characteristics of FRT incidents within Scandinavia, Germany, the United Kingdom, and the United States?" (p4)
+
+- "RQ2: Do these findings suggest a new wave of far-right terrorism when comparing the selected cases within the framework of David Rapoport’s modern waves of terrorism theory?" (p4)
+
+<br>
+
+### What "gap" in the literature has Collins identified?
+- (Too much focus on big one-off attacks and not the patterns underpinning them)
+
+- (Global attention, media, is wildly and disproportionately focused on "jihadist" terror)
+
+<br>
+
+### What is Collins answer to the "who cares" question?
+
+### - How or why does labeling FRT as a wave help us?
+1. We have to match our research resources to the problems as they are developing
+    - "My answer is that it is not a symbolic representation with minor repercussions but a call for reorientation in understanding the changing extremist landscape. Most importantly, with the current fixation of Jihadism in the academic sphere, the far right has mobilized with few impediments while using the discourse surrounding the religious wave as an existential threat in their ideological narratives" (3).
+
+2. Waves identify "motivations, targets, weapon types, group belongings, ideologies, and reoccurring patterns" that help us understand and, hopefully, address the rise of terrorism
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+**Collins (2021) "A New Wave of Terrorism? A Comparative Analysis of the Rise of Far-Right Terrorism"**
+
+<br>
+
+**Evaluate the Model: Rapoport’s Modern Waves of Terrorism Theory**
+
+- What are the key criteria that must be met to describe FRT as a new "wave" of terrorism?
+
+::: notes
+
+The paper adopts and purports to test Rapoport’s Modern Waves of Terrorism Theory
+
+- This "theory" looks quite different from the models we have been studying this term
+
+- Not exactly focused on interests, institutions and interactions
+
+- More a collection of criteria used to define certain actions as belonging to certain "waves" of terror
+
+- In essence, this is an historical or purely descriptive theory
+
+<br>
+
+Groups, take a few minutes to unpack this theory and report back
+
+<br>
+
+*ON BOARD*
+
+- REPORT BACK and DISCUSS
+
+<br>
+
+Vincent Auger's (2020) criteria (p4):
+1. "the global character"
+2. "expansion of activity measures"
+3. A prompting or inciting cause depicts an “unanticipated international political transformation” that produces extremist and radical reactions
+4. "the presence of a common predominant energy"
+
+<br>
+
+As an alternative, and before we dive into Collins analyses, I want to show you how other researchers have sought to identify and describe possible fifth waves of terrorism
+
+- In writings beginning around 2007 Jeffrey Kaplan argued that the fifth wave was forming and it was predominantly ethnic in nature
+
+- He identified what he called a "New Tribalism" spreading through Africa primarily
+
+- **SLIDE**: In 2014 he and Christopher Costa proposed these as the checklist of the characteristics of fifth-wave ethnoterrorism
+
+<br>
+
+Notes from Rapoport's writings and others
+
+- a generational model that linked contemporaneous global terrorist groups based on their shared characteristics of ideology/theology, strategy/tactics, and visions for the future
+
+- “The Four Waves of Modern Terrorism” defines a wave as a cycle that takes place over a 40-year time period. Each cycle is dynamic in that it expands and contracts. 
+
+- Groups within a particular wave adapt to the exigencies of their time, are aware of the actions of other contemporary terrorist groups in other countries, and are driven by a relentless energy that propels them into violent action. They share a common technological facility, including communications, weaponry, and logistics. Most important, they share a vision that perceives in the ills and abuses of the world the seeds of a revolutionary future.
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .smaller}
+
+::: {.r-fit-text}
+**Kaplan and Costa (2014): The characteristics of fifth-wave ethnoterrorism**
+:::
+
+<br>
+
+:::: {.panel-tabset}
+
+### 1-6
+
+1. Radicalize and break away from established terrorist wave
+2. Born of hope expressed at the extremes: some emerge after all hope has been lost, others because the dream has been realized
+3. Physical withdrawal into wilderness areas
+4. Claim to establish some form of a new calendar (“the Year Zero”)
+5. Radical quest for purity—racial, tribal, ecological, etc.
+6. Internal compromise impossible resulting in deadly schisms and constant internal violence
+
+### 7-12
+
+7. Belief in human perfectibility and chiliastic utopia in this lifetime
+8. Emphasis on creating new men and women makes old models expendable; thus the logic of genocidal violence
+9. Obsession with creating new race places tremendous emphasis on women, who are both subject and object of fifth-wave violence
+10. Children are the vanguard of the fifth wave as they are the least contaminated by the old society (not to mention the old STDs, HIV, and other remnants of the old societies)
+11. Rape is the signature tactic of the fifth wave
+12. Violence is so pervasive in the fifth wave that it loses its message content beyond the simple assertion that “we exist”
+
+### 13-17
+
+13. The effects of rituals of rape and killing, especially for newly abducted “recruits,” has the liminal effect of binding the killers to the group while closing the doors for all group members to a return to family, the old society, and previous ways of life
+14. Fifth wave groups are localistic and particularistic, having turned their backs on the international waves from which they emerged
+15. Nonetheless, if needed for survival, foreign allies will be cultivated and fifth wave groups will often live in exile in neighboring states
+16. Authoritarian in nature with charismatic leadership patterns
+17. Chiliastic in nature, deeply religious with eclectic or syncretic religious tropes assembled and interpreted by the leaders in support of a millenarian dream to be realized through a campaign of apocalyptic violence
+
+::::
+
+::: notes
+
+Kaplan, J. (2007). The fifth wave: The new tribalism? Terrorism and Political Violence, 19(4), 545–570.
+
+<br>
+
+### How different is this from the Collins approach to selecting criteria for defining FRT as a wave?
+
+<br>
+
+### Does FRT share some of these criteria with the "ethnoterror" described by Kaplan?
+
+<br>
+
+Notes
+
+- "Chiliastic": millennialism, also called millenarianism or chiliasm, the belief, expressed in the book of Revelation to John, the last book of the New Testament, that Christ will establish a 1,000-year reign of the saints on earth (the millennium) before the Last Judgment.
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+**Collins (2021) "A New Wave of Terrorism? A Comparative Analysis of the Rise of Far-Right Terrorism"**
+
+<br>
+
+**Research Design**
+
+- Evaluate how Collins operationalizes FRT and then uses the GTD to identify the "right" cases
+
+::: notes
+
+Given our work in class I think you are now well equipped to evaluate Collins' work in this paper.
+
+- To start, groups evaluate the operationalization and case selection process
+
+- Use your knowledge about GTD to help us critically analyze his approach!
+
+<br>
+
+*REPORT BACK* and *DISCUSS*
+
+- (**SLIDE**: Table 1 with GTD variables used in selection process)
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+![](Images/13_1-Collins_Table1.png){style="display: block; margin: 0 auto"}
+
+::: notes
+
+Talk to me about the use of the GTD in this paper
+
+<br>
+
+**Strengths and weaknesses of using each of these measures?**
+
+- **Any concerns here?**
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+**Collins (2021) "A New Wave of Terrorism? A Comparative Analysis of the Rise of Far-Right Terrorism"**
+
+![](Images/13_1-Collins_Figure1.png){style="display: block; margin: 0 auto"}
+
+::: notes
+
+Collins' paper employs a comparative cross-national analysis
+
+- Chooses country case studies using GTD and digs deep 
+
+- "This practice examines a particular phenomenon to compare its 'manifestations in different socio-national settings.'"
+
+- Although we should note "Scandinavia" isn't a country!
+
+- Mixed-methods: Employs both qualitative and quantitative data
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+**Collins (2021) "A New Wave of Terrorism? A Comparative Analysis of the Rise of Far-Right Terrorism"**
+
+<br>
+
+**FRT: A distinct "type" and "prompting cause"?**
+
+1. What does Collins conclude?
+
+2. Are you convinced by it? Why or why not?
+
+::: notes
+
+Remember, the aim here is to try and identify the degree to which FRT terrorism is a distinct and new wave of terrorism
+
+- Specifically, Collins looks across the cases to see if a distinct "type" and "prompting cause" are evident.
+
+- He also considers "Common Predominant Energy" but that section is much less involved/detailed
+
+<br>
+
+*SPLIT class in half: Assign "type" and "prompting cause" to each*
+
+<br>
+
+Groups, take some time to evaluate the case results in your area
+
+- What does Collins conclude from analyzing across the cases?
+    - In other words, do these cases exhibit a similar type? A similar "prompting cause"?
+
+- Are you convinced by it? Why or why not?
+
+<br>
+
+### Questions on the assignment?
+
+- Go!
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+:::: {.columns}
+::: {.column width="50%"}
+**Collins (2021)**
+
+<br>
+
+**Does FRT have a distinct "type"?**
+:::
+
+::: {.column width="50%"}
+![](Images/13_1-Collins_Table5.png){style="display: block; margin: 0 auto"}
+:::
+::::
+
+::: notes
+
+Ok, "Type" group: 
+
+1. What does Collins conclude?
+
+2. Are you convinced by it? Why or why not?
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+**Collins (2021) "A New Wave of Terrorism? A Comparative Analysis of the Rise of Far-Right Terrorism"**
+
+![](Images/13_1-Collins_Figure8.png){style="display: block; margin: 0 auto"}
+
+::: notes
+
+Ok, "prompting cause" group: 
+
+1. What does Collins conclude?
+
+2. Are you convinced by it? Why or why not?
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+**Collins (2021) "A New Wave of Terrorism? A Comparative Analysis of the Rise of Far-Right Terrorism"**
+
+![](Images/13_1-Collins_Figure7.png){style="display: block; margin: 0 auto"}
+
+::: notes
+
+On p16, Collins draws some super depressing conclusions about the "common predominant energy" in the FRT movement
+
+FRT groups seem to be:
+
+1. Targeting outsiders and infrastructure in similar ways, 
+    - "Bridging the outlined cases is the recurrent narrative that outsiders—according to the data set, predominantly Muslim individuals—threaten the ideological core ideas and safety of right-wing extremist communities and the wider ethno-European populaces in general.
+
+2. With attack numbers growing exponentially in number
+
+3. While ("alarmingly") copying ideological interpretations 
+    - Using Breivik as a martyr, part of the FRT community continues to justify and inspire others to conduct similar large-scale attacks on society. (p17)
+    - Moreover, this syndrome of mimicking extremist events also transcends to the ideologically connected school shooting and involuntary celibate movement that can be found mainly in the United States.
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+![](Images/13_1-Economist_FRT_Proportions.webp){style="display: block; margin: 0 auto"}
+
+::: notes
+
+**Bottom line, has Collins convinced you that FRT is the new "wave" of terrorism? Why or why not?**
+
+<br>
+
+Data here from the Centre for Strategic and International Studies shows a deeply alarming trend since 9/11.
+
+:::
+
+
+
+## For Next Class {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+<br>
+
+**Explore the data and codebook for the Profiles of Individual Radicalization in the United States (PIRUS) Dataset**
+
+- Submit analyses to Canvas
+
+::: notes
+
+Next class we dig into a new dataset
+
+- Get ready to work!
+
+:::

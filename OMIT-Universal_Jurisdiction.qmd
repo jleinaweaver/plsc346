@@ -1,0 +1,224 @@
+---
+output:
+  xaringan::moon_reader:
+    css: ["default", "extra.css"]
+    lib_dir: libs
+    seal: false
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: '16:9'
+---
+
+```{r, echo = FALSE, warning = FALSE, message = FALSE}
+##xaringan::inf_mr()
+## For offline work: https://bookdown.org/yihui/rmarkdown/some-tips.html#working-offline
+## Images not appearing? Put images folder inside the libs folder as that is the main data directory
+
+library(tidyverse)
+##library(readxl)
+##library(stargazer)
+##library(kableExtra)
+##library(modelr)
+
+knitr::opts_chunk$set(echo = FALSE,
+                      eval = TRUE,
+                      error = FALSE,
+                      message = FALSE,
+                      warning = FALSE,
+                      comment = NA)
+```
+
+background-image: url('Images/00-Leviathan_Cover_55.png')
+background-size: 100%
+background-position: center
+class: middle
+
+.size70[**Today's Agenda**]
+
+<br>
+
+.size45[.center[
+Evaluate Universal Jurisdiction (UJ) as a strategy for reducing government violence against its citizens
+]]
+
+<br>
+
+.center[.size40[
+  Justin Leinaweaver (Fall 2025)
+]]
+
+::: notes
+
+### Prep for Class
+1. Review readings for today (notes in Zotero)
+    - Joyner, C. (1996). Arresting Impunity: The Case for Universal Jurisdiction in Bringing War Criminals to
+Accountability. Law and Contemporary Problems 59(4): 153.
+    - Roth, K. (2001). The Case for Universal Jurisdiction. Foreign Affairs 80(5): 150.
+    - Kissinger, H. (2001). The Pitfalls of Universal Jurisdiction. Foreign Affairs. 80(86).
+
+<br>
+
+
+
+---
+
+background-image: url('Images/background-green_blue_swirl_side.jpg')
+background-size: 100%
+background-position: center
+class: middle, center
+
+.size60[**Paper 2 Prompt**]
+
+<br>
+
+.size50[Propose a specific strategy for reducing political violence by state governments. This can be focused at any level of action (e.g. individual, group, states, etc.).]
+
+::: notes
+
+This is an argument paper so every claim must be supported by evidence.
+
+You can start from any of the examples we've discussed in class over the last two weeks or one of the two ideas we'll be studying this week.
+
+### Any questions on the assignment?
+
+
+
+---
+
+background-image: url('Images/09_1-UJ.jpg')
+background-size: 90%
+background-position: center
+
+::: notes
+
+Today we'll explore the global norm of universal jurisdiction (UJ) as a "strategy for reducing government violence against their citizens"
+
+
+
+---
+
+background-image: url('Images/background-green_blue_swirl_side.jpg')
+background-size: 100%
+background-position: center
+class: middle
+
+.size60[.center[**Universal Jurisdiction**]]
+
+.size50[
++ Therefore, the US should oppose efforts to establish universal jurisdiction as an international norm.
+
++ Therefore, the US should work to advance the establishment of universal jurisdiction as an international norm.
+]
+
+::: notes
+
+We need to split the class into two groups to cover the two sides of this argument.
+
+### So, who wants to work on which side of the debate?
+
+*Split class into two groups*
+
+- Even them out if groups very uneven
+
+<br>
+
+Please keep in mind, the goal today is **NOT TO WIN** the argument.
+
+The goal is to make sure we fully understand the trade-offs in embracing or rejecting this policy option.
+
+In 15 minutes I want each group to put their strongest case leading to this conclusion on the board.
+
+### Questions?
+
+Get to work!
+
+
+
+
+---
+
+background-image: url('Images/background-green_blue_swirl_side.jpg')
+background-size: 100%
+background-position: center
+class: middle
+
+.size65[.center[**Feedback and Revisions**]]
+
+.size55[
+- What is the strongest part of the argument?
+
+- What is the weakest part of the argument?
+]
+
+::: notes
+
+In a moment I'll ask each group to present their argument diagram.
+
+Listening group, your job is to listen and the give them feedback.
+
+Help them identify the strongest and weakest parts of the diagram.
+- Which premises need to be clarified? 
+- Any holes in the logical flow?
+
+<br>
+
+*Present Argument 1*
+
+*Group 2, give them feedback*
+
+*Present Argument 2*
+
+*Group 1, give them feedback*
+
+<br>
+
+Groups, 10 minutes, take the feedback on board and now revise your argument on the board.
+
+*Present Each*
+
+
+
+---
+
+background-image: url('Images/09_1-UJ.jpg')
+background-size: 90%
+background-position: center
+
+::: notes
+
+Ok, bottom line, where do we end up?
+
+### Under what specific conditions, do the trade-offs tip towards supporting the norm?
+
+### Under what specific conditions, do the trade-offs tip away from  supporting the norm?
+
+
+
+---
+
+background-image: url('Images/background-green_blue_swirl_side.jpg')
+background-size: 100%
+background-position: center
+class: middle, center
+
+.size60[**Paper 2 Prompt**]
+
+<br>
+
+.size50[Propose a specific strategy for reducing political violence by state governments. This can be focused at any level of action (e.g. individual, group, states, etc.).]
+
+::: notes
+
+Hopefully our work today has helped you take a practice run at answering the question in paper 2.
+
+On Wednesday we'll repeat this exercise focused on R2P.
+
+
+
+
+
+
+
+

@@ -1,0 +1,103 @@
+---
+format: revealjs
+---
+
+## Today's Agenda {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+<br>
+
+**II. How and why do governments use violence against the people inside their borders?**
+
+::: {.r-fit-text}
+
+- Paper 1: Writing Workshop
+
+:::
+
+<br>
+
+::: r-stack
+Justin Leinaweaver (Fall 2025)
+:::
+
+::: notes
+Prep for Class
+
+1. ...
+
+<br>
+
+**SLIDE**: Let's talk rubric
+
+:::
+
+
+
+## Convincing Arguments {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
++ **Logical**: Do the premises support the conclusion?
+
++ **Clear**: Is the paper easy to read and understand?
+
++ **Credible**: Is there enough high quality evidence (cited using APA)?
+
++ **Critical**: Does the paper address weaknesses in the argument (e.g. logic, evidence, consider counter-arguments)?
+
+
+::: notes
+
+A very good series of questions to ask yourself before submitting!
+
+### Any questions on the rubric or my expectations?
+
+:::
+
+
+
+
+## Paper 1 {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+<br>
+
+Which **SINGLE** data source would you recommend to someone interested in better understanding the use of political violence by governments around the world?
+
+- Your thesis should be a clear recommendation for **ONE** of the sources and should be supported by **AT LEAST THREE distinct reasons** for your recommendation
+
+- **A high quality recommendation** will also make clear **why** you are not recommending the other sources
+
+::: notes
+
+**Questions on the prompt?**
+
+<br>
+
+**SLIDE**: Sources list if needed
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+::: {.r-fit-text}
+**Sources of Political Violence Data**
+:::
+
+- The US State Department's "Country Reports on Human Rights Practices"
+
+- Amnesty International's "Annual Country Reports"
+
+- The Political Terror Scale (PTS)
+
+- The CIRIGHTS data project's "Physical Integrity Rights"
+
+- Varieties of Democracy's (V-Dem) "Personal Integrity Rights"
+
+::: notes
+
+*IF needed*
+
+:::
+
+
+

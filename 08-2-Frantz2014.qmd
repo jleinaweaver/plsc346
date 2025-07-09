@@ -1,0 +1,659 @@
+---
+format: revealjs
+---
+
+## Today's Agenda {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+```{r}
+library(tidyverse)
+library(readxl)
+library(kableExtra)
+```
+
+<br>
+
+**II. How and why do governments use violence against the people inside their borders?**
+
+<br>
+
+Theories of "Political Violence"
+
+- Frantz and Kendall-Taylor (2014) "A Dictator’s Toolkit: Understanding How Co-Optation Affects Repression in Autocracies"
+
+<br>
+
+::: r-stack
+Justin Leinaweaver (Fall 2025)
+:::
+
+::: notes
+Prep for Class
+
+1. Review Canvas submissions
+
+2. Make sure Canvas discussion forum is ready to collect cases for next class
+
+<br>
+
+Our focus in this section of the class remains on trying to answer the question: How and why do governments use violence against the people inside their borders?
+
+- Specifically, this week we have been exploring the research that tries to answer that question while focusing on the behavior of dictators.
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+::: {.r-fit-text}
+[**Escribà-Folch (2013): Dictatorships and Political Violence**]{style="color:darkred;"}
+:::
+
+![](Images/07_2-spraying_protestor.webp){style="display: block; margin: 0 auto"}
+
+::: notes
+
+**What are your takeaways from exploring Escribà-Folch's (2013) research paper?**
+
+<br>
+
+**How does the model help us understand a dictator's behavior?**
+
+- Interests: Dictators -> political survival
+
+- Institutions: Dictator may choose from two types of repression: 1) restrictions on civil rights, and/or 2) violation of physical rights
+
+- Interactions: 
+    - Violent repression directly targets and removes a threat to power (but may decrease legitimacy, increase resentment and lead to military defections)
+    - Restricting rights attempts to prevent coordination and collective action (but only works on the public and not the elites)
+    - Dictators should match their type of repression to the type of threat
+
+<br>
+
+### - What were the key findings of the paper? Did the analysis support the model or not?
+
+- (**SLIDE**)
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+![](Images/08_1-Escriba_Folch_Table1.png){style="display: block; margin: 0 auto"}
+
+![](Images/08_1-Escriba_Folch_Figure2a.png){style="display: block; margin: 0 auto"}
+
+::: notes
+
+Repression DOES work, but "not all forms of repression work in all circumstances"
+
+- "Political terror is a targeted strategy specifically directed against individuals or organized groups capable of acting collectively and so reduces the likelihood of regular and nonviolent exits and coups" (p557). 
+
+- "Restrictions on civil liberties hinder collective action thereby helping to prevent both regular and irregular exits" (p557).
+
+<br>
+
+### - How confident are you in the conclusions? (e.g. logical model, valid and reliable data, plausible analyses?)
+
+- *Force this discussion*
+
+<br>
+
+Today we will deepen our analysis of political violence in dictatorships using a 2014 article by Erica Frantz and Andrea Kendall-Taylor.
+
+<br>
+
+**SLIDE**: Before we dig into the framing of the article a quick detour...
+
+:::
+
+
+
+## Andrea Kendall-Taylor {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+:::: {.columns}
+::: {.column width="50%"}
+![](Images/08_2-Kendall_Taylor.jpg)
+:::
+
+::: {.column width="50%"}
+
+<br>
+
+![](Images/08_2-Andrea_Kendall_Taylor2.jpg)
+:::
+::::
+
+::: notes
+
+I know many of you are thinking about future career paths and may be interested in foreign service.
+
+- One of the authors of today's article, Andrea Kendall-Taylor, has had one of the coolest careers I can imagine.
+
+<br>
+
+- BA in politics from Princeton University
+
+- PhD in political science from UCLA (University of California, Los Angeles)
+
+- She was a Fulbright scholar in Azerbaijan and Kazakhstan, where she conducted dissertation research on oil and autocracy.
+
+- Served for eight years as a senior intelligence officer in the CIA
+
+- From 2015 to 2018, she was deputy national intelligence officer for Russia and Eurasia at the National Intelligence Council (NIC) in the Office of the Director of National Intelligence (DNI)
+
+- Currently Senior Fellow and Director of the Transatlantic Security Program at CNAS (Center for a New American Security)
+
+<br>
+
+It all started with a BA in politics!
+
+<br>
+
+**SLIDE**: Back to the article
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+::: {.r-fit-text}
+
+**Frantz and Kendall-Taylor (2014): ...**
+
+<br>
+
+**Evaluate the Framing**
+
+1. Research question
+
+2. Key concepts
+
+3. Connections to the literature
+
+:::
+
+::: notes
+
+Let's start by exploring the framing of the article.
+
+- GROUPS, take a few minutes and get ready to share your thoughts about the framing of this research paper
+
+- Think BIG PICTURE, e.g. how the researchers set up their project
+
+<br>
+
+REPORT BACK and DISCUSS
+
+<br>
+
+### So, what is the research question? 
+- How do autocrats prolong their hold on power?
+- How do autocrats use repression and co-optation as strategies to prolong their hold on power?
+
+<br>
+
+**SLIDE**: Let's talk about the key concept.
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+**Frantz and Kendall-Taylor (2014) "A Dictator’s Toolkit: Understanding How Co-Optation Affects Repression in Autocracies"**
+
+::: {.r-fit-text}
+
+**Defining the Key Concept: Repression**
+
+:::
+
+::: notes
+
+Frantz and Kendall-Taylor discuss "repression" on p334-336
+
+<br>
+
+Help me get their definition *ON THE BOARD*.
+
+### What are the key elements of this definition?
+
+### - Make sure to draw out the types of repression: repression of empowerment rights and physical integrity rights
+
+- ?
+
+<br>
+
+NOTES
+
+- "It is a form of sociopolitical control used by authorities against those within their territorial jurisdiction to deter specific activities and beliefs perceived as threatening to political order (Goldstein, 1978)."
+
+- Empowerment rights restrictions involve state or state-affiliated limitations on rights ranging from expression and belief to association and assembly to social freedoms. These types of restrictions are broad and indiscriminate, generally affecting the majority of a country’s population (p336). 
+
+- Personal integrity violations, by contrast, seek to modify behavior and attitudes by threatening human life through imprisonment, disappearances, torture, or mass killings. This type of repression tends to be more narrow and targeted in scope, typically affecting specific individuals identified by the regime as posing the greatest threat to its rule (p336). 
+
+:::
+
+
+
+## {background-image="Images/background-red_flipped.png" .center}
+
+"Repression is the 'behavior that is applied by governments in an effort to bring about political quiescence and facilitate the continuity of the regime through some form of restriction or violation of political and civil liberties' (Davenport, 2000: 6). Concretely, repression 'deals with applications of state power that violate First Amendment-type rights, due process in the enforcement and adjudication of law, and personal integrity or security' (Davenport, 2007a: 2). Through these actions governments impose or threaten individuals with sanctions aimed at controlling and suppressing dissent" (546).
+
+::: notes
+
+On the slide I have the Escriba-Folch excerpt from Monday on p545.
+
+<br>
+
+**How consistent are the definitions? Any key differences?**
+
+- *DISCUSS*
+
+:::
+
+
+
+
+## {background-image="Images/08-1-open_book.jpg" .center}
+
+[**How consistent are the framings of the two articles we've read this week?**]{style="color:white;"}
+
+::: notes
+
+**How consistent are the framings of the two articles we've read this week?**
+
+- **In other words, do they both frame the question, concepts and important literatures the same way? Why or why not?**
+
+- *Have the groups discuss before reporting back*
+
+<br>
+
+**SLIDE**: Define Co-optation
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+**Frantz and Kendall-Taylor (2014) "A Dictator’s Toolkit: Understanding How Co-Optation Affects Repression in Autocracies"**
+
+::: {.r-fit-text}
+
+**Defining the Key Concept: Co-optation**
+
+:::
+
+::: notes
+
+Before we diagram the model, let's clarify the other important concept here: Co-optation
+
+- Help me get their definition *ON THE BOARD*
+
+<br>
+
+### What are the key elements of this definition?
+- ?
+
+<br>
+
+Co-optation as important THIRD tool available to dictators, a tool that interacts with the others
+
+- "... the intentional extension of benefits to potential challengers to the regime in exchange for their loyalty" (Corntassel, 2007).
+
+- "Co-optation entails ‘encapsulating’ sectors of the populace into the regime apparatus through the distribution of perks (O’Donnell, 1979: 51). Such ‘gifts’ enable dictators to establish control over recipients, inducing them to behave in ways that they might not otherwise and over time inculcating their loyalty" (Wintrobe, 1998).
+
+<br>
+
+### Why not just buy off your opponents? Why create political institutions for them?
+- (Money doesn't last; institutions represent an ongoing investment in the regime)
+
+### What has the current literature taught us about the interaction between these two tools?
+- Vreeland (2008) and Conrad (2014): They find that dictatorships with multiple political parties are more prone to torture than those without them. More chances for someone to cross the line and need to be punished.
+
+- Gandhi (2008): legislators and political parties associated with autocratic systems with more freedom of speech, these argued to be the price of support for the regime.
+
+<br>
+
+**SLIDE**: Baseline concepts down, let's diagram the model!
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+**Frantz and Kendall-Taylor (2014) "A Dictator’s Toolkit: Understanding How Co-Optation Affects Repression in Autocracies"**
+
+<br>
+
+**Diagram the Model (p334-337)**
+
+- Interests
+
+- Institutions
+
+- Interactions
+
+::: notes
+
+Let's now summarize the model so we can evaluate it.
+
+- Remember, scientific models are like maps
+
+- All maps are "wrong," but some are useful!
+
+<br>
+
+Five minutes ON YOUR OWN!
+
+- Identify the key Interests, Institutions and Interactions in this model (p334-337)
+
+- KEY HERE is to focus on the interaction between co-optation and repression (not a model of either option alone)!
+
+<br>
+
+Small groups, compare notes!
+
+<br>
+
+*ON BOARD*
+
+- REPORT BACK and DISCUSS
+
+<br>
+
+**SLIDE**: My version.
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center .smaller}
+
+**Frantz and Kendall-Taylor (2014): The Model**
+
+**Interests**
+
+- Dictators -> political survival
+
+**Institutions**
+
+- Dictators are free to choose different types of repression (violence, limiting rights) AND to create new institutions (legislatures and parties)
+
+**Interactions**
+
+- Repression is costly (to implement and in its effects) and it's cheaper to target a few with violence vs all with loss of rights
+- If opposition is "diffuse" or "difficult to identify" use co-optation to identify the "problematic individuals" (and target with violence as needed)
+
+::: notes
+
+Empowerment rights restrictions make sense if you don't know who the threat is, but it is a very costly tool.
+
+- Co-optation to the rescue!
+    - Create a legislature and/or parties to identify the opposition and keep them in line
+    
+    - PLUS, now you can target a much smaller group with violence as needed!
+
+<br>
+
+### What are the testable implications of this model?
+- Hypothesis 1: Institutional co-optation should decrease the repression of empowerment rights.
+
+- Hypothesis 2: Institutional co-optation should increase the repression of physical integrity rights.
+
+<br>
+
+Notes
+
+Repression Benefits
+
+- Citizens afraid to reveal true preferences; 
+- less civil disobedience; 
+- Increases costs of opposition; 
+- Makes collective action harder
+
+Repression Costs: 
+
+- Foments popular discontent; 
+- decreases political legitimacy; 
+- increases chances opposition will escalate; 
+- can inspire backlash; 
+- fewer informative signals about true public sentiment reduces ability of dictator to know the risks; 
+- empowers security services possibly too much
+
+Co-optation Benefits
+
+- Gives individuals a vested interest in dictator's survival; 
+- helps to prevent small unrest from turning into big unrest; 
+- may succeed in dividing the opposition making future coordination outside the regime harder; 
+- buy support that shows you can be legitimately popular and tough to unseat
+
+Co-optation Costs
+
+- creates a space for organizing opposition against you; 
+- provides platform for opposition to build own bases of support
+
+<br>
+
+### So, what do we think of this model?
+
+### - Is this a more useful model than the Escriba-Folch model from last class? Why or why not?
+
+<br>
+
+Considerable overlap!
+
+- Frantz and Kendall-Taylor taking that good foundation and deepening our understanding of the role of co-optation in the strategic selection of repression.
+
+<br>
+
+#### Escriba-folch notes
+
+- Interests: Dictators -> political survival
+- Institutions: Dictator may choose from two types of repression: 1) restrictions on civil rights, and/or 2) violation of physical rights
+- Interactions: 
+    - Violent repression directly targets and removes a threat to power (but may decrease legitimacy, increase resentment and lead to military defections)
+    - Restricting rights attempts to prevent coordination and collective action (but only works on the public and not the elites)
+    - Dictators should match their type of repression to the type of threat
+    
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+::: {.r-fit-text}
+**Frantz and Kendall-Taylor (2014): The Analysis**
+:::
+
+<br>
+
+**Outcome Variable**
+
+1. Violent Repression: Physical Integrity Rights Index (CIRI)
+
+2. Empowerment Rights Repression: FH Civil Liberties Index
+
+**Predictors**
+
+1. Co-optation from Cheibub, Gandhi & Vreeland (2010)
+    - 0 (no leg or parties), 1 (leg or parties), 2 (leg and one party), 3 (leg and multiple parties) 
+
+::: notes
+
+p337-340 describes the data used for the analysis.
+
+<br>
+
+GROUPS, discuss validity and reliability of these measures for testing this model.
+
+### What do we think of using these variables to test this model of repression by dictators? Pros and cons?
+
+<br>
+
+NOTES
+
+Empowerment rights repression (ER repression)
+
+- we use Freedom House’s civil liberties score, measures `freedoms of expression and belief, associational and organizational rights, rule of law, and personal autonomy from the state'
+
+Physical integrity rights repression (PIR repression)
+
+- we use Cingranelli & Richards’s (2010) physical integrity rights index (or CIRI score), which identifies instances of torture, extrajudicial killing, political imprisonment, and disappearances.
+
+Why don't they use the PTS we've seen in so many other studies?
+
+- (p338: PTS after "level 4" mixes civil and political violent acts. Makes it impossible to study ER and PR separately.)
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+::: {.r-fit-text}
+**Frantz and Kendall-Taylor (2014): The Results**
+:::
+
+![](Images/08_2-Frantz_Fig1.png){style="display: block; margin: 0 auto"}
+
+::: notes
+
+Figure 1 focuses on the effects of co-optation at different snapshots in time
+
+<br>
+
+Let's start with interpreting the results in Box A of Figure 1
+- y-axis is the effect of co-optation on ER repression (e.g. limiting political rights of everybody)
+
+- x-axis is years since co-optation implemented (1 to 5 years later)
+
+- The line represents the effect of co-optation on ER repression
+
+<br>
+
+### So, what do we learn from Box A?
+- (1 year later co-optation has lowered the likelihood of ER repression a small amount (but not significant))
+
+- HOWEVER, in following years it DRAMATICALLY reduces ER repression!
+
+<br>
+
+Box B
+- same axes but now the line now represents the effect of co-optation on PIR repression (e.g. targeted violence)
+
+<br>
+
+### What do we learn from Box B?
+- Co-optation increases PIR repression in all of first four years!
+
+### - Why do we think there's a big delay in the effect? Why the spike in year 2?
+
+### - Why do we think it loses significance in year five? 
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+::: {.r-fit-text}
+**Frantz and Kendall-Taylor (2014): The Results**
+:::
+
+![](Images/08_2-Frantz_Fig2.png){style="display: block; margin: 0 auto"}
+
+::: notes
+
+Figure 2 uses the model to predict the level of repression expected in a country over the five years following some level of co-optation being implemented.
+
+- The y-axis is the level of repression
+    - Box A is limiting rights and B is targeted violence
+
+- The x-axis is level of co-optation
+    - 0 (no leg or parties), 1 (leg or parties), 2 (leg and one party), 3 (leg and multiple parties) 
+
+<br>
+
+### What do we learn from Box A?
+- (Clear negative slope and tight CI)
+
+- More co-optation, fewer rights restrictions over the next five years
+
+<br>
+
+### And Box B?
+- (Less clear positive slope but still positive and significant)
+
+- Authors argue this move from roughly 3.8 to 4.1 are "substantively notable differences once we consider the size of the effects of other key variables" (342).
+    - Involvement in civil war only moves scores in this analysis by .1
+
+<br>
+
+### Bottom line, what are the key takeaways and are we convinced by them? Why or why not?
+
+<br>
+
+- We find support for this argument: in dictatorships that use parties and legislatures physical integrity rights repression is higher, while empowerment rights repression is lower.
+
+- The effects of co-optation take some time to manifest themselves
+    - cooptation’s negative effect on ER repression peaks four to five years after the implementation of these institutions, while its positive effect on PIR repression peaks two to three years later (341).
+
+- Interestingly institutional co-optation is "quite common in autocracies"
+    - Of the 460 dictators in power from 1946 to 2004, 410 of them created either a party or a legislature at some point while in office (333)
+    - Only 11% (50) chose not to create a party or legislature
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+Escriba-Folch, A. 2013. "Repression, Political Threats, and Survival under Autocracy." *International Political Science Review*. 34(5): 543–60.
+
+<br>
+
+Frantz, E., and A. Kendall-Taylor. 2014. "A Dictator’s Toolkit: Understanding How Co-Optation Affects Repression in Autocracies." *Journal of Peace Research*. 51(3): 332–46.
+
+::: notes
+
+IN SUM:
+
+### 1. Based on the models and analyses this week, what advice would you give to governments that wanted to reduce the use of political violence by autocratic governments against their own citizens?
+
+<br>
+
+### 2. What advice would you give to anti-regime protestors living in dictatorships?
+
+:::
+
+
+
+## For Next Class {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+<br>
+
+**Case Studies of Groups Reducing Political Violence in Autocracies**
+
+::: notes
+
+Canvas Assignment: Case Studies of Groups Reducing Political Violence in Autocracies
+
+Submit to Canvas a recent example of an individual, group, country or group of countries taking a specific action to stop a democracy from engaging in political violence. 
+
+1. APA citation to the case
+2. Who specifically acted in this case?
+3. What specifically did they do? (e.g. actions taken, policies adopted, etc)
+4. Why do you believe it was effective? 
+5. What lessons can we take from this case for preventing political violence in America today?
+
+<br>
+
+**Questions on the assignment?**
+
+:::

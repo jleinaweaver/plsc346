@@ -1,0 +1,372 @@
+---
+output:
+  xaringan::moon_reader:
+    css: ["default", "extra.css"]
+    lib_dir: libs
+    seal: false
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: '16:9'
+---
+
+```{r, echo = FALSE, warning = FALSE, message = FALSE}
+##xaringan::inf_mr()
+## For offline work: https://bookdown.org/yihui/rmarkdown/some-tips.html#working-offline
+## Images not appearing? Put images folder inside the libs folder as that is the main data directory
+
+library(tidyverse)
+##library(readxl)
+##library(stargazer)
+##library(kableExtra)
+##library(modelr)
+
+knitr::opts_chunk$set(echo = FALSE,
+                      eval = TRUE,
+                      error = FALSE,
+                      message = FALSE,
+                      warning = FALSE,
+                      comment = NA)
+```
+
+background-image: url('Images/00-Leviathan_Cover_55.png')
+background-size: 100%
+background-position: center
+class: middle
+
+.center[.size40[**III. How and why do non-state actors use political violence?**]]
+
+<br>
+
+.center[.size50[**Today's Agenda: Countering Anti-Government Extremism**]]
+
+.size45[
+Robinson, Malone & Crenshaw (2023)
+]
+
+<br>
+
+.center[.size40[
+  Justin Leinaweaver (Fall 2025)
+]]
+
+::: notes
+
+### Prep for Class
+1. ...
+
+<br>
+
+**SLIDE**: Let's talk big picture about our exploration of terrorism
+
+
+
+---
+
+background-image: url('Images/background-red_flipped.png')
+background-size: 100%
+background-position: center
+class: middle
+
+.center[.size40[**III. How and why do non-state actors use political violence?**]]
+
+.size40[
+- Wk10 Defining Terrorism
+
+- Wk11 Measuring Terrorism
+
+- Wk12 Can Terrorism be Effective?
+
+- Wk13 Is Right-Wing Terrorism the Next "Wave"?
+
+- Wk13.5 Countering Anti-Government Extremism
+
+- **Next Week:** Wk14 Terrorism in the Digital Age
+]
+
+::: notes
+
+In an effort to answer our key question we've been working through an exploration of terrorism
+
+<br>
+
+So far in this section of the class we have:
+
+- Worked to understand the contours of this contested concept, 
+
+- Explored the competing definitions advocated by area experts and academics,
+
+- Evaluated the established datasets that exist to measure the concept, and
+
+- Identified and utilized models meant to explain terrorism as a strategy
+
+<br>
+
+Starting last week we've been shifting our focus to the cutting-edge of this research: 
+
+- the new dominance of FRT, and next week
+
+- how the internet has complicated terrorism immensely 
+
+<br> 
+
+Pretty good work if I do say so myself!
+
+<br>
+
+### BIG 1: Based on everything you've studied over the last four weeks tell me, what is terrorism?
+
+<br>
+
+### BIG 2: Do you believe terrorism is a rational strategy (e.g. goal-seeking)? Why or why not?
+
+<br>
+
+### BIG 3: Do you believe terrorism can ever be effective? Why or why not?
+
+
+
+
+
+---
+
+background-image: url('Images/background-red_flipped.png')
+background-size: 100%
+background-position: center
+class: middle
+
+```{r, echo = FALSE, fig.align = 'center', out.width = '50%'}
+knitr::include_graphics("Images/13_4-Robinson_Page1.png")
+```
+
+::: notes
+
+Today I want us to start engaging with the academics who are working to address these problems.
+
+- As I mentioned to you last week, Martha Crenshaw is one of the foremost authorities working on terrorism today.
+
+- A staggering resume of academic contributions in studying terrorism.
+
+<br>
+
+Today I'd like us to extract two key pieces from this article
+
+1. Why do the authors argue that Countering Far-Right Anti-Government Extremism in the United States is so difficult?
+
+2. What do the authors suggest is our best way forward?
+
+
+
+
+---
+
+background-image: url('Images/13_4-jan6_v2.png')
+background-size: 100%
+background-position: center
+class: bottom, inverse
+
+.center[.size50[.textwhite[**Why is countering far-right extremism in the United States so difficult?**]]]
+
+::: notes
+
+Small groups, use the reading to make a list that answers this question
+
+- Get ready to report back!
+
+<br>
+
+*ON BOARD*
+1. deep-seated ideological roots
+    - Though organisationally diverse, these components of the movement are largely motivated by the same three ideological tenets: mistrust of federal authority, fear of foreign influence, and the need for paramilitary self-defence.
+    - Many of the core beliefs of the anti-government far-right are deeply rooted in American history.
+
+2. fluid organisational structure
+    - Three types of organisational structures dominate: self-identified followings, local groups and clusters, and national organisations.
+    - Individual members possess significant autonomy and can belong to multiple movements and organisations at once.
+
+3. mix of violent and nonviolent tactics
+    - Most follower actions are relatively nonviolent. 
+    - For example, some extremists use “paper terrorism”—the filing of frivolous liens, lawsuits, and false financial claims—to overburden the federal government, drain financial resources, and clog court dockets.
+    - Anti-government groups also regularly participate in legal public events, assemblies, and protests, including school board meetings and political elections.
+    - To the extent that anti-government extremist tactics involve the explicit use of force, they typically revolve around acts of political intimidation or low-level violence targeting ideological opponents.
+    - HOWEVER, Anti-government extremist violence has the potential to escalate into a broader and more indiscriminate conflict. Generalised acceptance of the legitimacy of violence can inspire attempts at vigilante justice, such as the 2020 Wolverine Watchmen militia plot to kidnap Michigan Governor Gretchen Witmer.
+    
+
+
+
+---
+
+background-image: url('Images/background-red_flipped.png')
+background-size: 100%
+background-position: center
+class: middle
+
+.center[.size45[**Collins (2021) on FRT as a "Wave"**]]
+
+.pull-left[
+
+<br>
+
+```{r, echo = FALSE, fig.align = 'center', out.width = '100%'}
+knitr::include_graphics("Images/13_1-Collins_Figure8.png")
+```
+]
+
+.pull-right[
+.size35[
+1. "the global character"
+
+2. "expansion of activity measures"
+
+3. A prompting or inciting cause depicts an “unanticipated international political transformation” that produces extremist and radical reactions
+
+4. "the presence of a common predominant energy"
+]]
+
+::: notes
+
+### How consistent is this section with our material last week on far-right terrorism (FRT)?
+
+### - Would Collins agree with the description of "far-right extremism" in this chapter? Why or why not?
+
+<br>
+
+
+
+<br>
+
+### Given our work last week, are you convinced FRT is the most pressing terror threat for the US currently? Why or why not?
+
+<br>
+
+#### NOTES
+- Why is this strand of anti-government extremism so dangerous and challenging to combat?
+- We argue that the far-right anti-government movement’s deep-seated ideological roots, fluid organisational structure, and mix of violent and nonviolent tactics make it difficult to proscribe, prosecute, and ultimately eliminate.
+- Ideological roots: Though organisationally diverse, these components of the movement are largely motivated by the same three ideological tenets: mistrust of federal authority, fear of foreign influence, and the need for paramilitary self-defence.
+- Many of the core beliefs of the anti-government far-right are deeply rooted in American history. America’s rebellious origins nurtured a cultural tradition of questioning authority, protecting individual freedoms, and resisting perceived tyranny.
+- While successful in preventing additional mass-causality violence, law enforcement efforts did not root out anti-government extremism entirely. Elements of the movement continued to operate in the United States and engage in actions—such as organising large-scale meetings and paramilitary training sessions—that fell short of criminal activity.
+- Three types of organisational structures dominate: self-identified followings, local groups and clusters, and national organisations.
+- Even among these more structured anti-government groups, organisational identities and ties can be highly fluid.  Individual members possess significant autonomy and can belong to multiple movements and organisations at once. A group member can, on their own initiative, choose to attend public rallies, meetings, and training camps with other like-minded individuals who may or may not share their same organisational identity. This individual autonomy facilitates the formation of “loose ties” among followers and unsystematic relationships between groups. 
+- Most follower actions are relatively nonviolent. For example, some extremists use “paper terrorism”—the filing of frivolous liens, lawsuits, and false financial claims—to overburden the federal government, drain financial resources, and clog court dockets.36 Anti-government groups also regularly participate in legal public events, assemblies, and protests, including school board meetings and political elections.
+- To the extent that anti-government extremist tactics involve the explicit use of force, they typically revolve around acts of political intimidation or low-level violence targeting ideological opponents.
+- Anti-government extremist violence has the potential to escalate into a broader and more indiscriminate conflict. Generalised acceptance of the legitimacy of violence can inspire attempts at vigilante justice, such as the 2020 Wolverine Watchmen militia plot to kidnap Michigan Governor Gretchen Witmer.4
+
+
+
+
+---
+
+background-image: url('Images/13_4-Charlottesville_Unite_the_Right_Rally_v2.png')
+background-size: 100%
+background-position: center
+class: top, inverse
+
+.center[.size55[.textwhite[**What do we do about it?**]]]
+
+::: notes
+
+Small groups, use the reading to make a list that answers this question
+
+- Get ready to report back!
+
+<br>
+
+*ON BOARD*
+- Hope that members "use violence in shockingly reprehensible ways"?
+    - Unsanctioned or morally transgressive violence can undermine the movement’s ability to retain existing members, attract new followers, raise funds, and remain a viable threat.
+    
+- Develop informers!
+    - Informers are a constant risk, even in an environment dominated by anonymous social media. Members can come to suspect each other’s loyalty and render the movement vulnerable to fragmentation, splintering, and infighting. Law enforcement can infiltrate local or national groups or co-opt existing members to become informants
+    
+- Moving forward, US officials should look to the experiences of other democratic states facing similar anti-government threats.
+    - Examples of the UK and Germany banning or proscribing ant-government groups although to mixed effect: The group organizations were eliminated but not the member dynamics or ideological roots. Plus, members just shifted elsewhere.
+
+<br>
+
+### What do we think of these suggestions? 
+
+### - Is one of these the way forward or not?
+
+
+<br>
+
+#### NOTES
+What do the authors suggest is our best way forward?
+- Decentralisation can be a disadvantage as well as an advantage. By advocating a big tent ideology and encouraging individuals to carry out stochastic acts of violence, or inspired individual acts of terrorism, such networks can attract a wide and unvetted range of followers. Lack of control from the top can create a moral hazard if followers use violence in shockingly reprehensible ways.
+
+- Unsanctioned or morally transgressive violence can undermine the movement’s ability to retain existing members, attract new followers, raise funds, and remain a viable threat.
+
+- Another weakness results from the poor cohesion and mistrust among the rank and file. Informers are a constant risk, even in an environment dominated by anonymous social media. Members can come to suspect each other’s loyalty and render the movement vulnerable to fragmentation, splintering, and infighting. Law enforcement can infiltrate local or national groups or co-opt existing members to become informants
+
+- Moving forward, US officials should look to the experiences of other democratic states facing similar anti-government threats. In response to the proliferation of violent far-right groups, several democracies have begun developing tools to proscribe these organisations—a process that the United States currently lacks
+
+
+
+
+---
+
+background-image: url('Images/background-red_flipped.png')
+background-size: 100%
+background-position: center
+class: middle
+
+```{r, echo = FALSE, fig.align = 'center', out.width = '50%'}
+knitr::include_graphics("Images/13_4-Robinson_Page1.png")
+```
+
+::: notes
+
+Bottom line, what do we think of this article as a policy document?
+
+<br>
+
+### Are we convinced this is a substantial and pressing problem in American politics today? Why or why not?
+
+<br>
+
+### Does this give us enough background and analysis to do something about the problem? Why or why not?
+
+
+
+
+
+---
+
+background-image: url('Images/background-blue_triangles.jpg')
+background-size: 100%
+background-position: center
+class: middle
+
+.size60[.content-box-white[**For Next Class**]]
+
+<br>
+
+```{r, echo = FALSE, fig.align = 'center', out.width = '100%'}
+knitr::include_graphics("Images/13_4-Assignment.png")
+```
+
+::: notes
+
+I want to direct your attention to our work for Monday after the break.
+
+- Next week we shift focus to material meant to help us think carefully about how to counter terrorism and terrorists in the digital age
+
+- To kick it off I want everybody to find us a case of the internet changing the appeal, use or mechanisms of terrorism.
+
+<br>
+
+### Questions on the assignment?
+
+<br>
+
+Have a great break!
+
+
+
+
+
+
+
+
+

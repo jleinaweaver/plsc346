@@ -1,0 +1,546 @@
+---
+format: revealjs
+---
+
+## Today's Agenda {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+```{r}
+library(tidyverse)
+library(readxl)
+library(kableExtra)
+```
+
+<br>
+
+**III. How and why do non-state actors use political violence?**
+
+<br>
+
+- Pape (2003): "Terrorism" can "succeed"
+
+<br>
+
+::: r-stack
+Justin Leinaweaver (Fall 2025)
+:::
+
+::: notes
+Prep for Class
+
+1. Review submissions on Canvas
+
+<br>
+
+Today we continue our work exploring the question: Can "terrorism" ever "succeed"?
+
+- Last class: Case studies in which terrorism succeeded
+
+- My aim: Develop your intuitions about the question and get you grappling with the same difficulties that the academic literature grapples with.
+
+<br>
+
+### Based on your cases, do you have an answer for this question? Why or why not?
+
+### - What are the primary challenges in answering it?
+
+<br>
+
+### Refresh my memory, what are the two baseline assumptions we are working from in order to try and answer this question?
+
+- (**SLIDE**)
+
+:::
+
+
+
+## Can "terrorism" ever "succeed"? {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+<br>
+
+1. "Terrorists" have "goals" (e.g. are strategic, rational actors)
+
+2. We can evaluate their "acts" in terms of those "goals" (e.g. was it a success or failure?)
+
+::: notes
+
+**Do we have any concerns about beginning our scientific attempt to answer this question with these assumptions? Why or why not?**
+
+:::
+
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+::: {.r-fit-text}
+
+**Pape (2003) "The Strategic Logic of Suicide Terrorism"**
+
+<br>
+
+**Evaluate the Framing**
+
+1. Research question
+
+2. Key concepts
+
+3. Connections to the literature
+
+:::
+
+::: notes
+
+Let's start by exploring the framing of the article.
+
+- GROUPS, take a few minutes and get ready to share your thoughts about the framing of this research paper
+
+- Think BIG PICTURE, e.g. how the researchers set up their project
+
+<br>
+
+REPORT BACK and DISCUSS
+
+<br>
+
+Generally speaking, this article strikes me as being well-written, well argued and well supported.
+
+- That doesn't mean I'm convinced, but I appreciate the clarity and credibility of the argument!
+
+<br>
+
+### What is the question and how is it worded?
+- (Research Question: What explains the use of suicide terrorism by terror groups?)
+
+<br>
+
+**SLIDE**: Literature
+
+:::
+
+
+
+## {background-image="Images/08-1-open_book.jpg"}
+
+[**What was the state of the art for explaining suicide terrorism prior to this article?**]{style="color:white;"}
+
+::: notes
+
+**What literature is the paper connected to?**
+
+- **In other words, what gaps in the literature has Pape (2003) identified in this paper?**
+
+<br>
+
+- No single profile of terrorists likely exists.
+
+- Irrationality is likely a cop-out for explaining behavior
+
+- We need better counter-terror strategies and they depend on a better understanding of the problem.
+
+<br>
+
+So, seems like an important project, right?
+
+<br>
+
+### Evaluate Pape's definition of terrorism for me (p345).
+
+### - What stands out here as important?
+
+- (**SLIDE**)
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+"Terrorism involves the use of violence by an organization other than a national government to cause intimidation of fear among a target audience (Department of State 1983-2001, Reich 1990, Scmid and Jongman 1988)."
+
+- **Scope:** Non-state actors only
+
+- **Purpose:** Gain Supporters vs Coerce Opponents
+
+- **Typology:** Demonstrative, Destructive and Suicide
+
+::: notes
+
+**Do we have a problem with Pape excluding acts by state governments from this definition? Why or why not?**
+
+<br>
+
+- (Analytical clarity that Tilly would appreciate given it may not be possible to generalize across state and non-state wielders of terror)
+
+- BUT are we narrowing our scope too much?
+    - We'd like to better understand why actors choose terror as a strategy regardless of those differences...
+    
+- May mean something for how we interpret the conclusions of this paper (can't generalize too broadly)
+
+<br>
+
+**SLIDE**: Let's make sure we're clear on this typology.
+
+:::
+
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+"Terrorism involves the use of violence by an organization other than a national government to cause intimidation or fear among a target audience (Department of State 1983-2001, Reich 1990, Scmid and Jongman 1988)."
+
+```{r, fig.retina=3, fig.height=1.5, fig.width=10, fig.align='center', out.width='100%'}
+tibble(
+  label1 = c("Gain Supporters", "Coerce Opponents"),
+  x1 = c(2, 8),
+  y1 = c(1, 1)
+) |>
+  ggplot(aes(x = x1, y = y1)) +
+  geom_line(arrow = arrow(length=unit(0.50,"cm"), ends="both", type = "closed")) +
+  theme_void()+
+  xlim(1, 9) +
+  ylim(0.75, 2) +
+  annotate("text", x = 2, y = 1.6, label = "Gain\nSupporters", size = 6) +
+  annotate("text", x = 8, y = 1.6, label = "Coerce\nOpponents", size = 6)
+```
+
+1. Demonstrative Terrorism
+2. Destructive Terrorism
+3. Suicide Terrorism
+
+::: notes
+
+Let's make sure we're clear on the how the purposes leads to a useful typology.
+
+- Remember, Pape proposes two purposes for terrorism running along a single continuum: Gain Supporters vs Coerce Opponents
+
+<br>
+
+### How does a demonstrative terrorist group balance these objectives?
+- (Gain publicity to recruit more activists, raise attention to grievances from "soft liners on the other side" and/or gain attention from third parties who might exert pressure on other side.)
+    - More about the threat of harm than actual harm (e.g. high body counts).
+    
+- Examples: Orange Volunteers, Red Brigades (Italy)
+
+<br>
+
+### How does a destructive terrorist group balance these objectives?
+- (Seek to coerce opponents AND recruit supporters)
+    - Inflict real harm on targets and willing to risk losing support from some groups in the process
+    
+- Examples: IRA, FARC
+
+<br>
+
+### How does a suicide terrorist group balance these objectives?
+- (Pursuing coercion even if it means losing support in your own community.)
+    
+- The most focused on coercion of the types, aim is large body counts.
+
+<br>
+
+**Does this use of purpose to derive a typology represent an important element that is missing from our definitions so far? Why or why not?**
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+**Pape's (2003) Model: "The Coercive Logic of Suicide Terrorism"**
+
+<br>
+
+**Evaluate the Model**
+
+- Identify the interests, institutions and interactions
+
+::: notes
+
+Let's now summarize the model so we can evaluate it.
+
+- Remember, scientific models are like maps
+
+- All maps are "wrong," but some are useful!
+
+<br>
+
+Five minutes ON YOUR OWN!
+
+- Identify the key Interests, Institutions and Interactions in this model (p546-549)
+
+<br>
+
+Small groups, compare notes!
+
+<br>
+
+*ON BOARD*
+
+- REPORT BACK and DISCUSS
+
+<br>
+
+**SLIDE**: My version.
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center .smaller}
+
+**Interests**
+
+- Non-state actors &rarr; Change in government policy
+
+**Institutions**
+
+- If weaker than the target non-state actors may employ a strategy of terrorism: Demonstrative, Destructive or Suicide
+
+**Interactions**
+
+- Terrorists aim to inflict "pain" on society to force the government to concede or the people to revolt against the government
+- Perceived leverage over the target increases with expectations of future damage
+- Suicide terrorism maximizes this expectation because it is the most destructive strategy, it is more likely to succeed (simpler, no escape plan needed), and signals that norms do not matter, more is coming and any possible retaliation is not a deterrent
+
+::: notes
+
+Fundamentally this model presents suicide terrorism as a strategic act
+
+- Specifically, as an act of coercion built on Schelling's (1966) "the rationality of irrationality" (344)
+    - irrational act that demonstrates credibility to democratic audience of worse to come.
+    
+<br>
+
+### Is the model logical?
+
+<br>
+
+### Does this appear to be a useful simplification of a hard to understand decision or is it leaving something important out?
+
+<br>
+
+Notes
+
+- Specifically, as an act of coercion built on Schelling's (1966) "the rationality of irrationality" (344)
+- irrational act that demonstrates credibility to democratic audience of worse to come.
+- Prioritizes coercion over maintaining support of your own community
+- Large body counts lead to government concessions OR popular revolt against the government (346)
+- Coercer is weaker than the target, only option is "punishment"
+- Coercive leverage created by raising expectations of future damage, not necessarily about the actual damage created.
+- Suicide strategy magnifies coercive logic in three ways: 1. suicide attacks generally more destructive (more likely to succeed, simpler plans e.g. no need for escape plans, scarier weapons e.g. suicide vests), 2. sends signal that fear of retaliation is not a deterrent; 3. violating norms of the use of violence makes the signal that more pain is to come all the scarier.
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+::: {.r-fit-text}
+**"Five Principal Findings" (Pape 2003)**
+:::
+
+1. Suicide terrorism is strategic 
+
+2. Designed to coerce modern democracies 
+
+3. Suicide terror works...
+
+4. ...but only in moderation 
+
+5. Stopping suicide terror requires better homeland security, not offensive military actions or concessions
+
+::: notes
+
+Our final question for today is, by the end of the article has Pape convinced you of his five conclusions?
+
+<br>
+
+Let's talk methodology.
+
+### How did Pape construct his dataset?
+- (Dataset culled from news media database (Lexis-Nexis).)
+
+<br>
+
+### To what degree do we believe this created an accurate sample of attacks?
+
+<br>
+
+### Are we convinced by Footnote 3 on p347? Why or why not?
+
+<br>
+
+Footnote 3 (p347): "This survey sought to include every instance of a suicide attack in which the attacker killed himself except those explicitly authorized by a state and carried out by the state government apparatus (e.g., Iranian human wave attacks in the Iran-Iraq war were not counted). The survey is probably quite reliable, because a majority of the incidents were openly claimed by the sponsoring terrorist organizations. Even those that were not were, in nearly all cases, reported multiple times in regional news media, even if not always in the U.S. media. To probe for additional cases, I interviewed experts and officials involved in what some might consider conflicts especially prone to suicide attacks, such as Afghanistan in the 1980s, but this did not yield more incidents. According to the CIA station chief for Pakistan from 1986 to 1988 (Bearden 2002), "I cannot recall a single incident where an Afghan launched himself against a Soviet target with the intention of dying in the process. I don't think these things ever happened, though some of their attacks were a little hare-brained and could have been considered suicidal. I think it's important that Afghans never even took their war outside their borders-for example they never tried to blow up the Soviet Embassy in Pakistan."
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+![](Images/13_2-Pape_Table1.png){style="display: block; margin: 0 auto"}
+
+::: notes
+
+Table 1 presents the cases and measurements used in the analyses.
+
+- Each column is a separate variable.
+
+- think of this like the effort we have done to unpack your case studies in class
+
+<br>
+
+### First, evaluate the validity and reliability of each variable.
+
+### - Any concerns with the measures here?
+
+<br>
+
+### All that said, what do we learn from Table 1?
+
+- *Encourage this exploration*
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+![](Images/13_2-Pape_Table2.png){style="display: block; margin: 0 auto"}
+
+::: notes
+
+Table 2 presents the motivations and targets identified in the analyses.
+
+<br>
+
+### First, evaluate the validity and reliability of each variable.
+
+### - Any concerns with the measures here?
+
+<br>
+
+### All that said, what do we learn from Table 2?
+
+- *Encourage this exploration*
+
+<br>
+
+Pape concludes from these tables and his wider analyses three properties of suicide terrorism (consistent with his model, p347):
+
+1. Timing: "nearly all suicide attacks occur in organized,coherent campaigns, not as isolated or randomly timed incidents"
+
+2. Nationalist Goals: "suicide terroristc ampaigns are directed at gaining control of what the terrorists see as their national homeland territory, specifically at ejecting foreign forces from that territory; and"
+
+3. Target Selection: "all suicide terrorist campaigns in the last two decades have been aimed at democracies, which make more suitable targets from the terrorists' point of view. Nationalist movements that face nondemocratic opponents have not resorted to suicide attack as a means of coercion."
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+::: {.r-fit-text}
+**"The Crucial Case of Hamas" (p352-355)**
+:::
+
+![](Images/12_2-gaza-city-hamas-fighters2017.webp){style="display: block; margin: 0 auto"}
+
+::: notes
+
+Given the news, let's take a moment to discuss the special focus Hamas receives in this paper.
+
+### Why does Pape describe Hamas as a "crucial case"?
+
+<br>
+
+"The Hamas and Islamic Jihad suicide campaigns against Israel in 1994 and 1995 are crucial tests of the reasonableness of terrorists' assessments."
+- Israel made "significant concessions" that boosted the Hamas leadership assessment that suicide attacks worked
+
+- However, the concessions may have been due to commitments in the Oslo Accords and NOT the suicide terror.
+
+- Did Hamas (and those they inspired like al Qaeda) take the wrong lessons from this case?
+
+<br>
+
+Case 1: Israel's Withdrawal from Gaza, May 1994
+- Seem to show both sides acknowledging the importance of suicide attacks in producing concessions
+
+
+Case 2: Israel's Withdrawal from West Bank Towns, December 1995.
+- Same as above
+
+<br>
+
+### How persuasive do you find these case studies about Hamas and Israel in the paper?
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+::: {.r-fit-text}
+**"Five Principal Findings" (Pape 2003)**
+:::
+
+1. Suicide terrorism is strategic 
+
+2. Designed to coerce modern democracies 
+
+3. Suicide terror works...
+
+4. ...but only in moderation 
+
+5. Stopping suicide terror requires better homeland security, not offensive military actions or concessions
+
+::: notes
+
+**Based on all of this, how confident are we in this set of conclusions?**
+
+<br>
+
+**What are the strengths and weaknesses of this article?**
+
+<br>
+
+**Based on all of this, what are Pape's suggestions for counterterrorism strategies to reduce suicide terrorism?**
+
+- "Given the limits of offense and of concessions, homeland security and defensive efforts generally must be a core part of any solution" (p356).
+
+:::
+
+
+
+
+## Can "terrorism" ever "succeed"? {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+:::: {.columns}
+::: {.column width="50%"}
+![](Images/12_1-Paper_Page1.png){style="display: block; margin: 0 auto"}
+:::
+
+::: {.column width="50%"}
+![](Images/12_1-Abrahms_Page1.png){style="display: block; margin: 0 auto"}
+:::
+::::
+
+::: notes
+
+Next class we shift to the rebuttal.
+
+<br>
+
+Abrahms (2006) feels STRONGLY that Pape has screwed up.
+
+- We'll dive into it!
+
+<br>
+
+Read the Abrahms (2006) and submit your model diagram to Canvas.
+
+:::
+
+
+

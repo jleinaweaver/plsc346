@@ -1,0 +1,546 @@
+---
+format: revealjs
+---
+
+## Today's Agenda {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+```{r}
+library(tidyverse)
+library(readxl)
+library(kableExtra)
+```
+
+<br>
+
+**II. How and why do governments use violence against the people inside their borders?**
+
+<br>
+
+Theories of "Political Violence"
+
+- Escribà-Folch (2013) "Repression, Political Threats, and Survival under Autocracy"
+
+<br>
+
+::: r-stack
+Justin Leinaweaver (Fall 2025)
+:::
+
+::: notes
+Prep for Class
+
+1. Review Canvas submissions
+
+<br>
+
+*Pull chairs into circle, seminar style*
+
+*Your job today is to facilitate exploring the article. Let it flow.*
+
+<br>
+
+Our overarching goal for this section of the class is to answer this question.
+
+- How and why do governments use violence against the people inside their borders?
+
+<br>
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png"}
+
+::: {.r-fit-text}
+[**Political Violence in Democracies**]{style="color:darkred;"}
+:::
+
+![](Images/08_1-Ferguson_MO_Protest.jpg){style="display: block; margin: 0 auto"}
+
+::: notes
+
+Last week we explored two models of political violence by "democratic" governments.
+
+- Let's do a quick recap!
+
+<br>
+
+### What were your main takeaways from Davenport and Armstrong's (2004) article?
+- (Democratic institutions CAN reduce the incentives for a government to use violence against the people in its territory, BUT...)
+
+- (Reducing the incentive to repress requires a combination of fully operational and autonomous institutional and behavioral mechanisms)
+    - The "Steps of Distinction" model
+
+- So, per that model, the likelihood of violence for a peaceful protest like what we see on the slide increases dramatically if a society takes any steps back from a commitment to democracy. 
+
+<br>
+
+### And what were your main takeaways from Bueno de Mesquita, Cherif, Downs & Smith's (2005) article?
+- (Attempt to unpack the proposed mechanism above, e.g. which specific democratic institutions have the biggest effect on violence)
+
+- "Party competitiveness" appears to be most important in reducing human rights violations.
+    - "The competitiveness of participation refers to the extent to which alternative preferences for policy and leadership can be pursued in the political arena" (Polity IV Codebook p26).
+    
+- Also, the highest levels of "Executive Constraints (Decision Rules)" appear to reduce violence
+
+- This research also appears to support the "Steps of Distinction" model
+
+<br>
+
+### Given those models, what were our conclusions last class about how to reduce the incentives for violence in democracies?
+
+- (Requires a full commitment to democracy in all its interlocking components)
+
+- (Just preserving a little democracy ain't going to do it!)
+
+<br>
+
+### Questions on our work last week?
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png"}
+
+![](Images/08_1-Tahrir_Square_Egypt.jpg){style="display: block; margin: 0 auto"}
+
+::: {.r-fit-text}
+[**Political Violence in Autocracies**]{style="color:darkred;"}
+:::
+
+::: notes
+
+This week we'll mirror our work last week but with a focus on political violence used by autocracies.
+
+- Today and Wednesday we'll examine two models that aim to help us understand the mechanisms of violence in these kinds of countries
+
+- Friday, we'll again explore real-world strategies for curbing this violence.
+
+<br>
+
+If the models from last week are useful, then pushing dictatorships to democratize in small ways may not reduce violence (and could even make things worse).
+
+<br>
+
+**SLIDE**: Today we start with the Escribà-Folch (2013) article titled "Repression, Political Threats, and Survival under Autocracy"
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+::: {.r-fit-text}
+**Escribà-Folch (2013): Evaluate the Framing**
+
+1. Research question
+
+2. Key concepts
+
+3. Connections to the literature
+:::
+
+::: notes
+
+Let's start by exploring the framing of the article.
+
+- GROUPS, take a few minutes and get ready to share your thoughts about the framing of this research paper
+
+- Think BIG PICTURE, e.g. how the researchers set up their project
+
+<br>
+
+REPORT BACK and DISCUSS
+
+<br>
+
+**SLIDE**: So, here's a weird BUT IMPORTANT question.
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+![](Images/08-1-Article_Header.png){style="display: block; margin: 0 auto"}
+
+::: notes
+
+**Do we have any problem with questions like this being researched?**
+
+- **Doesn't this promise to offer advice to bad people who do bad things in order to stay in power?**
+
+<br>
+
+### In terms of studying political violence, do you believe there are any questions that should be off-limits? Why or why not?
+
+- *Let this discussion go a bit*
+
+:::
+
+
+
+
+## {background-image="Images/background-red_flipped.png" .center}
+
+"Repression is the 'behavior that is applied by governments in an effort to bring about political quiescence and facilitate the continuity of the regime through some form of restriction or violation of political and civil liberties' (Davenport, 2000: 6). Concretely, repression 'deals with applications of state power that violate First Amendment-type rights, due process in the enforcement and adjudication of law, and personal integrity or security' (Davenport, 2007a: 2). Through these actions governments impose or threaten individuals with sanctions aimed at controlling and suppressing dissent" (546).
+
+::: notes
+
+This chunk of text is Escribà-Folch defining "repression."
+
+### What does this mean in English? 
+
+### - In other words, how do I know "repression" when I see it?
+
+<br>
+
+Repression is a strategic tool used by the leader to suppress dissent.
+
+- This also indicates a series of possible targets for repression
+
+### What does it mean to target "first amendment-type rights"?
+- (Free speech and the right to organize?)
+
+### What does it mean to target "due process"?
+- (Rule of law)
+
+### What does it mean to target "Personal integrity and security"?
+- (Personal safety?)
+
+<br>
+
+### Compare and contrast "repression" with our definitions of political violence so far in this class. 
+
+### - Are these forms of repression acts of "political violence"? Why or why not?
+
+:::
+
+
+
+## {background-image="Images/08-1-open_book.jpg"}
+
+[**Per the literature, what was the state of the art for explaining state repression prior to this article?**]{style="color:white;"}
+
+::: notes
+
+**What were the key findings from the prior literature that aimed to explain the variation in state repression according to Escribà-Folch?**
+
+(p545)
+
+1. States with greater levels of repression tend to be poorer (low per capita incomes), larger (population size), and in crisis (undergoing violent civil or interstate conflicts)
+
+2. States with lower levels of repression tend to be more democratic and more engaged in international trade.
+
+3. There does not appear to be a significant effect of human rights treaties on the levels of repression
+
+4. No consistent relationship between dissent and repression has been found.
+
+<br>
+
+### Any surprises here?
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+**Escribà-Folch (2013) "Repression, Political Threats, and Survival under Autocracy"**
+
+<br>
+
+**Evaluate the Model (p546-549)**
+
+- Identify the interests, institutions and interactions
+
+::: notes
+
+Let's now summarize the model so we can evaluate it.
+
+- Remember, scientific models are like maps
+
+- All maps are "wrong," but some are useful!
+
+<br>
+
+Five minutes ON YOUR OWN!
+
+- Identify the key Interests, Institutions and Interactions in this model (p546-549)
+
+<br>
+
+Small groups, compare notes!
+
+<br>
+
+*ON BOARD*
+
+- REPORT BACK and DISCUSS
+
+<br>
+
+**SLIDE**: My version.
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center .smaller}
+
+**Escribà-Folch (2013): The Model**
+
+<br>
+
+**Interests**
+
+- Dictators -> political survival
+
+**Institutions**
+
+- Dictator may choose from two types of repression: 1) restrictions on civil rights, and/or 2) violation of physical rights
+
+**Interactions**
+
+- Violent repression directly targets and removes a threat to power (but may decrease legitimacy, increase resentment and lead to military defections)
+- Restricting rights attempts to prevent coordination and collective action (but only works on the public and not the elites)
+- Dictators should match their type of repression to the type of threat
+
+::: notes
+
+**SLIDE**: Let's discuss the typology.
+
+<br>
+
+OLD CLASS NOTES
+
+**Interests**
+
+- Dictators want to stay in power (losing power = exile, being brought to trial, or being killed)
+- Citizens want ? (safety/security?)
+
+**Institutions**
+
+- Dictators are unconstrained by domestic law re tools of repression
+- Two types of repression available to the dictator: Violent Repression & Rights Restrictions
+
+**Interactions**
+
+- Two types of threat to the dictator:
+    1. (Irregular / violent threats (coups and revolts))
+    2. (Regular (e.g. nonviolent) threats)
+- Dictators try to match their type of repression to the type of threat they face.)
+- There are costs to using repression to stay in power
+
+:::
+
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+::: {.r-fit-text}
+**Escribà-Folch (2013): Hypotheses**
+:::
+
+<br>
+
+![](Images/08_1-Escriba_Folch_Table1.png){style="display: block; margin: 0 auto"}
+
+::: notes
+
+Table 1 essentially presents the hypotheses of the model.
+
+### What do we learn from this 2x2 grid about how dictators can use repression for political survival?
+
+<br>
+
+### - Are we confident that we can clearly distinguish between these two types of threat? Why or why not?
+
+<br>
+
+### - Why is box 3 labelled "indeterminate"? e.g. why does meeting violence with violence not make a clear prediction?
+
+<br>
+
+I don't love this Table as I think it muddies the clarity of the model.
+
+- This seems to suggest that repressive measures are determined by threat but the model usefully encourages us to think about the source of the threat in addition to the type.
+
+- e.g. Restricting rights can disrupt nonviolent mass protests but NOT elite coordination to remove the dictator.
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+::: {.r-fit-text}
+**Escribà-Folch (2013): The Analysis**
+:::
+
+<br>
+
+**Outcome Variable**
+
+1. *Autocratic Exit* dummy from the ARCHIGOS Dataset
+
+**Predictors**
+
+1. Violent Repression: The Political Terror Scale (PTS)
+
+2. Rights Restrictions: Freedom House’s civil liberties index
+
+::: notes
+
+p549-551 describes the data used for the analysis.
+
+- We're super familiar with PTS, right?
+
+<br>
+
+### What do we think of using these variables to test this model of repression by dictators? Pros and cons?
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+::: {.r-fit-text}
+**Escribà-Folch (2013): The Results**
+:::
+
+![](Images/08_1-Escriba_Folch_Figure1.png){style="display: block; margin: 0 auto"}
+
+::: notes
+
+Figure 1 summarizes the main findings of the analysis (p551).
+
+- The y-axis represents the probability of removing the dictator from power
+
+- The x-axis shows the level of repression from low to high
+
+- The line of squares represents PTS violations (violence)
+
+- The line of triangles represents rights violations per FH
+
+<br>
+
+### What do we learn from this analysis of 1,500 observations covering the behavior of dictatorships from 1972-2004?
+
+<br>
+
+Paper Notes
+
+- "Figure 1 portrays the impact of each repression measure on the predicted likelihood of dictators’ exit, according to the results in columns 3 and 4 of Table 2. The average marginal effect of the PTS is −0.019, and its total impact, when it goes from its minimum to its maximum sample value, is −0.1378. When the civil liberties instrument goes from its minimum value to its maximum, according to model 4, the probability of being ousted experiences a total decrease of 0.1134. Its average marginal effect is −0.011." (551).
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+![](Images/08_1-Escriba_Folch_Table1.png){style="display: block; margin: 0 auto"}
+
+![](Images/08_1-Escriba_Folch_Figure2a.png){style="display: block; margin: 0 auto"}
+
+::: notes
+
+Figure 2 presents the attempt to evaluate the strategic nature of repression.
+
+- Each box focuses on a different kind of threat.
+
+<br>
+
+Box A shows us a violence based threat.
+- e.g. a test of hypotheses 1 and 3
+
+### What do we learn from the results in (A)?
+
+- H3: Responding to violent threats with violence does NOT appear to work at all
+- H1: BUT responding to violence with rights restrictions appears very effective! 
+
+<br>
+
+Box B is the nonviolent threat
+- e.g. a test of hypotheses 2 and 4
+
+### What do we learn from the results in (B)?
+- Second, both types of repression (terror and restrictions) significantly decrease the risks of a dictator being replaced through nonviolent or regular means, which confirms hypotheses 2 and 4.
+
+- Yet, using political terror is more effective than using restrictions on civil liberties.
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+![](Images/08_1-Escriba_Folch_Table1.png){style="display: block; margin: 0 auto"}
+
+![](Images/08_1-Escriba_Folch_Figure2b.png){style="display: block; margin: 0 auto"}
+
+::: notes
+
+Box C tests irregular exit in H1 and H3
+- e.g. coups, revolutions, etc
+
+### What do we learn from the results in (C)?
+- Both types of repression work but rights restrictions work better.
+
+<br>
+
+Box D tests regular exit in H2 and H4
+- e.g. stepping down, removal by vote, etc
+
+### What do we learn from the results in (D)?
+- Both work equally well!
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+::: {.r-fit-text}
+[**Political Violence in Autocracies**]{style="color:darkred;"}
+:::
+
+![](Images/07_2-spraying_protestor.webp){style="display: block; margin: 0 auto"}
+
+::: notes
+
+**Ultimately, where does this leave us in our attempt to answer our motivating question?**
+
+- **Why do dictatorships use political violence against the people living in their territory?**
+
+<br>
+
+### What advice would you offer to policy-makers hoping to reduce political repression by dictators?
+
+### - Is this article an argument about NOT supporting protest movements in autocracies? Why or why not?
+
+<br>
+
+### In what ways could we build from this project? what new and related questions are raised?
+
+:::
+
+
+
+
+## For Next Class {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+<br>
+
+Frantz, E., and A. Kendall-Taylor. 2014. "A Dictator’s Toolkit: Understanding How Co-Optation Affects Repression in Autocracies." *Journal of Peace Research*. 51(3): 332–46.
+
+- Submit analysis to Canvas
+
+::: notes
+
+Next class we dig deeper into the strategic nature of repression in autocracies.
+
+:::

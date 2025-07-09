@@ -1,0 +1,547 @@
+---
+output:
+  xaringan::moon_reader:
+    css: ["default", "extra.css"]
+    lib_dir: libs
+    seal: false
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: '16:9'
+---
+
+```{r, echo = FALSE, warning = FALSE, message = FALSE}
+##xaringan::inf_mr()
+## For offline work: https://bookdown.org/yihui/rmarkdown/some-tips.html#working-offline
+## Images not appearing? Put images folder inside the libs folder as that is the main data directory
+
+library(tidyverse)
+##library(readxl)
+##library(stargazer)
+##library(kableExtra)
+##library(modelr)
+
+knitr::opts_chunk$set(echo = FALSE,
+                      eval = TRUE,
+                      error = FALSE,
+                      message = FALSE,
+                      warning = FALSE,
+                      comment = NA)
+```
+
+background-image: url('Images/00-Leviathan_Cover_55.png')
+background-size: 100%
+background-position: center
+class: middle
+
+.size70[**Today's Agenda**]
+
+<br>
+
+.size55[.center[
+Explore Sanchez-Cuenca's (2007) arguments concerning nationalist terrorism
+]]
+
+<br>
+
+<br>
+
+.center[.size40[
+  Justin Leinaweaver (Fall 2025)
+]]
+
+::: notes
+
+### Prep for Class
+1. ...
+
+<br>
+
+Our third section of the class has focused on answering this question
+
+SLIDE
+
+
+
+
+---
+
+background-image: url('Images/background-red.png')
+background-size: 100%
+background-position: center
+class: middle, center, inverse
+
+.textwhite[.size70[**What explains the variation in how and why non-state actors use violence against states and people?**]]
+
+::: notes
+
+*Read Question*
+
+Two weeks ago we used case studies to broaden our intuitions of terrorism and to work to operationalize the concept.
+
+Last week we analyzed two (or three?) of the big research projects that focus on measuring terrorism around the world and across time.
+
+<br>
+
+### In thinking about all of this material over the last two weeks, talk to me about what you think terrorism means in broad strokes.
+
+### - In other words, how do we define terrorism?
+
+(SLIDE)
+
+
+
+---
+
+background-image: url('Images/background-red.png')
+background-size: 100%
+background-position: center
+class: middle, inverse
+
+.textwhite[.size60[.center[**A non-state actor using violence outside societal norms against people or property, meant to intimidate and connected to a political struggle**]]]
+
+::: notes
+
+### Is this a good definition? Why or why not?
+
+<br>
+
+### - Is it missing anything important?
+
+### - Can it ever be morally permissible?
+
+
+
+---
+
+background-image: url('Images/background-red.png')
+background-size: 100%
+background-position: center
+class: middle, center
+
+```{r}
+knitr::include_graphics('Images/11-2-rand.png')
+```
+
+<br>
+
+```{r}
+knitr::include_graphics('Images/11-2-GTD.png')
+```
+
+::: notes
+
+### What did we learn from our explorations last week?
+
+### - What does "terrorism" look like today?
+
+### - Is it changing across time?
+
+
+
+---
+
+background-image: url('Images/12-1-sanchez_header.png')
+background-size: 60%
+background-position: center
+
+::: notes
+
+This week I want us to explore the types of terrorism that are discussed in the world.
+
+- Most people seem to assume that types of terror group matter for understanding the actions of those groups.
+
+I want us to explore some of these "types" while challenging this assumption.
+
+- Specifically we'll ask, **is it really the case that nationalist terrorism is fundamentally different from religious terror?**
+
+- And, if so, **do they require different policy solutions?**
+
+<br>
+
+Today we explore Sanchez-Cuenca's (2007) arguments concerning nationalist terrorism.
+
+
+
+---
+
+background-image: url('Images/background-red.png')
+background-size: 100%
+background-position: center
+class: middle, center, inverse
+
+.textwhite[.size60[**What explains the variation in how and why non-state actors use violence against states and people?**]]
+
+<br>
+
+<br>
+
+.textwhite[.size45[**Q1. How does the framing of this project help us answer our question?**]]
+
+::: notes
+
+Let's talk about the framing of the paper.
+
+### What is the question and how is it worded?
+("What makes nationalist terrorism different from revolutionary, fascist, or religious terrorism is the territorial claim.")
+
+<br>
+
+### What literature is the paper connected to?
+
+<br>
+
+### What are the key concepts and how are they defined?
+- (SLIDE: Terrorism defined)
+
+
+
+
+---
+
+background-image: url('Images/background-red.png')
+background-size: 100%
+background-position: center
+class: middle, center, inverse
+
+.textwhite[.size55[**Q1. How does the framing of this project help us answer our question?**]]
+
+<br>
+
+```{r, echo = FALSE, fig.align = 'center', out.width = '100%'}
+knitr::include_graphics("Images/12_1-terror_defined.png")
+```
+
+
+::: notes
+
+### How does the definition of terrorism applied here compare and contrast to our work on the concept last week?
+
+<br>
+
+### Is setting terrorist as different from guerilla a useful distinction for answering our big question? Why or why not?
+
+
+
+---
+
+background-image: url('Images/background-red.png')
+background-size: 100%
+background-position: center
+class: middle, center, inverse
+
+.textwhite[.size60[**What explains the variation in how and why non-state actors use violence against states and people?**]]
+
+<br>
+
+<br>
+
+.textwhite[.size45[**Q2. The Model**]
+
+.size45[**Q3. The Analyses**]]
+
+::: notes
+
+This paper is primarily a descriptive analysis of two detailed case studies so we'll follow the paper and blend discussion of the model and the analyses.
+
+<br>
+
+BUT, let's make sure we have the right target in mind.
+
+Turn to the conclusion section on p302:
+
+### After all the theory and data gets analyzed, what is the main conclusion of the paper?
+
+(SLIDE)
+
+
+
+
+
+---
+
+background-image: url('Images/background-red.png')
+background-size: 100%
+background-position: center
+class: middle, center, inverse
+
+.textwhite[.size55[**Nationalist terrorism is different from other kinds of terrorism because its aim is territorial and its strategy is one of attrition.**]]
+
+::: notes
+
+*Read conclusion*
+
+<br>
+
+### As a contrast, what does the author argue is the purpose of revolutionary or religious terrorism?
+- (Mobilization)
+- "Violence is considered a means to induce people to join the revolutionary movement (violence as "propaganda by the deed" or "armed propaganda")" (291).
+
+<br>
+
+Let's keep track of how we evaluate the strength of this conclusion on the board as we work.
+
+*ON BOARD (2 sections): Strengths vs Weaknesses*
+
+- By strength let's say we mean that it adds more signal than noise.
+
+- By weakness let's say adds more noise than signal.
+
+
+
+
+---
+
+background-image: url('Images/12_1-case_selection.png')
+background-size: 100%
+background-position: center
+
+::: notes
+
+Let's start with the case selection (p290-294).
+
+The paper focuses on ETA in Spain and the IRA in Ireland.
+
+### First, are these comparable cases? Why or why not?
+
+#### - Key similarities?
+
+#### - Possibly problematic differences?
+
+<br>
+
+(SLIDE: Table 1 - comparative data)
+
+(SLIDE: Table 2 - targets chosen)
+
+(SLIDE: Figure 1 - fatalities)
+
+
+
+---
+
+background-image: url('Images/12_1-table1.png')
+background-size: 100%
+background-position: center
+
+::: notes
+
+(SLIDE: Table 1 - comparative data)
+
+### What do we learn from this comparative data? Similarities and differences?
+
+
+
+---
+
+background-image: url('Images/12_1-table1_2.png')
+background-size: 100%
+background-position: center
+
+::: notes
+
+(SLIDE: Table 2 - targets chosen)
+
+### What do we learn from this comparative data? Similarities and differences?
+
+
+
+
+---
+
+background-image: url('Images/12_1-fig1.png')
+background-size: 100%
+background-position: center
+
+::: notes
+
+(SLIDE: Figure 1 - fatalities)
+
+### What do we learn from this comparative data? Similarities and differences?
+
+
+
+
+---
+
+background-image: url('Images/12_1-case_selection.png')
+background-size: 100%
+background-position: center
+
+::: notes
+
+### Bottom line, are these two cases sufficiently comparable?
+
+<br>
+
+### AND, and do these two cases allow us to make generalizations about nationalist terrorism?
+
+### - In other words, do the analyses of these two cases speak to nationalist terrorism found elsewhere in the world? Why or why not?
+
+
+
+
+---
+
+background-image: url('Images/background-red.png')
+background-size: 100%
+background-position: center
+class: middle, inverse, textwhite
+
+.center[.size60[**Nationalist Terror Model**
+
+**The "War of Attrition" Strategy**]]
+
+.size50[
+- Interests
+
+- Institutions
+
+- Interactions
+]
+
+::: notes
+
+Let's now evaluate the "war of attrition" strategy as the model in this paper (p294-296).
+
+Take a few minutes on your own to diagram this model in terms of our interests, institutions and interactions.
+
+Compare lists with the person next to you and combine them.
+
+<br>
+
+### Ok, what do we have?
+
+*ON BOARD*
+
+- ?
+
+<br>
+
+(SLIDE: Broad strokes from paper)
+
+
+
+
+---
+
+background-image: url('Images/background-red.png')
+background-size: 100%
+background-position: center
+class: middle, inverse, textwhite
+
+.size60[.center[**Sanchez-Cuenca (2007)**]]
+
+.size50[.center[**Strengths and Weaknesses**]]
+
+<br>
+
+.size50[The "War of Attrition" Strategy]
+
+.size35[
++ Early period, more killings for lack of intelligence
+
++ More attacks, more intelligence developed
+
++ More intelligence, more killings prevented
+
++ Rate of arrests > Rate of new recruits, killings decrease
+]
+
+::: notes
+
+### Is this a logical model?
+
+<br>
+
+### On the whole, is the model a strength or weakness of the paper?
+
+
+
+---
+
+background-image: url('Images/background-red.png')
+background-size: 100%
+background-position: center
+class: middle, inverse, textwhite
+
+
+.size70[.center[**Sanchez-Cuenca (2007)**]]
+
+.size55[.center[**Strengths and Weaknesses**]]
+
+<br>
+
+<br>
+
+.size60[.center[The Analyses]]
+
+.size50[.center[(p298-ish)]]
+
+::: notes
+
+### How convinced are you by the analyses in the paper?
+
+<br>
+
+### - Data sources as strength or weakness? (p298)
+
+<br>
+
+### - Operationalizations and measurement as strength or weakness??
+
+<br>
+
+### - Problems with developing theory and testing theory on the same cases over the same period?
+
+<br>
+
+### - The findings themselves (p298)
+
+<br>
+
+Opposite findings across the two groups are confusing...
+
+(SLIDE: Table 3 VAR models, time-series regressions)
+
+
+---
+
+background-image: url('Images/12_1-Table3.png')
+background-size: 53%
+background-position: center
+
+
+
+---
+
+background-image: url('Images/background-red.png')
+background-size: 100%
+background-position: center
+class: middle, inverse
+
+.textwhite[.size55[.center[**What explains the variation in how and why non-state actors use violence against states and people?**]]]
+
+<br>
+
+.size45[
++ Is nationalist terrorism fundamentally different from other types?
+
++ Do we need special strategies to counter it?
+]
+
+::: notes
+
+So, bottom line for us.
+
+### Are we convinced that nationalist terrorism is fundamentally distinct from other types of terrorism or acts of political violence?
+
+#### - Why or why not?
+
+<br>
+
+### Does nationalist terrorism require different policy approaches to address it?
+
+### - Why or why not?
+

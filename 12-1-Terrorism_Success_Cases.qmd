@@ -1,0 +1,230 @@
+---
+format: revealjs
+---
+
+## Today's Agenda {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+```{r}
+library(tidyverse)
+library(readxl)
+library(kableExtra)
+
+# Data for today
+d <- read_excel("../../Data/EDTG/EDTG_Data.xls", guess_max = 10000)
+```
+
+<br>
+
+**III. How and why do non-state actors use political violence?**
+
+<br>
+
+- Can "terrorism" ever "succeed"?
+
+<br>
+
+::: r-stack
+Justin Leinaweaver (Fall 2025)
+:::
+
+::: notes
+Prep for Class
+
+1. Review submissions on Canvas
+
+2. Prep (and publish on Canvas) the Google Sheet for unpacking the cases
+    - tbd
+
+<br>
+
+**SLIDE**: We're tackling a big question this week
+
+:::
+
+
+
+## Can "terrorism" ever "succeed"? {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+:::: {.columns}
+::: {.column width="50%"}
+![](Images/12_1-Paper_Page1.png){style="display: block; margin: 0 auto"}
+:::
+
+::: {.column width="50%"}
+![](Images/12_1-Abrahms_Page1.png){style="display: block; margin: 0 auto"}
+:::
+::::
+
+::: notes
+
+The debate about whether terrorism can be effective as a political strategy is far from settled in the literature.
+
+<br>
+
+This week I want us to examine recent case studies and two of the most cited articles in this debate
+
+- Robert Pape's (2003) article has well above 2,400 citations
+
+- Abrahms (2006) response to Pape is compelling and worth considering
+
+<br>
+
+### What does this question assume is true about terrorism?
+
+### - In other words, what are the assumptions implicit in this framing of the question?
+
+- (**SLIDE**)
+
+:::
+
+
+
+
+## Can "terrorism" ever "succeed"? {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+<br>
+
+1. "Terrorists" have "goals" (e.g. are strategic, rational actors)
+
+2. We can evaluate their "acts" in terms of those "goals" (e.g. was it a success or failure?)
+
+::: notes
+
+There are a couple of key assumptions I'm making here that we are going to adopt for today
+
+1. I am assuming that "terrorists" are strategic, instrumentally rational actors (e.g they have goals), AND
+
+2. That we can identify and evaluate their actions in terms of those goals (e.g. "success" vs "failure")
+
+<br>
+
+### Do we have any concerns with these assumptions as jumping off points for our work? Why or why not?
+
+:::
+
+
+
+## For Today {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+<br>
+
+Can terrorism be effective?
+
+- Go find us cases!
+
+::: notes
+
+Before we dig into the academic literature I want us to take a shot at answering the question using real-world case studies.
+
+<br>
+
+### Everybody ready to go on this?
+
+<br>
+
+Let's unpack these cases as we have done previously in class.
+
+- Link on Canvas Modules to a Google Sheet (Week 12)
+
+- Everybody unpack their case using that sheet
+    1. APA Citation
+    2. Who is the "terrorist"?	
+    3. What was their "goal"?	
+    4. What was the specific act?	
+    5. Why was this "successful"?	
+    6. Other notes?
+    
+<br>
+
+*Split into small groups (3-4)*
+
+:::
+
+
+
+## Can "terrorism" ever "succeed"? {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+<br>
+
+1. Review the cases for clarity, and
+
+2. Rank the cases from "most" to "least" successful
+
+::: notes
+
+Groups, take a few minutes to review all the cases
+
+- Use this as a chance to request clarification from the submitter if anything doesn't make sense
+    
+- IMPORTANT: The ranking exercise requires some careful thought about your criteria for success
+
+- Be ready to present your ranking and explain how you approached it
+
+<br>
+
+### Questions?
+
+- Go!
+
+<br>
+
+Groups report back your rankings and explain your logic.
+
+- For ease, give us your 2-3 "most successful" cases and your 2-3 "least successful" cases
+
+<br>
+
+*ON BOARD: Criteria for success?*
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+**Under what conditions are terrorists more or less likely to succeed in their aims?**
+
+1. Conditions raising P(Success)?
+
+2. Conditions lowering P(Success)?
+
+::: notes
+
+Let's now use your work to generate some testable hypotheses.
+
+- Groups, take some time to build two lists
+
+- What are the conditions that raise or lower the probability of a successful terror attack?
+
+- This can be characteristics of the terrorist, the group, the ideology, the goals, the methods, anything.
+
+<br>
+
+### Questions on what I'm asking for?
+
+- Go!
+
+<br>
+
+Let's report back!
+
+- *ON BOARD* Two Lists
+
+:::
+
+
+
+## {background-image="Images/13-1-belfast_mural.png"}
+
+**The Strategic Logic of Suicide Terrorism (Pape 2003)**
+
+- Submit analysis to Canvas
+
+::: notes
+
+For next class!
+
+:::
+
+
+
