@@ -56,15 +56,15 @@ Welcome to PLSC 346: Political Violence
 :::: {.r-fit-text}
 **Introductions**
 
-::: {.fragment}
-
 1. Name
 
 2. Year in school
 
 3. Major
 
-4. Specific act of political violence
+::: {.fragment}
+
+4. A specific act of **political** violence
 
 :::
 
@@ -74,19 +74,23 @@ Welcome to PLSC 346: Political Violence
 
 I'm Dr. Leinaweaver.
 
-- 12th year at Drury
+- 14th year at Drury
 
 - Political scientist
 
-- Research interests: international politics, environmental politics and bargaining / negotiations.
+- Research interests: public policy, international politics, environmental politics
 
 <br>
 
-I need to take roll so now it's your turn!
+Your turn!
 
-- **REVEAL**: I need everybody to give their name, year in school, major AND...
+- Let's hit the basics: name, year in school, major
 
-- **What is one specific thing you could do today after class that you argue is an example of political violence?**
+- PLUS...
+
+<br>
+
+**REVEAL: What is one specific thing you could do today after class that you argue would be an example of POLITICAL violence?**
 
 <br>
 
@@ -312,7 +316,7 @@ Now, here's the deal.
 
 <br>
 
-**SLIDE**: With that in mind let's talk about January 6th for a sec
+**SLIDE**: With that in mind let's talk current events
 
 :::
 
@@ -323,9 +327,9 @@ Now, here's the deal.
 
 ::: notes
 
-**Does this event meet our definition of "political violence"? Why or why not?**
+**Does the January 6th protest meet our definition of "political violence"? Why or why not?**
 
-- (**SLIDE**)
+- (**SLIDE**: Definitely violent!)
 
 :::
 
@@ -398,12 +402,21 @@ Our organizing assumption this semester is that violence is a strategy chosen by
 
 <br>
 
-**Why do many researchers of political violence start with this assumption?**
+**So, what was the strategic goal of the January 6th protestors?**
 
-+ (Assuming violent actors are "crazy" doesn't help us in any meaningful way.)
-    + The only way to stop "crazy" is with more violence.
+<br>
+
+**Does anybody want to make the argument these protestors were "crazy"? Why or why not?**
+
+<br>
+
+Here's the thing, most researchers of political violence start with this key assumption
+
+- Assuming violent actors are "crazy" doesn't help us in any meaningful way.
+
+    - The only way to stop "crazy" is with more violence.
     
-+ To understand or reduce violence we need to learn about these actors, their preferences and the systems they inhabit.
+- To understand or reduce violence we need to learn about these actors, their preferences and the systems they inhabit.
 
 <br>
 
@@ -411,7 +424,11 @@ This is a big assumption and, in some case this semester, you will feel like it 
 
 - e.g. this assumes that acts of violence you find abhorent were still done for rational reasons.
 
-- I hope we'll have room to explore and consider this assumption during the term.
+<br>
+
+I will make sure we have room to explore and consider this assumption during the semester.
+
+- Unfortunately, current events are giving us many, many, many ongoing examples of political violence to explore
 
 <br>
 
@@ -421,15 +438,9 @@ This is a big assumption and, in some case this semester, you will feel like it 
 
 
 
-## Learning Outcomes{background-image="Images/00-Leviathan_Cover_55.png" .center}
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
 
-<br>
-
-**Content**: Theories and models of political violence
-
-**Methods**: Testing models of political violence with data and literature
-
-**Critical Thinking**: Evaluate strategies for reducing acts of political violence
+![](Images/01_1-LOs.png)
 
 ::: notes
 
@@ -457,34 +468,31 @@ Get ready!
 
 ## {background-image="Images/00-Leviathan_Cover_55.png" .center}
 
-**Semester Outline**
-
-**Section 1 - Introducing the Challenge** (2 weeks)
-
-**Section 2 - How and why do governments use violence against the people inside their borders?** (7 weeks)
-
-**Section 3 - How and why do non-state actors use political violence?** (7 weeks)
+![](Images/01_1-Provisional_Outline.png)
 
 ::: notes
 
+Outline is provisional
+
+- Canvas Modules is our central repo for everything you need!
+
+- Readings, daily assignments, datasets
 
 :::
 
 
 
-
-## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+## Course Grade {background-image="Images/00-Leviathan_Cover_55.png" .center}
 
 ```{r}
 tibble(
-  col1 = c("Attendance & Participation", "Outcome Reports", "1. Baseline Argument Report", "2. Problem Framing Report", "3. The Policy Evaluation Report"),
-  col2 = c("", "", "(Feb 28)", "(Apr 11)", "(Final)"),
-  col3 = c("50%", "50%", "", "", "")
+  col1 = c("Attendance & Participation", "Papers", "1. Evaluating Measures of Violence", "2. Political Violence Country Report", "3. Reducing Political Violence"),
+  col3 = c("55%", "45%", "", "", "")
 ) |>
-  kableExtra::kbl(align = c("l", "c", "c"), col.names = c("", "", "")) |>
+  kableExtra::kbl(align = c("l", "c"), col.names = c("", "")) |>
   kableExtra::kable_styling(font_size = 40) |>
   kableExtra::column_spec(1, width = "20em") |>
-  kableExtra::column_spec(2, width = "7em") |>
+  # kableExtra::column_spec(2, width = "7em") |>
   kableExtra::row_spec(0, background = "lightblue") |>
   kableExtra::row_spec(1:5, background = "white")
 ```
@@ -497,15 +505,7 @@ Everyone should download and read the syllabus.
 
 <br>
 
-Since this capstone class has ambitions of getting out into the world and making a difference, I need you all to come to class and be engaged
-
-- We're only going to get as far as you're willing to push.
-
-- The attendance and participation policies are meant to help motivate you!
-
-<br>
-
-Half your course grade this semester is about showing up, being prepared and engaging in the work of our class.
+More than half your course grade this semester is about showing up, being prepared and engaging in the work of our class.
 
 - You'll see on the Modules page of Canvas that most of our class sessions have a reading plus an assignment
 
@@ -515,7 +515,7 @@ Half your course grade this semester is about showing up, being prepared and eng
 
 There is an attendance cliff in this class
 
-- Anyone with more than three unexcused absences in the semester cannot earn higher than a ‘C’ in the course (regardless of grades earned on other assignments).
+- Anyone with more than four unexcused absences in the semester cannot earn higher than a ‘C’ in the course (regardless of grades earned on other assignments).
 
 - IFF you have an excused absence coming up **YOU** are required to contact me by email for excused absences
     
@@ -523,19 +523,52 @@ There is an attendance cliff in this class
 
 <br>
 
-The other half of your grade will consist of reports presenting your analyses and action plans for our selected environmental problem
-
-- More to come on that soon.
+**Any questions on these grades or policies?**
 
 <br>
 
-**Any questions on these grades or policies?**
+**SLIDE**: Speaking of grade policies in the syllabus
 
 :::
 
 
 
 ## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+![](Images/01_1-No_AI_Tools.jpg){style="display: block; margin: 0 auto"}
+
+::: notes
+
+You may not use any AI tools in the preparation or writing of the papers for this class. 
+
+- No AI search
+
+- No AI summaries of articles or books
+
+- No AI for outlining or writing
+
+- No AI for data analysis
+
+- No AI to simply clean up your grammar (e.g. Grammarly).
+
+<br>
+
+The purpose of this class is to help you become a better thinker and writer and AI represents the antithesis of these skills. 
+
+- Therefore, the use of AI on any assignment will be treated as plagiarism
+
+<br>
+
+**Questions on this policy?**
+
+<br>
+
+**SLIDE**: The Canvas Modules page
+
+:::
+
+
+## Canvas Modules Page {background-image="Images/00-Leviathan_Cover_55.png" .center}
 
 ![](Images/01_1-Canvas_Modules.png)
 
