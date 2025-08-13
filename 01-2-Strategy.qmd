@@ -36,7 +36,7 @@ Prep for Class
 
 2. Decide on bonus points for each game
 
-    - Survive or die survival pool (1 point per card)
+    - Survive or die survival pool (pool points TBD by size of WC)
 
     - Ultimatum game (?)
 
@@ -62,11 +62,14 @@ Prep for Class
 
 Last class we set up our semester by talking big picture-wise about politics and violence.
 
-### What were your takeaways about this concept that is central to our work this semester?
+<br>
+
+**What were your takeaways about this concept that is central to our work this semester?**
 
 <br>
 
-### Remind me, what is the key assumption I want us to use when building models of political violence this semester?
+**Remind me, what is the key assumption I want us to use when building models of political violence this semester?**
+
 - (**SLIDE**)
 
 :::
@@ -139,17 +142,15 @@ This is a word that gets thrown around a lot, but often not very precisely
 
 <br>
 
-**SLIDE**: Let's attack this concept by playing a game most of you played with me already in International Relations.
+**SLIDE**: Let's attack this concept by playing a game most of you played with me already in International Relations with a slight tweak.
 
 :::
-
 
 
 ## Game: Survive or Die! {background-image="Images/background-red.png" .center}
 
 :::: {.r-fit-text}
 
-::: {.incremental}
 + Your playing card represents your life
 
 + Any living player may challenge you to a duel (no refusals)
@@ -158,29 +159,106 @@ This is a word that gets thrown around a lot, but often not very precisely
 
 + End of Game: Each card you have is worth 1 bonus point
 
-+ **The Catch: Survival requires 2 cards**
+::::
+
+::: notes
+
+In IR, I had you play a version of this game.
+
+- This general structure is meant to represent a very state-focused version of international politics
+
+<br>
+
+I like this game as a way to introduce and challenge the key assumptions in the realist paradigm.
+
+- States colliding with each other in pursuit of their interests where violence is the key to increasing benefits
+
+- Obviously, this is a very limited view of where benefits come from in international politics.
+
+<br>
+
+Now, in this class our interest is much more on unpacking the strategic lives of individuals, groups and the government
+
+- Violence is not the only path to benefit, but it does have the capability of changing the dynamics dramatically!
+
+<br>
+
+**SLIDE**: So, let's tweak the game a bit for our purposes
 
 :::
+
+
+
+## {background-image="Images/background-red.png" .center}
+
+:::: {.r-fit-text}
+
+**Game: Accessing and Distributing Benefits**
+
+::::
+
+<br>
+
+:::: {.r-fit-text}
+
+**Each Person**
+
+- Everyone starts with one playing card
+- RPS challenges at any time to take **ONE** card (no refusals)
+- You must have a card to make a challenge
 
 ::::
 
 ::: notes
 
-*Make sure everybody has one playing card*
+Just like the last game, this one keeps the basic PvP format
 
-**SLIDE** x 5 for the rules (last rule is "the catch")
+- e.g. violence exists and can be used as a tool to achieve your ends
+
+<br>
+
+**SLIDE**: But the real game is focused on group decision-making
+
+:::
+
+
+
+## {background-image="Images/background-red.png" .center}
+
+:::: {.r-fit-text}
+
+**Game: Accessing and Distributing Benefits**
+
+<br>
+
+**Each Person**
+
+- Everyone starts with one playing card
+- RPS challenges at any time to take **ONE** card (no refusals)
+- You must have a card to make a challenge
+
+**The game ends when...**
+
+- The class distributes a pool of bonus points
+- Only those with &#8805; **TWO** cards can receive points
+
+::::
+
+::: notes
+
+The main object of this game is for you, as a class, to distribute a pool of bonus points among yourselves.
+
+- When that task is done the game is over
 
 <br>
 
 **Any questions on the game?**
 
-- For tracking the state of the game I will ask the living to remain standing and the dead to sit back down
-
 <br>
 
-Everybody stand up and let's go!
+Ok, you have X points to distribute (*One point per person in class?*).
 
-- Ok, back to your seats.
+- Let's go!
 
 <br>
 
@@ -504,19 +582,24 @@ Plato’s Strategic Coup
 :::
 
 
-## Game: Survive or Die! {background-image="Images/background-red.png" .center}
+## {background-image="Images/background-red.png" .center}
 
 :::: {.r-fit-text}
 
-+ Your playing card represents your life
+**Game: Accessing and Distributing Benefits**
 
-+ Any living player may challenge you to a duel (no refusals)
+<br>
 
-+ Winner of RPS takes your card (you're dead)
+**Each Person**
 
-+ End of Game: Each card you have is worth 1 bonus point
+- Everyone starts with one playing card
+- RPS challenges at any time to take **ONE** card (no refusals)
+- You must have a card to make a challenge
 
-+ **The Catch: Survival requires 2 cards**
+**The game ends when...**
+
+- The class distributes a pool of bonus points
+- Only those with &#8805; **TWO** cards can receive points
 
 ::::
 
@@ -561,30 +644,45 @@ Let's form two lines with pairs facing each other.
 
 ::: notes
 
+An ultimatum is a final demand attached to a threat
+
+- e.g. take this offer or else!
+
+<br>
+
 Ok, line on my left is player 1.
 
-- P1's take a post-it note and make sure you have something to write with.
+- P1's take a post-it note and write down each of your names on the paper with space next to each
 
 <br>
 
-The game is simple: Each pair needs to split five bonus points between you
+The game is simple: You will split five bonus points between you
 
-1. P1 chooses how to divide the points
-    - You may choose any division you want but only whole numbers
-    - e.g. offer them all 5 or down to nothing, it's up to you!
-    - NO PRE-GAME NEGOTIATIONS! No talking!
+1. P1: Your job is to offer P2 an ultimatum (e.g. HOW you would like to divy the points)
 
-2. P1 writes down the offer and give paper to P2
+    - e.g. offer P2 0, 1, 2, 3, 4 or 5, it's up to you!
 
-3. P2 has a decision to make
-    - Accept the offer and the game ends, OR
-    - Refuse the offer and BOTH SIDES GET NOTHING
+2. P2: You may either accept the ultimatum OR refuse and BOTH SIDES GET NOTHING
 
 <br>
-    
-**Is everybody clear on the game?**
 
-- Everybody play the game. Go!
+Quick notes:
+
+- You may choose any division you want but only whole numbers
+
+- There are NO PRE-GAME NEGOTIATIONS! No talking!
+
+<br>
+
+**Any questions on the game?**
+
+<br>
+
+Ok, let's play!
+
+- P1 write down your proposal on the post-it note then hand it to P2
+
+- P2 make your decision and get ready to report back to the class
 
 <br>
 
