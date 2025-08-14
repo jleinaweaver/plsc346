@@ -533,13 +533,17 @@ There is an attendance cliff in this class
 
 
 
-## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+## {background-image="Images/background-worldmap4.png" .center}
 
 ![](Images/01_1-No_AI_Tools.jpg){style="display: block; margin: 0 auto"}
 
 ::: notes
 
-You may not use any AI tools in the preparation or writing of the papers for this class. 
+You may not use any AI tools in this class. Any AI use will be treated as plagiarism.
+
+<br>
+
+That means: 
 
 - No AI search
 
@@ -553,9 +557,29 @@ You may not use any AI tools in the preparation or writing of the papers for thi
 
 <br>
 
-The purpose of this class is to help you become a better thinker and writer and AI represents the antithesis of these skills. 
+Think of this class like training to play a sport
 
-- Therefore, the use of AI on any assignment will be treated as plagiarism
+- The time you spend in the gym getting stronger and more flexible makes you a better athlete regardless of the sport you end up playing. 
+
+- That's what we're doing in this class when we learn to critically analyze texts and become better writers.
+
+- I'm getting you ready to succeed out in the real world
+
+- Using AI tools is like bringing a forklift into the weight room. Yeah, you lifted the weights, but it was a waste of your time.
+
+<br>
+
+Other key point: Lots of people are worried about AI taking their jobs, e.g. replacing them in the workforce. 
+
+- If you use AI to do your thinking for you then you are literally replacing yourself with AI
+
+- You are setting yourself up with skills that are basically without value
+
+<br>
+
+So, let's not waste this opportunity working together this semester
+
+- Let's get stronger and be better adapted to whatever the world looks like when you graduate
 
 <br>
 
