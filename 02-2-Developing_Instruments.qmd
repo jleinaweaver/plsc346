@@ -30,6 +30,7 @@ Justin Leinaweaver (Fall 2025)
 Prep for Class
 
 1. Think about timing for each phase of the group work as I'm not sure I want them sharing definitions in class
+
     - Say, 12 minutes each (time for group to work and collecting answers on boards)
 
 <br>
@@ -88,18 +89,23 @@ Last class we began to situate ourselves in the processes we need to explore "po
 
 ### Remind me, what are the keys elements of a "scientific method"?
 
+- A method, not a subject
+
 - Goal is inference
-- Procedures are public 
+
 - Uncertain conclusions
-- Content is method
+
+- Procedures are public 
 
 <br>
 
 ### What does this diagram leading from nature to measurement to data help us understand?
 1. (Our BIG goal is to develop models of nature / the world)
+
     - Models, simplifications of reality, allow us to explain causality and make predictions
 
 2. (We use data and reasoning to learn about the world, BUT all data is measured)
+
     - Measurement requires choices and those choices produce uncertainty
     
 3. (The more data we have and the better we understand our measurements the closer we come to being able to create useful models of nature!)
@@ -137,6 +143,7 @@ On Monday we gathered a number of political violence case studies.
 <br>
 
 Today we take the next step in this case study analysis.
+
 - We need a definition!
 
 <br>
@@ -255,6 +262,7 @@ Let's now look for ways we could group the cases in terms of their shared simila
 <br>
 
 Think of this like going to the grocery store
+
 - Different items are usually organized by if they need to be refrigerated, frozen or not
 
 - Within those sections they are even more subdivided
@@ -371,7 +379,7 @@ Notes from FA23
 - Consequences for society?
 - Type of harm done?
 - What happened?
-- # killed / injured
+- Number killed / injured
 - Scope of attack?
 - Economic damage done?
 
@@ -447,8 +455,11 @@ I wanted to expose you to some academic writing on violence and this seemed the 
 ### What are the key characteristics of Tilly's definition of "collective violence"?
 
 + (Collective violence as contentious politics)
+
 + (Episodic)
+
 + (Social interaction e.g. at least two people)
+
 + (Immediate physical damage to persons and/or objects)
 
 <br>
@@ -485,7 +496,9 @@ Back to your groups!
 
 Groups take everything we've worked on today and construct a definition of "political violence."
 
-### Questions on what I'm asking you to do?
+<br>
+
+**Questions on what I'm asking you to do?**
 
 - Go!
 
@@ -499,15 +512,26 @@ Groups take everything we've worked on today and construct a definition of "poli
 
 ## For Next Class {background-image="Images/00-Leviathan_Cover_55.png" .center}
 
-1. Submit your group's working definition of political violence
+1. Read "From Abstract to Concrete: Operationalization and Measurement" (Brians, Willnat, Manheim & Rich 2011) (**ONLY p88-110**)
 
-2. Read "From Abstract to Concrete: Operationalization and Measurement" (Brians, Willnat, Manheim & Rich 2011) (**ONLY p88-110**)
+2. Submit your version of a definition of political violence
+
+3. Per the reading, which step in the measurement process does this definition represent?
 
 ::: notes
 
 Friday we move to instrumentation and measurement so we can quantify the "political violence" in our cases. 
 
 - Take some time to make sure you're happy with your working definition and then email it to me.
+
+<br>
+
+Canvas Assignment: Defining "Political Violence"
+
+1. Submit your group’s working definition of political violence
+
+2. Which step in the measurement process described in the reading does this definition represent?
+
 
 :::
 

@@ -31,34 +31,37 @@ Justin Leinaweaver (Fall 2025)
 ::: notes
 Prep for Class
 
-1. Canvas link to Google Sheet  for collecting definitions and measurements today
+1. Have the reading: Brians et al 2011 “From Abstract to Concrete: Operationalization and Measurement”
+
+2. Canvas link to Google Sheet  for collecting definitions and measurements today
+
     - You should add group member names and definitions they emailed you to it
+    
     - Group members, Definition and leave space for both Instrumentations
 
 <br>
 
-*Brians, Craig Leonard, Lars Willnat, Jarol B. Manheim, and Richard C. Rich. 2011. “From Abstract to Concrete: Operationalization and Measurement.” In Empirical Political Analysis, Boston, MA: Longman, (ONLY p88-110)]*
+This week we have been working to deepen our appreciation for the complexity of studying "political violence."
+
+- As we have seen, political violence is a contested concept (e.g. not everyone defines it the same way), AND
+
+- A big part of our job is to understand these differences
 
 <br>
 
-This week we have been working on the central concept of our class, "political violence."
-
-- I want our work this week to help all of us deepen our thinking about the contested nature of this concept
-    - Contested: Not everyone defines it the same way
-    
-<br>
-
-Remember, the goal is NOT to design THE "correct" or "perfect" definition of "political violence"
-- ALL measurement is uncertain
-
-<br>
-    
-The goal is to have a more thorough understanding of the many key elements related to this concept across possible definitions
-- Expertise means understanding WHY the definitions are contested and being able to explain the differences between them
+Remember, our ultimate goal is NOT to design THE "correct" or "perfect" definition of "political violence"
 
 <br>
 
-### Make sense?
+Our goal is to understand the complexity in studying and measuring political violence
+
+- Expertise means understanding WHY the definitions are contested, AND
+
+- Being able to evaluate the different measurements of it
+
+<br>
+
+**Make sense?**
 
 :::
 
@@ -102,12 +105,15 @@ Our class is focused on exploring and hopefully explaining "political violence" 
 
 - On Monday we gathered and prepared case studies for analysis
 
-- On Wednesday we worked on building a definition rooted in these cases
+- On Wednesday we described and classified these cases
 
 <br>
 
-### Where does that put us in this process?
-- (**SLIDE**: We're now working on operationalization and moving towards instrumentation.)
+**Where does that put us in this process?**
+
+- **What answer did you submit to Canvas today?**
+
+- (**SLIDE**: You have been developing an operationalization of the concept)
 
 :::
 
@@ -137,27 +143,124 @@ Our class is focused on exploring and hopefully explaining "political violence" 
 
 ::: notes
 
-**What is involved in the operationalization step?**
+Talk to me about the operationalization step in the measurement process
 
-- ("...selecting observable phenomena to represent abstract concepts" (89).)
-
-- ("To be useful...operational definitions must tell us precisely and explicitly what to do in order to determine what quantitative value should be associated with a variable in any given case (92).)
+- **What is involved in operationalization?**
 
 <br>
+
+Operationalization means "...selecting observable phenomena to represent abstract concepts" (89).
+
+- **How is this different from definint the concept? Is it different?**
+
+<br>
+
+An "operational definition" goes a step further than a simple description of definition of a concept
+
+- "To be useful...operational definitions must tell us precisely and explicitly what to do in order to determine what quantitative value should be associated with a variable in any given case (92).
+
+<br>
+
+**SLIDE**: Let's use an example to illustrate the difference
+
+:::
+
+
+
+## Definitions vs Operational Definitions {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+<br>
+
+**Democracy**
+
+- "...a system of government by the whole population or all the eligible members of a state, typically through elected representatives" (Oxford Languages 2025).
+
+::: notes
+
+Here is how Oxford Languages defines the concept: democracy
+
+<br>
+
+**At a 30,000 foot view, does this definition convey the idea of democracy in a clear way?**
+
+<br>
+
+**Now, why isn't this an operational definition?**
+
+- Leaves WAY too much unspecified
+
+- Built on concepts that must also be unpacked
+
+<br>
+
+**What kind of specific things would need to be added to operationalize this definition of democracy?**
+
+- **e.g. to tell us precisely and explicitly what to do in order to determine what quantitative value should be associated with a variable in any given case...**
+
+<br>
+
+- Who counts as a person?
+
+- What kinds of "eligibility" rules for participation are allowable and what are not?
+
+- What does "typically" mean here? Can a democracy exist without elections?
+
+- How much representation is necessary? At what levels of decision-making?
+
+- etc.
+
+<br>
+
+**SLIDE**: Back to violence!
+
+
+:::
+
+
+
+## Political Violence {background-image="Images/02_3-protestor_fire.png" .center}
+
+:::: {.columns}
+::: {.column width="60%"}
+::: {.r-fit-text}
+**1) Concept**
+
+**2) Case studies**
+
+[**3) Operationalization**]{style="color:blue;"}
+
+**4) Instrumentation**
+
+**5) Measurement**
+:::
+:::
+
+::: {.column width="40%"}
+
+:::
+::::
+
+::: notes
 
 Let's take a look at the group definitions so far.
 
 - See the spreadsheet linked in today's Canvas Module
 
-### How well does each proposed definition operationalization the concept?
+<br>
 
-### - Areas that need to be more precise?
+**How well does each proposed definition operationalization the concept?**
 
-### - Areas that need to be more explicit?
+- **Areas that need to be more precise?**
+
+- **Areas that need to be more explicit?**
 
 <br>
 
 GROUPS: Take the feedback and refine your definitions to make it "precise" and "explicit".
+
+<br>
+
+**SLIDE**: Next step is instrumentation
 
 :::
 
@@ -186,29 +289,39 @@ GROUPS: Take the feedback and refine your definitions to make it "precise" and "
 
 ::: notes
 
-Now we move to the next step of the process.
-
-### Per the reading, what happens during the instrumentation stage?
-+ (Convert your operationalization (definition) into a series of steps you can use to measure the concept in question)
+**Per the reading, what happens during the instrumentation stage?**
 
 <br>
 
-Instrumentation is when you decide HOW you are going to measure the concept.
+Instrumentation is when you specify HOW you are going to measure the concept.
 
-- Your instrument should be determined by your operationalization, and 
-
-- A STRONG concern about **validity** and **reliability**.
+- Convert your operationalization (operational definition) into a series of steps you can use to measure the concept in question
 
 <br>
 
-### What does it mean to say an instrument is "valid"?
+Your instrument should follow directly from your operational definition
+
+- The operational definition already specifies "precisely and explicitly what to do in order to determine what quantitative value should be associated with a variable in any given case"
+
+- BUT your instrument must put that guidance into practice WHILE ENSURING you produce **valid** and **reliable** measures.
+
+<br>
+
+**What does it mean to say an instrument is "valid"?**
+
 - ("...the extent to which our measures correspond to the concepts they are intended to reflect" (105).)
 
 <br>
 
-### What does it mean to say an instrument is "reliable"?
+**What does it mean to say an instrument is "reliable"?**
+
 - (How stable are the results of our instrument?)
+
 - Would different coders produce the same result using your instrument to measure the same case?
+
+<br>
+
+**SLIDE**: The typical way these concepts are presented in methods books
 
 :::
 
@@ -224,24 +337,31 @@ Instrumentation is when you decide HOW you are going to measure the concept.
 
 <br>
 
-### If you were choosing a measure, how would you rank these from best to worst? Why?
+**If you were choosing a measure, how would you rank these from best to worst? Why?**
 
 - Left column is BAD
+
     - Validity is key. 
+
     - If you aren't measuring the idea you are targeting the results are meaningless.
 
 - So, aim for the right column and work hard to move from top-right to bottom-right!
+
     - Assuming you have two valid measures, reliability helps you choose between them!
 
 <br>
 
-### Did the readings make sense on these points?
+**Did the reading make sense on these points?**
 
 <br>
 
 I know there's a ton of complexity in this chapter but you learn research design only by doing research.
 
 - The dense parts will make much more sense as you encounter the specific problems they refer to.
+
+<br>
+
+**SLIDE**: Time to implement!
 
 :::
 
@@ -271,19 +391,21 @@ I know there's a ton of complexity in this chapter but you learn research design
 
 ::: notes
 
-Groups your job now is to develop TWO instruments for your operationalization
+Groups your job now is to develop TWO instruments of "political violence"
 
-1. A nominal measure of your operationalization of "political violence", and 
-2. An ordinal measure of your operationalization of "political violence"
+1. A nominal measure, and 
+
+2. An ordinal measure
 
 <br>
 
-### Per the reading, what is a nominal measure?
-- ("...provides the least information about phenomena; it gives only a set of discrete categories to use in distinguishing between cases" (95).)
+**Per the reading, and your work in Data Analysis, what is a nominal measure?**
 
-- ("Using nominal measurement is simply a way of sorting cases into groups designated by the names used in a classificatory scheme" (95).)
+- A measure whose levels represent categories (e.g. race, nationality, party ID)
 
-- e.g. nationality
+- "...provides the least information about phenomena; it gives only a set of discrete categories to use in distinguishing between cases" (95).
+
+- "Using nominal measurement is simply a way of sorting cases into groups designated by the names used in a classificatory scheme" (95).
 
 <br>
 
@@ -321,9 +443,11 @@ Groups your job now is to develop TWO instruments for your operationalization
 
 **Per the reading, what is an ordinal measure?**
 
-- ("...allows us to both categorize and to order, or rank, phenomena. ... With ordinal measurement we can say which cases have more (or less) of the measured quality than other cases, and we can rank cases in the order of how much of the quality they exhibit" (95).)
+- Levels are categories, like nominal, but these categories can be put in order from lowest to highest
 
-- e.g. social class: lower, middle or upper class
+- e.g. income quartiles, social class, level of agreement, etc
+
+- "...allows us to both categorize and to order, or rank, phenomena. ... With ordinal measurement we can say which cases have more (or less) of the measured quality than other cases, and we can rank cases in the order of how much of the quality they exhibit" (95).
 
 <br>
 
@@ -361,37 +485,41 @@ Groups your job now is to develop TWO instruments for your operationalization
 
 Ok, groups, time for the instrumentation stage.
 
-- Take some time to instrument your operationalization of "political violence."
+- Take some time to develop two instruments of "political violence" based on your operational definitions
 
 - In a few minutes we will test your instruments out!
 
 <br>
 
-### Questions?
+**Questions?**
 
 - Upload your instruments on on the spreadsheet
 
 <br>
 
-### Groups, talk us through your instruments.
+**Groups, talk us through your instruments.**
 
-### - What are the biggest sources of error in your instruments?
+- **What do you like about your instrument and what feels unsatisfying?**
 
 <br>
 
-Ok, let's test out what you've built.
+Let's now test what you've built.
 
 + I'm going to present you with a series of cases.
 
-+ I want you to measure each case using your instruments.
-
-+ You will add your measurement to our spreadsheet.
-
-### Any questions before we start?
++ Your job will be to discuss each case as a group, then record your measurement on our shared spreadsheet
 
 <br>
 
-**Save discussion for the end, just focus on coding cases to let the groups find their groove**
+**Any questions before we start?**
+
+<br>
+
+Ok, time to test these out!
+
+- Important: We will save discussion of each case as a class until the end
+
+- GROUPS focus on coding each case using your instrument
 
 :::
 
@@ -410,6 +538,7 @@ Ok, let's test out what you've built.
 Case 1: A peaceful protest is dispersed by soldiers ordered by the government to clear the streets.
 
 - Rubber bullets and tear gas are used.
+
 - No deaths reported, scattered reports of injuries.
 
 :::
@@ -571,25 +700,25 @@ Case 8: Disruptive but explicitly non-violent protests, e.g. a sit-in, that prev
 
 First, let's talk about your instruments.
 
-### Groups: Focusing just on your measures, are you convinced your instrument is valid? Why or why not?
+**Groups: Focusing just on your measures, are you convinced your instrument is valid? Why or why not?**
 
 <br>
 
-### Groups: Focusing just on your measures, are you convinced your instrument is reliable? Why or why not?
+**Groups: Focusing just on your measures, are you convinced your instrument is reliable? Why or why not?**
 
 <br>
 
-### Given this work, would any group like to refine either their operationalization or instrumentation? Why or why not?
+**Given this work, would any group like to refine either their operationalization or instrumentation? Why or why not?**
 
 <br>
 
 Now let's talk about the cases.
 
-### A priori, do you believe all of these things are forms of political violence? Why or why not?
+**A priori, do you believe all of these things are forms of political violence? Why or why not?**
 
-#### - Which cases had the most consistent measures? Does that make sense?
+- **Which cases had the most consistent measures? Does that make sense?**
 
-#### - Which cases led to the most conflicted measures? Make sense?
+- **Which cases led to the most conflicted measures? Make sense?**
 
 :::
 
@@ -633,26 +762,31 @@ Now let's talk about the cases.
 
 Ok, big question.
 
-### Based on your work this week, is it possible to measure "political violence" without including error (uncertainty) in your conclusions?
+**Based on your work this week, is it possible to measure "political violence" without including error (uncertainty) in your conclusions?**
+
 - (Nope, but we hope it can be minimized!)
 
 <br>
 
 We cannot study any concept without introducing error.
+
 - It is a huge leap moving from concept to operationalization
+
     - Forces you to make many assumptions.
 
 - It is a huge leap from operationalization to measurement.
+
     - Many more assumptions and trade-offs in the process of designing an instrument.
 
 <br>
 
 This means that the only way to learn something from someone else's work is think carefully about their process.
+
 - This is why peer-reviewed research is so valuable.
 
 - If the choices aren't transparent, the results are basically meaningless.
 
-### Make sense?
+- **Does that make sense?**
 
 <br>
 
@@ -662,12 +796,13 @@ To me this means that anytime we hear someone making an argument about political
 
 - Being a credible expert means identifying the assumptions and understanding the costs and benefits of each choice.
 
-### Make sense?
+- **Does that make sense?**
 
 <br>
 
-### Bottom line, what have you learned about the concept "political violence" from our work this week? What are the key takeaways so far?
+**Bottom line, what have you learned about the concept "political violence" from our work this week?**
 
+- **What are the key takeaways so far?**
 
 :::
 
@@ -677,17 +812,27 @@ To me this means that anytime we hear someone making an argument about political
 
 <br>
 
-Weber, M. (1946). Politics as Vocation. In H. H. Gerth & C. W. Mills (Eds.), *Max Weber: Essays in Sociology* (pp. 77–128). New York: Oxford University Press.
+1. Read Weber (1946). Politics as Vocation. 
 
-- Submit analysis to Canvas
+2. Submit analysis of Weber's argument to Canvas
+
+    - If needed: Review FLS chapter 2 on modeling outcomes
+
+
 
 ::: notes
 
-Reading and Canvas submission
+**Questions?**
 
 <br>
 
-### Questions?
+Canvas Assignment: Diagramming Weber's (1946) Argument
+
+What is Weber's model of political violence? In other words, who are the interests and what are the institutions and interactions that explain the state's use of violence within its own borders.
+
+- Please use complete sentences and identify at least one interest, institution AND interaction (minimum three items).
+
+- If you need a refresher on this approach to modeling please review the FLS chapter on the Modules page.
 
 :::
 

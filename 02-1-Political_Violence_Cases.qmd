@@ -33,6 +33,8 @@ Prep for Class
 
 2. Prep Google sheet and publish it on Canvas Module for this week
 
+3. Open the Google sheet on laptop so you can add variables and clean up errors as they work
+
 <br>
 
 Welcome back everybody!
@@ -56,17 +58,50 @@ Welcome back everybody!
 
 Last week we focused primarily on these two concepts.
 
-- This meant spending time unpacking your prior knowledge about each concept and exploring the roots of them.
+- We did some readings, talked current events and ran a few simulations
 
-- As social scientists, our job is to explain behavior and the argument I am developing for you is that we cannot understand the former without thinking carefully about the latter.
+- Let's refresh our memories
+
+<br>
+
+**How are we doing so far in defining "political violence"?**
+
+- **Key takeaways so far?**
 
 <br>
 
-With that in mind, talk to me about the concept of strategy.
+**What is the BIG assumption I am asking you to utilize this semester for studying political violence?**
 
-### What were your takeaways from the Freedman book chapters and the simulations we ran in class?
+- (Violence is a political strategy by rational, goal-seeking actors)
 
 <br>
+
+**What about strategy?**
+
+- **What were your takeaways from the Freedman book chapters and the simulations we ran in class?**
+
+<br>
+
+**SLIDE**: Freedman takeaways
+
+:::
+
+
+
+## Freedman (2013) on Strategy {background-image="Images/background-red.png" .center}
+
+<br>
+
+::: {.r-fit-text}
+
+Strategy is [**fundamental**]{style="color:darkblue;"} to the social world
+
+<br>
+
+Politics in [**everything**]{style="color:darkblue;"}
+:::
+
+::: notes
 
 Freedman's big argument in his book is that strategy is fundamental to the social world
 
@@ -123,13 +158,13 @@ Time for you to reach way back to your in intro classes and tell me:
 
 **Scientific Method**
 
-- Goal is inference
+- A method, not a subject
 
-- Procedures are public 
+- Goal is inference
 
 - Uncertain conclusions
 
-- Content is method
+- Procedures are public 
 
 :::
 
@@ -141,16 +176,23 @@ Time for you to reach way back to your in intro classes and tell me:
 
 ::: notes
 
-**What does inference mean?**
+I don't mean to pretend this is a comprehensive definition of "science"
 
-- ("a conclusion reached on the basis of evidence and reasoning.")
-    - Thanks Google!
-
-- (Also refers to our effort to draw conclusions about the wider population based on analyzing a sample of it)
+- Better to think of these as the hallmarks of "good" science.
 
 <br>
 
-**Why must your "procedures" be "public"?**
+**What does it mean to say that science is a "method" and not a "subject"?**
+
+- "Science" is not a subject, it is a description for how we study any subject
+
+<br>
+
+**What does it mean to say that the goal of science is inference?**
+
+- ("a conclusion reached on the basis of evidence and reasoning.")
+
+- (Also refers to our effort to draw conclusions about the wider population based on analyzing a sample of it)
 
 <br>
 
@@ -158,15 +200,23 @@ Time for you to reach way back to your in intro classes and tell me:
 
 - (ALL OF THEM)
 
+- ALL scientific knowledge is uncertain meaning it is measured with error and we spend most of our time trying to reduce the error
+
 <br>
 
-**What does "content is method" mean?**
+**Why must your "procedures" be "public"?**
 
-- "Science" is not a subject, it is a description for how we study any subject
+- Tied to the above
+
+- Your conclusions have error so much of the value comes from being completely transparent about what you did to reach them!
 
 <br>
 
 **Questions?**
+
+<br>
+
+**SLIDE**: Tying it all together!
 
 :::
 
@@ -180,9 +230,11 @@ Time for you to reach way back to your in intro classes and tell me:
 
 So, our aim this semester is to generate "conclusions" about "political violence" using the principles of the scientific method.
 
+- The hope is that we learn to better describe what "political violence" is AND to develop theories of why it happens.
+
 <br>
 
-**SLIDE**: That makes our goal inference, and inference means we need data!
+**SLIDE**: That makes our method inference, and inference means we need data!
 
 :::
 
@@ -226,7 +278,12 @@ ggplot(data = d1a, aes(x = x, y = y)) +
 
 The good news is, everybody brought case study evidence to class today.
 
-### Are the cases you brought to class "data"? Why or why not?
+- So, now let's reach back into your research design coursework!
+
+<br>
+
+**Are the cases you brought to class "data"? Why or why not?**
+
 - (Sure. Kind of!)
 
 <br>
@@ -239,7 +296,22 @@ Empirical data is information acquired through observation.
 
 <br>
 
-### So, what is our next step in converting those observations into data we can analyze?
+**Are these cases "good" data? Why or why not?**
+
+- (Unfortunately, no...)
+
+- A collection of anecdotes is not data
+
+- Generating good data requires thinking carefully about case selection in order to avoid the many, many problems we reviewed in Political Inquiry and Data Analysis
+
+<br>
+
+Despite that, these anecdotes remain useful for helping us organize our prior understandings of political violence!
+
+<br>
+
+**So, what is our next step in converting those observations into data we can analyze?**
+
 - (**SLIDE**: Measurement!)
 
 :::
@@ -310,15 +382,25 @@ THIS is why science forces us to acknowledge that all conclusions are uncertain
 
 So, even if your interest is simply in doing descriptive scientific analyses of political violence...
 
-- e.g. How much political violence in State X or State X is much more violent toward its citizens than State Y
+- e.g. How much political violence in State X?
+
+- e.g. How much more violent is State X than State Y?
+
+<br>
 
 You HAVE to think critically about where your data comes from!
 
 <br>
 
-This is the level you will be working on in the first two papers in this class.
+Learning to think about the world in terms of measurement and data is level 1 of science
 
-- Descriptions analyzed both for what they show and the uncertainty they contain.
+- This is a SUPER important step for developing expertise in a subject
+
+- Forcing yourself to apply this understanding to ALL areas of your life will do you immeasurable good!
+
+<br>
+
+**SLIDE**: But we are also interested in doing level 2 science in this class!
 
 :::
 
@@ -362,11 +444,11 @@ Now, here's the deal.
 
 - Descriptive scientific analyses are important and very useful, HOWEVER...
 
-- Our secod goal is to develop an understanding of WHY these descriptions are happening.
+- Our second goal is to develop an understanding of WHY these things are happening.
 
 <br>
 
-"Nature" here represents the actual process in the world that creates the outcomes we are interested in.
+"Nature" here represents the actual processes in the world that create the outcomes we are interested in.
 
 - Includes all the complexity of the world that combines to result in something.
 
@@ -376,24 +458,35 @@ The ultimate goal of science is to develop models of these natural processes!
 
 - Models are simplifications of reality designed to allow us to better understand the natural mechanisms that make the outcomes we are interested in.
 
-<br>
+- e.g. gravity, evolution, neorealism, etc
 
-### Name me an example of a scientific model you've heard of!
-- Natural sciences: Gravity, evolution, ...
-- IR: Neorealism: States are first and foremost motivated by a desire to survive.
-- Americanists: Ponder on leverage! Presidential "power" is greatest when personal approval is higher than general trust in government
+- All represent simple explanations for WHY things happen
 
 <br>
 
-Oversimplified, our aim is to use data to learn about the world of political violence
+Our work this semester is to develop our expertise in political violence
 
-- Doing that requires thinking carefully about where our data comes from BOTH in terms of the natural processes that underpin them AND our attempts to measure the world we observe.
+- This will mean recognizing that ALL our data looks the way it does because of:
+
+1. some natural processes we don't understand, AND 
+
+2. we observe the world using imperfect measurements
 
 <br>
 
-### Does all of that make a vague sort of sense?
+**Everybody with me on all this?**
 
-- We'll work through this process a bit this week and that should help!
+- **Any questions or clarifications needed?**
+
+<br>
+
+Bottom line, thinking like a scientist means never being absolutely confident in your conclusions
+
+- Being a scientist means knowing your conclusions depend on something that is unknowable being measured by something you know is imprecise!
+
+<br>
+
+**SLIDE**: Let's practice!
 
 :::
 
@@ -401,7 +494,17 @@ Oversimplified, our aim is to use data to learn about the world of political vio
 
 ## For Today {background-image="Images/00-Leviathan_Cover_55.png" .center}
 
-![](Images/01_2-Assignment.png)
+<br>
+
+::: {.r-fit-text}
+
+**Find us a Recent Act of Political Violence**
+
+1. APA formatted citation, and
+
+2. Explain the case
+
+:::
 
 ::: notes
 
@@ -452,6 +555,8 @@ Review all the citations.
 <br>
 
 ### 1. What is the specific act in your case?
+
+- Actor X did action Y to actor Z on this date…
 
 ::: notes
 
@@ -621,13 +726,30 @@ Ok, go!
 
 <br>
 
-Tilly, C. (2003). Varieties of Violence. In *The Politics of Collective Violence* (pp. 1–25). Cambridge, UK: Cambridge University Press.
+::: {.r-fit-text}
+
+1. Tilly, C. (2003). Varieties of Violence.
+
+2. Submit a reflection on Canvas
+
+:::
 
 ::: notes
 
 Excellent work, keep these in mind and will pick up the exercise on Wednesday.
 
 - Read the Tilly chapter on violence and see if that alters your thinking about the concepts we started working on today.
+
+- Then answer the questions in the pre-class assignment on Canvas.
+
+<br>
+
+Canvas Assignment: Evaluating Tilly's (2003) Definition of "Collective Violence"
+
+1. How does Tilly define "collective violence"? e.g. what are the key characteristics of of an event meeting this definition?
+
+2. How does Tilly's concept and definition contrast with our work defining "political violence" in the last class?
+
 
 :::
 
