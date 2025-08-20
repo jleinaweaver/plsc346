@@ -14,11 +14,7 @@ library(kableExtra)
 
 **II. How and why do governments use violence against the people inside their borders?**
 
-::: {.r-fit-text}
-
 - Analyzing Olson's (1993) Answer
-
-:::
 
 <br>
 
@@ -50,13 +46,17 @@ Today we continue our discussion of the theoretical roots of violence and the st
 
 ## Weber's (1918/1946) Model {background-image="Images/background-desert_rock-Filtered50.png" .center}
 
+**Interests**
+
 - Politicians want to [**expropriate**]{style="color:red;"} value and increase their [**power**]{style="color:red;"}
+
+**Institutions**
 
 - The state [**monopolizes**]{style="color:red;"} the [**legitimate use of force**]{style="color:red;"}
 
-- To maintain control, leaders must ensure mass [**obedience**]{style="color:red;"} from the people and the administrative state
+**Interactions**
 
-Therefore, the state is a [**compulsory**]{style="color:red;"} association of organized [**domination**]{style="color:red;"}
+- To maintain control, leaders must ensure mass [**obedience**]{style="color:red;"} from the people and the administrative state
 
 ::: notes
 
@@ -64,19 +64,33 @@ According to Weber, the state IS violence
 
 - Without violence there is no state
 
+<br>
+
 This means thinking of violence as a tool somewhat misses the point.
 
 - Fish gotta swim, man's gotta breathe and states exist only so long as they control and use violence.
 
 <br>
 
-### In what specific ways is this a useful model of political violence? And in what specific ways does it make bad predictions?
+Ok, where do we stand on this model?
+
+1. **Is it logical?**
+
+2. **When does it make good predictions? Examples?**
+
+3. **And when does it make bad predictions? Examples?**
 
 <br>
 
-The problem is that this model predicts violence (expropriation or physical harm) in basically every circumstance.
+**On balance, is Weber's model convincing as a map of state political violence? Why or why not?**
 
-- While the model may be simple, intuitive and somewhat elegant, it's quite limited for explaining actual variation in the world.
+<br>
+
+My problem with Weber is that this model predicts violence (expropriation or physical harm) in basically every circumstance.
+
+<br>
+
+While the model may be simple, intuitive and somewhat elegant, it's quite limited for explaining actual variation in the world.
 
 :::
 
@@ -100,7 +114,9 @@ The reading I gave you for today gives us an alternative model for thinking abou
 
 Olson wants us to see the leaders of states as actors pursuing goals who can use violence to achieve their aims.
 
-- I feel strongly that this is an important evolution in explaining and understanding political violence by governments.
+<br>
+
+I feel strongly that this is an important evolution in explaining and understanding political violence by governments.
 
 :::
 
@@ -114,10 +130,15 @@ Quick aside: I love this article.
 
 - This was one of those readings I did as a grad student that helped me immeasurably in helping me learn to think like a social scientist.
 
-- First, this was one of the first articles where I was really able to see the connection between theory and the world I live in.
+<br>
 
-- Second, it helped me understand how limited my view of countries as discrete "types" of regime was.
-    - Thinking of countries as a dichotomous regime type (e.g. Democracy or dictatorship) hides more important variation than it reveals
+First, this was one of the first articles where I was really able to see the connection between theory and the world I live in.
+
+<br>
+
+Second, it helped me understand how limited my view of countries as discrete "types" of regime was.
+
+- Thinking of countries as a dichotomous regime type (e.g. Democracy or dictatorship) hides more important variation than it reveals
 
 <br>
 
@@ -127,9 +148,9 @@ Olson is challenging us to recognize that **ALL** governments aim to organize a 
 
 <br>
 
-### Ok, where does Olson start? 
+**Ok, where does Olson start?**
 
-#### - What is the key variation in the world he is trying to explain?
+- **What is the key variation in the world he is trying to explain?**
 
 - (**SLIDE**)
 
@@ -154,11 +175,16 @@ Olson is challenging us to recognize that **ALL** governments aim to organize a 
 # d2 <- read_excel("../../Data/WDI/WDI-GDP-2018_2021-11-30.xlsx", na = "NA")
 
 # # Focus on V-Dem electoral democracy index (polyarchy); it is foundational to all five of their indicies
-d1 <- read_excel("../../Data/V-Dem/V-Dem-CY-Core_csv_v13/V_Dem_High_Level_Democracy_Indices.xlsx", na = "NA") |>
-  filter(year == 2022) |>
+d1 <- read_excel("../../Data/V-Dem/2025-Fall-Class/V_Dem_High_Level_Democracy_Indices.xlsx", na = "NA") |>
+  filter(year == 2023) |>
   select(country_name:v2x_polyarchy)
 
-d2 <- read_excel("../../Data/WDI/WDI-GDP-2021_2023-08-01.xlsx", na = "NA")
+d2 <- read_excel("../../Data/WDI/WDI-GDP-2023_2025-08-20.xlsx", na = "NA") |>
+  select(year = Time,
+         country = `Country Name`,
+         country_code = `Country Code`,
+         gdp = "GDP (current US$) [NY.GDP.MKTP.CD]",
+         gdp_pc = "GDP per capita (current US$) [NY.GDP.PCAP.CD]")
 
 # ## Classify V-Dem
 d1a <- d1 |>
@@ -183,11 +209,11 @@ d2a <- d2 |>
 ## Match and merge v-dem to WB data
 # d1a$wb_code <- countrycode::countrycode(d1$ccode, origin = "p4n", destination = "wb")
 
-d <- right_join(d1a, d2a, by = c("country_text_id" = "code"))
+d <- right_join(d1a, d2a, by = c("country_text_id" = "country_code"))
 
 ## Build a series of visualizations
 
-# Map of GDP pc in 2018
+# Map of GDP pc
 # install libudunits2-dev and libgdal-dev in synaptic
 library(sf)
 library(rnaturalearth)
@@ -206,7 +232,7 @@ d10 <- left_join(worldmap, d, by = c("adm0_a3" = "country_text_id"))
 d10 |>
   ggplot() +
   geom_sf(aes(fill = gdp_pc_cat)) +
-  labs(fill = "", title = "GDP per capita (2022 USD)") +
+  labs(fill = "", title = "GDP per capita (2023 USD)") +
   theme(legend.position = "bottom") +
   scale_fill_viridis_d(direction = -1, begin = .5)
 ```
@@ -219,7 +245,7 @@ Economic development
 
 <br>
 
-Here we see a map of GDP per capita levels in 2022 (most recently published by WB)
+Here we see a map of GDP per capita levels in 2023 (most recently published by WB; 2024 is still incomplete)
 
 - Data taken from the WB's WDI database
 
@@ -229,17 +255,17 @@ Here we see a map of GDP per capita levels in 2022 (most recently published by W
 
 <br>
 
-### What do we learn from this map?
+**What do we learn from this map?**
 
 <br>
 
-### Is this map's results consistent with your prior knowledge / intuitions about democracy around the world?
+**Is this map's results consistent with your prior knowledge / intuitions about the countries of the world?**
 
 <br>
 
-### Ok now, and most relevant for our work this week, what is the key predictor Olson is focusing on to explain these differences?
+**Ok now, and most relevant for our work this week, what is the key predictor Olson is focusing on to explain these differences?**
 
-(**SLIDE**)
+- (**SLIDE**)
 
 :::
 
@@ -248,7 +274,7 @@ Here we see a map of GDP per capita levels in 2022 (most recently published by W
 ## {background-image="Images/00-Leviathan_Cover_55.png" .center}
 
 ```{r, fig.retina=3, fig.align='center', out.width='100%', fig.height=5, fig.width=8, cache=FALSE}
-# Map of polyarchy in 2022
+# Map of polyarchy in 2023
 d10 |>
   mutate(
     poly4 = case_when(
@@ -260,7 +286,7 @@ d10 |>
   ) |>
   ggplot() +
   geom_sf(aes(fill = poly4)) +
-  labs(fill = "", title = "Polyarchy Scores (2022)",
+  labs(fill = "", title = "Polyarchy Scores (2023)",
        subtitle = "Degree of Electoral Democracy") +
   theme(legend.position = "bottom") +
   scale_fill_manual(values = c("red", "orange", "skyblue3", "dodgerblue3"))
@@ -286,6 +312,7 @@ d10 |>
 ::: notes
 
 Regime Type
+
 - Measuring "regime type" is incredibly difficult.
 
 - All the same challenges we encountered last week in operationalizing and instrumenting "political violence."
@@ -305,11 +332,11 @@ Here we see data compiled by the V-Dem Project that aims to measure the degree o
     
 <br>
 
-### What do we learn from this map?
+**What do we learn from this map?**
 
 <br>
 
-### Is this map's results consistent with your prior knowledge / intuitions about democracy around the world?
+**Is this map's results consistent with your prior knowledge / intuitions about the countries around the world?**
 
 <br>
 
@@ -326,7 +353,7 @@ Let's combine these two pieces of data and see if that helps us understand the p
 p1 <- ggplot(data = d, aes(x = v2x_polyarchy, y = gdp_pc)) +
   scale_y_log10(breaks = c(1e3, 1e4, 1e5), labels = c("$1k", "$10k", "$100k")) +
   theme_bw() +
-  labs(x = "V-Dem Polyarchy", y = "GDP per capita (2022 USD)")
+  labs(x = "V-Dem Polyarchy (2023)", y = "GDP per capita (2023 USD)")
 
 p1
 ```
@@ -371,6 +398,7 @@ p1 +
 ::: notes
 
 Here we see a loess line applied to these data points
+
 - LOESS is locally weighted smoothing
 
 - In other words, allow the line to find the average of each couple of points
@@ -379,7 +407,7 @@ Here we see a loess line applied to these data points
 
 <br>
 
-### What does this suggest about the relationship between regime type and economic development?
+**What does this suggest about the relationship between regime type and economic development?**
 
 - (**SLIDE**: The extremes are richest!)
 
@@ -417,9 +445,11 @@ It appears from this that the richest states in the world are either very democr
 
 This is the observation that helps to drive home Olson's theoretical argument AND what connects his paper to our questions about violence.
 
-### Somebody take a stab, how does this plot connect Olson's paper on economic development to our work on political violence?
+<br>
 
-(**SLIDE**)
+**Somebody take a stab, how does this plot connect Olson's paper on economic development to our work on political violence?**
+
+- (**SLIDE**)
 
 :::
 
@@ -1344,7 +1374,13 @@ There's so much more to explore in this paper but there's no way we haven't run 
 
 <br>
 
-![](Images/03_2-Assign_for_Monday.png)
+Find us TWO real world examples of state governments using violence against the people inside their territory.
+
+- One from a democracy and one from a dictatorship
+
+- Must be specific events (e.g. action X on date Y)
+
+- No overlap!
 
 ::: notes
 
@@ -1363,6 +1399,28 @@ For each case, submit an APA citation and brief explanation of what you selected
 <br>
 
 **You can claim your two countries using the shared Google spreadsheet on our Canvas Module for next week**
+
+<br>
+
+Canvas Discussion: Governments Using "Political Violence"
+
+Find us TWO real world examples of state governments using violence against the people inside their territory. One example should come from a country you consider to be more "democratic" and one from a country you consider to be more "autocratic." Your examples should be specific events (e.g. action X on date Y) rather than broad generalizations (country X harms group Y). No overlap in events OR countries!
+
+For EACH example submit the following:
+
+1. Country name
+2. Is this the more "democratic" or "autocratic" example? Explain your categorization (2+ sentences)
+3. APA citation to the event
+4. A brief explanation of the event you selected and why you selected it (3+ sentences)
+
+```{r, eval=FALSE}
+# Pull vdem list
+d1 |>
+  arrange(desc(v2x_polyarchy)) |>
+  select(country_name, year, v2x_polyarchy) |>
+  write_excel_csv("2023-polyarchy.csv")
+
+```
 
 :::
 

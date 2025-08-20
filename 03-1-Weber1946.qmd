@@ -84,7 +84,7 @@ It's not always so clean, but let's assume for the moment section 23 is the conc
 
 The state is:
 
-- a "compulsory association which organizes [**domination**]{style="color:red;"}"
+- a "[**compulsory**]{style="color:red;"} association which organizes [**domination**]{style="color:red;"}"
 
 - **aka** [**organized violence**]{style="color:red;"}
 
@@ -547,7 +547,7 @@ H3: Mass public violates a rule (disobedience) ->
 
 **Institutions**
 
-- The state [**monopolizes**]{style="color:red;"} the [**legitimate use of force**]{style="color:red;"}
+- The state [**monopolizes**]{style="color:red;"} and [**defines**]{style="color:red;"} the legitimate use of force
 
 **Interactions**
 
@@ -573,11 +573,11 @@ The institutions here are fascinating and VERY dark
 
 - Rule 2: Whoever controls "the state" DEFINES what is legitimate violence in its own territory
 
-- **These are terrifying assumptions, but do you think they accurately explain what we see in the world? Why or why not?**
+- These are terrifying assumptions
 
 <br>
 
-**SLIDE**: Let's use an example to talk about the interactions
+**SLIDE**: Let's unpack the interactions for a moment
 
 :::
 
@@ -588,12 +588,6 @@ The institutions here are fascinating and VERY dark
 ![](Images/05_1-kent_state_soldiers.jpg){style="display: block; margin: 0 auto"}
 
 ::: notes
-
-**According to Weber's model, when and how should violence be likely in society?**
-
-- (Anytime the state feels its hold on power being threatened?)
-
-<br>
 
 **Anybody recognize this photo?**
 
@@ -615,7 +609,14 @@ The institutions here are fascinating and VERY dark
 
 <br>
 
-**SLIDE**: Back to the interactions
+According to Weber's model, the state should use violence anytime it feels its hold on power being threatened
+
+- Even if the threat is explicitly non-violent or small or done by a vulnerable population.
+
+<br>
+
+
+**SLIDE**: Back to the model
 
 :::
 
@@ -641,21 +642,23 @@ So, Weber defines the modern state like this.
 
 <br>
 
-Let's evaluate this argument as our model of state violence.
-
-- **What are the strengths and weaknesses of this model?**
-
-- *DISCUSS*
-
-<br>
-
-Weber is not just claiming that political violence is a tool of the state he is arguing violence is the state.
+Weber is not just claiming that political violence is a tool of the state he is arguing the state IS violence.
 
 - This is a huge conclusion
 
+- So, what do you think of this model?
+
 <br>
 
-**How would adopting this as your model of politics impact the way you behave in our society?**
+**FIRST, is it logical? Why or why not?**
+
+<br>
+
+**SECOND, is it able to explain outcomes in the real-world? Why or why not?**
+
+<br>
+
+**If this is your primary model of political violence, how would that impact your day-to-day decision-making as an individual? Would it?**
 
 - *Force this discussion*
 
@@ -665,13 +668,13 @@ Weber is not just claiming that political violence is a tool of the state he is 
 
 **Could a model like this be a self-fulfilling prophecy?**
 
-- **In other words, does operating like this force the state and our fellow citizens onto a more violent path?**
+- **Does assuming the state IS violence lead one to behave more violently thus inspiring more violence from the government?**
+
+<br>
+
+**SLIDE**: Let's go back to our definitions of politics from Week 1
 
 :::
-
-
-
-
 
 
 
@@ -680,13 +683,21 @@ Weber is not just claiming that political violence is a tool of the state he is 
 
 ::: notes
 
-**Ultimately, are we now convinced that our definitions of politics from week 1 are missing something important if they do not explicitly discuss the central role of violence in politics?**
+Think about Weber's argument.
 
-- **Why or why not?**
+- **Would Weber argue that we have defined politics in a useful way? What would he say we are missing?**
+
+- (No reference to violence...)
 
 <br>
 
-### Give it a shot, how could we redefine "politics" to include violence?
+**Are you persuaded that a useful definition of politics requires a reference to violence? Why or why not?**
+
+<br>
+
+**Give it a shot, how could we redefine "politics" to include violence?**
+
+- **Does that make the concept more useful or change its meaning entirely?**
 
 :::
 
@@ -698,14 +709,16 @@ Weber is not just claiming that political violence is a tool of the state he is 
 
 Olson, Mancur. (1993). Dictatorship, Democracy, and Development. *The American Political Science Review*. 87(3): 567–76.
 
-- Submit analysis to Canvas
+- Submit model diagram to Canvas
 
 ::: notes
 
 An alternative model explaining the state and violence!
 
+- Read it and then submit your best diagram of the model in terms of interests, institutions and interactions
+
 <br>
 
-### Questions?
+**Questions?**
 
 :::
