@@ -14,11 +14,8 @@ library(kableExtra)
 
 **II. How and why do governments use violence against the people inside their borders?**
 
-::: {.r-fit-text}
-
 - Analyzing Weber's (1946) Answer
 
-:::
 
 <br>
 
@@ -30,6 +27,8 @@ Justin Leinaweaver (Fall 2025)
 Prep for Class
 
 1. Review Canvas submissions
+
+2. Bring markers x 4
 
 <br>
 
@@ -79,11 +78,17 @@ It's not always so clean, but let's assume for the moment section 23 is the conc
 
 ## Weber (1918/1946) {background-image="Images/background-desert_rock-Filtered50.png" .center}
 
-### The state is a "compulsory association which organizes domination"
+<br>
 
-aka
+::: {.r-fit-text}
 
-### The state [**IS**]{style="color:red;"} violence
+The state is:
+
+- a "compulsory association which organizes [**domination**]{style="color:red;"}"
+
+- **aka** [**organized violence**]{style="color:red;"}
+
+:::
 
 ::: notes
 
@@ -301,11 +306,19 @@ Einstein comes along with a new model of relativity that makes assumptions that 
 
 <br>
 
-Bottom line, both models are technically wrong, but useful!
+Then comes Stephen Hawking who tries to combine elements of Einstein's relativity with quantum mechanics and uses that to explain more of the universe!
 
 <br>
 
-### Questions on this?
+Bottom line
+
+1. ALL models are wrong, but some of them are useful
+
+2. We use the scientific method to develop better models over time
+
+<br>
+
+**Questions on this?**
 
 :::
 
@@ -337,20 +350,25 @@ Bottom line, both models are technically wrong, but useful!
 
 This speech by Weber represents our first model of state violence.
 
-- It represents a map designed to explain how and why the state would use violence against the people living in its territory
+<br>
+
+It represents a map designed to explain how and why the state would use violence against the people living in its territory
 
 - Like any map it includes some features of the world and excludes ALL the rest.
-    - e.g. the actors, institutions and interactions in the system
 
 <br>
 
-So, here's the deal: Since **ALL** maps and models are **WRONG**, our job is to find and prefer the useful ones!
+Our job is to evaluate the usefulness of this model
 
-- A useful model must be 1) **logical**, and 2) it must make **accurate predictions** about the world.
+1. We must first check to see if it is **logical**, and
+
+2. then if it makes **accurate predictions** about the world
 
 <br>
 
-**SLIDE**: To determine either of those things in this case we first need to identify the key elements in the model!
+Let's start by clarifying what the components of this model are
+
+- **SLIDE**:  e.g. what's in this map?
 
 :::
 
@@ -361,13 +379,11 @@ So, here's the deal: Since **ALL** maps and models are **WRONG**, our job is to 
 ::: {.r-fit-text}
 **Frieden, Lake and Schultz (2016)**
 
-<br>
+- Interests
 
-- Who are the interests?
+- Institutions
 
-- What are the institutions?
-
-- What are the interactions?
+- Interactions
 :::
 
 ::: notes
@@ -378,24 +394,39 @@ This semester we will continue to use the general three-part framework for analy
 
 <br>
 
-### Per FLS, what are interests?
-- "…[The] preferences of actors over the possible outcomes that might result from their political choices" (FLS 2016, p45).
-- (The actors central to the model's mechanisms AND what they want)
+In short, we will use these three categories to help us clarify the components of a model 
 
-### What are institutions?
-- ("A set of rules, known and shared by the community, that structure political interactions in particular ways" (FLS 2016, p67).)
-- (The written, or unwritten, rules of the game the actors operate under)
-- What are the important rules that structure the decision-making of the actors you are focusing on?
+- The interests are the actors whose behavior we are trying to explain and what they want
 
-### What are interactions?
-- "The ways in which the choices of two or more actors combine to produce political outcomes" (FLS 2016, p51).
-- (Why can't the actors get what they want? There are other actors on the game board pursuing their own interests and getting in the way!)
-- How does the collision of the interests in a situation complicate things?
-- How do my actions change your options?
+- The institutions are the rules that structure the behavior of those actors
+
+- The interactions represent what happens when all these actors pursue their aims simultaneously
 
 <br>
 
-### Any questions on these elements of a model of politics?
+**Any questions on these elements?**
+
+<br>
+
+*Notes*
+
+**interests**
+
+- The actors central to the model's mechanisms AND what they want
+- "…[The] preferences of actors over the possible outcomes that might result from their political choices" (FLS 2016, p45).
+
+**Institutions**
+
+- What are the important rules that structure the decision-making of the actors you are focusing on?
+- "A set of rules, known and shared by the community, that structure political interactions in particular ways" (FLS 2016, p67).
+- (he written, or unwritten, rules of the game the actors operate under
+
+**Interactions**
+
+- Why can't the actors get what they want? There are other actors on the game board pursuing their own interests and getting in the way!
+- "The ways in which the choices of two or more actors combine to produce political outcomes" (FLS 2016, p51).
+- How does the collision of the interests in a situation complicate things?
+- How do my actions change your options?
 
 :::
 
@@ -406,8 +437,6 @@ This semester we will continue to use the general three-part framework for analy
 ::: {.r-fit-text}
 **Weber (1918/1946)**
 
-<br>
-
 - Who are the interests?
 
 - What are the institutions?
@@ -417,29 +446,32 @@ This semester we will continue to use the general three-part framework for analy
 
 ::: notes
 
-Let's now use these elements to diagram Weber's model of political violence.
+For today I asked each of you to take a stab at diagramming Weber's model before class.
 
-- Caution: This is not an easy argument to disentangle.
-    - This was a speech and he wanted to make a bunch of semi-related points
-    - We want to think about how we might extract a testable model from this
-    - Focus primarily on the first half (up to p7 or so)
+- I get that this reading is a speech and not an academic argument which makes this harder
 
-<br>
-
-ON YOUR OWN (5 mins): Take a few minutes to diagram Weber's model
-
-- ACTUALLY make the lists, write them down.
-- The act of writing forces you to clarify your thinking!
+- BUT, that's what we've got!
 
 <br>
 
-GROUPS (4 groups of 5): 10 mins, argument diagrams on the board!
+*Split class into small groups (4 groups: 5 per?)*
+
+GROUPS, compare notes from the assignment and get your best version of the diagram on the board!
+
+<br>
+
+*PRESENT and DISCUSS each*
+
+<br>
+
+**SLIDE**: My version...
 
 <br>
 
 **My Developing Attempts**
 
 **Interests**
+
 - All Politicians (individuals engaged in politics) want power (the ability to dominate others)
     - Leader wants power to dominate so he'll be obeyed
     - "Professional politicians" of the occasional type want to influence power in the state
@@ -450,6 +482,7 @@ GROUPS (4 groups of 5): 10 mins, argument diagrams on the board!
 *Not sure the people (non-politicians) really show up here...*
 
 **Institutions**
+
 - The state .textred[**monopolizes**] the .textred[**legitimate use of force**]
 - The state centralizes all of the components of domination under a single head (p5)
 - Whoever controls "the state" defines what is legitimate violence in its own territory
@@ -458,6 +491,7 @@ GROUPS (4 groups of 5): 10 mins, argument diagrams on the board!
 - The leader's control of the "personal executive staff and the material implements of administration" are not assured
 
 **Interactions**
+
 - To maintain control leaders must ensure mass .textred[**obedience**] from the people and the administrative state
 - Leaders may use combinations of fear and hope to promote obedience / structure the choices of the people (p2)
     - personal executive staff controlled through material reward and social honor
@@ -505,22 +539,65 @@ H3: Mass public violates a rule (disobedience) ->
 
 
 
+## Weber's (1918/1946) Model {background-image="Images/background-desert_rock-Filtered50.png" .center}
+
+**Interests**
+
+- Politicians want to [**expropriate**]{style="color:red;"} value and increase their [**power**]{style="color:red;"}
+
+**Institutions**
+
+- The state [**monopolizes**]{style="color:red;"} the [**legitimate use of force**]{style="color:red;"}
+
+**Interactions**
+
+- To maintain control, leaders must ensure mass [**obedience**]{style="color:red;"} from the people and the administrative state
+
+::: notes
+
+I am not claiming this version is "correct"
+
+- This simply represents my best effort to extract the big ideas from the speech as a model of violence
+
+<br>
+
+In terms of the interests, I'm not sure if one of these comes before the other.
+
+- **Is your reading of the speech that politicians want power first assuming wealth will follow, wealth first as a means to hold power or some combination?**
+
+<br>
+
+The institutions here are fascinating and VERY dark
+
+- Rule 1: The state centralizes all of the components of domination under a single head (p5)
+
+- Rule 2: Whoever controls "the state" DEFINES what is legitimate violence in its own territory
+
+- **These are terrifying assumptions, but do you think they accurately explain what we see in the world? Why or why not?**
+
+<br>
+
+**SLIDE**: Let's use an example to talk about the interactions
+
+:::
+
+
+
 ## {background-image="Images/00-Leviathan_Cover_55.png" .center}
 
 ![](Images/05_1-kent_state_soldiers.jpg){style="display: block; margin: 0 auto"}
 
 ::: notes
 
-Let's refocus the thrust of this argument towards answering our BIG question.
+**According to Weber's model, when and how should violence be likely in society?**
 
-### According to Weber's model, when and how should violence be likely in society?
-(Anytime the state feels its hold on power being threatened?)
+- (Anytime the state feels its hold on power being threatened?)
 
 <br>
 
-### Anybody recognize this photo?
+**Anybody recognize this photo?**
 
-(May 4, 1970: Kent State Shootings)
+- (May 4, 1970: Kent State Shootings)
 
 - Kent State students in Ohio holding protest against the Vietnam war (and bombings of Cambodia and presence of soldiers on campus)
 
@@ -530,11 +607,15 @@ Let's refocus the thrust of this argument towards answering our BIG question.
 
 <br>
 
-### How does this photo and case add to our thinking about "threats to the state's power"?
+**How does this photo and case add to our thinking about "threats to the state's power"?**
 
 + (Even an incredibly innocuous threat can result in violence if it challenges the state in ways the state does not approve of.)
 
-+ (Mass obedience required)
++ (Mass obedience is absolutely required)
+
+<br>
+
+**SLIDE**: Back to the interactions
 
 :::
 
@@ -542,43 +623,56 @@ Let's refocus the thrust of this argument towards answering our BIG question.
 
 ## Weber's (1918/1946) Model {background-image="Images/background-desert_rock-Filtered50.png" .center}
 
+**Interests**
+
 - Politicians want to [**expropriate**]{style="color:red;"} value and increase their [**power**]{style="color:red;"}
+
+**Institutions**
 
 - The state [**monopolizes**]{style="color:red;"} the [**legitimate use of force**]{style="color:red;"}
 
-- To maintain control, leaders must ensure mass [**obedience**]{style="color:red;"} from the people and the administrative state
+**Interactions**
 
-Therefore, the state is a [**compulsory**]{style="color:red;"} association of organized [**domination**]{style="color:red;"}
+- To maintain control, leaders must ensure mass [**obedience**]{style="color:red;"} from the people and the administrative state
 
 ::: notes
 
 So, Weber defines the modern state like this.
 
-### Let's evaluate this argument as our model of state violence.
+<br>
 
-#### - What are its strengths and weaknesses?
+Let's evaluate this argument as our model of state violence.
 
-*DISCUSS*
+- **What are the strengths and weaknesses of this model?**
+
+- *DISCUSS*
 
 <br>
 
 Weber is not just claiming that political violence is a tool of the state he is arguing violence is the state.
 
-- This is a huge conclusion and one that, if we accept it as our model of statehood and politics, would likely lead us to some deeply problematic and possibly revolutionary places.
+- This is a huge conclusion
 
 <br>
 
-### How would accepting this as your model of politics impact the way you behave in our society?
+**How would adopting this as your model of politics impact the way you behave in our society?**
 
-*Force this discussion*
+- *Force this discussion*
+
+- If we accept this as our model of statehood and politics it suggests some deeply problematic and possibly revolutionary stakes are involved
 
 <br>
 
-### Could a model like this be a self-fulfilling prophecy?
+**Could a model like this be a self-fulfilling prophecy?**
 
-#### - In other words, does operating like this force the state and our fellow citizens onto a more violent path?
+- **In other words, does operating like this force the state and our fellow citizens onto a more violent path?**
 
 :::
+
+
+
+
+
 
 
 
