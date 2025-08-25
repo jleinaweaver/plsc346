@@ -351,56 +351,49 @@ ggplot(data = d1a, aes(x = x, y = y)) +
 
 ::: notes
 
-In this case I am using "measurement" to represent the work we do:
+"Measurement" here is a big umbrella term including:
 
-- identifying the variables we are interested in, 
+1. Identifying the concepts we are interested in,
 
-- operationalizing those variables, and then 
+2. Producing operational definitions for those concepts,
 
-- producing values for each variable.
-
-<br>
-
-This is an important idea for us to never lose sight of.
-
-- All "knowledge" depends on "data" and all "data" depends on "measurement"
+3. Developing and applying instruments to produce data! 
 
 <br>
 
-THIS is why science requires us to be transparent in our methods
+Big idea: This is the process by which ALL scientific knowledge is developed!
 
-- Without understanding the measurement process the data is almost useless
+- This is not just specific to this class or to the social sciences
 
-<br>
-    
-THIS is why science forces us to acknowledge that all conclusions are uncertain
-
-- Measurement is a human process of converting observations into data
-- There is no "perfect" measurement because all measurement requires making choices.
+- ALL SCIENTIFIC KNOWLEDGE
 
 <br>
 
-So, even if your interest is simply in doing descriptive scientific analyses of political violence...
+Interested in learning about space (e.g. gravity, dark matter, black holes)? Or the development of biological life?
 
-- e.g. How much political violence in State X?
-
-- e.g. How much more violent is State X than State Y?
-
-<br>
-
-You HAVE to think critically about where your data comes from!
+- You have to first decide what to measure, then how to measure, then actually do the measuring!
 
 <br>
 
 Learning to think about the world in terms of measurement and data is level 1 of science
 
-- This is a SUPER important step for developing expertise in a subject
+- Recognizing this is how you develop expertise in a subject
 
-- Forcing yourself to apply this understanding to ALL areas of your life will do you immeasurable good!
+- All empirical observation is created through measurement, and
+
+- ALL measurement is uncertain
+
+- THAT is the first reason all conclusions are uncertain and why we must be transparent in our methods
+
+- Good science makes clear all the ways you could be wrong!
 
 <br>
 
-**SLIDE**: But we are also interested in doing level 2 science in this class!
+**Make sense?**
+
+<br>
+
+**SLIDE**: We are also interested in doing level 2 science in this class!
 
 :::
 
@@ -464,13 +457,11 @@ The ultimate goal of science is to develop models of these natural processes!
 
 <br>
 
-Our work this semester is to develop our expertise in political violence
+Big picture, remember, everything you observe in the world is a combination of the natural processes that pushed it and your own imprecise ability to observe it
 
-- This will mean recognizing that ALL our data looks the way it does because of:
+- Our big aim this semester is to better understand why political violence happens
 
-1. some natural processes we don't understand, AND 
-
-2. we observe the world using imperfect measurements
+- We have to find ways to use our imprecise data to learn about the complex natural processes 
 
 <br>
 
