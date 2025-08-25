@@ -19,11 +19,7 @@ library(countrycode)
 
 **II. How and why do governments use violence against the people inside their borders?**
 
-::: {.r-fit-text}
-
 - The CIRIGHTS Data project
-
-:::
 
 <br>
 
@@ -38,7 +34,7 @@ Prep for Class
 
 <br>
 
-**SLIDE**: Today we continue our work on the first paper...
+**SLIDE**: Today we continue our work exploring the existing data projects that measure political violence
 
 :::
 
@@ -54,6 +50,10 @@ Which **SINGLE** data source would you recommend to someone interested in better
 - **A high quality recommendation** will also make clear **why** you are not recommending the other sources
 
 ::: notes
+
+Don't forget the paper we are building toward!
+
+<br>
 
 **Questions on the prompt?**
 
@@ -95,8 +95,10 @@ Last class we explored the Political Terror Scale (PTS)
 + PTS enables and facilitates comparisons, but not just across countries. Your reports analyze a single country across time which is a comparison exercise. You are comparing your country to itself each year through time!
 
 + BUT as we noted PTS is limited. 
-    + Five point scale but is it safe to assume that holds for all people in the country? White dude watching TV vs LGBTQ+ person in a protest against the government?
-    + PTS focuses pretty narrowly on government violence of a particular type. Leaves out much we might argue is important to measuring political violence.
+
+1. Five point scale but is it safe to assume that holds for all people in the country? White dude watching TV vs LGBTQ+ person in a protest against the government?
+
+2. PTS focuses pretty narrowly on government violence of a particular type. Leaves out much we might argue is important to measuring political violence.
     
 :::
 
@@ -124,7 +126,7 @@ Last class we explored the Political Terror Scale (PTS)
 
 Before we dive into the data we have to evaluate its validity and reliability.
 
-### So, let's begin in this same place we've begun with the other sources, what is the concept the CIRIGHTS project is trying to measure?
+- **So, let's begin in this same place we've begun with the other sources, what is the concept the CIRIGHTS project is trying to measure?**
 
 - (**SLIDE**)
 
@@ -145,6 +147,7 @@ Before we dive into the data we have to evaluate its validity and reliability.
 **And why is this their focus? What is their primary data source?**
 
 - (The US State Department Country Reports on Human Rights Practices!)
+
     - Although, note on p1 that they also use AI reports for the "Personal Integrity Rights" scores
 
 <br>
@@ -159,13 +162,18 @@ As you can see in the codebook's ToC the CIRIGHTS project divides "respect for h
 
 - However, in thinking about your group definitions of political violence...
 
-### Are there other measures listed here that might be useful measures of political violence? Why or why not?
+<br>
 
-### - Maybe an element from the Empowerment Rights Index?
+**Are there other measures listed here that might be useful measures of political violence? Why or why not?**
+
+- **Maybe an element from the Empowerment Rights Index?**
 
 - Foreign Movement, 
+
 - Domestic Movement, 
+
 - Freedom of Speech, 
+
 - Freedom of Assembly & Association, Workers’ Rights, Electoral Self-Determination, and Freedom of Religion indicators
 
 <br>
@@ -182,17 +190,15 @@ As you can see in the codebook's ToC the CIRIGHTS project divides "respect for h
 **Measuring "Physical Integrity Rights" (CIRIGHTS)**
 :::
 
+<br>
+
 :::: {.columns}
 ::: {.column width="50%"}
-**Operationalization**
+**1) Operationalization**
 
-&#8595;
+**2) Instrumentation**
 
-**Instrumentation**
-
-&#8595;
-
-**Measurement**
+**3) Measurement**
 :::
 
 ::: {.column width="50%"}
@@ -208,7 +214,13 @@ As you can see in the codebook's ToC the CIRIGHTS project divides "respect for h
 
 ::: notes
 
-*Split class into 4 groups: One group per measure*
+*Split class into 4 groups*
+
+- Go sit with your group
+
+- *Assign one measure per group*
+
+<br>
 
 GROUPS: Make an argument about the validity and reliability of your assigned measure based on the operationalization, instrumentation and measurement described in the codebook.
 
@@ -251,9 +263,11 @@ Validity and Reliability
 FA23 Class Notes
 
 Strengths
+
 - Instrument makes clear what NOT to count
 
 Weaknesses
+
 - Instrument is less specific on what DOES count
 - Doesn't account for scale of the crimes
 - Each year appears to start fresh (last year's disappearances don't seem to count)
@@ -285,10 +299,12 @@ Validity and Reliability
 FA23 Class Notes
 
 Strengths
+
 - Clarification of exceptions
 - Clear definition
 
 Weaknesses
+
 - Lack of nuance
 - Unreported treated as 0
 
@@ -319,10 +335,12 @@ Validity and Reliability
 FA23 Class Notes
 
 Strengths
+
 - No grey area
 - They DO carry over preceding year crimes
 
 Weaknesses
+
 - Don't like the verbiage used in the instrument
 - Not adjusted for size of country
 - Does not include people in jail awaiting trial
@@ -354,9 +372,11 @@ Validity and Reliability
 FA23 Class Notes
 
 Strengths
+
 - Language prioritized over numbers (e.g. "widespread" > "X number")
 
 Weaknesses
+
 - Missing data
 - Uneven gaps between levels
 - Definition seems different by country
@@ -394,21 +414,23 @@ Let's now audit the data.
 
 - Everybody focus on the two countries you've been analyzing this week and last.
 
-### Would you have coded these the same way? Why or why not?
+<br>
+
+**Would you have coded these the same way? Why or why not?**
 
 <br>
 
-### Findings? Takeaways?
+**Findings? Takeaways?**
 
-#### - Which variables seem the easiest to code / we have the most confidence in?
+- **Which variables seem the easiest to code / we have the most confidence in?**
 
-#### - Which the least?
+- **Which the least?**
 
 <br>
 
-### Open it up to the class: What did you find or notice when exploring the dataset?
+**Open it up to the class: What did you find or notice when exploring the dataset?**
 
-### - Show us something cool!
+- **Show us something cool!**
 
 - *Let them lead this and after a while feel free to segue to your slides*
 
@@ -422,7 +444,7 @@ Let's now audit the data.
 
 ## {background-image="Images/00-Leviathan_Cover_55.png" .center}
 
-### Any missing data issues in the 2022 "Physical Integrity Rights Index"?]
+### Any missing data issues in the 2022 "Physical Integrity Rights Index"?
 
 - e.g. selection bias
 

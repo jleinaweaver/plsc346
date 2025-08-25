@@ -405,7 +405,7 @@ Here I'm showing you histograms on the number of experts per country-year and th
 
 :::: {.columns}
 ::: {.column width="50%"}
-![](Images/05_3-V-Dem_Coding_Disagreements-Canada.png)
+![](Images/05_3-V-Dem_Coding_Disagreements-Canada_v2.png)
 :::
 
 ::: {.column width="50%"}
@@ -428,6 +428,8 @@ d |>
 ::: notes
 
 Let's use Canada as an example of the challenge facing the researchers.
+
+- *NOTE: You remade all y axis labels to match the data*
 
 <br>
 
@@ -454,13 +456,7 @@ In essence, the second step of the process is when all the expert ratings are fe
 
 <br>
 
-Confusingly, the plot on the left shows the scale as 1-5 and our tabular data on the original 0-4.
-
-- So, keep in mind that the fours in the table are fives on the plot
-
-<br>
-
-### What do we notice here? Talk to me about the expert ratings of Canada.
+**What do we notice here? Talk to me about the expert ratings of Canada.**
 
 - Almost total consensus on top score with one outlier consistently rating across time
 
@@ -484,7 +480,7 @@ Confusingly, the plot on the left shows the scale as 1-5 and our tabular data on
 
 :::: {.columns}
 ::: {.column width="50%"}
-![](Images/05_3-V-Dem_Coding_Disagreements-Germany.png)
+![](Images/05_3-V-Dem_Coding_Disagreements-Germany_v2.png)
 :::
 
 ::: {.column width="50%"}
@@ -551,7 +547,7 @@ Certainly doesn't end the problem but they are working on it!
 
 :::: {.columns}
 ::: {.column width="50%"}
-![](Images/05_3-V-Dem_Coding_Disagreements-Russia.png)
+![](Images/05_3-V-Dem_Coding_Disagreements-Russia_v2.png)
 :::
 
 ::: {.column width="50%"}

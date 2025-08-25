@@ -31,9 +31,29 @@ Prep for Class
 
 1. Review Canvas submissions
 
+2. Bring markers x 4
+
+3. Save notes from class as they work (space below in qmd file if you want it)
+
 <br>
 
-**SLIDE**: Today we continue our work on the first paper...
+*NOTE: Don't tip your hand by criticizing what we did last class. Evaluating our process Monday is their first job today*
+
+<br>
+
+Last class we collected and analyzed case studies of government political violence.
+
+- We then used those cases to brainstorm models of political violence
+
+<br>
+
+As a refresher, we study the data projects because:
+
+1. They are more comprehensive (e.g. they study the whole world across time),
+
+2. They bring us to the cutting-edge of the research on political violence, and
+
+3. **SLIDE**: They represent the material you need for the first two papers!
 
 :::
 
@@ -86,14 +106,19 @@ You'll be evaluating five different sources of data on political violence within
 
 Today we'll focus on the widely read and debated reports from the US State Department.
 
-- Many of the quantitative projects out there use the data in these reports to build their own measures.
-    - For example, both PTS and CIRIGHTS use these reports
+<br>
 
-- This makes our work today particularly important for ensuring you can deeply analyze those projects!
+We start here because MANY of the projects out there use the data in these reports to build their own measures.
+
+- For example, both PTS and CIRIGHTS use these reports
 
 <br>
 
-**SLIDE**: Evaluating data means thinking carefully about the challenges in measuring the empirical world.
+This means that critically analyzing PTS and CIRIGHTS depends on understanding the material they are working with from the State Department
+
+<br>
+
+**SLIDE**: Don't forget our work on measurement in Week 2
 
 :::
 
@@ -124,30 +149,35 @@ Today we'll focus on the widely read and debated reports from the US State Depar
 
 Two weeks ago we worked through a five step process for generating data about political violence.
 
-### Refresh my memory! What did we do in each step and why was it an important part of the process?
+**Refresh my memory! What did we do in each step and why was it an important part of the process?**
 
 <br>
 
-### - Define operationalization
+**Define operationalization**
+
 - ("...selecting observable phenomena to represent abstract concepts" (89).)
 
 - ("To be useful...operational definitions must tell us precisely and explicitly what to do in order to determine what quantitative value should be associated with a variable in any given case (92).)
 
 <br>
 
-### - Define Instrumentation
+**Define Instrumentation**
+
 - (Convert your operationalization (definition) into a series of steps you can use to measure the concept in question)
 
-### - What does it mean to say an instrument produces "valid" data?
+**What does it mean to say an instrument produces "valid" data?**
+
 - ("...the extent to which our measures correspond to the concepts they are intended to reflect" (105).)
 
-### - What does it mean to say an instrument produces "reliable" data?
+**What does it mean to say an instrument produces "reliable" data?**
+
 - (How stable are the results of our instrument?)
 - Would different coders produce the same result using your instrument to measure the same case?
 
 <br>
 
-### - Define Measurement
+**Define Measurement**
+
 - (Applying the instrument to the cases to generate values/data/numbers)
 
 <br>
@@ -161,7 +191,10 @@ Two weeks ago we worked through a five step process for generating data about po
 ## Measuring a Concept {background-image="Images/background-light_grey.jpg" .center}
 
 :::: {.columns}
-::: {.column width="60%"}
+::: {.column width="50%"}
+
+<br>
+
 ::: {.r-fit-text}
 **1) Operationalization**
 
@@ -170,7 +203,12 @@ Two weeks ago we worked through a five step process for generating data about po
 **3) Measurement**
 :::
 :::
-::: {.column width="40%"}
+
+::: {.column width="5%"}
+
+:::
+
+::: {.column width="45%"}
 ![](Images/02_3-reliable_valid.png)
 :::
 ::::
@@ -180,9 +218,11 @@ Two weeks ago we worked through a five step process for generating data about po
 This is essentially how any quantitative research project is designed, implemented and evaluated.
 
 1. How did they operationalize the concept?
+
     - Is the definition precise and explicit?
 
 2. What instrument(s) did they design?
+
     - Are they likely to produce valid and reliable data?
 
 3. How was the instrument applied to the cases?
@@ -206,7 +246,10 @@ This is essentially how any quantitative research project is designed, implement
 :::
 
 :::: {.columns}
-::: {.column width="60%"}
+::: {.column width="50%"}
+
+<br>
+
 ::: {.r-fit-text}
 **1) Operationalization**
 
@@ -215,7 +258,12 @@ This is essentially how any quantitative research project is designed, implement
 **3) Measurement**
 :::
 :::
-::: {.column width="40%"}
+
+::: {.column width="5%"}
+
+:::
+
+::: {.column width="45%"}
 ![](Images/02_3-reliable_valid.png)
 :::
 ::::
@@ -224,20 +272,19 @@ This is essentially how any quantitative research project is designed, implement
 
 Last class we analyzed the concept "Domestic Political Violence by Governments"
 
-- You each provided us with cases that you argued represented real world examples of this concept in action
+1. You gathered the raw data, e.g. cases of government violence
 
-- I then walked you through measuring your cases using a series of instruments
+2. I gave you instruments and you measured the data, e.g...
     - What are the characteristics of each regime type?
     - "Who" did the act of violence?
     - "What" was the specific act of violence?
     - "Who" was targeted by the act?
     
-- We then used the measures you produced to generate new theory
-    - When do we think different kinds of government may be likely to use violence domestically?
+3. We then used the data you produced to generate models of government violence
 
 <br>
 
-### Is everybody clear on how our work Monday was a measurement exercise?
+**Is everybody clear on how our work Monday was a measurement exercise?**
 
 <br>
 
@@ -269,7 +316,12 @@ Now I'd like you to evaluate our work from Monday while referring to these key d
 
 <br>
 
-![](Images/04_1-Assign_for_Wed.png)
+### Analyzing the US State Department Human Rights Reports
+
+- Appendix A of the Country Reports on Human Rights Practices (2023)
+- Nordas (2021)
+- Smith (2025)
+- Analyze two countries
 
 ::: notes
 
@@ -285,9 +337,62 @@ Now I'd like you to evaluate our work from Monday while referring to these key d
 
 Let's start our evaluation of the data with this:
 
-### What is the key concept being measured in these reports?
+**What is the key concept being measured in these reports?**
 
-- (**SLIDE**: Human Rights Practices)
+- (Human Rights Practices)
+
+<br>
+
+**SLIDE**: Big picture goal for today
+
+<br>
+
+Canvas Discussion: Analyzing the US State Department Human Rights Reports
+
+1. Read Appendix A of the Country Reports on Human Rights Practices (2023), Nordas (2021) and Smith (2025)
+
+2. Select two countries (non-US) and read the Country Reports on Human Rights Practices (State Department) for both 2022 and 2023. (2 countries x 2 years = 4 reports). Ideally, try to select one of the countries you analyzed on Monday. 
+
+    1. What countries did you analyze? (No overlap!)
+    
+    2. Briefly summarize the state of human rights in each country from 2022 to 2023 (2-3 sentences each).
+:::
+
+
+
+## {background-image="Images/background-light_grey.jpg" .center}
+
+**Evaluating the usefulness of the US State Department Human Rights Reports for analyzing political violence by governments**
+
+<br>
+
+1. What research questions can we answer with this data?
+
+2. What relevant research questions can we NOT answer with this data?
+
+::: notes
+
+Remember, ALL measurement containst uncertainty!
+
+- All of it.
+
+<br>
+
+Our job is to evaluate this source of data so that we can figure out what it can and cannot be used for in the pursuit of scientific knowledge
+
+- We will ALWAYS be able to make a big list of problems when evaluating a source of data
+
+- The key to expertise is in knowing what you can do with data that accounts for its problems
+
+<br>
+
+**Big picture, does this make sense?**
+
+<br>
+
+*Split class into small groups (3-4)*
+
+- Go sit with your group!
 
 :::
 
@@ -300,8 +405,13 @@ Let's start our evaluation of the data with this:
 :::
 
 :::: {.columns}
-::: {.column width="60%"}
+::: {.column width="50%"}
+
+<br>
+
 ::: {.r-fit-text}
+**Validity & Reliability**
+
 **1) Operationalization**
 
 **2) Instrumentation**
@@ -309,7 +419,12 @@ Let's start our evaluation of the data with this:
 **3) Measurement**
 :::
 :::
-::: {.column width="40%"}
+
+::: {.column width="5%"}
+
+:::
+
+::: {.column width="45%"}
 ![](Images/02_3-reliable_valid.png)
 :::
 ::::
@@ -322,63 +437,27 @@ Let's start our evaluation of the data with this:
 
 <br>
 
-Groups, I want you to use the readings for today to evaluate the measurements produced in the State Department Reports
-
-- e.g. Weber 2023, Appendix A (2023) and Nagel (2021)
+Groups, I want you to reflect on the readings for today, our work Monday and your work analyzing the reports in order to help us evaluate the validity and reliability of the US State Department Country Reports
 
 <br>
 
-The bottom line conclusion I'm interested in is, how "best" can we use this data to analyze political violence by governments around the world.
-
-- **SLIDE**: To get there, let's start by focusing on validity and reliability
-
-:::
-
-
-
-## {background-image="Images/background-light_grey.jpg" .center}
-
-::: {.r-fit-text}
-**"Human Rights Practices"**
-
-**Validity and Reliability: Strengths vs Weaknesses**
-:::
-
-:::: {.columns}
-::: {.column width="60%"}
-::: {.r-fit-text}
-**1) Operationalization**
-
-**2) Instrumentation**
-
-**3) Measurement**
-:::
-:::
-::: {.column width="40%"}
-![](Images/02_3-reliable_valid.png)
-:::
-::::
-
-::: notes
-
-Focus on HOW the measures are constructed using this process.
-
-- Work directly on the board and keep track of the strengths and weaknesses you identify along the way
-
-<br>
-
-### Questions on the exercise?
+**Questions on the exercise?**
 
 - Get to it!
 
+<br>
+
+*PRESENT and DISCUSS each*
+
+<br>
+
 *Save notes from class*
+
 - ?
 
 <br>
 
-Notes
-
-Nagel's Argument
+*Notes: Nagel's Argument*
 
 + "But under the Trump administration, the quality of these reports dropped. Not only did Trump shorten them and reduce their coverage, but when compared to reports produced by previous administrations, they also referred less to women, reproduction, racism, sexual violence and abuse, LGBTQ rights, and refugees."
 + "This reduction in quality has had a devastating impact on human rights protection worldwide."
@@ -479,6 +558,8 @@ Ok, now each of you take your own best advice.
 
 <br>
 
+### Analyzing the Amnesty International Reports
+
 
 
 ::: notes
@@ -489,7 +570,7 @@ Friday we shift to the country reports produced by Amnesty International!
 
 <br>
 
-### Questions on the assignment?
+**Questions on the assignment?**
 
 :::
 

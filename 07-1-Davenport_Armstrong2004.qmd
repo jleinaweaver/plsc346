@@ -204,6 +204,8 @@ GROUPS, I want you to diagram the interests, institutions and interactions in yo
 
 <br>
 
+*ONLY AFTER their model diagrams are on the board add the next part*
+
 **SLIDE**: Before we present your diagrams I want you to add one more thing.
 
 :::
@@ -254,7 +256,9 @@ Based on your model, draw us a line that represents the model's prediction for v
 
 <br>
 
-PRESENT and DISCUSS each
+*PRESENT and DISCUSS each*
+
+- *Let them instroduce and step through theirs, THEN show your version*
 
 - **SLIDE** x 3: My version of each
 
@@ -262,7 +266,7 @@ PRESENT and DISCUSS each
 
 
 
-## All Steps Lead to Peace {background-image="Images/00-Leviathan_Cover_55.png" .center}
+## All Steps Lead to Peace {background-image="Images/00-Leviathan_Cover_55.png" .center .smaller}
 
 :::: {.columns}
 ::: {.column width="50%"}
@@ -308,11 +312,13 @@ More democracy =
 ::: notes
 
 I'm thinking of "good" leadership here as a broad concept
+
 - Respect for rights, public goods provision, non-violence
 
 <br>
 
 Bottom line
+
 1. Democratization increases checks and balances on the leader
 
 2. Those checks and balances make repression expensive, inappropriate and unnecessary
@@ -339,7 +345,7 @@ Interactions
 
 
 
-## Some Steps are Better Than Others {background-image="Images/00-Leviathan_Cover_55.png" .center}
+## Some Steps are Better Than Others {background-image="Images/00-Leviathan_Cover_55.png" .center .smaller}
 
 :::: {.columns}
 ::: {.column width="50%"}
@@ -388,13 +394,17 @@ Regimes can be classified in three levels in terms of coherence:
 - Fully open or fully closed regimes are coherent meaning the leader knows what the repercussions for their actions will be
 
 1. "Open" regimes: Vote is allowed and legislature can overrule the executive
+
     - Fully open: Authorities know they can't "generally" apply repression without consequence
 
 2. "Closed" regimes: No vote, legislature cannot interfere
+
     - Fully closed: Authorities typically want to avoid repression bc lack of repression is often the bargain being made for maintaining total power (harm the people and they will rethink this deal that trades rights for other "goods" e.g. growth, safety, etc.)
 
 3. Incoherent systems: e.g. elections are allowed but legislature cannot overrule the executive 
+
     - Where violence happens
+    
     - Voting allowed but no chance to overrule citizens have no real idea of how they can influence government and leaders have much space to use repression to maintain control and with few serious costs
 
 <br>
@@ -424,7 +434,7 @@ Interactions
 
 
 
-## Steps of Distinction {background-image="Images/00-Leviathan_Cover_55.png" .center}
+## Steps of Distinction {background-image="Images/00-Leviathan_Cover_55.png" .center .smaller}
 
 :::: {.columns}
 ::: {.column width="50%"}
@@ -676,13 +686,13 @@ Ok, where do we end up?
 
 <br>
 
-Piazza (2023)
+Piazza (2023) Political Polarization and Political Violence
 
-- Submit analysis to Canvas
+- Read and submit your analyses of the models on Canvas
 
 ::: notes
 
-
+Next class a different approach to explaining the use of political violence by democratic governments
 
 <br>
 

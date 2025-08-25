@@ -17,11 +17,7 @@ d <- read_excel("../../Data/Combined_PTS_CIRIGHTS_VDem-2011-2024.xlsx", na = "NA
 
 **II. How and why do governments use violence against the people inside their borders?**
 
-::: {.r-fit-text}
-
-- Setting up Paper 2
-
-:::
+- Connecting the dots from Paper 1 to Paper 2
 
 <br>
 
@@ -34,7 +30,27 @@ Prep for Class
 
 1. Post combined dataset on Canvas
 
-2. Bring combined dataset to class for classroom PC
+2. Set up Google sheet to claim countries
+    
+    - Log into Canvas on laptop so you can publish when we get to it
+
+3. Bring combined dataset to class for classroom PC OR run slides off laptop
+
+<br>
+
+Last two weeks we have been exploring the data and research projects that measure political violence by governments
+
+<br>
+
+My hope is that at this point you have a much deeper appreciation for:
+
+1. The complexity involved in studying political violence by governments, and
+
+2. The strengths and weaknesses for the main data projects that exist to study it.
+
+<br>
+
+**SLIDE**: Paper 1 is due today
 
 :::
 
@@ -52,63 +68,99 @@ Which **SINGLE** data source would you recommend to someone interested in better
 
 ::: notes
 
-Last two weeks we have been exploring and analyzing the data and research projects that exist to track political violence by governments
+**Any final questions on the first paper?**
 
 <br>
 
-We've been thorough and I'll bet you now have a strong sense of this data's strengths and weaknesses.
+Our work in today is to set the table for Paper 2
+
+- These paper assignments are designed to scaffold on each other
+
+- You take what you learn from the first one and use that to do the second!
+
+- It's the way most big accomplishments are completed
 
 <br>
 
-**SLIDE**: In paper 2 you will have the opportunity to use your newfound expertise to analyze the world!
+**SLIDE**: In paper 2 we shift from evaluating the data to evaluating the world!
 
 :::
 
 
 
-## Paper 2 {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+::: {.r-fit-text}
+**Paper 2: Political Violence Country Briefings**
+:::
 
 <br>
 
-Political Violence Country Briefings
+Select one country and analyze its government's use of political violence
 
-Select **two countries** (no overlapping cases in class) and analyze their recent experience of political violence using **ALL FIVE** of the data sources we explored in class
+- Must cover the most recently available **five years** of data
 
-For **EACH** country you must produce a **TWO PAGE** country briefing report that summarizes and visualizes the findings of your analyses
+- Must reference **ALL FIVE** of the data sources
+
+- Argument must include **three** distinct premises
+
+- Two pages (**max**)
 
 ::: {.fragment}
-
-- 2 countries x 2 pages = 4 pages total
-
-- You should aim to analyze at least the last five years of available data for each country.
-
+- Do it 2x (2 countries x 2 pages = 4 pages)
 :::
 
 ::: notes
 
-Remember:
+Your second assignment is to prepare a briefing report
 
-- All the sources means State Dept, AI, PTS, CIRIGHTS and V-Dem!
+- e.g. you are a data analyst at a think tank, an NGO, an international organization or working in a government department
 
-- You must provide context for your claims. Use those primary source documents!
+- Your boss, the policy principal, asks you for an analysis of the recent use of political violence by a specific government in the world
 
-<br>
+- Your job is to clearly and concisely give them your analysis in no more than two pages
 
-**Questions on the assignment?**
-
-<br>
-
-To make this easier for you I have posted a dataset on Canvas that merges all the sources together
-
-- Everybody grab the data and open it up
-
-- Let's start by selecting countries
+- Your argument must have a thesis that is supported and explained by three distinct premises
 
 <br>
 
-NEXT, I need EVERYONE to audit the dataset for their two countries
+The good news is, thanks to Paper 1 you are already well on your way to developing your expertise in the evidence!
 
-- Did my merge code pull together the right results for your countries?
+- NOW your job is to use that evidence to make a clear and concise argument.
+
+<br>
+
+More details are on Canvas, but...
+
+- **Any questions on the big picture of the assignment?**
+
+<br>
+
+**REVEAL**: One more hiccup
+
+- You have to do it twice.
+
+- Your boss needs the information for a big international negotiation!
+
+<br>
+
+**SLIDE**: No stalling, let's dive in
+
+<br>
+
+*The Prompt*
+
+Paper 2: Political Violence Country Briefings
+
+Select two countries (no overlapping cases in class) and analyze their government's recent use of political violence using the data sources we explored in class. For EACH country you must produce a separate TWO PAGE country briefing report that makes a clear argument supported by three distinct premises (2 countries x 2 pages = 4 pages total). 
+
+Other Requirements:
+
+- By "recent" I mean the most recent five years of available data
+- You must include information from all five data sources we analyzed in class
+- No duplication of cases in class (first-come, first-served)
+- Must be submitted as a pdf document
 
 :::
 
@@ -117,7 +169,57 @@ NEXT, I need EVERYONE to audit the dataset for their two countries
 ## {background-image="Images/00-Leviathan_Cover_55.png" .center}
 
 ::: {.r-fit-text}
-**Basic Data Analysis**
+**Paper 2: Political Violence Country Briefings**
+:::
+
+<br>
+
+**First Steps**
+
+1. Combined_PTS_CIRIGHTS_VDem-2011-2024.xlsx
+
+2. Pick your countries (claim on Google Sheet)
+
+3. Audit the data
+
+::: notes
+
+*Publish Google Sheet on Modules*
+
+<br>
+
+To make this easier for you I have posted a dataset on Canvas that merges all the sources together
+
+- Everybody grab the data and open it up
+
+<br>
+
+First job is to claim countries
+
+- Place your selections on the Google Sheet I just published on Canvas
+
+<br>
+
+NEXT, I need EVERYONE to audit the dataset for their two countries
+
+- Did my merge code pull together the right results for your countries?
+
+- Check a few of the observations for your countries in the separate datasheets we examined last week
+
+<br>
+
+**SLIDE**: Quick refreshed on what to do with this data
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+::: {.r-fit-text}
+**Basic Data Analyses**
+
+(e.g. ways to summarize and present data)
 
 1. Tables 
 
@@ -355,17 +457,23 @@ The last comonly used tool is a scatter plot and is useful for visualizing the r
 
 
 
-## Paper 2 {background-image="Images/00-Leviathan_Cover_55.png" .center}
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
 
-Political Violence Country Briefings
+::: {.r-fit-text}
+**Paper 2: Political Violence Country Briefings**
+:::
 
-Select **two countries** (no overlapping cases in class) and analyze their recent experience of political violence using **ALL FIVE** of the data sources we explored in class
+<br>
 
-For **EACH** country you must produce a **TWO PAGE** country briefing report that summarizes and visualizes the findings of your analyses
+Select TWO countries and analyze their government's use of political violence
 
-- 2 countries x 2 pages = 4 pages total
+- Must cover the most recently available **five years** of data
 
-- You should aim to analyze at least the last five years of available data for each country.
+- Must reference **ALL FIVE** of the data sources
+
+- Argument must include **three** distinct premises
+
+- Two pages (**max**) per country
 
 ::: notes
 
@@ -379,7 +487,13 @@ Ok, so that's your next target.
 
 <br>
 
-**SLIDE**: My plan to keep you on track
+My plan to keep you moving forward:
+
+- Each country briefing is an argument supported by three premises
+
+- Each premise must be supported by evidence from the data
+
+- **SLIDE**: So...
 
 :::
 
@@ -391,23 +505,27 @@ Ok, so that's your next target.
 
 <br>
 
-### **Prepare at least three conclusions about EACH country's experience of political violence (with visualizations)**
+Submit an outline of each country briefing report
 
-1. Tables 
+- One sentence thesis statement
 
-2. Bar Plots
-
-3. Line Plots
-
-4. Scatter Plots
+- Each premise gets a one sentence explanation and a draft version of the data summary you intend to use to support it (e.g. a table or a visualization)
 
 ::: notes
 
 We will work on these briefings in class during Week 9
 
-- Your task for the first class of that week is to submit the big "conclusions" you've reached about each of your countries
+- Your task for the first class of that week is to submit an outline of each briefing
 
-- You will submit to Canvas an explanation of the conclusion and the data visualization you are working on to illustrate it
+- This gives you over two weeks to get organized for the reports
+
+<br>
+
+My advice, don't stall on this!
+
+- Start making stuff and show it to me as you go
+
+- I'm happy to provide feedback as you work
 
 <br>
 
@@ -415,19 +533,48 @@ In class we'll review them all and give each other feedback
 
 - **Questions on the assignment?**
 
-:::
+<br>
 
+Canvas Assignment (open the window for this from 2 weeks ago): Outlining your Country Briefings
+
+Submit an outline for each of your two country briefings (e.g. two outlines).
+
+- Each outline must begin with a one sentence thesis statement.
+- Each premise (of the three) gets a complete sentence explaining it and a draft version of the data summary you intend to use to support it (e.g. a table or a visualization) 
+
+:::
 
 
 ## For Next Class {background-image="Images/00-Leviathan_Cover_55.png" .center}
 
-Davenport and Armstrong (2004)
+<br>
 
-- Submit analysis to Canvas
+Davenport and Armstrong (2004) Democracy and the Violation of Human Rights: A Statistical Analysis from 1976 to 1996
+
+- Read p538-543, then skim the analyses and conclusion
+
+- Submit analysis on Canvas
 
 ::: notes
 
 Next week we explore some of the academic literature on why democracies use political violence
+
+- This will be your chance to see how experts in the field use the data we've been exploring to analyze the world
+
+- Useful to see new models AND ideas for your country briefings!
+
+<br>
+
+**Questions on anything from today?**
+
+<br>
+
+Canvas Assignment: Analyzing the Davenport and Armstrong (2004) Argument
+
+The article proposes three competing models to describe the relationship between democracy and human rights violations
+
+1. In purely theoretical terms, meaning you should ignore the data analysis in the paper for this qustion, which model do you find the MOST convincing? Why? (3+ sentences)
+2. In purely theoretical terms, which model do you find the LEAST convincing? Why? (3+ sentences)
 
 
 

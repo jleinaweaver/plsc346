@@ -8,11 +8,7 @@ format: revealjs
 
 **II. How and why do governments use violence against the people inside their borders?**
 
-::: {.r-fit-text}
-
 - Paper 1: Writing Workshop
-
-:::
 
 <br>
 

@@ -25,11 +25,7 @@ d2023 <- d |>
 
 **II. How and why do governments use violence against the people inside their borders?**
 
-::: {.r-fit-text}
-
 - The Political Terror Scale (PTS) Project
-
-:::
 
 <br>
 
@@ -46,7 +42,7 @@ Prep for Class
 
 <br>
 
-**SLIDE**: Today we continue our work on the first paper...
+**SLIDE**: Today we continue our work exploring the existing data projects that measure political violence
 
 :::
 
@@ -64,6 +60,10 @@ Which **SINGLE** data source would you recommend to someone interested in better
 - **A high quality recommendation** will also make clear **why** you are not recommending the other sources
 
 ::: notes
+
+Don't forget the paper we are building toward!
+
+<br>
 
 **Questions on the prompt?**
 
@@ -95,7 +95,7 @@ Last week we focused on two sources of data on government's domestic uses of pol
 
 <br>
 
-### What is the concept each source is trying to measure? e.g. what specific flavor of political violence?
+**What is the concept each source is trying to measure? e.g. what specific flavor of political violence?**
 
 - (**SLIDE**: Human Rights Practices)
 
@@ -125,28 +125,35 @@ Last week we focused on two sources of data on government's domestic uses of pol
 
 Alright, let's talk measurement.
 
-### What does operationalization refer to?
+<br>
+
+**What does operationalization refer to?**
+
 - ("...selecting observable phenomena to represent abstract concepts" (89).)
 
-### What are the similarities and differences in the way each source operationalizes "human rights practices"?
+**What are the similarities and differences in the way each source operationalizes "human rights practices"?**
+
 - (Clark and Sikkink (2013) make a nice point about AI focusing its approach an an "every life matters" perspective whereas the State Department takes a broader view)
-- ...
 
 <br>
 
-### What does Instrumentation refer to?
+**What does Instrumentation refer to?**
+
 - (Convert your operationalization (definition) into a series of steps you can use to measure the concept in question)
 
-### What are the similarities and differences in the instruments each source uses for measuring "human rights practices"?
+**What are the similarities and differences in the instruments each source uses for measuring "human rights practices"?**
+
 - (State Dept: Some defined by law, some based on the guidance provided by the the Bureau of Democracy, Human Rights, and Labor (DRL))
 - (AI: ?)
 
 <br>
 
-### What does measurement refer to?
+**What does measurement refer to?**
+
 - (Applying the instrument to the cases to generate values/data/numbers)
 
-### What are the similarities and differences in the measurement process each source uses for studying "human rights practices"?
+**What are the similarities and differences in the measurement process each source uses for studying "human rights practices"?**
+
 - ? sources of data, who does the reporting ?
 
 <br>
@@ -232,7 +239,9 @@ Before we dive into the data we have to evaluate its validity and reliability.
 
 
 
-## "Political Terror" {background-image="Images/00-Leviathan_Cover_55.png" .center}
+## Concept: "Political Terror" {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+<br>
 
 ![](Images/03-2-PTS_Logo.png){style="display: block; margin: 0 auto"}
 
@@ -276,36 +285,39 @@ The aim of the second section of the class is focused on this big question about
 
 <br>
 
-### First, are we comfortable classifying both of these measures as examples of "political violence"?
+**First, are we comfortable classifying all of these sources as measures of "political violence"?**
 
 <br>
 
-### Second, do these two measures cover different conceptual ground or are they essentially synonymous?
+**Second, do these two approaches cover different conceptual ground or are they essentially synonymous?**
 
 :::
 
 
 
-## {background-image="Images/00-Leviathan_Cover_55.png" .center}
-
-::: {.r-fit-text}
-**Measuring "Political Terror" (PTS)**
-:::
+## Concept: "Political Terror" {background-image="Images/background-light_grey.jpg" .center}
 
 :::: {.columns}
-::: {.column width="50%"}
-**Operationalization**
+::: {.column width="55%"}
 
-&#8595;
+::: {.r-fit-text}
+**Source: The Political Terror Scale**
 
-**Instrumentation**
+<br>
 
-&#8595;
+**1) Operationalization**
 
-**Measurement**
+**2) Instrumentation**
+
+**3) Measurement**
+:::
 :::
 
-::: {.column width="50%"}
+::: {.column width="5%"}
+
+::: 
+
+::: {.column width="40%"}
 ![](Images/02_3-reliable_valid.png)
 :::
 ::::

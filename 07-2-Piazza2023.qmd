@@ -31,6 +31,8 @@ Prep for Class
 
 1. Review Canvas submissions
 
+2. Open RStudio and save the class notes
+
 <br>
 
 Remember, our big goal for this section of the class is to answer this question.
