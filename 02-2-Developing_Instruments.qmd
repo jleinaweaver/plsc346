@@ -33,6 +33,10 @@ Prep for Class
 
     - Say, 12 minutes each (time for group to work and collecting answers on boards)
 
+2. Open Rstudio to record lists
+
+3. Open Google sheet for next class and note the group memberships
+
 <br>
 
 Tilly, Charles. 2003. “Varieties of Violence.” In The Politics of Collective Violence, Cambridge, UK: Cambridge University Press, 1–25. ONLY p1-20
@@ -195,6 +199,18 @@ Get to it!
 
 Notes from Fall 2025
 
+- Ideologically motivated
+- Fight for power
+- Harms: physical or psychological
+- Deliberate / intentional act
+- Specific target: Persons or Groups
+- Escalation from prior failures
+- Government failure or inaction
+- Perpetrators are individuals or groups
+- Purpose is punishment
+
+Notes from Fall 2023
+
 - Murder/Attempted murder
 - Direct challenge to security / status quo
 - Targets the government
@@ -282,7 +298,18 @@ Think of this like going to the grocery store
 
 <br>
 
-Notes from FA 23
+Notes from Fall 2025
+
+- Legal vs illegal
+- Government as perpetrator vs as target
+- Harm: Physical vs psychological
+- Outcome: Deadly vs not
+- Intention: Deadly vs not
+- Physical harm of property vs of body
+- Ideology: Religious, political / civil, leadership changes
+- Rational vs irrational
+
+Notes from Fall 2023
 
 - Intimidation vs other
 - Protecting everyone vs some people
@@ -357,17 +384,41 @@ Notes from Fall 2014
 
 Ok, now let's work as a class.
 
-### How do we translate the work from these first two exercises into key questions?
+<br>
 
-### - Think of these as a set of questions that you will use to decide BOTH if something is "political violence" and how much "political violence" it represents.
+**How do we translate the work from these first two exercises into key questions?**
+
+- Think of these as a set of questions that you will use to decide BOTH if something is "political violence" and how much "political violence" it represents.
+
+- Aim for two lists: questions to identify political violence vs questions to identify the amount of political violence
 
 <br>
 
-*ON BOARD* (column 3 of 3): "Key Questions"
+*ON BOARD* (column 3 of 3): "Key Questions", "Is it?" vs "How much?"
 
 <br>
 
-Notes from FA23
+Notes from Fall 2025
+
+Is it?
+
+- What is the intended outcome?
+- Who did it?
+- Who felt it?
+- What was damaged? 
+- Is there a long-term goal?
+- Did this further progress on the long-term goal?
+- Done by an individual or a group?
+- Did it inspire a response from the target?
+
+How much?
+
+- What is the actual outcome?
+- How much did they feel it?
+- How much damage done?
+
+
+Notes from Fall 2023
 
 - Who was harmed?
 - Who commited the act?

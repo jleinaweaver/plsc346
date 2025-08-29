@@ -114,11 +114,23 @@ tibble(
 
 ::: notes
 
-### Are we convinced this model, the steps of distinction, is the most useful way to think about the relationship between democracy and government violence? Why or why not?
+Let's talk for a second about the pros and cons of adopting THIS as your model of political violence in democracies.
 
 <br>
 
-### What does this model tell us about promoting democracy as a strategy for reducing political violence around the world?
+**What does this model suggest are the best ways to limit violence by the government in a democracy?**
+
+<br>
+
+**What does this model suggest are bad or ineffective ways to limit violence by the government in a democracy?**
+
+<br>
+
+**What does this model suggest will be the result of efforts to promote democracy in less democractic countries around the world?**
+
+<br>
+
+**Bottom line, are you convinced this is the most useful way to explain government violence by democracies? Why or why not?**
 
 <br>
 
@@ -201,10 +213,9 @@ Notes
 
 <br>
 
-**SLIDE**: The models
+**SLIDE**: The model
 
 :::
-
 
 
 
@@ -213,7 +224,11 @@ Notes
 <br>
 
 ::: {.r-fit-text}
-**Evaluate the Models**
+**Evaluate the Model: Polarization and Political Violence**
+
+<br>
+
+Three sets of interactions:
 
 1. Polarization and Dehumanization (p482)
 
@@ -224,17 +239,19 @@ Notes
 
 ::: notes
 
-Our next task is to dig into the models of political violence explored in this paper.
+Our next task is to dig into the model of political violence presented and analyzed in this paper.
 
 <br>
 
-This paper proposes, and then tests, three conceivable models of political violence in a democracy.
-
-- Assign each GROUP to one MODEL
+My read of the paper is that it focuses on one model in terms of interests and institutions, but with three sets of interactions at play
 
 <br>
 
-GROUPS, I want you to do two things:
+GROUPS, I want you to diagram and evaluate the model in this paper
+
+- Start by clarifying the interests and institutions, then shift to the three sets of interactions
+
+
 
 1. Explain how the mechanism works
 
