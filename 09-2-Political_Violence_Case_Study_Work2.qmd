@@ -19,7 +19,7 @@ library(carData)
 
 <br>
 
-- Polishing the Country Briefings
+- Finishing the Country Briefings
 
 <br>
 
@@ -41,17 +41,23 @@ Prep for Class
 
 
 
-## Paper 2 {background-image="Images/00-Leviathan_Cover_55.png" .center}
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
 
-Political Violence Country Briefings
+::: {.r-fit-text}
+**Paper 2: Political Violence Country Briefings**
+:::
 
-Select **two countries** (no overlapping cases in class) and analyze their recent experience of political violence using **ALL FIVE** of the data sources we explored in class
+<br>
 
-For **EACH** country you must produce a **TWO PAGE** country briefing report that summarizes and visualizes the findings of your analyses
+Select TWO countries and analyze their government's use of political violence
 
-- 2 countries x 2 pages = 4 pages total
+- Must cover the most recently available **five years** of data
 
-- You should aim to analyze at least the last five years of available data for each country.
+- Must reference **ALL FIVE** of the data sources
+
+- Argument must include **three** distinct premises
+
+- Two pages (**max**) per country
 
 ::: notes
 
@@ -61,7 +67,7 @@ For **EACH** country you must produce a **TWO PAGE** country briefing report tha
 
 For today I asked everyone to revise and resubmit their outlines with polished visualizations
 
-- **SLIDE**: what is a polished visualization?
+- **SLIDE**: Reminder, what is a polished visualization?
 
 :::
 
@@ -114,11 +120,12 @@ ggplot(data = UN, aes(y = region)) +
 
 
 
-## Peer-Review Time! {background-image="Images/background-data_blue_v4.png" .center}
+
+## Peer-Review Time! {background-image="Images/00-Leviathan_Cover_55.png" .center}
 
 <br>
 
-1. Is the argument well supported by evidence?
+1. Is the argument clear and well supported by the evidence?
 
 2. Is the evidence visualized "professionally"?
     - Informative title
@@ -131,21 +138,25 @@ ggplot(data = UN, aes(y = region)) +
 
 ::: notes
 
-*Split class into pairs*
+Just like last class your job is to see and give feedback on ALL of the outlines!
 
-Pairs, present your argument to your partner.
-
-- Partners you have three jobs
+- Please focus your feedback on these big picture elements
 
 <br>
 
-### Questions?
+**Questions?**
 
 - Let's go!
 
 <br>
 
-### Any really great examples to share?
+Let's share some excellent examples!
+
+- Call out some classmates who are producing high quality work so we can celebrate it!
+
+<br>
+
+**SLIDE**: Assignment
 
 :::
 
@@ -157,10 +168,22 @@ Pairs, present your argument to your partner.
 ::: {.r-fit-text}
 1. Country Briefings due Oct 17th
 
-2. Next Week: Let's find some acts of terrorism!
+2. Next Week: Find me acts of terrorism!
 :::
 
 ::: notes
+
+Briefings are due this week and after the break we dive headfirst into terrorism!
+
+- That sounded wrong...
+
+<br>
+
+**Questions on the assignment?**
+
+- Have a good fall break!
+
+<br>
 
 Canvas Assignment: Terrorism Case Studies 
 
@@ -169,10 +192,6 @@ Submit to Canvas a recent example of an individual committing what you believe s
 1. Submit an APA citation to evidence/background of your selected act
 2. Describe the specifics of the case (actor, action, date, impact),
 3. Make an argument as to why you believe this is an act of terrorism (3+ sentences)
-
-<br>
-
-**Questions on the assignment?**
 
 :::
 

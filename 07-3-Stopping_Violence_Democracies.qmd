@@ -77,13 +77,11 @@ I'd like to unpack your cases in the same way we have done for other case studie
 
 
 
-## Unpacking the Cases {background-image="Images/00-Leviathan_Cover_55.png" .center}
-
-<br>
+##  {background-image="Images/00-Leviathan_Cover_55.png" .center}
 
 ::: {.r-fit-text}
 
-**The Inciting Incident**
+**Unpacking the Cases: The Inciting Incident**
 
 1. Who committed the violent act?
 
@@ -97,7 +95,9 @@ I'd like to unpack your cases in the same way we have done for other case studie
 
 ::: notes
 
-*Add Columns*
+*Add Columns: Perpetrator, Violence Target, Violence Act, Violence Reason*
+
+<br>
 
 Let's start by focusing on the inciting incident
 
@@ -115,13 +115,11 @@ Fill in these details for your case on the spreadsheet.
 
 
 
-## Unpacking the Cases {background-image="Images/00-Leviathan_Cover_55.png" .center}
-
-<br>
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
 
 ::: {.r-fit-text}
 
-**The Intervention**
+**Unpacking the Cases: The Intervention**
 
 1. Who intervened?
 
@@ -135,7 +133,7 @@ Fill in these details for your case on the spreadsheet.
 
 ::: notes
 
-*Add Columns*
+*Add Columns: Intervener, Intervention Target, Intervention Action, Intervention Success*
 
 Let's now shift to the intervention
 
@@ -164,13 +162,92 @@ Fill in these details for your case on the spreadsheet.
 
 ::: notes
 
-GROUPS: Use the data to brainstorm / derive lessons we can take away for how best to design interventions meant to reduce political violence by democracies
+GROUPS: Let's build a list of lessons from our work today on the board
 
-- Get ready to pitch us your hypotheses!
+- **What are the key elements of a successful intervention to change the use of political violence by democractic governments?**
+
+- *ON BOARD*
 
 <br>
 
-PRESENT and DISCUSS each
+*PRESENT and DISCUSS each*
+
+<br>
+
+**SLIDE**: Theories from the week
+
+:::
+
+
+
+## Davenport & Armstrong (2004) {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+:::: {.columns}
+::: {.column width="50%"}
+![](Images/07_1-Davenport_Fig1.png)
+:::
+
+::: {.column width="50%"}
+
+<br>
+
+```{r, fig.retina=3, fig.align='center', fig.asp=0.8, out.width='98%', fig.width=4}
+# Steps of Distinction (p542)
+tibble(
+  x = 1:21,
+  y = c(rep(7,16), rep(0, 5))
+  ) |>
+  ggplot(aes(x = x, y = y)) +
+  geom_line(linewidth = 1.3) +
+  theme_classic() +
+  labs(x = "Level of Democracy", y = "Willingness to Use Violence",
+       title = "Steps of Distinction") +
+  scale_x_continuous(labels = NULL)  +
+  scale_y_continuous(labels = NULL)
+```
+:::
+::::
+
+::: notes
+
+The Davenport and Armstrong (2004) proposes specific causal mechanisms that explain when and why a democratic government might use political violence.
+
+- **Are our lessons of successfully counter-acting government violence consistent with the model proposed and tested by Davenport and Armstrong (2004)? Why or why not?**
+
+- *DISCUSS*
+
+<br>
+
+**SLIDE**: And Piazza's arguments
+
+:::
+
+
+
+## Piazza (2023) {background-image="Images/00-Leviathan_Cover_55.png" .center .smaller}
+
+**Interests**
+
+- Individuals &#8594; good things for their in-group
+- Partisan elites &#8594; political survival / power
+
+**Institutions**
+
+- "instinctual sympathies toward other people and normative inhibitions against harming others" (p484)
+
+**Interactions**
+
+1. Polarization and Dehumanization (p482)
+2. Moral Polarization (p486)
+3. Polarization and Group Mobilization (p489)
+
+::: notes
+
+Piazza (2023) focuses on the role of polarization in igniting political violence in democracies.
+
+- **Are our lessons of successfully counter-acting government violence consistent with Piazza's model? Why or why not?**
+
+- *DISCUSS*
 
 <br>
 
@@ -180,31 +257,35 @@ PRESENT and DISCUSS each
 
 
 
-## Paper 2 {background-image="Images/00-Leviathan_Cover_55.png" .center}
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+::: {.r-fit-text}
+**Paper 2: Political Violence Country Briefings**
+:::
 
 <br>
 
-Political Violence Country Briefings
+Select TWO countries and analyze their government's use of political violence
 
-Select **two countries** (no overlapping cases in class) and analyze their recent experience of political violence using **ALL FIVE** of the data sources we explored in class
+- Must cover the most recently available **five years** of data
 
-For **EACH** country you must produce a **TWO PAGE** country briefing report that summarizes and visualizes the findings of your analyses
+- Must reference **ALL FIVE** of the data sources
 
-- 2 countries x 2 pages = 4 pages total
+- Argument must include **three** distinct premises
 
-- You should aim to analyze at least the last five years of available data for each country.
+- Two pages (**max**) per country
 
 ::: notes
 
-Don't forget this assignment is ongoing and is due at the end of week 9
+Don't forget this assignment is ongoing and will be due at the end of Week 9
 
 - **Questions on the prompt?**
 
 <br>
 
-And hopefully everyone is making progress on this.
+And don't forget your rough draft of the analysis is due at the start of Week 9
 
-- Remember, we'll review your big picture conclusions and visualizations in class on the Monday of that week
+- We'll review your big picture conclusions and visualizations in class on the Monday of that week
 
 <br>
 
@@ -219,15 +300,20 @@ And hopefully everyone is making progress on this.
 
 <br>
 
-Escriba-Folch 2013
+1. Read the Escriba-Folch (2013), and
 
-- Submit analysis to Canvas
+2. Submit your diagram and analysis to Canvas
 
 
 ::: notes
 
+**Questions on the assignment?**
+
 <br>
 
-### Questions on the assignment?
+Canvas Assignment: Analyzing the Escriba-Folch (2013) Argument
+
+Diagram the theoretical model proposed in this paper. Who are the key interests? What are the key institutions? And what are the primary interactions?
+
 
 :::

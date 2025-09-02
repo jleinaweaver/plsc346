@@ -203,13 +203,21 @@ Let's start by exploring the framing of the article.
 
 <br>
 
-REPORT BACK and DISCUSS
+*REPORT BACK and DISCUSS*
 
 <br>
 
 Notes
 
-- Research Q: ???
+- Research Q: Is political violence and support for political violence more prevalent in democratic societies with high levels of affective polarization?
+
+- Why important:
+
+    - Per V-dem "the intensity level of political polarization increased by 26.2% within democracies across the world from 2000 to 2018."
+    
+    - Both "support for political violence" and "actual" political violence are also on the rise in democracies
+    
+- Key concepts: Polarization, Democracy, Violence
 
 <br>
 
@@ -241,72 +249,35 @@ Three sets of interactions:
 
 Our next task is to dig into the model of political violence presented and analyzed in this paper.
 
-<br>
-
-My read of the paper is that it focuses on one model in terms of interests and institutions, but with three sets of interactions at play
+- My read of the paper is that it focuses on one model in terms of interests and institutions, but with three sets of interactions at play
 
 <br>
 
-GROUPS, I want you to diagram and evaluate the model in this paper
+Just like last class, our job is twofold:
 
-- Start by clarifying the interests and institutions, then shift to the three sets of interactions
+1. Explain how the mechanism of political violence works, and 
 
+2. To evaluate the model
 
+<br>
 
-1. Explain how the mechanism works
+Let's all start by focusing on the same task
 
-    - e.g. diagram the interests, institutions and interactions in your model ON THE BOARD
+- GROUPS, take a few minutes to identify the interests and institutions in this model
 
-2. Evaluate the model
-
-    - How convincing do you find it as a theoretical explanation of violence in a democracy?
+- You need to consider the arguments across all three sets of interactions to find them all!
 
 - Go!
 
 <br>
 
-**SLIDE**: Let's step through each
+**Groups, what are the interests and institutions in your read of Piazza's model?**
 
-:::
+- *Go group by group and put ON BOARD*
 
-
-
-
-## Polarization and Dehumanization {background-image="Images/00-Leviathan_Cover_55.png" .center}
-
-![](Images/07_2-Brazil_protest.webp){style="display: block; margin: 0 auto"}
-
-::: notes
-
-The article uses Brazil as a case study to illustrate this mechanism in action
-
-:::
-
-
-
-
-## Moral Polarization {background-image="Images/00-Leviathan_Cover_55.png" .center}
-
-![](Images/07_2-Turkey_Secular_Protest.jpg){style="display: block; margin: 0 auto"}
-
-::: notes
-
-The article uses Turkey as a case study to illustrate this mechanism in action
-
-- This protest was in favor of protecting Turkey's secular nature of the government
-
-:::
-
-
-
-
-## Polarization and Group Mobilization {background-image="Images/00-Leviathan_Cover_55.png" .center}
-
-![](Images/07_2-Bangladesh-demonstration-flou.jpg){style="display: block; margin: 0 auto"}
-
-::: notes
-
-The article uses Bangladesh as a case study to illustrate this mechanism in action
+<br>
+    
+**SLIDE**: My version and discussion
 
 :::
 
@@ -314,17 +285,247 @@ The article uses Bangladesh as a case study to illustrate this mechanism in acti
 
 ## Piazza (2023) {background-image="Images/00-Leviathan_Cover_55.png" .center}
 
+**Interests**
+
+- Individuals &#8594; good things for their in-group
+
+- Partisan elites &#8594; political survival / power
+
+**Institutions**
+
+- "instinctual sympathies toward other people and normative inhibitions against harming others" (p484)
+
+
+::: notes
+
+**DISCUSS: What do you think of the model so far?**
+
 <br>
 
-::: {.r-fit-text}
-**Evaluate the Models**
+I really like how simply this model begins
+
+- I don't find any of these basic assumptions deeply problematic or likely to force us to a violent outcome
+
+- Makes the overall argument scarier to me if it predicts that anyone meeting these near universal criteria can be poisoned by polarization!
+
+<br>
+
+**SLIDE**: Back to the interactions
+
+:::
+
+
+
+## Piazza (2023) {background-image="Images/00-Leviathan_Cover_55.png" .center .smaller}
+
+**Interests**
+
+- Individuals &#8594; good things for their in-group
+- Partisan elites &#8594; political survival / power
+
+**Institutions**
+
+- "instinctual sympathies toward other people and normative inhibitions against harming others" (p484)
+
+**Interactions**
 
 1. Polarization and Dehumanization (p482)
-
 2. Moral Polarization (p486)
-
 3. Polarization and Group Mobilization (p489)
+
+::: notes
+
+I'm now going to assign each group a different set of the interactions and I want you to diagram your version of the rest of the model AND be ready to evaluate it for us
+
+- *Assign groups to interactions*
+
+- Work directly on the board and get ready to report back!
+
+<br>
+
+**SLIDE**: Polarization and Dehumanization (p482)
+
 :::
+
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center .smaller}
+
+**Piazza (2023): Polarization and Dehumanization**
+
+**Interests**
+
+- Individuals &#8594; good things for their in-group
+- Partisan elites &#8594; political survival / power
+
+**Institutions**
+
+- "instinctual sympathies toward other people and normative inhibitions against harming others" (p484)
+
+**Interactions**
+
+::: {.fragment}
+- &#8593; partisan polarization &#8594; demonization / dehumanization / "othering" of rival partisans
+
+- Partisan elite rhetoric may reinforce or worsen this dehumanization
+
+- Dehumanization fosters moral disengagement from members of opposing groups
+
+- Moral disengagement makes it more acceptable to target those members with discriminatory practices and violence
+
+:::
+
+::: notes
+
+*PRESENT and DISCUSS*
+
+<br>
+
+**REVEAL**: My version
+
+<br>
+
+Group 1, lead us through your evaluation of this version of the model
+
+- *DISCUSS*
+
+<br>
+
+**Did the Brazilian case study help to illustrate the model? Why or why not?**
+
+<br>
+
+**SLIDE**: Interaction 2 on Moral Polarization
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center .smaller}
+
+**Piazza (2023): Moral Polarization**
+
+**Interests**
+
+- Individuals &#8594; good things for their in-group
+- Partisan elites &#8594; political survival / power
+
+**Institutions**
+
+- "instinctual sympathies toward other people and normative inhibitions against harming others" (p484)
+
+**Interactions**
+
+::: {.fragment}
+- &#8593; partisan polarization &#8594; "moralized" or "zero-sum" political framings
+
+- &#8593; moral polarization &#8594; partisans accept (or demand) violence against the out-group members who are viewed with "anger, blame and disgust"
+
+:::
+
+::: notes
+
+*PRESENT and DISCUSS*
+
+<br>
+
+**REVEAL**: My version
+
+- "moralized" framings = opposing this policy makes you a bad person
+
+- "zero-sum" political framings = supporting policy X is an attack on me personally
+
+- No defense for opposing the moral position, right?
+
+<br>
+
+Group 2, lead us through your evaluation of this version of the model
+
+- *DISCUSS*
+
+<br>
+
+**Did the Turkish case study help to illustrate the model? Why or why not?**
+
+<br>
+
+**SLIDE**: Interaction 3 on Polarization and Group Mobilization
+
+:::
+
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center .smaller}
+
+**Piazza (2023): Polarization and Group Mobilization**
+
+**Interests**
+
+- Individuals &#8594; good things for their in-group
+- Partisan elites &#8594; political survival / power
+
+**Institutions**
+
+- "instinctual sympathies toward other people and normative inhibitions against harming others" (p484)
+
+**Interactions**
+
+::: {.fragment}
+
+- &#8593; "social identity-based" sorting &#8594; political polarization
+
+- &#8593; political polarization (+ elite rhetoric) &#8594; supporters overcome collective action problems
+
+- &#8593; political polarization (+ elite rhetoric) &#8594; supporters willing to intimidate opposing partisans
+
+:::
+
+::: notes
+
+*PRESENT and DISCUSS*
+
+<br>
+
+**REVEAL**: My version
+
+- "social identity-based" sorting e.g. race, religion, education, urban vs rural
+
+<br>
+
+Group 3, lead us through your evaluation of this version of the model
+
+- *DISCUSS*
+
+<br>
+
+**Did the Bangladeshi case study help to illustrate the model? Why or why not?**
+
+<br>
+
+**SLIDE**: Put it all together
+
+:::
+
+
+
+## Piazza (2023) {background-image="Images/00-Leviathan_Cover_55.png" .center .smaller}
+
+**Interests**
+
+- Individuals &#8594; good things for their in-group
+- Partisan elites &#8594; political survival / power
+
+**Institutions**
+
+- "instinctual sympathies toward other people and normative inhibitions against harming others" (p484)
+
+**Interactions**
+
+1. Polarization and Dehumanization (p482)
+2. Moral Polarization (p486)
+3. Polarization and Group Mobilization (p489)
 
 ::: notes
 
@@ -366,17 +567,25 @@ The article uses Bangladesh as a case study to illustrate this mechanism in acti
 
 ::: notes
 
-GROUPS, let's first evaluate the US survey analyses in the paper
+On Canvas I have uploaded the supplementary material to this article
 
-- Get ready to report back your analyses
+- On pages 4 and 5 the appendix includes the survey questions used in the US survey!
 
 <br>
 
-1. What did Piazza do?
+GROUPS, let's first evaluate the US survey analyses in the paper
 
-2. Are you convinced by the quality of the survey?
+- Focus on both the survey questions Piazza used and his description of how he executed it in the main text
 
-3. Are you persuaded by the findings?
+- Get ready to report back the strengths and weaknesses of this data collection effort
+
+- In other words, do you think his data is valid and reliable? Why or why not?
+
+<br>
+
+*ON BOARD: Strengths vs Weaknesses*
+
+- *DISCUSS*
 
 <br>
 
@@ -394,9 +603,25 @@ GROUPS, let's first evaluate the US survey analyses in the paper
 
 ::: notes
 
-The marginal effects
+Here we see the marginal effects from the regression analyses he performed.
 
+- **What do we learn from these? (p495-497)**
 
+<br>
+
+- The slope is positive and significant for both Republicans and Democrats. 
+
+- At low levels of polarization, Dems have a slightly higher tolerance for political violence than republican respondents (Rep 4-6.4 vs Dem 6.7-8.3)
+
+- HOWEVER, at the high end of polarization Republicans show a MUCH larger tolerance for political violence (Rep 14.9-21.7 vs Dem 12.4-15)
+
+<br>
+
+My sense is that these are too high for both sides across the board to sustain a functional democracy!
+
+<br>
+
+**SLIDE**: The cross-national survey
 
 :::
 
@@ -420,13 +645,13 @@ GROUPS, let's now evaluate the Cross-National Time-Series data of democracies ar
 
 - Get ready to report back your analyses
 
+- **Was this a useful, valid and reliable exercise or not?**
+
 <br>
 
-1. What did Piazza do?
+*ON BOARD: Strengths vs Weaknesses*
 
-2. Are you convinced by the quality of the data?
-
-3. Are you persuaded by the findings?
+- *DISCUSS*
 
 <br>
 
@@ -443,9 +668,27 @@ GROUPS, let's now evaluate the Cross-National Time-Series data of democracies ar
 
 ::: notes
 
-The marginal effects
+Here we see the marginal effects from the regression analyses he performed.
+
+- **What do we learn from these? (p500-501)**
 
 <br>
+
+- a clear positive slope in the relationship between political polarization and occurrence of political violence in democracies.
+
+- Democracies that are not polarized (0) have a 1.5% probability of frequent political violence
+
+- Democracies that are “mainly not” polarized (polarization level = 1) have a 4.9%
+
+- Democracies that are “somewhat” polarized (polarization level = 2) have a 12%
+
+- Democracies that are “noticeably” polarized (polarization level = 3) "double"
+
+- Democracies that are “to a large extent” polarized (polarization level = 4) have a 42.9%
+
+<br>
+
+**SLIDE**: Takeaways
 
 :::
 
@@ -472,7 +715,7 @@ Ok, where do we end up?
 
 <br>
 
-### What does this model tell us about promoting democracy as a strategy for reducing political violence around the world?
+**What does this model tell us about promoting democracy as a strategy for reducing political violence around the world?**
 
 <br>
 
@@ -490,6 +733,20 @@ Ok, where do we end up?
 
 ::: notes
 
+Time to put our theories of democratic government political violence to the test
+
+- Go find us cases of success stories from around the world
+
+- Places where an individual, group, country or group of countries took a specific action to stop a democracy from engaging in political violence
+
+- Be ready to evaluate these in terms of our models from this week!
+
+<br>
+
+**Questions on the assignment?**
+
+<br>
+
 Canvas Assignment: Case Studies of Groups Reducing Political Violence in Democracies
 
 Submit to Canvas a recent example of an individual, group, country or group of countries taking a specific action to stop a democracy from engaging in political violence. 
@@ -500,9 +757,7 @@ Submit to Canvas a recent example of an individual, group, country or group of c
 4. Why do you believe it was effective? 
 5. What lessons can we take from this case for preventing political violence in America today?
 
-<br>
 
-**Questions on the assignment?**
 
 :::
 

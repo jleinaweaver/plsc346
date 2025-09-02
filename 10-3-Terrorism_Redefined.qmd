@@ -75,7 +75,9 @@ This week we have been working to deepen our understanding of the "terrorism" co
 
 As a warm-up, let's talk about what has stood out for you so far
 
-### What are the key elements of "terrorism" as you see it now?
+<br>
+
+**What are the key elements of "terrorism" as you see it now?**
 
 - I appreciate Tilly's (2004) discussion of "terror" as a "recurrent strategy of intimidation"
 
@@ -84,7 +86,7 @@ As a warm-up, let's talk about what has stood out for you so far
 
 <br>
 
-### Big substantive debates about terrorism?
+**Big substantive debates about terrorism?**
 
 - Tilly (2004) "crude typology": Can we actually generalize about terrorism if the actors who employ the terror strategy are so incredibly diverse in motivation, aims and tactics?
 
@@ -120,18 +122,23 @@ Schmid (2011): Academic Consensus Definition
 
 As our segue into the Jaggar (2005) article let's start by analyzing her definition of "terrorism."
 
-### Based on the work you've done this week, talk to me about what you learn about Jaggar's perspective on terrorism from this definition.
+<br>
+
+**Based on the work you've done this week, talk to me about what you learn about Jaggar's perspective on terrorism from this definition.**
 
 - *Talk in groups first then report back*
 
 - Jaggar argues this definition has three primary benefits
+
     1. Terrorism Is Not a Specific Type of Conflict; Instead It Is a Tactic That May Be Employed in Various Types of Conflict and in Combination with Other Strategies of Making Claims
+
     2. Terrorism Should Not Be Equated with Any Particular Method of Intimidation. Terrorists Use a Variety of Methods, All of Which May Also Be Used in Contexts That Are Not Terrorist
+
     3. This Account Facilitates Moral Assessment
 
 <br>
 
-### Overall, do you "like" this definition? Does it compare favorably to the consensus definition in Schmid (2023)? Or to Tilly's (2004) four steps?
+**Overall, do you "like" this definition? Does it compare favorably to the consensus definition in Schmid (2023)? Or to Tilly's (2004) four steps?**
 
 - Q: Does "subjugation" add anything new?
 
@@ -143,7 +150,7 @@ As our segue into the Jaggar (2005) article let's start by analyzing her definit
 
 <br>
 
-Notes
+*Notes*
 
 Schmid (2011): Academic Consensus Definition
 
@@ -165,17 +172,17 @@ Jaggar kicks things off with a quote worth reflecting on.
 
 <br>
 
-### Why do we think this paper kicks off with this quote?
+**Why do we think this paper kicks off with this quote?**
 
-### - What kind of perspective does this offer us about terrorism?
-
-<br>
-
-### - Who is Pilger criticizing here?
+- **What kind of perspective does this offer us about terrorism?**
 
 <br>
 
-### - Is this a fair critique? Why or why not?
+- **Who is Pilger criticizing here?**
+
+<br>
+
+- **Is this a fair critique? Why or why not?**
 
 <br>
 
@@ -199,20 +206,25 @@ One of the real values of Jaggar's article is in how seriously it asks us to tak
 
 Here we see a meme that has often made the rounds over the last 20 years.
 
-### What is the context behind this picture? What does this refer to?
+<br>
+
+**What is the context behind this picture? What does this refer to?**
+
 - (US view of the Taliban in Afghanistan)
     - 1985 fighting the soviets = Good guys!
     - 2005 fighting the US = bad guys!
 
 <br>
 
-### What does this dichotomy ask us to remember when discussing "terrorism"?
+**What does this dichotomy ask us to remember when discussing "terrorism"?**
 
 "One person’s terrorist is another person’s freedom fighter"
 
 <br>
 
-I think of this as a reminder to never forget the subjective nature of the act.
+Perspective 1: Can we ever separate the subjective element outside of defining terrorism?
+
+- I think of this as a reminder to never forget the subjective nature of the act.
 
 - No one thinks of themselves as the bad guy in their own story.
 
@@ -242,8 +254,10 @@ This matters for thinking about terrorism as a strategy to achieve some specific
 
 Ok, talk to me about the message here.
 
-### What does this tell us about terror as a strategy?
+**What does this tell us about terror as a strategy?**
+
 1. Even weak groups can achieve terrifying ends if they are sufficiently committed to their cause.
+
     - Small groups with "correct timing, surgical precision and an unambiguous purpose" can represent "an invaluable weapon of war" (Martin 2016 p33).
 
 2. Because "terror" violates norms, it carries more weight than other acts of violence
@@ -253,6 +267,16 @@ Ok, talk to me about the message here.
 In this sense, terrorism is not crazy and it is not definitionally "crazy."
 
 - Terrorists are "terrorists" at least in part because they are violating the norms in a society AND this willingness to violate those norms gives the actions greater substantive weight
+
+<br>
+
+If Perspective 1 argues that we can never omit the subjective element of terrorism
+
+- Perspective 2 argues of course we can! It's context based, not subjective. 
+
+- Any non-state actor choosing to use or threaten violence against civilians to achieve aims outside the norms and rules by which our society has decided to organize itself is a terrorist. 
+
+- Yes this means our definition must adjust to whatever the local conditions are in a state and yes that means people living under brutal regimes are bound by the rules of those regimes, but acting outside those rules in ways that harm non-combatants is terrorism.
 
 :::
 

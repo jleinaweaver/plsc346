@@ -17,9 +17,7 @@ library(carData)
 
 **II. How and why do governments use violence against the people inside their borders?**
 
-<br>
-
-Working on the Country Briefings
+- Working on the Country Briefings
 
 <br>
 
@@ -41,17 +39,23 @@ Prep for Class
 
 
 
-## Paper 2 {background-image="Images/00-Leviathan_Cover_55.png" .center}
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
 
-Political Violence Country Briefings
+::: {.r-fit-text}
+**Paper 2: Political Violence Country Briefings**
+:::
 
-Select **two countries** (no overlapping cases in class) and analyze their recent experience of political violence using **ALL FIVE** of the data sources we explored in class
+<br>
 
-For **EACH** country you must produce a **TWO PAGE** country briefing report that summarizes and visualizes the findings of your analyses
+Select TWO countries and analyze their government's use of political violence
 
-- 2 countries x 2 pages = 4 pages total
+- Must cover the most recently available **five years** of data
 
-- You should aim to analyze at least the last five years of available data for each country.
+- Must reference **ALL FIVE** of the data sources
+
+- Argument must include **three** distinct premises
+
+- Two pages (**max**) per country
 
 ::: notes
 
@@ -65,25 +69,83 @@ For **EACH** country you must produce a **TWO PAGE** country briefing report tha
 
 <br>
 
-### **Prepare at least three conclusions about EACH country's experience of political violence (with visualizations)**
+Submit an outline of each country briefing report
 
-1. Tables 
+- One sentence thesis statement
 
-2. Bar Plots
-
-3. Line Plots
-
-4. Scatter Plots
+- Each premise gets a one sentence explanation and a draft version of the data summary you intend to use to support it (e.g. a table or a visualization)
 
 ::: notes
 
-**Everybody ready to go with this?**
+For today I asked everyone to submit an outline of their briefings to Canvas
+
+- The idea is to help you break this exercise down into simpler pieces, AND
+
+- To help you understand that the conclusions you draw from the data are meant to support bigger ideas (e.g. premises in your argument)
 
 <br>
 
-**SLIDE**: Before we review your work, let's refresh our criteria of professional visualizations
+**How did this go for you?**
+
+<br>
+
+**SLIDE**: Peer review time
 
 :::
+
+
+## Peer-Review Time! {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+<br>
+
+::: {.incremental}
+
+1. Critical Analysis: Is each premise MORE than a simple description of the data?
+
+2. Credibility: Is the proposed data visualization sufficient for supporting this premise?
+
+3. Meso Structure: Do the proposed premises build logically from one to the next?
+
+:::
+
+::: notes
+
+Your job today is to help your classmates and yourself get ready to execute this project to the best of your ability.
+
+- I want you to take time to pair off with EVERYONE else in the class
+
+- Your job is to review their outline and give them ideas to make it stronger or more compelling
+
+- This way everyone gets tons of feedback AND sees a bunch of other projects with a similar aim under development
+
+<br>
+
+I would like to encourage each of you to focus your feedback on three things:
+
+- **REVEAL x 3**
+
+<br>
+
+**Any questions on this task?**
+
+- Go!
+
+<br>
+
+**Which outlines stood out to you as most compelling? Why?**
+
+<br>
+
+**Did everybody come away with some good ideas for attacking these country briefings?**
+
+<br>
+
+**SLIDE**: Before we push to the next step, let's refresh our criteria of professional visualizations
+
+:::
+
+
+
 
 
 
@@ -125,40 +187,35 @@ ggplot(data = UN, aes(y = region)) +
 
 ::: notes
 
-**Questions on these?**
+These are the same criteria I held you to in Data Analysis.
+
+- **Any questions on these?**
 
 <br>
 
-**SLIDE**: Let's review the submissions!
+**SLIDE**: For next class!
 
 :::
-
-
-
-## Peer-Review Time! {background-image="Images/background-data_blue_v4.png" .center}
-
-<br>
-
-1. Is each conclusion MORE than a simple description?
-
-2. Is the proposed data visualization sufficient for supporting this conclusion?
-
-::: notes
-
-
-:::
-
 
 
 
 ## For Next Class {background-image="Images/00-Leviathan_Cover_55.png" .center}
 
-::: {.r-fit-text}
-**Revise and Resubmit with POLISHED visualizations**
-:::
+<br>
+
+Revise and resubmit the outlines from today based on the feedback and your continued reflections on the assignment.
+
+- Each outline must begin with a one sentence thesis statement.
+
+- Each premise (of the three) gets a complete sentence explaining it and a POLISHED version of the data summary you intend to use to support it (e.g. informative titles, clear axis labels, no chart junk, etc.) 
 
 ::: notes
 
+Revise and resubmit the outlines from last class based on the feedback from class and your continued reflections on the assignment.
+
+- Each outline must begin with a one sentence thesis statement.
+
+- Each premise (of the three) gets a complete sentence explaining it and a POLISHED version of the data summary you intend to use to support it (e.g. informative titles, clear axis labels, no chart junk, etc.) 
 
 
 <br>

@@ -75,15 +75,10 @@ Last week we explored two models of political violence by "democratic" governmen
 
 <br>
 
-### And what were your main takeaways from Bueno de Mesquita, Cherif, Downs & Smith's (2005) article?
-- (Attempt to unpack the proposed mechanism above, e.g. which specific democratic institutions have the biggest effect on violence)
+### And what were your main takeaways from Piazza's (2023) article?
+- (Polarization can transform simple partisans into monsters)
 
-- "Party competitiveness" appears to be most important in reducing human rights violations.
-    - "The competitiveness of participation refers to the extent to which alternative preferences for policy and leadership can be pursued in the political arena" (Polity IV Codebook p26).
-    
-- Also, the highest levels of "Executive Constraints (Decision Rules)" appear to reduce violence
-
-- This research also appears to support the "Steps of Distinction" model
+- ?
 
 <br>
 
@@ -92,6 +87,8 @@ Last week we explored two models of political violence by "democratic" governmen
 - (Requires a full commitment to democracy in all its interlocking components)
 
 - (Just preserving a little democracy ain't going to do it!)
+
+- (MUST find ways to decrease polarization)
 
 <br>
 
@@ -123,7 +120,13 @@ If the models from last week are useful, then pushing dictatorships to democrati
 
 <br>
 
-**SLIDE**: Today we start with the Escribà-Folch (2013) article titled "Repression, Political Threats, and Survival under Autocracy"
+*Split class into small groups*
+
+- Go sit with your group!
+
+<br>
+
+**SLIDE**: Article 1
 
 :::
 
@@ -142,6 +145,10 @@ If the models from last week are useful, then pushing dictatorships to democrati
 :::
 
 ::: notes
+
+Today we start with the Escribà-Folch (2013) article titled "Repression, Political Threats, and Survival under Autocracy"
+
+<br>
 
 Let's start by exploring the framing of the article.
 
@@ -190,9 +197,9 @@ REPORT BACK and DISCUSS
 
 This chunk of text is Escribà-Folch defining "repression."
 
-### What does this mean in English? 
+- **What does this mean in English?**
 
-### - In other words, how do I know "repression" when I see it?
+- **In other words, how do I know "repression" when I see it?**
 
 <br>
 
@@ -200,20 +207,25 @@ Repression is a strategic tool used by the leader to suppress dissent.
 
 - This also indicates a series of possible targets for repression
 
-### What does it mean to target "first amendment-type rights"?
+<br>
+
+**What does it mean to target "first amendment-type rights"?**
+
 - (Free speech and the right to organize?)
 
-### What does it mean to target "due process"?
+**What does it mean to target "due process"?**
+
 - (Rule of law)
 
-### What does it mean to target "Personal integrity and security"?
+**What does it mean to target "Personal integrity and security"?**
+
 - (Personal safety?)
 
 <br>
 
-### Compare and contrast "repression" with our definitions of political violence so far in this class. 
+**Compare and contrast "repression" with our definitions of political violence so far in this class.**
 
-### - Are these forms of repression acts of "political violence"? Why or why not?
+- **Are these forms of repression acts of "political violence"? Why or why not?**
 
 :::
 
@@ -352,15 +364,15 @@ OLD CLASS NOTES
 
 Table 1 essentially presents the hypotheses of the model.
 
-### What do we learn from this 2x2 grid about how dictators can use repression for political survival?
+**What do we learn from this 2x2 grid about how dictators can use repression for political survival?**
 
 <br>
 
-### - Are we confident that we can clearly distinguish between these two types of threat? Why or why not?
+- **Are we confident that we can clearly distinguish between these two types of threat? Why or why not?**
 
 <br>
 
-### - Why is box 3 labelled "indeterminate"? e.g. why does meeting violence with violence not make a clear prediction?
+- **Why is box 3 labelled "indeterminate"? e.g. why does meeting violence with violence not make a clear prediction?**
 
 <br>
 
@@ -400,7 +412,7 @@ p549-551 describes the data used for the analysis.
 
 <br>
 
-### What do we think of using these variables to test this model of repression by dictators? Pros and cons?
+**What do we think of using these variables to test this model of repression by dictators? Pros and cons?**
 
 :::
 
@@ -428,7 +440,7 @@ Figure 1 summarizes the main findings of the analysis (p551).
 
 <br>
 
-### What do we learn from this analysis of 1,500 observations covering the behavior of dictatorships from 1972-2004?
+**What do we learn from this analysis of 1,500 observations covering the behavior of dictatorships from 1972-2004?**
 
 <br>
 
@@ -455,9 +467,10 @@ Figure 2 presents the attempt to evaluate the strategic nature of repression.
 <br>
 
 Box A shows us a violence based threat.
+
 - e.g. a test of hypotheses 1 and 3
 
-### What do we learn from the results in (A)?
+**What do we learn from the results in (A)?**
 
 - H3: Responding to violent threats with violence does NOT appear to work at all
 - H1: BUT responding to violence with rights restrictions appears very effective! 
@@ -465,9 +478,11 @@ Box A shows us a violence based threat.
 <br>
 
 Box B is the nonviolent threat
+
 - e.g. a test of hypotheses 2 and 4
 
-### What do we learn from the results in (B)?
+**What do we learn from the results in (B)?**
+
 - Second, both types of repression (terror and restrictions) significantly decrease the risks of a dictator being replaced through nonviolent or regular means, which confirms hypotheses 2 and 4.
 
 - Yet, using political terror is more effective than using restrictions on civil liberties.
@@ -485,17 +500,21 @@ Box B is the nonviolent threat
 ::: notes
 
 Box C tests irregular exit in H1 and H3
+
 - e.g. coups, revolutions, etc
 
-### What do we learn from the results in (C)?
+**What do we learn from the results in (C)?**
+
 - Both types of repression work but rights restrictions work better.
 
 <br>
 
 Box D tests regular exit in H2 and H4
+
 - e.g. stepping down, removal by vote, etc
 
-### What do we learn from the results in (D)?
+**What do we learn from the results in (D)?**
+
 - Both work equally well!
 
 :::
@@ -518,13 +537,13 @@ Box D tests regular exit in H2 and H4
 
 <br>
 
-### What advice would you offer to policy-makers hoping to reduce political repression by dictators?
+**What advice would you offer to policy-makers hoping to reduce political repression by dictators?**
 
-### - Is this article an argument about NOT supporting protest movements in autocracies? Why or why not?
+- **Is this article an argument about NOT supporting protest movements in autocracies? Why or why not?**
 
 <br>
 
-### In what ways could we build from this project? what new and related questions are raised?
+**In what ways could we build from this project? what new and related questions are raised?**
 
 :::
 

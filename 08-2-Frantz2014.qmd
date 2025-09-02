@@ -161,7 +161,7 @@ It all started with a BA in politics!
 
 ::: {.r-fit-text}
 
-**Frantz and Kendall-Taylor (2014): ...**
+**Frantz and Kendall-Taylor (2014): A Dictator’s Toolkit**
 
 <br>
 
@@ -185,12 +185,14 @@ Let's start by exploring the framing of the article.
 
 <br>
 
-REPORT BACK and DISCUSS
+*REPORT BACK and DISCUSS*
 
 <br>
 
 ### So, what is the research question? 
+
 - How do autocrats prolong their hold on power?
+
 - How do autocrats use repression and co-optation as strategies to prolong their hold on power?
 
 <br>
@@ -203,9 +205,11 @@ REPORT BACK and DISCUSS
 
 ## {background-image="Images/00-Leviathan_Cover_55.png" .center}
 
-**Frantz and Kendall-Taylor (2014) "A Dictator’s Toolkit: Understanding How Co-Optation Affects Repression in Autocracies"**
-
 ::: {.r-fit-text}
+
+**Frantz and Kendall-Taylor (2014): A Dictator’s Toolkit**
+
+<br>
 
 **Defining the Key Concept: Repression**
 
@@ -219,11 +223,9 @@ Frantz and Kendall-Taylor discuss "repression" on p334-336
 
 Help me get their definition *ON THE BOARD*.
 
-### What are the key elements of this definition?
+- **What are the key elements of this definition?**
 
-### - Make sure to draw out the types of repression: repression of empowerment rights and physical integrity rights
-
-- ?
+- **Make sure to draw out the types of repression: repression of empowerment rights and physical integrity rights**
 
 <br>
 
@@ -258,7 +260,7 @@ On the slide I have the Escriba-Folch excerpt from Monday on p545.
 
 
 
-## {background-image="Images/08-1-open_book.jpg" .center}
+## {background-image="Images/08-1-open_book.jpg"}
 
 [**How consistent are the framings of the two articles we've read this week?**]{style="color:white;"}
 
@@ -280,9 +282,11 @@ On the slide I have the Escriba-Folch excerpt from Monday on p545.
 
 ## {background-image="Images/00-Leviathan_Cover_55.png" .center}
 
-**Frantz and Kendall-Taylor (2014) "A Dictator’s Toolkit: Understanding How Co-Optation Affects Repression in Autocracies"**
-
 ::: {.r-fit-text}
+
+**Frantz and Kendall-Taylor (2014): A Dictator’s Toolkit**
+
+<br>
 
 **Defining the Key Concept: Co-optation**
 
@@ -296,7 +300,8 @@ Before we diagram the model, let's clarify the other important concept here: Co-
 
 <br>
 
-### What are the key elements of this definition?
+**What are the key elements of this definition?**
+
 - ?
 
 <br>
@@ -309,10 +314,12 @@ Co-optation as important THIRD tool available to dictators, a tool that interact
 
 <br>
 
-### Why not just buy off your opponents? Why create political institutions for them?
+**Why not just buy off your opponents? Why create political institutions for them?**
+
 - (Money doesn't last; institutions represent an ongoing investment in the regime)
 
-### What has the current literature taught us about the interaction between these two tools?
+**What has the current literature taught us about the interaction between these two tools?**
+
 - Vreeland (2008) and Conrad (2014): They find that dictatorships with multiple political parties are more prone to torture than those without them. More chances for someone to cross the line and need to be punished.
 
 - Gandhi (2008): legislators and political parties associated with autocratic systems with more freedom of speech, these argued to be the price of support for the regime.
@@ -492,7 +499,7 @@ p337-340 describes the data used for the analysis.
 
 GROUPS, discuss validity and reliability of these measures for testing this model.
 
-### What do we think of using these variables to test this model of repression by dictators? Pros and cons?
+- **What do we think of using these variables to test this model of repression by dictators? Pros and cons?**
 
 <br>
 
@@ -529,6 +536,7 @@ Figure 1 focuses on the effects of co-optation at different snapshots in time
 <br>
 
 Let's start with interpreting the results in Box A of Figure 1
+
 - y-axis is the effect of co-optation on ER repression (e.g. limiting political rights of everybody)
 
 - x-axis is years since co-optation implemented (1 to 5 years later)
@@ -538,6 +546,7 @@ Let's start with interpreting the results in Box A of Figure 1
 <br>
 
 ### So, what do we learn from Box A?
+
 - (1 year later co-optation has lowered the likelihood of ER repression a small amount (but not significant))
 
 - HOWEVER, in following years it DRAMATICALLY reduces ER repression!
@@ -545,16 +554,18 @@ Let's start with interpreting the results in Box A of Figure 1
 <br>
 
 Box B
+
 - same axes but now the line now represents the effect of co-optation on PIR repression (e.g. targeted violence)
 
 <br>
 
-### What do we learn from Box B?
+**What do we learn from Box B?**
+
 - Co-optation increases PIR repression in all of first four years!
 
-### - Why do we think there's a big delay in the effect? Why the spike in year 2?
+- **Why do we think there's a big delay in the effect? Why the spike in year 2?**
 
-### - Why do we think it loses significance in year five? 
+- **Why do we think it loses significance in year five?**
 
 :::
 
@@ -573,14 +584,17 @@ Box B
 Figure 2 uses the model to predict the level of repression expected in a country over the five years following some level of co-optation being implemented.
 
 - The y-axis is the level of repression
+
     - Box A is limiting rights and B is targeted violence
 
 - The x-axis is level of co-optation
+
     - 0 (no leg or parties), 1 (leg or parties), 2 (leg and one party), 3 (leg and multiple parties) 
 
 <br>
 
 ### What do we learn from Box A?
+
 - (Clear negative slope and tight CI)
 
 - More co-optation, fewer rights restrictions over the next five years
@@ -588,9 +602,11 @@ Figure 2 uses the model to predict the level of repression expected in a country
 <br>
 
 ### And Box B?
+
 - (Less clear positive slope but still positive and significant)
 
 - Authors argue this move from roughly 3.8 to 4.1 are "substantively notable differences once we consider the size of the effects of other key variables" (342).
+
     - Involvement in civil war only moves scores in this analysis by .1
 
 <br>
@@ -602,10 +618,13 @@ Figure 2 uses the model to predict the level of repression expected in a country
 - We find support for this argument: in dictatorships that use parties and legislatures physical integrity rights repression is higher, while empowerment rights repression is lower.
 
 - The effects of co-optation take some time to manifest themselves
+
     - cooptation’s negative effect on ER repression peaks four to five years after the implementation of these institutions, while its positive effect on PIR repression peaks two to three years later (341).
 
 - Interestingly institutional co-optation is "quite common in autocracies"
+
     - Of the 460 dictators in power from 1946 to 2004, 410 of them created either a party or a legislature at some point while in office (333)
+
     - Only 11% (50) chose not to create a party or legislature
 
 :::

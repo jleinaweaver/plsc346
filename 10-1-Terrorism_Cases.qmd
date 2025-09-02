@@ -300,11 +300,15 @@ Alright, let's combine our efforts.
 
 <br>
 
+::: {.r-fit-text}
+
 Submit reflections on Canvas:
 
 1. Tilly (2004). Terror, Terrorism, Terrorists.
 
 2. Schmid (2023). Defining Terrorism.
+
+:::
 
 ::: notes
 

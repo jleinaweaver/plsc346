@@ -177,6 +177,8 @@ Being an expert means:
 **The Challenge of Defining Terrorism**
 :::
 
+<br>
+
 **Tilly (2004, p9)**
 ![](Images/10_2-Tilly2004_p9_short.png){style="display: block; margin: 0 auto"}
 
@@ -399,6 +401,8 @@ Notes
 ::: {.r-fit-text}
 **The Challenge of Defining Terrorism**
 :::
+
+<br>
 
 :::: {.columns}
 ::: {.column width="50%"}
