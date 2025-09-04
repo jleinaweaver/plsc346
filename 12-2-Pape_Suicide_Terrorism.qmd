@@ -39,13 +39,13 @@ Today we continue our work exploring the question: Can "terrorism" ever "succeed
 
 <br>
 
-### Based on your cases, do you have an answer for this question? Why or why not?
+**Based on your cases, do you have an answer for this question? Why or why not?**
 
-### - What are the primary challenges in answering it?
+- **What are the primary challenges in answering it?**
 
 <br>
 
-### Refresh my memory, what are the two baseline assumptions we are working from in order to try and answer this question?
+**Refresh my memory, what are the two baseline assumptions we are working from in order to try and answer this question?**
 
 - (**SLIDE**)
 
@@ -64,6 +64,12 @@ Today we continue our work exploring the question: Can "terrorism" ever "succeed
 ::: notes
 
 **Do we have any concerns about beginning our scientific attempt to answer this question with these assumptions? Why or why not?**
+
+<br>
+
+*Split class into groups (3?)*
+
+- Go sit with your group!
 
 :::
 

@@ -34,9 +34,15 @@ Prep for Class
 
 1. Review submissions on Canvas
 
+2. Links and files
+    
+    - [Definitions](https://www.rand.org/nsrd/projects/terrorism-incidents/about/definitions.html)
+    - [Coverage](https://www.rand.org/nsrd/projects/terrorism-incidents/about/coverage.html)
+    - File: RAND_Database_of_Worldwide_Terrorism_Incidents.xlsx
+
 <br>
 
-**SLIDE**: Last week's focus on deepening our understanding of the key concept for this section of the class - terrorism.
+**SLIDE**: Last week we worked to deepen our understanding of terrorism as a contested concept
 
 :::
 
@@ -71,7 +77,9 @@ Prep for Class
 
 ::: notes
 
-**What are your key takeaways so far?**
+Catch me up on our work so far!
+
+- **What are the key takeaways of our work trying to define terrorism?**
 
 <br>
 
@@ -81,9 +89,11 @@ Prep for Class
 
 **Why do we, in this class, care about the morality of this act?**
 
-- (Remember, our aim is to expand knowledge by measuring the world)
+<br>
 
-- If every "use" of terror as a strategy is framed using morality then we better have some familiarity with the language and rationales of it.
+Remember, our aim is to expand knowledge by measuring the world
+
+- If terror as a strategy is frequently justified on moral grounds, then we'd better explore the language and rationales for it.
 
 <br>
 
@@ -174,10 +184,12 @@ For each of these projects we are going to focus on answering these four questio
 
 ::: notes
 
-Groups take 8 minutes to answer this question.
+Groups take 8 minutes to answer this question
+
 - Pros vs cons
 
 Think about the project in broad strokes
+
 - Who is the RAND Corporation, how do they define the key concepts and how are they measuring terrorism?
 
 <br>
@@ -216,11 +228,13 @@ Think about the project in broad strokes
 <br>
 
 RAND advertises itself as a non-partisan think-tank.
+
 - Many contracts and much funding through US military and military contractors
 
 <br>
 
 This does tend to influence their problem-framings and perspectives on defense issues.
+
 - Not a question of misrepresenting data, but asking and answering questions in line with US defense industry perspectives.
 
 <br>

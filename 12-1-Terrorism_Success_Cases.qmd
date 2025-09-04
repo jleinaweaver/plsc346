@@ -33,7 +33,8 @@ Prep for Class
 1. Review submissions on Canvas
 
 2. Prep (and publish on Canvas) the Google Sheet for unpacking the cases
-    - tbd
+
+3. Markers x 5
 
 <br>
 
@@ -108,9 +109,13 @@ There are a couple of key assumptions I'm making here that we are going to adopt
 
 <br>
 
-Can terrorism be effective?
+::: {.r-fit-text}
+
+Can terrorism be an effective strategy?
 
 - Go find us cases!
+
+:::
 
 ::: notes
 
@@ -118,7 +123,7 @@ Before we dig into the academic literature I want us to take a shot at answering
 
 <br>
 
-### Everybody ready to go on this?
+**Everybody ready to go on this?**
 
 <br>
 
@@ -142,45 +147,96 @@ Let's unpack these cases as we have done previously in class.
 
 
 
-## Can "terrorism" ever "succeed"? {background-image="Images/00-Leviathan_Cover_55.png" .center}
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
 
-<br>
+::: {.r-fit-text}
 
-1. Review the cases for clarity, and
+**Can "terrorism" ever "succeed"?**
 
-2. Rank the cases from "most" to "least" successful
+1. Review the cases for clarity
 
+::: {.fragment}
+
+2. Make three lists on the board:
+    
+    i. The "most successful" cases
+    
+    ii. The "somewhat successful" cases 
+    
+    iii. The "least successful" cases
+:::
+:::
 ::: notes
 
 Groups, take a few minutes to review all the cases
 
 - Use this as a chance to request clarification from the submitter if anything doesn't make sense
-    
-- IMPORTANT: The ranking exercise requires some careful thought about your criteria for success
-
-- Be ready to present your ranking and explain how you approached it
 
 <br>
 
-### Questions?
+**REVEAL**: Your first big job is to classify the cases into three groups
+
+- My intention for this exercise is to use these cases to help us generate new theories of terrorism, not develop a measurement of success
+
+- Some of these "success" cases will seem super clear to you and others less so
+
+- At this point I just want you to trust your gut as you review the cases
+
+<br>
+
+**Questions on the task?**
 
 - Go!
 
 <br>
 
-Groups report back your rankings and explain your logic.
-
-- For ease, give us your 2-3 "most successful" cases and your 2-3 "least successful" cases
-
-<br>
-
-*ON BOARD: Criteria for success?*
+**SLIDE**: Ok, groups, next job.
 
 :::
 
 
 
-## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+## Theories of Successful Terrorism {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+<br>
+
+::: {.r-fit-text}
+
+**What are the criteria that explain your lists?**
+
+1. What explains the "most successful" classification?
+
+2. What explains the "least successful" classification?
+
+:::
+
+::: notes
+
+NOW I want you to analyze your classifications
+
+- Help us unpack your work
+
+- What are the elements of these acts of terrorism that pushed you to call them "most" or "least" successful?
+
+- Two new lists on the board!
+
+<br>
+
+**Questions?**
+
+- Go!
+
+<br>
+
+**SLIDE**: Groups report back
+
+:::
+
+
+
+## Theories of Successful Terrorism {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+<br>
 
 **Under what conditions are terrorists more or less likely to succeed in their aims?**
 
@@ -190,25 +246,19 @@ Groups report back your rankings and explain your logic.
 
 ::: notes
 
-Let's now use your work to generate some testable hypotheses.
+Groups report back your work and walk us through your theory of when terrorism can be successful
 
-- Groups, take some time to build two lists
-
-- What are the conditions that raise or lower the probability of a successful terror attack?
-
-- This can be characteristics of the terrorist, the group, the ideology, the goals, the methods, anything.
+- *PRESENT and DISCUSS proposals*
 
 <br>
 
-### Questions on what I'm asking for?
+**After all this work, where do you end up on our big question?**
 
-- Go!
+- **Can terrorism ever be effective? Why or why not?**
 
 <br>
 
-Let's report back!
-
-- *ON BOARD* Two Lists
+**SLIDE**: Next class
 
 :::
 
@@ -216,13 +266,20 @@ Let's report back!
 
 ## {background-image="Images/13-1-belfast_mural.png"}
 
-**The Strategic Logic of Suicide Terrorism (Pape 2003)**
+[**The Strategic Logic of Suicide Terrorism (Pape 2003)**]{style="color:red;"}
 
-- Submit analysis to Canvas
+- [Submit analysis to Canvas]{style="color:red;"}
 
 ::: notes
 
 For next class!
+
+<br>
+
+Canvas Assignment: Analyzing the Pape (2003) Argument
+
+Diagram the theoretical model proposed in this paper. Who are the key interests? What are the key institutions? And what are the primary interactions?
+
 
 :::
 

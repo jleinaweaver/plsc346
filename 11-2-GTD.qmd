@@ -10,7 +10,7 @@ library(readxl)
 library(kableExtra)
 
 # Data for today
-d <- read_excel("../../Data/GTD-Global_Terrorism_Database/2025-April-Download/GTD-Full_Dataaset_1970-2020.xlsx", na = "NA")
+d <- read_excel("../../Data/GTD-Global_Terrorism_Database/2025-April-Download/GTD-Full_Dataset_1970-2020.xlsx", na = "NA", guess_max = 100000)
 
 d_usa <- d |> filter(country_txt == "United States")
 
@@ -38,7 +38,78 @@ Prep for Class
 
 1. Review submissions on Canvas
 
+2. Files and links
+
+    - File: GTD-Codebook2021.pdf
+    - File: GTD-Full_Dataset_1970-2020.xlsx
+    - File: GTD-5yr_Snapshots-1970_2020.xlsx
+    - File: GTD-USA-1970_2020.xlsx
+    - [About](https://www.start.umd.edu/data-tools/GTD)
+    - [Methods highlights](https://www.start.umd.edu/using-gtd)
+    - [FAQ](https://www.start.umd.edu/gtd-faqs)
+    
+3. Update RAND pros and cons list AND key takeaways in refresher slides below
+
+<br>
+
+**SLIDE**: RAND database reflections
+
 :::
+
+
+
+## {background-image="Images/10_1-Terrorism_Background_darker.png" .center}
+
+:::: {.columns}
+::: {.column width="50%"}
+
+::: {.r-fit-text}
+
+[**"Terrorism"**]{style="color:white;"}
+
+[**1) Concept**]{style="color:white;"}
+
+[**2) Case studies**]{style="color:white;"}
+
+[**3) Operationalization**]{style="color:white;"}
+
+[**4) Instrumentation**]{style="color:white;"}
+
+[**5) Measurement**]{style="color:white;"}
+:::
+:::
+
+::: {.column width="10%"}
+
+:::
+
+::: {.column width="40%"}
+![](Images/11_1-RAND_Logo.png)
+:::
+::::
+
+::: notes
+
+Last class we examined the RAND Database of Worldwide Terrorism Incidents (RDWTI)
+
+- **Focusing just on the methodology, what are the pros and cons of using this as our primary database of terrorism?**
+
+<br>
+
+Pros:
+
+- ?
+
+Cons:
+
+- ?
+
+<br>
+
+**SLIDE**: And what does the RAND database tell us about terrorism?
+
+:::
+
 
 
 
@@ -48,23 +119,35 @@ Prep for Class
 
 **Research Questions**
 
-1. What are the pros and cons of using this as our primary database of terrorism?
+1. Is the damage caused by terrorism getting worse over time?
 
-2. Is the damage caused by terrorism getting worse over time?
+2. Where are the terrorism hot spots in the world?
 
-3. Where are the terrorism hot spots in the world?
-
-4. Are the characteristics of terrorism changing?
+3. Are the characteristics of terrorism changing?
 
 ::: notes
 
-On Monday we evaluated the RAND Database of Worldwide Terrorism Incidents (RDWTI) and analyzed its data
+**Refresh my memory, what were our answers to these three questions using the RDWTI?**
 
 <br>
 
-### Refresh my memory, what were our answers to these four questions for the RDWTI?
+**SLIDE**: Next project
+
+:::
+
+
+
+## Sources of Terrorism Data {background-image="Images/00-Leviathan_Cover_55.png" .center}
 
 <br>
+
++ RAND Database of Worldwide Terrorism Incidents (RDWTI)
+
++ Global Terrorism Database (GTD)
+
++ Extended Data on Terrorist Groups (EDTG)
+
+::: notes
 
 Today we move to our second big project that aims to measure terrorism events around the world: the Global Terrorism Database (GTD)
 
@@ -248,7 +331,8 @@ d |>
     crit3 = if_else(crit3 == 1, "Yes", "")
   ) |>
   rename("Criteria 1" = crit1, "Criteria 2" = crit2, "Criteria 3" = crit3, Count = n) |>
-  knitr::kable(digits = 2, align = "c")
+  knitr::kable(digits = 2, align = "c") |>
+  kable_styling(font_size = 28)
 ```
 
 1. The act must be aimed at attaining a political, economic, religious, or social goal. 
@@ -956,9 +1040,9 @@ Here we see summary statistics for the variables we've been exploring but focuse
 
 ## Measuring Terrorism {background-image="Images/00-Leviathan_Cover_55.png" .center}
 
-<br>
-
 ![](Images/11-2-rand.png){style="display: block; margin: 0 auto"}
+
+<br>
 
 ![](Images/11-2-GTD.png){style="display: block; margin: 0 auto"}
 

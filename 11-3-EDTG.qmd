@@ -82,11 +82,15 @@ Before we dig in, let's discuss the critique of RAND in the article for today.
 
 ![](Images/11-2-rand.png){style="display: block; margin: 0 auto"}
 
+::: {.r-fit-text}
+
 1. No updates after 2007 (now 2009?)
 
 2. Only domestic attacks since 1998
 
 3. Only "significant" events
+
+:::
 
 ::: notes
 
@@ -188,12 +192,11 @@ The danger is that this dataset implies a high level of accuracy in terms of des
 
 
 
-## {background-image="Images/11_3-domestic_terror.jpg" .center}
+## {background-image="Images/11_3-domestic_terror_v2.png"}
 
-**Who are the domestic terror groups currently active in the USA? (2016)**
+### [Who are the domestic terror groups currently active in the USA? (2016)]{style="color:black;"}
 
 ::: notes
-
 Let's practice navigating the dataset.
 
 - Groups, turn on the filter for the data and identify the terror groups in 2016 with a base in the US.
@@ -238,14 +241,14 @@ d |>
 
 <br>
 
-### Are we to assume this means there are only five terror groups based in the US in 2016?
+**Are we to assume this means there are only five terror groups based in the US in 2016?**
 
 - Per their case selection criteria, yes.
 - Groups must have committed an attack
 
 <br>
 
-### Scan across the data for these groups ACROSS TIME, what do we learn about them?
+**Scan across the data for these groups ACROSS TIME, what do we learn about them?**
 
 :::
 
@@ -294,9 +297,11 @@ d |>
 
 Here we see total attacks per group per year.
 
-### Any takeaways?
+**Any takeaways?**
 
-(SLIDE: Casualties)
+<br>
+
+(**SLIDE**: Casualties)
 
 <br>
 
@@ -358,7 +363,7 @@ d |>
 
 Here we see total casualties (injuries + deaths) per group per year.
 
-### Any takeaways?
+- **Any takeaways?**
 
 <br>
 
@@ -420,7 +425,7 @@ d |>
 
 <br>
 
-### Do these results paint an accurate picture of US based terrorism? Why or why not? 
+**Do these results paint an accurate picture of US based terrorism? Why or why not?**
 
 :::
 
@@ -472,11 +477,11 @@ Let's hear what you found! Introduce us to your group.
 
 <br>
 
-### Bottom line, is the EDTG our best choice for studying terrorism? Why or why not?
-
-### Are we convinced these new measures are both valid and reliable? Why or why not?
+**SLIDE**: Wrap it up
 
 <br>
+
+*NOTES*
 
 duration: The duration in years of a terrorist group’s existence since its formation.
 
@@ -520,15 +525,77 @@ public_service: This dummy variable indicates whether a terrorist group has ever
 
 
 
+## {background-image="Images/10_1-Terrorism_Background_darker.png" .center}
+
+:::: {.columns}
+::: {.column width="35%"}
+
+::: {.r-fit-text}
+
+[**"Terrorism"**]{style="color:white;"}
+
+[**1) Concept**]{style="color:white;"}
+
+[**2) Case studies**]{style="color:white;"}
+
+[**3) Operationalization**]{style="color:white;"}
+
+[**4) Instrumentation**]{style="color:white;"}
+
+[**5) Measurement**]{style="color:white;"}
+:::
+:::
+
+::: {.column width="10%"}
+
+:::
+
+::: {.column width="55%"}
+![](Images/11_3-EDTG_Header.png)
+:::
+::::
+
+::: notes
+
+**Bottom line, is the EDTG our best choice for studying terrorism? Why or why not?**
+
+- **Are we convinced these new measures are both valid and reliable? Why or why not?**
+
+<br>
+
+**SLIDE**: Next class
+
+:::
+
+
+
 ## For Next Class {background-image="Images/00-Leviathan_Cover_55.png" .center}
 
 <br>
 
-Can terrorism be effective?
+::: {.r-fit-text}
+Can terrorism be an effective strategy?
 
 - Go find us cases!
+:::
 
 ::: notes
+
+Details on Canvas
+
+- **Questions on the assignment?**
+
+<br>
+
+Canvas Assignment: Cases of Effective Terror Acts
+
+Submit to Canvas a piece of evidence showing terrorism (e.g. a terrorist group, a terrorist threat or a specific terror attack) changing the behavior of a target audience (e.g. society, community, government) in some specific way.
+
+1. Submit an APA citation to evidence of your selected act, 
+
+2. A brief explanation of why this was terrorism, AND 
+
+3. A brief explanation of why you believe it was "successful."
 
 
 :::

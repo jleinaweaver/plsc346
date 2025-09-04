@@ -34,6 +34,12 @@ Prep for Class
 
 <br>
 
+This week we have been working to deepen our understanding of the "terrorism" concept.
+
+- Specifically, we have been systematically collecting cases, arguments and definitions meant to help us evaluate measurements of terrorism (our work next week).
+
+- **SLIDE**: As a warm-up, let's talk about what has stood out for you so far
+
 :::
 
 
@@ -66,16 +72,6 @@ Prep for Class
 ::::
 
 ::: notes
-
-This week we have been working to deepen our understanding of the "terrorism" concept.
-
-- Specifically, we have been systematically collecting cases, arguments and definitions meant to help us evaluate measurements of terrorism (our work next week).
-
-<br>
-
-As a warm-up, let's talk about what has stood out for you so far
-
-<br>
 
 **What are the key elements of "terrorism" as you see it now?**
 
@@ -270,9 +266,9 @@ In this sense, terrorism is not crazy and it is not definitionally "crazy."
 
 <br>
 
-If Perspective 1 argues that we can never omit the subjective element of terrorism
+If Perspective 1 argues that we can never omit the subjective element of terrorism, Perspective 2 argues of course we can! 
 
-- Perspective 2 argues of course we can! It's context based, not subjective. 
+- Perspective 2: Terrorism is context based, but not subjective. 
 
 - Any non-state actor choosing to use or threaten violence against civilians to achieve aims outside the norms and rules by which our society has decided to organize itself is a terrorist. 
 
@@ -294,8 +290,10 @@ If Perspective 1 argues that we can never omit the subjective element of terrori
 
 Ok, talk to me about the message here.
 
-### What does this tell us about terror as a strategy?
+**What does this tell us about terror as a strategy?**
+
 - (Swap out "liberty" for any other cause and one can understand the kind of single-minded devotion that leads to terrorist actions.)
+
     - Frames the cause in terms of good vs evil.
 
 <br>
@@ -317,24 +315,34 @@ This perspective on terrorism pervades many modern debates in the US and around 
 *Read quote*
 
 We must destroy the town to save it.
+
 - A notorious quote from a US Army officer explaining why a Vietnamese town overrun by Viet Cong soldiers had been destroyed by aerial bombing.
 
+<br>
+
 I am NOT asserting this is or isn't terrorism.
+
 - Just interested in the perspective on a controversial act of violence.
 
 <br>
 
 Ok, talk to me about the message here.
 
-### What does this tell us about terror as a strategy?
+- **What does this tell us about terror as a strategy?**
 
-- (Symbolic argument: There is nothing worse than being occupied by the enemy so bombing the town prevented that outcome.)
-    - The "village" can be replaced by any symbolic value.
+<br>
 
-- Terrorists often use this kind of logic to justify imposing hardships on even their own supporters.
+(Symbolic argument: There is nothing worse than being occupied by the enemy so bombing the town prevented that outcome.)
+
+- The "village" can be replaced by any symbolic value.
+
+<br>
+
+Terrorists often use this kind of logic to justify imposing hardships on even their own supporters.
 
 - History is written by the powerful. 
-    - States can convey legitimacy on horrible acts (or at least can try to...)
+
+- States can convey legitimacy on horrible acts (or at least can try to...)
 
 :::
 
@@ -467,6 +475,8 @@ Even Jaggar (2005) argues that her definition makes clear terrorism is morally r
 
 - Make sure you understand the observations and variables enough to play with them in class.
 
+- Find us something interesting to discuss!
+
 ::: notes
 
 Next week we explore three data projects used by terrorism researchers to study the concept around the world.
@@ -475,6 +485,15 @@ Next week we explore three data projects used by terrorism researchers to study 
 
 <br>
 
-### Do we want to meet in the computer lab?
+**Do we want to meet in the computer lab?**
+
+<br>
+
+Canvas Assignment: Explore the RAND Database of Worldwide Terrorism Incidents
+
+1. Review the RAND website related to the methodology of the database (https://www.rand.org/nsrd/projects/terrorism-incidents/about/definitions.html) and (https://www.rand.org/nsrd/projects/terrorism-incidents/about/coverage.html)
+
+2. Review the cases in the dataset (RAND_Database_of_Worldwide_Terrorism_Incidents.xlsx) and find us something interesting to discuss. Submit a description of what you found AND how you found it (e.g. steps taken).
+
 
 :::

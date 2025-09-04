@@ -34,16 +34,18 @@ Prep for Class
 Today we continue our exploration of the literature that aims to evaluate the effectiveness of terrorism.
 
 - I think this is an excellent article.
+
     - Really well-written with a clear and compelling analysis.
     
 - However, I do find the organization a little confusing.
+
     - He jumps around quite a bit from data to theory and back again
 
 <br>
 
 Last class we explored Pape's (2003) paper on the logic of suicide terrorism.
 
-### According to Pape's model, why would a terrorist choose suicide as their preferred method of attack?
+**According to Pape's model, why would a terrorist choose suicide as their preferred method of attack?**
 
 - (**SLIDE:** Model diagram)
 
@@ -118,6 +120,12 @@ Pape's article appears to provide us with:
 <br>
 
 However, as you saw in the reading for today, Max Abrahms has some concerns!
+
+<br>
+
+*Split class into new groups (3?)*
+
+- Go sit with your group!
 
 :::
 
@@ -464,10 +472,13 @@ Let's talk case selection first.
 <br>
 
 ### Strengths and weaknesses of this data source?
+
 Strengths: 
+
 - ?
 
 Weaknesses: 
+
 - ?
 
 <br>
@@ -710,6 +721,12 @@ Collins, J. (2021). A New Wave of Terrorism? A Comparative Analysis of the Rise 
 - Submit reflections on Canvas
 
 ::: notes
+
+Canvas Assignment: Analyzing Collins (2021) Argument
+
+1. Briefly describe the "wave" model of terrorism analyzed in this paper (e.g. Rapoport’s Modern Waves of Terrorism Theory). How does it work?
+
+2. Are you convinced this is a useful way to define and study terrorism? Why or why not? (3+ sentences)
 
 
 :::
