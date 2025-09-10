@@ -1,0 +1,364 @@
+---
+format: revealjs
+---
+
+## Today's Agenda {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+```{r}
+library(tidyverse)
+library(readxl)
+library(kableExtra)
+```
+
+<br>
+
+**III. How and why do non-state actors use political violence?**
+
+<br>
+
+- Brainstorming a political violence research project
+
+<br>
+
+::: r-stack
+Justin Leinaweaver (Fall 2025)
+:::
+
+::: notes
+Prep for Class
+
+1. Review submissions on Canvas
+
+2. Markers x 4
+
+<br>
+
+**Refresh my memory, why do scientists need research questions?**
+
+- (**SLIDE**)
+
+:::
+
+
+
+## Why do we need a research question? {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+<br>
+
+A research question **focuses** your work, **drives** your progress and let's you know when you're **done**
+
+::: notes
+
+**Refresh my memory, what makes a question a "research" question?**
+
+- (**SLIDE**: Per Huntington-Klein there are two requirements)
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+::: {.r-fit-text}
+**Research Questions (Huntington-Klein 2022)**
+
+1. Can be answered
+
+2. Improves our understanding of the world
+
+:::
+
+::: notes
+
+**Does this resonate differently now that we've done this exercise in class once already? (last week)**
+
+<br>
+
+**And what are the criteria of a good research question we discussed?**
+
+- (**SLIDE**)
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+::: {.r-fit-text}
+**Research Questions (Huntington-Klein 2022)**
+:::
+
+<br>
+
+**How Do You Know if You’ve Got a Good One?**
+
+- Consider Potential Results
+
+- Consider Feasibility
+
+- Consider Scale
+
+- Consider Design
+
+- Keep It Simple!
+
+
+::: notes
+
+Per Huntington-Klein, we should focus our research efforts on questions we are likely able to answer with the resources available to us.
+
+<br>
+
+That means we should: 
+
+- **Consider Potential Results**: "If you can’t say something interesting about your potential results, that probably means your research question and your theory aren’t as closely linked as you think!"
+
+- **Consider Feasibility**: "A research question should be a question that can be answered using the right data, if the right data is available. But is the right data available?"
+
+- **Consider Scale**: "What kind of resources and time can you dedicate to answering the research question? ... Given the confines of, say, a term paper, you could take some wild swings at that question, but you’re likely to do a much more thorough job answering questions with a lot less complexity."
+
+- **Consider Design**: "So, an important part of evaluating whether you have a workable research question is figuring out if there’s a reasonable research design you can use to answer it. Figuring out whether you do have a reasonable research design is the topic of the rest of this book."
+
+- **Keep It Simple!**: "Answering any research question can be difficult. Don’t make it even harder on yourself by biting off more than you can chew!"
+
+<br>
+
+So, a research question:
+
+1. Can be answered,
+
+2. Improves our understanding of the world, and 
+
+3. Is feasible given our reseources
+
+<br>
+
+**Questions on any of this?**
+
+<br>
+
+**SLIDE**: To your work!
+
+:::
+
+
+
+
+## For Today {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+<br>
+
+### Research Questions to Explore the Intersection of the Internet and Terrorism
+
+::: notes
+
+For today I asked each of you to submit and explain a research question we could use to push forward our knowledge of terrorism in the world today.
+
+- **Everybody ready to go with this?**
+
+<br>
+
+*Split class into four groups, work with new people!*
+
+- *I'd prefer smaller groups BUT there's only so much board space*
+
+- Go sit with your new group!
+
+<br>
+
+**SLIDE**: Groups choose/refine a research question
+
+:::
+
+
+
+## Developing a Research Proposal {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+<br>
+
+### 1. Select a research question for your group
+
+- Write the question on the board
+
+- Draw a simple DAG below the question
+
+```{r, fig.retina = 3, fig.align = 'center', fig.width = 6, fig.height=.85, out.width='85%'}
+## Manual DAG
+d1 <- tibble(
+  x = c(-3, 3),
+  y = c(1, 1),
+  labels = c("Predictor", "Outcome")
+)
+
+ggplot(data = d1, aes(x = x, y = y)) +
+  geom_point(size = 8) +
+  theme_void() +
+  coord_cartesian(xlim = c(-4, 4)) +
+  geom_label(aes(label = labels), size = 7) +
+  annotate("segment", x = -1.9, xend = 1.9, y = 1, yend = 1, arrow = arrow())
+```
+
+::: notes
+
+Groups, pick the RQ you want to work on in class today
+
+- Can be one of the ones submitted to Canvas or something new
+
+<br>
+
+Once you have your RQ:
+
+1. Write it on the board, and
+
+2. Summarize the question with a directed acyclic graph (DAG)
+
+<br>
+
+**Questions?**
+
+- Go!
+
+<br>
+
+*PRESENT and DISCUSS each*
+
+- Groups, take a moment to address the feedback you get from this
+
+<br>
+
+**SLIDE**: Theory
+
+:::
+
+
+
+## Developing a Research Proposal {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+<br>
+
+### 2. Propose a theory
+
+- List the reasons your predictor causes your outcome
+
+::: notes
+
+Groups, your next job is to propose a theory that answers this question
+
+- In other words, you need to explain the arrow in the DAG
+
+<br>
+
+Think of this like diagramming an argument
+
+- You are arguing that these two concepts are linked by a causal mechanism (e.g. changes in the predictor lead to changes in the outcome)
+
+- Give us the reasons on the board WHY you think this is true
+
+<br>
+
+**Questions?**
+
+- Go!
+
+<br>
+
+*PRESENT and DISCUSS each*
+
+- Groups, take a moment to address the feedback you get from this
+
+<br>
+
+**SLIDE**: Data needs
+
+:::
+
+
+
+## Developing a Research Proposal {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+<br>
+
+### 3. Describe your data needs
+
+- What is the ideal type of data you would need?
+
+- Do a web search and see if it exists
+
+::: notes
+
+Groups, you now have a question and a theory that suggests an answer to it
+
+- The next step is to identify the kinds of specific measures you would need to answer this question and test your theory
+
+<br>
+
+1. Make sure you understand what kind of measures you would need to answer your question, then
+
+2. Do a simple web search and look to see if this data exists!
+
+<br>
+
+**Questions?**
+
+- Go!
+
+<br>
+
+*PRESENT and DISCUSS each*
+
+<br>
+
+**SLIDE**: Wrap it up
+
+:::
+
+
+
+## For Today {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+<br>
+
+### Research Questions to Explore the Intersection of the Internet and Terrorism
+
+::: notes
+
+**Ok, where do we end up with this?**
+
+- **Groups, do you feel like you have the makings of a real research project here? One that is doable AND would improve our understanding of the world?**
+
+<br>
+
+**Any lessons for the next time you do an exercise like this?**
+
+- **Anything you've learned from this you would apply next time?**
+
+<br>
+
+**SLIDE**: Next class
+
+:::
+
+
+
+## For Next Class {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+<br>
+
+### TBD
+
+::: notes
+
+Details on Canvas
+
+- **Questions on the assignment?**
+
+<br>
+
+Canvas Assignment: ...
+
+:::
+
+
+
+
+

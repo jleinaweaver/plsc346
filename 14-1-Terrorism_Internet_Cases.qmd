@@ -31,40 +31,81 @@ Prep for Class
 
 1. Review submissions on Canvas
 
+2. Markers x 3
+
 <br>
 
 In this final section of our work on terrorism we have been exploring the cutting-edge of terrorism research
 
-- Last week we examined the literature on the rise of far-right terrorism (FRT), radicalization in the United States and whether or not there are significant differences in the kinds of terror used by different ideological groups.
+- **SLIDE**: Last week...
+
+:::
+
+
+
+## A New "Wave" of Terrorism: FRT {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+![](Images/14_1-far_right_terror.jpg){style="display: block; margin: 0 auto"}
+
+
+::: notes
+
+Last week we examined the literature on the rise of far-right terrorism (FRT) as a new "wave" of terrorism
+
+- We also explored the PIRUS dataset and brainstormed research projects to push this literature forward
 
 <br>
 
+**Refresh my memory, what were the projects you developed last week?**
+
+<br>
+
+**SLIDE**: Next steps
+
+:::
+
+
+
+## {background-image="Images/14_1-CyberTerrorism_v2.png" .center}
+
+::: notes
+
 This week we shift to examining the interaction between terrorism and the internet
 
-1. How is the terror strategy adapting to a digital world?
+<br>
 
-2. Does the literature find evidence of these mechanisms in action?
+I'd like us to consider how the internet has interacted with, and complicated, our understandings of terrorism
 
-3. How could we contribute to this new area of research?
+- How are terrorists adapting to a digital world?
+
+- How are governments adapting their prevention strategies to meet these new threats?
+
+- Where does the literature need to go next?
+
+<br>
+
+**SLIDE**: Assignment for today
 
 :::
 
 
 
 
-## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+## For Today {background-image="Images/00-Leviathan_Cover_55.png" .center}
 
 <br>
 
-### Has the internet transformed terrorism as a strategy of political violence?
+### The Future of Terrorism
 
-1. Describe the case (Actor? Action? Target?)
+Bring to class **TWO** examples of the internet changing terrorism as a political strategy. 
 
-2. How does this show us the internet has changed terrorism?
+1. A terror group changing its operational behavior, and
+
+2. States changing how they combat terrorism
 
 ::: notes
 
-For today I asked everybody to submit a case we could use to develop our intuitions about this complicated interaction.
+For today I asked everybody to submit two cases we could use to develop our intuitions about this complicated interaction.
 
 <br>
 
@@ -72,40 +113,92 @@ For today I asked everybody to submit a case we could use to develop our intuiti
 
 <br>
 
-*Go around the room and hear what everyone brought and why they selected it*
+*Split class in three*
 
-- Let's review the submitted cases and get any clarifications we may need
+- Sit with your groups and claim space on the board!
 
 <br>
 
-*Split class into small groups (4-ish)*
-
-- Go sit with your group and claim space on the board
+**SLIDE**: Groups, your job is to make an argument that I will assign to you
 
 :::
 
 
 
-## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+## The Internet and Terrorism {background-image="Images/00-Leviathan_Cover_55.png" .center}
 
 <br>
 
-### Therefore, cyber terrorism (the intersection between terrorism and the internet) requires us to alter our definitions of terrorism
+Group Arguments:
 
+::: {.incremental}
+
+1. Therefore, the internet means we need entirely new definitions and models of terror group behavior
+
+2. Therefore, the internet means we need entirely new definitions and models of how states respond to terrorism
+
+3. Therefore, our established definitions and models of terrorism remain applicable in the digital age
+
+:::
 
 ::: notes
 
-GROUPS I want you to build this argument on the board
+GROUPS, review the submitted cases and then diagram your assigned argument on the board
 
-- What are the strongest reasons we can come up with to make the case that terrorism has been fundamentally changed by the internet
-
-<br>
-
-*PRESENT and DISCUSS each*
+- Give us your strongest premises that support this assigned conclusion
 
 <br>
 
-**SLIDE**: For next class
+**REVEAL x 3**: Assigned group arguments
+
+<br>
+
+**Questions on the task?**
+
+- Go!
+
+<br>
+
+Let's focus first on the Group 1 argument
+
+- *PRESENT*
+
+- CLASS: **Can we make this stronger? Edits or additions needed?**
+
+<br>
+
+Repeat on Group 2 argument
+
+Repeat on Group 3 argument
+
+<br>
+
+**SLIDE**: Wrapping up
+
+:::
+
+
+
+
+## {background-image="Images/14_1-CyberTerrorism_v2.png" .center}
+
+::: notes
+
+**So, where do we end up?**
+
+- **Do we need to reinvent political studies of terrorism to account for the role of the internet or not?**
+
+<br>
+
+**To what degree are we convinced that cyber terrorism (terror on the internet) is a different thing from traditional conceptions of terrorism?**
+
+<br>
+
+**Does considering the internet change the debate between Pape and Abrams about the effectiveness of terrorism? Why or why not?**
+
+<br>
+
+**SLIDE**: Assignment for next class
 
 :::
 
@@ -120,6 +213,14 @@ Müller & Schwarz (2021). Fanning the Flames of Hate: Social Media and Hate Crim
 - Submit reflections on Canvas
 
 ::: notes
+
+Müller, K., & Schwarz, C. (2021). Fanning the Flames of Hate: Social Media and Hate Crime. *Journal of the European Economic Association*, 19(4), 2131–2167.
+
+Canvas Assignment: Analyze the Müller and Schwarz (2021) Argument
+
+1. What is your level of confidence in the central conclusion of the Muller and Schwarz (2021) article? In other words, have the authors convinced you of their findings? Why or why not? (3+ sentences)
+
+2. Assuming the research findings are correct, what do you believe should be done in our society to reduce the risks of social media on political violence? You can absolutely argue that nothing should be done, but you still have to explain why. (3+ sentences)
 
 
 :::

@@ -30,6 +30,16 @@ Prep for Class
 
 1. Review submissions on Canvas
 
+<br>
+
+Today we shift into the end of our semester with a focus on what we can do to make political violence less likely in our community.
+
+- Essentially, answering that question represents your final work in this class.
+
+<br>
+
+**SLIDE**: For today
+
 :::
 
 
@@ -38,7 +48,7 @@ Prep for Class
 
 <br>
 
-What are the institutional vulnerabilities that currently exist in the US that make us vulnerable to political violence? 
+What are the institutional designs that currently exist in the US that make us vulnerable to political violence? 
 
 In other words, what are the aspects of our community that create or allow for acts of political violence to occur?
 
@@ -46,20 +56,9 @@ In other words, what are the aspects of our community that create or allow for a
 
 ::: notes
 
-Canvas Assignment: Identifying Vulnerabilities
+For today I asked each of you to reflect on our threats in order to identify ONE institutional design in our society that makes us vulnerable to political violence.
 
-What are the institutional vulnerabilities that currently exist in the US that make us vulnerable to political violence? In other words, what are the aspects of our community that create or allow for acts of political violence to occur? These can be formal institutions (laws, policies, etc) or informal ones (norms, customs, etc).
-
-1. Describe and explain the vulnerability you have selected
-2. Submit a piece of evidence that illustrates this vulnerability in action (APA citation and explanation of the evidence)
-
-<br>
-
-For today I asked each of you to reflect on our threats in order to diagnose the institutional vulnerabilities that allows them to happen.
-
-<br>
-
-### How did this go?
+- **How did this go?**
 
 <br>
 
@@ -67,7 +66,51 @@ For today I asked each of you to reflect on our threats in order to diagnose the
 
 - Go sit with your group!
 
+<br>
+
+GROUPS, to start I simply want you to review all of the submissions
+
+- Make sure you are clear on the institutions and vulnerabilities being suggested by your classmates
+
+- Let's use this time to get clarifications
+
+- Go!
+
+<br>
+
+Ok, let's layer some comparative analyses on top of this data!
+
+- **SLIDE**: Prompt 1
+
+<br>
+
+Canvas Assignment: Identifying Vulnerabilities
+
+What is ONE institutional design that currently exists in the US that makes us vulnerable to political violence? In other words, what is an aspect of our community that creates or allows for acts of political violence to occur? This can be a formal institution (e.g. laws, policies, regulations, constitutional provisions, etc) or an informal one (e.g. norms, customs, etc).
+
+Please try to avoid exact overlap with the other submitted cases (e.g. an institution x a specific vulnerability). Multiple people can submit the same institution or the same vulnerability, but only one can claim a specific pairing.
+
+Please note, I am not asking you to make the argument that your selected institution must change. I simply want us to identify the interactions between institutional design and risk.
+
+1. What is the specific institution you are focused on? (explain your selection and cite evidence it exists)
+2. How does that specific institution create a vulnerability to political violence? (explain the causal mechanism as clearly as you can, 3-5 sentences)
+3. Submit a piece of evidence that illustrates this dynamic in action (APA citation and explanation of the evidence)
+
+
 :::
+
+
+
+## {background-image="Images/14_3-Capitol_Building_v3.png" .center}
+
+[**Evaluating Institutional Vulnerabilities**]{style="color:white;"}
+
+- Make a list on the board of the FIVE "Most Serious" 
+
+
+
+: Identify the five most serious vulnerabilities
+
 
 
 

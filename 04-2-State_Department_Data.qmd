@@ -75,7 +75,7 @@ Just want to keep your eyes on the proverbial prize!
 
 <br>
 
-### Questions on the prompt?
+**Questions on the prompt?**
 
 :::
 
@@ -100,7 +100,7 @@ Just want to keep your eyes on the proverbial prize!
 
 ::: notes
 
-You'll be evaluating five different sources of data on political violence within countries.
+For Paper 1 you'll be choosing from these five different sources of data on political violence within countries.
 
 <br>
 
@@ -108,7 +108,7 @@ Today we'll focus on the widely read and debated reports from the US State Depar
 
 <br>
 
-We start here because MANY of the projects out there use the data in these reports to build their own measures.
+We start here because **MANY** of the projects out there use the data in these reports to build their own measures.
 
 - For example, both PTS and CIRIGHTS use these reports
 
@@ -118,7 +118,7 @@ This means that critically analyzing PTS and CIRIGHTS depends on understanding t
 
 <br>
 
-**SLIDE**: Don't forget our work on measurement in Week 2
+**SLIDE**: As ever, our work as scientists is rooted in measurement!
 
 :::
 
@@ -153,7 +153,7 @@ Two weeks ago we worked through a five step process for generating data about po
 
 <br>
 
-**Define operationalization**
+**Define the operationalization step?**
 
 - ("...selecting observable phenomena to represent abstract concepts" (89).)
 
@@ -161,28 +161,33 @@ Two weeks ago we worked through a five step process for generating data about po
 
 <br>
 
-**Define Instrumentation**
+**Define the instrumentation step?**
 
 - (Convert your operationalization (definition) into a series of steps you can use to measure the concept in question)
+
+<br>
 
 **What does it mean to say an instrument produces "valid" data?**
 
 - ("...the extent to which our measures correspond to the concepts they are intended to reflect" (105).)
 
+<br>
+
 **What does it mean to say an instrument produces "reliable" data?**
 
 - (How stable are the results of our instrument?)
+
 - Would different coders produce the same result using your instrument to measure the same case?
 
 <br>
 
-**Define Measurement**
+**Define the measurement step?**
 
 - (Applying the instrument to the cases to generate values/data/numbers)
 
 <br>
 
-**SLIDE**: Technically, we can generalize this process by focusing on three steps
+**SLIDE**: While all of these elements are important when designing a new process, we typically focus on three steps when evaluating someone else's data
 
 :::
 
@@ -193,12 +198,14 @@ Two weeks ago we worked through a five step process for generating data about po
 :::: {.columns}
 ::: {.column width="50%"}
 
-<br>
-
 ::: {.r-fit-text}
 **1) Operationalization**
 
+- Precise and explicit?
+
 **2) Instrumentation**
+
+- Valid and reliable?
 
 **3) Measurement**
 :::
@@ -215,13 +222,15 @@ Two weeks ago we worked through a five step process for generating data about po
 
 ::: notes
 
-This is essentially how any quantitative research project is designed, implemented and evaluated.
+When evaluating an established research project, these are the three elements we focus on
+
+<br>
 
 1. How did they operationalize the concept?
 
     - Is the definition precise and explicit?
 
-2. What instrument(s) did they design?
+2. What instrument(s) did they design to measure the concept?
 
     - Are they likely to produce valid and reliable data?
 
@@ -229,7 +238,7 @@ This is essentially how any quantitative research project is designed, implement
 
 <br>
 
-### Questions on this?
+**Questions on this?**
 
 <br>
 
@@ -239,52 +248,34 @@ This is essentially how any quantitative research project is designed, implement
 
 
 
-## {background-image="Images/background-light_grey.jpg" .center}
+## {background-image="Images/background-light_grey.jpg" .center .smaller}
 
 ::: {.r-fit-text}
 **"Domestic Political Violence by Governments"**
 :::
 
-:::: {.columns}
-::: {.column width="50%"}
+**1) Operationalization, 2) Instrumentation, 3) Measurement**
 
 <br>
 
-::: {.r-fit-text}
-**1) Operationalization**
+1. You gathered raw data (cases of violence by governments against their own people)
 
-**2) Instrumentation**
+2. You coded that data using open-ended instruments
 
-**3) Measurement**
-:::
-:::
+    - Characteristics of each regime type?
+    - Who "did" the violence?
+    - Who was targeted?
+    - What type of violence?
+    - What justification offered?
+    
+3. You used the data to generate models of government violence
 
-::: {.column width="5%"}
-
-:::
-
-::: {.column width="45%"}
-![](Images/02_3-reliable_valid.png)
-:::
-::::
 
 ::: notes
 
 Last class we analyzed the concept "Domestic Political Violence by Governments"
 
-1. You gathered the raw data, e.g. cases of government violence
-
-2. I gave you instruments and you measured the data, e.g...
-    - What are the characteristics of each regime type?
-    - "Who" did the act of violence?
-    - "What" was the specific act of violence?
-    - "Who" was targeted by the act?
-    
-3. We then used the data you produced to generate models of government violence
-
-<br>
-
-**Is everybody clear on how our work Monday was a measurement exercise?**
+- **Is everybody clear on how our work Monday was a measurement exercise?**
 
 <br>
 
@@ -294,7 +285,8 @@ Now I'd like you to evaluate our work from Monday while referring to these key d
 
 <br>
 
-### What specific validity concerns do you have about the work we did last class?
+**What specific validity concerns do you have about the work we did last class?**
+
 - (Guidance for selecting cases was VERY under-baked, e.g. not precise or explicit)
     - What is a democracy? What is an autocracy? What is violence?
     
@@ -304,12 +296,18 @@ Now I'd like you to evaluate our work from Monday while referring to these key d
 
 <br>
 
-### What specific reliability concerns do you have about the work we did last class?
+**What specific reliability concerns do you have about the work we did last class?**
+
 - (Our cases today reflect a fairly biased version of the world e.g. what gets media attention, how we search Google)
 
 - (Only ONE violent act per country doesn't give us ANY kind of reliable sense of violence in that state)
 
+<br>
+
+**SLIDE**: Clearly we need better data if we hope to identify and explain political violence, so let's find some!
+
 :::
+
 
 
 ## For Today {background-image="Images/00-Leviathan_Cover_55.png" .center}
@@ -390,7 +388,7 @@ Our job is to evaluate this source of data so that we can figure out what it can
 
 <br>
 
-*Split class into small groups (3-4)*
+*Split class into small groups (3-4 each)*
 
 - Go sit with your group!
 
@@ -398,23 +396,19 @@ Our job is to evaluate this source of data so that we can figure out what it can
 
 
 
-## {background-image="Images/background-light_grey.jpg" .center}
-
-::: {.r-fit-text}
-**"Human Rights Practices"**
-:::
+## "Human Rights Practices" {background-image="Images/background-light_grey.jpg" .center}
 
 :::: {.columns}
 ::: {.column width="50%"}
 
-<br>
-
 ::: {.r-fit-text}
-**Validity & Reliability**
-
 **1) Operationalization**
 
+- Precise and explicit?
+
 **2) Instrumentation**
+
+- Valid and reliable?
 
 **3) Measurement**
 :::
@@ -431,17 +425,13 @@ Our job is to evaluate this source of data so that we can figure out what it can
 
 ::: notes
 
-*Split class into groups (4 groups of 5?)*
-
-- Go sit with your groups
-
-<br>
-
 Groups, I want you to reflect on the readings for today, our work Monday and your work analyzing the reports in order to help us evaluate the validity and reliability of the US State Department Country Reports
 
 <br>
 
 **Questions on the exercise?**
+
+- Our interest right now is in evaluating these reports as data, not necessarily to learn about the countries (yet)
 
 - Get to it!
 
@@ -449,9 +439,15 @@ Groups, I want you to reflect on the readings for today, our work Monday and you
 
 *PRESENT and DISCUSS each*
 
+- *ON BOARD: Strengths vs Weaknesses*
+
 <br>
 
-*Save notes from class*
+Strengths:
+
+- ?
+
+Weaknesses:
 
 - ?
 
@@ -474,27 +470,27 @@ Groups, I want you to reflect on the readings for today, our work Monday and you
 
 Ok, given all of these strengths and weaknesses, what are our takeaways?
 
-### What is our best advice for using these reports to analyze political violence by governments around the world?
+**What is our best advice for using these reports to analyze political violence by governments around the world?**
 
-### - In other words, how do we access the signal in the State Department Reports while minimizing the noise?
+- **In other words, how do we access the signal in the State Department Reports while minimizing the noise?**
 
 <br>
 
 Ok, now each of you take your own best advice.
 
-### What are examples of conclusions in the reports you read for today that you believe are most likely valid and reliable? Why?
+**What are examples of conclusions in the reports you read for today that you believe are most likely valid and reliable? Why?**
 
-- Everybody give me one example from there country cases
-
-<br>
-
-### What are examples of conclusions you might consider lower validity or lower reliability? Why?
-
-- Everybody give me one example from there country cases
+- **Everybody give me one example from their country cases**
 
 <br>
 
-### Can we see why, despite the concerns about the data, these reports are considered vitally important by groups around the world?
+**What are examples of conclusions you might consider lower validity or lower reliability? Why?**
+
+- **Everybody give me one example from their country cases**
+
+<br>
+
+**Can we see why, despite the concerns about the data, these reports are considered vitally important by groups around the world?**
 
 <br>
 

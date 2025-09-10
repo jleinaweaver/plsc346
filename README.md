@@ -70,13 +70,13 @@ Data, slides and errata for my class at Drury University (PLSC 346: Political Vi
 
 13-2-PIRUS_Dataset.html
 
-13-3-Jasko_etal2022.html
+13-3-Brainstorming_Research_Projects_1.html
 
 14-1-Terrorism_Internet_Cases.html
 
 14-2-Muller_Schwarz_Facebook.html
 
-14-3-Brainstorming_Research_Projects.html
+14-3-Brainstorming_Research_Projects_2.html
 
 14-4-US_Vulnerabilities.html
 
