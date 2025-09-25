@@ -21,6 +21,14 @@ Prep for Class
 
 1. Make sure you have five dry erase markers for class
 
+2. Plan of attack
+
+    1. Make affirmative argument for one source (10 mins, 5 to discuss)
+    
+    2. Make con argument for one source (8 mins, 2 mins report)
+    
+    3. Address cons for original source (10 mins, 5 mins report))
+
 <br>
 
 This week we work on your first paper and set the table for Paper 2.
@@ -91,6 +99,10 @@ Which **SINGLE** data source would you recommend to someone interested in better
 
 ::: notes
 
+Timing: 10 mins to work, 5 mins to discuss
+
+<br>
+
 Groups, pretend you HAD to select ONLY your assigned source for the paper
 
 - Thesis: Therefore, the single most useful source of political violence data is X. 
@@ -101,15 +113,54 @@ Groups, pretend you HAD to select ONLY your assigned source for the paper
 
 <br>
 
-### Questions?
+**Questions?**
 
 - Get to work!
 
 <br>
 
-### PRESENT each, any other strengths to add to each list?
+*PRESENT each PRO argument*
+
+- **Class: Any other strengths to add to each list?**
+
+<br>
+
+**SLIDE**: Rotate groups
 
 :::
+
+
+
+## Groups Rotate Arguments {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+::: {.r-fit-text}
+- Group 1 (State) goes to 3 (PTS)
+
+- Group 2 (AI) goes to 4 (CIRIGHTS)
+
+- Group 3 (PTS) goes to 5 (V-Dem)
+
+- Group 4 (CIRIGHTS) goes to (AI)
+
+- Group 5 (V-Dem) goes to (State)
+:::
+
+::: notes
+
+*Move Groups to Very Different Approaches*
+
+<br>
+
+Go!
+
+<br>
+
+**SLIDE**: Task
+
+:::
+
+
+
 
 
 
@@ -123,23 +174,31 @@ Groups, pretend you HAD to select ONLY your assigned source for the paper
 
 <br>
 
-### Rotate arguments and add weaknesses lists
+**GROUPS, now add a list of weaknesses next to the pros**
+
+- **e.g. The strongest reasons you should NOT pick this source**
 
 ::: notes
 
-*Move Groups to Very Different Approaches*
-
-Groups move to critique a source
-
-- Group 1 (State) goes to 3 (PTS)
-- Group 2 (AI) goes to 4 (CIRIGHTS)
-- Group 3 (PTS) goes to 5 (V-Dem)
-- Group 4 (CIRIGHTS) goes to (AI)
-- Group 5 (V-Dem) goes to (State)
+Timing: 8 mins to work, 5 mins to discuss
 
 <br>
 
 ADD a list of weaknesses next to their diagram *ON THE BOARD*
+
+<br>
+
+*PRESENT each CON argument*
+
+- **Class: Any other weaknesses to add to each list?**
+
+<br>
+
+GROUPS, go back to your originally assigned argument
+
+<br>
+
+**SLIDE**: Task
 
 :::
 
@@ -159,13 +218,17 @@ ADD a list of weaknesses next to their diagram *ON THE BOARD*
 
 ::: notes
 
+Timing: 10 mins to work, 5 mins to discuss
+
+<br>
+
 GROUPS, go back to your argument and take some time to reflect on the weaknesses list
 
 - THEN add a single premise to your argument diagram that addresses the biggest weaknesses from the list
 
 <br>
 
-### PRESENT each and DISCUSS
+*PRESENT and DISCUSS each*
 
 :::
 

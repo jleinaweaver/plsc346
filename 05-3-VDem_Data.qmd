@@ -152,7 +152,9 @@ The V-Dem project takes a VERY different approach to measuring state behavior th
 
 2. **"Political Terror" (PTS)**
 
-3. **"Personal Integrity Rights" (V-Dem)**
+3. **"Physical Integrity Rights" (CIRIGHTS)**
+
+4. **"Personal Integrity Rights" (V-Dem)**
 
 ::: notes
 
@@ -162,16 +164,31 @@ The aim of the second section of the class is focused on this big question about
 
 <br>
 
-### At a purely conceptual level, are we comfortable adding "Personal Integrity Rights" to this list of "similar enough" measures? Why or why not?
+**At a purely conceptual level, are we comfortable adding "Personal Integrity Rights" to this list of "similar enough" measures? Why or why not?**
+
+- (**SLIDE**: Compare the components of CIRIGHTS to VDEM)
+
+:::
+
+
+
+## "Political Violence" {background-image="Images/00-Leviathan_Cover_55.png" .center}
 
 <br>
 
-### What are the concepts V-Dem includes under this umbrella term?
-- (Four Items: Freedom from torture, Freedom from political killings, Freedom from forced labor for men, Freedom from forced labor for women)
+**"Physical Integrity Rights" (CIRIGHTS)**
 
-<br>
+- Disappearance, Extrajudicial Killing, Political Imprisonment and Torture
 
-### How does this compare to the four measures used by the CIRIGHTS Project? Disappearance, Extrajudicial Killing, Political Imprisonment and Torture
+**"Personal Integrity Rights" (V-Dem)**
+
+- Freedom from torture, Freedom from political killings, Freedom from forced labor for men, Freedom from forced labor for women
+
+::: notes
+
+**How do the underlying components from CIRIGHTS and V-Dem compare?**
+
+- **Are they covering the same underlying variation or not?**
 
 <br>
 
@@ -188,7 +205,7 @@ The aim of the second section of the class is focused on this big question about
 :::
 
 :::: {.columns}
-::: {.column width="50%"}
+::: {.column width="40%"}
 **Operationalization**
 
 &#8595;
@@ -200,7 +217,7 @@ The aim of the second section of the class is focused on this big question about
 **Measurement**
 :::
 
-::: {.column width="50%"}
+::: {.column width="60%"}
 1. Freedom from torture
 
 2. Freedom from political killings

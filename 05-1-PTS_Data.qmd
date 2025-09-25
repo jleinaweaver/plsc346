@@ -342,13 +342,26 @@ Groups, work directly on the board and focus on each of the three steps in the m
 
 <br>
 
-*ON BOARD*
+*ON BOARD - Class Fall 2025*
 
 Valid and Reliable
-- ?
+
+- Operational definitions explicit and specific
+- Multiple reports, aims for credible
+- Transparent methodology
+- Accounts for severity
+- No opinions
 
 NOT
-- ?
+
+- Biased sources, biased results
+- Depends on a healthy news media
+- Five point scale is too blunt a tool
+    - Multiple paths to any one score, hard to differentiate
+- Unclear weighting
+- Limited to violence inside state's territory
+- Only level 5 introduces violence against the wider population (e.g. not targeted)
+- When a threshold isn't quite crossed the coders are supposed to err on the side of the lower score
 
 <br>
 
@@ -388,15 +401,15 @@ Notes
 
 Focusing on the instrument
 
-### Is this instrument likely to produce valid measures of "political terror"? Why or why not?
+**Is this instrument likely to produce valid measures of "political terror"? Why or why not?**
 
-### - Are we convinced that a move of one unit on the PTS scale translates to a substantial change in violence in that state-year? Why or why not?
+- **Are we convinced that a move of one unit on the PTS scale translates to a substantial change in violence in that state-year? Why or why not?**
 
 <br>
 
-### Is this instrument likely to produce reliable measures of "political terror"? Why or why not?
+**Is this instrument likely to produce reliable measures of "political terror"? Why or why not?**
 
-### - Are we convinced that different coders interpret the separation between the levels in the same way? Why or why not?
+- **Are we convinced that different coders interpret the separation between the levels in the same way? Why or why not?**
 
 <br>
 
