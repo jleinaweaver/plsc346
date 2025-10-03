@@ -289,21 +289,24 @@ And don't forget your rough draft of the analysis is due at the start of Week 9
 
 <br>
 
-**SLIDE**: Next week
+**SLIDE**: Next week we shift to the literature on political violence by dictatorships
 
 :::
 
 
 
 
-## For Next Class {background-image="Images/00-Leviathan_Cover_55.png" .center}
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+::: {.r-fit-text}
+**For Next Class **
 
 <br>
 
 1. Read the Escriba-Folch (2013), and
 
 2. Submit your diagram and analysis to Canvas
-
+:::
 
 ::: notes
 

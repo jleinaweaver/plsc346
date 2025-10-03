@@ -67,7 +67,7 @@ Let's start by talking about the framing of the article.
 
 <br>
 
-### Has anybody come across the framing concept before in other classes? What does framing in those contexts refer to?
+**Has anybody come across the framing concept before in other classes? What does framing in those contexts refer to?**
 
 (In political communications and psychology framing often refers to a way of presenting an issue to elicit a desired response)
 
@@ -79,7 +79,7 @@ Let's start by talking about the framing of the article.
 
 <br>
 
-### Make sense?
+**Make sense?**
 
 <br>
 
@@ -109,23 +109,11 @@ The rest of the paper presents a careful discussion of how you built your castle
 
 - What makes our work "science" is that we are completely transparent about all of these choices.
 
-### Still with me?
+- **Still with me?**
 
 <br>
 
-### What are the kinds of choices in any research article that relate to the most basic framing of the project?
-
-1. (What is the question and how is it worded? By asking the question in this way, whose interests are you prioritizing? Who might you be leaving out?)
-
-2. (How are you defining the big concepts?)
-
-3. (What literature are you connected to? Which disciplines are you focusing on?)
-
-<br>
-
-### Does this make sense?
-
-- The framing of the article represents HUGE choices made by the researchers before we get to any of what we might consider the analyses to be.
+The framing of the article represents HUGE choices made by the researchers before we get to any of what we might consider the analyses to be.
 
 <br>
 
@@ -161,13 +149,17 @@ Let's start by exploring the framing of the article.
 
 <br>
 
-REPORT BACK and DISCUSS
-
-<br>
-
-Notes
+*REPORT BACK and DISCUSS*
 
 - Research Q: "What is the influence, if any, of democracy on repression?" 539
+
+- **How does the paper define "repression"?**
+
+    - **Is the use of "repression" a leading or normative choice? e.g. implies the outcomes to be explained are bad, right?**
+
+- **How does the paper define "democracy"?**
+
+- **How do they make the argument that this paper is important? Worth reading?**
 
 :::
 
