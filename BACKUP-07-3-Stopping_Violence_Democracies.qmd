@@ -31,7 +31,7 @@ Prep for Class
 
 1. Review submissions on Canvas
 
-2. Have the class circle up, seminar style!
+2. Prep Google spreadsheet for unpacking cases (make sure it is visible on the Modules page)
 
 <br>
 
@@ -53,7 +53,75 @@ Today I want us to use the cases you submitted to help us think about what it ta
 
 <br>
 
-**SLIDE**: The prompt
+**SLIDE**: 
+
+:::
+
+
+
+## Case Studies: Reducing Violence by Democratic Governments {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+Submit to Canvas a recent example of an individual, group, country or group of countries taking a specific action to stop a democracy from engaging in political violence. 
+
+APA citation to the case
+Who specifically acted in this case?
+What specifically did they do? (e.g. actions taken, policies adopted, etc)
+Why do you believe it was effective? 
+What lessons can we take from this case for preventing political violence in America today?
+
+::: notes
+
+**Everybody ready to go with this?**
+
+<br>
+
+I'd like to unpack your cases in the same way we have done for other case studies in previous weeks.
+
+- Everybody open the Google Sheet linked through our Canvas Modules for today
+
+- Start by copying your citation and brief case description from the discussion board onto the spreadsheet.
+
+<br>
+
+**SLIDE**: As before, I'll give you short instruments and you'll measure your cases
+:::
+
+
+
+
+##  {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+::: {.r-fit-text}
+
+**Unpacking the Cases: The Inciting Incident**
+
+1. Who committed the violent act?
+
+2. Who did they target?
+
+3. What did they do?
+
+4. Why is this "political violence"?
+
+:::
+
+::: notes
+
+*Add Columns: Perpetrator, Violence Target, Violence Act, Violence Reason*
+
+<br>
+
+Let's start by focusing on the inciting incident
+
+- e.g. what political violence was being done that needed intervention?
+
+<br>
+
+Fill in these details for your case on the spreadsheet.
+
+- Keep your answers concise BUT be specific!
+
+- I know that feels like contradictory instructions but that's the challenge of measuring a case
 
 :::
 
@@ -61,36 +129,41 @@ Today I want us to use the cases you submitted to help us think about what it ta
 
 ## {background-image="Images/00-Leviathan_Cover_55.png" .center}
 
-Submit to Canvas a recent example of an individual, group, country or group of countries taking a specific action to stop a democracy from engaging in political violence. 
+::: {.r-fit-text}
 
-1. APA citation to the case
-2. Who specifically acted in this case?
-3. What specifically did they do? (e.g. actions taken, policies adopted, etc)
-4. Why do you believe it was effective? 
-5. What lessons can we take from this case for preventing political violence in America today?
+**Unpacking the Cases: The Intervention**
 
-::: notes
+1. Who intervened?
 
-For today you each submitted a case in response to this prompt.
+2. Who did they target?
 
-- **Everybody ready to go with this?**
+3. What did they do?
 
-<br>
-
-Let's go around the room to hear each of your cases
-
-- Introduce it to us as a response to the prompts
-
-- Go!
-
-<br>
-
-*Split class into small groups around the circle*
-
-- **SLIDE**: Groups prompt
+4. How successful were they?
 
 :::
 
+::: notes
+
+*Add Columns: Intervener, Intervention Target, Intervention Action, Intervention Success*
+
+Let's now shift to the intervention
+
+- e.g. The response to the violent act
+
+<br>
+
+Fill in these details for your case on the spreadsheet.
+
+- Keep your answers concise BUT be specific!
+
+<br>
+
+*Split class into GROUPS*
+
+- Go sit with your group!
+
+:::
 
 
 
@@ -104,8 +177,6 @@ Let's go around the room to hear each of your cases
 GROUPS: Let's build a list of lessons from our work today on the board
 
 - **What are the key elements of a successful intervention to change the use of political violence by democractic governments?**
-
-- Discuss with each other then report back to me!
 
 - *ON BOARD*
 
@@ -241,6 +312,8 @@ And don't forget your rough draft of the analysis is due at the start of Week 9
 
 ::: {.r-fit-text}
 **For Next Class **
+
+<br>
 
 1. Read the Escriba-Folch (2013), and
 

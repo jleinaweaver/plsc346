@@ -31,7 +31,7 @@ Prep for Class
 
 1. Review submissions on Canvas
 
-2. Have the class circle up, seminar style!
+2. Prep Google spreadsheet for unpacking cases (make sure it is visible on the Modules page)
 
 <br>
 
@@ -41,49 +41,111 @@ Our overarching goal for this section of the class is to answer this question.
 
 <br>
 
-We do this both to better understand why it is happening but also to help us figure out how to stop it!
-
-- Today we repeat our exercise from last Friday when we focused on stopping democracies from using violence but today its the dictatorship cases
+My hope is that all of the work we have done thus far has given you the tools you need to explain government violence as a strategy.
 
 <br>
 
-**SLIDE**: The prompt
+Our next aim is to use all of this material (cases, data, theories) to develop real-world strategies for preventing political violence by governments.
 
 :::
 
 
 
-## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+## For Today {background-image="Images/00-Leviathan_Cover_55.png" .center}
 
-Submit to Canvas a recent example of an individual, group, country or group of countries taking a specific action to stop an autocracy from engaging in political violence. 
+<br>
 
-1. APA citation to the case
-2. Who specifically acted in this case?
-3. What specifically did they do? (e.g. actions taken, policies adopted, etc)
-4. Why do you believe it was effective? 
-5. What lessons can we take from this case for preventing political violence in dictatorships around the world?
+**Case Studies of Groups Reducing Political Violence in Autocracies**
 
 ::: notes
 
-For today you each submitted a case in response to this prompt.
-
-- **Everybody ready to go with this?**
+**Everybody ready to go with this?**
 
 <br>
 
-Let's go around the room to hear each of your cases
+I'd like to unpack your cases in the same way we have done for other case studies in previous weeks.
 
-- Introduce it to us as a response to the prompts
+- Everybody open the Google Sheet linked through our Canvas Modules for today
 
-- Go!
+- Start by copying your citation and brief case description from the discussion board onto the spreadsheet.
 
 <br>
 
-*Split class into small groups around the circle*
+**SLIDE**: As before, I'll give you short instruments and you'll measure your cases
+:::
 
-- **SLIDE**: Groups prompt
+
+
+## Unpacking the Cases {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+<br>
+
+### **The Inciting Incident**
+
+1. Who committed the violent act?
+
+2. Who did they target?
+
+3. What did they do?
+
+4. Why is this "political violence"?
+
+::: notes
+
+*Add Columns: Perpetrator, Violence Target, Violence Act, Violence Reason*
+
+Let's start by focusing on the inciting incident
+
+- e.g. what political violence was being done that needed intervention?
+
+<br>
+
+Fill in these details for your case on the spreadsheet.
+
+- Keep your answers concise BUT be specific!
+
+- I know that feels like contradictory instructions but that's the challenge of measuring a case
 
 :::
+
+
+
+## Unpacking the Cases {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+<br>
+
+### **The Intervention**
+
+1. Who intervened?
+
+2. Who did they target?
+
+3. What did they do?
+
+4. How successful were they?
+
+::: notes
+
+*Add Columns: Intervener, Intervention Target, Intervention Action, Intervention Success*
+
+Let's now shift to the intervention
+
+- e.g. The response to the violent act
+
+<br>
+
+Fill in these details for your case on the spreadsheet.
+
+- Keep your answers concise BUT be specific!
+
+<br>
+
+*Split class into GROUPS*
+
+- Go sit with your group!
+
+:::
+
 
 
 
