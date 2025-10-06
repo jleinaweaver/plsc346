@@ -207,17 +207,35 @@ Let's start by exploring the framing of the article.
 
 <br>
 
-Notes
+**What is the research question?**
 
-- Research Q: Is political violence and support for political violence more prevalent in democratic societies with high levels of affective polarization?
+- (Is political violence and support for political violence more prevalent in democratic societies with high levels of affective polarization?)
 
-- Why important:
+**Per the authors, why is this an important question?**
 
-    - Per V-dem "the intensity level of political polarization increased by 26.2% within democracies across the world from 2000 to 2018."
+- Per V-dem "the intensity level of political polarization increased by 26.2% within democracies across the world from 2000 to 2018."
     
-    - Both "support for political violence" and "actual" political violence are also on the rise in democracies
-    
-- Key concepts: Polarization, Democracy, Violence
+- Both "support for political violence" and "actual" political violence are also on the rise in democracies
+
+<br>
+
+**What are the key concepts in the question?**
+
+- (democracy, political violence and affective polarization)
+
+**How are each defined?**
+
+- (democracy: ?)
+- (political violence: ?)
+- (affective polarization: ?)
+
+<br>
+
+**What is the state of the literature they are responding to?**
+
+- **In other words, what did we know about this topic thanks to the established research?**
+
+- **What holes in our knowledge are they trying to fill?**
 
 <br>
 

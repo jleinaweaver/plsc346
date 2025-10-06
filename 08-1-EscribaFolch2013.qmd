@@ -156,13 +156,17 @@ Let's start by exploring the framing of the article.
 
 - Think BIG PICTURE, e.g. how the researchers set up their project
 
+1. What's the RQ?
+
+2. What are the key concepts?
+
+3. What are the gaps in the literature they are trying to fill?
+
 <br>
 
-REPORT BACK and DISCUSS
+**Ok, what's the RQ?**
 
-<br>
-
-**SLIDE**: So, here's a weird BUT IMPORTANT question.
+- (**SLIDE**)
 
 :::
 
@@ -277,19 +281,27 @@ Let's now summarize the model so we can evaluate it.
 
 <br>
 
-Five minutes ON YOUR OWN!
+Small groups, compare notes from your Canvas submissions!
 
 - Identify the key Interests, Institutions and Interactions in this model (p546-549)
 
 <br>
 
-Small groups, compare notes!
+*ON BOARD: Have them report back on each then send them back to work*
 
 <br>
 
-*ON BOARD*
+**What interests did you identify?**
 
-- REPORT BACK and DISCUSS
+- **Who is making the key decisions in this model?**
+
+<br>
+
+**What institutions did you identify?**
+
+<br>
+
+**What interactions did you identify?**
 
 <br>
 
@@ -303,23 +315,34 @@ Small groups, compare notes!
 
 **Escribà-Folch (2013): The Model**
 
-<br>
-
 **Interests**
 
 - Dictators -> political survival
 
 **Institutions**
 
-- Dictator may choose from two types of repression: 1) restrictions on civil rights, and/or 2) violation of physical rights
+- Dictator may choose from two types of repression: 1) restrictions on civil rights (CR), and/or 2) violation of physical rights (PR)
 
 **Interactions**
 
-- Violent repression directly targets and removes a threat to power (but may decrease legitimacy, increase resentment and lead to military defections)
-- Restricting rights attempts to prevent coordination and collective action (but only works on the public and not the elites)
-- Dictators should match their type of repression to the type of threat
+- Repression is costly, so match type to threat
+
+    - If threat is from the public who hasn't yet organized &#8594; Restrict CR (prevent coordination)
+    - If threat is from an organized group or specific elites &#8594; Violate PR (eliminate the threat)
+    - If threat is irregular (coups or revolt) &#8594; Restrict CR
+    - If threat regular (nonviolent) &#8594; Restrict CR (public) or violate PR (elites)
 
 ::: notes
+
+**Per the article, what are the costs associated with each type of repression?**
+
+- (p546-7)
+
+- Violent repression may decrease legitimacy, increase resentment, may bring about a violent escalation or a radicalization of positions and lead to military defections
+
+- Restricting rights attempts to prevent coordination and collective action (but only works on the public and not the elites)
+
+<br>
 
 **SLIDE**: Let's discuss the typology.
 

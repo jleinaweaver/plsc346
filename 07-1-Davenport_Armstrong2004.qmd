@@ -151,15 +151,31 @@ Let's start by exploring the framing of the article.
 
 *REPORT BACK and DISCUSS*
 
-- Research Q: "What is the influence, if any, of democracy on repression?" 539
+<br>
 
-- **How does the paper define "repression"?**
+**What is the research question?**
 
-    - **Is the use of "repression" a leading or normative choice? e.g. implies the outcomes to be explained are bad, right?**
+- ("What is the influence, if any, of democracy on repression?" 539)
 
-- **How does the paper define "democracy"?**
+<br>
 
-- **How do they make the argument that this paper is important? Worth reading?**
+**What are the key concepts in the question?**
+
+- (democracy and repression)
+
+**How does the paper define "repression"?**
+
+**Is the use of "repression" a leading or normative choice? e.g. implies the outcomes to be explained are bad, right?**
+
+**How does the paper define "democracy"?**
+
+<br>
+
+**What is the state of the literature they are responding to?**
+
+- **In other words, what did we know about this topic thanks to the established research?**
+
+- **What holes in our knowledge are they trying to fill?**
 
 :::
 
