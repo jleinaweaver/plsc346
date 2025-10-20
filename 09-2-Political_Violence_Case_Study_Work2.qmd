@@ -8,9 +8,6 @@ format: revealjs
 library(tidyverse)
 library(readxl)
 library(kableExtra)
-
-# Data for today
-library(carData)
 ```
 
 <br>
@@ -31,6 +28,8 @@ Justin Leinaweaver (Fall 2025)
 Prep for Class
 
 1. Review submissions on Canvas
+
+2. Move quickly onto the second exercise (adding nuance to the plots!)
 
 <br>
 
@@ -153,6 +152,166 @@ Just like last class your job is to see and give feedback on ALL of the outlines
 Let's share some excellent examples!
 
 - Call out some classmates who are producing high quality work so we can celebrate it!
+
+<br>
+
+**SLIDE**: Time to add more nuance!
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+::: {.r-fit-text}
+**How do we make these visualizations even better?**
+:::
+
+```{r, fig.retina=3}
+d <- read_excel("../../Data/PTS/2024-08/PTS-2024.xlsx", na = "NA")
+
+d |>
+  filter(Year >= 1979, Year < 1984, Country == "Uganda") |> 
+  ggplot(aes(x = Year, y = PTS_S)) +
+  geom_line() +
+  theme_bw() +
+  ylim(0,5.2) +
+  labs(x = "", y = "Political Terror Scale Score",
+       title = "Political violence in Uganda is a growing threat to the mass public")
+
+```
+
+::: notes
+
+Ok, so we've got a basic line plot with an informative title and hopefully some good info in the figure caption
+
+- HOWEVER, the reader isn't an expert in the PTS and doesn't really understand what these numbers mean
+
+<br>
+
+**SO, what can we do to add more nuance and analyses to our visualizations?**
+
+- **Especially needed if your line or bar plot shows little to no variation AND the reader is not an expert in these measures**
+
+<br>
+
+*Let the class BRAINSTORM and discuss*
+
+<br>
+
+**SLIDE**: Option 1, label the hinge points
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+::: {.r-fit-text}
+**Option 1: Label the Hinge Points**
+:::
+
+```{r, fig.retina=3}
+d |>
+  filter(Year >= 1979, Year < 1984, Country == "Uganda") |> 
+  ggplot(aes(x = Year, y = PTS_S)) +
+  geom_line() +
+  theme_bw() +
+  ylim(0,5.2) +
+  labs(x = "", y = "Political Terror Scale Score",
+       title = "Political violence in Uganda is growing threat to the mass public") +
+  annotate("text", x = 1979, y = 1.8, srt = 90, label = "War with Tanzania", color = "red", size = 4, adj = 1) +
+  annotate("text", x = 1980, y = 3.8, srt = 90, label = "Military coup d'etat", color = "red", size = 4, adj = 1) +
+  annotate("text", x = 1981, y = 3.8, srt = 90, label = "Obote government established", color = "red", size = 4, adj = 1)
+
+```
+
+::: notes
+
+Add labels to hinge points: Explain on the plot why changes occur in a given year (e.g. 2023 coup)
+
+<br>
+
+**SLIDE**: Option 2 add comparison countries
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+::: {.r-fit-text}
+**Option 2: Add Comparison Countries**
+:::
+
+```{r, fig.retina=3}
+
+d1 <- d |>
+  filter(Year >= 1979, Year < 1984, Country == "Uganda")
+
+d2 <- d |>
+  filter(Year >= 1979, Year < 1984, Country == "Tanzania, United Republic of")
+
+ggplot() +
+  geom_line(data = d1, aes(x = Year, y = PTS_S), color = "orange3") +
+  geom_line(data = d2, aes(x = Year, y = PTS_S), color = "darkblue", linetype = "dashed") +
+  theme_bw() +
+  ylim(0,5.2) +
+  labs(x = "", y = "Political Terror Scale Score",
+       title = "Uganda and Tanzania have had very different post-war experiences") +
+  annotate("text", x = 1983, y = 4.7, adj = 1, label = "Uganda", color = "orange3") +
+  annotate("text", x = 1983, y = 2.25, adj = 1, label = "Tanzania", color = "darkblue")
+
+```
+
+::: notes
+
+In 1978-1979 Tanzania and Uganda fought a war
+
+- The war devastated Tanzania's economy, but it completely upended Uganda
+
+<br>
+
+**SLIDE**: Option 3 add descriptive stats
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+::: {.r-fit-text}
+**Option 3: Add Descriptive Statistics**
+:::
+
+```{r, fig.retina=3}
+# Subsaharan Africa
+ssa_avg <- d |>
+  filter(Year >= 1979, Year < 1984, Region == "ssa") |>
+  summarize(
+    Avg = mean(PTS_S, na.rm = TRUE)
+  )
+
+d |>
+  filter(Year >= 1979, Year < 1984, Country == "Uganda") |> 
+  ggplot(aes(x = Year, y = PTS_S)) +
+  geom_line() +
+  theme_bw() +
+  ylim(0,5.2) +
+  labs(x = "", y = "Political Terror Scale Score",
+       title = "Political violence in Uganda is growing threat to the mass public") +
+  geom_hline(yintercept = ssa_avg[[1]], linetype = "dashed", color = "darkred") +
+  annotate("text", x = 1982.5, y = 1.85, label = "Average in Sub-Saharan Africa", color = "darkred")
+
+```
+
+::: notes
+
+Add global averages or averages for other groups (OECD, G77, etc)
+
+<br>
+
+**Questions on these techniques?**
 
 <br>
 

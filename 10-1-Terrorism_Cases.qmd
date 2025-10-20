@@ -32,10 +32,11 @@ Prep for Class
 
 1. Review submissions on Canvas
 
-2. Prep a Google sheet for unpacking cases and publish on Modules
-    - [LINK]
+2. Prep a Google sheet for unpacking cases and publish on Canvas
+
+3. Markers x 5
     
-3. Save notes from today for next class (e.g. end of class operationalization elements need to go into slides for next class)
+4. Save notes from today for next class (e.g. end of class operationalization elements need to go into slides for next class)
 
 <br>
 
@@ -173,6 +174,18 @@ Everybody take a few minutes to review the cases
 
 **Any questions or need for clarification on the cases?**
 
+- Go!
+
+<br>
+
+*Split class into small groups (4?)*
+
+- Go sit with your group!
+
+<br>
+
+**SLIDE**: Compare and contrast
+
 :::
 
 
@@ -180,50 +193,43 @@ Everybody take a few minutes to review the cases
 ## {background-image="Images/10_1-Terrorism_Background_darker.png" .center}
 
 ::: {.r-fit-text}
-[**Unpacking the Cases**]{style="color:white;"}
-
-[1. Who did it?]{style="color:white;"}
-
-[2. Who (or what) was the target?]{style="color:white;"}
-
-[3. What was the specific act?]{style="color:white;"}
-
-[4. What was the stated rationale for the act?]{style="color:white;"}
-
-[5. What was the immediate result?]{style="color:white;"}
-
-[6. Any other important context for your case?]{style="color:white;"}
-
+[**The Characteristics of "Terrorism"**]{style="color:white;"}
 :::
-
-::: notes
-
-*Split class into small groups (4?)*
 
 <br>
 
-GROUPS, compare and contrast all of the cases in order to construct a definition of terrorism
+[**What are the most common or consistent characteristics of "terrorism" across these cases?**]{style="color:white;"}
 
-- In a sense, ask yourself what is common or most important to the cases unpacked by our class and use that to build a definition.
+
+::: notes
+
+GROUPS, compare and contrast all of the cases in order to identify the **characteristics of terrorism**
+
+- In a sense, ask yourself what is common or most important to the cases unpacked by our class?
 
 - You do not have to include elements from all six questions! 
+
     - Your group should determine what is important and what isn't in your definition
 
 <br>
 
-### Questions?
+**Questions?**
 
-- Let's go! Get those definitions up on the board!
-
-<br>
-
-PRESENT and DISCUSS each
-
-### Out of curiosity, as you scrolled through the "data" which variables struck you as most important? Why?
+- Let's go! Get those characteristics up on the board!
 
 <br>
 
-Class Notes
+*PRESENT and DISCUSS each*
+
+<br>
+
+Groups, go back to your list
+
+- Anything you want to add from the other groups?
+
+- Anything beyond our submitted cases that you'd like to include as characteristics of terrorism as you think about it
+
+<br>
 
 *2019 class*
 
@@ -280,9 +286,20 @@ Key Questions
 
 
 
-## Defining Terrorism {background-image="Images/00-Leviathan_Cover_55.png" .center}
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
 
-![](Images/10_1-Terrorism-Word-Cloud.jpg){style="display: block; margin: 0 auto"}
+::: {.r-fit-text}
+**Propose an Operational Definition of Terrorism**
+
+<br>
+
+**Terrorism is...**
+
+- Select observable phenomena
+
+- Must be precise and explicit
+
+:::
 
 ::: notes
 
@@ -291,6 +308,9 @@ Alright, let's combine our efforts.
 - Can we operationalize terrorism based on our work today?
 
 - *ON BOARD*
+
+
+
 
 :::
 
