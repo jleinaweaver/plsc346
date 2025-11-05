@@ -61,13 +61,17 @@ Last class we explored Pape's (2003) paper on the logic of suicide terrorism.
 
 **Institutions**
 
-- If weaker than the target non-state actors may employ a strategy of terrorism: Demonstrative, Destructive or Suicide
+- Norms against indiscriminate violence and targeting civilians
+- Variation in level of government's control over territory (regime type?)
 
 **Interactions**
 
-- Terrorists aim to inflict "pain" on society to force the government to concede or the people to revolt against the government
-- Perceived leverage over the target increases with expectations of future damage
-- Suicide terrorism maximizes this expectation because it is the most destructive strategy, it is more likely to succeed (simpler, no escape plan needed), and signals that norms do not matter, more is coming and any possible retaliation is not a deterrent
+- Terrorism as a strategy of "pain" on society and the government
+- Suicide terrorism as a coercive strategy of the "weak" against the "strong"
+    1. Low cost for the group (more likely to succeed, simpler plan to execute)
+    2. Signals retaliation is no deterrent (supporters do not matter)
+    3. Signals future pain will be even greater (norms do not matter)
+
 
 ::: notes
 
