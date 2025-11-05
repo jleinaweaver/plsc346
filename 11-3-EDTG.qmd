@@ -34,7 +34,9 @@ Prep for Class
 
 1. Review submissions on Canvas
 
-2. Readings
+2. Open data exploration R file so you can follow along with the groups' work
+
+3. Readings
 
     - Hou, D., Gaibulloev, K., & Sandler, T. (2020). Introducing , 1970 to 2016. Journal of Conflict Resolution, 64(1), 199–225.
 

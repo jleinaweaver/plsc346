@@ -96,13 +96,17 @@ Last class we examined the RAND Database of Worldwide Terrorism Incidents (RDWTI
 
 <br>
 
+So many cons...
+
 Pros:
 
-- ?
+- Very US government / US military focused perspective on the problem (if your goal is to view terrorism through that lens)
 
 Cons:
 
-- ?
+- Not currently being updated
+- Not clear on sourcing of data or robustness checks
+- Lots of inconsistencies in the database (group names change coding)
 
 <br>
 
