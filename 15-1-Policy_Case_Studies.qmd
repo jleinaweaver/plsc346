@@ -30,7 +30,37 @@ Prep for Class
 
 1. Review submissions on Canvas
 
+<br>
+
+**SLIDE**: IDEA eval reminder
+
 :::
+
+
+
+## Course Evaluations (IDEA) {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+<br>
+
+::: {.r-fit-text}
+[https://drury.campuslabs.com/eval-home/](https://drury.campuslabs.com/eval-home/)
+:::
+
+::: notes
+
+REMEMBER, IFF everyone in class submits their evals for this class I will give everyone EC on the final grade!
+
+- So, get em done!
+
+<br>
+
+**SLIDE**: 
+
+
+
+:::
+
+
 
 
 

@@ -361,21 +361,60 @@ Groups, jump to pages 56-60 and develop a diagram of this model
 
 
 
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+**Interests**
+
+- Civilian-centric terrorist groups (CCTGs) &rarr; Achieving policy objectives
+- Governments &rarr; Political survival
+
+**Institutions**
+
+- ?
+
+**Interactions**
+
+- ?
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+**Interests**
+
+- Civilian-centric terrorist groups (CCTGs) &rarr; Achieving policy objectives
+- Governments &rarr; Political survival
+
+**Institutions**
+
+- Terrorist groups must choose their target(s)
+- Governments choose what policies/concessions to implement
+
+**Interactions**
+
+- ?
+
+
+
 ## {background-image="Images/00-Leviathan_Cover_55.png" .center .smaller}
 
 **Interests**
 
 - Civilian-centric terrorist groups (CCTGs) &rarr; Achieving policy objectives
+- Governments &rarr; Political survival
 
 **Institutions**
 
-- Terrorist groups may choose to target citizens / businesses or the military
+- Terrorist groups must choose their target(s)
+- Governments choose what policies/concessions to implement
 
 **Interactions**
 
-- Governments infer what terrorist groups want based on the consequences of their actions (correspondent inference theory)
-- The consequences of civilian-centric terrorism (death, fear, economic contraction, anger at government) imply that the terror group has maximalist objectives (to destroy the state)
-- Governments are unlikely to enter compromises with maximalist groups
+Civilian-centric terrorism miscommunicates goals and makes compromise impossible
+
+- Governments are unlikely to enter compromises with maximalist groups (e.g. goal is to destroy the state)
+- Governments classify groups based on the consequences of their actions (correspondent inference theory)
+- Civilian-centric terrorism (death, fear, economic contraction, anger at government) imply maximalist objectives
 
 ::: notes
 
