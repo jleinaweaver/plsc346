@@ -498,7 +498,7 @@ d |>
   ggplot() +
   geom_sf(aes(fill = Count_cat)) +
   scale_fill_brewer(type = "seq", palette = 8) +
-  labs(fill = "", title = "US Based Far Left Radicals (per million population)")
+  labs(fill = "", title = "US Based Far Left Radicals")
 ```
 :::
 
@@ -524,7 +524,7 @@ d |>
   ggplot() +
   geom_sf(aes(fill = Count_cat)) +
   scale_fill_brewer(type = "seq", palette = 8) +
-  labs(fill = "", title = "US Based Far Right Radicals (per million population)")
+  labs(fill = "", title = "US Based Far Right Radicals")
 ```
 
 ```{r, fig.retina=3, fig.align='center', out.width='92%', fig.height=4, fig.width=8, cache=FALSE}
@@ -548,7 +548,7 @@ d |>
   ggplot() +
   geom_sf(aes(fill = Count_cat)) +
   scale_fill_brewer(type = "seq", palette = 8) +
-  labs(fill = "", title = "US Based Single Issue Radicals (per million population)")
+  labs(fill = "", title = "US Based Single Issue Radicals")
 ```
 :::
 ::::
@@ -1085,6 +1085,17 @@ d |>
   scale_x_discrete(limits = c("Single", "Divorced", "Widowed", "Married"))
 ```
 
+
+
+
+## For Next Class {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+### Brainstorming research projects!
+
+
+
+
+## OLD SLIDES
 
 ## For Next Class {background-image="Images/00-Leviathan_Cover_55.png" .center}
 
