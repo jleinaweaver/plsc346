@@ -1,0 +1,128 @@
+---
+format: revealjs
+---
+
+## Today's Agenda {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+```{r}
+library(tidyverse)
+library(readxl)
+library(kableExtra)
+```
+
+<br>
+
+**Developing a Political Violence Research Proposal**
+
+<br>
+
+- The Data
+
+<br>
+
+::: r-stack
+Justin Leinaweaver (Fall 2025)
+:::
+
+::: notes
+
+Prep for Class
+
+1. Review submissions on Canvas
+
+2. Markers x 5
+
+<br>
+
+**SLIDE**: The final!
+
+:::
+
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+**Paper 3: Political Violence Research Proposal**
+
+<br>
+
+This should be written as an argument paper that advances the specifics of your proposal as its thesis statement with a body focused on three specific premises:
+
+1. Your research question is important, can be answered and its answer improves our understanding of the world,
+
+2. Your proposed answer to the question (theory) is clear and logical (with a DAG represented as a figure in the paper), and
+
+3. You can explain to the reader the kinds of data you would need to test your theory with real-world evidence.
+
+::: notes
+
+Proposals are due by the end of our class final exam window
+
+- Dec 8th, 12:20pm
+
+- NO LATE PAPERS ACCEPTED
+
+<br>
+
+**Questions on the assignment?**
+
+:::
+
+
+
+
+
+## For Today {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+<br>
+
+**Developing your Research Proposal: Data**
+
+- Submit your revised RQ, DAG, theory and introduce us to the kinds of data you would need for the project 
+
+::: notes
+
+For today I asked each of you to revise your RQ, theory and draft a description of your data needs
+
+- **How did this go?**
+
+<br>
+
+*PAIRS (speed rounds):*
+
+- Review each other's data piece and give feedback (2-3 mins)
+
+- Repeat with a new partner! (2-3 mins)
+
+<br>
+
+**SLIDE**: Ok, EVERYBODY get to writing up this paper!
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+**Paper 3: Political Violence Research Proposal**
+
+<br>
+
+This should be written as an argument paper that advances the specifics of your proposal as its thesis statement with a body focused on three specific premises:
+
+1. Your research question is important, can be answered and its answer improves our understanding of the world,
+
+2. Your proposed answer to the question (theory) is clear and logical (with a DAG represented as a figure in the paper), and
+
+3. You can explain to the reader the kinds of data you would need to test your theory with real-world evidence.
+
+::: notes
+
+Proposals are due by the end of our class final exam window
+
+- Dec 8th, 12:20pm
+
+- NO LATE PAPERS ACCEPTED
+
+:::

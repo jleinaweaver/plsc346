@@ -80,6 +80,8 @@ Data, slides and errata for my class at Drury University (PLSC 346: Political Vi
 
 14-4-US_Vulnerabilities.html
 
-15-1-Policy_Case_Studies.html
+15-1-Final-RQ.html
 
-15-2-Paper3_Outline.html
+15-2-Final-Theory.html
+
+15-3-Final-Data_Needs.html

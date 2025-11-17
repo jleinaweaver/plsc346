@@ -38,9 +38,32 @@ Today we shift into the end of our semester with a focus on what we can do to ma
 
 <br>
 
+**SLIDE**: IDEA eval reminder
+
+:::
+
+
+
+## Course Evaluations (IDEA) {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+<br>
+
+::: {.r-fit-text}
+[https://drury.campuslabs.com/eval-home/](https://drury.campuslabs.com/eval-home/)
+:::
+
+::: notes
+
+REMEMBER, IFF everyone in class submits their evals for this class I will give everyone EC on the final grade!
+
+- So, get em done!
+
+<br>
+
 **SLIDE**: For today
 
 :::
+
 
 
 
@@ -62,19 +85,19 @@ For today I asked each of you to reflect on our threats in order to identify ONE
 
 <br>
 
-*Split class into four groups (5 each?)*
-
-- Go sit with your group!
-
-<br>
-
-GROUPS, to start I simply want you to review all of the submissions
+To begin, I want each of you to review all of the submissions
 
 - Make sure you are clear on the institutions and vulnerabilities being suggested by your classmates
 
 - Let's use this time to get clarifications
 
 - Go!
+
+<br>
+
+*Split class into four groups*
+
+- Go sit with your group and claim some space on the board!
 
 <br>
 
@@ -96,46 +119,33 @@ Please note, I am not asking you to make the argument that your selected institu
 2. How does that specific institution create a vulnerability to political violence? (explain the causal mechanism as clearly as you can, 3-5 sentences)
 3. Submit a piece of evidence that illustrates this dynamic in action (APA citation and explanation of the evidence)
 
-
 :::
 
 
 
-## {background-image="Images/14_3-Capitol_Building_v3.png" .center}
+## {background-image="Images/14_3-Capitol_Building_v3.png"}
 
-[**Evaluating Institutional Vulnerabilities**]{style="color:white;"}
+**Classifying our Institutional Vulnerabilities**
 
-- Make a list on the board of the FIVE "Most Serious" 
-
-
-
-: Identify the five most serious vulnerabilities
-
-
-
-
-## {background-image="Images/14_3-Capitol_Building_v3.png" .center}
-
-[**Evaluating Institutional Vulnerabilities**]{style="color:white;"}
-
-[1. The five most serious vulnerabilities]{style="color:white;"}
-
-[2. The five easiest to address]{style="color:white;"}
-
-[3. The five hardest to address]{style="color:white;"}
-
+1. What are the FIVE "most serious" vulnerabilities? 
 
 ::: notes
 
-GROUPS: Review the submissions and make us three lists on the board.
+I'm going to ask you to classify the cases three times on the board
 
-- Identify the five most serious vulnerabilities
-- Identify the five vulnerabilities that would be easiest to address
-- Identify the five vulnerabilities that would be hardest to address
+- FIRST, I want your group to select the FIVE most serious vulnerabilities
+
+- e.g. those most responsible for our vulnerability to political violence
 
 <br>
 
-*PRESENT and DISCUSS each*
+Think of this as what institutions create the most openings or incentives for political violence in our society?
+
+- Go!
+
+<br>
+
+**SLIDE**: Next classifications
 
 :::
 
@@ -143,23 +153,58 @@ GROUPS: Review the submissions and make us three lists on the board.
 
 ## {background-image="Images/14_3-Capitol_Building_v3.png"}
 
-[**What are the specific vulnerabilities that make these threats possible?**]{style="color:white;"}
+**Classifying our Institutional Vulnerabilities**
+
+1. What are the FIVE "most serious" vulnerabilities? 
+
+2. What are the FIVE "easiest" vulnerabilities to address? 
+
+3. What are the FIVE "hardest" vulnerabilities to address? 
+
+
+::: notes
+
+Ok, two more lists
+
+- What are the five vulnerabilities that would be easiest to address?
+
+- What are the five vulnerabilities that would be hardest to address?
+
+- Go!
+
+<br>
+
+Groups, present your analysis of the US
+
+- What institutional vulnerabilities do we have and how hard woulf they be to address?
+
+- *PRESENT and DISCUSS each*
+
+:::
+
+
+
+## {background-image="Images/14_3-Capitol_Building_v3.png" .center}
+
+### **Does the institutional design of United States make us vulnerable to political violence?**
 
 ::: notes
 
 Let's talk big picture takeaways.
 
-### How vulnerable are we in the US to political violence?
+<br>
+
+**Overall, does the institutional design of the US make us vulnerable to political violence? Why or why not?**
 
 <br>
 
-### Are we convinced that we could eliminate this vulnerability using purely institutional fixes? Why or why not?
+**Are we convinced that we could eliminate this vulnerability using purely institutional fixes? Why or why not?**
 
 <br>
 
-### What are the drawbacks to using institutional rules to reduce the vulnerabilities we face? 
+**What are the drawbacks to using institutional rules to reduce the vulnerabilities we face?**
 
-### - Are they worth the reductions in "freedom" they might require? Why or why not?
+- **Are they worth the reductions in "freedom" they might require? Why or why not?**
 
 <br>
 
@@ -171,30 +216,70 @@ Let's talk big picture takeaways.
 
 ## {background-image="Images/00-Leviathan_Cover_55.png" .center}
 
-**Paper 3: How do we reduce the likelihood of political violence in our society?**
+**Paper 3: Political Violence Research Proposal**
 
-Based on our explorations of political violence this semester, what are the **THREE** strongest pieces of policy advice you could offer to prevent political violence at the city, state or national level? 
+<br>
 
-A strong proposal will:
-
-- be specific (e.g. include the kinds of details a relevant stakeholder would need to implement your proposal), and
-
-- provide evidence that your proposal is likely to be effective.
+Convert your intuitions about the institutional vulnerabilities in the US system into a research proposal. 
 
 ::: notes
 
-Papers are due at end of final exam window
-- Dec 14th, 12:20pm
+Your final paper for this class will be a research proposal like the exercise we've been doing in class the last two weeks
+
+- The idea is reframe your intuitions as an opportunity to test them with real world evidence
+
+<br>
+
+Proposals are due by the end of our class final exam window
+
+- Dec 8th, 12:20pm
 
 - NO LATE PAPERS ACCEPTED
 
 <br>
 
-### Questions on the assignment?
+**SLIDE**: Details
+
+:::
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+**Paper 3: Political Violence Research Proposal**
 
 <br>
 
-**SLIDE**: To keep you moving forward on the paper, let's build on our work from today
+This should be written as an argument paper that advances the specifics of your proposal as its thesis statement with a body focused on three specific premises:
+
+1. Your research question is important, can be answered and its answer improves our understanding of the world,
+
+2. Your proposed answer to the question (theory) is clear and logical (with a DAG represented as a figure in the paper), and
+
+3. You can explain to the reader the kinds of data you would need to test your theory with real-world evidence.
+
+
+::: notes
+
+Think of this like any other three premise argument paper you've written for me:
+
+- Your first premise focuses on selling the reader on your RQ,
+
+- Your second premise explains your theoretical answer to the question, and
+
+- Your third premise talks through the data needs for the project
+
+<br>
+
+Put all together you have an argument that this research project is worth investing our time and money into!
+
+<br>
+
+**Questions on the assignment?**
+
+<br>
+
+**SLIDE**: Let's set your first goal for next class
 
 :::
 
@@ -204,16 +289,28 @@ Papers are due at end of final exam window
 
 <br>
 
+What is your research question and why is it a "good" one?
+
+- It can be answered
+
+- It improves our understanding of the world, and
+
+- It is important we answer it (with evidence)
+
 
 ::: notes
 
-My aim is that this exercise helps expose you to a bunch of intriguing ideas.
-
-- We're essentially crowd-sourcing your topic selection.
+**Questions on the assignment?**
 
 <br>
 
-### Questions on the assignment?
+Canvas Assignment: Developing your Research Proposal: Research Question (RQ)
+
+1. What is your proposed research question?
+2. Explain why you are confident this question "can be answered" with data (meaning it is not normative or opinion based, 2+ sentences)
+3. Explain how this RQ "improves our understanding of the world" (meaning it helps us think theoretically about why things happen, 3+ sentences)
+4. Provide AT LEAST one piece of evidence that this is an important question to answer (APA citation and 2+ sentences explaning how the evidence makes the importance argument)
+
 
 :::
 

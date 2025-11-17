@@ -1,0 +1,154 @@
+---
+format: revealjs
+---
+
+## Today's Agenda {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+```{r}
+library(tidyverse)
+library(readxl)
+library(kableExtra)
+```
+
+<br>
+
+**Developing a Political Violence Research Proposal**
+
+<br>
+
+- The Research Question (RQ)
+
+<br>
+
+::: r-stack
+Justin Leinaweaver (Fall 2025)
+:::
+
+::: notes
+
+Prep for Class
+
+1. Review submissions on Canvas
+
+2. Bring a ton of markers to class
+
+<br>
+
+**SLIDE**: The final!
+
+:::
+
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+**Paper 3: Political Violence Research Proposal**
+
+<br>
+
+This should be written as an argument paper that advances the specifics of your proposal as its thesis statement with a body focused on three specific premises:
+
+1. Your research question is important, can be answered and its answer improves our understanding of the world,
+
+2. Your proposed answer to the question (theory) is clear and logical (with a DAG represented as a figure in the paper), and
+
+3. You can explain to the reader the kinds of data you would need to test your theory with real-world evidence.
+
+::: notes
+
+Proposals are due by the end of our class final exam window
+
+- Dec 8th, 12:20pm
+
+- NO LATE PAPERS ACCEPTED
+
+<br>
+
+**Questions on the assignment?**
+
+:::
+
+
+
+
+
+## For Today {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+<br>
+
+What is your research question and why is it a "good" one?
+
+- It can be answered
+
+- It improves our understanding of the world, and
+
+- It is important we answer it (with evidence)
+
+::: notes
+
+For today I asked each of you to propose a RQ for the assignment.
+
+- **How did this go?**
+
+<br>
+
+*PAIRS (speed rounds):*
+
+- Review each other's RQ's and give feedback (2-3 mins)
+
+- Repeat with a new partner! (2-3 mins)
+
+<br>
+
+Ok, EVERYBODY write your RQ on the board!
+
+- *PRESENT and DISCUSS each*
+
+- *Do little tweaks in the moment, BUT SAVE ones needing more than that for the end*
+
+<br>
+
+*Split class into groups and assign each group to one of the tough cases*
+
+- *You float and help all*
+
+- Go!
+
+<br>
+
+**SLIDE**: For next class
+
+:::
+
+
+
+
+
+## For Next Class {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+<br>
+
+**Developing your Research Proposal: Theory**
+
+- Submit your revised RQ, defense of your RQ, a DAG and a draft model diagram (complete sentence bullet points)
+
+::: notes
+
+**Questions on the assignment?**
+
+<br>
+
+Canvas Assignment: Developing your Research Proposal: Theory
+
+1. What is your proposed research question?
+2. Explain why you believe this question "can be answered" and how its answer improves our understanding of the world (3+ sentences)
+3. Provide the DAG for your RQ
+4. Use complete sentence, bullet points to outline your answer to the RQ (e.g. the theory)
+    - Make sure each bullet is a complete idea and that they flow logically from beginning to the end
+
+
+:::
+
+
+

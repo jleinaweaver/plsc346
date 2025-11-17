@@ -1,0 +1,154 @@
+---
+format: revealjs
+---
+
+## Today's Agenda {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+```{r}
+library(tidyverse)
+library(readxl)
+library(kableExtra)
+```
+
+<br>
+
+**Developing a Political Violence Research Proposal**
+
+<br>
+
+- The DAG and Theory
+
+<br>
+
+::: r-stack
+Justin Leinaweaver (Fall 2025)
+:::
+
+::: notes
+
+Prep for Class
+
+1. Review submissions on Canvas
+
+2. Markers x 5
+
+<br>
+
+**SLIDE**: The final!
+
+:::
+
+
+
+
+## {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+**Paper 3: Political Violence Research Proposal**
+
+<br>
+
+This should be written as an argument paper that advances the specifics of your proposal as its thesis statement with a body focused on three specific premises:
+
+1. Your research question is important, can be answered and its answer improves our understanding of the world,
+
+2. Your proposed answer to the question (theory) is clear and logical (with a DAG represented as a figure in the paper), and
+
+3. You can explain to the reader the kinds of data you would need to test your theory with real-world evidence.
+
+::: notes
+
+Proposals are due by the end of our class final exam window
+
+- Dec 8th, 12:20pm
+
+- NO LATE PAPERS ACCEPTED
+
+<br>
+
+**Questions on the assignment?**
+
+:::
+
+
+
+
+
+## For Today {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+<br>
+
+**Developing your Research Proposal: Theory**
+
+- Submit your revised RQ, defense of your RQ, a DAG and a draft model diagram (complete sentence bullet points)
+
+
+::: notes
+
+For today I asked each of you to revise your RQ and move to theory!
+
+- **How did this go?**
+
+<br>
+
+*Split class into small groups (3 per)*
+
+- Groups, take 15 minutes per model (*You track the time!*)
+
+- Get the diagram on the board and work on it together
+
+- *YOU float and give advice to all*
+
+- Go!
+
+<br>
+
+**SLIDE**: For next class
+
+:::
+
+
+
+
+
+## For Next Class {background-image="Images/00-Leviathan_Cover_55.png" .center}
+
+<br>
+
+**Developing your Research Proposal: Data**
+
+- Submit your revised RQ, DAG, theory and introduce us to the kinds of data you would need for the project 
+
+::: notes
+
+For the data think about:
+
+- What observations would you need to gather information on?
+
+    - e.g. individuals, groups, states, etc
+
+- What specific kinds of measurements would you need for each observation?
+
+<br>
+
+**Questions on the assignment?**
+
+<br>
+
+Canvas Assignment: Developing your Research Proposal: Data
+
+1. What is your proposed research question?
+2. Explain why you believe this question "can be answered" and how its answer improves our understanding of the world
+3. Provide the DAG for your RQ
+4. Provide your revised theory (complete sentence, bullet points)  
+5. Explain the kinds of data you would need to test this RQ and theory. 
+- What observations would you need to gather information on?
+- What specific kinds of measurements would you need for each observation?
+
+
+
+:::
+
+
+
+
+
